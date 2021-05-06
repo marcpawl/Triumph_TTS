@@ -512,14 +512,25 @@ function on_button_game_triumph()
   g_is_grand_triumph = false
   g_current_table_size = 'small'
   UI.setAttribute("panel_wizard_grand_triumph", "active", false)
-  UI.setAttribute("panel_dba_orders", "active", true)
+  UI.setAttribute("panel_wizard_select_armies", "active", true)
 end
 
 function on_button_game_grand_triumph()
       g_is_grand_triumph = true
       g_current_table_size = 'large'
       UI.setAttribute("panel_wizard_grand_triumph", "active", false)
-      UI.setAttribute("panel_dba_orders", "active", true)
+      UI.setAttribute("panel_wizard_select_armies", "active", true)
+end
+
+function on_button_go_to_wizard_grand_triumph()
+  UI.setAttribute("panel_wizard_grand_triumph", "active", true)
+  UI.setAttribute("panel_wizard_select_armies", "active", false)
+end
+
+function on_button_go_to_wizard_topography_roll()
+  UI.setAttribute("panel_wizard_select_armies", "active", false)
+  -- TODO GO TO WIZARD PAGE
+  UI.setAttribute("panel_dba_orders", "active", true)
 end
 
 

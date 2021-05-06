@@ -11,7 +11,15 @@
         <Button id="button_game_grand_triumph" onClick="on_button_game_grand_triumph">Grand Triumph!</Button>
     </VerticalLayout>
 </Panel>
-
+<Panel id="panel_wizard_select_armies" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+    <VerticalLayout>
+      <Button id="button_create_army" onClick="create_army_options_menu">Create army</Button>
+      <HorizontalLayout>
+        <Button id="button_go_to_wizard_grand_triumph" onClick="on_button_go_to_wizard_grand_triumph">Previous</Button>
+        <Button id="button_go_to_wizard_topography_roll" onClick="on_button_go_to_wizard_topography_roll">Next</Button>
+      </HorizontalLayout>
+    </VerticalLayout>
+</Panel>
 <Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
         <Slider id="slider_MUs" minValue="0" maxValue="8" value="4" colors="#00000000|#00000000|#00000000|#00000000" backgroundcolor="#FFFFFFF" onValueChanged="slider_MUs_changed"></Slider>
@@ -23,7 +31,6 @@
             <Button id="button_redo_move" onClick="on_redo_move">Redo</Button>
         </HorizontalLayout>
         <Button id="button_spawn_table" onClick="on_create_table_menu">Spawn table</Button>
-        <Button id="button_create_army" onClick="create_army_options_menu">Deploy an army</Button>
         <Toggle id="toggle_zoc" isOn="false" onValueChanged="on_toggle_zoc">Do not show ZOC</Toggle>
         <Toggle id="toggle_deployment_lines" isOn="false" onValueChanged="on_toggle_deployment_lines">Do not show rulers</Toggle>
         <Toggle id="toggle_snapping" isOn="true" onValueChanged="on_toggle_snapping">Snap bases</Toggle>
