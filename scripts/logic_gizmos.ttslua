@@ -1365,7 +1365,7 @@ function draw_deployment_lines()
         get_strokes_deployment('bot',
             g_gizmo_color_player_red, angle, proportion, w, h))
     
-    if g_is_double_dba then
+    if g_is_grand_triumph then
         table.insert(strokes, get_strokes_quadrant_vertical_3(angle, w, h))
         table.insert(strokes, get_strokes_quadrant_vertical_4(angle, w, h))
         table.insert(strokes, get_strokes_quadrant_vertical_5(angle, w, h))

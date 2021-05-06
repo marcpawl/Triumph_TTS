@@ -22,7 +22,7 @@ function snap_coast(coast)
     local h = bounds['size']['z']
     local zpos = table_h / 2 - (h / 2 - bounds['offset']['z'])
     local xpos = table_w / 2 - (h / 2 - bounds['offset']['z'])
-    if g_is_double_dba then
+    if g_is_grand_triumph then
         xpos = xpos + table_w / 2
     end
 

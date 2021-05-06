@@ -497,7 +497,6 @@ end
 
 function on_create_table_menu(player, value, id)
     g_use_3d_terrain = true
-    g_is_double_dba = false
     UI.setAttribute('panel_dba_table_selection_bg', 'active', true)
     UI.setAttribute('panel_dba_table_selection_bg', 'visibility', player.color)
     UI.setAttribute('panel_dba_table_selection', 'active', true)
@@ -507,22 +506,22 @@ function on_create_table_menu(player, value, id)
 end
 
 g_current_table_size = 'large'
-function on_toggle_table_size(player, value, id)
-    if value == "0" then
-        g_current_table_size = 'small'
-    else
-        g_current_table_size = 'large'
-    end
+g_is_grand_triumph = nil
+
+function on_button_game_triumph()
+  g_is_grand_triumph = false
+  g_current_table_size = 'small'
+  UI.setAttribute("panel_wizard_grand_triumph", "active", false)
+  UI.setAttribute("panel_dba_orders", "active", true)
 end
 
-g_is_double_dba = false
-function on_toggle_table_double(player, value, id)
-    if value == "True" then
-        g_is_double_dba = true
-    else
-        g_is_double_dba = false
-    end
+function on_button_game_grand_triumph()
+      g_is_grand_triumph = true
+      g_current_table_size = 'large'
+      UI.setAttribute("panel_wizard_grand_triumph", "active", false)
+      UI.setAttribute("panel_dba_orders", "active", true)
 end
+
 
 g_use_3d_terrain = true
 function on_toggle_3dterrain(player, value, id)
@@ -572,7 +571,7 @@ function on_load_table(player, value, id)
     local is_large = g_current_table_size == 'large'
 
     if g_current_table == nil then
-        if g_is_double_dba then
+        if g_is_grand_triumph then
             spawn_table_obj(tables['model_double'], tex, is_large)
         else
             spawn_table_obj(tables['model'], tex, is_large)

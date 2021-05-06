@@ -1,9 +1,18 @@
 <!-- TODO Add more buttons and prettify -->
 
+
 <Panel id="panel_dba_orders_bg" width="230" height="400" rectAlignment="MiddleRight" color="#00000000" raycastTarget="true">
     <Image image="rightside_menu_bg_v2"></Image>
 </Panel>
-<Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true">
+<!-- Pannel to ask if we are playing Triumph! or Grand Triumph! -->
+<Panel id="panel_wizard_grand_triumph" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+    <VerticalLayout>
+        <Button id="button_game_triumph" onClick="on_button_game_triumph">Triumph!</Button>
+        <Button id="button_game_grand_triumph" onClick="on_button_game_grand_triumph">Grand Triumph!</Button>
+    </VerticalLayout>
+</Panel>
+
+<Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
         <Slider id="slider_MUs" minValue="0" maxValue="8" value="4" colors="#00000000|#00000000|#00000000|#00000000" backgroundcolor="#FFFFFFF" onValueChanged="slider_MUs_changed"></Slider>
         <Button id="button_move_forward" onClick="move_bases">Move 4 MU</Button>
@@ -102,22 +111,7 @@
         </Row>
         <Row>
             <Cell columnSpan="3" dontUseTableCellBackground="true">
-                <Toggle id="toggle_double_dba" isOn="false" onValueChanged="on_toggle_table_double" fontSize="16">Grand Triumph</Toggle>
-            </Cell>
-            <Cell columnSpan="3" dontUseTableCellBackground="true">
                 <Toggle id="toggle_3dterrain" isOn="true" onValueChanged="on_toggle_3dterrain" fontSize="16">Use 3D terrain</Toggle>
-            </Cell>
-        </Row>
-        <Row>
-            <Cell columnSpan="2" dontUseTableCellBackground="true">
-                <Text fontSize="20" alignment="MiddleLeft">Table size:</Text>
-            </Cell>
-            <Cell columnSpan="4" dontUseTableCellBackground="true">
-                <ToggleGroup id="togglegroup_table_size" onValueChanged="on_toggle_table_size">
-                    <HorizontalLayout>
-                        <Toggle id="toggle_normalsize" isOn="false" fontSize="16">Standard, 64x96</Toggle>
-                    </HorizontalLayout>
-                </ToggleGroup>
             </Cell>
         </Row>
         <Row preferredHeight="40">

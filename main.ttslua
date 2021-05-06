@@ -34,6 +34,7 @@
 
 
 function onSave()
+  g_decorations['g_is_grand_triumph'] = g_is_grand_triumph
   local saved_data = JSON.encode(g_decorations)
   return saved_data
 end
@@ -67,7 +68,14 @@ function onload(saved_data)
     UI.setAttribute("button_roll_blue", "visibility", "Blue|White|Black")
     UI.setAttribute("button_roll_red",  "visibility", "Red|White|Black")
 
+
     set_last_snapshot()
+
+    if g_is_grand_triumph == nil then
+      UI.setAttribute("panel_wizard_grand_triumph", "active", true)
+    else
+      UI.setAttribute("panel_dba_orders", "active", true)
+    end
 end
 
 function set_tablet_homepage(tablet_name)
@@ -91,6 +99,7 @@ function restore_extra_data(saved_data)
     return
   end
   g_decorations = extra
+  g_is_grand_triumph = g_decorations['g_is_grand_triumph']
 end
 
 
