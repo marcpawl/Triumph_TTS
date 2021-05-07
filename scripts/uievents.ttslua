@@ -599,64 +599,56 @@ end
 -- color: "red" or "blue"
 -- return: total or nil if the value is not yet ready
 function update_invasion_wizard_score(color)
-  print("IN update_invasion_wizard_score")
   local score_id = color .. "_invasion_score"
-  print(596)
   local dice_id = "text_" .. color .. "_invasion_roll_value"
-  print(598)
   local dice_str = UI.getAttribute(dice_id, "text")
-  print(600, " ", dice_id, " ", dice_str)
   local dice = tonumber(dice_str)
-  print(603, "dice=", dice)
   if dice == nil then
-    print(604)
     UI.setAttribute(score_id, "text", "")
-    print("OUT update_invasion_wizard_score")
     return nil
   end
-  print(609)
   local rating_id = color .. "_invasion_rating"
   local rating = g_game_settings[rating_id]
-  print("614 ", rating_id, " rating=", rating)
   if rating == nil then
-    print(616)
     UI.setAttribute(score_id, "text", "")
-    print("OUT update_invasion_wizard_score")
     return nil
   end
 
-  print(21)
   local score = dice + rating
   UI.setAttribute(score_id, "text", tostring(score))
-  print("OUT update_invasion_wizard_score")
   return score
 end
 
-function update_invasion_wizard_page()
-  Wait.frames(function()
-  print("IN update_invasion_wizard_page")
+function do_update_invasion_wizard_page()
   local red_score = update_invasion_wizard_score("red")
   local blue_score = update_invasion_wizard_score("blue")
   if red_score == nil or blue_score == nil then
     UI.setAttribute("invader", "text", "")
-    print("OUT update_invasion_wizard_page")
     return
   end
   if red_score == blue_score then
     UI.setAttribute("invader", "text", "tie, roll again")
-    print("OUT update_invasion_wizard_page")
     return
   end
   if red_score > blue_score then
     UI.setAttribute("invader", "text", "Red invades")
     g_game_settings['invader'] = "red"
-    print("OUT update_invasion_wizard_page")
+    print_info("Red invades")
     return
   end
   UI.setAttribute("invader", "text", "Blue invades")
   g_game_settings['invader'] = "blue"
-  print("OUT update_invasion_wizard_page")
-end, 1)
+  print_info("Blue invades")
+end
+
+function update_invasion_wizard_page()
+  -- Need to wait one frame for the UI elements to update
+  -- before we can query them
+  Wait.frames(
+    function()
+      do_update_invasion_wizard_page()
+    end,
+    1)
 end
 
 g_use_3d_terrain = true
