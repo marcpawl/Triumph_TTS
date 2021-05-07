@@ -11,15 +11,108 @@
         <Button id="button_game_grand_triumph" onClick="on_button_game_grand_triumph">Grand Triumph!</Button>
     </VerticalLayout>
 </Panel>
+
 <Panel id="panel_wizard_select_armies" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
       <Button id="button_create_army" onClick="create_army_options_menu">Create army</Button>
       <HorizontalLayout>
         <Button id="button_go_to_wizard_grand_triumph" onClick="on_button_go_to_wizard_grand_triumph">Previous</Button>
-        <Button id="button_go_to_wizard_topography_roll" onClick="on_button_go_to_wizard_topography_roll">Next</Button>
+        <Button id="button_go_to_wizard_invader" onClick="on_button_go_to_wizard_invader">Next</Button>
       </HorizontalLayout>
     </VerticalLayout>
 </Panel>
+
+<Panel id="panel_wizard_invader" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+    <TableLayout height="400">
+      <Row preferredHeight="30">
+        <Cell columnSpan="3">
+          <Text>Invasion</Text>
+        </Cell>
+      </Row>
+      <Row preferredHeight="30">
+        <Cell>
+          <Text>Red</Text>
+        </Cell>
+        <Cell>
+        </Cell>
+        <Cell>
+          <Text>Blue</Text>
+        </Cell>
+      </Row>
+      <Row preferredHeight="40">
+        <Cell>
+          <Dropdown id="red_invasion_rating" onValueChanged="on_red_invasion_rating_selected" fontSize="16">
+              <Option selected="true">1</Option>
+              <Option>2</Option>
+              <Option>3</Option>
+              <Option>4</Option>
+              <Option>5</Option>
+              <Option>6</Option>
+          </Dropdown>
+        </Cell>
+        <Cell>
+          <Text>Rating</Text>
+        </Cell>
+        <Cell>
+          <Dropdown id="blue_invasion_rating" onValueChanged="on_blue_invasion_rating_selected" fontSize="16">
+              <Option selected="true">1</Option>
+              <Option>2</Option>
+              <Option>3</Option>
+              <Option>4</Option>
+              <Option>5</Option>
+              <Option>6</Option>
+          </Dropdown>
+        </Cell>
+      </Row>
+      <Row preferredHeight="30">
+        <Cell>
+          <Button id="button_red_invasion_roll" onClick="on_button_red_invasion_roll" fontSize="20" height="140">Roll</Button>
+        </Cell>
+        <Cell>
+        </Cell>
+        <Cell>
+          <Button id="button_blue_invasion_roll" onClick="on_button_blue_invasion_roll" fontSize="20" height="140">Roll</Button>
+        </Cell>
+      </Row>
+      <Row preferredHeight="30">
+        <Cell>
+          <Text id="text_red_invasion_roll_value"/>
+        </Cell>
+        <Cell>
+        </Cell>
+        <Cell>
+          <Text id="text_blue_invasion_roll_value"/>
+        </Cell>
+      </Row>
+      <Row preferredHeight="30">
+        <Cell>
+          <Text id="red_invasion_score"/>
+        </Cell>
+        <Cell>
+          <Text>Score</Text>
+        </Cell>
+        <Cell>
+          <Text id="blue_invasion_score"/>
+        </Cell>
+      </Row>
+      <Row preferredHeight="30">
+        <Cell columnSpan="3">
+          <Text id="invader"/>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+        <Button id="button_go_to_wizard_select_armies" onClick="on_button_go_to_wizard_select_armies" height="50">Previous</Button>
+      </Cell>
+      <Cell>
+      </Cell>
+      <Cell>
+        <Button id="button_go_to_select_topography" onClick="on_button_go_to_select_topography" height="50">Next</Button>
+      </Cell>
+      </Row>
+    </TableLayout>
+</Panel>
+
 <Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
         <Slider id="slider_MUs" minValue="0" maxValue="8" value="4" colors="#00000000|#00000000|#00000000|#00000000" backgroundcolor="#FFFFFFF" onValueChanged="slider_MUs_changed"></Slider>

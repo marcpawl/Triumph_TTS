@@ -84,6 +84,7 @@ function spawn_dice(color, pos)
             Wait.frames(function()
                 UI.show("text_pips_player_|color|")
                 Global.call('print_important', "dice |color|: " .. tostring(value))
+                Global.call('dice_callback', {"|color|",value})
             end, 1)
         end
     ]]
