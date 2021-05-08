@@ -123,6 +123,16 @@
     </TableLayout>
 </Panel>
 
+<Panel id="wizard_panel_topography" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+    <VerticalLayout>
+      <Button id="wizard_button_spawn_table" onClick="on_wizard_button_spawn_table">Spawn topography</Button>
+      <HorizontalLayout>
+        <Button id="wizard_button_go_back_to_invader" onClick="on_wizard_button_go_back_to_invader">Previous</Button>
+        <Button id="wizard_button_go_forward_to_tactical_advantage" onClick="on_wizard_button_go_forward_to_tactical_advantage">Next</Button>
+      </HorizontalLayout>
+    </VerticalLayout>
+</Panel>
+
 <Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
         <Slider id="slider_MUs" minValue="0" maxValue="8" value="4" colors="#00000000|#00000000|#00000000|#00000000" backgroundcolor="#FFFFFFF" onValueChanged="slider_MUs_changed"></Slider>
@@ -133,12 +143,13 @@
             <Button id="button_undo_move" onClick="on_undo_move">Undo</Button>
             <Button id="button_redo_move" onClick="on_redo_move">Redo</Button>
         </HorizontalLayout>
-        <Button id="button_spawn_table" onClick="on_create_table_menu">Spawn table</Button>
         <Toggle id="toggle_zoc" isOn="false" onValueChanged="on_toggle_zoc">Do not show ZOC</Toggle>
         <Toggle id="toggle_deployment_lines" isOn="false" onValueChanged="on_toggle_deployment_lines">Do not show rulers</Toggle>
         <Toggle id="toggle_snapping" isOn="true" onValueChanged="on_toggle_snapping">Snap bases</Toggle>
     </VerticalLayout>
 </Panel>
+
+
 
 <!-- TODO Prettify -->
 <Panel id="panel_current_movement" color="#dddddd" width="400" height="70" rectAlignment="LowerCenter" offsetXY="0 200" active="false" raycastTarget="true">

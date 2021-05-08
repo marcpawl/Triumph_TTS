@@ -5,6 +5,7 @@ wizard_panels = {
   "wizard_panel_select_armies",
   "wizard_panel_select_troops",
   "wizard_panel_invader",
+  "wizard_panel_topography",
 }
 
 function wizard_show_panel(panel_name)
@@ -32,6 +33,10 @@ end
 
 function wizard_show_panel_invader()
   wizard_show_panel("wizard_panel_invader")
+end
+
+function wizard_show_panel_topography()
+  wizard_show_panel("wizard_panel_topography")
 end
 
 function on_wizard_button_game_triumph()
@@ -80,7 +85,15 @@ end
 
 function on_wizard_button_go_forward_to_topography()
   wizard_panel_exit_invader()
-  -- TODO GO TO WIZARD PAGE
+  wizard_show_panel_topography()
+end
+
+function on_wizard_button_go_back_to_invader()
+  wizard_show_panel_invader()
+  wizard_panel_enter_invader()
+end
+
+function on_wizard_button_go_forward_to_tactical_advantage()
   wizard_hide()
 end
 
@@ -183,4 +196,8 @@ function update_invasion_wizard_page()
       do_update_invasion_wizard_page()
     end,
     1)
+end
+
+function on_wizard_button_spawn_table(player,value,id)
+  on_create_table_menu(player, value, id)
 end
