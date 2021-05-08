@@ -133,6 +133,108 @@
     </VerticalLayout>
 </Panel>
 
+<Panel id="wizard_panel_tactical_advantage" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+  <TableLayout height="400">
+    <Row preferredHeight="30">
+      <Cell columnSpan="3">
+        <Text>Tactical Advantage</Text>
+      </Cell>
+    </Row>
+    <Row preferredHeight="30">
+      <Cell>
+        <Text>Red</Text>
+      </Cell>
+      <Cell>
+      </Cell>
+      <Cell>
+        <Text>Blue</Text>
+      </Cell>
+    </Row>
+    <Row preferredHeight="40">
+      <Cell>
+        <Dropdown id="wizard_red_maneuver_rating" onValueChanged="on_wizard_red_maneuver_rating_selected" fontSize="16">
+            <Option selected="true">1</Option>
+            <Option>2</Option>
+            <Option>3</Option>
+            <Option>4</Option>
+            <Option>5</Option>
+            <Option>6</Option>
+        </Dropdown>
+      </Cell>
+      <Cell>
+        <Text>Rating</Text>
+      </Cell>
+      <Cell>
+        <Dropdown id="wizard_blue_maneuver_rating" onValueChanged="on_wizard_blue_maneuver_rating_selected" fontSize="16">
+            <Option selected="true">1</Option>
+            <Option>2</Option>
+            <Option>3</Option>
+            <Option>4</Option>
+            <Option>5</Option>
+            <Option>6</Option>
+        </Dropdown>
+      </Cell>
+    </Row>
+    <Row preferredHeight="30">
+      <Cell>
+        <Button id="wizard_button_red_maneuver_roll" onClick="on_wizard_button_red_maneuver_roll" fontSize="20" height="140">Roll</Button>
+      </Cell>
+      <Cell>
+      </Cell>
+      <Cell>
+        <Button id="wizard_button_blue_maneuver_roll" onClick="on_wizard_button_blue_maneuver_roll" fontSize="20" height="140">Roll</Button>
+      </Cell>
+    </Row>
+    <Row preferredHeight="30">
+      <Cell>
+        <Text id="wizard_red_maneuver_roll_value"/>
+      </Cell>
+      <Cell>
+      </Cell>
+      <Cell>
+        <Text id="wizard_blue_maneuver_roll_value"/>
+      </Cell>
+    </Row>
+    <Row preferredHeight="30">
+      <Cell>
+        <Text id="wizard_red_maneuver_score"/>
+      </Cell>
+      <Cell>
+        <Text>Score</Text>
+      </Cell>
+      <Cell>
+        <Text id="wizard_blue_maneuver_score"/>
+      </Cell>
+    </Row>
+    <Row preferredHeight="30">
+      <Cell>
+        <Text id="wizard_red_flank_march"/>
+      </Cell>
+      <Cell>
+      </Cell>
+      <Cell>
+        <Text id="wizard_blue_flank_march"/>
+      </Cell>
+    </Row>
+    <Row preferredHeight="30">
+      <Cell columnSpan="3">
+        <Text id="wizard_text_tatical_advantage_player"/>
+        <Text id="wizard_text_tatical_advantage_score"/>
+      </Cell>
+    </Row>
+    <Row>
+      <Cell>
+      <Button id="wizard_button_go_back_to_topography" onClick="on_wizard_button_go_back_to_topography" height="50">Previous</Button>
+    </Cell>
+    <Cell>
+    </Cell>
+    <Cell>
+      <Button id="wizard_button_go_forward_to_terrain_pieces" onClick="on_wizard_button_go_forward_to_terrain_pieces" height="50">Next</Button>
+    </Cell>
+    </Row>
+  </TableLayout>
+</Panel>
+
 <Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
         <Slider id="slider_MUs" minValue="0" maxValue="8" value="4" colors="#00000000|#00000000|#00000000|#00000000" backgroundcolor="#FFFFFFF" onValueChanged="slider_MUs_changed"></Slider>
