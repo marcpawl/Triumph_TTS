@@ -5,24 +5,34 @@
     <Image image="rightside_menu_bg_v2"></Image>
 </Panel>
 <!-- Pannel to ask if we are playing Triumph! or Grand Triumph! -->
-<Panel id="panel_wizard_grand_triumph" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+<Panel id="wizard_panel_game" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
-        <Button id="button_game_triumph" onClick="on_button_game_triumph">Triumph!</Button>
-        <Button id="button_game_grand_triumph" onClick="on_button_game_grand_triumph">Grand Triumph!</Button>
+        <Button id="wizard_button_game_triumph" onClick="on_wizard_button_game_triumph">Triumph!</Button>
+        <Button id="wizard_button_game_grand_triumph" onClick="on_wizard_button_game_grand_triumph">Grand Triumph!</Button>
     </VerticalLayout>
 </Panel>
 
-<Panel id="panel_wizard_select_armies" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+<Panel id="wizard_panel_select_armies" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
       <Button id="button_create_army" onClick="create_army_options_menu">Create army</Button>
       <HorizontalLayout>
-        <Button id="button_go_to_wizard_grand_triumph" onClick="on_button_go_to_wizard_grand_triumph">Previous</Button>
-        <Button id="button_go_to_wizard_invader" onClick="on_button_go_to_wizard_invader">Next</Button>
+        <Button id="wizard_button_go_back_to_game" onClick="on_wizard_button_go_back_to_game">Previous</Button>
+        <Button id="wizard_button_go_forward_to_select_troops" onClick="on_wizard_button_go_forward_to_select_troops">Next</Button>
       </HorizontalLayout>
     </VerticalLayout>
 </Panel>
 
-<Panel id="panel_wizard_invader" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+<Panel id="wizard_panel_select_troops" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+    <VerticalLayout>
+      <Text>Select the troops from the armies</Text>
+      <HorizontalLayout>
+        <Button id="wizard_button_go_back_to_select_armies" onClick="on_wizard_button_go_back_to_select_armies">Previous</Button>
+        <Button id="wizard_button_go_forward_to_invader" onClick="on_wizard_button_go_forward_to_invader">Next</Button>
+      </HorizontalLayout>
+    </VerticalLayout>
+</Panel>
+
+<Panel id="wizard_panel_invader" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <TableLayout height="400">
       <Row preferredHeight="30">
         <Cell columnSpan="3">
@@ -102,12 +112,12 @@
       </Row>
       <Row>
         <Cell>
-        <Button id="button_go_to_wizard_select_armies" onClick="on_button_go_to_wizard_select_armies" height="50">Previous</Button>
+        <Button id="wizard_button_go_back_to_select_troops" onClick="on_wizard_button_go_back_to_select_troops" height="50">Previous</Button>
       </Cell>
       <Cell>
       </Cell>
       <Cell>
-        <Button id="button_go_to_select_topography" onClick="on_button_go_to_select_topography" height="50">Next</Button>
+        <Button id="wizard_button_go_forward_to_topography" onClick="on_wizard_button_go_forward_to_topography" height="50">Next</Button>
       </Cell>
       </Row>
     </TableLayout>

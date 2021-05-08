@@ -36,6 +36,7 @@ g_dice_callbacks = {}
 #include scripts/logic_snapping
 #include scripts/logic
 #include scripts/uievents
+#include scripts/wizard
 #include fake_meshwesh/army_data/all_armies
 #include scripts/data/data_models
 
@@ -80,7 +81,7 @@ function onload(saved_data)
     set_last_snapshot()
 
     if g_is_grand_triumph == nil then
-      UI.setAttribute("panel_wizard_grand_triumph", "active", true)
+      wizard_show_panel_game()
     else
       UI.setAttribute("panel_dba_orders", "active", true)
     end
