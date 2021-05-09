@@ -1,21 +1,5 @@
 lu = require('externals/luaunit/luaunit')
-require('scripts/data/data_settings')
-require('scripts/data/data_tables')
-require('scripts/data/data_terrain')
-require('scripts/data/data_troops')
-require('scripts/base_cache')
-require('scripts/log')
-require('scripts/utilities_lua')
-require('scripts/utilities')
-require('scripts/logic_base_obj')
-require('scripts/logic_terrain')
-require('scripts/logic_gizmos')
-require('scripts/logic_spawn_army')
-require('scripts/logic_dead')
-require('scripts/logic_dice')
-require('scripts/logic_history_stack')
-require('scripts/logic')
-require('scripts/uievents')
+require('flatten')
 
 
 
