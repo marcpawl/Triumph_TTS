@@ -527,9 +527,9 @@ function on_toggle_3dterrain(player, value, id)
     end
 end
 
-g_current_table_type = 0
+g_game_settings['current_table_type'] = 0
 function on_toggle_table_type(player, value, id)
-    g_current_table_type = tonumber(value)
+    g_game_settings['current_table_type'] = tonumber(value)
 end
 
 function from_toggle_number_to_table_type(value)
@@ -551,37 +551,71 @@ function from_toggle_number_to_table_type(value)
     elseif value == 7 then
         return 'marsh'
     else
+        print_error("table type is invalid " .. tostring(value))
+        return 'Error'
+    end
+end
+
+function from_toggle_number_to_topography(value)
+    -- Must follow the order of the toggles on main.xml
+    if value == 0 then
+        return 'arable'
+    elseif value == 1 then
+        return 'forest'
+    elseif value == 2 then
+        return 'forest'
+    elseif value == 3 then
+        return 'hilly'
+    elseif value == 4 then
+        return 'dry'
+    elseif value == 5 then
+        return 'steppe'
+    elseif value == 6 then
+        return 'delta'
+    elseif value == 7 then
+        return 'marsh'
+    else
+        print_error("table type is invalid " .. tostring(value))
         return 'Error'
     end
 end
 
 function on_load_table(player, value, id)
-    local type = from_toggle_number_to_table_type(g_current_table_type)
+   local current_table_type = g_game_settings['current_table_type']
+   if current_table_type == nil then
+     print_error("current_table_type is nil")
+   end
+   local type = from_toggle_number_to_table_type(current_table_type)
+   g_game_settings['topography'] = from_toggle_number_to_topography(current_table_type)
 
     if tables[type] == nil then
         type = 'grass'
     end
-    local tex = tables[type]['table_tex']
+   local tex = tables[type]['table_tex']
 
     local is_large = g_current_table_size == 'large'
 
     if g_current_table == nil then
         if g_is_grand_triumph then
+          print(575)
             spawn_table_obj(tables['model_double'], tex, is_large)
         else
+          print(578, "tables['model']=", tables['model'], " tex=", tex, " is_large=", is_large)
             spawn_table_obj(tables['model'], tex, is_large)
         end
+        print(581)
         change_bases_to_terrain(type)
+        print(583)
     else
         print_warning('There\'s already a table spawned')
     end
+    print(586)
 
     UI.setAttribute('panel_dba_table_selection_bg', 'active', false)
     UI.setAttribute('panel_dba_table_selection_bg', 'visibility', '')
     UI.setAttribute('panel_dba_table_selection', 'active', false)
     UI.setAttribute('panel_dba_table_selection', 'visibility', '')
-    UI.setAttribute('button_spawn_table', 'interactable', true)
-    UI.setAttribute('button_create_army', 'interactable', true)
+    print(595)
 end
 
 function on_cancel_load_table(player, value, id)
@@ -589,8 +623,6 @@ function on_cancel_load_table(player, value, id)
     UI.setAttribute('panel_dba_table_selection_bg', 'visibility', '')
     UI.setAttribute('panel_dba_table_selection', 'active', false)
     UI.setAttribute('panel_dba_table_selection', 'visibility', '')
-    UI.setAttribute('button_spawn_table', 'interactable', true)
-    UI.setAttribute('button_create_army', 'interactable', true)
 end
 
 function on_push_back(player, value, id)

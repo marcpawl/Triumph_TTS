@@ -52,7 +52,14 @@ function compute_max_array(array)
     return max
 end
 
+function equals(a,b)
+  return a==b
+end
+
 function find_in_array(table, what, comparison_function)
+    if comparison_function == nil then
+      comparison_function = equals
+    end
     for _,element in ipairs(table) do
         if comparison_function(element, what) then
             return true

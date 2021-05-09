@@ -235,6 +235,131 @@
   </TableLayout>
 </Panel>
 
+<Panel id="wizard_panel_terrain_pieces_roll" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+  <TableLayout>
+    <Row>
+      <Cell columnSpan="3">
+        <Text>Dice for number of pieces of terrain</Text>
+      </Cell>
+    </Row>
+    <Row>
+      <Cell>
+        <Text>Red</Text>
+      </Cell>
+      <Cell>
+      </Cell>
+      <Cell>
+        <Text>Blue</Text>
+      </Cell>
+    </Row>
+    <Row preferredHeight="30">
+      <Cell>
+        <Button id="wizard_button_red_terrain_pieces" onClick="on_wizard_button_red_terrain_pieces_roll" fontSize="20" height="140">Roll</Button>
+      </Cell>
+      <Cell>
+      </Cell>
+      <Cell>
+        <Button id="wizard_button_blue_terrain_pieces" onClick="on_wizard_button_blue_terrain_pieces_roll" fontSize="20" height="140">Roll</Button>
+      </Cell>
+    </Row>
+    <Row preferredHeight="30">
+      <Cell>
+        <Text id="wizard_red_terrain_pieces_roll_value"/>
+      </Cell>
+      <Cell>
+      </Cell>
+      <Cell>
+        <Text id="wizard_blue_terrain_pieces_roll_value"/>
+      </Cell>
+    </Row>
+    <Row>
+      <Cell>
+      <Button id="wizard_button_go_back_to_tactical_advantage" onClick="on_wizard_button_go_back_to_tactical_advantage" height="50">Previous</Button>
+    </Cell>
+    <Cell>
+    </Cell>
+    <Cell>
+      <Button id="wizard_button_go_forward_to_select_terrain_nb_peices" onClick="on_wizard_button_go_forward_to_select_terrain_nb_pieces" height="50">Next</Button>
+    </Cell>
+    </Row>
+  </TableLayout>
+</Panel>
+
+<Panel id="wizard_panel_select_terrain_nb_pieces" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+  <VerticalLayout>
+    <TableLayout>
+      <Row>
+        <Cell>
+          <Text>Advantaged:</Text>
+        </Cell>
+        <Cell>
+          <Text id="wizard_terrain_advantaged_player"></Text>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Text>Topography:</Text>
+        </Cell>
+        <Cell>
+          <Text id="wizard_topography"></Text>
+        </Cell>
+      </Row>
+    </TableLayout>
+    <Text>Number of pieces:</Text>
+    <ToggleGroup id="wizard_togglegroup_terrain_nb_pieces" onValueChanged="on_wizard_togglegroup_terrain_nb_pieces">
+       <TableLayout>
+        <Row>
+          <Cell dontUseTableCellBackground="true">
+            <Toggle fontSize="16" id="wizard_modified_terrain_score_2">2</Toggle>
+          </Cell>
+          <Cell dontUseTableCellBackground="true">
+              <Toggle fontSize="16" id="wizard_modified_terrain_score_3">3</Toggle>
+          </Cell>
+          <Cell dontUseTableCellBackground="true">
+                <Toggle fontSize="16" id="wizard_modified_terrain_score_4">4</Toggle>
+          </Cell>
+        </Row>
+        <Row>
+          <Cell dontUseTableCellBackground="true">
+            <Toggle fontSize="16" id="wizard_modified_terrain_score_5">5</Toggle>
+          </Cell>
+          <Cell dontUseTableCellBackground="true">
+            <Toggle fontSize="16" id="wizard_modified_terrain_score_6">6</Toggle>
+          </Cell>
+          <Cell dontUseTableCellBackground="true">
+              <Toggle fontSize="16" id="wizard_modified_terrain_score_7">7</Toggle>
+          </Cell>
+        </Row>
+        <Row>
+          <Cell dontUseTableCellBackground="true">
+                <Toggle fontSize="16" id="wizard_modified_terrain_score_8">8</Toggle>
+          </Cell>
+          <Cell dontUseTableCellBackground="true">
+            <Toggle fontSize="16" id="wizard_modified_terrain_score_9">9</Toggle>
+          </Cell>
+          <Cell dontUseTableCellBackground="true">
+            <Toggle fontSize="16" id="wizard_modified_terrain_score_10">10</Toggle>
+          </Cell>
+        </Row>
+        <Row>
+          <Cell dontUseTableCellBackground="true">
+                <Toggle fontSize="16" id="wizard_modified_terrain_score_11">11</Toggle>
+          </Cell>
+          <Cell dontUseTableCellBackground="true">
+            <Toggle fontSize="16" id="wizard_modified_terrain_score_12">12</Toggle>
+          </Cell>
+        </Row>
+      </TableLayout>
+    </ToggleGroup>
+    <Text id="wizard_terrain_pieces" fontSize="12"></Text>
+    <HorizontalLayout>
+      <Button id="wizard_button_go_back_to_tactical_advantage" onClick="on_wizard_button_go_back_to_tactical_advantage" height="50">Previous</Button>
+      <Button id="wizard_button_go_forward_to_select_terrain" onClick="on_wizard_button_go_forward_to_select_terrain" height="50">Next</Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Panel>
+
+
 <Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
         <Slider id="slider_MUs" minValue="0" maxValue="8" value="4" colors="#00000000|#00000000|#00000000|#00000000" backgroundcolor="#FFFFFFF" onValueChanged="slider_MUs_changed"></Slider>
@@ -250,7 +375,6 @@
         <Toggle id="toggle_snapping" isOn="true" onValueChanged="on_toggle_snapping">Snap bases</Toggle>
     </VerticalLayout>
 </Panel>
-
 
 
 <!-- TODO Prettify -->

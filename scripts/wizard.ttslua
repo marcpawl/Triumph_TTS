@@ -7,6 +7,8 @@ wizard_panels = {
   "wizard_panel_invader",
   "wizard_panel_topography",
   "wizard_panel_tactical_advantage",
+  "wizard_panel_terrain_pieces_roll",
+  "wizard_panel_select_terrain_nb_pieces"
 }
 
 function wizard_show_panel(panel_name)
@@ -42,6 +44,14 @@ end
 
 function wizard_show_panel_tactical_advantage()
   wizard_show_panel("wizard_panel_tactical_advantage")
+end
+
+function wizard_show_panel_terrain_pieces_roll()
+  wizard_show_panel("wizard_panel_terrain_pieces_roll")
+end
+
+function wizard_show_panel_select_terrain_nb_pieces()
+  wizard_show_panel("wizard_panel_select_terrain_nb_pieces")
 end
 
 function on_wizard_button_game_triumph()
@@ -112,7 +122,8 @@ end
 
 function on_wizard_button_go_forward_to_terrain_pieces()
   wizard_panel_exit_tactical_advantage()
-  wizard_hide()
+  wizard_panel_enter_terrain_pieces()
+  wizard_show_panel_terrain_pieces_roll()
 end
 
 function wizard_panel_enter_tactical_advantage()
@@ -130,6 +141,35 @@ end
 function wizard_panel_exit_tactical_advantage()
   g_dice_callbacks["tactical_advantage_dice_rolled"] = nil
 end
+
+function on_wizard_button_go_back_to_tactical_advantage()
+  wizard_panel_exit_terrain_pieces()
+  wizard_panel_enter_tactical_advantage()
+  wizard_show_panel_tactical_advantage()
+end
+
+function on_wizard_button_go_forward_to_select_terrain()
+  wizard_panel_exit_terrain_pieces()
+  -- TODO
+end
+
+function wizard_panel_enter_terrain_pieces()
+  g_dice_callbacks["terrain_pieces_dice_rolled"] = on_terrain_pieces_dice_rolled
+end
+
+function wizard_panel_exit_terrain_pieces()
+  g_dice_callbacks["terrain_pieces_dice_rolled"] = nil
+end
+
+function wizard_panel_enter_select_terrain_nb_pieces()
+  update_wizard_panel_select_terrain_nb_pieces()
+end
+
+function on_wizard_button_go_forward_to_select_terrain_nb_pieces()
+  wizard_show_panel_select_terrain_nb_pieces()
+  wizard_panel_enter_select_terrain_nb_pieces()
+end
+
 
 -- Update the UI element for an armies invasion rating
 -- id: identifier of the UI element
@@ -294,8 +334,10 @@ function wizard_update_flank_march_for_color(color)
     local wizard_id = "wizard_" .. flank_id
     if flank then
       UI.setAttribute(wizard_id, "text", "Flank March")
+      print_info(color .. " is eligible for flank march.")
     else
       UI.setAttribute(wizard_id, "text", "")
+      print_info("No flank march for " .. color)
     end
   end
 end
@@ -324,8 +366,10 @@ function do_update_tactical_advantage_wizard_page()
   UI.setAttribute("wizard_text_tatical_advantage_score", "text", tostring(advantage))
   if red_score > blue_score then
      UI.setAttribute("wizard_text_tatical_advantage_player", "text", "Red tactical advantage: ")
+     g_game_settings['tactical_advantage'] = "red"
   else
     UI.setAttribute("wizard_text_tatical_advantage_player", "text", "Blue tactical advantage: ")
+    g_game_settings['tactical_advantage'] = "blue"
   end
 end
 
@@ -367,4 +411,121 @@ function on_tactical_advantage_dice_rolled(dice_color, value)
   local id = "wizard_" .. dice_color .. "_maneuver_roll_value"
   UI.setAttribute(id, "text", tostring(value))
   update_tactical_advantage_wizard_page()
+end
+
+function on_wizard_button_red_terrain_pieces_roll()
+  roll_dice('red')
+end
+
+function on_wizard_button_blue_terrain_pieces_roll()
+  roll_dice('blue')
+end
+
+function on_terrain_pieces_dice_rolled(dice_color, value)
+   local id = "wizard_" .. dice_color .. "_terrain_pieces_roll_value"
+   UI.setAttribute(id, "text", tostring(value))
+   update_terrain_pieces_roll_page()
+end
+
+
+function update_terrain_pieces_roll_page()
+  -- Need to wait one frame for the UI elements to update
+  -- before we can query them
+  Wait.frames(
+    function()
+      do_update_terrain_pieces_wizard_page()
+    end,
+    1)
+end
+
+function do_update_terrain_pieces_wizard_page()
+  local red_dice_id = "wizard_red_terrain_pieces_roll_value"
+  local blue_dice_id = "wizard_blue_terrain_pieces_roll_value"
+  local red_dice = get_ui_numeric_value(red_dice_id)
+  local blue_dice = get_ui_numeric_value(blue_dice_id)
+  if red_dice == nil or blue_dice == nil then
+    return
+  end
+  g_game_settings['terrain_pieces_dice_roll'] = red_dice + blue_dice
+end
+
+g_nb_terrain_pieces = {}
+g_nb_terrain_pieces['steppe'] = {0,1,1,1,2,2,3,3,4,4,5,5}
+g_nb_terrain_pieces['dry'] = g_nb_terrain_pieces['steepe']
+g_nb_terrain_pieces['forest'] = {0,2,3,3,4,4,5,5,6,6,6,6}
+g_nb_terrain_pieces['marsh']  = g_nb_terrain_pieces['forest']
+g_nb_terrain_pieces['arable'] = {0,1,2,2,2,3,3,4,4,5,5,6,6}
+g_nb_terrain_pieces['hilly'] = g_nb_terrain_pieces['arable']
+g_nb_terrain_pieces['delta'] = g_nb_terrain_pieces['arable']
+g_coast_allowed={}
+g_coast_allowed[4]=true
+g_coast_allowed[7]=true
+g_coast_allowed[10]=true
+g_compulsory_terrain= {}
+g_compulsory_terrain['arable']='village'
+g_compulsory_terrain['forest']='woods'
+g_compulsory_terrain['hilly']='steep hills'
+g_compulsory_terrain['steppe']='gentle hills'
+g_compulsory_terrain['dry']='rough'
+g_compulsory_terrain['marsh']='marsh'
+g_compulsory_terrain['delta']='coast'
+g_optional_terrain= {}
+g_optional_terrain['arable']={'stream', 'steep hills', 'gentle hills', 'woods', 'wooded hills', 'coast', 'rough', 'ploughed fields'}
+g_optional_terrain['forest']={'stream', 'marsh', 'wooded hills'}
+g_optional_terrain['hilly']={'stream', 'woods', 'wooded hills'}
+g_optional_terrain['steppe']={'stream', 'rough', 'woods'}
+g_optional_terrain['dry']={'dunes', 'steep hills', 'oasis'}
+g_optional_terrain['marsh']={'woods', 'stream', 'coast'}
+g_optional_terrain['delta']={'marsh', 'dunes', 'village'}
+
+function update_wizard_panel_select_terrain_nb_pieces()
+  local topography_name = g_game_settings[ 'topography']
+  UI.setAttribute('wizard_terrain_advantaged_player', 'text', g_game_settings['tactical_advantage'])
+  UI.setAttribute('wizard_topography', 'text', topography_name)
+  print(485, "g_game_settings")
+  table_print(g_game_settings)
+  local min = g_game_settings['terrain_pieces_dice_roll'] - g_game_settings["tatical_advantage_score"]
+  local max = g_game_settings['terrain_pieces_dice_roll'] + g_game_settings["tatical_advantage_score"]
+  if min < 2 then
+    min = 2
+  end
+  if max > 12 then
+    max = 12
+  end
+  print(495, " min=", min, " max=", max)
+  for nb=2,12 do
+    print(497)
+    local enabled = (nb >= min) and (nb <= max)
+    print(499, " enabled=", enabled)
+    local id = "wizard_modified_terrain_score_" .. tostring(nb)
+    print(501, "id=", id)
+    local nb_pieces = g_nb_terrain_pieces[topography_name][nb]
+    print(503, "nb_pieces=", nb_pieces)
+    local coast =  g_coast_allowed[nb]
+    if coast then
+      print("coast")
+      print("compulsary ",  (g_compulsory_terrain[topography_name] == 'coast') )
+      print("optional ",  find_in_array(g_optional_terrain[topography_name], 'coast'))
+    end
+    local text
+    if coast then
+      text = tostring(nb_pieces) .. "(Coast)"
+    else
+      text = tostring(nb_pieces)
+    end
+
+    UI.setAttribute(id, "text", text)
+    UI.setAttribute(id, "active", enabled)
+  end
+
+  print(521)
+  local terrain = g_compulsory_terrain[topography_name]
+  print(523, "terrain=", terrain)
+  for _,v in pairs(g_optional_terrain[topography_name]) do
+      print(525, v)
+    terrain = terrain .. ", " .. v
+  end
+  print(528, "terrain=", terrain)
+  UI.setAttribute("wizard_terrain_pieces", "text", terrain)
+
 end
