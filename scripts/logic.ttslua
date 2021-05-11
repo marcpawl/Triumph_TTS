@@ -719,7 +719,10 @@ end
 -- from the position with the given angle and from the relative position
 -- (a string which is left or right).
 -- The future position will be drawn!
+--
 -- Returns the movement cost if possible (>=0), -1 if its impossible (invalid group)
+-- distance is in inches.`  The distance is the maximum linear distance
+-- of any corner from its initial position.  See 34.3.b
 g_current_wheel_group = nil
 g_current_wheel_transforms = nil
 g_current_wheel_newtransforms = nil
@@ -799,7 +802,7 @@ function wheel_group(objs, angle, direction)
             new_transforms[furthest_element]['corners']['topright'])
     end
     g_current_wheel_newtransforms = new_transforms
-    return from_in_to_mu(max_movement_distance)
+    return max_movement_distance
 end
 
 function apply_transform_obj(base_obj, old_transform, new_transform)
