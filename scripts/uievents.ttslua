@@ -512,7 +512,9 @@ g_is_grand_triumph = nil
 function dice_callback(values)
   local color = values[1]
   local value = values[2]
-  for _,callback in pairs(g_dice_callbacks) do
+  print("916 dice_callback ", color, " ", value)
+  for key,callback in pairs(g_dice_callbacks) do
+    print("917 calling dice callback function ", key, ' ', callback)
     callback(color, value)
   end
 end
@@ -597,7 +599,9 @@ function on_load_table(player, value, id)
 
     if g_current_table == nil then
         if g_is_grand_triumph then
-            spawn_table_obj(tables['model_double'], tex, is_large)
+          spawn_table_obj(tables['model_double'], tex, is_large)
+        else
+          spawn_table_obj(tables['model'], tex, is_large)
         end
         change_bases_to_terrain(type)
     else

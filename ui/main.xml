@@ -21,8 +21,8 @@
     <VerticalLayout>
       <Button id="button_create_army" onClick="create_army_options_menu">Create army</Button>
       <HorizontalLayout>
-        <Button id="wizard_button_go_back_to_game" onClick="on_wizard_button_go_back_to_game">Previous</Button>
-        <Button id="wizard_button_go_forward_to_select_troops" onClick="on_wizard_button_go_forward_to_select_troops">Next</Button>
+        <Button id="wizard_panel_select_armies_previous" onClick="on_wizard_panel_select_armies_previous">Previous</Button>
+        <Button id="wizard_panel_select_armies_next" onClick="on_wizard_panel_select_armies_next">Next</Button>
       </HorizontalLayout>
     </VerticalLayout>
 </Panel>
@@ -117,12 +117,12 @@
       </Row>
       <Row>
         <Cell>
-        <Button id="wizard_button_go_back_to_select_troops" onClick="on_wizard_button_go_back_to_select_troops" height="50">Previous</Button>
+        <Button id="wizard_panel_invader_previous" onClick="on_wizard_panel_terrain_pieces_roll_previous" height="50">Previous</Button>
       </Cell>
       <Cell>
       </Cell>
       <Cell>
-        <Button id="wizard_button_go_forward_to_topography" onClick="on_wizard_button_go_forward_to_topography" height="50">Next</Button>
+        <Button id="wizard_panel_invader_next" onClick="on_wizard_panel_invader_next" height="50">Next</Button>
       </Cell>
       </Row>
     </TableLayout>
@@ -236,7 +236,7 @@
     <Cell>
     </Cell>
     <Cell>
-      <Button id="wizard_button_go_forward_to_terrain_pieces" onClick="on_wizard_button_go_forward_to_terrain_pieces" height="50">Next</Button>
+      <Button id="wizard_panel_tactical_advantage_next" onClick="on_wizard_panel_tactical_advantage_next" height="50">Next</Button>
     </Cell>
     </Row>
   </TableLayout>
@@ -286,7 +286,7 @@
     <Cell>
     </Cell>
     <Cell>
-      <Button id="wizard_button_go_forward_to_select_terrain_nb_peices" onClick="on_wizard_button_go_forward_to_select_terrain_nb_pieces" height="50">Next</Button>
+      <Button id="wizard_panel_terrain_pieces_roll_next" onClick="on_wizard_panel_terrain_pieces_roll_next" height="50">Next</Button>
     </Cell>
     </Row>
   </TableLayout>
@@ -361,11 +361,23 @@
     <Text id="wizard_terrain_pieces" fontSize="12"></Text>
     <HorizontalLayout>
       <Button id="wizard_button_go_back_to_tactical_advantage" onClick="on_wizard_button_go_back_to_tactical_advantage" height="50">Previous</Button>
-      <Button id="wizard_button_go_forward_to_select_terrain" onClick="on_wizard_button_go_forward_to_select_terrain" height="50">Next</Button>
+      <Button id="wizard_button_go_forward_to_terrain_pieces" onClick="on_wizard_button_go_forward_to_order_terrain_pieces" height="50">Next</Button>
     </HorizontalLayout>
   </VerticalLayout>
 </Panel>
 
+
+<Panel id="wizard_panel_order_terrain_pieces" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+  <VerticalLayout>
+    <Text>Order terrain pieces, large before small.</Text>
+    <Text>Draw terrain card.</Text>
+    <Text>Place terrain pieces.</Text>
+    <HorizontalLayout>
+      <Button id="wizard_button_go_back_to_terrain_nb_pieces" onClick="on_wizard_button_go_back_to_terrain_nb_pieces" height="50">Previous</Button>
+      <Button id="wizard_button_go_forward_to_place_troops" onClick="on_wizard_button_go_forward_to_place_troops" height="50">Next</Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Panel>
 
 <Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
