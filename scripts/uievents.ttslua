@@ -597,25 +597,18 @@ function on_load_table(player, value, id)
 
     if g_current_table == nil then
         if g_is_grand_triumph then
-          print(575)
             spawn_table_obj(tables['model_double'], tex, is_large)
-        else
-          print(578, "tables['model']=", tables['model'], " tex=", tex, " is_large=", is_large)
-            spawn_table_obj(tables['model'], tex, is_large)
         end
-        print(581)
         change_bases_to_terrain(type)
-        print(583)
     else
         print_warning('There\'s already a table spawned')
     end
-    print(586)
 
     UI.setAttribute('panel_dba_table_selection_bg', 'active', false)
     UI.setAttribute('panel_dba_table_selection_bg', 'visibility', '')
     UI.setAttribute('panel_dba_table_selection', 'active', false)
     UI.setAttribute('panel_dba_table_selection', 'visibility', '')
-    print(595)
+    update_topography_wizard_page()
 end
 
 function on_cancel_load_table(player, value, id)
@@ -623,6 +616,7 @@ function on_cancel_load_table(player, value, id)
     UI.setAttribute('panel_dba_table_selection_bg', 'visibility', '')
     UI.setAttribute('panel_dba_table_selection', 'active', false)
     UI.setAttribute('panel_dba_table_selection', 'visibility', '')
+    update_topography_wizard_page()
 end
 
 function on_push_back(player, value, id)

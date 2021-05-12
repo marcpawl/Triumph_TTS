@@ -81,7 +81,7 @@ function onload(saved_data)
     set_last_snapshot()
 
     if g_is_grand_triumph == nil then
-      wizard_show_panel_game()
+      wizard_show()
     else
       UI.setAttribute("panel_dba_orders", "active", true)
     end

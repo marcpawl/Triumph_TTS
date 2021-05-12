@@ -7,8 +7,13 @@
 <!-- Pannel to ask if we are playing Triumph! or Grand Triumph! -->
 <Panel id="wizard_panel_game" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
-        <Button id="wizard_button_game_triumph" onClick="on_wizard_button_game_triumph">Triumph!</Button>
-        <Button id="wizard_button_game_grand_triumph" onClick="on_wizard_button_game_grand_triumph">Grand Triumph!</Button>
+      <ToggleGroup id="wizard_togglegroup_game" onValueChanged="on_wizard_togglegroup_game">
+        <VerticalLayout>
+          <Toggle fontSize="16" id="wizard_togglegroup_game_triumph">Triumph!</Toggle>
+          <Toggle fontSize="16" id="wizard_togglegroup_game_grand_triumph">Grand Triumph!</Toggle>
+        </VerticalLayout>
+      </ToggleGroup>
+      <Button id="wizard_panel_game_next" onClick="on_wizard_button_forward_to_select_armies">Next</Button>
     </VerticalLayout>
 </Panel>
 
@@ -125,6 +130,8 @@
 
 <Panel id="wizard_panel_topography" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
+      <Text>Defender: </Text>
+      <Text id="wizard_panel_topography_defender"></Text>
       <Button id="wizard_button_spawn_table" onClick="on_wizard_button_spawn_table">Spawn topography</Button>
       <HorizontalLayout>
         <Button id="wizard_button_go_back_to_invader" onClick="on_wizard_button_go_back_to_invader">Previous</Button>
