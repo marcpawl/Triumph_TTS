@@ -313,7 +313,7 @@
       </Row>
     </TableLayout>
     <Text>Number of pieces:</Text>
-    <ToggleGroup id="wizard_togglegroup_terrain_nb_pieces" onValueChanged="on_wizard_togglegroup_terrain_nb_pieces">
+    <ToggleGroup id="wizard_panel_select_terrain_nb_pieces_toggle_group" onValueChanged="on_wizard_panel_select_terrain_nb_pieces_toggle_group">
        <TableLayout>
         <Row>
           <Cell dontUseTableCellBackground="true">
@@ -360,8 +360,8 @@
     </ToggleGroup>
     <Text id="wizard_terrain_pieces" fontSize="12"></Text>
     <HorizontalLayout>
-      <Button id="wizard_button_go_back_to_tactical_advantage" onClick="on_wizard_button_go_back_to_tactical_advantage" height="50">Previous</Button>
-      <Button id="wizard_button_go_forward_to_terrain_pieces" onClick="on_wizard_button_go_forward_to_order_terrain_pieces" height="50">Next</Button>
+      <Button id="wizard_panel_select_terrain_nb_pieces_previous" onClick="on_wizard_panel_select_terrain_nb_pieces_previous" height="50">Previous</Button>
+      <Button id="wizard_panel_select_terrain_nb_pieces_next" onClick="on_wizard_panel_select_terrain_nb_pieces_next" height="50">Next</Button>
     </HorizontalLayout>
   </VerticalLayout>
 </Panel>

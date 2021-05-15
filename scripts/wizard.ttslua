@@ -314,7 +314,111 @@ end
 
 function wizard_show_panel_select_terrain_nb_pieces()
   wizard_show_panel("wizard_panel_select_terrain_nb_pieces")
+  update_wizard_panel_select_terrain_nb_pieces()
 end
+
+function on_wizard_panel_select_terrain_nb_pieces_previous()
+  wizard_show_panel_terrain_pieces_roll()
+end
+
+function on_wizard_panel_select_terrain_nb_pieces_next()
+  wizard_show_panel_order_terrain_pieces()
+end
+
+
+g_nb_terrain_pieces = {}
+g_nb_terrain_pieces['steppe'] = {0,1,1,1,2,2,3,3,4,4,5,5}
+g_nb_terrain_pieces['dry'] = g_nb_terrain_pieces['steppe']
+g_nb_terrain_pieces['forest'] = {0,2,3,3,4,4,5,5,6,6,6,6}
+g_nb_terrain_pieces['marsh']  = g_nb_terrain_pieces['forest']
+g_nb_terrain_pieces['arable'] = {0,1,2,2,2,3,3,4,4,5,5,6,6}
+g_nb_terrain_pieces['hilly'] = g_nb_terrain_pieces['arable']
+g_nb_terrain_pieces['delta'] = g_nb_terrain_pieces['arable']
+g_coast_allowed={}
+g_coast_allowed[4]=true
+g_coast_allowed[7]=true
+g_coast_allowed[10]=true
+g_compulsory_terrain= {}
+g_compulsory_terrain['arable']='village'
+g_compulsory_terrain['forest']='woods'
+g_compulsory_terrain['hilly']='steep hills'
+g_compulsory_terrain['steppe']='gentle hills'
+g_compulsory_terrain['dry']='rough'
+g_compulsory_terrain['marsh']='marsh'
+g_compulsory_terrain['delta']='coast'
+g_optional_terrain= {}
+g_optional_terrain['arable']={'stream', 'steep hills', 'gentle hills', 'woods', 'wooded hills', 'coast', 'rough', 'ploughed fields'}
+g_optional_terrain['forest']={'stream', 'marsh', 'wooded hills'}
+g_optional_terrain['hilly']={'stream', 'woods', 'wooded hills'}
+g_optional_terrain['steppe']={'stream', 'rough', 'woods'}
+g_optional_terrain['dry']={'dunes', 'steep hills', 'oasis'}
+g_optional_terrain['marsh']={'woods', 'stream', 'coast'}
+g_optional_terrain['delta']={'marsh', 'dunes', 'village'}
+
+function update_wizard_panel_select_terrain_nb_pieces()
+  local topography_name = g_game_settings[ 'topography']
+  UI.setAttribute('wizard_terrain_advantaged_player', 'text', g_game_settings['tactical_advantage'])
+  UI.setAttribute('wizard_topography', 'text', topography_name)
+  local min = g_game_settings['terrain_pieces_dice_roll'] - g_game_settings["tatical_advantage_score"]
+  local max = g_game_settings['terrain_pieces_dice_roll'] + g_game_settings["tatical_advantage_score"]
+  if min < 2 then
+    min = 2
+  end
+  if max > 12 then
+    max = 12
+  end
+  for nb=2,12 do
+    local enabled = (nb >= min) and (nb <= max)
+    local id = "wizard_modified_terrain_score_" .. tostring(nb)
+    local nb_pieces = g_nb_terrain_pieces[topography_name][nb]
+    local coast =  g_coast_allowed[nb] and
+      ( (g_compulsory_terrain[topography_name] == "coast") or
+        (find_in_array(g_optional_terrain[topography_name], "coast"))
+      )
+    local text
+    if coast then
+      text = tostring(nb_pieces) .. "(Coast)"
+    else
+      text = tostring(nb_pieces)
+    end
+
+    UI.setAttribute(id, "text", text)
+    UI.setAttribute(id, "active", enabled)
+  end
+
+  local terrain = g_compulsory_terrain[topography_name]
+  for _,v in pairs(g_optional_terrain[topography_name]) do
+    terrain = terrain .. ", " .. v
+  end
+  UI.setAttribute("wizard_terrain_pieces", "text", terrain)
+
+  local next_enabled = (g_game_settings['terrain_nb_pieces_selected_value'] ~= nil)
+  UI.setAttribute("wizard_panel_select_terrain_nb_pieces_next", "interactable",
+    next_enabled)
+  if g_game_settings['terrain_nb_pieces_selected_value'] ~= nil then
+    local toggle_id = "wizard_modified_terrain_score_" .. tostring(g_game_settings['terrain_nb_pieces_selected_value']+1)
+    UI.setAttribute(toggle_id, "isOn", true)
+  end
+end
+
+
+function on_wizard_panel_select_terrain_nb_pieces_toggle_group(player, value, id)
+  g_game_settings['terrain_nb_pieces_selected_value'] = value
+  update_wizard_panel_select_terrain_nb_pieces()
+end
+
+
+
+-------------------
+-------------------  wizard_panel_order_terrain_pieces
+-------------------
+
+
+
+function wizard_show_panel_order_terrain_pieces()
+  wizard_show_panel("wizard_panel_order_terrain_pieces")
+end
+
 
 -------------------
 -------------------
@@ -366,9 +470,6 @@ function on_wizard_button_go_forward_to_select_terrain()
 end
 
 
-function wizard_panel_enter_select_terrain_nb_pieces()
-  update_wizard_panel_select_terrain_nb_pieces()
-end
 
 function on_wizard_button_go_forward_to_select_terrain_nb_pieces()
   wizard_show_panel_select_terrain_nb_pieces()
@@ -583,90 +684,7 @@ function on_tactical_advantage_dice_rolled(dice_color, value)
 end
 
 
-g_nb_terrain_pieces = {}
-g_nb_terrain_pieces['steppe'] = {0,1,1,1,2,2,3,3,4,4,5,5}
-g_nb_terrain_pieces['dry'] = g_nb_terrain_pieces['steepe']
-g_nb_terrain_pieces['forest'] = {0,2,3,3,4,4,5,5,6,6,6,6}
-g_nb_terrain_pieces['marsh']  = g_nb_terrain_pieces['forest']
-g_nb_terrain_pieces['arable'] = {0,1,2,2,2,3,3,4,4,5,5,6,6}
-g_nb_terrain_pieces['hilly'] = g_nb_terrain_pieces['arable']
-g_nb_terrain_pieces['delta'] = g_nb_terrain_pieces['arable']
-g_coast_allowed={}
-g_coast_allowed[4]=true
-g_coast_allowed[7]=true
-g_coast_allowed[10]=true
-g_compulsory_terrain= {}
-g_compulsory_terrain['arable']='village'
-g_compulsory_terrain['forest']='woods'
-g_compulsory_terrain['hilly']='steep hills'
-g_compulsory_terrain['steppe']='gentle hills'
-g_compulsory_terrain['dry']='rough'
-g_compulsory_terrain['marsh']='marsh'
-g_compulsory_terrain['delta']='coast'
-g_optional_terrain= {}
-g_optional_terrain['arable']={'stream', 'steep hills', 'gentle hills', 'woods', 'wooded hills', 'coast', 'rough', 'ploughed fields'}
-g_optional_terrain['forest']={'stream', 'marsh', 'wooded hills'}
-g_optional_terrain['hilly']={'stream', 'woods', 'wooded hills'}
-g_optional_terrain['steppe']={'stream', 'rough', 'woods'}
-g_optional_terrain['dry']={'dunes', 'steep hills', 'oasis'}
-g_optional_terrain['marsh']={'woods', 'stream', 'coast'}
-g_optional_terrain['delta']={'marsh', 'dunes', 'village'}
-
-function update_wizard_panel_select_terrain_nb_pieces()
-  local topography_name = g_game_settings[ 'topography']
-  UI.setAttribute('wizard_terrain_advantaged_player', 'text', g_game_settings['tactical_advantage'])
-  UI.setAttribute('wizard_topography', 'text', topography_name)
-  print(485, "g_game_settings")
-  table_print(g_game_settings)
-  local min = g_game_settings['terrain_pieces_dice_roll'] - g_game_settings["tatical_advantage_score"]
-  local max = g_game_settings['terrain_pieces_dice_roll'] + g_game_settings["tatical_advantage_score"]
-  if min < 2 then
-    min = 2
-  end
-  if max > 12 then
-    max = 12
-  end
-  print(495, " min=", min, " max=", max)
-  for nb=2,12 do
-    print(497)
-    local enabled = (nb >= min) and (nb <= max)
-    print(499, " enabled=", enabled)
-    local id = "wizard_modified_terrain_score_" .. tostring(nb)
-    print(501, "id=", id)
-    local nb_pieces = g_nb_terrain_pieces[topography_name][nb]
-    print(503, "nb_pieces=", nb_pieces)
-    local coast =  g_coast_allowed[nb]
-    if coast then
-      print("coast")
-      print("compulsary ",  (g_compulsory_terrain[topography_name] == 'coast') )
-      print("optional ",  find_in_array(g_optional_terrain[topography_name], 'coast'))
-    end
-    local text
-    if coast then
-      text = tostring(nb_pieces) .. "(Coast)"
-    else
-      text = tostring(nb_pieces)
-    end
-
-    UI.setAttribute(id, "text", text)
-    UI.setAttribute(id, "active", enabled)
-  end
-
-  print(521)
-  local terrain = g_compulsory_terrain[topography_name]
-  print(523, "terrain=", terrain)
-  for _,v in pairs(g_optional_terrain[topography_name]) do
-      print(525, v)
-    terrain = terrain .. ", " .. v
-  end
-  print(528, "terrain=", terrain)
-  UI.setAttribute("wizard_terrain_pieces", "text", terrain)
-end
 
 function wizard_panel_terrain_pieces_roll_next()
   wizard_show_panel_order_terrain_pieces()
-end
-
-function wizard_show_panel_order_terrain_pieces()
-  wizard_show_panel("wizard_panel_order_terrain_pieces")
 end
