@@ -464,10 +464,6 @@
 </Panel>
 
 
-<!-- TODO Prettify -->
-<Panel id="panel_current_movement" color="#dddddd" width="400" height="70" rectAlignment="LowerCenter" offsetXY="0 200" active="false" raycastTarget="true">
-    <Text id="text_current_movement_MUs" fontSize="24">Current movement: 0 MUs</Text>
-</Panel>
 
 <Panel id="panel_dba_pip" width="260" height="100" color="#00000000" outline="#00000000" outlineSize="2" rectAlignment="LowerCenter" raycastTarget="true">
     <Image image="pip_counter_bg_v5"></Image>
@@ -492,6 +488,12 @@
         </Panel>
         <Text id="text_dead_blue" showAnimation="Grow" ignoreLayout="true" fontSize="56" position="191 -7" color="#2e82ec">0</Text>
     </HorizontalLayout>
+</Panel>
+
+<!-- TODO Prettify -->
+<!-- Placed in XML file after panel_dba_pip so it will use the same location while it is shown. -->
+<Panel id="panel_current_movement" color="#dddddd" width="400" height="100" rectAlignment="LowerCenter"  active="false" raycastTarget="true">
+    <Text id="text_current_movement_MUs" fontSize="24">Current movement: 0 MUs</Text>
 </Panel>
 
 <Panel id="panel_dba_table_selection_bg" width="600" height="500" rectAlignment="MiddleCenter" active="false" raycastTarget="true">
