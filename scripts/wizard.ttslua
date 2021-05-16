@@ -96,16 +96,23 @@ function wizard_show_panel_select_troops()
   wizard_show_panel("wizard_panel_select_troops")
 end
 
+
+function on_wizard_panel_select_troops_previous()
+  wizard_show_panel_select_armies()
+end
+
+
+function on_wizard_panel_select_troops_next()
+  wizard_show_panel_invader()
+end
+
+
 -------------------
 ------------------- Invader
 -------------------
 
 function wizard_show_panel_invader()
   wizard_show_panel("wizard_panel_invader")
-  update_invasion_wizard_page()
-end
-
-function wizard_panel_enter_invader()
   g_wizard_exit_panel_fn = wizard_panel_exit_invader
   set_invasion_rating_selected("red_invasion_rating", g_game_settings["red_invasion_rating"])
   set_invasion_rating_selected("blue_invasion_rating", g_game_settings["blue_invasion_rating"])
@@ -113,6 +120,7 @@ function wizard_panel_enter_invader()
   g_dice_callbacks["blue_invasion_dice_rolled"] = on_invasion_dice_rolled
   update_invasion_wizard_page()
 end
+
 
 function wizard_panel_exit_invader()
   g_dice_callbacks["red_invasion_dice_rolled"] = nil
@@ -129,50 +137,39 @@ end
 -- color: "red" or "blue"
 -- return: total or nil if the value is not yet ready
 function update_invasion_wizard_score(color)
-  print("131 IN update_invasion_wizard_score")
   local score_id = color .. "_invasion_score"
   local dice_id = "text_" .. color .. "_invasion_roll_value"
   local dice_str = UI.getAttribute(dice_id, "text")
   local dice = tonumber(dice_str)
   if dice == nil then
     UI.setAttribute(score_id, "text", "")
-    print("139 OUT update_invasion_wizard_score nil")
     return nil
   end
   local rating_id = color .. "_invasion_rating"
   local rating = g_game_settings[rating_id]
   if rating == nil then
     UI.setAttribute(score_id, "text", "")
-    print("146 OUT update_invasion_wizard_score nil")
     return nil
   end
 
   local score = dice + rating
   UI.setAttribute(score_id, "text", tostring(score))
-  print("152 OUT update_invasion_wizard_score ", score)
   return score
 end
 
 function do_update_invasion_wizard_page()
-  print("153 IN do_update_invasion_wizard_page")
   local red_score = update_invasion_wizard_score("red")
   local blue_score = update_invasion_wizard_score("blue")
   if red_score == nil or blue_score == nil then
     UI.setAttribute("invader", "text", "")
     UI.setAttribute("wizard_panel_invader_next", "interactable", false)
-    print("159 OUT do_update_invasion_wizard_page")
     return
   end
   if red_score == blue_score then
-    print("167 tied")
     UI.setAttribute("invader", "text", "tie, roll again")
-    print(169)
     UI.setAttribute("text_blue_invasion_roll_value", "text", "")
-    print(171)
     UI.setAttribute("text_red_invasion_roll_value", "text", "")
-    print(173)
     UI.setAttribute("wizard_panel_invader_next", "interactable", false)
-    print("175 OUT do_update_invasion_wizard_page")
     return
   end
   UI.setAttribute("wizard_panel_invader_next", "interactable", true)
@@ -180,13 +177,11 @@ function do_update_invasion_wizard_page()
     UI.setAttribute("invader", "text", "Red invades")
     g_game_settings['invader'] = "red"
     print_info("Red invades")
-    print("183 OUT do_update_invasion_wizard_page")
     return
   end
   UI.setAttribute("invader", "text", "Blue invades")
   g_game_settings['invader'] = "blue"
   print_info("Blue invades")
-  print("189 OUT do_update_invasion_wizard_page")
 end
 
 function update_invasion_wizard_page()
@@ -201,6 +196,10 @@ end
 
 function on_wizard_panel_invader_next()
   wizard_show_panel_topography()
+end
+
+function on_wizard_panel_invader_previous()
+  wizard_show_panel_select_troops()
 end
 
 -------------------
@@ -241,7 +240,6 @@ end
 
 
 function on_terrain_pieces_dice_rolled(dice_color, value)
-  print("on_terrain_pieces_dice_rolled ", dice_color, ' ', value)
    local id = "wizard_" .. dice_color .. "_terrain_pieces_roll_value"
    UI.setAttribute(id, "text", tostring(value))
    update_terrain_pieces_roll_page()
@@ -257,20 +255,14 @@ function wizard_show_panel_terrain_pieces_roll()
   update_terrain_pieces_roll_page()
   g_dice_callbacks["terrain_pieces_dice_rolled"] = on_terrain_pieces_dice_rolled
   g_wizard_exit_panel_fn = wizard_panel_exit_terrain_pieces
-  print("260 wizard_show_panel_terrain_pieces_roll g_dice_callbacks")
-  table_print(g_dice_callbacks)
 end
 
 function on_wizard_button_red_terrain_pieces_roll()
   roll_dice('red')
-  print("266 on_wizard_button_red_terrain_pieces_roll g_dice_callbacks")
-  table_print(g_dice_callbacks)
 end
 
 function on_wizard_button_blue_terrain_pieces_roll()
   roll_dice('blue')
-  print("272 on_wizard_button_red_terrain_pieces_roll g_dice_callbacks")
-  table_print(g_dice_callbacks)
 end
 
 
@@ -392,13 +384,14 @@ function update_wizard_panel_select_terrain_nb_pieces()
   end
   UI.setAttribute("wizard_terrain_pieces", "text", terrain)
 
-  local next_enabled = (g_game_settings['terrain_nb_pieces_selected_value'] ~= nil)
+  local next_enabled = false
+  if g_game_settings['terrain_nb_pieces_selected_value'] ~= nil then
+    local toggle_id = "wizard_modified_terrain_score_" .. tostring(g_game_settings['terrain_nb_pieces_selected_value']+2)
+    UI.setAttribute(toggle_id, "isOn", true)
+    next_enabled = true
+  end
   UI.setAttribute("wizard_panel_select_terrain_nb_pieces_next", "interactable",
     next_enabled)
-  if g_game_settings['terrain_nb_pieces_selected_value'] ~= nil then
-    local toggle_id = "wizard_modified_terrain_score_" .. tostring(g_game_settings['terrain_nb_pieces_selected_value']+1)
-    UI.setAttribute(toggle_id, "isOn", true)
-  end
 end
 
 
@@ -408,7 +401,6 @@ function on_wizard_panel_select_terrain_nb_pieces_toggle_group(player, value, id
 end
 
 
-
 -------------------
 -------------------  wizard_panel_order_terrain_pieces
 -------------------
@@ -416,24 +408,42 @@ end
 
 
 function wizard_show_panel_order_terrain_pieces()
+  print("IN wizard_show_panel_order_terrain_pieces")
   wizard_show_panel("wizard_panel_order_terrain_pieces")
+  g_fix_terrain_and_lock_callback = function()
+    update_wizard_panel_order_terrain_pieces()
+  end
+  g_wizard_exit_panel_fn = function()
+    g_fix_terrain_and_lock_callback=nil
+  end
+  update_wizard_panel_order_terrain_pieces()
 end
 
+function on_wizard_panel_order_terrain_pieces_lock_terrain()
+  fix_terrain_and_lock()
+end
+
+function update_wizard_panel_order_terrain_pieces()
+  print("IN update_wizard_panel_order_terrain_pieces")
+   UI.setAttribute("wizard_panel_order_terrain_pieces_advantaged", "text", g_game_settings['tactical_advantage'])
+   local next_enabled =  (g_game_settings['terrain_locked'] == true)
+   UI.setAttribute("wizard_panel_order_terrain_pieces_next", "interactable",
+     next_enabled)
+     print(418, "next enabled ", next_enabled, ' ', g_game_settings['tactical_advantage'])
+end
+
+function on_wizard_panel_order_terrain_pieces_previous()
+  wizard_show_panel_select_terrain_nb_pieces()
+end
+
+function on_wizard_panel_order_terrain_pieces_next()
+  -- TODO
+end
 
 -------------------
 -------------------
 -------------------
 
-
-function on_wizard_button_go_back_to_select_armies()
-  wizard_show_panel_select_armies()
-end
-
-
-function on_wizard_button_go_forward_to_invader()
-  wizard_show_panel_invader()
-  wizard_panel_enter_invader()
-end
 
 
 
@@ -557,7 +567,6 @@ end
 function get_ui_numeric_value(id)
   local str = UI.getAttribute(id, "text")
   local value = tonumber(str)
-  print ("get_ui_numeric_value ", id, ' ', str, ' ', value)
   return value
 end
 

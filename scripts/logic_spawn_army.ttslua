@@ -478,6 +478,27 @@ function spawn_elephant_screen_counter(base_obj, base_definition, base_pos, is_r
   snap_to_base(counter, transform_moving, base_obj, transform_resting, 'infront')
 end
 
+function get_base_texture(base_definition, is_red_player)
+  if base_definition['ignore_terrain'] == nil then
+    return nil
+  end
+  local type
+  if g_game_settings['current_table_type'] == nil then
+    -- table has not been set yet
+    type = 'grass'
+  else
+    type = g_game_settings['current_table_type']
+  end
+  if tables[type] == nil then
+    type = 'grass'
+  end
+
+  if is_red_player then
+    return  tables[type]['red_player_base_tex']
+  end
+  return  tables[type]['blue_player_base_tex']
+end
+
 
 -- base: base_definition base_definition
 -- pos: position where the base will be located
@@ -486,19 +507,7 @@ end
 -- common_color: color of the base edge, who ows the base.
 function spawn_base(base_definition, pos, y_rotation, is_red_player, command_color)
     print_debug('Spawning base #' .. g_base_index)
-    local overriden_tex = nil
-    if base_definition['ignore_terrain'] == nil then
-        local type = from_toggle_number_to_table_type(g_current_table_type)
-        if tables[type] == nil then
-            type = 'grass'
-        end
-
-        if is_red_player then
-            overriden_tex = tables[type]['red_player_base_tex']
-        else
-            overriden_tex = tables[type]['blue_player_base_tex']
-        end
-    end
+    local overriden_tex = get_base_texture(base_definition, is_red_player)
 
     local model_definition = get_a_model_definition(base_definition)
     local model_base_name = model_definition['base']

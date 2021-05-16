@@ -512,9 +512,7 @@ g_is_grand_triumph = nil
 function dice_callback(values)
   local color = values[1]
   local value = values[2]
-  print("916 dice_callback ", color, " ", value)
   for key,callback in pairs(g_dice_callbacks) do
-    print("917 calling dice callback function ", key, ' ', callback)
     callback(color, value)
   end
 end
@@ -529,10 +527,6 @@ function on_toggle_3dterrain(player, value, id)
     end
 end
 
-g_game_settings['current_table_type'] = 0
-function on_toggle_table_type(player, value, id)
-    g_game_settings['current_table_type'] = tonumber(value)
-end
 
 function from_toggle_number_to_table_type(value)
     -- Must follow the order of the toggles on main.xml
@@ -553,8 +547,8 @@ function from_toggle_number_to_table_type(value)
     elseif value == 7 then
         return 'marsh'
     else
-        print_error("table type is invalid " .. tostring(value))
-        return 'Error'
+        print_error("table type is invalid from_toggle_number_to_table_type(" .. tostring(value) .. ")")
+        return 'grass'
     end
 end
 
@@ -577,23 +571,24 @@ function from_toggle_number_to_topography(value)
     elseif value == 7 then
         return 'marsh'
     else
-        print_error("table type is invalid " .. tostring(value))
-        return 'Error'
+        print_error("table type is invalid from_toggle_number_to_topography(" .. tostring(value) .. ")")
+        return "arable"
     end
 end
 
-function on_load_table(player, value, id)
-   local current_table_type = g_game_settings['current_table_type']
-   if current_table_type == nil then
-     print_error("current_table_type is nil")
-   end
-   local type = from_toggle_number_to_table_type(current_table_type)
-   g_game_settings['topography'] = from_toggle_number_to_topography(current_table_type)
+g_game_settings['current_table_type'] = 'grass'
 
-    if tables[type] == nil then
-        type = 'grass'
+function on_toggle_table_type(player, value, id)
+  g_game_settings['current_table_type'] = from_toggle_number_to_table_type(tonumber(value))
+  g_game_settings['topography'] = from_toggle_number_to_topography(tonumber(value))
+    print(544, "g_game_settings['current_table_type']=", g_game_settings['current_table_type'])
+end
+
+function on_load_table(player, value, id)
+    if tables[g_game_settings['current_table_type']] == nil then
+        g_game_settings['current_table_type'] = 'grass'
     end
-   local tex = tables[type]['table_tex']
+   local tex = tables[g_game_settings['current_table_type']]['table_tex']
 
     local is_large = g_current_table_size == 'large'
 
@@ -603,7 +598,7 @@ function on_load_table(player, value, id)
         else
           spawn_table_obj(tables['model'], tex, is_large)
         end
-        change_bases_to_terrain(type)
+        change_bases_to_terrain(g_game_settings['current_table_type'])
     else
         print_warning('There\'s already a table spawned')
     end

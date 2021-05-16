@@ -111,7 +111,7 @@ function fix_terrain_and_lock()
     local size = gametable.getBoundsNormalized()['size']
     local max_distance_from_table_sq = (size['x']/2)^2 + (size['z'] / 2)^2
     local pos_table = gametable.getPosition()
-    local terrain_type = from_toggle_number_to_table_type(g_current_table_type)
+    local terrain_type = g_game_settings['current_table_type']
 
     gametable.setLock(false)
     for _,terrain in ipairs(terrains) do
@@ -158,6 +158,10 @@ function fix_terrain_and_lock()
         gametable.setPosition({ x = 0, y = g_base_height_tabletop, z = 0})
         gametable.setLock(true)
         print_important('Table is now locked')
+        g_game_settings['terrain_locked'] = true
+        if g_fix_terrain_and_lock_callback ~= nil then
+          g_fix_terrain_and_lock_callback()
+        end
     end, 1)
 end
 

@@ -31,8 +31,8 @@
     <VerticalLayout>
       <Text>Select the troops from the armies</Text>
       <HorizontalLayout>
-        <Button id="wizard_button_go_back_to_select_armies" onClick="on_wizard_button_go_back_to_select_armies">Previous</Button>
-        <Button id="wizard_button_go_forward_to_invader" onClick="on_wizard_button_go_forward_to_invader">Next</Button>
+        <Button id="wizard_panel_select_troops_previous" onClick="on_wizard_panel_select_troops_previous">Previous</Button>
+        <Button id="wizard_panel_select_troops_next" onClick="on_wizard_panel_select_troops_next">Next</Button>
       </HorizontalLayout>
     </VerticalLayout>
 </Panel>
@@ -117,7 +117,7 @@
       </Row>
       <Row>
         <Cell>
-        <Button id="wizard_panel_invader_previous" onClick="on_wizard_panel_terrain_pieces_roll_previous" height="50">Previous</Button>
+        <Button id="wizard_panel_invader_previous" onClick="on_wizard_panel_invader_previous" height="50">Previous</Button>
       </Cell>
       <Cell>
       </Cell>
@@ -369,15 +369,19 @@
 
 <Panel id="wizard_panel_order_terrain_pieces" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
   <VerticalLayout>
-    <Text>Order terrain pieces, large before small.</Text>
-    <Text>Draw terrain card.</Text>
-    <Text>Place terrain pieces.</Text>
+    <Text id="wizard_panel_order_terrain_pieces_advantaged">advantaged player</Text>
+    <Text>1. Order terrain pieces, large before small.</Text>
+    <Text>2. Draw terrain card.</Text>
+    <Text>3. Place terrain pieces.</Text>
+    <Text>4. Lock terrain</Text>
+    <Button id="wizard_panel_order_terrain_pieces_lock_terrain" onClick="on_wizard_panel_order_terrain_pieces_lock_terrain">Lock</Button>
     <HorizontalLayout>
-      <Button id="wizard_button_go_back_to_terrain_nb_pieces" onClick="on_wizard_button_go_back_to_terrain_nb_pieces" height="50">Previous</Button>
-      <Button id="wizard_button_go_forward_to_place_troops" onClick="on_wizard_button_go_forward_to_place_troops" height="50">Next</Button>
+      <Button id="wizard_panel_order_terrain_pieces_previous" onClick="on_wizard_panel_order_terrain_pieces_previous" height="50">Previous</Button>
+      <Button id="wizard_panel_order_terrain_pieces_next" onClick="on_wizard_panel_order_terrain_pieces_next" height="50">Next</Button>
     </HorizontalLayout>
   </VerticalLayout>
 </Panel>
+
 
 <Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>
