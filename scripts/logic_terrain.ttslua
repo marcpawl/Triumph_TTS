@@ -160,7 +160,9 @@ function fix_terrain_and_lock()
         print_important('Table is now locked')
         g_game_settings['terrain_locked'] = true
         if g_fix_terrain_and_lock_callback ~= nil then
-          g_fix_terrain_and_lock_callback()
+          Wait.frames(function()
+            g_fix_terrain_and_lock_callback()
+          end, 1)
         end
     end, 1)
 end

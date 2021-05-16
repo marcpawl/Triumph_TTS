@@ -388,7 +388,7 @@
     <TableLayout>
       <Row>
         <Cell>
-          <Text>1.</Text>
+          <Text>1. disadvantaged</Text>
         </Cell>
         <Cell>
           <Text id="wizard_panel_camps_disadvantaged">disadvantaged player</Text>
@@ -396,7 +396,7 @@
       </Row>
       <Row>
         <Cell>
-          <Text>2.</Text>
+          <Text>2. advantaged</Text>
         </Cell>
         <Cell>
           <Text id="wizard_panel_camps_advantaged">advantaged player</Text>
@@ -406,6 +406,42 @@
     <HorizontalLayout>
       <Button id="wizard_panel_camps_previous" onClick="on_wizard_panel_camps_previous" height="50">Previous</Button>
       <Button id="wizard_panel_camps_next" onClick="on_wizard_panel_camps_next" height="50">Next</Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Panel>
+
+<Panel id="wizard_panel_deploy_troops" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+  <VerticalLayout>
+    <Text height="30">Deploy troops</Text>
+    <TableLayout>
+      <Row>
+        <Cell>
+          <Text id="wizard_panel_deploy_troops_disadvantaged_1">disadvantaged player</Text>
+        </Cell>
+        <Cell>
+          <Text>1. disadvantaged deploys center, except flank march</Text>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Text id="wizard_panel_deploy_troops_advantaged">advantaged player</Text>
+        </Cell>
+        <Cell>
+          <Text>2. advantaged deploys all troops, except flank march</Text>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Text id="wizard_panel_deploy_troops_disadvantaged_3">disadvantaged player</Text>
+        </Cell>
+        <Cell>
+          <Text>3. disadvantaged deploys remainder, except flank march</Text>
+        </Cell>
+      </Row>
+    </TableLayout>
+    <HorizontalLayout height="50">
+      <Button id="wizard_panel_deploy_troops_previous" onClick="on_wizard_panel_deploy_troops_previous" height="50">Previous</Button>
+      <Button id="wizard_panel_deploy_troops_next" onClick="on_wizard_panel_deploy_troops_next" height="50">Next</Button>
     </HorizontalLayout>
   </VerticalLayout>
 </Panel>

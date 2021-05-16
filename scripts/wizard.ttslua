@@ -17,6 +17,8 @@ wizard_panels = {
   "wizard_panel_select_terrain_nb_pieces",
   "wizard_panel_order_terrain_pieces",
   "wizard_panel_camps",
+  "wizard_panel_deploy_troops",
+  "wizard_panel_first_turn",
 }
 
 function wizard_show_panel(panel_name)
@@ -454,11 +456,11 @@ function  wizard_show_panel_camps()
   end
 
   g_deployment_lines_enabled = true
-  update_deployment_lines_ui()
+  update_deployment_lines()
 
   g_wizard_exit_panel_fn = function()
-    g_deployment_lines_enabled = false
-    update_deployment_lines_ui()
+      g_deployment_lines_enabled = false
+      update_deployment_lines()
   end
 end
 
@@ -467,9 +469,42 @@ function on_wizard_panel_camps_previous()
 end
 
 function on_wizard_panel_camps_next()
-  -- TODO
+  wizard_show_panel_deploy_troops()
 end
 
+-------------------
+------------------- wizard_panel_deploy_troops
+-------------------
+
+
+function  wizard_show_panel_deploy_troops()
+  wizard_show_panel("wizard_panel_deploy_troops")
+  if g_game_settings['tactical_advantage'] == "red" then
+    UI.setAttribute("wizard_panel_deploy_troops_disadvantaged_1", "text", "blue")
+    UI.setAttribute("wizard_panel_deploy_troops_disadvantaged_3", "text", "blue")
+    UI.setAttribute("wizard_panel_deploy_troops_advantaged", "text", "red")
+  else
+    UI.setAttribute("wizard_panel_deploy_troops_disadvantaged_1", "text", "red")
+    UI.setAttribute("wizard_panel_deploy_troops_disadvantaged_3", "text", "red")
+    UI.setAttribute("wizard_panel_deploy_troops_advantaged", "text", "blue")
+  end
+
+  g_deployment_lines_enabled = true
+  update_deployment_lines()
+
+  g_wizard_exit_panel_fn = function()
+      g_deployment_lines_enabled = false
+      update_deployment_lines()
+  end
+end
+
+function on_wizard_panel_deploy_troops_previous()
+  wizard_show_panel_camps()
+end
+
+function on_wizard_panel_deploy_troops_next()
+  -- TODO
+end
 
 -------------------
 -------------------

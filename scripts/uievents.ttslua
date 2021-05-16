@@ -471,6 +471,7 @@ g_deployment_lines_enabled = false
 function on_toggle_deployment_lines(player, value, id)
     g_deployment_lines_enabled = value == "True"
     update_deployment_lines_ui()
+    update_deployment_lines()
 end
 
 -- Update the UI elements for deployment lines based on their
@@ -479,25 +480,32 @@ function update_deployment_lines_ui()
     if g_deployment_lines_enabled then
         UI.setValue('toggle_deployment_lines', 'Show deployment rulers')
         UI.setAttribute('toggle_deployment_lines', 'text', 'Show deployment rulers')
-
-        if g_current_table == nil then
-            print_error('There\'s no table so deployment lines will have no effect. Please reenable when you spawned the table.')
-        else
-            draw_deployment_lines()
-        end
     else
         UI.setValue('toggle_deployment_lines', 'Do not show rulers')
         UI.setAttribute('toggle_deployment_lines', 'text', 'Do not show rulers')
-
-        if g_current_table ~= nil then
-            remove_deployment_lines()
-        end
     end
 
     -- Make it consistent for all players
-    on_next_frame(function()
+     on_next_frame(function()
         UI.setAttribute('toggle_deployment_lines', 'isOn', g_deployment_lines_enabled)
     end)
+end
+
+function update_deployment_lines()
+  print("IN update_deployment_lines g_deployment_lines_enabled=",g_deployment_lines_enabled )
+  if g_deployment_lines_enabled then
+    if g_current_table == nil then
+        print_error('There\'s no table so deployment lines will have no effect. Please reenable when you spawned the table.')
+        return
+    end
+    print("drawing lines")
+    draw_deployment_lines()
+    return
+  end
+  if g_current_table ~= nil then
+      print("removing lines")
+      remove_deployment_lines()
+  end
 end
 
 function on_create_table_menu(player, value, id)
@@ -586,7 +594,6 @@ g_game_settings['current_table_type'] = 'grass'
 function on_toggle_table_type(player, value, id)
   g_game_settings['current_table_type'] = from_toggle_number_to_table_type(tonumber(value))
   g_game_settings['topography'] = from_toggle_number_to_topography(tonumber(value))
-    print(544, "g_game_settings['current_table_type']=", g_game_settings['current_table_type'])
 end
 
 function on_load_table(player, value, id)
