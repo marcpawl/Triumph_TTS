@@ -503,7 +503,7 @@ function on_wizard_panel_deploy_troops_previous()
 end
 
 function on_wizard_panel_deploy_troops_next()
-  -- TODO
+  wizard_hide()
 end
 
 -------------------

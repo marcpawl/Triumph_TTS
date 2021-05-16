@@ -468,6 +468,7 @@ end
 
 -- Global enabled or disabled deployment lines
 g_deployment_lines_enabled = false
+
 function on_toggle_deployment_lines(player, value, id)
     g_deployment_lines_enabled = value == "True"
     update_deployment_lines_ui()
@@ -492,7 +493,6 @@ function update_deployment_lines_ui()
 end
 
 function update_deployment_lines()
-  print("IN update_deployment_lines g_deployment_lines_enabled=",g_deployment_lines_enabled )
   if g_deployment_lines_enabled then
     if g_current_table == nil then
         print_error('There\'s no table so deployment lines will have no effect. Please reenable when you spawned the table.')
