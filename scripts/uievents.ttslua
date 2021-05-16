@@ -470,7 +470,12 @@ end
 g_deployment_lines_enabled = false
 function on_toggle_deployment_lines(player, value, id)
     g_deployment_lines_enabled = value == "True"
+    update_deployment_lines_ui()
+end
 
+-- Update the UI elements for deployment lines based on their
+-- current setting.
+function update_deployment_lines_ui()
     if g_deployment_lines_enabled then
         UI.setValue('toggle_deployment_lines', 'Show deployment rulers')
         UI.setAttribute('toggle_deployment_lines', 'text', 'Show deployment rulers')

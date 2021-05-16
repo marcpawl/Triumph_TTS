@@ -382,6 +382,34 @@
   </VerticalLayout>
 </Panel>
 
+<Panel id="wizard_panel_camps" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
+  <VerticalLayout>
+    <Text>Place Camps</Text>
+    <TableLayout>
+      <Row>
+        <Cell>
+          <Text>1.</Text>
+        </Cell>
+        <Cell>
+          <Text id="wizard_panel_camps_disadvantaged">disadvantaged player</Text>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Text>2.</Text>
+        </Cell>
+        <Cell>
+          <Text id="wizard_panel_camps_advantaged">advantaged player</Text>
+        </Cell>
+      </Row>
+    </TableLayout>
+    <HorizontalLayout>
+      <Button id="wizard_panel_camps_previous" onClick="on_wizard_panel_camps_previous" height="50">Previous</Button>
+      <Button id="wizard_panel_camps_next" onClick="on_wizard_panel_camps_next" height="50">Next</Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Panel>
+
 
 <Panel id="panel_dba_orders" width="230" height="400" color="#00000000" rectAlignment="MiddleRight" padding="30 0 30 30" raycastTarget="true" active="false">
     <VerticalLayout>

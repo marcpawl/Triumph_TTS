@@ -16,6 +16,7 @@ wizard_panels = {
   "wizard_panel_terrain_pieces_roll",
   "wizard_panel_select_terrain_nb_pieces",
   "wizard_panel_order_terrain_pieces",
+  "wizard_panel_camps",
 }
 
 function wizard_show_panel(panel_name)
@@ -408,7 +409,6 @@ end
 
 
 function wizard_show_panel_order_terrain_pieces()
-  print("IN wizard_show_panel_order_terrain_pieces")
   wizard_show_panel("wizard_panel_order_terrain_pieces")
   g_fix_terrain_and_lock_callback = function()
     update_wizard_panel_order_terrain_pieces()
@@ -424,12 +424,10 @@ function on_wizard_panel_order_terrain_pieces_lock_terrain()
 end
 
 function update_wizard_panel_order_terrain_pieces()
-  print("IN update_wizard_panel_order_terrain_pieces")
    UI.setAttribute("wizard_panel_order_terrain_pieces_advantaged", "text", g_game_settings['tactical_advantage'])
    local next_enabled =  (g_game_settings['terrain_locked'] == true)
    UI.setAttribute("wizard_panel_order_terrain_pieces_next", "interactable",
      next_enabled)
-     print(418, "next enabled ", next_enabled, ' ', g_game_settings['tactical_advantage'])
 end
 
 function on_wizard_panel_order_terrain_pieces_previous()
@@ -437,13 +435,45 @@ function on_wizard_panel_order_terrain_pieces_previous()
 end
 
 function on_wizard_panel_order_terrain_pieces_next()
-  -- TODO
+  wizard_show_panel_camps()
 end
 
 -------------------
--------------------
+------------------- wizard_panel_camps
 -------------------
 
+
+function  wizard_show_panel_camps()
+  wizard_show_panel("wizard_panel_camps")
+  if g_game_settings['tactical_advantage'] == "red" then
+    UI.setAttribute("wizard_panel_camps_disadvantaged", "text", "blue")
+    UI.setAttribute("wizard_panel_camps_advantaged", "text", "red")
+  else
+    UI.setAttribute("wizard_panel_camps_disadvantaged", "text", "red")
+    UI.setAttribute("wizard_panel_camps_advantaged", "text", "blue")
+  end
+
+  g_deployment_lines_enabled = true
+  update_deployment_lines_ui()
+
+  g_wizard_exit_panel_fn = function()
+    g_deployment_lines_enabled = false
+    update_deployment_lines_ui()
+  end
+end
+
+function on_wizard_panel_camps_previous()
+  wizard_show_panel_order_terrain_pieces()
+end
+
+function on_wizard_panel_camps_next()
+  -- TODO
+end
+
+
+-------------------
+-------------------
+-------------------
 
 
 
