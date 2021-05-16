@@ -1423,7 +1423,7 @@ function check_picked_base()
         local distance_inches = max_distance_between_bases_front_corners(new_corners, g_picked_base_initial_transform['corners'])
         local mu = inches_to_mu_display_string(distance_inches)
 
-        UI.setAttribute('panel_current_movement', 'active', true)
+        UI.setAttribute('panel_current_movement', 'active', g_game_settings['show_panel_current_movement'] == true)
         UI.setValue('text_current_movement_MUs',
             'Current movement: ' .. mu)
     else

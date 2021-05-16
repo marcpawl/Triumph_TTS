@@ -80,7 +80,7 @@ function onload(saved_data)
 
     set_last_snapshot()
 
-    if g_is_grand_triumph == nil then
+    if g_game_settings['show_sizard'] ~= false then
       wizard_show()
     else
       UI.setAttribute("panel_dba_orders", "active", true)

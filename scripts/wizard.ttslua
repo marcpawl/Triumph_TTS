@@ -2,6 +2,7 @@
 g_wizard_exit_panel_fn = nil
 
 function wizard_show()
+  g_game_settings['show_panel_current_movement'] = false
   wizard_show_panel_game()
 end
 
@@ -400,6 +401,7 @@ end
 
 function on_wizard_panel_select_terrain_nb_pieces_toggle_group(player, value, id)
   g_game_settings['terrain_nb_pieces_selected_value'] = value
+  g_game_settings['show_wizard'] = false
   update_wizard_panel_select_terrain_nb_pieces()
 end
 
@@ -504,6 +506,7 @@ end
 
 function on_wizard_panel_deploy_troops_next()
   wizard_hide()
+  g_game_settings['show_panel_current_movement'] = true
 end
 
 -------------------
