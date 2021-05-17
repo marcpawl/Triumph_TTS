@@ -48,26 +48,23 @@ function wizard_show_panel_game()
 end
 
 function wizard_pannel_game_update()
-  UI.setAttribute("wizard_togglegroup_game_triumph", "isOn", not g_is_grand_triumph)
-  UI.setAttribute("wizard_togglegroup_game_grand_triumph", "isOn", g_is_grand_triumph)
+  local is_grand_triumph = g_game_settings['is_grand_triumph']
+  if is_grand_triumph == nil then
+    UI.setAttribute("wizard_togglegroup_game_triumph", "isOn", false)
+    UI.setAttribute("wizard_togglegroup_game_grand_triumph", "isOn", false)
+    return
+  end
+
+  UI.setAttribute("wizard_togglegroup_game_triumph", "isOn", not is_grand_triumph)
+  UI.setAttribute("wizard_togglegroup_game_grand_triumph", "isOn", is_grand_triumph)
 end
 
 function wizard_panel_enter_game()
-  if g_is_grand_triumph == null then
-    g_is_grand_triumph = false
-    g_current_table_size = 'small'
-  end
   wizard_pannel_game_update()
 end
 
 function on_wizard_togglegroup_game(player, value, id)
-  if value == 0 then
-    g_is_grand_triumph = false
-    g_current_table_size = 'small'
-  else
-    g_is_grand_triumph = true
-    g_current_table_size = 'large'
-  end
+  g_game_settings['is_grand_triumph'] = (value == "1")
   wizard_pannel_game_update()
 end
 
@@ -229,6 +226,10 @@ function update_topography_wizard_page()
     "interactable", topography_name ~= nil)
 end
 
+function on_wizard_button_spawn_table(player,value,id)
+  on_create_table_menu(player, value, id)
+end
+
 -------------------
 ------------------- Tatical advantage
 -------------------
@@ -327,7 +328,7 @@ g_nb_terrain_pieces['steppe'] = {0,1,1,1,2,2,3,3,4,4,5,5}
 g_nb_terrain_pieces['dry'] = g_nb_terrain_pieces['steppe']
 g_nb_terrain_pieces['forest'] = {0,2,3,3,4,4,5,5,6,6,6,6}
 g_nb_terrain_pieces['marsh']  = g_nb_terrain_pieces['forest']
-g_nb_terrain_pieces['arable'] = {0,1,2,2,2,3,3,4,4,5,5,6,6}
+g_nb_terrain_pieces['arable'] = {0,1,2,2,3,3,4,4,5,5,6,6}
 g_nb_terrain_pieces['hilly'] = g_nb_terrain_pieces['arable']
 g_nb_terrain_pieces['delta'] = g_nb_terrain_pieces['arable']
 g_coast_allowed={}
@@ -363,21 +364,22 @@ function update_wizard_panel_select_terrain_nb_pieces()
   if max > 12 then
     max = 12
   end
+  local army_has_coast = (g_compulsory_terrain[topography_name] == "coast") or
+    find_in_array(g_optional_terrain[topography_name], "coast")
+
   for nb=2,12 do
     local enabled = (nb >= min) and (nb <= max)
-    local id = "wizard_modified_terrain_score_" .. tostring(nb)
     local nb_pieces = g_nb_terrain_pieces[topography_name][nb]
-    local coast =  g_coast_allowed[nb] and
-      ( (g_compulsory_terrain[topography_name] == "coast") or
-        (find_in_array(g_optional_terrain[topography_name], "coast"))
-      )
+    local coast =  (army_has_coast and (g_coast_allowed[nb]==true) )
     local text
     if coast then
-      text = tostring(nb_pieces) .. "(Coast)"
+      text = string.format("%d Coast", nb_pieces)
     else
-      text = tostring(nb_pieces)
+      text = string.format("%d", nb_pieces)
     end
 
+    local id = "wizard_modified_terrain_score_" .. tostring(nb)
+    print(161, "nb=", nb, " text=", text, " coast=", coast, ' ', g_coast_allowed[nb], ' ', army_has_coast, ' ', id)
     UI.setAttribute(id, "text", text)
     UI.setAttribute(id, "active", enabled)
   end
@@ -593,9 +595,6 @@ function on_button_blue_invasion_roll()
 end
 
 
-function on_wizard_button_spawn_table(player,value,id)
-  on_create_table_menu(player, value, id)
-end
 
 -- Update the UI element for an armies maneuver rating
 -- id: identifier of the UI element

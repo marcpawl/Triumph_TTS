@@ -235,7 +235,7 @@ function snap_picked_base(obj)
         -- Always assume that camps are 40mm depth! This may not always be the
         -- case, in which case this code needs to be changed
         local size_table = g_depth_table_in
-        if g_current_table_size == 'large' then
+        if g_game_settings['is_grand_triumph'] then
             size_table = g_depth_large_table_in
         end
 

@@ -7,6 +7,7 @@
 
 -- Global values for the game that will be persisted
 g_game_settings = {}
+g_game_settings['is_grand_triumph'] = false
 
 -- Functions that are called when a dice is rolled.
 -- Order of cuntions is undetermined.
@@ -42,7 +43,6 @@ g_dice_callbacks = {}
 
 
 function onSave()
-  g_decorations['g_is_grand_triumph'] = g_is_grand_triumph
   g_decorations['g_game_settings'] = g_game_settings
   local saved_data = JSON.encode(g_decorations)
   return saved_data
@@ -108,7 +108,6 @@ function restore_extra_data(saved_data)
     return
   end
   g_decorations = extra
-  g_is_grand_triumph = g_decorations['g_is_grand_triumph']
   g_game_settings = g_decorations['g_game_settings']
   if g_game_settings == nil then
     g_game_settings = {}

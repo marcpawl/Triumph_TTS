@@ -518,9 +518,6 @@ function on_create_table_menu(player, value, id)
     UI.setAttribute('button_create_army', 'interactable', false)
 end
 
-g_current_table_size = 'large'
-g_is_grand_triumph = nil
-
 
 function dice_callback(values)
   local color = values[1]
@@ -602,13 +599,11 @@ function on_load_table(player, value, id)
     end
    local tex = tables[g_game_settings['current_table_type']]['table_tex']
 
-    local is_large = g_current_table_size == 'large'
-
     if g_current_table == nil then
-        if g_is_grand_triumph then
-          spawn_table_obj(tables['model_double'], tex, is_large)
+      if g_game_settings['is_grand_triumph'] then
+          spawn_table_obj(tables['model_double'], tex, true)
         else
-          spawn_table_obj(tables['model'], tex, is_large)
+          spawn_table_obj(tables['model'], tex, false)
         end
         change_bases_to_terrain(g_game_settings['current_table_type'])
     else

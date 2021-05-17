@@ -1067,7 +1067,7 @@ function get_strokes_quadrant_vertical_flank(color, angle, width, depth)
 end
 
 function get_strokes_quadrant_vertical_flank_2(color, angle, width, depth)
-    local stroke_points = {}    
+    local stroke_points = {}
     local center = { x=0, y=0, z=0 }
     local half_width = width / 2
     local half_depth = depth / 2
@@ -1115,7 +1115,7 @@ function get_strokes_quadrant_vertical_flank_3(color, angle, width, depth)
 end
 
 function get_strokes_quadrant_vertical_flank_4(color, angle, width, depth)
-    local stroke_points = {}    
+    local stroke_points = {}
     local center = { x=0, y=0, z=0 }
     local half_width = width / 2
     local half_depth = depth / 2
@@ -1364,8 +1364,8 @@ function draw_deployment_lines()
     table.insert(strokes,
         get_strokes_deployment('bot',
             g_gizmo_color_player_red, angle, proportion, w, h))
-    
-    if g_is_grand_triumph then
+
+    if g_game_settings['is_grand_triumph'] then
         table.insert(strokes, get_strokes_quadrant_vertical_3(angle, w, h))
         table.insert(strokes, get_strokes_quadrant_vertical_4(angle, w, h))
         table.insert(strokes, get_strokes_quadrant_vertical_5(angle, w, h))
