@@ -323,6 +323,15 @@ function on_wizard_panel_select_terrain_nb_pieces_next()
 end
 
 
+g_nb_terrain_pieces_grand_triumph = {}
+g_nb_terrain_pieces_grand_triumph['steppe'] = {0,1,1,2,3,4,5,6,6,7,7,8}
+g_nb_terrain_pieces_grand_triumph['dry'] = g_nb_terrain_pieces_grand_triumph['steppe']
+g_nb_terrain_pieces_grand_triumph['forest'] = {0,4,5,6,6,7,7,8,9,10,10,10}
+g_nb_terrain_pieces_grand_triumph['marsh']  = g_nb_terrain_pieces_grand_triumph['forest']
+g_nb_terrain_pieces_grand_triumph['arable'] = {0,2,3,4,5,6,6,7,7,8,9,10}
+g_nb_terrain_pieces_grand_triumph['hilly'] = g_nb_terrain_pieces_grand_triumph['arable']
+g_nb_terrain_pieces_grand_triumph['delta'] = g_nb_terrain_pieces_grand_triumph['arable']
+
 g_nb_terrain_pieces = {}
 g_nb_terrain_pieces['steppe'] = {0,1,1,1,2,2,3,3,4,4,5,5}
 g_nb_terrain_pieces['dry'] = g_nb_terrain_pieces['steppe']
@@ -331,6 +340,7 @@ g_nb_terrain_pieces['marsh']  = g_nb_terrain_pieces['forest']
 g_nb_terrain_pieces['arable'] = {0,1,2,2,3,3,4,4,5,5,6,6}
 g_nb_terrain_pieces['hilly'] = g_nb_terrain_pieces['arable']
 g_nb_terrain_pieces['delta'] = g_nb_terrain_pieces['arable']
+
 g_coast_allowed={}
 g_coast_allowed[4]=true
 g_coast_allowed[7]=true
@@ -367,9 +377,17 @@ function update_wizard_panel_select_terrain_nb_pieces()
   local army_has_coast = (g_compulsory_terrain[topography_name] == "coast") or
     find_in_array(g_optional_terrain[topography_name], "coast")
 
+  local table_nb_pieces
+  if g_game_settings['is_grand_triumph'] then
+    table_nb_pieces = g_nb_terrain_pieces_grand_triumph
+  else
+    table_nb_pieces = g_nb_terrain_piece
+  end
+  local pieces_for_topography = table_nb_pieces[topography_name]
+
   for nb=2,12 do
     local enabled = (nb >= min) and (nb <= max)
-    local nb_pieces = g_nb_terrain_pieces[topography_name][nb]
+    local nb_pieces = pieces_for_topography[nb]
     local coast =  (army_has_coast and (g_coast_allowed[nb]==true) )
     local text
     if coast then
