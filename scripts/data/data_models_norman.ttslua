@@ -4,6 +4,9 @@ army['5fb1b9e4e1af060017709a53'].data.base = "tile_grass"
 -- Duke William's Norman Invasion
 army['5fb1b9e4e1af060017709a59'].data.has_models = true
 army['5fb1b9e4e1af060017709a59'].data.base = "tile_grass"
+-- Anglo-Norman
+army['5fb1b9e5e1af060017709b08'].data.has_models = true
+army['5fb1b9e5e1af060017709b08'].data.base = "tile_grass"
 
 -- West Frankish
 -- 888 AD to 1072 AD
@@ -29,7 +32,7 @@ army['5fb1b9e4e1af060017709a59'].data.base = "tile_grass"
         fixed_models = {
             [1] = 'troop_norman_armor_foot_sword',
             [2] = 'troop_norman_armor_foot_sword',
-            [3] = 'troop_frank_knight_flag',
+            [3] = 'troop_frank_armor_foot_flag',
             [4] = 'troop_norman_armor_foot_sword'
         }
       }
@@ -162,6 +165,7 @@ army['5fb1b9e4e1af060017709a59'].data.base = "tile_grass"
         }
       }
     }
+
     -- Milites\nDeployment dismounted from Knights General - EF General
     g_models[g_str_615351a903385c0016b86a1a_general_dismounted] = {
       {
@@ -169,11 +173,12 @@ army['5fb1b9e4e1af060017709a59'].data.base = "tile_grass"
         fixed_models = {
           [1] = 'troop_norman_armor_foot_sword',
           [2] = 'troop_norman_armor_foot_sword',
-          [3] = 'troop_norman_knight_flag',
+          [3] = 'troop_norman_armor_foot_flag',
           [4] = 'troop_norman_armor_foot_sword'
         }
       }
     }
+
     -- Milites\nDeployment dismounting as Elite Foot - Kn General
     g_models[g_str_615351a903385c0016b86a1a_general_mounted] = g_models[g_str_615351a903385c0016b86a1a_general]
 
@@ -219,3 +224,86 @@ army['5fb1b9e4e1af060017709a59'].data.base = "tile_grass"
 
     --West Frankish Camp
     g_models[g_str_5fb1b9e4e1af060017709a59_camp] = g_models[g_str_5fb1b9dce1af06001770959d_camp]
+
+-- Anglo-Norman
+-- 1072 AD to 1180 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9e5e1af060017709b08/explore
+-- As of: 20230109
+
+    -- Men-at-arms and mounted sergeants - Kn General
+    g_models[g_str_615351aa03385c0016b86ca5_general] = g_models[g_str_615351a903385c0016b86a1a_general]
+
+    -- Men-at-arms and mounted sergeants\nDeployment dismounted from Knights General - EF General
+    g_models[g_str_615351aa03385c0016b86ca5_general_dismounted] = g_models[g_str_615351a903385c0016b86a1a_general_dismounted]
+
+    -- Men-at-arms and mounted sergeants\nDeployment dismounting as Elite Foot - Kn General
+    g_models[g_str_615351aa03385c0016b86ca5_general_mounted] = g_models[g_str_615351aa03385c0016b86ca5_general]
+
+    -- Men-at-arms and mounted sergeants - Kn
+    g_models[g_str_615351aa03385c0016b86ca5] = g_models[g_str_615351a903385c0016b86a1a]
+
+    -- Men-at-arms and mounted sergeants\nDeployment dismounted from Knights - EF
+    g_models[g_str_615351aa03385c0016b86ca5_dismounted] = g_models[g_str_615351a903385c0016b86a1a_dismounted]
+
+    -- Men-at-arms and mounted sergeants\nDeployment dismounting as Elite Foot - Kn
+    g_models[g_str_615351aa03385c0016b86ca5_mounted] = g_models[g_str_615351aa03385c0016b86ca5]
+
+    -- Sergeants, town militia, fyrd, and mercenaries - HF
+    g_models[g_str_615351aa03385c0016b86ca8] = {
+      {
+        random_models = {
+          'troop_norman_armor_foot_sword',
+          'troop_norman_spear',
+          'troop_norman_levy_shield'
+        }
+      }
+    }
+
+    -- Bowmen - Bow Levy
+    g_models[g_str_615351aa03385c0016b86cab] = g_models[g_str_615351a903385c0016b86a28]
+
+    -- Welsh bowmen - Archers
+    g_models[g_str_615351aa03385c0016b86caf] = {
+      {
+        model_data = 'troop_norman_archer'
+      }
+    }
+
+    -- Genoese or other mercenary crossbowmen - Archers
+    g_models[g_str_615351aa03385c0016b86cb2] = {
+      {
+        model_data = 'troop_norman_archer'
+      }
+    }
+
+    -- Flemish mercenary pikemen - Pikes
+    g_models[g_str_615351aa03385c0016b86cb5] = {
+      {
+        model_data = 'troop_norman_pikemen'
+      }
+    }
+
+    --Anglo-Norman Camp
+    g_models[g_str_5fb1b9e5e1af060017709b08_camp] = g_models[g_str_5fb1b9e4e1af060017709a59_camp]
+
+    --Anglo-Norman Standard Wagon
+    g_models[g_str_5fb1b9e5e1af060017709b08_camp_standard_wagon] = {
+      {
+        base = 'tile_grass_80x40',
+        n_models = 1,
+        model_data = 'troop_anglonorman_wagon'
+      }
+    }
+
+    -- Muntatores - Jav Cav
+    g_models[g_str_6153519603385c0016b83fea] = g_models[g_str_615351a903385c0016b86a20] 
+
+    -- Marcher Welshry - Light Foot
+    g_models[g_str_6153519603385c0016b83fec] = {
+      {
+        random_models = {
+          'troop_norman_levy',
+          'troop_norman_levy_shield'
+        }
+      }
+    }

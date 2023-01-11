@@ -5,7 +5,7 @@ require("Triumph_TTS/assets/assets")
 -------------------------------------------------------------------------------
 
 troop_fortified_camp_outline_40x40 = {
-    height_correction = 0,
+    height_correction = -0.05,
     scale = 1,
     rotation = 0,
     description = 'Fortified defenses for generic camp',
@@ -101,8 +101,8 @@ troop_swordsman_latemedieval = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_late_medieval_inclined = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Pikeman',
     author = 'Late Medieval Pikemen, using Empire Spearmen by Vess (edited by Arkein).',
@@ -116,8 +116,8 @@ troop_pikeman_late_medieval_inclined = {
 }
 
 troop_pikeman_late_medieval_straight = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Pikeman',
     author = 'Late Medieval Pikemen, using Empire Spearmen by Vess (edited by Arkein).',
@@ -132,8 +132,8 @@ troop_pikeman_late_medieval_straight = {
 }
 
 troop_pikeman_late_medieval_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Bannerman',
     author = 'Late Medieval Bannerman, using Empire Spearmen by Vess and linen texture from public domain (edited by Arkein).',
@@ -147,8 +147,8 @@ troop_pikeman_late_medieval_bannerman = {
 }
 
 troop_pikeman_late_medieval_captain = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Captain',
     author = 'Late Medieval Captain, using Empire Infantry Captain by Vess (edited by Arkein).',
@@ -160,8 +160,8 @@ troop_pikeman_late_medieval_captain = {
 }
 
 troop_spearman_no_shield_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Spearman Without Shield',
     author = 'Late Medieval Spearman, using Empire Spearman by Vess (edited by Arkein).',
@@ -179,8 +179,8 @@ troop_spearman_no_shield_late_medieval = {
 }
 
 troop_spearman_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Spearman',
     author = 'Late Medieval Spearman, using Empire Spearman by Vess (edited by Arkein).',
@@ -198,8 +198,8 @@ troop_spearman_late_medieval = {
 }
 
 troop_handgunner_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Handgunner',
     author = 'Late Medieval Handgunners, using Empire Handgunners by Vess (edited by Arkein).',
@@ -238,8 +238,8 @@ troop_handgunner_late_medieval = {
 }
 
 troop_halberdier_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Halberdier',
     author = 'Late Medieval Halberdier, using Empire Halberdiers by Vess (edited by Arkein).',
@@ -259,7 +259,7 @@ troop_halberdier_late_medieval = {
 
 troop_horde_late_medieval = {
     height_correction = 0,
-    scale = 0.36,
+    scale = 0.33,
     rotation = 270,
     description = 'Late Medieval Horde Troops',
     author = 'Late Medieval Horde Troops, using Empire Models by Vess (edited by Arkein).',
@@ -274,8 +274,8 @@ troop_horde_late_medieval = {
 }
 
 troop_bowman_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Bowman',
     author = 'Late Medieval Bowman, using Empire Bowman by Vess (edited by Arkein).',
@@ -294,8 +294,8 @@ troop_bowman_late_medieval = {
 }
 
 troop_longbowman_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Longbowman',
     author = 'Late Medieval Longbowman, using Empire Longbowman by Vess (edited by Arkein).',
@@ -314,8 +314,8 @@ troop_longbowman_late_medieval = {
 }
 
 troop_crossbowman_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Crossbowman',
     author = 'Late Medieval Crossbowman, using Empire Crossbowman by Vess (edited by Arkein).',
@@ -330,8 +330,8 @@ troop_crossbowman_late_medieval = {
 }
 
 troop_swordman_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Swordman',
     author = 'Late Medieval Swordman, using Empire Swordman by Vess (edited by Arkein).',
@@ -356,8 +356,8 @@ troop_swordman_late_medieval = {
 }
 
 troop_swordman_two_handed_late_medieval = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Swordman',
     author = 'Late Medieval Swordman, using Empire Swordman by Vess (edited by Arkein).',
@@ -378,7 +378,7 @@ troop_swordman_two_handed_late_medieval = {
 
 troop_artillery_pieces_late_medieval = {
   height_correction = 0,
-  scale = 0.28,
+  scale = 0.25,
     rotation = 180,
     description = 'Late Medieval Artillery',
     author = 'Late Medieval Artillery, using Empire Artillery by Vess (edited by Arkein).',
@@ -393,8 +393,8 @@ troop_artillery_pieces_late_medieval = {
 }
 
 troop_artillery_crew_late_medieval = {
-  height_correction = 0.36,
-  scale = 0.37,
+  height_correction = 0.30,
+  scale = 0.29,
     rotation = 180,
     description = 'Late Medieval Artillery Crew',
     author = 'Late Medieval Artillery Crew, using Empire Artillery Crew by Vess (edited by Arkein).',
@@ -417,8 +417,8 @@ troop_artillery_crew_late_medieval = {
 }
 
 troop_horse_rider_late_medieval = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Horse Rider',
     author = 'Late Medieval Horse Rider, using Empire Horse Rider by Vess (edited by Arkein).',
@@ -441,8 +441,8 @@ troop_horse_rider_late_medieval = {
 }
 
 troop_knight_late_medieval = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Knight',
     author = 'Late Medieval Knights, using Empire Knights by Vess (edited by Arkein).',
@@ -459,8 +459,8 @@ troop_knight_late_medieval = {
 }
 
 troop_knight_late_medieval_captain = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Knight Captain',
     author = 'Late Medieval Knight Captain, using Empire Knights by Vess (edited by Arkein).',
@@ -472,8 +472,8 @@ troop_knight_late_medieval_captain = {
 }
 
 troop_knight_late_medieval_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Knight Bannerman',
     author = 'Late Medieval Knight Bannerman, using Empire Knights by Vess and linen texture from public domain (edited by Arkein).',
@@ -532,8 +532,8 @@ troop_camp_late_german_c = {
 }
 
 troop_knight_late_german_c_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Knight Bannerman',
     author = 'Late Medieval Knight Bannerman, using Empire Knights by Vess, Frederick III coat of arms by Tom Lemmens y Heralder under CC BY-SA 3.0 and linen texture from public domain (all edited by Arkein).',
@@ -564,8 +564,8 @@ troop_camp_late_german_d = {
 }
 
 troop_pikeman_late_german_d_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late German Infantry Bannerman',
     author = 'Late German Infantry Bannerman, using Empire Spearman by Vess, Maximilian I coat of arms by Tom Lemmens under CC BY-SA 3.0 and linen texture from public domain (all edited by Arkein).',
@@ -579,8 +579,8 @@ troop_pikeman_late_german_d_bannerman = {
 }
 
 troop_knight_late_german_d_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Late German Knight Bannerman',
     author = 'Late German Knight Bannerman, using Empire Knights by Vess, Maximilian I coat of arms by Tom Lemmens under CC BY-SA 3.0 and linen texture from public domain (all edited by Arkein).',
@@ -597,8 +597,8 @@ troop_knight_late_german_d_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_saint_john_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Order of Saint John Infantry Bannerman',
     author = 'Order of Saint John Infantry Bannerman, using Empire Spearman by Vess, Maltese Cross from Public Domain and linen texture from public domain (all edited by Arkein).',
@@ -612,8 +612,8 @@ troop_pikeman_saint_john_bannerman = {
 }
 
 troop_knight_saint_john_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Order of Saint John Knight Bannerman',
     author = 'Order of Saint John Knight Bannerman, using Empire Knights by Vess, Maltese Cross from Public Domain and linen texture from public domain (all edited by Arkein).',
@@ -630,8 +630,8 @@ troop_knight_saint_john_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_low_countries_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Low Countries Infantry Bannerman',
     author = 'Low Countries Infantry Bannerman, using Empire Spearman by Vess, Holland coat of arms by Ipankonin and Bravant coat of arms by Samhanin both aunder CC BY-SA 3.0 and linen texture from public domain (all edited by Arkein).',
@@ -645,8 +645,8 @@ troop_pikeman_low_countries_bannerman = {
 }
 
 troop_knight_low_countries_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Low Countries Knight Bannerman',
     author = 'Low Countries Knight Bannerman, using Empire Knights by Vess, Holland coat of arms by Ipankonin and Bravant coat of arms by Samhanin both aunder CC BY-SA 3.0 and linen texture from public domain (all edited by Arkein).',
@@ -663,8 +663,8 @@ troop_knight_low_countries_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_knight_italian_condotta_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Italian Condotta Knight Bannerman',
     author = 'Italian Condotta Knight Bannerman, using Empire Knights by Vess, Milan coat of arms by Heralder and Eagle under CC BY-SA 3.0 and Venice coat of arms  F l a n k e r under Public Domain and linen texture from public domain (all edited by Arkein).',
@@ -681,8 +681,8 @@ troop_knight_italian_condotta_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_knight_later_polish_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Later Polish Knight Bannerman',
     author = 'Later Polish Knight Bannerman, using Empire Knights by Vess, Polish coat of arms from Public Domain and Hipocentaurus coat of arms from Bastianowa under CC BY-SA 3.0	and linen texture from public domain (all edited by Arkein).',
@@ -699,8 +699,8 @@ troop_knight_later_polish_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_knight_medieval_spanish_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Medieval Spanish Knight Bannerman',
     author = 'Medieval Spanish Knight Bannerman, using Empire Knights by Vess, Alba`s coat of arms by Xavigivax under CC BY-SA 4.0 and Castile coat of arms from Heralder under CC BY-SA 3.0 and linen texture from public domain (all edited by Arkein).',
@@ -716,8 +716,8 @@ troop_knight_medieval_spanish_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_medieval_portuguese_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Medieval Portuguese Infantry Bannerman',
     author = 'Medieval Portuguese Infantry Bannerman, using Empire Spearman by Vess, Portuguese coat of arms by Nuno Tavares under CC BY-SA 4.0 and Christ Order Cross by Jsobral under CC BY-SA 3.0 and linen texture from public domain (all edited by Arkein).',
@@ -731,8 +731,8 @@ troop_pikeman_medieval_portuguese_bannerman = {
 }
 
 troop_knight_medieval_portuguese_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Medieval Portuguese Knight Bannerman',
     author = 'Medieval Portuguese Knight Bannerman, using Empire Knights by Vess, Portuguese coat of arms by Nuno Tavares under CC BY-SA 4.0 and Christ Order Cross by Jsobral under CC BY-SA 3.0, and linen texture from public domain (all edited by Arkein).',
@@ -749,8 +749,8 @@ troop_knight_medieval_portuguese_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_swiss_inclined = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Pikeman',
     author = 'Swiss Pikemen, using Empire Spearmen by Vess (edited by Arkein).',
@@ -764,8 +764,8 @@ troop_pikeman_swiss_inclined = {
 }
 
 troop_pikeman_swiss_straight = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Pikeman',
     author = 'Swiss Pikemen, using Empire Spearmen by Vess (edited by Arkein).',
@@ -780,8 +780,8 @@ troop_pikeman_swiss_straight = {
 }
 
 troop_pikeman_swiss_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Bannerman',
     author = 'Swiss Bannerman, using Empire Spearmen by Vess, Uri Canton CoA from public domain and linen texture from public domain (all edited by Arkein).',
@@ -795,8 +795,8 @@ troop_pikeman_swiss_bannerman = {
 }
 
 troop_pikeman_swiss_captain = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Captain',
     author = 'Swiss Captain, using Empire Infantry Captain by Vess (edited by Arkein).',
@@ -808,8 +808,8 @@ troop_pikeman_swiss_captain = {
 }
 
 troop_handgunner_swiss = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Handgunner',
     author = 'Swiss Handgunners, using Empire Handgunners by Vess (edited by Arkein).',
@@ -848,8 +848,8 @@ troop_handgunner_swiss = {
 }
 
 troop_halberdier_swiss = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Halberdier',
     author = 'Swiss Halberdier, using Empire Halberdiers by Vess (edited by Arkein).',
@@ -868,8 +868,8 @@ troop_halberdier_swiss = {
 }
 
 troop_crossbowman_swiss = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Crossbowman',
     author = 'Swiss Crossbowman, using Empire Crossbowman by Vess (edited by Arkein).',
@@ -885,7 +885,7 @@ troop_crossbowman_swiss = {
 
 
 troop_artillery_pieces_swiss = {
-  height_correction = 0,
+  height_correction = -0.05,
   scale = 0.28,
     rotation = 180,
     description = 'Swiss Artillery',
@@ -901,8 +901,8 @@ troop_artillery_pieces_swiss = {
 }
 
 troop_artillery_crew_swiss = {
-  height_correction = 0.36,
-  scale = 0.37,
+  height_correction = 0.30,
+  scale = 0.31,
     rotation = 180,
     description = 'Swiss Artillery Crew',
     author = 'Swiss Artillery Crew, using Empire Artillery Crew by Vess (edited by Arkein).',
@@ -925,8 +925,8 @@ troop_artillery_crew_swiss = {
 }
 
 troop_horse_rider_swiss = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Horse Rider',
     author = 'Swiss Horse Rider, using Empire Horse Rider by Vess (edited by Arkein).',
@@ -949,8 +949,8 @@ troop_horse_rider_swiss = {
 }
 
 troop_knight_swiss = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Swiss Knight',
     author = 'Swiss Knights, using Empire Knights by Vess (edited by Arkein).',
@@ -986,8 +986,8 @@ troop_camp_swiss = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_french_ordonnances_a_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Ordonnance French Infantry Bannerman',
     author = 'Ordonnance French Knight Bannerman, using Empire Spearman by Vess, Valois coat of arms by Sodacan under CC BY-SA 3.0, Toulouse cross and linen texture both from public domain (all edited by Arkein).',
@@ -1001,8 +1001,8 @@ troop_pikeman_french_ordonnances_a_bannerman = {
 }
 
 troop_knight_french_ordonnances_a_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Ordonnance French Infantry Bannerman',
     author = 'Ordonnance French Infantry Bannerman, using Empire Knights by Vess, Valois coat of arms by Sodacan under CC BY-SA 3.0, Toulouse cross and linen texture both from public domain (all edited by Arkein).',
@@ -1019,8 +1019,8 @@ troop_knight_french_ordonnances_a_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_knight_french_ordonnances_b_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Ordonnance French Knight Bannerman',
     author = 'Ordonnance French Infantry Bannerman, using Empire Knights by Vess, Valois coat of arms by Sodacan under CC BY-SA 3.0, Toulouse cross and linen texture both from public domain (all edited by Arkein).',
@@ -1037,8 +1037,8 @@ troop_knight_french_ordonnances_b_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_english_wotr_a_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'War of the Roses English Infantry Bannerman',
     author = 'War of the Roses English Infantry Bannerman, using Empire Spearman by Vess, Lancaster and York coat of arms from Sodacan under CC BY-SA 3.0 and linen texture from public domain  (all edited by Arkein).',
@@ -1052,8 +1052,8 @@ troop_pikeman_english_wotr_a_bannerman = {
 }
 
 troop_knight_english_wotr_a_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'War of the Roses English Knight Bannerman',
     author = 'War of the Roses English Knight Bannerman, using Empire Knights by Vess, Lancaster and York coat of arms from Sodacan under CC BY-SA 3.0 and linen texture from public domain  (all edited by Arkein).',
@@ -1070,8 +1070,8 @@ troop_knight_english_wotr_a_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_english_wotr_b_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'War of the Roses English Infantry Bannerman',
     author = 'War of the Roses English Infantry Bannerman, using Empire Spearman by Vess, Tudor and York coat of arms from Sodacan under CC BY-SA 3.0 and linen texture from public domain  (all edited by Arkein).',
@@ -1085,8 +1085,8 @@ troop_pikeman_english_wotr_b_bannerman = {
 }
 
 troop_knight_english_wotr_b_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'War of the Roses English Knight Bannerman',
     author = 'War of the Roses English Knight Bannerman, using Empire Knights by Vess, Tudor and York coat of arms from Sodacan under CC BY-SA 3.0 and linen texture from public domain  (all edited by Arkein).',
@@ -1103,8 +1103,8 @@ troop_knight_english_wotr_b_bannerman = {
 ------------------------------------------------------------------------------
 
 troop_pikeman_burgundian_ordonnances_inclined = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Pikeman',
     author = 'Burgundian Ordonnances Pikemen, using Empire Spearmen by Vess (edited by Arkein).',
@@ -1118,8 +1118,8 @@ troop_pikeman_burgundian_ordonnances_inclined = {
 }
 
 troop_pikeman_burgundian_ordonnances_straight = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Pikeman',
     author = 'Burgundian Ordonnances Pikemen, using Empire Spearmen by Vess (edited by Arkein).',
@@ -1134,8 +1134,8 @@ troop_pikeman_burgundian_ordonnances_straight = {
 }
 
 troop_pikeman_burgundian_ordonnances_bannerman = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Bannerman',
     author = 'Burgundian Ordonnances Bannerman, using Empire Spearmen by Vess, Burgundian banners from Wikipedia by Heralder (Burgundian Dukes banner) and Buho07 (Burgundian cross), both under CC BY-SA 3.0, and linen texture from Public Domain (all of this edited by Arkein).',
@@ -1149,8 +1149,8 @@ troop_pikeman_burgundian_ordonnances_bannerman = {
 }
 
 troop_pikeman_burgundian_ordonnances_captain = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Captain',
     author = 'Burgundian Ordonnances Captain, using Empire Knights by Vess and Burgundian Cross by Buho07 under CC BY-SA 3.0 (all edited by Arkein).',
@@ -1162,8 +1162,8 @@ troop_pikeman_burgundian_ordonnances_captain = {
 }
 
 troop_handgunner_burgundian_ordonnances = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Handgunner',
     author = 'Burgundian Ordonnances Handgunners, using Empire Handgunners by Vess (edited by Arkein).',
@@ -1202,8 +1202,8 @@ troop_handgunner_burgundian_ordonnances = {
 }
 
 troop_halberdier_burgundian_ordonnances = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Halberdier',
     author = 'Burgundian Ordonnances Halberdier, using Empire Halberdiers by Vess (edited by Arkein).',
@@ -1222,8 +1222,8 @@ troop_halberdier_burgundian_ordonnances = {
 }
 
 troop_crossbowman_burgundian_ordonnances = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Crossbowman',
     author = 'Burgundian Ordonnances Crossbowman, using Empire Crossbowman by Vess (edited by Arkein).',
@@ -1238,8 +1238,8 @@ troop_crossbowman_burgundian_ordonnances = {
 }
 
 troop_swordman_two_handed_burgundian_ordonnances = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Swordman',
     author = 'Burgundian Ordonnances Swordman, using Empire Swordman by Vess (edited by Arkein).',
@@ -1259,8 +1259,8 @@ troop_swordman_two_handed_burgundian_ordonnances = {
 }
 
 troop_bowman_burgundian_ordonnances = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Bowman',
     author = 'Late Medieval Bowman, using Empire Bowman by Vess (edited by Arkein).',
@@ -1279,8 +1279,8 @@ troop_bowman_burgundian_ordonnances = {
 }
 
 troop_longbowman_burgundian_ordonnances = {
-    height_correction = 0.36,
-    scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Longbowman',
     author = 'Late Medieval Longbowman, using Empire Longbowman by Vess (edited by Arkein).',
@@ -1315,8 +1315,8 @@ troop_artillery_pieces_burgundian_ordonnances = {
 }
 
 troop_artillery_crew_burgundian_ordonnances = {
-  height_correction = 0.36,
-  scale = 0.37,
+    height_correction = 0.30,
+    scale = 0.31,
     rotation = 180,
     description = 'Late Medieval Artillery Crew',
     author = 'Late Medieval Artillery Crew, using Empire Artillery Crew by Vess (edited by Arkein).',
@@ -1339,8 +1339,8 @@ troop_artillery_crew_burgundian_ordonnances = {
 }
 
 troop_horse_rider_burgundian_ordonnances = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Horse Rider',
     author = 'Burgundian Ordonnances Horse Rider, using Empire Horse Rider by Vess (edited by Arkein).',
@@ -1363,8 +1363,8 @@ troop_horse_rider_burgundian_ordonnances = {
 }
 
 troop_knight_burgundian_ordonnances = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Knight',
     author = 'Burgundian Ordonnances Knight, using Empire Knights by Vess and Burgundian Cross by Buho07 under CC BY-SA 3.0 (all edited by Arkein).',
@@ -1381,8 +1381,8 @@ troop_knight_burgundian_ordonnances = {
 }
 
 troop_knight_burgundian_ordonnances_captain = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Knight Captain',
     author = 'Burgundian Ordonnances Knight Captain, using Empire Knights by Vess and Burgundian Cross by Buho07 under CC BY-SA 3.0 (all edited by Arkein).',
@@ -1394,8 +1394,8 @@ troop_knight_burgundian_ordonnances_captain = {
 }
 
 troop_knight_burgundian_ordonnances_bannerman = {
-    height_correction = 0.71,
-    scale = 0.37,
+    height_correction = 0.62,
+    scale = 0.31,
     rotation = 180,
     description = 'Burgundian Ordonnances Knight Bannerman',
     author = 'Burgundian Ordonnances Knight Bannerman, using Empire Knights by Vess, Burgundian banners from Wikipedia by Heralder (Burgundian Dukes banner) and Buho07 (Burgundian cross), both under CC BY-SA 3.0, and linen texture from Public Domain (all of this edited by Arkein).',
@@ -2899,16 +2899,32 @@ troop_norman_knight_flag = {
 }
 
 troop_anglonorman_wagon = {
-    height_correction = 0.38,
+    height_correction = 0,
     scale = 0.42,
     rotation = 0,
+    height_correction = 0,
+    scale = 0.33,
+    rotation = 90,
     description = 'Anglo-Norman Command-Wagon',
     author = 'Anglo-Norman Command-Wagon by Helveticus and Bog Hardlog, modified by LeberechtReinhold',
     mesh = {
-          'http://cloud-3.steamusercontent.com/ugc/1667984994449859201/00D608CE88F22A4F7B2AE5BBB03D39D7E7F2BF93/'
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970244153/854DD53C8B8E5E77C1F3097D6214E0724687B175/'
     },
     player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/1667984994449859650/493524D973DAD8CD98FC658F2ED2AEE9C4C45449/',
     player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/1667984994449859650/493524D973DAD8CD98FC658F2ED2AEE9C4C45449/',
+}
+
+troop_spanish_wagon = {
+    height_correction = 0,
+    scale = 0.33,
+    rotation = 90,
+    description = 'Spanish Command-Wagon',
+    author = 'Spanish Command-Wagon by Helveticus and Bog Hardlog, modified by LeberechtReinhold and Arkein',
+    mesh = {
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970244153/854DD53C8B8E5E77C1F3097D6214E0724687B175/'
+    },
+    player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/2035097135970222752/35F1FE913B6073874555EE03D1F92D07829C41B0/',
+    player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/2035097135970222752/35F1FE913B6073874555EE03D1F92D07829C41B0/',
 }
 
 troop_frank_knight_flag = {
@@ -2933,8 +2949,8 @@ troop_spanish_knight_flag = {
     mesh = {
           'http://cloud-3.steamusercontent.com/ugc/1667983596735688196/B0FCB3C74E40B473E3AE94D706623EB21132E8F4/'
     },
-    player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/1682624464135825680/AF4B8FBE5C589C156ABD60E29C9EF57C7EC6FEE8/',
-    player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/1682624464135825680/AF4B8FBE5C589C156ABD60E29C9EF57C7EC6FEE8/',
+    player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/2035097135970270841/0063C8CCD97D0E896593BA33261EAF723E545F20/',
+    player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/2035097135970270841/0063C8CCD97D0E896593BA33261EAF723E545F20/',
 }
 
 troop_norman_knight_lance = {
@@ -2965,6 +2981,62 @@ troop_spanish_knight_lance = {
     },
     player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/1667983596735685871/DD8719776E482AE319500D89AC8820DE62EBC7C4/',
     player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/1667983596735685871/DD8719776E482AE319500D89AC8820DE62EBC7C4/',
+}
+
+troop_spanish_crossbow_mounted = {
+    height_correction = 0,
+    scale = 0.34,
+    rotation = 0,
+    description = 'Spanish Mounted Crossbowmen',
+    author = 'Spanish Mounted Crossbowmen by Helveticus, modified by Arkein.',
+    mesh = {
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970045529/EE83A42334CF28F0AC311C1C790B7A9CA0859344/',
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970045617/755F74DCF44C26734BFE29E3357B066BCD6B3996/',
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970045678/1FDB0ED1405046771834D0F6BC986BA6698EAC03/',
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970045741/4834AD79B8858A293FF5483A6F6C4A87290179DB/'
+
+    },
+    player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/2035097135970045843/A49E64C87FFB40F9CBD42256E6D712F093DDAC47/',
+    player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/2035097135970045843/A49E64C87FFB40F9CBD42256E6D712F093DDAC47/',
+}
+
+troop_norman_armor_foot_flag = {
+    height_correction = 0,
+    scale = 1.7,
+    rotation = 0,
+    description = 'Norman Knight with Flag',
+    author = 'Norman Knight with Flag by Helveticus, texture modified by LeberechtReinhold, model modified by Arkein.',
+    mesh = {
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970201484/3AE102C5D27F9A73166FBC092EFD6E257311148D/'
+    },
+    player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/1667984994449859379/D9318B6173BB036C3F50006BDC4B89BE6D360800/',
+    player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/1667984994449859379/D9318B6173BB036C3F50006BDC4B89BE6D360800/',
+}
+
+troop_frank_armor_foot_flag = {
+    height_correction = 0,
+    scale = 1.7,
+    rotation = 0,
+    description = 'Frank Knight with Flag',
+    author = 'Frank Knight with Flag by Helveticus, texture modified by LeberechtReinhold, model modified by Arkein.',
+    mesh = {
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970201484/3AE102C5D27F9A73166FBC092EFD6E257311148D/'
+    },
+    player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/1667983596735684389/9943F56AA6F72C6F139400C0CBF0638DF10A899A/',
+    player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/1667983596735684389/9943F56AA6F72C6F139400C0CBF0638DF10A899A/',
+}
+
+troop_spanish_armor_foot_flag = {
+    height_correction = 0,
+    scale = 1.7,
+    rotation = 0,
+    description = 'Spanish Knight with Flag',
+    author = 'Spanish Knight with Flag by Helveticus, texture modified by LeberechtReinhold, model modified by Arkein.',
+    mesh = {
+          'http://cloud-3.steamusercontent.com/ugc/2035097135970201484/3AE102C5D27F9A73166FBC092EFD6E257311148D/'
+    },
+    player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/2035097135970270841/0063C8CCD97D0E896593BA33261EAF723E545F20/',
+    player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/2035097135970270841/0063C8CCD97D0E896593BA33261EAF723E545F20/',
 }
 
 troop_norman_armor_foot_sword = {

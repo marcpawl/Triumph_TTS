@@ -1,0 +1,85 @@
+-- Numidian or Early Moorish
+-- 215 BC to 25 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9dce1af060017709591/explore
+-- As of: 20230102
+
+-- Numidian or Early Moorish
+army['5fb1b9dce1af060017709591'].data.has_models = true
+army['5fb1b9dce1af060017709591'].data.base = "tile_grass"
+
+-- Later Libyan
+army['5fb1b9dce1af060017709581'].data.has_models = true
+army['5fb1b9dce1af060017709581'].data.base = "tile_grass"
+
+--},
+
+    -- Numidian general with spanish bodyguard - JavCav General
+    g_models[g_str_615351a203385c0016b858bb_general] = g_models[g_str_615351a103385c0016b85710_general]
+
+    -- Numidian horsemen - JavCav
+    g_models[g_str_615351a203385c0016b858bb] = g_models[g_str_615351a103385c0016b8572c]
+    
+    -- Javelinmen - LF
+    g_models[g_str_615351a203385c0016b858bd] = g_models[g_str_615351a103385c0016b85714]
+    
+    -- Rabble javelinmen unshielded
+    g_models[g_str_615351a203385c0016b858be] = {
+        {
+          random_models = {
+            'troop_egyptian_skirmishers_javelin_carrier'
+          },
+          loose = true
+        }
+      }
+
+    -- Skirmishing bowmen or slingers - Sk
+    g_models[g_str_615351a203385c0016b858c0] = g_models[g_str_615351a103385c0016b85721]
+    
+    -- African forest elephant - El
+    g_models[g_str_615351a203385c0016b858c2] = {
+        {
+          n_models = 1,
+          model_data = 'troop_carthaginian_elephant_2'
+        }
+      }
+    
+    -- Roman-trained light infantry - LF
+    g_models[g_str_615351a203385c0016b858c5] = g_models[g_str_615351a203385c0016b85959]
+    
+    -- Imitation legionaries - HF
+    g_models[g_str_615351a203385c0016b858c8] = g_models[g_str_615351a603385c0016b86249]
+
+
+    g_models[g_str_5fb1b9dce1af060017709591_camp] = g_models[g_str_5fb1b9dce1af060017709543_camp]
+
+    g_models[g_str_5fb1b9dce1af060017709591_camp_pack_train] = g_models[g_str_5fb1b9dce1af060017709543_camp_pack_train]
+
+
+-- Later Libyan
+-- 664 BC to 70 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9dce1af060017709581/explore
+-- As of: 20230102
+
+--},
+
+    -- 4-horse battle platforms with javelin crew - Battle Taxi General
+    g_models[g_str_615351a203385c0016b8589f_general] = g_models[g_str_615351a103385c0016b85705_general]
+
+    -- 4-horse battle platforms with javelin crew - Battle Taxi
+    g_models[g_str_615351a203385c0016b8589f] = g_models[g_str_615351a103385c0016b85705]
+    
+    -- Libyan heavy infantry with large shields and spears - HF
+    g_models[g_str_615351a203385c0016b858a1] = g_models[g_str_615351a103385c0016b85717]
+    
+    -- Tribesmen armed with javelins, throwing sticks, and clubs - Rabble
+    g_models[g_str_615351a203385c0016b858a3] = g_models[g_str_615351a203385c0016b858be]
+
+    -- Skirmishing bowmen - Rabble
+    g_models[g_str_615351a203385c0016b858a5] = g_models[g_str_615351a203385c0016b858be]
+
+    g_models[g_str_5fb1b9dce1af060017709581_camp] = g_models[g_str_5fb1b9dce1af060017709543_camp]
+
+    g_models[g_str_5fb1b9dce1af060017709581_camp_pack_train] = g_models[g_str_5fb1b9dce1af060017709543_camp_pack_train]
+
+
+    

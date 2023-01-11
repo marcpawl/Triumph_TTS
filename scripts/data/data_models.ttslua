@@ -55,6 +55,7 @@ require("Triumph_TTS/scripts/data/data_models_early_german")
 require("Triumph_TTS/scripts/data/data_models_ancient_spanish")
 require("Triumph_TTS/scripts/data/data_models_early_roman")
 require("Triumph_TTS/scripts/data/data_models_carthaginian")
+require("Triumph_TTS/scripts/data/data_models_numidian_or_libyan")
 require("Triumph_TTS/scripts/data/data_models_thracians")
 require("Triumph_TTS/scripts/data/data_models_alexandrian")
 require("Triumph_TTS/scripts/data/data_models_greeks")
@@ -70,3 +71,7 @@ require("Triumph_TTS/scripts/data/data_models_viking")
 require("Triumph_TTS/scripts/data/data_models_norman")
 
 require("Triumph_TTS/scripts/data/data_models_late_medieval_3d")
+
+require("Triumph_TTS/scripts/data/data_models_numidian_or_libyan")
+
+require("Triumph_TTS/scripts/data/data_models_early_feudal_spanish")

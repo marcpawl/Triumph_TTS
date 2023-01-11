@@ -2,7 +2,7 @@
 -- This file will include non-related armies that use
 -- the same base of 3D models, modified by Arkein.
 --
--- Thses were the very first models and there are no
+-- These were the very first models and there are no
 -- differences besides colors and flags.
 -- We will replace 3D with Photogametry once we have
 -- The proper models
@@ -28,12 +28,46 @@ army['5fb1b9e7e1af060017709bfd'].data.base="tile_grass"
 -- Order of St. John
 army['5fb1b9eee1af06001770a00c'].data.has_models = true
 army['5fb1b9eee1af06001770a00c'].data.base="tile_grass"
+-- Wars of the Roses English
+army['5fb1b9e6e1af060017709b42'].data.has_models = true
+army['5fb1b9e6e1af060017709b42'].data.base="tile_grass"
+-- Tudor English
+army['5fb1b9e6e1af060017709b49'].data.has_models = true
+army['5fb1b9e6e1af060017709b49'].data.base="tile_grass"
+-- French Ordonnance
+army['5fb1b9e8e1af060017709c53'].data.has_models = true
+army['5fb1b9e8e1af060017709c53'].data.base="tile_grass"
+-- Later French Ordonnance
+army['5fb1b9e8e1af060017709c5b'].data.has_models = true
+army['5fb1b9e8e1af060017709c5b'].data.base="tile_grass"
+--Later Medieval German Citystates
+army['5fb1b9e8e1af060017709cdd'].data.has_models = true
+army['5fb1b9e8e1af060017709cdd'].data.base="tile_grass"
+-- Early Renaissance German Citystates
+army['5fb1b9e8e1af060017709cd3'].data.has_models = true
+army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 -- Early Renaissance Swiss
 -- 1478 AD to 1522 AD
 -- https://meshwesh.wgcwar.com/armyList/5fb1b9e9e1af060017709d15/explore
 -- As of: 20210420
 
+    -- Crossbowmen on horses
+    g_models[g_str_615351ac03385c0016b87401] = {
+      {
+        model_data = 'troop_horse_rider_swiss'
+      }
+    }
+
+    --Crossbowmen on horses\nMid-battle dismounted from Bad Horse - Skirmishers
+    g_models[g_str_615351ac03385c0016b87401_dismounted] = {
+      {
+        model_data = 'troop_crossbowman_swiss'
+      }
+    }
+
+    --Crossbowmen on horses - Bad Horse
+    g_models[g_str_615351ac03385c0016b87401_mounted] = g_models[g_str_615351ac03385c0016b87401]
 
     -- Pikemen mixed with some halberdiers - Pikes General
     g_models[g_str_615351ac03385c0016b87404_general] = {
@@ -50,11 +84,23 @@ army['5fb1b9eee1af06001770a00c'].data.base="tile_grass"
 
     -- Pikemen mixed with some halberdiers - Pikes
     g_models[g_str_615351ac03385c0016b87404] = {
-      {
-        model_data = 'troop_pikeman_swiss_inclined'
+        {
+        random_models = {
+          'troop_pikeman_swiss_straight',
+          'troop_halberdier_swiss',
+          'troop_pikeman_swiss_straight',
+          'troop_pikeman_swiss_straight',
+          'troop_pikeman_swiss_straight'
+        }
       },
       {
-        model_data = 'troop_pikeman_swiss_straight'
+        random_models = {
+          'troop_pikeman_swiss_inclined',
+          'troop_halberdier_swiss',
+          'troop_pikeman_swiss_inclined',
+          'troop_pikeman_swiss_inclined',
+          'troop_pikeman_swiss_inclined'
+        }
       }
     }
 
@@ -108,25 +154,13 @@ army['5fb1b9eee1af06001770a00c'].data.base="tile_grass"
 
 
     --Crossbowmen on horses - Bad Horse
-    g_models[g_str_615351ac03385c0016b873ed] = {
-      {
-        model_data = 'troop_horse_rider_swiss'
-      }
-    }
+    g_models[g_str_615351ac03385c0016b873ed] = g_models[g_str_615351ac03385c0016b87401]
 
     --Crossbowmen on horses\nMid-battle dismounted from Bad Horse - Skirmishers
-    g_models[g_str_615351ac03385c0016b873ed_dismounted] = {
-      {
-        model_data = 'troop_crossbowman_swiss'
-      }
-    }
+    g_models[g_str_615351ac03385c0016b873ed_dismounted] = g_models[g_str_615351ac03385c0016b87401_dismounted]
 
     --Crossbowmen on horses - Bad Horse
-    g_models[g_str_615351ac03385c0016b873ed_mounted] = {
-      {
-        model_data = 'troop_horse_rider_swiss'
-      }
-    }
+    g_models[g_str_615351ac03385c0016b873ed_mounted] = g_models[g_str_615351ac03385c0016b87401]
 
     -- Pikemen mixed with some halberdiers - Pikes General
     g_models[g_str_615351ac03385c0016b873f0_general] = g_models[g_str_615351ac03385c0016b87404_general]
@@ -635,13 +669,12 @@ army['5fb1b9eee1af06001770a00c'].data.base="tile_grass"
     g_models[g_str_5fb1b9e7e1af060017709bfd_camp] = {
       {
         n_models = 1,
-        model_data = 'troop_camp_burgundian_ordonnances'
+        model_data = 'troop_camp_late_medieval'
       }
     }
 
     -- Medieval Portuguese Camp Pack Train
     g_models[g_str_5fb1b9e7e1af060017709bfd_camp_pack_train] = g_models[g_str_5fb1b9e1e1af060017709849_camp_pack_train]
-
 
 -- Order of St. John
 -- 1291 AD to 1522 AD
@@ -707,7 +740,7 @@ army['5fb1b9eee1af06001770a00c'].data.base="tile_grass"
       }
     }
 
-    -- Greek bowmen and crossbowmen - Bow Levy
+    -- Greek bowmen and crossbowmen - Bow Levy General
     g_models[g_str_615351b103385c0016b880bb_general] = {
       {
         n_models = 3,
@@ -808,3 +841,823 @@ army['5fb1b9eee1af06001770a00c'].data.base="tile_grass"
         model_data = 'troop_camp_burgundian_ordonnances'
       }
     }
+
+-- Wars Of The Roses English
+-- 1455 AD to 1488 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9e6e1af060017709b42/explore
+-- As of: 20220102
+
+
+    -- Men-at-arms - Kn General
+    g_models[g_str_615351aa03385c0016b86d79_general] = {
+      {
+        n_models = 3,
+        fixed_models = {
+          [1] = 'troop_knight_english_wotr_a_bannerman',
+          [2] = 'troop_knight_late_medieval_captain',
+          [3] = 'troop_knight_late_medieval'
+        }
+      }
+    }
+
+
+    -- Men-at-arms\nDeployment dismounted from Knights General - EF General
+    g_models[g_str_615351aa03385c0016b86d79_general_dismounted] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_halberdier_late_medieval',
+          [2] = 'troop_pikeman_english_wotr_a_bannerman',
+          [3] = 'troop_pikeman_late_medieval_captain',
+          [4] = 'troop_halberdier_late_medieval'
+        }
+      }
+    }
+
+    -- Men-at-arms\nDeployment dismounted from Knights General- Kn General
+    g_models[g_str_615351aa03385c0016b86d79_general_mounted] = g_models[g_str_615351aa03385c0016b86d79_general]
+
+    -- Men-at-arms - Kn
+    g_models[g_str_615351aa03385c0016b86d79] = g_models[g_str_615351ab03385c0016b87020]
+
+    -- Men-at-arms\nDeployment dismounted from Knights - EF
+    g_models[g_str_615351aa03385c0016b86d79_dismounted] = g_models[g_str_615351ab03385c0016b86fb6_dismounted]
+
+    -- Men-at-arms\nDeployment dismounted from Knights- Kn
+    g_models[g_str_615351aa03385c0016b86d79_mounted] = g_models[g_str_615351ab03385c0016b86fb6]
+
+    -- Currours - JavCav
+    g_models[g_str_615351aa03385c0016b86d7c] = g_models[g_str_615351ab03385c0016b87022]
+
+    -- Retinue billmen - EF
+    g_models[g_str_615351aa03385c0016b86d7e] = g_models[g_str_615351ab03385c0016b86fb6_dismounted]
+
+    -- Retinue billmen\nDismounted mobile infantry - EF
+    g_models[g_str_615351aa03385c0016b86d7e_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b86fb6_dismounted]
+    
+    -- Retinue billmen\nMounted mobile infantry - EF
+    g_models[g_str_615351aa03385c0016b86d7e_mounted_mobile_infantry] = {
+      {
+        model_data = 'troop_horse_rider_late_medieval'
+      }
+    }
+
+    -- Retinue bowmen  - Archers
+    g_models[g_str_615351aa03385c0016b86d82] = g_models[g_str_615351ab03385c0016b8721d]
+
+    -- Retinue bowmen\nDismounted mobile infantry  - Archers
+    g_models[g_str_615351aa03385c0016b86d82_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b8721d]
+
+    -- Retinue bowmen\nMunted mobile infantry - Archers
+    g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d7e_mounted_mobile_infantry]
+
+    -- Welsh spearmen - Light Spear
+    g_models[g_str_615351aa03385c0016b86d85] = {
+      {
+        model_data = 'troop_spearman_no_shield_late_medieval'
+      }
+    }
+
+    -- Welsh bowmen  - Archers
+    g_models[g_str_615351aa03385c0016b86d89] = g_models[g_str_615351ab03385c0016b8721d]
+
+    -- Irish kerns - LF
+    g_models[g_str_615351aa03385c0016b86d8c] = {
+      {
+        model_data = 'troop_horde_late_medieval'
+      }
+    }
+
+    -- Continental handgunners - Sk
+    g_models[g_str_615351aa03385c0016b86d90] = {
+      {
+        model_data = 'troop_bowman_late_medieval'
+      }
+    }
+    -- French crossbowmen - Sk
+    g_models[g_str_615351aa03385c0016b86d94] = {
+      {
+        model_data = 'troop_crossbowman_burgundian_ordonnances'
+      }
+    }
+
+    -- Breton javelinmen
+    g_models[g_str_615351aa03385c0016b86d97] = g_models[g_str_615351a903385c0016b86a07]
+
+    -- Bombards
+    g_models[g_str_615351aa03385c0016b86d99] =  g_models[g_str_615351ab03385c0016b8702a]
+
+    -- Camp
+    g_models[g_str_5fb1b9e6e1af060017709b42_camp] =  g_models[g_str_5fb1b9e7e1af060017709bfd_camp]
+
+    -- Shire Billmen - HF
+    g_models[g_str_6153519603385c0016b84057] = g_models[g_str_615351ac03385c0016b87407]
+
+    -- Shire bowmen - Archers
+    g_models[g_str_6153519603385c0016b84059] = {
+      {
+        model_data = 'troop_bowman_late_medieval'
+      }
+    }
+
+    -- Northern border staves - Jav Cav
+    g_models[g_str_6153519603385c0016b84052] = g_models[g_str_615351ac03385c0016b873ed]
+
+    -- Northern border infantry
+    g_models[g_str_6153519603385c0016b84054] = g_models[g_str_615351ab03385c0016b87026]
+
+-- Tudor English
+-- 1489 AD to 1515 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9e6e1af060017709b49/explore
+-- As of: 20220102
+
+
+    -- Men-at-arms - Kn General
+    g_models[g_str_615351aa03385c0016b86da3_general] = {
+      {
+        n_models = 3,
+        fixed_models = {
+          [1] = 'troop_knight_english_wotr_b_bannerman',
+          [2] = 'troop_knight_late_medieval_captain',
+          [3] = 'troop_knight_late_medieval'
+        }
+      }
+    }
+
+
+    -- Men-at-arms\nDeployment dismounted from Knights General - EF General
+    g_models[g_str_615351aa03385c0016b86da3_general_dismounted] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_halberdier_late_medieval',
+          [2] = 'troop_pikeman_english_wotr_b_bannerman',
+          [3] = 'troop_pikeman_late_medieval_captain',
+          [4] = 'troop_halberdier_late_medieval'
+        }
+      }
+    }
+
+    -- Men-at-arms\nDeployment dismounted from Knights General- Kn General
+    g_models[g_str_615351aa03385c0016b86da3_general_mounted] = g_models[g_str_615351aa03385c0016b86d79_general]
+
+    -- Men-at-arms - Kn
+    g_models[g_str_615351aa03385c0016b86da3] = g_models[g_str_615351aa03385c0016b86d79]
+
+    -- Men-at-arms\nDeployment dismounted from Knights - EF
+    g_models[g_str_615351aa03385c0016b86da3_dismounted] = g_models[g_str_615351aa03385c0016b86d79_dismounted]
+
+    -- Men-at-arms\nDeployment dismounted from Knights- Kn
+    g_models[g_str_615351aa03385c0016b86da3_mounted] = g_models[g_str_615351aa03385c0016b86d79]
+
+    -- Retinue billmen - EF
+    g_models[g_str_615351aa03385c0016b86da6] = g_models[g_str_615351b103385c0016b880c5]
+
+    -- Retinue billmen\nDismounted mobile infantry - EF
+    g_models[g_str_615351aa03385c0016b86da6_dismounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86da6]
+    
+    -- Retinue billmen\nMounted mobile infantry - EF
+    g_models[g_str_615351aa03385c0016b86da6_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d7e_mounted_mobile_infantry]
+
+    -- Retinue bowmen  - Archers
+    g_models[g_str_615351aa03385c0016b86daa] = g_models[g_str_615351aa03385c0016b86d82]
+
+    -- Retinue bowmen\nDismounted mobile infantry  - Archers
+    g_models[g_str_615351aa03385c0016b86daa_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82]
+
+    -- Retinue bowmen\nMunted mobile infantry - Archers
+    g_models[g_str_615351aa03385c0016b86daa_dismounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+
+    -- Shire Billmen - HF
+    g_models[g_str_615351aa03385c0016b86dad] = g_models[g_str_6153519603385c0016b84057]
+
+    -- Northern border staves - Jav Cav
+    g_models[g_str_615351aa03385c0016b86daf] = g_models[g_str_6153519603385c0016b84052]
+
+    -- Bombards
+    g_models[g_str_615351aa03385c0016b86db1] =  g_models[g_str_615351aa03385c0016b86d99]
+
+    -- Camp
+    g_models[g_str_5fb1b9e6e1af060017709b49_camp] =  g_models[g_str_5fb1b9e6e1af060017709b42_camp]
+
+-- French Ordonnance
+-- 1445 AD to 1480 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9e8e1af060017709c53/explore
+-- As of: 20220103
+
+
+    -- Ordonnance gendarmes - Kn General
+    g_models[g_str_615351ab03385c0016b870ee_general] = {
+      {
+        n_models = 3,
+        fixed_models = {
+          [1] = 'troop_knight_french_ordonnances_a_bannerman',
+          [2] = 'troop_knight_late_medieval_captain',
+          [3] = 'troop_knight_late_medieval'
+        }
+      }
+    }
+
+
+    -- Ordonnance gendarmes\nDeployment dismounted from Knights General - EF General
+    g_models[g_str_615351ab03385c0016b870ee_general_dismounted] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_halberdier_late_medieval',
+          [2] = 'troop_pikeman_french_ordonnances_a_bannerman',
+          [3] = 'troop_pikeman_late_medieval_captain',
+          [4] = 'troop_halberdier_late_medieval'
+        }
+      }
+    }
+
+    -- Ordonnance gendarmes\nDeployment dismounting as Elite Foot- Kn General
+    g_models[g_str_615351ab03385c0016b870ee_general_mounted] = g_models[g_str_615351ab03385c0016b870ee_general]
+
+    -- Men-at-arms - Kn
+    g_models[g_str_615351ab03385c0016b870ee] = g_models[g_str_615351aa03385c0016b86d79]
+
+    -- Men-at-arms\nDeployment dismounted from Knights - EF
+    g_models[g_str_615351ab03385c0016b870ee_dismounted] = g_models[g_str_615351aa03385c0016b86d79_dismounted]
+
+    -- Men-at-arms\nDeployment dismounted from Knights- Kn
+    g_models[g_str_615351ab03385c0016b870ee_mounted] = g_models[g_str_615351aa03385c0016b86d79]
+
+    -- Retinue bowmen  - Archers
+    g_models[g_str_615351ab03385c0016b870f1] = g_models[g_str_615351aa03385c0016b86d82]
+
+    -- Retinue bowmen\nDismounted mobile infantry  - Archers
+    g_models[g_str_615351ab03385c0016b870f1_dismounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82]
+
+    -- Retinue bowmen\nMunted mobile infantry - Archers
+    g_models[g_str_615351ab03385c0016b870f1_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+    
+    -- Men-at-arms - Kn General
+    g_models[g_str_615351ab03385c0016b870f4_general] = g_models[g_str_615351ab03385c0016b870ee_general]
+
+    -- Men-at-arms - Kn
+    g_models[g_str_615351ab03385c0016b870f4] = g_models[g_str_615351aa03385c0016b86d79]
+    
+    -- Arriere-ban, garrison, or militia voulgiers
+    g_models[g_str_615351ab03385c0016b870f6] = g_models[g_str_615351ab03385c0016b87026]
+
+    -- Arriere-ban, garrison, or militia voulgiers\nDismounted mobile infantry
+    g_models[g_str_615351ab03385c0016b870f6_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b87026]
+
+    -- Arriere-ban, garrison, or militia voulgiers\nMounted mobile infantry
+    g_models[g_str_615351ab03385c0016b870f6_mounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b870f1_mounted_mobile_infantry]
+
+    -- 'Francs bowmen with some arriere-ban, garrison, or militia bowmen or crossbowmen  - Bow Levy
+    g_models[g_str_615351ab03385c0016b870f9] =  g_models[g_str_615351ab03385c0016b86fbd]
+
+    -- 'Francs bowmen with some arriere-ban, garrison, or militia bowmen or crossbowmen\nDismounted mobile infantry  - Bow Levy
+    g_models[g_str_615351ab03385c0016b870f9_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b870f9]
+
+    -- 'Francs bowmen with some arriere-ban, garrison, or militia bowmen or crossbowmen\nMunted mobile infantry - Bow Levy
+    g_models[g_str_615351ab03385c0016b870f9_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+
+    -- Mercenary crossbowmen  - Archers
+    g_models[g_str_615351ab03385c0016b870fc] = g_models[g_str_615351b103385c0016b880bf]
+
+    -- Mercenary crossbowmen\nDismounted mobile infantry  - Archers
+    g_models[g_str_615351ab03385c0016b870fc_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b870fc]
+
+    -- Mercenary crossbowmen\nMunted mobile infantry - Archers
+    g_models[g_str_615351ab03385c0016b870fc_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+    
+    -- Gascon bidets or Bretons - LF
+    g_models[g_str_615351ab03385c0016b870ff] = g_models[g_str_615351aa03385c0016b86d85]
+
+    -- Handgunners - Sk
+    g_models[g_str_615351ab03385c0016b87101] = g_models[g_str_615351ac03385c0016b87409]
+
+    -- Bombards and other big guns
+    g_models[g_str_615351ab03385c0016b87103] =  g_models[g_str_615351aa03385c0016b86d99]
+
+    -- Camp
+    g_models[g_str_5fb1b9e8e1af060017709c53_camp] =  g_models[g_str_5fb1b9e6e1af060017709b42_camp]
+
+
+-- Later French Ordonnance
+-- 1481 AD to 1494 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9e8e1af060017709c5b/explore
+-- As of: 20220103
+
+
+    -- Ordonnance gendarmes - Kn General
+    g_models[g_str_615351ab03385c0016b8710c_general] = {
+      {
+        n_models = 3,
+        fixed_models = {
+          [1] = 'troop_knight_french_ordonnances_b_bannerman',
+          [2] = 'troop_knight_late_medieval_captain',
+          [3] = 'troop_knight_late_medieval'
+        }
+      }
+    }
+
+
+    -- Ordonnance gendarmes\nDeployment dismounted from Knights General - EF General
+    g_models[g_str_615351ab03385c0016b8710c_general_dismounted] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_halberdier_late_medieval',
+          [2] = 'troop_pikeman_french_ordonnances_a_bannerman',
+          [3] = 'troop_pikeman_late_medieval_captain',
+          [4] = 'troop_halberdier_late_medieval'
+        }
+      }
+    }
+
+    -- Ordonnance gendarmes\nDeployment dismounting as Elite Foot- Kn General
+    g_models[g_str_615351ab03385c0016b8710c_general_mounted] = g_models[g_str_615351aa03385c0016b86d79_general]
+
+    -- Men-at-arms - Kn
+    g_models[g_str_615351ab03385c0016b8710c] = g_models[g_str_615351aa03385c0016b86d79]
+
+    -- Men-at-arms\nDeployment dismounted from Knights - EF
+    g_models[g_str_615351ab03385c0016b8710c_dismounted] = g_models[g_str_615351ab03385c0016b870ee_general]
+
+    -- Men-at-arms\nDeployment dismounted from Knights- Kn
+    g_models[g_str_615351ab03385c0016b8710c_mounted] = g_models[g_str_615351aa03385c0016b86d79]
+
+    -- Ordonnance bowmen now fighting while mounted: mostly equipped with longbows, but some crossbows - Elite Cav
+    g_models[g_str_615351ab03385c0016b8710f] = g_models[g_str_615351ac03385c0016b87401]
+    
+    -- Ordonnance bowmen now fighting while mounted: mostly equipped with longbows, but some crossbows\nDeployment dismounted from Elite Cavalry - Archers
+    g_models[g_str_615351ab03385c0016b8710f_dismounted] = g_models[g_str_615351ab03385c0016b870f1]
+
+    -- Ordonnance bowmen now fighting while mounted: mostly equipped with longbows, but some crossbows\nDeployment dismounted from Elite Cavalry - Elite Cav
+    g_models[g_str_615351ab03385c0016b8710f_mounted] = g_models[g_str_615351ab03385c0016b8710f]
+
+    -- Savoyard, Italian, or Arriere-ban men-at-arms - Kn General
+    g_models[g_str_615351ab03385c0016b87112_general] = g_models[g_str_615351ab03385c0016b8710c_general]
+
+    -- Savoyard, Italian, or Arriere-ban men-at-arms - Kn
+    g_models[g_str_615351ab03385c0016b87112] = g_models[g_str_615351ab03385c0016b8710c]
+
+    -- Arriere-ban, garrison, or militia voulgiers
+    g_models[g_str_615351ab03385c0016b87114] = g_models[g_str_615351ab03385c0016b87026]
+
+    -- Arriere-ban, garrison, or militia voulgiers\nDismounted mobile infantry
+    g_models[g_str_615351ab03385c0016b87114_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b87026]
+
+    -- Arriere-ban, garrison, or militia voulgiers\nMounted mobile infantry
+    g_models[g_str_615351ab03385c0016b87114_mounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b870f1_mounted_mobile_infantry]
+
+    -- Retrained Francs bowmen  - Pikes
+    g_models[g_str_615351ab03385c0016b87117] =  g_models[g_str_615351ab03385c0016b87205]
+
+    -- Aventurier crossbowmen  - Archers
+    g_models[g_str_615351ab03385c0016b87119] = {
+        {
+          model_data = 'troop_crossbowman_late_medieval'
+        }
+    }
+
+    -- Aventurier crossbowmen  - Sk
+    g_models[g_str_615351ab03385c0016b8711a] = {
+        {
+          model_data = 'troop_crossbowman_late_medieval'
+        }
+    }
+
+    g_models[g_str_615351ab03385c0016b8711c] = g_models[g_str_615351ab03385c0016b86fbd]
+
+    -- Mercenary crossbowmen  - Archers
+    g_models[g_str_615351ab03385c0016b8711e] = g_models[g_str_615351ab03385c0016b870fc]
+
+    -- Mercenary crossbowmen\nDismounted mobile infantry  - Archers
+    g_models[g_str_615351ab03385c0016b8711e_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b8711e]
+
+    -- Mercenary crossbowmen\nMunted mobile infantry - Archers
+    g_models[g_str_615351ab03385c0016b8711e_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+
+    -- Gascon bidets or Bretons - LF
+    g_models[g_str_615351ab03385c0016b87121] = g_models[g_str_615351ab03385c0016b870ff]
+
+    -- Handgunners - Sk
+    g_models[g_str_615351ab03385c0016b87123] = g_models[g_str_615351ac03385c0016b87409]
+
+    -- Bombards and other big guns
+    g_models[g_str_615351ab03385c0016b87125] =  g_models[g_str_615351aa03385c0016b86d99]
+
+    -- Camp
+    g_models[g_str_5fb1b9e8e1af060017709c5b_camp] =  g_models[g_str_5fb1b9e6e1af060017709b42_camp]
+
+-- Later Medieval German Citystates
+-- 1440 AD to 1493 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9e8e1af060017709cd3/explore
+-- As of: 20220104
+
+
+    -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphracts General
+    g_models[g_str_615351ac03385c0016b87303_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_knight_late_medieval',
+          [2] = 'troop_knight_late_medieval_captain',
+          [3] = 'troop_knight_late_german_c_bannerman',
+          [4] = 'troop_knight_late_medieval'
+        }
+      }
+    }
+
+    -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphract
+    g_models[g_str_615351ac03385c0016b87303] = {
+      {
+        model_data = 'troop_knight_late_medieval'
+      }
+    }
+
+    -- Armored crossbowmen on horses - Bad Horse
+    g_models[g_str_615351ac03385c0016b87305] = g_models[g_str_615351ab03385c0016b87201]
+
+    -- City guard halberdiers or axemen - EF General
+    g_models[g_str_615351ac03385c0016b87307_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_pikeman_late_medieval_captain',
+          [2] = 'troop_pikeman_late_german_d_bannerman',
+          [3] = 'troop_halberdier_late_medieval',
+          [4] = 'troop_halberdier_late_medieval'
+        }
+      }
+    }
+    
+    -- City guard halberdiers or axemen - EF
+    g_models[g_str_615351ac03385c0016b87307] = g_models[g_str_615351b103385c0016b880c5]
+
+    -- City militia crossbowmen, some with pavises or armor - Bow Levy
+    g_models[g_str_615351ac03385c0016b87309] = {
+      {
+        model_data = 'troop_crossbowman_late_medieval'
+      }
+    }
+  
+    -- City militia crossbowmen, some with pavises or armor - Archers General
+    g_models[g_str_615351ac03385c0016b8730a_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_crossbowman_late_medieval',
+          [2] = 'troop_pikeman_late_german_d_bannerman',
+          [3] = 'troop_pikeman_late_medieval_captain',
+          [4] = 'troop_crossbowman_late_medieval'
+        }
+      }
+    }
+
+    -- City militia crossbowmen, some with pavises or armor - Archers
+    g_models[g_str_615351ac03385c0016b8730a] = g_models[g_str_615351b103385c0016b880bd]
+
+    -- City militia spearmen or pikemen - HF General
+    g_models[g_str_615351ac03385c0016b8730c_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_spearman_late_medieval',
+          [2] = 'troop_pikeman_late_german_d_bannerman',
+          [3] = 'troop_spearman_late_medieval',
+          [4] = 'troop_pikeman_late_medieval_captain'
+        }
+      }
+    }
+    
+    -- City militia spearmen or pikemen - HF
+    g_models[g_str_615351ac03385c0016b8730c] = g_models[g_str_615351b103385c0016b880b9]
+
+    -- City militia spearmen or pikemen - Pikes General
+    g_models[g_str_615351ac03385c0016b8730d_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_pikeman_late_medieval_straight',
+          [2] = 'troop_pikeman_late_german_d_bannerman',
+          [3] = 'troop_pikeman_late_medieval_straight',
+          [4] = 'troop_pikeman_late_medieval_captain'
+        }
+      }
+    }
+    
+    -- City militia spearmen or pikemen - Pikes
+    g_models[g_str_615351ac03385c0016b8730d] = g_models[g_str_615351ab03385c0016b87205]
+
+    -- City militia skirmishing bowmen - Skirmishers
+    g_models[g_str_615351ac03385c0016b87310] = g_models[g_str_615351aa03385c0016b86d90]
+
+    -- Poorly equipped heerban - Horde
+    g_models[g_str_615351ac03385c0016b87313] = {
+      {
+        loose = true,
+        model_data = 'troop_horde_late_medieval'
+      }
+    }
+    -- Heerban armed with crossbow or bow - Bow Levy
+    g_models[g_str_615351ac03385c0016b87315] = g_models[g_str_615351ab03385c0016b86fbd]
+
+    -- Heerban handgunners - Skirmishers
+    g_models[g_str_615351ac03385c0016b87317] = g_models[g_str_615351b103385c0016b880c2]
+
+    -- Mercenary axemen, swordsmen, and halberdiers - HF General
+    g_models[g_str_615351ac03385c0016b87319_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_halberdier_burgundian_ordonnances',
+          [2] = 'troop_pikeman_late_german_d_bannerman',
+          [3] = 'troop_halberdier_burgundian_ordonnances',
+          [4] = 'troop_pikeman_late_medieval_captain'
+        }
+      }
+    }
+    
+    -- Mercenary axemen, swordsmen, and halberdiers - HF
+    g_models[g_str_615351ac03385c0016b87319] = {
+      {
+        random_models = {
+          'troop_swordman_late_medieval',
+          'troop_swordman_two_handed_burgundian_ordonnances',
+          'troop_halberdier_burgundian_ordonnances'
+        }
+      }
+    }
+
+    -- Mercenary pikemen - Pikes General
+    g_models[g_str_615351ac03385c0016b8731c_general] = g_models[g_str_615351ac03385c0016b8730d_general]
+    
+    -- Mercenary pikemen - Pikes
+    g_models[g_str_615351ac03385c0016b8731c] = g_models[g_str_615351ab03385c0016b871fa]
+
+    -- Swiss pikemen - Pikes General
+    g_models[g_str_615351ac03385c0016b8731f_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_pikeman_late_medieval_captain',
+          [2] = 'troop_pikeman_swiss_straight',
+          [3] = 'troop_pikeman_late_german_d_bannerman',
+          [4] = 'troop_pikeman_swiss_straight'
+        }
+      }
+    }
+
+    -- Swiss pikemen - Pikes
+    g_models[g_str_615351ac03385c0016b8731f] = g_models[g_str_615351ac03385c0016b87404]
+
+    -- Mercenary bowmen or crossbowmen or handgunners - Archers General
+    g_models[g_str_615351ac03385c0016b87321_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_handgunner_burgundian_ordonnances',
+          [2] = 'troop_pikeman_late_german_d_bannerman',
+          [3] = 'troop_pikeman_late_medieval_captain',
+          [4] = 'troop_handgunner_burgundian_ordonnances'
+        }
+      }
+    }
+
+    -- Mercenary bowmen or crossbowmen or handgunners - Archers
+    g_models[g_str_615351ac03385c0016b87321] = {
+      {
+        
+        model_data = 'troop_crossbowman_burgundian_ordonnances'
+      },
+      {
+        model_data = 'troop_longbowman_burgundian_ordonnances'
+      },
+      {
+        model_data = 'troop_handgunner_burgundian_ordonnances'
+      }
+    }
+
+    -- Mercenary bowmen or crossbowmen or handgunners - Sk
+    g_models[g_str_615351ac03385c0016b87322] = {
+      {
+        loose = true,        
+        random_models = {
+          'troop_crossbowman_burgundian_ordonnances',
+          'troop_longbowman_burgundian_ordonnances',
+          'troop_handgunner_burgundian_ordonnances'
+        }
+      }
+    }
+
+    -- Bombards - Artillery
+    g_models[g_str_615351ac03385c0016b87325] = g_models[g_str_615351ab03385c0016b8702a]
+
+    -- Camp
+    g_models[g_str_5fb1b9e8e1af060017709cd3_camp] = {
+      {
+        n_models = 1,
+        model_data = 'troop_camp_late_german_c'
+      }
+    }
+
+    -- Camp Fortified
+    g_models[g_str_5fb1b9e8e1af060017709cd3_camp_fortified] = {
+      {
+        overlay_models = { -- each of the models are placed on top of the base
+          {
+            model_data="troop_fortified_camp_outline_40x40",
+            position={x=-0,y=0,z=0}, -- optional defaults to (0,0,0)
+            rotation=0, -- optional defaults to 0
+            scale=1, -- optional defaults t0 1
+          },
+          {
+            model_data = 'troop_camp_late_german_c',
+            scale=0.7
+          }
+        }
+      }
+    }
+
+    -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphract
+    g_models[g_str_6153519703385c0016b842e2] = g_models[g_str_615351ac03385c0016b87303] 
+
+    -- Feudal retainers or heerban - Horde
+    g_models[g_str_6153519703385c0016b842e4] = g_models[g_str_615351ac03385c0016b87313]
+
+    -- Mercenary axemen, swordsmen, and halberdiers - HF
+    g_models[g_str_6153519703385c0016b842e6] = {
+      {
+        model_data = 'troop_halberdier_swiss'
+      }
+    }
+
+    -- Mercenary bowmen or crossbowmen or handgunners - Archers
+    g_models[g_str_6153519703385c0016b842e8] = g_models[g_str_615351ab03385c0016b870fc]
+
+    -- Mercenary bowmen or crossbowmen or handgunners - Sk
+    g_models[g_str_6153519703385c0016b842e9] = g_models[g_str_615351ac03385c0016b87401_dismounted]
+
+    -- Mercenary pikemen - Pikes
+    g_models[g_str_6153519703385c0016b842eb] = g_models[g_str_615351ac03385c0016b8731c]
+
+-- Early Renaissance German Citystates
+-- 1494 AD to 1518 AD
+-- https://meshwesh.wgcwar.com/armyList/5fb1b9e8e1af060017709cdd/explore
+-- As of: 20220104
+
+
+    -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphracts General
+    g_models[g_str_615351ac03385c0016b87334_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_knight_late_medieval',
+          [2] = 'troop_knight_late_medieval_captain',
+          [3] = 'troop_knight_late_german_d_bannerman',
+          [4] = 'troop_knight_late_medieval'
+        }
+      }
+    }
+
+    -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphract
+    g_models[g_str_615351ac03385c0016b87334] = g_models[g_str_615351ac03385c0016b87303]
+
+    -- Armored crossbowmen on horses - Bad Horse
+    g_models[g_str_615351ac03385c0016b87336] = g_models[g_str_615351ab03385c0016b87201]
+
+    -- City guard halberdiers or axemen - EF General
+    g_models[g_str_615351ac03385c0016b87338_general] = g_models[g_str_615351ac03385c0016b87307_general]
+    
+    -- City guard halberdiers or axemen - EF
+    g_models[g_str_615351ac03385c0016b87338] = g_models[g_str_615351ac03385c0016b87307]
+
+    -- City militia handgunners - Skirmishers
+    g_models[g_str_615351ac03385c0016b8733a] = g_models[g_str_615351ac03385c0016b87317]
+  
+    -- City militia spearmen or pikemen - HF General
+    g_models[g_str_615351ac03385c0016b8733d_general] = g_models[g_str_615351ac03385c0016b8730c_general]
+    
+    -- City militia spearmen or pikemen - HF
+    g_models[g_str_615351ac03385c0016b8733d] = g_models[g_str_615351ac03385c0016b8730c]
+
+    -- City militia spearmen or pikemen - Pikes General
+    g_models[g_str_615351ac03385c0016b8733e_general] = g_models[g_str_615351ac03385c0016b8730d_general]
+    
+    -- City militia spearmen or pikemen - Pikes
+    g_models[g_str_615351ac03385c0016b8733e] = g_models[g_str_615351ab03385c0016b87205]
+
+    -- Heerban armed with glaive, axe, or similar polearms - HF General
+    g_models[g_str_615351ac03385c0016b87341_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_spearman_late_medieval',
+          [2] = 'troop_pikeman_late_german_d_bannerman',
+          [3] = 'troop_pikeman_late_medieval_captain',
+          [4] = 'troop_spearman_late_medieval'
+        }
+      }
+    }
+
+    -- Heerban armed with glaive, axe, or similar polearms - HF
+    g_models[g_str_615351ac03385c0016b87341] = g_models[g_str_615351ab03385c0016b86fbb]
+    
+    -- Heerban handgunners - Skirmishers
+    g_models[g_str_615351ac03385c0016b87343] = g_models[g_str_615351b103385c0016b880c2]
+
+    -- Landsknecht pikemen; possibly up to 1/3 Swiss pikemen - Pikes General
+    g_models[g_str_615351ac03385c0016b87345_general] = {
+      {
+        n_models = 4,
+        fixed_models = {
+          [1] = 'troop_pikeman_late_medieval_captain',
+          [2] = 'troop_pikeman_swiss_straight',
+          [3] = 'troop_pikeman_late_german_d_bannerman',
+          [4] = 'troop_pikeman_late_medieval_straight'
+        }
+      }
+    }
+
+    -- Landsknecht pikemen; possibly up to 1/3 Swiss pikemen - Pikes
+    g_models[g_str_615351ac03385c0016b87345] = {
+      {   
+        random_models = {
+          'troop_pikeman_swiss_straight',
+          'troop_pikeman_late_medieval_straight',
+          'troop_pikeman_late_medieval_straight',
+          'troop_pikeman_burgundian_ordonnances_straight'
+        }
+      },
+      {   
+        random_models = {
+          'troop_pikeman_swiss_inclined',
+          'troop_pikeman_late_medieval_inclined',
+          'troop_pikeman_late_medieval_inclined',
+          'troop_pikeman_burgundian_ordonnances_inclined'
+        }
+      }
+    }
+
+    -- Mercenary handgunners - Skirmishers
+    g_models[g_str_615351ac03385c0016b87347] = g_models[g_str_615351ac03385c0016b87409]
+
+    -- Spanish jinetes - Jav Cav
+    g_models[g_str_615351ac03385c0016b87349] = g_models[g_str_615351ab03385c0016b87022]
+
+    -- Bombards - Artillery
+    g_models[g_str_615351ac03385c0016b8734b] = g_models[g_str_615351ab03385c0016b8702a]
+
+    -- Camp
+    g_models[g_str_5fb1b9e8e1af060017709cdd_camp] = {
+      {
+        n_models = 1,
+        model_data = 'troop_camp_late_german_d'
+      }
+    }
+
+    -- Camp Fortified
+    g_models[g_str_5fb1b9e8e1af060017709cdd_camp_fortified] = {
+      {
+        overlay_models = { -- each of the models are placed on top of the base
+          {
+            model_data="troop_fortified_camp_outline_40x40",
+            position={x=-0,y=0,z=0}, -- optional defaults to (0,0,0)
+            rotation=0, -- optional defaults to 0
+            scale=1, -- optional defaults t0 1
+          },
+          {
+            model_data = 'troop_camp_late_german_d',
+            scale=0.7
+          }
+        }
+      }
+    }
+
+    -- City militia handgunners - Skirmishers
+    g_models[g_str_6153519703385c0016b842cc] = g_models[g_str_615351ac03385c0016b8733a]
+
+    -- City militia spearmen or pikemen - HF
+    g_models[g_str_6153519703385c0016b842ce] = g_models[g_str_615351ac03385c0016b8733d]
+
+    -- City militia spearmen or pikemen - Pikes
+    g_models[g_str_6153519703385c0016b842cf] = g_models[g_str_615351ac03385c0016b8733e]
+
+    -- Landsknecht pikemen; possibly up to 1/3 Swiss pikemen - Pikes
+    g_models[g_str_6153519703385c0016b842d1] = g_models[g_str_615351ac03385c0016b8731f]
+
+    -- Mercenary handgunners - Skirmishers
+    g_models[g_str_6153519703385c0016b842d3] = g_models[g_str_615351ac03385c0016b87347]
+
+    -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphract
+    g_models[g_str_6153519703385c0016b842ef] = g_models[g_str_6153519703385c0016b842e2] 
+
+    -- Feudal retainers or heerban - Horde
+    g_models[g_str_6153519703385c0016b842f1] = g_models[g_str_6153519703385c0016b842e4]
+
+    -- Mercenary axemen, swordsmen, and halberdiers - HF
+    g_models[g_str_6153519703385c0016b842f3] = g_models[g_str_6153519703385c0016b842e6]
+
+    -- Mercenary handgunners - Skirmishers
+    g_models[g_str_6153519703385c0016b842f5] = g_models[g_str_615351ac03385c0016b87409]
+
+    -- Landsknecht pikemen; possibly up to 1/3 Swiss pikemen - Pikes
+    g_models[g_str_6153519703385c0016b842f7] = g_models[g_str_615351ac03385c0016b87345]
