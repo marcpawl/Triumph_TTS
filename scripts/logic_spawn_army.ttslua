@@ -2,6 +2,7 @@
 
 require("Triumph_TTS/assets/assets")
 require("Triumph_TTS/fake_meshwesh/army_data/all_armies")
+require("Triumph_TTS/fake_meshwesh/plain_bases_army_data/plain_bases_army")
 require("Triumph_TTS/scripts/data/data_models")
 require("Triumph_TTS/scripts/data/data_settings")
 require("Triumph_TTS/scripts/logic_decorations")
@@ -52,8 +53,6 @@ function add_dismount_context_menu_base(base_obj, is_red_player, command_color)
     local new_depth = get_base_depth_from_base_obj(new_obj)
     local depth_difference_mm = old_depth - new_depth;
     local depth_difference_inches = from_mm_to_in(depth_difference_mm)
-    print("depth_difference_mm=", depth_difference_mm)
-    print("depth_difference_inches=", depth_difference_inches)
     move_base_forward(new_obj, depth_difference_inches/2.0)
 
     local new_name = new_obj.getName()
@@ -1104,9 +1103,15 @@ function spawn_army(army, is_red_player, command_color, army_nb)
     g_movement_reporting_enabled = false
 
     distance_between_armies = (g_max_bases_row+1) * g_base_width_in_inches
-    assert(nil ~= army)
+    if nil == army then
+      print_error("Army is nil")
+      assert(false)
+    end
     local army_name = army.data.name
-    assert(nil ~= army_name)
+    if nil == army_name then
+      print_error("Army name is nil")
+      assert(false)
+    end
     math.randomseed(os.time())
 
     local z_pos_0 = g_spawn_from_center_in
