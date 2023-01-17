@@ -279,6 +279,30 @@ tile_plain_Spears_Gen = {
     player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/1781713182598131061/BF09D847D6782A7BD4106F1815D18F1EA1448825/'
 }
 
+tile_plain_Spears_MI = {
+    height_correction = 0,
+    scale = 1,
+    rotation = 0,
+    depth = 40,
+    description = '40x40 Spears MI Tile',
+    author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro. Tweaked by Marc.',
+    mesh = { g_assets['dir'] .. "troops/tile_40_40.obj", },
+    player_red_tex = g_assets['dir'] .. "troops/icons/spears_mi_red.png",
+    player_blue_tex = g_assets['dir'] .. "troops/icons/spears_mi_blue.png",
+}
+
+tile_plain_Spears_Gen_MI = {
+    height_correction = 0,
+    scale = 1,
+    rotation = 0,
+    depth = 40,
+    description = '40x40 Spears Tile',
+    author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro. Tweaked by Marc.',
+    mesh = { g_assets['dir'] .. "troops/tile_40_40.obj", },
+    player_red_tex = g_assets['dir'] .. "troops/icons/spears_mi_general_red.png",
+    player_blue_tex = g_assets['dir'] .. "troops/icons/spears_mi_general_blue.png",
+}
+
 tile_plain_Warriors = {
     height_correction = 0,
     scale = 1,
@@ -333,6 +357,30 @@ tile_plain_Archers_General = {
     },
     player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/1781713182598131193/194225176C14E627CC2AB25CD200C3659116BED0/',
     player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/1781713182598131061/BF09D847D6782A7BD4106F1815D18F1EA1448825/'
+}
+
+tile_plain_Archers_MI = {
+    height_correction = 0,
+    scale = 1,
+    rotation = 0,
+    depth = 40,
+    description = '40x40 Archers MI Tile',
+    author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro. Tweaked by Marc.',
+    mesh = { g_assets['dir'] .. "troops/tile_40_40.obj", },
+    player_red_tex = g_assets['dir'] .. "troops/icons/archers_mi_red.png",
+    player_blue_tex = g_assets['dir'] .. "troops/icons/archers_mi_blue.png",
+}
+
+tile_plain_Archers_Gen_MI = {
+    height_correction = 0,
+    scale = 1,
+    rotation = 0,
+    depth = 40,
+    description = '40x40 Archers MI General Tile',
+    author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro. Tweaked by Marc.',
+    mesh = { g_assets['dir'] .. "troops/tile_40_40.obj", },
+    player_red_tex = g_assets['dir'] .. "troops/icons/archers_mi_general_red.png",
+    player_blue_tex = g_assets['dir'] .. "troops/icons/archers_mi_general_blue.png",
 }
 
 tile_plain_Light_Foot = {
@@ -1084,6 +1132,30 @@ tile_plain_Pavisiers_Gen = {
     },
     player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/1781713182598131193/194225176C14E627CC2AB25CD200C3659116BED0/',
     player_blue_tex = 'http://cloud-3.steamusercontent.com/ugc/1781713182598131061/BF09D847D6782A7BD4106F1815D18F1EA1448825/'
+}
+
+tile_plain_Pavisiers_MI = {
+    height_correction = 0,
+    scale = 1,
+    rotation = 0,
+    depth = 40,
+    description = '40x40 Pavisiers Tile',
+    author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro. Tweaked by Marc.',
+    mesh = { g_assets['dir'] .. "troops/tile_40_40.obj", },
+    player_red_tex = g_assets['dir'] .. "troops/icons/pavisiers_mi_red.png",
+    player_blue_tex = g_assets['dir'] .. "troops/icons/pavisiers_mi_blue.png",
+}
+
+tile_plain_Pavisiers_MI_Gen = {
+    height_correction = 0,
+    scale = 1,
+    rotation = 0,
+    depth = 40,
+    description = '40x40 Pavisiers Tile',
+    author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro. Tweaked by Marc.',
+    mesh = { g_assets['dir'] .. "troops/tile_40_40.obj", },
+    player_red_tex = g_assets['dir'] .. "troops/icons/pavisiers_mi_general_red.png",
+    player_blue_tex = g_assets['dir'] .. "troops/icons/pavisiers_mi_general_blue.png",
 }
 
 tile_plain_Plaustrella = {
