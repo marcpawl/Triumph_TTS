@@ -1,0 +1,678 @@
+plain_bases_army_max = 1
+
+g_str_plain_bases_army_knights_general='plain_bases_army_knights_general'
+g_base_definitions[g_str_plain_bases_army_knights_general]={
+  id=g_str_plain_bases_army_knights_general,
+  name='Knights General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Knights",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_knights='plain_bases_army_knights'
+g_base_definitions[g_str_plain_bases_army_knights]={
+  id=g_str_plain_bases_army_eliteg_str_plain_bases_army_knights,
+  name='Knights',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=False,
+  troop_type="Knights",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_javelin_cavalry_general='plain_bases_army_javelin_cavalry_general'
+g_base_definitions[g_str_plain_bases_army_javelin_cavalry_general]={
+  id=g_str_plain_bases_army_javelin_cavalry_general,
+  name='Javelin Cavalry General',
+  min=1,
+  max=1,
+  description='',
+  troop_type="Javelin Cavalry",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_javelin_cavalry='plain_bases_army_javelin_cavalry'
+g_base_definitions[g_str_plain_bases_army_javelin_cavalry]={
+  id=g_str_plain_bases_army_javelin_cavalry,
+  name='Javelin Cavalry',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Javelin Cavalry",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_horse_bow_general='plain_bases_army_horse_bow_general'
+g_base_definitions[g_str_plain_bases_army_horse_bow_general]={
+  id=g_str_plain_bases_army_horse_bow_general,
+  name='Horse Bow General',
+  min=1,
+  max=1,
+  description='',
+  troop_type="Horse Bow",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_horse_bow='plain_bases_army_horse_bow'
+g_base_definitions[g_str_plain_bases_army_horse_bow]={
+  id=g_str_plain_bases_army_horse_bow,
+  name='Horse Bow',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Horse Bow",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_elite_cavalry_general='plain_bases_army_elite_cavalry_general'
+g_base_definitions[g_str_plain_bases_army_elite_cavalry_general]={
+  id=g_str_plain_bases_army_elite_cavalry_general,
+  name='Elite Cavalry General',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Elite Cavalry",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_elite_cavalry='plain_bases_army_elite_cavalry'
+g_base_definitions[g_str_plain_bases_army_elite_cavalry]={
+  id=g_str_plain_bases_army_elite_cavalry,
+  name='Elite Cavalry',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Elite Cavalry",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_elephants_general='plain_bases_army_elephants_general'
+g_base_definitions[g_str_plain_bases_army_elephants_general]={
+  id=g_str_plain_bases_army_elephants_general,
+  name='Elephants General',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Elephants",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_elephants='plain_bases_army_elephants'
+g_base_definitions[g_str_plain_bases_army_elephants]={
+  id=g_str_plain_bases_army_elephants,
+  name='Elephants',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Elephants",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_chariots_general='plain_bases_army_chariots_general'
+g_base_definitions[g_str_plain_bases_army_chariots_general]={
+  id=g_str_plain_bases_army_chariots_general,
+  name='Chariots General',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Chariots",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_chariots='plain_bases_army_chariots'
+g_base_definitions[g_str_plain_bases_army_chariots]={
+  id=g_str_plain_bases_army_chariots,
+  name='Chariots',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Chariots",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_cataphracts_general='plain_bases_army_cataphracts_general'
+g_base_definitions[g_str_plain_bases_army_cataphracts_general]={
+  id=g_str_plain_bases_army_cataphracts_general,
+  name='Cataphracts General',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Cataphracts",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_cataphracts='plain_bases_army_cataphracts'
+g_base_definitions[g_str_plain_bases_army_cataphracts]={
+  id=g_str_plain_bases_army_cataphracts,
+  name='Cataphracts',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Cataphracts",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_spears_general='plain_bases_army_spears_general'
+g_base_definitions[g_str_plain_bases_army_spears_general]={
+  id=g_str_plain_bases_army_spears_general,
+  name='Spears General',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=true,
+  troop_type="Spears",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_spears='plain_bases_army_spears'
+g_base_definitions[g_str_plain_bases_army_spears]={
+  id=g_str_plain_bases_army_spears,
+  name='Spears',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  troop_type="Spears",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_raiders_general='plain_bases_army_raiders_general'
+g_base_definitions[g_str_plain_bases_army_raiders_general]={
+  id=g_str_plain_bases_army_raiders_general,
+  name='Raiders General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Raiders",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_raiders='plain_bases_army_raiders'
+g_base_definitions[g_str_plain_bases_army_raiders]={
+  id=g_str_plain_bases_army_raiders,
+  name='Raiders',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Raiders",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_pavisiers_general='plain_bases_army_pavisiers_general'
+g_base_definitions[g_str_plain_bases_army_pavisiers_general]={
+  id=g_str_plain_bases_army_pavisiers_general,
+  name='Pavisiers General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Pavisiers",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_pavisiers='plain_bases_army_pavisiers'
+g_base_definitions[g_str_plain_bases_army_pavisiers]={
+  id=g_str_plain_bases_army_pavisiers,
+  name='Pavisiers',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Pavisiers",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_elite_foot_general='plain_bases_army_elite_foot_general'
+g_base_definitions[g_str_plain_bases_army_elite_foot_general]={
+  id=g_str_plain_bases_army_elite_foot_general,
+  name='Elite Foot General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Elite Foot",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_elite_foot='plain_bases_army_elite_foot'
+g_base_definitions[g_str_plain_bases_army_elite_foot]={
+  id=g_str_plain_bases_army_elite_foot,
+  name='Elite Foot',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=False,
+  troop_type="Elite Foot",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_archers_general='plain_bases_army_archers_general'
+g_base_definitions[g_str_plain_bases_army_archers_general]={
+  id=g_str_plain_bases_army_archers_general,
+  name='Archers General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Archers",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_archers='plain_bases_army_archers'
+g_base_definitions[g_str_plain_bases_army_archers]={
+  id=g_str_plain_bases_army_archers,
+  name='Archers',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Archers",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_battle_taxi_general='plain_bases_army_battle_taxi_general'
+g_base_definitions[g_str_plain_bases_army_battle_taxi_general]={
+  id=g_str_plain_bases_army_battle_taxi_general,
+  name='Battle Taxi General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Battle Taxi",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_battle_taxi='plain_bases_army_battle_taxi'
+g_base_definitions[g_str_plain_bases_army_battle_taxi]={
+  id=g_str_plain_bases_army_battle_taxi,
+  name='Battle Taxi',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Battle Taxi",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_bad_horse_general='plain_bases_army_bad_horse_general'
+g_base_definitions[g_str_plain_bases_army_bad_horse_general]={
+  id=g_str_plain_bases_army_bad_horse_general,
+  name='Bad Horse General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Bad Horse",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_bad_horse='plain_bases_army_bad_horse'
+g_base_definitions[g_str_plain_bases_army_bad_horse]={
+  id=g_str_plain_bases_army_bad_horse,
+  name='Bad Horse',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Bad Horse",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_warriors_general='plain_bases_army_warriors_general'
+g_base_definitions[g_str_plain_bases_army_warriors_general]={
+  id=g_str_plain_bases_army_warriors_general,
+  name='Warriors General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Warriors",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_warriors='plain_bases_army_warriors'
+g_base_definitions[g_str_plain_bases_army_warriors]={
+  id=g_str_plain_bases_army_warriors,
+  name='Warriors',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Warriors",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_warband_general='plain_bases_army_warband_general'
+g_base_definitions[g_str_plain_bases_army_warband_general]={
+  id=g_str_plain_bases_army_warband_general,
+  name='Warband General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Warband",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_warband='plain_bases_army_warband'
+g_base_definitions[g_str_plain_bases_army_warband]={
+  id=g_str_plain_bases_army_warband,
+  name='Warband',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Warband",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_war_wagons_general='plain_bases_army_war_wagons_general'
+g_base_definitions[g_str_plain_bases_army_war_wagons_general]={
+  id=g_str_plain_bases_army_war_wagons_general,
+  name='War Wagons General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="War Wagons",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_war_wagons='plain_bases_army_war_wagons'
+g_base_definitions[g_str_plain_bases_army_war_wagons]={
+  id=g_str_plain_bases_army_war_wagons,
+  name='War Wagons',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="War Wagons",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_skirmishers_general='plain_bases_army_skirmishers_general'
+g_base_definitions[g_str_plain_bases_army_skirmishers_general]={
+  id=g_str_plain_bases_army_skirmishers_general,
+  name='Skirmishers General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Skirmishers",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_skirmishers='plain_bases_army_skirmishers'
+g_base_definitions[g_str_plain_bases_army_skirmishers]={
+  id=g_str_plain_bases_army_skirmishers,
+  name='Skirmishers',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Skirmishers",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_pikes_general='plain_bases_army_pikes_general'
+g_base_definitions[g_str_plain_bases_army_pikes_general]={
+  id=g_str_plain_bases_army_pikes_general,
+  name='Pikes General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Pikes",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_pikes='plain_bases_army_pikes'
+g_base_definitions[g_str_plain_bases_army_pikes]={
+  id=g_str_plain_bases_army_pikes,
+  name='Pikes',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Pikes",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_heavy_foot_general='plain_bases_army_heavy_foot_general'
+g_base_definitions[g_str_plain_bases_army_heavy_foot_general]={
+  id=g_str_plain_bases_army_heavy_foot_general,
+  name='Heavy Foot General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Heavy Foot",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_heavy_foot='plain_bases_army_heavy_foot'
+g_base_definitions[g_str_plain_bases_army_heavy_foot]={
+  id=g_str_plain_bases_army_heavy_foot,
+  name='Heavy Foot',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Heavy Foot",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_light_spear_general='plain_bases_army_light_spear_general'
+g_base_definitions[g_str_plain_bases_army_light_spear_general]={
+  id=g_str_plain_bases_army_light_spear_general,
+  name='Light Spear General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Light Spear",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_light_spear='plain_bases_army_light_spear'
+g_base_definitions[g_str_plain_bases_army_light_spear]={
+  id=g_str_plain_bases_army_light_spear,
+  name='Light Spear',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Light Spear",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_light_foot_general='plain_bases_army_light_foot_general'
+g_base_definitions[g_str_plain_bases_army_light_foot_general]={
+  id=g_str_plain_bases_army_light_foot_general,
+  name='Light Foot General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Light Foot",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_light_foot='plain_bases_army_light_foot'
+g_base_definitions[g_str_plain_bases_army_light_foot]={
+  id=g_str_plain_bases_army_light_foot,
+  name='Light Foot',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Light Foot",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_artillery_general='plain_bases_army_artillery_general'
+g_base_definitions[g_str_plain_bases_army_artillery_general]={
+  id=g_str_plain_bases_army_artillery_general,
+  name='Artillery General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Artillery",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_artillery='plain_bases_army_artillery'
+g_base_definitions[g_str_plain_bases_army_artillery]={
+  id=g_str_plain_bases_army_artillery,
+  name='Artillery',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Artillery",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_rabble_general='plain_bases_army_rabble_general'
+g_base_definitions[g_str_plain_bases_army_rabble_general]={
+  id=g_str_plain_bases_army_rabble_general,
+  name='Rabble General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Rabble",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_rabble='plain_bases_army_rabble'
+g_base_definitions[g_str_plain_bases_army_rabble]={
+  id=g_str_plain_bases_army_rabble,
+  name='Rabble',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Rabble",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_horde_general='plain_bases_army_horde_general'
+g_base_definitions[g_str_plain_bases_army_horde_general]={
+  id=g_str_plain_bases_army_horde_general,
+  name='Horde General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Horde",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_horde='plain_bases_army_horde'
+g_base_definitions[g_str_plain_bases_army_horde]={
+  id=g_str_plain_bases_army_horde,
+  name='Horde',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Horde",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_bow_levy_general='plain_bases_army_bow_levy_general'
+g_base_definitions[g_str_plain_bases_army_bow_levy_general]={
+  id=g_str_plain_bases_army_bow_levy_general,
+  name='Bow Levy General',
+  min=1,
+  max=1,
+  description='',
+  general=true,
+  troop_type="Bow Levy",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_bow_levy='plain_bases_army_bow_levy'
+g_base_definitions[g_str_plain_bases_army_bow_levy]={
+  id=g_str_plain_bases_army_bow_levy,
+  name='Bow Levy',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  general=false,
+  troop_type="Bow Levy",
+  troop_option_id="plain_bases_army_troop_option",
+}
+
+g_str_plain_bases_army_camp='plain_bases_army_camp'
+g_base_definitions[g_str_plain_bases_army_camp]={
+  id=g_str_plain_bases_army_camp,
+  name='Camp',
+  min=1,
+  max=1,
+  description='Camp',
+  troop_type="Camp",
+}
+
+g_str_plain_bases_army_camp_fortified='plain_bases_army_camp_fortified'
+g_base_definitions[g_str_plain_bases_army_camp_fortified]={
+  id=g_str_plain_bases_army_camp_fortified,
+  name='Camp',
+  min=1,
+  max=1,
+  description='Fortified camp',
+  fortified_camp=true,
+  troop_type="Camp",
+}
+
+g_str_plain_bases_army_camp_pack_train='plain_bases_army_camp_pack_train'
+g_base_definitions[g_str_plain_bases_army_camp_pack_train]={
+  id=g_str_plain_bases_army_camp_pack_train,
+  name='Camp',
+  min=1,
+  max=1,
+  description='Pack Train',
+  pack_train=true,
+  troop_type="Camp",
+}
+
+g_str_plain_bases_army_camp_standard_wagon='plain_bases_army_camp_standard_wagon'
+g_base_definitions[g_str_plain_bases_army_camp_standard_wagon]={
+  id=g_str_plain_bases_army_camp_standard_wagon,
+  name='Camp',
+  min=1,
+  max=1,
+  description='Standard Wagon',
+  standard_wagon=true,
+  troop_type="Camp",
+}
+
+g_str_plain_bases_army_prepared_defenses='plain_bases_army_prepared_defenses'
+g_base_definitions[g_str_plain_bases_army_prepared_defenses]={
+  id=g_str_5fb1b9dae1af06001770940c_prepared_defenses,
+  name='Prepared Defenses',
+  min=1,
+  max=plain_bases_army_max,
+  description='',
+  prepared_defenses=true,
+  troop_type="Prepared Defenses",
+}
+
+g_str_plain_bases_army_light_camelry='plain_bases_army_light_camelry'
+g_base_definitions[g_str_plain_bases_army_light_camelry]={
+  id=g_str_plain_bases_army_light_camelry,
+  name='Bad Horse',
+  min=0,
+  max=1,
+  description='Light Camelry',
+  light_camelry=true,
+  troop_type="Bad Horse",
+  troop_option_id="plain_bases_army_troop_option",
+}

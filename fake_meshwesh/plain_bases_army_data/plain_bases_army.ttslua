@@ -1,0 +1,146 @@
+-- Plain Bases
+-- 1 of everything
+
+require("Triumph_TTS/fake_meshwesh/plain_bases_army_data/plain_bases_army_allies")
+require("Triumph_TTS/fake_meshwesh/plain_bases_army_data/plain_bases_army_base_definitions")
+require("Triumph_TTS/fake_meshwesh/plain_bases_army_data/plain_bases_army_troop_options")
+
+army['plain_bases_army']={
+  data={
+    invasionRatings={
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+    },
+    maneuverRatings={
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+    },
+    homeTopographies={
+      'Delta',
+    },
+    name='Plain Bases',
+    id='plain_bases_army',
+    dateRange={
+      startDate=-5000,
+      endDate=5000,
+    },
+  },
+  g_base_definitions[g_str_plain_bases_army_knights_general],
+  g_base_definitions[g_str_plain_bases_army_knights],
+  g_base_definitions[g_str_plain_bases_army_javelin_cavalry_general],
+  g_base_definitions[g_str_plain_bases_army_javelin_cavalry],
+  g_base_definitions[g_str_plain_bases_army_horse_bow_general],
+  g_base_definitions[g_str_plain_bases_army_horse_bow],
+  g_base_definitions[g_str_plain_bases_army_elite_cavalry_general],
+  g_base_definitions[g_str_plain_bases_army_elite_cavalry],
+  g_base_definitions[g_str_plain_bases_army_elephants_general],
+  g_base_definitions[g_str_plain_bases_army_elephants],
+  g_base_definitions[g_str_plain_bases_army_chariots_general],
+  g_base_definitions[g_str_plain_bases_army_chariots],
+  g_base_definitions[g_str_plain_bases_army_cataphracts_general],
+  g_base_definitions[g_str_plain_bases_army_cataphracts],
+  g_base_definitions[g_str_plain_bases_army_spears_general],
+  g_base_definitions[g_str_plain_bases_army_spears],
+  g_base_definitions[g_str_plain_bases_army_raiders_general],
+  g_base_definitions[g_str_plain_bases_army_raiders],
+  g_base_definitions[g_str_plain_bases_army_pavisiers_general],
+  g_base_definitions[g_str_plain_bases_army_pavisiers],
+  g_base_definitions[g_str_plain_bases_army_elite_foot_general],
+  g_base_definitions[g_str_plain_bases_army_elite_foot],
+  g_base_definitions[g_str_plain_bases_army_archers_general],
+  g_base_definitions[g_str_plain_bases_army_archers],
+  g_base_definitions[g_str_plain_bases_army_battle_taxi_general],
+  g_base_definitions[g_str_plain_bases_army_battle_taxi],
+  g_base_definitions[g_str_plain_bases_army_bad_horse_general],
+  g_base_definitions[g_str_plain_bases_army_bad_horse],
+  g_base_definitions[g_str_plain_bases_army_warriors_general],
+  g_base_definitions[g_str_plain_bases_army_warriors],
+  g_base_definitions[g_str_plain_bases_army_warband_general],
+  g_base_definitions[g_str_plain_bases_army_warband],
+  g_base_definitions[g_str_plain_bases_army_war_wagons_general],
+  g_base_definitions[g_str_plain_bases_army_war_wagons],
+  g_base_definitions[g_str_plain_bases_army_skirmishers_general],
+  g_base_definitions[g_str_plain_bases_army_skirmishers],
+  g_base_definitions[g_str_plain_bases_army_pikes_general],
+  g_base_definitions[g_str_plain_bases_army_pikes],
+  g_base_definitions[g_str_plain_bases_army_heavy_foot_general],
+  g_base_definitions[g_str_plain_bases_army_heavy_foot],
+  g_base_definitions[g_str_plain_bases_army_light_spear_general],
+  g_base_definitions[g_str_plain_bases_army_light_spear],
+  g_base_definitions[g_str_plain_bases_army_light_foot_general],
+  g_base_definitions[g_str_plain_bases_army_light_foot],
+  g_base_definitions[g_str_plain_bases_army_artillery_general],
+  g_base_definitions[g_str_plain_bases_army_artillery],
+  g_base_definitions[g_str_plain_bases_army_rabble_general],
+  g_base_definitions[g_str_plain_bases_army_rabble],
+  g_base_definitions[g_str_plain_bases_army_horde_general],
+  g_base_definitions[g_str_plain_bases_army_horde],
+  g_base_definitions[g_str_plain_bases_army_bow_levy_general],
+  g_base_definitions[g_str_plain_bases_army_bow_levy],
+  g_base_definitions[g_str_plain_bases_army_camp],
+  g_base_definitions[g_str_plain_bases_army_camp_fortified],
+  g_base_definitions[g_str_plain_bases_army_camp_pack_train],
+  g_base_definitions[g_str_plain_bases_army_camp_standard_wagon],
+  g_base_definitions[g_str_plain_bases_army_prepared_defenses],
+  g_base_definitions[g_str_plain_bases_army_light_camelry],
+  -- TODO elephant screen
+  -- TODO camel protected infantry
+  -- TODO armoured camels (cataphracts)
+  -- TODO plaustralia
+  -- TODO pack trains and herds camp
+  -- TODO mobile infrantry
+  -- TODO sword cav
+  -- TODO stampede
+  -- TODO Scythed Chariots
+  -- TODO Charging camels (knights)
+  -- TODO chained together bad horse
+}
+
+for _,t in 
+    pairs({'spears', 'raiders', 'pavisiers', 'elite_foot', 'archers',
+           'warriors', 'warband', 'skirmishers', 
+           'pikes', 'heavy_foot', 'light_spear', 'light_foot',
+           'rabble', 'horde', 'bow_levy'}) do
+  for _, g in pairs({'', '_general'}) do
+    old_id = "plain_bases_army_" .. t .. g
+    mounted_id = old_id .. "_mounted_mobile_infantry"
+    dismounted_id = old_id .. "_dismounted_mobile_infantry"
+    g_base_definitions[mounted_id] = deep_copy(g_base_definitions[old_id])
+    g_base_definitions[mounted_id]['id'] = mounted_id
+    g_base_definitions[mounted_id]['dismount_as'] = dismounted_id
+    g_base_definitions[mounted_id]['mobile_infantry'] = true
+    g_base_definitions[dismounted_id] = deep_copy(g_base_definitions[old_id])
+    g_base_definitions[dismounted_id]['id'] = dismounted_id
+    g_base_definitions[dismounted_id]['dismounted_from'] = mounted_id
+    table.insert(army['plain_bases_army'], g_base_definitions[mounted_id])
+    table.insert(army['plain_bases_army'], g_base_definitions[dismounted_id])
+  end
+end
+
+
+if nil == armies then
+  armies = {}
+end
+if nil == armies["All"] then
+  armies["All"] ={}
+end
+armies["All"]["Plain Bases"] = army["plain_bases_army"]
+if nil == army_dates then
+  army_dates = {}
+end
+if nil == army_dates["plain_bases_army"] then
+  army_dates['plain_bases_army'] = {}
+end
+army_dates["plain_bases_army"]["All"] = {
+  startDate=-5000,
+  endDate=5000
+}
+army['plain_bases_army_ally_plain_bases_army'] = army['plain_bases_army']

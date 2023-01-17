@@ -1,0 +1,6 @@
+allies['plain_bases_army'] = {
+  {
+    id='plain_bases_army',
+    dateRange={startDate=-50000, endDate=50000}
+  },
+}
