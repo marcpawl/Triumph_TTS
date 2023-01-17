@@ -29,6 +29,9 @@ Add model definitions for Armies:
 
   Add Wardogs
 
+Add army "Plain Bases".  One of each type so you can create
+your own scenarios without being limitted to Meshwesh armies.
+
 Fix bug where fences around camps would climb for every instance.
 But the fences are still flying.
 
