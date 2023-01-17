@@ -1585,7 +1585,6 @@ function reset_state()
             print_info('Setting as current table = ' .. g_current_table)
         end
     end
-    print_info('If there\'s terrain on top of the table, please, do a Fix and Lock')
 
     remove_deployment_lines()
 end
