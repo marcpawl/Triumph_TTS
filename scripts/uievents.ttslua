@@ -434,7 +434,10 @@ function update_armies_menu(xml, color)
             end
         end
     end
-    assert(index > 0)
+    if (index <= 0) then
+      print_error("index is not positive " .. tostring(index))
+      return
+    end
     if selected_army_id == nil then
       selected_index = 1
       local selected_army_name = options[1]
@@ -464,7 +467,10 @@ function update_years_menu(xml, color)
      local options = {}
      index = 0
      local dates_for_army = army_dates[army_id_selected]
-     assert(nil ~= dates_for_army)
+     if nil == dates_for_army then
+      print_error("dates for army is nil")
+      return
+     end
 
      -- skip the selected army?  If there are multiple time periods do
      -- not include the all encompassing period.
