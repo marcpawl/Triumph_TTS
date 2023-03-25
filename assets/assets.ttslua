@@ -1,16 +1,19 @@
 g_assets =
 {
-  dir="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/",
-  counter_background="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/images/counter_background.png",
-  token_no_camp="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/images/no_camp_token/no_camp.png",
-  token_charge_through="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/images/charge_through_token/charge_through.png",
-  token_hold_the_line="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/images/hold_the_line/hold_the_line.png",
-  prepared_defenses_2d_diffuse_url="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/prepared_defenses/prepared_defenses_2d.png",
-  prepared_defenses_2d_mesh_url="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/prepared_defenses/prepared_defenses_2d.obj",
-  flank_march_card_red="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/flank_march_card/flank_march_card_red.png",
-  flank_march_card_blue="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/flank_march_card/flank_march_card_blue.png",
-  rock_1_obj="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/terrain/terrain_rock_grey/terrain_rock_grey_1.obj",
-  rock_2_obj="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/terrain/terrain_rock_grey/terrain_rock_grey_2.obj",
-  rock_3_obj="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/terrain/terrain_rock_grey/terrain_rock_grey_3.obj",
-  rock_4_obj="https://raw.githubusercontent.com/marcpawl/Triumph_TTS/29feb3f8d056be07c02b5f97118bbeeb9163cb73/assets/terrain/terrain_rock_grey/terrain_rock_grey_4.obj",
+  dir="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\",
+  counter_background="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\images\\counter_background.png",
+  token_no_camp="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\images\\no_camp_token\\no_camp.png",
+  token_charge_through="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\images\\charge_through_token\\charge_through.png",
+  token_hold_the_line="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\images\\hold_the_line\\hold_the_line.png",
+  prepared_defenses_2d_diffuse_url="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\prepared_defenses\\prepared_defenses_2d.png",
+  prepared_defenses_2d_mesh_url="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\prepared_defenses\\prepared_defenses_2d.obj",
+  flank_march_card_red="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\flank_march_card\\flank_march_card_red.png",
+  flank_march_card_blue="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\flank_march_card\\flank_march_card_blue.png",
+  rock_1_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_1.obj",
+  rock_2_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_2.obj",
+  rock_3_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_3.obj",
+  rock_4_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_4.obj",
 }
+g_assets['zoc_obj'] = g_assets['dir'] .. "gizmos/zoc.obj"]
+g_assets['zoc_blue'] = g_assets['dir'] .. "gizmos/blue.png"]
+g_assets['zoc_red'] = g_assets['dir'] .. "gizmos/red.png"]
