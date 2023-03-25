@@ -40,6 +40,10 @@ g_bow_range = 3 * g_movement_unit_in_inches
 g_art_range = 8 * g_movement_unit_in_inches
 g_wwg_range = 3 * g_movement_unit_in_inches
 
+-- distance straight ahead that a zoc covers. 
+-- See rule 51.2
+g_zoc_inches = 2 * g_movement_unit_in_inches
+
 -- Initial distance spawns from the center
 g_spawn_from_center_in = 0.5
 
