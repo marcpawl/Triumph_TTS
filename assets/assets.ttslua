@@ -13,7 +13,7 @@ g_assets =
   rock_2_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_2.obj",
   rock_3_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_3.obj",
   rock_4_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_4.obj",
+  zoc_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\gizmos\\zoc.obj",
+  zoc_blue="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\gizmos\\blue.png",
+  zoc_red="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\gizmos\\red.png",
 }
-g_assets['zoc_obj'] = g_assets['dir'] .. "gizmos/zoc.obj"]
-g_assets['zoc_blue'] = g_assets['dir'] .. "gizmos/blue.png"]
-g_assets['zoc_red'] = g_assets['dir'] .. "gizmos/red.png"]
