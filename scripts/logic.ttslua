@@ -290,6 +290,22 @@ function push_back(base_obj)
     history_record_delta_snapshot()
 end
 
+function move_object_forward(obj, distance_inches, bunny_hop)
+    local angle_degrees = normalize_degrees(obj.getRotation()['y'])
+    local angle_rad = math.rad(angle_degrees)
+    local position = obj.getPosition()
+    local displacement_vector = rad_to_vector(angle_rad)
+    local destination = vec_add(position, vec_mul_escalar(displacement_vector, distance_inches))
+
+    if bunny_hop ~= nil then
+        -- Bunny hop the base so it climbs up terrain, instead of tunnelling
+        -- through hills.
+        destination['y'] = destination['y'] + bunny_hop
+    end
+
+    obj.setPosition(destination)
+end
+
 -- Move a base forward stopping if it will collide with another base,
 -- distance_inches: Distance to attempt to move
 -- negative indicates moving backwards without changing its facing.
@@ -320,22 +336,17 @@ function move_base_forward(base_obj, distance_inches)
     end
 
     local initial_transform = calculate_transform(base_obj)
-    local angle = from_degrees_to_rad(base_obj.getRotation())['y']
-    local displacement_vector = rad_to_vector(angle)
-
-    local destination = vec_add(initial_transform['position'], vec_mul_escalar(displacement_vector, magnitude))
 
     -- Bunny hop the base so it climbs up terrain, instead of tunnelling
     -- through hills.
-    destination['y'] = destination['y'] + 1
-
-    base_obj.setPosition(destination)
+    local bunny_hop = 1
+    move_object_forward(base_obj, magnitude, bunny_hop)
 
     local new_transform = calculate_transform(base_obj)
-
     local distance = max_distance_between_bases_front_corners(initial_transform['corners'], new_transform['corners'])
     local mu = inches_to_mu_display_string(distance)
     print_info(base_obj.getName() .. ' has moved forward ' .. mu)
+
     return collision
 end
 
