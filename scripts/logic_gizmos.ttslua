@@ -144,12 +144,6 @@ function get_strokes_future_position(base_obj, transform)
 end
 
 
-function get_strokes_zoc(base_obj, transform)
-    update_zoc(base_obj)
-    return {}
-end
-
-
 -- See the DBA2 repo for this, is a bit hellish... Combined with way too many
 -- FB discussions that these rules are overly complex
 function get_strokes_fire_arc(base_obj, transform, shooting_range, max_width)
@@ -715,7 +709,7 @@ function get_strokes_base_pos(obj, transform)
     end
 
     if g_zoc_enabled then
-        table.insert(strokes, get_strokes_zoc(obj, transform))
+        update_zoc(obj)
     end
     return strokes
 end
@@ -784,18 +778,12 @@ function get_strokes_bases_nothing(bases)
     if bases == nil or #bases == 0 then
         return {}
     end
-
-    local strokes = {}
-    for _, obj in ipairs(bases) do
-        if g_zoc_enabled then
-            local name = obj.getName()
-            local pos = obj.getPosition()
-            local rot = obj.getRotation()
-            local base_strokes = get_strokes_zoc(obj, calculate_transform(obj))
-            table.insert(strokes, base_strokes)
+    if g_zoc_enabled then
+        for _, obj in ipairs(bases) do
+            update_zoc(obj)
         end
     end
-    return strokes
+    return {}
 end
 
 function get_bases_for_gizmos()
