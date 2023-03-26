@@ -1,4 +1,5 @@
 require("Triumph_TTS/scripts/utilities_lua")
+require("Triumph_TTS/scripts/logic_base_obj")
 require("Triumph_TTS/scripts/logic_spawn_army")
 require("Triumph_TTS/scripts/data/data_cheat_sheet")
 
@@ -10,14 +11,7 @@ require("Triumph_TTS/scripts/data/data_cheat_sheet")
 g_gizmos = { zoc={} }
 
 function has_zoc(base_obj)
-    if base_obj == nil then
-        return false
-    end
-    local base_definition = get_base_definition_from_base_obj(base_obj)
-    if base_definition == nil then
-        return false
-    end
-    local tip_data = base_tool_tips[base_definition.troop_type]
+    local tip_data = get_tool_tip_data(base_obj)
     if tip_data == nil then
         return false
     end    
