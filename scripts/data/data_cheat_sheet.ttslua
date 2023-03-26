@@ -294,5 +294,5 @@ base_tool_tips['Camp']['is_camp'] = true
 base_tool_tips['Elephant Screen Counter']={
   victory_points=0,
   army_builder_points=0,
-  has_zoc=true,
+  has_zoc=false,
 }
