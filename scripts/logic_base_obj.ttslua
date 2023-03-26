@@ -11,6 +11,30 @@ function is_base_obj(obj)
   return str_starts_with(name, "base")
 end
 
+-- Get the base definition for a base object.
+-- guid: GUID of the base
+-- return: base definition or nil.
+function get_base_definition_from_guid(guid)
+  local decoration = g_decorations[ guid]
+  if nil == decoration then
+    return nil
+  end
+
+  local base_definition_name = decoration.base_definition_name
+  return get_base_definition_from_name(base_definition_name)
+end
+
+-- Get the base definition for a base object.
+-- base_obj:  Base object
+-- return: base definition or nil.
+function get_base_definition_from_base_obj(base_obj)
+  if nil == base_obj then
+    return nil
+  end
+  local guid = base_obj.getGUID()
+  return get_base_definition_from_guid(guid)
+end
+
 -- Is the base a general for an army.
 function is_base_army_general(base_obj)
   return str_has_substr(base_obj.getName(), ' General')

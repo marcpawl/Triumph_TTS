@@ -6,6 +6,7 @@ require("Triumph_TTS/scripts/data/data_models")
 require("Triumph_TTS/scripts/data/data_settings")
 require("Triumph_TTS/scripts/logic_decorations")
 require("Triumph_TTS/scripts/utilities_lua")
+require("Triumph_TTS/scripts/logic_base_obj")
 
 
 g_base_index = 1
@@ -875,31 +876,6 @@ function get_base_definition_from_name(base_definition_name)
 
   return nil
 end
-
--- Get the base definition for a base object.
--- guid: GUID of the base
--- return: base definition or nil.
-function get_base_definition_from_guid(guid)
-  local decoration = g_decorations[ guid]
-  if nil == decoration then
-    return nil
-  end
-
-  local base_definition_name = decoration.base_definition_name
-  return get_base_definition_from_name(base_definition_name)
-end
-
--- Get the base definition for a base object.
--- base_obj:  Base object
--- return: base definition or nil.
-function get_base_definition_from_base_obj(base_obj)
-  if nil == base_obj then
-    return nil
-  end
-  local guid = base_obj.getGUID()
-  return get_base_definition_from_guid(guid)
-end
-
 
 -- Get the definition for a base
 -- base_data:  If string is the name of the variable holding the definition,

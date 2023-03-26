@@ -172,6 +172,7 @@ base_tool_tips['War Wagons']={
   points=3,
   base_depth=40,
   has_zoc=true,
+  is_war_wagon=true
 }
 base_tool_tips['Warriors']={
   close_order_foot = true,
@@ -280,6 +281,7 @@ base_tool_tips['Camp']={
   victory_points=8,
   army_builder_points=0,
   has_zoc=false,
+  is_camp = true,
 }
 
 -- Treated as if it was a base since different armies could have
