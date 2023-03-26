@@ -162,6 +162,7 @@ base_tool_tips['Spears']={
   base_depth=15,
   has_zoc=true,
 }
+
 base_tool_tips['War Wagons']={
   close_order_foot = true,
   tactical_move_distance = 2,
@@ -174,6 +175,8 @@ base_tool_tips['War Wagons']={
   has_zoc=true,
   is_war_wagon=true
 }
+base_tool_tips['War Wagons']['is_war_wagons'] = true
+
 base_tool_tips['Warriors']={
   close_order_foot = true,
   tactical_move_distance = 3,
@@ -274,6 +277,7 @@ base_tool_tips['Elephants']={
   base_depth=40,
   has_zoc=true,
 }
+
 base_tool_tips['Camp']={
   -- no target_combat_factor .  Rule 62.6 camps may not be shot at
   combat_factor_vs_foot = 2, -- rule 72.1
@@ -281,8 +285,8 @@ base_tool_tips['Camp']={
   victory_points=8,
   army_builder_points=0,
   has_zoc=false,
-  is_camp = true,
 }
+base_tool_tips['Camp']['is_camp'] = true
 
 -- Treated as if it was a base since different armies could have
 -- different models of the counters.  We could have a model with an

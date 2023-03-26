@@ -35,13 +35,15 @@ function get_base_definition_from_base_obj(base_obj)
   return get_base_definition_from_guid(guid)
 end
 
+-- base_obj: base to get data on.
+-- return: tool tip data table, or nil
 function get_tool_tip_data(base_obj)
   if base_obj == nil then
-    return false
+    return nil
   end
   local base_definition = get_base_definition_from_base_obj(base_obj)
   if base_definition == nil then
-    return false
+    return nil
   end
   local tip_data = base_tool_tips[base_definition.troop_type]
   return tip_data
@@ -56,6 +58,14 @@ end
 
 function is_camp(base_obj)
   return str_has_substr(base_obj.getName(), 'Camp')
+end
+
+function is_war_wagons(base_obj)
+  local tip_data = get_tool_tip_data(base_obj)
+  if tip_data == nil then
+    return false
+  end
+  return tip_data["is_war_wagons"]
 end
 
 

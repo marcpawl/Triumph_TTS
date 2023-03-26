@@ -24,7 +24,11 @@ function spawn_zoc(base_obj)
     data['Nickname'] = "zoc ".. base_obj.getGUID()
     data['Description'] = nil
     data['Locked'] = true
-    data['CustomMesh']['MeshURL'] = g_assets['zoc_obj']
+    if is_war_wagons(base_obj) then
+        data['CustomMesh']['MeshURL'] = g_assets['zoc_wwg_obj']
+    else
+        data['CustomMesh']['MeshURL'] = g_assets['zoc_obj']
+    end
     if is_base_blue_player(base_obj) then
         data['CustomMesh']['DiffuseURL'] = g_assets['zoc_blue'] 
     else
@@ -136,116 +140,6 @@ function get_strokes_future_position(base_obj, transform)
 end
 
 
-
-function get_strokes_zoc_wwg(base_obj, transform)
-    -- ZOC is one base width in front.  See Rule 51.2
-    local size = get_size(base_obj.getName())
-    local color = g_gizmo_zoc_color_player_red
-    if is_base_blue_player(base_obj) then
-        color = g_gizmo_zoc_color_player_blue
-    end
-
-    local stroke_points = {}
-    local tr = { x = size['x'] / 2, y = 0, z = size['z'] / 2 }
-    local tl = { x = -size['x'] / 2, y = 0, z = size['z'] / 2 }
-    local br = { x = size['x'] / 2, y = 0, z = -size['z'] / 2 }
-    local bl = { x = -size['x'] / 2, y = 0, z = -size['z'] / 2 }
-
-    -- TOP
-
-    table.insert(stroke_points, {
-        x = tr['x'],
-        y = tr['y'],
-        z = tr['z']
-    })
-    table.insert(stroke_points, {
-        x = tr['x'],
-        y = tr['y'],
-        z = tr['z'] + g_base_width_in_inches
-    })
-    table.insert(stroke_points, {
-        x = tl['x'],
-        y = tl['y'],
-        z = tl['z'] + g_base_width_in_inches
-    })
-    table.insert(stroke_points, {
-        x = tl['x'],
-        y = tl['y'],
-        z = tl['z']
-    })
-
-    -- SIDE LEFT
-
-    table.insert(stroke_points, {
-        x = tl['x'] - g_base_width_in_inches,
-        y = tl['y'],
-        z = tl['z']
-    })
-    table.insert(stroke_points, {
-        x = bl['x'] - g_base_width_in_inches,
-        y = bl['y'],
-        z = bl['z']
-    })
-    table.insert(stroke_points, {
-        x = bl['x'],
-        y = bl['y'],
-        z = bl['z']
-    })
-
-    -- BOTTOM
-
-    table.insert(stroke_points, {
-        x = bl['x'],
-        y = bl['y'],
-        z = bl['z'] - g_base_width_in_inches
-    })
-    table.insert(stroke_points, {
-        x = br['x'],
-        y = br['y'],
-        z = br['z'] - g_base_width_in_inches
-    })
-    table.insert(stroke_points, {
-        x = br['x'],
-        y = br['y'],
-        z = br['z']
-    })
-
-    -- SIDE RIGHT
-
-    table.insert(stroke_points, {
-        x = br['x'] + g_base_width_in_inches,
-        y = br['y'],
-        z = br['z']
-    })
-    table.insert(stroke_points, {
-        x = tr['x'] + g_base_width_in_inches,
-        y = tr['y'],
-        z = tr['z']
-    })
-    table.insert(stroke_points, {
-        x = tr['x'],
-        y = tr['y'],
-        z = tr['z']
-    })
-
-    local rotation = transform['rotation']
-    local pos = transform['position']
-    for _, paux in ipairs(stroke_points) do
-        local paux_rotated = rotate_point_relative(paux, pos, rotation)
-        paux['x'] = paux_rotated['x']
-        paux['y'] = set_vec_to_above_terrain(paux_rotated)['y']
-        paux['z'] = paux_rotated['z']
-    end
-
-    return
-    {
-        points    = stroke_points,
-        color     = color,
-        thickness = g_line_thickness,
-        rotation  = {0,0,0}
-    }
-end
-
 function get_strokes_zoc(base_obj, transform)
     if base_obj == nil then
       return {}
@@ -264,56 +158,8 @@ function get_strokes_zoc(base_obj, transform)
       return {}
     end
 
-    if str_has_substr(base_obj.getName(), 'War Wagons') then
-        local color = g_gizmo_zoc_color_player_red
-        if is_base_blue_player(base_obj) then
-            color = g_gizmo_zoc_color_player_blue
-        end
-
-        return get_strokes_zoc_wwg(base_obj, transform)
-    end
     update_zoc(base_obj)
     return {}
-    -- local stroke_points = {}
-    -- local p = transform['corners']['topright']
-    -- table.insert(stroke_points, p)
-    -- table.insert(stroke_points, {
-    --     x = p['x'],
-    --     y = p['y'],
-    --     z = p['z'] + g_base_width_in_inches
-    -- })
-    -- table.insert(stroke_points, {
-    --     x = p['x'] - g_base_width_in_inches,
-    --     y = p['y'],
-    --     z = p['z'] + g_base_width_in_inches
-    -- })
-    -- table.insert(stroke_points, {
-    --     x = p['x'] - g_base_width_in_inches,
-    --     y = p['y'],
-    --     z = p['z']
-    -- })
-    -- table.insert(stroke_points, p)
-
-    -- local rotation = transform['rotation']
-    -- for _, paux in ipairs(stroke_points) do
-    --     local paux_rotated = rotate_point(paux, p, rotation)
-    --     paux['x'] = paux_rotated['x']
-    --     paux['y'] = set_vec_to_above_terrain(paux_rotated)['y']
-    --     paux['z'] = paux_rotated['z']
-    -- end
-
-    -- local color = g_gizmo_zoc_color_player_red
-    -- if is_base_blue_player(base_obj) then
-    --     color = g_gizmo_zoc_color_player_blue
-    -- end
-
-    -- return
-    -- {
-    --     points    = stroke_points,
-    --     color     = color,
-    --     thickness = g_line_thickness,
-    --     rotation  = {0,0,0}
-    -- }
 end
 
 
