@@ -1,3 +1,4 @@
+require("Triumph_TTS/assets/assets")
 
 
 -- All bases have 40mm width

@@ -105,6 +105,10 @@ function build_base(base_name, tile)
     end
   end
 
+  base['getGUID'] = function()
+    return "FAKEGUID"
+  end
+
   g_bases[ base_name] = {
     tile=tile,
     is_red_player=true
