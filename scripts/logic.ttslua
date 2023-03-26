@@ -143,6 +143,7 @@ function turn_around_base(obj)
     local distance = max_distance_between_bases_front_corners(initial_transform['corners'], new_transform['corners'])
     local mu = inches_to_mu_display_string(distance)
     print_info(obj.getName() .. ' has turned around 180º, which costs ' .. mu)
+    update_zoc(obj)
     history_record_delta_snapshot()
 end
 
@@ -165,6 +166,7 @@ function move_base(obj, how_much_movement, ignore_history)
     if not ignore_history then
         history_record_delta_snapshot()
     end
+    update_zoc(obj)
     return how_much_movement
 end
 
@@ -288,6 +290,7 @@ end
 function push_back(base_obj)
     do_push_back(base_obj)
     history_record_delta_snapshot()
+    update_zoc(base_obj)
 end
 
 function move_object_forward(obj, distance_inches, bunny_hop)
@@ -361,6 +364,7 @@ function push_forward(base_obj)
     end
 
     history_record_delta_snapshot()
+    update_zoc(base_obj)
 end
 
 function panic(base_obj)
@@ -382,6 +386,7 @@ function panic(base_obj)
         move_base_forward(base_obj, movement_inches)
     end
     history_record_delta_snapshot()
+    update_zoc(base_obj)
 end
 
 function evade(base_obj)
@@ -396,6 +401,7 @@ function evade(base_obj)
         move_base_forward(base_obj, -movement_inches)
     end
     history_record_delta_snapshot()
+    update_zoc(base_obj)
 end
 
 -- Move a base so it's curner is at the specified location.
@@ -426,6 +432,7 @@ function right_turn_to_face(base_obj)
     move_corner_to_position(base_cache, "topleft", old_corner)
 
     history_record_delta_snapshot()
+    update_zoc(base_obj)
 end
 
 function left_turn_to_face(base_obj)
@@ -440,6 +447,7 @@ function left_turn_to_face(base_obj)
     move_corner_to_position(base_cache, "topright", old_corner)
 
     history_record_delta_snapshot()
+    update_zoc(base_obj)
 end
 
 -- Given a bunch of objects returns them in a column, which is
@@ -743,6 +751,9 @@ function push_back_column(objs)
     end
 
     history_record_delta_snapshot()
+    for _,base_obj in objs do
+        update_zoc(base_obj)
+    end
 end
 
 -- Calculates the future position of the given group of objs, assuming a wheel
@@ -841,9 +852,11 @@ function perform_wheels()
     for col, front_element in pairs(front_elements) do
         local current_element = front_element
         apply_transform_obj(current_element, old_transforms[current_element], new_transforms[current_element])
+        update_zoc(current_element)
         while behind_of[current_element] ~= nil do
             current_element = behind_of[current_element]
             apply_transform_obj(current_element, old_transforms[current_element], new_transforms[current_element])
+            update_zoc(current_element)
         end
     end
     history_record_delta_snapshot()
@@ -1316,6 +1329,7 @@ function onObjectDrop(player_color, picked_up_object)
     if is_base_obj(picked_up_object) then
         if is_table_empty(g_picked_base_objects) then
             history_record_delta_snapshot()
+            update_zoc(picked_up_object)
         end
     end
 
@@ -1372,6 +1386,7 @@ function onObjectRotate(object, spin, flip, player_color, old_spin, old_flip)
     if nil == g_picked_base_objects[object] then
         if is_base_obj(object) then
             history_record_delta_snapshot()
+            update_zoc(object)
         end
     end
 end
