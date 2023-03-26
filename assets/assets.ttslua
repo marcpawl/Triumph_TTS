@@ -14,6 +14,7 @@ g_assets =
   rock_3_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_3.obj",
   rock_4_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\terrain\\terrain_rock_grey\\terrain_rock_grey_4.obj",
   zoc_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\gizmos\\zoc.obj",
+  zoc_wwg_obj="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\gizmos\\zoc_wwg.obj",
   zoc_blue="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\gizmos\\blue.png",
   zoc_red="file:///C:\\Users\\Owner\\github\\Triumph_TTS\\assets\\gizmos\\red.png",
 }
