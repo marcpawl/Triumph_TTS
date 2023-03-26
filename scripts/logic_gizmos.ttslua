@@ -57,10 +57,14 @@ function show_zoc(base_obj)
     local position = base_obj.getPosition()
     position['y'] = g_terrain_pos
     zoc.setPosition(position)
-    local base_depth_mm = get_base_depth_from_base_obj(base_obj)
-    local distance_inches = (from_mm_to_in(base_depth_mm) + g_zoc_inches) / 2
 
-    move_object_forward(zoc, distance_inches)
+    -- the zoc of war wagons is centered on the base.
+    if not is_war_wagons(base_obj) then
+        -- the remainder of bases have the zoc object in front of them.
+        local base_depth_mm = get_base_depth_from_base_obj(base_obj)
+        local distance_inches = (from_mm_to_in(base_depth_mm) + g_zoc_inches) / 2
+        move_object_forward(zoc, distance_inches)
+    end
 end
 
 function destroy_zoc(base_obj)
