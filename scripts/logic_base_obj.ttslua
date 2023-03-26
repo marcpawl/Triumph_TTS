@@ -41,6 +41,11 @@ function is_base_army_general(base_obj)
 end
 
 
+function is_camp(base_obj)
+  return str_has_substr(base_obj.getName(), 'Camp')
+end
+
+
 -- Return base depth in mm
 function get_base_depth_from_base_obj(base_obj)
   local base_definition = get_base_definition_from_base_obj(base_obj)

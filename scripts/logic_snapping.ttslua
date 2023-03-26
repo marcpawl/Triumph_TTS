@@ -1,3 +1,7 @@
+require("Triumph_TTS/scripts/logic_base_obj")
+
+
+
 -- Are two bases facing a a direction that allows for the snapping rule to take place?
 -- stable_rotation_degrees: facing of the base not being moved in dregrees
 -- moving_rotation_degrees: facing of the moving base in degrees
@@ -56,10 +60,6 @@ function is_bases_close_enough_to_snap(moving_base, resting_base, distance_sq)
   end
 
   return false
-end
-
-function is_camp(base_obj)
-    return str_has_substr(base_obj.getName(), 'Camp')
 end
 
 
