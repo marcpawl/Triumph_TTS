@@ -10,7 +10,6 @@ g_gizmos = { zoc={} }
 
 
 function spawn_zoc(base_obj)
-    print("TODO spawn_zoc")
     local data = base_obj.getData()
     data['Nickname'] = "zoc ".. base_obj.getGUID()
     data['Description'] = nil
@@ -923,13 +922,6 @@ function get_strokes_future_movements(new_selected_items)
     return strokes
 end
 
--- This caches the strokes for a given base in certain pos and rotation
--- g_cache_zocs["basename"] =  {
---      "pos" = {x=1,y=1,z=1}
---      "rot" = {x=1,y=1,z=1}
---      "strokes" = {}
---   }
-g_cache_zocs = {}
 
 function get_strokes_bases_nothing(bases)
     if bases == nil or #bases == 0 then
@@ -942,19 +934,8 @@ function get_strokes_bases_nothing(bases)
             local name = obj.getName()
             local pos = obj.getPosition()
             local rot = obj.getRotation()
-            if g_cache_zocs[name]
-                and g_cache_zocs[name].pos == pos
-                and g_cache_zocs[name].rot == rot then
-
-                table.insert(strokes, g_cache_zocs[name].strokes)
-            else
-                local base_strokes = get_strokes_zoc(obj, calculate_transform(obj))
-                table.insert(strokes, base_strokes)
-                g_cache_zocs[name] = {}
-                g_cache_zocs[name].pos = pos
-                g_cache_zocs[name].rot = rot
-                g_cache_zocs[name].strokes = base_strokes
-            end
+            local base_strokes = get_strokes_zoc(obj, calculate_transform(obj))
+            table.insert(strokes, base_strokes)
         end
     end
     return strokes

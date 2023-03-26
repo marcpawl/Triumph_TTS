@@ -146,7 +146,7 @@ function turn_around_base(obj)
     history_record_delta_snapshot()
 end
 
--- Moves one or more DBA bases g_mu_movement forward
+-- Move a base forward
 -- ASSUMES all bases are in a flat board!!!!
 -- Returns how much it moved (it can move less in a collision)
 function move_base(obj, how_much_movement, ignore_history)
