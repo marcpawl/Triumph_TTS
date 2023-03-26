@@ -1477,6 +1477,8 @@ function onObjectDestroy(dying_object)
       -- removed from the bag we need the bases settings.
       -- https://github.com/ArkeinGuardia/Triumph_TTS/issues/149
 
+      destroy_zoc(dying_object)
+      
       set_last_snapshot()
       history_record_object_destroy(dying_object)
       remove_decorations_for_obj(dying_object)

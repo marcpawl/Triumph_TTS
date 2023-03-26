@@ -732,8 +732,10 @@ function on_toggle_zoc(player, value, id)
 
     if g_zoc_enabled then
         UI.setValue('toggle_zoc', 'Show ZOC')
+        on_zoc_enabled()
     else
         UI.setValue('toggle_zoc', 'Do not show ZOC')
+        on_zoc_disabled()
     end
 
     -- Make it consistent for all players

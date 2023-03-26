@@ -1,6 +1,78 @@
 require("Triumph_TTS/scripts/utilities_lua")
 require("Triumph_TTS/scripts/logic_spawn_army")
 
+-- 3D objects that are the gizmo's that are currently
+-- being shown.  The keys are the bases' GUID.  
+-- the values are the objects. 
+-- 
+-- The gizmos's are not peristed when the game is saved.
+g_gizmos = { zoc={} }
+
+
+function spawn_zoc(base_obj)
+    print("TODO spawn_zoc")
+    local data = base_obj.getData()
+    data['Nickname'] = "zoc ".. base_obj.getGUID()
+    data['Description'] = nil
+    data['Locked'] = true
+    data['CustomMesh']['MeshURL'] = g_assets['zoc_obj']
+    if is_base_blue_player(base_obj) then
+        data['CustomMesh']['DiffuseURL'] = g_assets['zoc_blue'] 
+    else
+        data['CustomMesh']['DiffuseURL'] = g_assets['zoc_red'] 
+    end
+    data['CustomMesh']['ColliderURL'] = minimal_collider
+    data['CastShadows'] = false
+
+    obj = spawnObjectData({data=data})
+    return obj
+end
+
+
+-- Place a ZOC where the base is.
+function show_zoc(base_obj)
+    local guid = base_obj.getGUID()
+    if g_gizmos['zoc'][guid] == nil then
+        g_gizmos['zoc'][guid] = spawn_zoc(base_obj)
+    end
+    local zoc = g_gizmos['zoc'][guid]
+
+    zoc.setRotation(base_obj.getRotation())
+    local position = base_obj.getPosition()
+    position['y'] = g_terrain_pos
+    zoc.setPosition(position)
+    local base_depth_mm = get_base_depth_from_base_obj(base_obj)
+    local distance_inches = (from_mm_to_in(base_depth_mm) + g_zoc_inches) / 2
+
+    move_object_forward(zoc, distance_inches)
+end
+
+function destroy_zoc(base_obj)
+    local zocs = g_gizmos['zoc']
+    local base_guid = base_obj.getGUID()
+    local zoc_obj = zocs[base_guid]
+    zocs[base_guid] = nil
+    if zoc_obj ~= nil then 
+        zoc_obj.destruct()
+    end
+end
+
+function on_zoc_disabled()
+    local zocs = g_gizmos['zoc']
+    for base_guid, zoc_obj in pairs(zocs) do
+        local zoc_obj = zocs[base_guid]
+        zocs[base_guid] = nil
+        if zoc_obj ~= nil then 
+            zoc_obj.destruct()
+        end
+    end
+end
+
+
+function on_zoc_enabled()
+    -- no-operation, the zoc objects will be created in get_strokes_zoc_base
+end
+
 
 function set_vec_to_above_terrain(vec)
     vec['y'] = g_terrain_pos + g_base_height_inches
@@ -40,37 +112,7 @@ function get_strokes_future_position(base_obj, transform)
     }
 end
 
-function get_strokes_zoc_base(base_obj, transform)
-    -- ZOC is 1 basewidth in front.  See Rule 51.2
-    local stroke_points = {}
-    local p = transform['corners']['topright']
-    table.insert(stroke_points, p)
-    table.insert(stroke_points, {
-        x = p['x'],
-        y = p['y'],
-        z = p['z'] + g_base_width_in_inches
-    })
-    table.insert(stroke_points, {
-        x = p['x'] - g_base_width_in_inches,
-        y = p['y'],
-        z = p['z'] + g_base_width_in_inches
-    })
-    table.insert(stroke_points, {
-        x = p['x'] - g_base_width_in_inches,
-        y = p['y'],
-        z = p['z']
-    })
-    table.insert(stroke_points, p)
 
-    local rotation = transform['rotation']
-    for _, paux in ipairs(stroke_points) do
-        local paux_rotated = rotate_point(paux, p, rotation)
-        paux['x'] = paux_rotated['x']
-        paux['y'] = set_vec_to_above_terrain(paux_rotated)['y']
-        paux['z'] = paux_rotated['z']
-    end
-    return stroke_points
-end
 
 function get_strokes_zoc_wwg(base_obj, transform)
     -- ZOC is one base width in front.  See Rule 51.2
@@ -185,7 +227,10 @@ function get_strokes_zoc(base_obj, transform)
     if base_obj == nil then
       return {}
     end
-    if is_base_prepared_defenses(base_obj) then 
+    if str_has_substr(base_obj.getName(), 'Proxy') then
+        return {}
+      end
+      if is_base_prepared_defenses(base_obj) then 
       return {}
     end
     if str_has_substr(base_obj.getName(), 'Elephant Screen') then
@@ -204,47 +249,48 @@ function get_strokes_zoc(base_obj, transform)
 
         return get_strokes_zoc_wwg(base_obj, transform)
     end
+    show_zoc(base_obj)
+    return {}
+    -- local stroke_points = {}
+    -- local p = transform['corners']['topright']
+    -- table.insert(stroke_points, p)
+    -- table.insert(stroke_points, {
+    --     x = p['x'],
+    --     y = p['y'],
+    --     z = p['z'] + g_base_width_in_inches
+    -- })
+    -- table.insert(stroke_points, {
+    --     x = p['x'] - g_base_width_in_inches,
+    --     y = p['y'],
+    --     z = p['z'] + g_base_width_in_inches
+    -- })
+    -- table.insert(stroke_points, {
+    --     x = p['x'] - g_base_width_in_inches,
+    --     y = p['y'],
+    --     z = p['z']
+    -- })
+    -- table.insert(stroke_points, p)
 
-    local stroke_points = {}
-    local p = transform['corners']['topright']
-    table.insert(stroke_points, p)
-    table.insert(stroke_points, {
-        x = p['x'],
-        y = p['y'],
-        z = p['z'] + g_base_width_in_inches
-    })
-    table.insert(stroke_points, {
-        x = p['x'] - g_base_width_in_inches,
-        y = p['y'],
-        z = p['z'] + g_base_width_in_inches
-    })
-    table.insert(stroke_points, {
-        x = p['x'] - g_base_width_in_inches,
-        y = p['y'],
-        z = p['z']
-    })
-    table.insert(stroke_points, p)
+    -- local rotation = transform['rotation']
+    -- for _, paux in ipairs(stroke_points) do
+    --     local paux_rotated = rotate_point(paux, p, rotation)
+    --     paux['x'] = paux_rotated['x']
+    --     paux['y'] = set_vec_to_above_terrain(paux_rotated)['y']
+    --     paux['z'] = paux_rotated['z']
+    -- end
 
-    local rotation = transform['rotation']
-    for _, paux in ipairs(stroke_points) do
-        local paux_rotated = rotate_point(paux, p, rotation)
-        paux['x'] = paux_rotated['x']
-        paux['y'] = set_vec_to_above_terrain(paux_rotated)['y']
-        paux['z'] = paux_rotated['z']
-    end
+    -- local color = g_gizmo_zoc_color_player_red
+    -- if is_base_blue_player(base_obj) then
+    --     color = g_gizmo_zoc_color_player_blue
+    -- end
 
-    local color = g_gizmo_zoc_color_player_red
-    if is_base_blue_player(base_obj) then
-        color = g_gizmo_zoc_color_player_blue
-    end
-
-    return
-    {
-        points    = stroke_points,
-        color     = color,
-        thickness = g_line_thickness,
-        rotation  = {0,0,0}
-    }
+    -- return
+    -- {
+    --     points    = stroke_points,
+    --     color     = color,
+    --     thickness = g_line_thickness,
+    --     rotation  = {0,0,0}
+    -- }
 end
 
 
