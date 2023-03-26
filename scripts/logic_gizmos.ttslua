@@ -1,5 +1,6 @@
 require("Triumph_TTS/scripts/utilities_lua")
 require("Triumph_TTS/scripts/logic_spawn_army")
+require("Triumph_TTS/scripts/data/data_cheat_sheet")
 
 -- 3D objects that are the gizmo's that are currently
 -- being shown.  The keys are the bases' GUID.  
@@ -7,6 +8,21 @@ require("Triumph_TTS/scripts/logic_spawn_army")
 -- 
 -- The gizmos's are not peristed when the game is saved.
 g_gizmos = { zoc={} }
+
+function has_zoc(base_obj)
+    if base_obj == nil then
+        return false
+    end
+    local base_definition = get_base_definition_from_base_obj(base_obj)
+    if base_definition == nil then
+        return false
+    end
+    local tip_data = base_tool_tips[base_definition.troop_type]
+    if tip_data == nil then
+        return false
+    end    
+    return tip_data.has_zoc
+end
 
 
 function spawn_zoc(base_obj)
@@ -30,6 +46,9 @@ end
 
 -- Place a ZOC where the base is.
 function show_zoc(base_obj)
+    if not has_zoc(base_obj) then
+        return
+    end
     local guid = base_obj.getGUID()
     if g_gizmos['zoc'][guid] == nil then
         g_gizmos['zoc'][guid] = spawn_zoc(base_obj)
@@ -47,12 +66,23 @@ function show_zoc(base_obj)
 end
 
 function destroy_zoc(base_obj)
+    if base_obj == nil then
+        return
+    end
     local zocs = g_gizmos['zoc']
     local base_guid = base_obj.getGUID()
     local zoc_obj = zocs[base_guid]
     zocs[base_guid] = nil
     if zoc_obj ~= nil then 
         zoc_obj.destruct()
+    end
+end
+
+function update_zoc(base_obj)
+    if g_zoc_enabled then
+        show_zoc(base_obj)
+    else
+        destroy_zoc(base_obj)
     end
 end
 
@@ -248,7 +278,7 @@ function get_strokes_zoc(base_obj, transform)
 
         return get_strokes_zoc_wwg(base_obj, transform)
     end
-    show_zoc(base_obj)
+    update_zoc(base_obj)
     return {}
     -- local stroke_points = {}
     -- local p = transform['corners']['topright']
