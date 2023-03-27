@@ -31,11 +31,14 @@ function spawn_zoc(base_obj)
     end
     if is_base_blue_player(base_obj) then
         data['CustomMesh']['DiffuseURL'] = g_assets['zoc_blue'] 
+        data["ColorDiffuse"] = {r=1, g=1, b=1, a=0.5}
     else
         data['CustomMesh']['DiffuseURL'] = g_assets['zoc_red'] 
+        data["ColorDiffuse"] = {r=1, g=1, b=1, a=0.5}
     end
     data['CustomMesh']['ColliderURL'] = minimal_collider
     data['CastShadows'] = false
+    data['Convex'] = false
 
     obj = spawnObjectData({data=data})
     return obj
