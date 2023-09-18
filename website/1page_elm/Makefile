@@ -3,7 +3,10 @@
 all: index.html
 
 index.html: $(wildcard src/*) docker_iid
-	docker -v $(pwd):$(pwd) -w $(pwd) elm make src/Hello2.elm 
+	docker run \
+	  -v $(abspath .):$(abspath .) -w $(abspath .) \
+	  $(shell cat docker/output/iid_elm) \
+	  elm make src/Main.elm
 
 .PHONY: docker_iid
 docker_iid:

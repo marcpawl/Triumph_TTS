@@ -1,11 +1,12 @@
-module Hello2 exposing(..)
+module Main exposing(..)
 
 import Browser
 import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
 import Http
 import Platform.Cmd as Cmd
-
+import Html.Attributes exposing (list)
+import Json.Decode
 
 -- MODEL
 
@@ -45,16 +46,17 @@ view : Model -> Html Msg
 view model =
   div []
     [ 
-      button [ onClick GetArmy ] [ text "Start" ],
-      button [ onClick GetArmy ] [ text "-" ]
-    , div []
-     [ text (
+    --   button [ onClick GetArmy ] [ text "Start" ],
+    --   button [ onClick GetArmy ] [ text "-" ]
+    -- , div []
+     text (
       status model
-      ) ],
-      (text (
-      "todo"
-      -- String.fromInt model
-      ) )
+      ),
+      thematicCategories 
+    --   (text (
+    --   "todo"
+    --   -- String.fromInt model
+    --   ) )
     ]
 
 status: Model -> String
@@ -66,6 +68,17 @@ status model =
     Loaded data ->
       "Loaded " ++ data
     Error -> "Error"
+
+thematicCategories =
+  div []
+    [ 
+      Html.h1 [] [ (text "Thematic Categories")],
+      Html.ul [] 
+        [
+        ]
+    ]
+
+
 
 getArmy : Model -> Cmd Msg
 getArmy _ =
