@@ -17,5 +17,12 @@
     "Lua.diagnostics.disable": [
         "lowercase-global",
         "unused-function"
-    ]
+    ],
+    "python.analysis.extraPaths": [
+        "./fake_meshwesh"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none"
 }

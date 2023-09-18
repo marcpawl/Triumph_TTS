@@ -29,13 +29,13 @@ def readJson(path: str):
     with open(path, "r") as file:
         return json.load(file)
 
-summary_data = readJson("../../fake_meshwesh/armyLists/summary")
+summary_data = readJson("../../fake_meshwesh/armyLists/summary.json")
 army_data = readJson("../output/army_data.json")
 armies_data = readJson("../output/armies_data.json")
 
 
 def loadArmy(armyId) :
-    return readJson("../../fake_meshwesh/armyLists/" + armyId)
+    return readJson("../../fake_meshwesh/armyLists/" + armyId + ".army.json")
 
 
 def getArmySummary(armyName: str):

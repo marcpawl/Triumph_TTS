@@ -6,6 +6,8 @@ import os
 import sys
 import subprocess
 import re
+from troop_type import troop_type_to_name
+
 
 # set of the identifiers of the base definitions that have already
 # been written
@@ -30,7 +32,7 @@ def read_json(file_name) :
     return data
 
 def read_army_json(army_id) :
-  file_name = os.path.join("armyLists", army_id)
+  file_name = os.path.join("armyLists", army_id + ".army.json")
   army_json = read_json(file_name)
   # Push down date ranges to make it easier to see if the troop entries are in an army for date range.
   army_json['dateRange'] = {}
@@ -43,7 +45,7 @@ def read_army_json(army_id) :
   return army_json
 
 def read_army_theme_json(army_id) :
-  file_name = os.path.join("armyLists", army_id + "_thematicCategories")
+  file_name = os.path.join("armyLists", army_id + ".thematicCategories.json")
   return read_json(file_name)
 
 def read_army_ally_options(army_id) :
@@ -78,66 +80,6 @@ def set_date_range(destination, dates) :
     dest['startDate'] = max( dates['startDate'], dest['startDate'] )
     dest['endDate'] = min( dates['endDate'], dest['endDate'] )
 
-def troop_type_to_name(troop_type) :
-  if troop_type == "Prepared Defenses" :
-      return troop_type
-  if troop_type == "WWG" :
-    return "War Wagons"
-  if troop_type == "CAT" :
-    return "Cataphracts"
-  if troop_type == "KNT" :
-    return "Knights"
-  if troop_type == "PAV" :
-    return "Pavisiers"
-  if troop_type == "ECV" :
-    return "Elite Cavalry"
-  if troop_type == "HBW" :
-    return "Horse Bow"
-  if troop_type == "ART" :
-    return "Artillery"
-  if troop_type == "JCV" :
-    return "Javelin Cavalry"
-  if troop_type == "SPR" or troop_type == "Spear" or troop_type == "Spears":
-    return "Spears"
-  if troop_type == "ELE" :
-    return "Elephants"
-  if troop_type == "WRR" or troop_type == "Warrior" or troop_type == "Warriors":
-    return "Warriors"
-  if troop_type == "BTX" :
-    return "Battle Taxi"
-  if troop_type == "BAD" :
-    return "Bad Horse"
-  if troop_type == "WBD" or troop_type == "Warband":
-    return "Warband"
-  if troop_type == "ARC" or troop_type == "Archer" or troop_type == "Archers":
-    return "Archers"
-  if troop_type == "RDR" or troop_type == "Raider" or troop_type == "Raiders":
-    return "Raiders"
-  if troop_type == "BLV" :
-    return "Bow Levy"
-  if troop_type == "RBL" :
-    return "Rabble"
-  if troop_type == "HRD" :
-    return "Horde"
-  if troop_type == "SKM" or troop_type == "Skirmisher" or troop_type == "Skirmishers" :
-    return "Skirmishers"
-  if troop_type == "CHT" :
-    return "Chariots"
-  if troop_type == "LFT" or troop_type == "Light Foot" :
-    return "Light Foot"
-  if troop_type == "HFT" or troop_type == "Heavy Foot" :
-    return "Heavy Foot"
-  if troop_type == "EFT" or troop_type == "Elite Foot" :
-    return "Elite Foot"
-  if troop_type == "PIK" or troop_type == "Pike" or troop_type == "Pikes":
-    return "Pikes"
-  if troop_type == "LSP" or troop_type == "Light Spear" or troop_type == "Light Spears" :
-    return 'Light Spear'
-  if troop_type == "Camp" :
-    return 'Camp'
-  if troop_type == "Elephant Screen Counter" :
-    return  "Elephant Screen Counter"
-  raise Exception("troop_type not understood: " + troop_type)
 
 def get_points_for_troop_type(troop_type) :
   if troop_type == "WWG" or troop_type == "War Wagons":
@@ -1306,7 +1248,7 @@ require("Triumph_TTS/scripts/static_maps")
           write_troop_option(file, troop_option)
 
 
-summary = read_json("armyLists/summary")
+summary = read_json("armyLists/summary.json")
 
 with open("army_data/all_armies.ttslua", "w") as all_armies:
     all_armies.write("""

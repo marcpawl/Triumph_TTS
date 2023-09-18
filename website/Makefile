@@ -1,13 +1,17 @@
 
-all: output/army_data.json
-all: output/docker_elm.iid
+all: data
+	${MAKE} -C 1page
 
-output/army_data.json:
+.PHONY: data
+data: output/army_data.json  output/armies_data.json
+output/army_data.json output/armies_data.json: army_data_json.lua
+	mkdir -p $(dir $@)
 	export "LUA_PATH=../../?.ttslua;../?.ttslua;?.lua;../../?.lua;../submodules/lunajson/src/?.lua" && \
-	    lua army_data_json.lua > $@
+	    lua army_data_json.lua
 
-output/docker_elm.iid: Dockerfile_elm
-	docker build --iidfile $@ --file Dockerfile_elm .
-
+.PHONY: clean
+clean:
+	rm -rf output
+	${MAKE} -C 1page clean
 
 .DELETE_ON_ERROR:

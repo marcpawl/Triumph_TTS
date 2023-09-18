@@ -37,7 +37,10 @@
             "request": "launch",
             "program": "${file}",
             "cwd": "${fileDirname}",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${fileDirname}/../../fake_meshwesh/"
+            }
         }
     ]
 }
