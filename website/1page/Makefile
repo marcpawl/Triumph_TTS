@@ -1,4 +1,8 @@
+output/index.html: ../output/armies_data.json
+output/index.html: 1page.py
+	mkdir -p $(dir $@)
+	PYTHONPATH=../../fake_meshwesh ./1page.py
 
-.PHONY: all
-all:
-	elm make src/Hello2.elm 
+.PHONY: clean
+clean:
+	rm -rf output
