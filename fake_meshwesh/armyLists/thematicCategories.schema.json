@@ -1,0 +1,19 @@
+{
+  "$schema": "https://github.com/marcpawl/Triumph_TTS.git/armyLists/thematicCategories.schema.json.schema.json/v20230918",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "name"
+    ]
+  }
+}

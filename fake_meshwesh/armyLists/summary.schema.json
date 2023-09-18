@@ -1,0 +1,46 @@
+{
+  "$schema": "https://github.com/marcpawl/Triumph_TTS.git/armyLists/summary.schema.json/v20230918",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "keywords": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "derivedData": {
+        "type": "object",
+        "properties": {
+          "listStartDate": {
+            "type": "integer"
+          },
+          "listEndDate": {
+            "type": "integer"
+          },
+          "extendedName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "extendedName",
+          "listEndDate",
+          "listStartDate"
+        ]
+      }
+    },
+    "required": [
+      "derivedData",
+      "id",
+      "keywords",
+      "name"
+    ]
+  }
+}
