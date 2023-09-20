@@ -3,8 +3,7 @@
 all: index.html
 
 index.html: $(wildcard src/*) docker
-	python3 json2elm.py summary
-	# TODO python3 json2elm.py --input ../output/armies_data.json --name armiesData
+	python3 json2elm.py 
 	docker run \
           --rm \
 	  -v $(abspath .):$(abspath .) -w $(abspath .) \
