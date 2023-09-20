@@ -1,5 +1,7 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/schema#7",
+  "title": "army",
+  "description": "Meshwesh army",
   "type": "object",
   "properties": {
     "keywords": {
@@ -219,10 +221,16 @@
                   "type": "string"
                 },
                 "min": {
-                  "type": "null"
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
                 },
                 "max": {
-                  "type": "null"
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
                 },
                 "battleCardCode": {
                   "type": "string"
@@ -280,7 +288,10 @@
                   "type": "null"
                 },
                 "note": {
-                  "type": "null"
+                  "type": [
+                    "null",
+                    "string"
+                  ]
                 }
               },
               "required": [

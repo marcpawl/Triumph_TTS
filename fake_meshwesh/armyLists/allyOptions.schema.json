@@ -1,5 +1,7 @@
 {
-  "$schema": "https://github.com/marcpawl/Triumph_TTS.git/armyLists/allyOptions.schema.json.schema.json/v20230918",
+  "$schema": "http://json-schema.org/schema#7",
+  "title": "allyOptions",
+  "description": "Meshwesh allyOptions",
   "type": "array",
   "items": {
     "type": "object",
@@ -57,7 +59,7 @@
                   "type": "string"
                 },
                 "listId": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "sublistId": {
                   "type": "string"

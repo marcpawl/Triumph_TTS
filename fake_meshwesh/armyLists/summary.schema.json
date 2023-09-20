@@ -1,5 +1,7 @@
 {
-  "$schema": "https://github.com/marcpawl/Triumph_TTS.git/armyLists/summary.schema.json/v20230918",
+  "$schema": "http://json-schema.org/schema#7",
+  "title": "summary",
+  "description": "Meshwesh summary",
   "type": "array",
   "items": {
     "type": "object",
