@@ -6,10 +6,17 @@ import Html.Events exposing (onClick)
 import Http
 import Platform.Cmd as Cmd
 import Html.Attributes exposing (list)
+import Html
 import Json.Decode as Decode exposing (Decoder)
 import List
 
 import Themes
+import Css exposing (padding)
+import Css exposing (fontWeight)
+import Css exposing (bold)
+import Css exposing (px)
+import Html.Styled exposing (styled)
+import Css exposing (em)
 -- MODEL
 
 type alias Model =  PageStatus
@@ -44,22 +51,24 @@ update msg model =
 
 -- VIEW
 
-view : Model -> Html Msg
 view model =
-  div []
+  Html.Styled.toUnstyled (
+  Html.Styled.div []
     [ 
     --   button [ onClick GetArmy ] [ text "Start" ],
     --   button [ onClick GetArmy ] [ text "-" ]
     -- , div []
-     text (
+     Html.Styled.text (
       status model
-      ),
-      thematicCategories 
+      )
+    ,  thematicCategories 
+    ,  thematicCategiesContent
     --   (text (
     --   "todo"
     --   -- String.fromInt model
     --   ) )
     ]
+  )
 
 status: Model -> String
 status model =
@@ -71,22 +80,36 @@ status model =
       "Loaded " ++ data
     Error -> "Error"
 
-thematicCategory : Themes.Theme -> Html msg
+thematicCategory : Themes.Theme -> Html.Styled.Html msg
 thematicCategory theme =
-  Html.li [] [Html.text theme.name]
+  styledContentLink [] [Html.Styled.text theme.name]
 
-thematicCategories : Html msg
+thematicCategories : Html.Styled.Html msg
 thematicCategories =
-  div []
+  Html.Styled.div []
     [ 
-      Html.h1 [] [ (text "Thematic Categories")],
-      Html.text """Thematic categories are a way of grouping army lists that fit a
-        common period and broad geographic region. Many army lists belong to
-        more than one thematic category.""",
-      Html.ul [] (List.map thematicCategory Themes.themes)
+         styledContentHeader [] [(Html.Styled.text "Thematic Categories")]
+      ,  Html.Styled.text """Thematic categories are a way of grouping army lists that fit a
+           common period and broad geographic region. Many army lists belong to
+          more than one thematic category."""
+      , Html.Styled.div [] (List.map thematicCategory Themes.themes)
     ]
 
+-- Contents of a theme
+thematicCategoryContent : Themes.Theme -> Html.Styled.Html msg
+thematicCategoryContent theme =
+  Html.Styled.div
+    []
+    [
+      Html.Styled.text theme.name
+    ]
 
+-- Each theme with the contents of the theme
+thematicCategiesContent :  Html.Styled.Html msg
+thematicCategiesContent =
+  Html.Styled.div
+    []
+    (List.map thematicCategoryContent Themes.themes)
 
 getArmy : Model -> Cmd Msg
 getArmy _ =
@@ -94,7 +117,36 @@ getArmy _ =
         { url = "https://raw.githubusercontent.com/marcpawl/Triumph_TTS/v2.3/fake_meshwesh/armyLists/5fb1b9d8e1af0600177092b3"
         , expect = Http.expectString DataReceived
         }
-     
+
+styledContentHeader : List (Html.Styled.Attribute msg) -> List (Html.Styled.Html msg) -> Html.Styled.Html msg
+styledContentHeader =
+    styled Html.Styled.div
+        [ 
+            Css.fontFamilies ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"]
+          , Css.lineHeight  (Css.num 1.42857143)
+          , Css.color (Css.rgb 0x33 0x33 0x33)
+          , Css.marginTop (px 16)
+          , Css.marginBottom (px 20)
+          , Css.fontSize (em 2)
+        ]
+    -- TODO
+    -- -webkit-text-size-adjust: 100%;
+    -- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+styledContentLink : List (Html.Styled.Attribute msg) -> List (Html.Styled.Html msg) -> Html.Styled.Html msg
+styledContentLink =
+    styled Html.Styled.div
+      [
+            Css.fontFamilies ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"]
+          , Css.lineHeight  (Css.num 1.42857143)
+          , Css.fontSize (em 1.5)
+          , Css.boxSizing Css.borderBox
+          , Css.backgroundColor Css.transparent
+          , Css.color (Css.rgb 0x33 0x7a 0xb7)
+          , Css.textDecoration Css.none
+      ]
+
+
   -- MAIN
 
 
