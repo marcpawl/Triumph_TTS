@@ -27,7 +27,8 @@ def extractSchema(type: str):
     builder.add_schema(
         {
             "title": type,
-            "description": f"Meshwesh {type}"
+            "description": f"Meshwesh {type}",
+            "$id": f"https://github.com/marcpawl/Triumph_TTS.git/${type}",
         })
     p = Path("armyLists")
     files = p.glob(f"*{type}.json")
