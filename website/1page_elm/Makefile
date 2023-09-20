@@ -2,18 +2,22 @@
 .PHONY: all
 all: index.html
 
-index.html: $(wildcard src/*) docker_iid
+index.html: $(wildcard src/*) docker
+	python3 json2elm.py summary
+	# TODO python3 json2elm.py --input ../output/armies_data.json --name armiesData
 	docker run \
+          --rm \
 	  -v $(abspath .):$(abspath .) -w $(abspath .) \
 	  $(shell cat docker/output/iid_elm) \
 	  elm make src/Main.elm
 
-.PHONY: docker_iid
-docker_iid:
+.PHONY: docker
+docker:
 	${MAKE} -C docker
 
 .PHONY: clean
 clean:
+	${MAKE} -C docker clean
 	rm -rf output
 	rm -f index.html
 	rm -rf elm-stuff

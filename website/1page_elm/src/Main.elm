@@ -6,7 +6,9 @@ import Html.Events exposing (onClick)
 import Http
 import Platform.Cmd as Cmd
 import Html.Attributes exposing (list)
-import Json.Decode
+import Json.Decode as Decode exposing (Decoder)
+import Summary
+import List
 
 -- MODEL
 
@@ -19,6 +21,21 @@ type PageStatus
   | Loaded String
   | Error
 
+type alias SummaryItem = {
+    id: String
+  , name: String
+  }
+
+summaryItemDecoder : Decoder SummaryItem
+summaryItemDecoder =
+    Decode.map2 SummaryItem (Decode.field "id" Decode.string) (Decode.field "name" Decode.string)
+
+summaryListItemDecoder : Decoder (List SummaryItem)
+summaryListItemDecoder =
+    Decode.list summaryItemDecoder
+
+summaryData : b -> Result Decode.Error (List SummaryItem)
+summaryData = always (Decode.decodeString summaryListItemDecoder Summary.summary)
 
 init : Model
 init = WaitingForArmy
@@ -69,12 +86,29 @@ status model =
       "Loaded " ++ data
     Error -> "Error"
 
+thematicCategory: SummaryItem -> Html msg
+thematicCategory item =
+  Html.li [] [ Html.text item.name]
+
+thematicCategoryList : List SummaryItem -> List (Html msg)
+thematicCategoryList theCategories =
+     List.map thematicCategory theCategories
+
+thematicCategoriesMaybe: Result Decode.Error (List SummaryItem ) -> Html msg
+thematicCategoriesMaybe maybeSummaryItem =
+  case maybeSummaryItem of
+    Result.Ok theCategories -> Html.ul []  (thematicCategoryList theCategories)
+
+    Err error ->
+                           Debug.todo (Decode.errorToString error)
+thematicCategories : Html msg
 thematicCategories =
   div []
     [ 
       Html.h1 [] [ (text "Thematic Categories")],
       Html.ul [] 
         [
+          thematicCategoriesMaybe (summaryData 1)
         ]
     ]
 
