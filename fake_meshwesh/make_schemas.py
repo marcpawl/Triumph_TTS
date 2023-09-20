@@ -23,7 +23,7 @@ def _call_with_json_from_fp(method, fp):
         method(json.loads(json_string))
 
 def extractSchema(type: str):
-    builder = genson.SchemaBuilder(schema_uri="http://json-schema.org/schema#7")
+    builder = genson.SchemaBuilder(schema_uri="http://json-schema.org/draft-07/schema#")
     builder.add_schema(
         {
             "title": type,
