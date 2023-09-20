@@ -10,6 +10,8 @@ army_data:
 # Generate the JSON schemas
 .PHONY: schema
 schema:
+	rm -rf json_schemas
+	mkdir json_schemas
 	python3 make_schemas.py
 
 # Get a local caopy of the Meshwesh JSON

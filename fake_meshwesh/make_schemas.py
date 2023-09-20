@@ -36,7 +36,7 @@ def extractSchema(type: str):
         with open(os.fspath(source), "r") as input:
             json_obj = json.load(input)
             builder.add_object(json_obj)
-    destination = Path("armyLists").absolute() / f"{type}.schema.json"
+    destination = Path("json_schemas").absolute() / f"{type}.schema.json"
     with open(os.fspath(destination), "w") as output:
         output.write( builder.to_json(indent=2))
 
