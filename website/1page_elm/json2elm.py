@@ -40,6 +40,11 @@ def toNote(container) -> str:
   else:
      return 'Nothing' 
 
+def toMaybe(container, field) -> str:
+  if field in container and container[field] is not None and len(container[field]) > 0:
+    return"(Just " + container[field] + ")"
+  else:
+     return 'Nothing' 
 
 def toRating(rating) -> str:
   result =  "InvasionRating " 
@@ -86,6 +91,47 @@ def writeHomeTopographies(elm, army_id, homeTopographiesList: List):
   elm.write("\n\n")
    
 
+def writeTroopEntry(elm, troop_entry) -> str:
+   id = troop_entry['_id']
+   variable = "troopEntry_" + id
+   elm.write(f"{variable}: TroopEntry\n")
+   elm.write(f"{variable} = TroopEntry {quote(id)} ")
+   elm.write(troop_entry['troopTypeCode'])
+   elm.write(" ")
+   elm.write(toMaybe(troop_entry, "dismountTypeCode"))
+   elm.write(" ")
+   elm.write(toNote(troop_entry))
+   elm.write("\n\n")
+   return variable
+
+
+def writeTroopEntries(elm, troop_entries: dict):
+  def write_entry(troop_entry) -> str:
+    return writeTroopEntry(elm, troop_entry)
+  
+  id = troop_entries['_id']
+  variable = "troopEntries_" + id
+  entries = troop_entries['troopEntries']
+  entries_variables = list(map(write_entry, entries))
+  variable = "troopEntries_" + id
+  elm.write(f"{variable}: List TroopEntry\n")
+  elm.write(f"{variable} =\n")
+  writeList(entries_variables, elm, 2)
+  elm.write("\n\n")
+  return variable
+
+
+def writeTroopEntriesForGeneral(elm, army_id, general_troop_entries) -> str:
+  def write_entries(troop_entries) -> str:
+    return writeTroopEntries(elm, troop_entries)
+  
+  troop_entries = list(map(write_entries, general_troop_entries))
+  variable = "troopEntriesForGeneral_" + army_id
+  elm.write(f"{variable} =\n")
+  writeList(troop_entries, elm, 2)
+  elm.write("\n\n")
+  return variable
+
 
 def writeArmy(elm, army):
       army_id = army['id']
@@ -97,6 +143,8 @@ def writeArmy(elm, army):
       writeManeuverRatings(elm, army_id, maneuver_ratings)
 
       writeHomeTopographies(elm, army_id, army['homeTopographies'])
+      troopEntriesForGeneral = \
+        writeTroopEntriesForGeneral(elm, army_id, army['troopEntriesForGeneral'])
 
       elm.write(f"army_{army_id}: Army\n")
       elm.write(f"army_{army_id} =\n")
@@ -116,6 +164,7 @@ def writeArmy(elm, army):
       elm.write(f"""    , invasionRatings = invasionRatings_{army_id}\n""")
       elm.write(f"""    , maneuverRatings = maneuverRatings_{army_id}\n""")
       elm.write(f"""    , homeTopographies = homeTopographies_{army_id}\n""")
+      elm.write(f"""    , troopEntriesForGeneral = {troopEntriesForGeneral}\n""")
       elm.write("  }\n\n")
 
 

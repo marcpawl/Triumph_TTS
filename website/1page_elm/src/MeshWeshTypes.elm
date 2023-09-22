@@ -22,6 +22,24 @@ type alias HomeTopographies =
   , values: List Topography
   , note: Maybe String
   }
+
+type TroopTypeCode = ARC | BAD | BLV | BTX | CAT | CHT | ECV | EFT | ELE 
+  | HBW | HFT | JCV | KNT | LFT | LSP | PAV | PIK | RBL | RDR | SKM | SPR | WBD
+  | WRR | WWG
+
+type alias TroopEntry = 
+  {
+    id: String
+  , troopTypeCode: TroopTypeCode
+  , dismountTypeCode: Maybe TroopTypeCode
+  , note: Maybe String
+  }
+
+type alias TroopEntriesForGeneral = 
+  {
+    id: String
+  , troopEntries: List TroopEntry
+  }
               
 type alias Army =
   { 
@@ -36,6 +54,7 @@ type alias Army =
   , invasionRatings: List InvasionRating
   , maneuverRatings: List ManeuverRating   
   , homeTopographies: List HomeTopographies    
+  , troopEntriesForGeneral: List (List TroopEntry)
   }
 
 type alias Theme =

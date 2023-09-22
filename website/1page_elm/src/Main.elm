@@ -249,6 +249,7 @@ ratingsEtcRendered army =
         [ invasionRatingRendered army
         , maneuverRatingsRendered army
         , homeTopographiesRendered army
+        , generalsTroopTypeSubsectionRendered army
         ]
 
 
@@ -407,6 +408,21 @@ homeTopographiesRendered army =
             [ homeTopographiesListRendered army ]
         ]
 
+generalsTroopTypeSubsectionRendered: Army -> Html.Styled.Html msg
+generalsTroopTypeSubsectionRendered army =
+    Html.Styled.div []
+        [ Html.Styled.div
+            [
+                Html.Styled.Attributes.class "general_troop_type_section_header"
+            ]
+            [ Html.Styled.text "General's Troop Type"
+            ]
+        , Html.Styled.div
+            []
+            [ 
+                -- HEREhomeTopographiesListRendered army 
+            ]
+        ]
 
 armyListAndDateRange : Army -> Html.Styled.Html msg
 armyListAndDateRange army =
