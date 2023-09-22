@@ -11,10 +11,9 @@ import Html.Styled.Attributes
 import Http
 import Json.Decode as Decode exposing (Decoder)
 import List
+import MeshWeshTypes exposing (..)
 import Platform.Cmd as Cmd
 import Themes
-import MeshWeshTypes exposing (..)
-
 
 
 
@@ -252,58 +251,71 @@ ratingsEtcRendered army =
         , homeTopographiesRendered army
         ]
 
-noteRendered: Maybe String -> Html.Styled.Html msg
+
+noteRendered : Maybe String -> Html.Styled.Html msg
 noteRendered note =
-  Html.Styled.td
-    []
-    (case note of
-      Just x -> [ (Html.Styled.text x) ]
-      Nothing -> []
-    )
+    Html.Styled.td
+        []
+        (case note of
+            Just x ->
+                [ Html.Styled.text x ]
 
-invasionRatingValue: InvasionRating  -> Int
+            Nothing ->
+                []
+        )
+
+
+invasionRatingValue : InvasionRating -> Int
 invasionRatingValue rating =
-  rating.value
+    rating.value
 
-invasionRatingNote: InvasionRating  -> Maybe String
+
+invasionRatingNote : InvasionRating -> Maybe String
 invasionRatingNote rating =
-  rating.note
+    rating.note
 
-invasionRatings: Army -> List InvasionRating
-invasionRatings army = 
+
+invasionRatings : Army -> List InvasionRating
+invasionRatings army =
     .invasionRatings army
 
-maneuverRatingValue: InvasionRating  -> Int
+
+maneuverRatingValue : InvasionRating -> Int
 maneuverRatingValue rating =
-  rating.value
+    rating.value
 
-maneuverRatingNote: InvasionRating  -> Maybe String
+
+maneuverRatingNote : InvasionRating -> Maybe String
 maneuverRatingNote rating =
-  rating.note
+    rating.note
 
-maneuverRatings: Army -> List ManeuverRating
-maneuverRatings army = 
+
+maneuverRatings : Army -> List ManeuverRating
+maneuverRatings army =
     .maneuverRatings army
 
+
+
 -- ratingsRowRendered : (x -> Int) -> ( x  -> Maybe String) -> x -> Html.Styled.Html msg
+
+
 ratingsRowRendered : (c -> Int) -> (c -> Maybe String) -> c -> Html.Styled.Html msg
 ratingsRowRendered ratingValue ratingNote rating =
-  Html.Styled.tr 
-    [] 
-    [
-      Html.Styled.td 
-        [] 
-        [
-    Html.Styled.text (String.fromInt (ratingValue rating))
-    ]
-    , 
-    (noteRendered (ratingNote rating))
-    ]
+    Html.Styled.tr
+        []
+        [ Html.Styled.td
+            []
+            [ Html.Styled.text (String.fromInt (ratingValue rating))
+            ]
+        , noteRendered (ratingNote rating)
+        ]
 
 
 ratingsRendered : String -> (x -> Int) -> (x -> Maybe String) -> (Army -> List x) -> Army -> Html.Styled.Html msg
 ratingsRendered title valueExtractor noteExtractor ratingsExtractor army =
-    let renderer  = ratingsRowRendered valueExtractor noteExtractor
+    let
+        renderer =
+            ratingsRowRendered valueExtractor noteExtractor
     in
     Html.Styled.div
         []
@@ -313,63 +325,88 @@ ratingsRendered title valueExtractor noteExtractor ratingsExtractor army =
             ]
         , Html.Styled.table
             []
-            [ Html.Styled.tbody [] 
+            [ Html.Styled.tbody []
                 (List.map renderer (ratingsExtractor army))
             ]
         ]
+
 
 invasionRatingRendered : Army -> Html.Styled.Html msg
 invasionRatingRendered army =
     ratingsRendered "Invasion Ratings" invasionRatingValue invasionRatingNote invasionRatings army
 
+
 maneuverRatingsRendered : Army -> Html.Styled.Html msg
 maneuverRatingsRendered army =
     ratingsRendered "Maneuver Ratings" maneuverRatingValue maneuverRatingNote maneuverRatings army
 
-topographyToString: Topography -> String
+
+topographyToString : Topography -> String
 topographyToString topography =
     case topography of
-        Arable -> "Arable"
-        Delta -> "Delta"
-        Steppe -> "Steppe"
-        Hilly -> "Hilly"
-        Dry -> "Dry"
-        Forest -> "Forest"
-        Marsh -> "Marsh"
+        Arable ->
+            "Arable"
 
-topographyRendered: Topography -> Html.Styled.Html msg
+        Delta ->
+            "Delta"
+
+        Steppe ->
+            "Steppe"
+
+        Hilly ->
+            "Hilly"
+
+        Dry ->
+            "Dry"
+
+        Forest ->
+            "Forest"
+
+        Marsh ->
+            "Marsh"
+
+
+topographyRendered : Topography -> Html.Styled.Html msg
 topographyRendered topography =
-    Html.Styled.div [] 
-    [
-      Html.Styled.text (topographyToString topography)
-    ]
+    Html.Styled.div []
+        [ Html.Styled.text (topographyToString topography)
+        ]
 
-homeTopographiesItemsRendered: HomeTopographies -> Html.Styled.Html msg
+
+homeTopographiesItemsRendered : HomeTopographies -> Html.Styled.Html msg
 homeTopographiesItemsRendered topographies =
-    Html.Styled.div [] 
-    (List.map topographyRendered topographies.values)
+    Html.Styled.tr []
+        [ Html.Styled.td [
+            Html.Styled.Attributes.class "HomeTopographies_note"
+        ]
+            [ noteRendered topographies.note
+            ]
+        , Html.Styled.td [ Html.Styled.Attributes.class "HomeTopographies_values"]
+            (List.map topographyRendered topographies.values)
+        ]
 
--- TODO how to render a note
 
-
-homeTopographiesListRendered: Army -> Html.Styled.Html msg
+homeTopographiesListRendered : Army -> Html.Styled.Html msg
 homeTopographiesListRendered army =
-    Html.Styled.div [] 
-    (List.map homeTopographiesItemsRendered army.homeTopographies)
+    Html.Styled.table []
+        [ Html.Styled.tbody
+            []
+            (List.map homeTopographiesItemsRendered army.homeTopographies)
+        ]
 
-homeTopographiesRendered: Army -> Html.Styled.Html msg
+
+homeTopographiesRendered : Army -> Html.Styled.Html msg
 homeTopographiesRendered army =
-    Html.Styled.div [] 
-    [
-        Html.Styled.div 
-        []
-        [
-            Html.Styled.text "Home Topography"
-        ] 
-    ,   Html.Styled.div 
-        []
-        [ homeTopographiesListRendered army ]
-    ]
+    Html.Styled.div []
+        [ Html.Styled.div
+            []
+            [ Html.Styled.text "Home Topography"
+            ]
+        , Html.Styled.div
+            []
+            [ homeTopographiesListRendered army ]
+        ]
+
 
 armyListAndDateRange : Army -> Html.Styled.Html msg
 armyListAndDateRange army =
