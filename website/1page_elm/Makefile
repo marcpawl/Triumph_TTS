@@ -1,14 +1,14 @@
 
 .PHONY: all
-all: index.html
+all: elm.js
 
-index.html: $(wildcard src/*) docker
+elm.js: $(wildcard src/*) docker
 	python3 json2elm.py 
 	docker run \
           --rm \
 	  -v $(abspath .):$(abspath .) -w $(abspath .) \
 	  $(shell cat docker/output/iid_elm) \
-	  elm make src/Main.elm
+	  elm make src/Main.elm --output elm.js
 
 .PHONY: docker
 docker:
@@ -18,7 +18,7 @@ docker:
 clean:
 	${MAKE} -C docker clean
 	rm -rf output
-	rm -f index.html
+	rm -f elm.js
 	rm -rf elm-stuff
 
 

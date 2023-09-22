@@ -1,0 +1,13 @@
+/* Applies to all elements with <... class="someclass"> specified. */
+.general_troop_type_section_header {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+    color: #333333;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
