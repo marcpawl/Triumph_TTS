@@ -34,16 +34,18 @@ def writeList(aList: List, elm, indent: int):
       elm.write('\n')
     elm.write(indent_str + ']')
 
+def toNote(container) -> str:
+  if 'note' in container and container['note'] is not None and len(container['note']) > 0:
+    return"(Just " + quote(container['note']) + ")"
+  else:
+     return 'Nothing' 
+
 
 def toRating(rating) -> str:
   result =  "InvasionRating " 
   result = result + quote(rating['_id'])
   result = result + ' ' + str(rating['value'])
-  result = result + " "
-  if 'note' in rating and rating['note'] is not None:
-    result = result + "(Just " + quote(rating['note']) + ")"
-  else:
-      result = result + 'Nothing' 
+  result = result + " "+ toNote(rating)
   return result
 
 
@@ -66,6 +68,25 @@ def writeManeuverRatings(elm, army_id, ratings):
   writeRatings(elm, "ManeuverRating", army_id, ratings)
 
 
+def toTopography(homeTopography) -> str:
+   result = "HomeTopographies " + quote(homeTopography['_id']) + " ["
+   result = result + ", ".join(homeTopography['values'])
+   result = result + "] " + toNote(homeTopography)
+   return result
+
+
+def writeHomeTopographies(elm, army_id, homeTopographiesList: List):
+  homeTopographies_string: List[str] = list(map(toTopography, homeTopographiesList))
+  variable = "homeTopographies_" + army_id
+  elm.write(variable)
+  elm.write(": List HomeTopographies\n")
+  elm.write(variable)
+  elm.write(" =\n")
+  writeList(homeTopographies_string, elm, 8)
+  elm.write("\n\n")
+   
+
+
 def writeArmy(elm, army):
       army_id = army['id']
 
@@ -74,6 +95,8 @@ def writeArmy(elm, army):
 
       maneuver_ratings = army['maneuverRatings']
       writeManeuverRatings(elm, army_id, maneuver_ratings)
+
+      writeHomeTopographies(elm, army_id, army['homeTopographies'])
 
       elm.write(f"army_{army_id}: Army\n")
       elm.write(f"army_{army_id} =\n")
@@ -92,6 +115,7 @@ def writeArmy(elm, army):
       elm.write(f"""    , name = "{army['name']}"\n""")
       elm.write(f"""    , invasionRatings = invasionRatings_{army_id}\n""")
       elm.write(f"""    , maneuverRatings = maneuverRatings_{army_id}\n""")
+      elm.write(f"""    , homeTopographies = homeTopographies_{army_id}\n""")
       elm.write("  }\n\n")
 
 
@@ -103,37 +127,9 @@ def armies():
       army_data = json.load(army)
       all_armies[army_id] = army_data
   with open("src/Armies.elm", "w") as elm:
-    elm.write("module Armies exposing (..)\n")
-    elm.write("""
-              
-type alias InvasionRating =
-  {
-    id: String
-  , value: Int
-  , note: Maybe String
-  }
-              
-type alias ManeuverRating =
-  {
-    id: String
-  , value: Int
-  , note: Maybe String
-  }
-              
-type alias Army =
-  { 
-    id : String
-  , keywords: List String
-  , listStartDate: Int
-  , listEndDate: Int
-  , extendedName: String
-  , sortId: Float
-  , sublistId: String
-  , name: String   
-  , invasionRatings: List InvasionRating
-  , maneuverRatings: List ManeuverRating       
-  }
-              
+    elm.write("""module Armies exposing (..)
+--import ArmyTypes exposing(InvasionRating, ManeuverRating, Topography, HomeTopographies, Army, )
+import MeshWeshTypes exposing (..)
 """)
     elm.write("\n")
 
@@ -166,13 +162,9 @@ def themes():
   with open("src/Themes.elm", "w") as elm:
     elm.write("""module Themes exposing (..)
 
+import MeshWeshTypes exposing (..)
 import Armies exposing (..)
               
-type alias Theme =
-  { id : String
-  , name : String
-  , armies: List Armies.Army
-  }
               
 """)
     elm.write("\n")
@@ -192,7 +184,7 @@ type alias Theme =
       elm.write(f"""  , name = "{theme_description['name']}"\n""")
 
       elm.write("  , armies =\n")
-      armies_names = map(lambda x: "army_" + x, theme_description['armies'])
+      armies_names = map(lambda x: "Armies.army_" + x, theme_description['armies'])
       writeList(list(armies_names), elm, 8)
       elm.write("  }\n\n")
 
