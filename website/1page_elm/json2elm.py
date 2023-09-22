@@ -92,6 +92,7 @@ def writeHomeTopographies(elm, army_id, homeTopographiesList: List):
    
 
 def writeTroopEntry(elm, troop_entry) -> str:
+   note = toNote(troop_entry)
    id = troop_entry['_id']
    variable = "troopEntry_" + id
    elm.write(f"{variable}: TroopEntry\n")
@@ -100,7 +101,7 @@ def writeTroopEntry(elm, troop_entry) -> str:
    elm.write(" ")
    elm.write(toMaybe(troop_entry, "dismountTypeCode"))
    elm.write(" ")
-   elm.write(toNote(troop_entry))
+   elm.write(note)
    elm.write("\n\n")
    return variable
 
@@ -135,38 +136,40 @@ def writeTroopEntriesForGeneral(elm, army_id, general_troop_entries) -> str:
 
 def writeArmy(elm, army):
       army_id = army['id']
+      extendedName = army['derivedData']['extendedName']
+      try:
+        invasion_ratings = army['invasionRatings']
+        writeInvasionRatings(elm, army_id, invasion_ratings)
 
-      invasion_ratings = army['invasionRatings']
-      writeInvasionRatings(elm, army_id, invasion_ratings)
+        maneuver_ratings = army['maneuverRatings']
+        writeManeuverRatings(elm, army_id, maneuver_ratings)
 
-      maneuver_ratings = army['maneuverRatings']
-      writeManeuverRatings(elm, army_id, maneuver_ratings)
+        writeHomeTopographies(elm, army_id, army['homeTopographies'])
+        troopEntriesForGeneral = \
+          writeTroopEntriesForGeneral(elm, army_id, army['troopEntriesForGeneral'])
 
-      writeHomeTopographies(elm, army_id, army['homeTopographies'])
-      troopEntriesForGeneral = \
-        writeTroopEntriesForGeneral(elm, army_id, army['troopEntriesForGeneral'])
+        elm.write(f"army_{army_id}: Army\n")
+        elm.write(f"army_{army_id} =\n")
+        elm.write("  {\n")
+        elm.write(f"""    id = "{army_id}"\n""")
 
-      elm.write(f"army_{army_id}: Army\n")
-      elm.write(f"army_{army_id} =\n")
-      elm.write("  {\n")
-      elm.write(f"""    id = "{army_id}"\n""")
+        elm.write("    , keywords =\n")
+        writeStringList(army['keywords'], elm, 8)
+        elm.write("\n")
 
-      elm.write("    , keywords =\n")
-      writeStringList(army['keywords'], elm, 8)
-      elm.write("\n")
-
-      elm.write(f"    , listStartDate = {army['derivedData']['listStartDate']}\n")
-      elm.write(f"    , listEndDate = {army['derivedData']['listEndDate']}\n")
-      elm.write(f"""    , extendedName = "{army['derivedData']['extendedName']}"\n""")
-      elm.write(f"    , sortId = {army['sortId']}\n")
-      elm.write(f"""    , sublistId = "{army['sublistId']}"\n""")
-      elm.write(f"""    , name = "{army['name']}"\n""")
-      elm.write(f"""    , invasionRatings = invasionRatings_{army_id}\n""")
-      elm.write(f"""    , maneuverRatings = maneuverRatings_{army_id}\n""")
-      elm.write(f"""    , homeTopographies = homeTopographies_{army_id}\n""")
-      elm.write(f"""    , troopEntriesForGeneral = {troopEntriesForGeneral}\n""")
-      elm.write("  }\n\n")
-
+        elm.write(f"    , listStartDate = {army['derivedData']['listStartDate']}\n")
+        elm.write(f"    , listEndDate = {army['derivedData']['listEndDate']}\n")
+        elm.write(f"""    , extendedName = "{extendedName}"\n""")
+        elm.write(f"    , sortId = {army['sortId']}\n")
+        elm.write(f"""    , sublistId = "{army['sublistId']}"\n""")
+        elm.write(f"""    , name = "{army['name']}"\n""")
+        elm.write(f"""    , invasionRatings = invasionRatings_{army_id}\n""")
+        elm.write(f"""    , maneuverRatings = maneuverRatings_{army_id}\n""")
+        elm.write(f"""    , homeTopographies = homeTopographies_{army_id}\n""")
+        elm.write(f"""    , troopEntriesForGeneral = {troopEntriesForGeneral}\n""")
+        elm.write("  }\n\n")
+      except Exception as exception:
+        raise Exception(extendedName, exception)
 
 def armies():
   all_armies = dict()
