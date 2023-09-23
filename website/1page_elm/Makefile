@@ -22,6 +22,11 @@ ifneq (${IN_DOCKER},true)
 	    ${MAKE} -C docker
 endif
 	
+.PHONY: check
+# Run test cases
+check:
+	${DOCKER_RUN} elm-test
+
 .PHONY: clean
 clean:
 	${MAKE} -C docker clean
