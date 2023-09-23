@@ -1,4 +1,4 @@
-module GeneralsSubsection exposing (subsectionRendered)
+module GeneralsSubsection exposing (..)
 
 import Armies exposing (..)
 import Browser
@@ -27,45 +27,6 @@ toNoteString troopEntry =
   Maybe.withDefault "" (troopEntry.note)
 
 
--- type Prefix = NoPrefix | IfPresent | OtherwisePrefix
-
-
--- renderGeneralListOtherwise: List a -> List (Prefix,a)
--- renderGeneralListOtherwise list =
---   List.map (\a->(OtherwisePrefix,a) ) list
-
--- renderGeneralList2Plus: a -> (List a) -> (List (Prefix,a))
--- renderGeneralList2Plus first tail =
---   List.concat
---     [
---       [
---         (IfPresent, first)
---       ]
---     , renderGeneralListOtherwise tail
---     ]
-
--- renderGeneralList1Plus: a -> Maybe (List a) -> (List (Prefix,a))
--- renderGeneralList1Plus first maybeTail =
---     case maybeTail of
---         Nothing -> [ (NoPrefix, first)]
---         Just y -> renderGeneralList2Plus first y
-
--- renderGeneralList0Plus: (Maybe a) -> (List a) -> (List (Prefix,a))
--- renderGeneralList0Plus head list =
---     case head of
---         Nothing -> []
---         Just x -> renderGeneralList1Plus x (List.tail list)
-
--- renderGeneralList: List a -> List (Prefix, a)
--- renderGeneralList list =
---     let 
---       maybeHead = List.head list
---     in
--- `       case maybeHead of
---           Nothing -> [] -- ERROR
---           Just head -> renderGeneralList1Plus head (List.tail list)
-
-
 -- Render Html.tr
 renderTroopEntry: TroopEntry ->  Html.Styled.Html msg
 renderTroopEntry troopEntry =
@@ -89,10 +50,10 @@ render1List troopEntryList =
 -- Format the string that will list all the troop types 
 -- for a list, when there is more than one type.
 -- See: render1List
-stringListForMany: (TroopEntry->String) -> List TroopEntry -> String
-stringListForMany fieldExtractor list =
+stringListForMany: String -> (TroopEntry->String) -> List TroopEntry -> String
+stringListForMany seperator fieldExtractor list =
    String.join 
-     " or "
+     seperator
      (List.map fieldExtractor list)
 
 removeNothingFromList : List (Maybe a) -> List a 
@@ -100,8 +61,8 @@ removeNothingFromList list =
     List.filterMap identity list
 
 -- list of Html.tr
-renderListForMany: List TroopEntry -> List (Html.Styled.Html msg)
-renderListForMany list =
+renderListForMany: String -> List TroopEntry -> List (Html.Styled.Html msg)
+renderListForMany seperator list =
   [
     Html.Styled.tr
       []
@@ -109,7 +70,7 @@ renderListForMany list =
         Html.Styled.td
           []
           [
-            Html.Styled.text (stringListForMany toTroopTypeCodeName list)
+            Html.Styled.text (stringListForMany seperator toTroopTypeCodeName list)
           ]
       ,   Html.Styled.td
           []
@@ -129,8 +90,8 @@ renderListForMany list =
 -- If there is only one list then each troop entry is one string.
 -- If there is more than one list the each string represents one 
 -- list of troop entries.
-toTroopEntryStrings: (TroopEntry -> String) -> List (List TroopEntry) -> List String
-toTroopEntryStrings fieldExtractor listOfLists =
+toTroopEntryStrings: String -> (TroopEntry -> String) -> List (List TroopEntry) -> List String
+toTroopEntryStrings seperator fieldExtractor listOfLists =
     case List.head listOfLists of
         Nothing -> [] -- ERROR
         Just head ->
@@ -140,15 +101,37 @@ toTroopEntryStrings fieldExtractor listOfLists =
                 (List.map fieldExtractor head)
               Just _ ->
                 -- more than 1 list
-                (List.map (stringListForMany fieldExtractor) listOfLists)
+                (List.map (stringListForMany seperator fieldExtractor) listOfLists)
 
 toTroopTypeCodeNameStrings: List (List TroopEntry) -> List String
 toTroopTypeCodeNameStrings listOfLists  =
-  toTroopEntryStrings toTroopTypeCodeName listOfLists
+  toTroopEntryStrings " or " toTroopTypeCodeName listOfLists
 
+hasValue: (Maybe a) -> Bool
+hasValue a =
+  case a of
+    Nothing -> False
+    Just _ -> True
+    
+
+-- Extract the notes from the troop entries and return the
+-- strings of the notes.  If there is no note for a troop
+-- entry then remove it.  Join the remaining notes into
+-- one string
+-- post-conditions:
+--   length of result is less than or equal to length list.
+toNotesListString: List TroopEntry ->  String
+toNotesListString list =
+  (List.map .note list) |> 
+  (List.filter hasValue) |> 
+  (List.map (Maybe.withDefault "")) |>
+  (String.join "; ")
+
+-- For each list of entries, find the string that
+-- is the joining of the notes
 toTroopNoteStrings: List (List TroopEntry) -> List String
 toTroopNoteStrings listOfLists  =
-  toTroopEntryStrings toNoteString listOfLists
+  List.map toNotesListString listOfLists
 
 ifOtherwise: Int -> List TroopEntry -> String
 ifOtherwise index _ =
