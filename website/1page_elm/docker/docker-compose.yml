@@ -1,0 +1,8 @@
+version: "3"
+name: elm
+services:
+  elm:
+    build: .
+    volumes:
+      - ..:/elm
+

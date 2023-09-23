@@ -1,19 +1,27 @@
 
+ifneq (${IN_DOCKER},true)
+DOCKER_RUN=docker run \
+          --rm \
+	  -v $(abspath .):/elm  -w /elm \
+	  $(shell cat docker/output/iid_elm) 
+else
+DOCKER_RUN=
+endif
+
+
 .PHONY: all
 all: elm.js
 
 elm.js: $(wildcard src/*) docker
 	python3 json2elm.py 
-	docker run \
-          --rm \
-	  -v $(abspath .):$(abspath .) -w $(abspath .) \
-	  $(shell cat docker/output/iid_elm) \
-	  elm make src/Main.elm --output elm.js
+	  ${DOCKER_RUN} elm make src/Main.elm --output elm.js
 
 .PHONY: docker
 docker:
-	${MAKE} -C docker
-
+ifneq (${IN_DOCKER},true)
+	    ${MAKE} -C docker
+endif
+	
 .PHONY: clean
 clean:
 	${MAKE} -C docker clean
