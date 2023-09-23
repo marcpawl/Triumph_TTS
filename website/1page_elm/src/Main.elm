@@ -1,6 +1,7 @@
 module Main exposing (..)
 
 import Armies exposing (..)
+import GeneralsSubsection
 import Browser
 import Css exposing (bold, em, fontWeight, padding, px)
 import Html exposing (Html, button, div, text)
@@ -249,7 +250,7 @@ ratingsEtcRendered army =
         [ invasionRatingRendered army
         , maneuverRatingsRendered army
         , homeTopographiesRendered army
-        , generalsTroopTypeSubsectionRendered army
+        , GeneralsSubsection.subsectionRendered army
         ]
 
 
@@ -408,21 +409,7 @@ homeTopographiesRendered army =
             [ homeTopographiesListRendered army ]
         ]
 
-generalsTroopTypeSubsectionRendered: Army -> Html.Styled.Html msg
-generalsTroopTypeSubsectionRendered army =
-    Html.Styled.div []
-        [ Html.Styled.div
-            [
-                Html.Styled.Attributes.class "general_troop_type_section_header"
-            ]
-            [ Html.Styled.text "General's Troop Type"
-            ]
-        , Html.Styled.div
-            []
-            [ 
-                -- HEREhomeTopographiesListRendered army 
-            ]
-        ]
+
 
 armyListAndDateRange : Army -> Html.Styled.Html msg
 armyListAndDateRange army =
