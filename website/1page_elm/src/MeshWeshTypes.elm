@@ -35,11 +35,6 @@ type alias TroopEntry =
   , note: Maybe String
   }
 
-type alias TroopEntriesForGeneral = 
-  {
-    id: String
-  , troopEntries: List TroopEntry
-  }
               
 type alias Army =
   { 

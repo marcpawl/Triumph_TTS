@@ -15,7 +15,7 @@ import MeshWeshTypes exposing (..)
 import Platform.Cmd as Cmd
 import Themes
 import TroopTypeCode exposing (render)
-
+import Notes
 
 type Prefix = NoPrefix | IfPresent | OtherwisePrefix
 
@@ -52,6 +52,7 @@ renderGeneralList lists =
         (List.head lists)
         lists
 
+-- Render Html.tr
 renderTroopEntry: TroopEntry ->  Html.Styled.Html msg
 renderTroopEntry troopEntry =
     Html.Styled.tr
@@ -62,17 +63,67 @@ renderTroopEntry troopEntry =
           [
             TroopTypeCode.render troopEntry.troopTypeCode    
           ]
-    ,
-        Html.Styled.td 
-          []
-          [
-            Html.Styled.text "notes"      
-          ]
+    ,   Notes.render troopEntry.note
     ]
 
-renderList: List TroopEntry -> List (Html.Styled.Html msg)
-renderList troopEntryList =
+-- Render the list of Troop Entries, when there is only one list
+-- list of Html.tr
+render1List: List TroopEntry -> List (Html.Styled.Html msg)
+render1List troopEntryList =
     List.map renderTroopEntry troopEntryList
+
+-- Format the string that will list all the troop types 
+-- for a list, when there is more than one type.
+-- See: render1List
+stringListForMany: List TroopEntry -> String
+stringListForMany list =
+   String.join 
+     " or "
+     (List.map 
+        TroopTypeCode.name 
+        (List.map .troopTypeCode list))
+
+removeNothingFromList : List (Maybe a) -> List a 
+removeNothingFromList list =
+    List.filterMap identity list
+
+-- list of Html.tr
+renderListForMany: List TroopEntry -> List (Html.Styled.Html msg)
+renderListForMany list =
+  [
+    Html.Styled.tr
+      []
+      [
+        Html.Styled.td
+          []
+          [
+            Html.Styled.text (stringListForMany list)
+          ]
+      ,   Html.Styled.td
+          []
+          [
+            Html.Styled.text 
+               (String.join 
+                 "; "
+                 (removeNothingFromList 
+                   (List.map .note list)))
+          ]
+
+      ]
+  ]
+
+
+-- Render to a list of tr
+renderLists: List (List TroopEntry) -> List (Html.Styled.Html msg)
+renderLists listOfLists =
+    case List.head listOfLists of
+        Nothing -> [] -- ERROR
+        Just head ->
+            case List.tail listOfLists of
+              Nothing -> render1List head
+              Just _ -> 
+                List.concat
+                  (List.map renderListForMany listOfLists)
 
 
 subsectionRendered: Army -> Html.Styled.Html msg
@@ -89,7 +140,7 @@ subsectionRendered army =
             [ 
                 Html.Styled.tbody
                     []
-                    (List.concat (List.map renderList army.troopEntriesForGeneral))
+                    (renderLists army.troopEntriesForGeneral)
             ]
         ]
 

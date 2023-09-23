@@ -15,6 +15,7 @@ import List
 import MeshWeshTypes exposing (..)
 import Platform.Cmd as Cmd
 import Themes
+import Notes
 
 
 
@@ -254,18 +255,6 @@ ratingsEtcRendered army =
         ]
 
 
-noteRendered : Maybe String -> Html.Styled.Html msg
-noteRendered note =
-    Html.Styled.td
-        []
-        (case note of
-            Just x ->
-                [ Html.Styled.text x ]
-
-            Nothing ->
-                []
-        )
-
 
 invasionRatingValue : InvasionRating -> Int
 invasionRatingValue rating =
@@ -309,7 +298,7 @@ ratingsRowRendered ratingValue ratingNote rating =
             []
             [ Html.Styled.text (String.fromInt (ratingValue rating))
             ]
-        , noteRendered (ratingNote rating)
+        , Notes.render (ratingNote rating)
         ]
 
 
@@ -381,7 +370,7 @@ homeTopographiesItemsRendered topographies =
         [ Html.Styled.td [
             Html.Styled.Attributes.class "HomeTopographies_note"
         ]
-            [ noteRendered topographies.note
+            [ Notes.render topographies.note
             ]
         , Html.Styled.td [ Html.Styled.Attributes.class "HomeTopographies_values"]
             (List.map topographyRendered topographies.values)
