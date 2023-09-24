@@ -5,15 +5,15 @@ import Html exposing (Html, button, div, text)
 import Html.Attributes exposing (list)
 import Html.Events exposing (onClick)
 import Html.Styled exposing (styled)
-import Html.Styled.Attributes
+import Html.Attributes
 
-render : Maybe String -> Html.Styled.Html msg
+render : Maybe String -> Html.Html msg
 render note =
-    Html.Styled.td
+    Html.td
         []
         (case note of
             Just x ->
-                [ Html.Styled.text x ]
+                [ Html.text x ]
 
             Nothing ->
                 []

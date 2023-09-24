@@ -35,16 +35,23 @@ def writeList(aList: List, elm, indent: int):
     elm.write(indent_str + ']')
 
 def toNote(container) -> str:
-  if 'note' in container and container['note'] is not None and len(container['note']) > 0:
-    return"(Just " + quote(container['note']) + ")"
-  else:
-     return 'Nothing' 
+  return toMaybe(container, 'note')
+
 
 def toMaybe(container, field) -> str:
-  if field in container and container[field] is not None and len(container[field]) > 0:
-    return"(Just " + container[field] + ")"
-  else:
-     return 'Nothing' 
+  if field not in container:
+      return "Nothing"
+  value = container[field] 
+  if value is None:
+      return "Nothing"
+  if (type(value) == str):
+    if value == "":
+      return "Nothing"
+    else:
+      safe = make_safe_string(value)
+      return "(Just " + quote(safe) + ")"
+  return "(Just " + str(value) + ")"
+
 
 def toRating(rating) -> str:
   result =  "InvasionRating " 
@@ -133,6 +140,29 @@ def writeTroopEntriesForGeneral(elm, army_id, general_troop_entries) -> str:
   elm.write("\n\n")
   return variable
 
+def write_battle_card(elm, entry) -> str:
+   note = toNote(entry)
+   id = entry['_id']
+   min = toMaybe(entry, 'min')
+   max = toMaybe(entry, 'max')
+   battleCardCode = entry['battleCardCode']
+   variable = "battleCard_" + id
+   elm.write(f"{variable}: BattleCardEntry\n")
+   elm.write(f"{variable} = BattleCardEntry ")
+   elm.write(f"{min} {max} {battleCardCode} {note}\n\n")
+   return variable
+
+def writeBattleCardEntries(elm, id: str, entries) -> str:
+  def write_entry(battleCard) -> str:
+    return write_battle_card(elm, battleCard)
+  
+  battlecard_entries = list(map(write_entry, entries))
+  variable = "battleCards_" + id
+  elm.write(f"{variable} =\n")
+  writeList(battlecard_entries, elm, 2)
+  elm.write("\n\n")
+  return variable
+
 
 def writeArmy(elm, army):
       army_id = army['id']
@@ -147,6 +177,8 @@ def writeArmy(elm, army):
         writeHomeTopographies(elm, army_id, army['homeTopographies'])
         troopEntriesForGeneral = \
           writeTroopEntriesForGeneral(elm, army_id, army['troopEntriesForGeneral'])
+        battleCardEntries = \
+          writeBattleCardEntries(elm, army_id, army['battleCardEntries'])
 
         elm.write(f"army_{army_id}: Army\n")
         elm.write(f"army_{army_id} =\n")
@@ -167,6 +199,7 @@ def writeArmy(elm, army):
         elm.write(f"""    , maneuverRatings = maneuverRatings_{army_id}\n""")
         elm.write(f"""    , homeTopographies = homeTopographies_{army_id}\n""")
         elm.write(f"""    , troopEntriesForGeneral = {troopEntriesForGeneral}\n""")
+        elm.write(f"""    , battleCardEntries = {battleCardEntries}\n""")
         elm.write("  }\n\n")
       except Exception as exception:
         raise Exception(extendedName, exception)

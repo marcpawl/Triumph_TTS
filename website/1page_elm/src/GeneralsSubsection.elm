@@ -7,7 +7,7 @@ import Html exposing (Html, button, div, text)
 import Html.Attributes exposing (list)
 import Html.Events exposing (onClick)
 import Html.Styled exposing (styled)
-import Html.Styled.Attributes
+import Html.Attributes
 import Http
 import Json.Decode as Decode exposing (Decoder)
 import List
@@ -28,12 +28,12 @@ toNoteString troopEntry =
 
 
 -- Render Html.tr
-renderTroopEntry: TroopEntry ->  Html.Styled.Html msg
+renderTroopEntry: TroopEntry ->  Html.Html msg
 renderTroopEntry troopEntry =
-    Html.Styled.tr
+    Html.tr
     []
     [
-        Html.Styled.td 
+        Html.td 
           []
           [
             TroopTypeCode.render troopEntry.troopTypeCode    
@@ -43,7 +43,7 @@ renderTroopEntry troopEntry =
 
 -- Render the list of Troop Entries, when there is only one list
 -- list of Html.tr
-render1List: List TroopEntry -> List (Html.Styled.Html msg)
+render1List: List TroopEntry -> List (Html.Html msg)
 render1List troopEntryList =
     List.map renderTroopEntry troopEntryList
 
@@ -61,21 +61,21 @@ removeNothingFromList list =
     List.filterMap identity list
 
 -- list of Html.tr
-renderListForMany: String -> List TroopEntry -> List (Html.Styled.Html msg)
+renderListForMany: String -> List TroopEntry -> List (Html.Html msg)
 renderListForMany seperator list =
   [
-    Html.Styled.tr
+    Html.tr
       []
       [
-        Html.Styled.td
+        Html.td
           []
           [
-            Html.Styled.text (stringListForMany seperator toTroopTypeCodeName list)
+            Html.text (stringListForMany seperator toTroopTypeCodeName list)
           ]
-      ,   Html.Styled.td
+      ,   Html.td
           []
           [
-            Html.Styled.text 
+            Html.text 
                (String.join 
                  "; "
                  (removeNothingFromList 
@@ -159,17 +159,17 @@ toTableRowContents listOfLists =
       (toTroopTypeCodeNameStrings listOfLists)
       (toTroopNoteStrings listOfLists)
  
-toTd: String -> Html.Styled.Html msg
+toTd: String -> Html.Html msg
 toTd text =
-  Html.Styled.td
+  Html.td
     []
     [
-      Html.Styled.text text
+      Html.text text
     ]
 
-toTableRow: (String,String,String) -> Html.Styled.Html msg
+toTableRow: (String,String,String) -> Html.Html msg
 toTableRow (a,b,c) =
-    Html.Styled.tr
+    Html.tr
       []
       [
         (toTd a)
@@ -178,19 +178,19 @@ toTableRow (a,b,c) =
       ]
 
 
-subsectionRendered: Army -> Html.Styled.Html msg
+subsectionRendered: Army -> Html.Html msg
 subsectionRendered army =
-    Html.Styled.div []
-        [ Html.Styled.div
+    Html.div []
+        [ Html.div
             [
-                Html.Styled.Attributes.class "general_troop_type_section_header"
+                Html.Attributes.class "general_troop_type_subsection_header"
             ]
-            [ Html.Styled.text "General's Troop Type"
+            [ Html.text "General's Troop Type"
             ]
-        , Html.Styled.table
+        , Html.table
             []
             [ 
-                Html.Styled.tbody
+                Html.tbody
                     []
                     (List.map toTableRow (toTableRowContents army.troopEntriesForGeneral))
             ]

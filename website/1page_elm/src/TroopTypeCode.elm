@@ -8,7 +8,7 @@ import Html exposing (Html, button, div, text)
 import Html.Attributes exposing (list)
 import Html.Events exposing (onClick)
 import Html.Styled exposing (styled)
-import Html.Styled.Attributes
+import Html.Attributes
 import List
 
 
@@ -40,6 +40,6 @@ name troopTypeCode =
         WRR -> "Warriors" 
         WWG -> "War Wagons"
 
-render: TroopTypeCode -> Html.Styled.Html msg
+render: TroopTypeCode -> Html.Html msg
 render troopTypeCode =
-    Html.Styled.text (name troopTypeCode)
+    Html.text (name troopTypeCode)

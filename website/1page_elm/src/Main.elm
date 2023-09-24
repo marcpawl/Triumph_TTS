@@ -1,6 +1,7 @@
 module Main exposing (..)
 
 import Armies exposing (..)
+import ArmyBattleCardsSubsection
 import GeneralsSubsection
 import Browser
 import Css exposing (bold, em, fontWeight, padding, px)
@@ -8,7 +9,7 @@ import Html exposing (Html, button, div, text)
 import Html.Attributes exposing (list)
 import Html.Events exposing (onClick)
 import Html.Styled exposing (styled)
-import Html.Styled.Attributes
+import Html.Attributes
 import Http
 import Json.Decode as Decode exposing (Decoder)
 import List
@@ -65,24 +66,23 @@ update msg model =
 
 
 view model =
-    Html.Styled.toUnstyled
-        (Html.Styled.div []
-            [ --   button [ onClick GetArmy ] [ text "Start" ],
-              --   button [ onClick GetArmy ] [ text "-" ]
-              -- , div []
-              Html.Styled.text
-                (status model)
-            , thematicCategoriesTableOfContents
-            , thematicCategiesContent
-            , armiesTableOfContents
-            , armiesDetailed
+    (Html.div []
+        [ --   button [ onClick GetArmy ] [ text "Start" ],
+            --   button [ onClick GetArmy ] [ text "-" ]
+            -- , div []
+            Html.text
+            (status model)
+        , thematicCategoriesTableOfContents
+        , thematicCategiesContent
+        , armiesTableOfContents
+        , armiesDetailed
 
-            --   (text (
-            --   "todo"
-            --   -- String.fromInt model
-            --   ) )
-            ]
-        )
+        --   (text (
+        --   "todo"
+        --   -- String.fromInt model
+        --   ) )
+        ]
+    )
 
 
 status : Model -> String
@@ -115,9 +115,9 @@ theme_tag theme =
     anchor_tag "theme_" theme.id
 
 
-theme_href : Theme -> Html.Styled.Attribute msg
+theme_href : Theme -> Html.Attribute msg
 theme_href theme =
-    Html.Styled.Attributes.href (String.concat [ "#", theme_tag theme ])
+    Html.Attributes.href (String.concat [ "#", theme_tag theme ])
 
 
 army_tag : Army -> String
@@ -125,19 +125,19 @@ army_tag army =
     anchor_tag "army_" army.id
 
 
-army_href : Army -> Html.Styled.Attribute msg
+army_href : Army -> Html.Attribute msg
 army_href theme =
-    Html.Styled.Attributes.href (String.concat [ "#", army_tag theme ])
+    Html.Attributes.href (String.concat [ "#", army_tag theme ])
 
 
-thematicCategory : Theme -> Html.Styled.Html msg
+thematicCategory : Theme -> Html.Html msg
 thematicCategory theme =
-    styledContentLink
+    Html.div
         []
-        [ Html.Styled.a
+        [ Html.a
             [ theme_href theme
             ]
-            [ Html.Styled.text theme.name
+            [ Html.text theme.name
             ]
         ]
 
@@ -146,29 +146,31 @@ thematicCategory theme =
 -- Page that contains the list of all the categories
 
 
-thematicCategoriesTableOfContents : Html.Styled.Html msg
+thematicCategoriesTableOfContents : Html.Html msg
 thematicCategoriesTableOfContents =
-    styledMain []
-        [ styledContentHeader [] [ Html.Styled.text "Thematic Categories" ]
-        , Html.Styled.text """Thematic categories are a way of grouping army lists that fit a
+    Html.div 
+        []
+        [ 
+            Html.div [] [ Html.text "Thematic Categories" ]
+        , Html.text """Thematic categories are a way of grouping army lists that fit a
            common period and broad geographic region. Many army lists belong to
           more than one thematic category."""
-        , Html.Styled.div [] (List.map thematicCategory Themes.themes)
+        , Html.div [] (List.map thematicCategory Themes.themes)
         ]
 
 
-armyNameList : List Army -> Html.Styled.Html msg
+armyNameList : List Army -> Html.Html msg
 armyNameList armies =
-    Html.Styled.div
+    Html.div
         []
         (List.map
             (\army ->
-                styledThematicCategoryContentArmy
+                Html.div
                     []
-                    [ Html.Styled.a
+                    [ Html.a
                         [ army_href army
                         ]
-                        [ Html.Styled.text army.extendedName
+                        [ Html.text army.extendedName
                         ]
                     ]
             )
@@ -180,15 +182,15 @@ armyNameList armies =
 -- Contents of a theme
 
 
-thematicCategoryContent : Theme -> Html.Styled.Html msg
+thematicCategoryContent : Theme -> Html.Html msg
 thematicCategoryContent theme =
-    styledMain []
-        [ Html.Styled.h1
-            [ Html.Styled.Attributes.id (theme_tag theme)
+    Html.div []
+        [ Html.h1
+            [ Html.Attributes.id (theme_tag theme)
             ]
-            [ Html.Styled.text theme.name
+            [ Html.text theme.name
             ]
-        , Html.Styled.h2 [] [ Html.Styled.text "Army Lists" ]
+        , Html.h2 [] [ Html.text "Army Lists" ]
         , armyNameList theme.armies
         ]
 
@@ -198,9 +200,9 @@ thematicCategoryContent theme =
 -- Each theme is is own "page"
 
 
-thematicCategiesContent : Html.Styled.Html msg
+thematicCategiesContent : Html.Html msg
 thematicCategiesContent =
-    Html.Styled.div
+    Html.div
         []
         (List.map thematicCategoryContent Themes.themes)
 
@@ -209,14 +211,14 @@ thematicCategiesContent =
 -- "Page" containing the list of all the armies
 
 
-armiesTableOfContents : Html.Styled.Html msg
+armiesTableOfContents : Html.Html msg
 armiesTableOfContents =
-    styledMain
+    Html.div
         []
-        [ Html.Styled.h1
+        [ Html.h1
             []
-            [ Html.Styled.text "List of all armies" ]
-        , Html.Styled.div
+            [ Html.text "List of all armies" ]
+        , Html.div
             []
             [ armyNameList Armies.all_armies
             ]
@@ -227,31 +229,32 @@ armiesTableOfContents =
 -- Section containing the "Pages" for each army
 
 
-armiesDetailed : Html.Styled.Html msg
+armiesDetailed : Html.Html msg
 armiesDetailed =
-    Html.Styled.div
+    Html.div
         []
         (List.map (\army -> armyDetail army) Armies.all_armies)
 
 
-armyDetail : Army -> Html.Styled.Html msg
+armyDetail : Army -> Html.Html msg
 armyDetail army =
-    styledMain
-        [ Html.Styled.Attributes.id (army_tag army)
+    Html.div
+        [ Html.Attributes.id (army_tag army)
         ]
         [ armyListAndDateRange army
         , ratingsEtcRendered army
         ]
 
 
-ratingsEtcRendered : Army -> Html.Styled.Html msg
+ratingsEtcRendered : Army -> Html.Html msg
 ratingsEtcRendered army =
-    Html.Styled.div
+    Html.div
         []
         [ invasionRatingRendered army
         , maneuverRatingsRendered army
         , homeTopographiesRendered army
         , GeneralsSubsection.subsectionRendered army
+        , ArmyBattleCardsSubsection.subsectionRendered army
         ]
 
 
@@ -287,47 +290,48 @@ maneuverRatings army =
 
 
 
--- ratingsRowRendered : (x -> Int) -> ( x  -> Maybe String) -> x -> Html.Styled.Html msg
+-- ratingsRowRendered : (x -> Int) -> ( x  -> Maybe String) -> x -> Html.Html msg
 
 
-ratingsRowRendered : (c -> Int) -> (c -> Maybe String) -> c -> Html.Styled.Html msg
+ratingsRowRendered : (c -> Int) -> (c -> Maybe String) -> c -> Html.Html msg
 ratingsRowRendered ratingValue ratingNote rating =
-    Html.Styled.tr
+    Html.tr
         []
-        [ Html.Styled.td
+        [ Html.td
             []
-            [ Html.Styled.text (String.fromInt (ratingValue rating))
+            [ Html.text (String.fromInt (ratingValue rating))
             ]
         , Notes.render (ratingNote rating)
         ]
 
 
-ratingsRendered : String -> (x -> Int) -> (x -> Maybe String) -> (Army -> List x) -> Army -> Html.Styled.Html msg
+ratingsRendered : String -> (x -> Int) -> (x -> Maybe String) -> (Army -> List x) -> Army -> Html.Html msg
 ratingsRendered title valueExtractor noteExtractor ratingsExtractor army =
     let
         renderer =
             ratingsRowRendered valueExtractor noteExtractor
     in
-    Html.Styled.div
+    Html.div
         []
-        [ styledContentSubHeader
+        [ 
+          Html.div
             []
-            [ Html.Styled.text title
+            [ Html.text title
             ]
-        , Html.Styled.table
+        , Html.table
             []
-            [ Html.Styled.tbody []
+            [ Html.tbody []
                 (List.map renderer (ratingsExtractor army))
             ]
         ]
 
 
-invasionRatingRendered : Army -> Html.Styled.Html msg
+invasionRatingRendered : Army -> Html.Html msg
 invasionRatingRendered army =
     ratingsRendered "Invasion Ratings" invasionRatingValue invasionRatingNote invasionRatings army
 
 
-maneuverRatingsRendered : Army -> Html.Styled.Html msg
+maneuverRatingsRendered : Army -> Html.Html msg
 maneuverRatingsRendered army =
     ratingsRendered "Maneuver Ratings" maneuverRatingValue maneuverRatingNote maneuverRatings army
 
@@ -357,67 +361,67 @@ topographyToString topography =
             "Marsh"
 
 
-topographyRendered : Topography -> Html.Styled.Html msg
+topographyRendered : Topography -> Html.Html msg
 topographyRendered topography =
-    Html.Styled.div []
-        [ Html.Styled.text (topographyToString topography)
+    Html.div []
+        [ Html.text (topographyToString topography)
         ]
 
 
-homeTopographiesItemsRendered : HomeTopographies -> Html.Styled.Html msg
+homeTopographiesItemsRendered : HomeTopographies -> Html.Html msg
 homeTopographiesItemsRendered topographies =
-    Html.Styled.tr []
-        [ Html.Styled.td [
-            Html.Styled.Attributes.class "HomeTopographies_note"
+    Html.tr []
+        [ Html.td [
+            Html.Attributes.class "HomeTopographies_note"
         ]
             [ Notes.render topographies.note
             ]
-        , Html.Styled.td [ Html.Styled.Attributes.class "HomeTopographies_values"]
+        , Html.td [ Html.Attributes.class "HomeTopographies_values"]
             (List.map topographyRendered topographies.values)
         ]
 
 
-homeTopographiesListRendered : Army -> Html.Styled.Html msg
+homeTopographiesListRendered : Army -> Html.Html msg
 homeTopographiesListRendered army =
-    Html.Styled.table []
-        [ Html.Styled.tbody
+    Html.table []
+        [ Html.tbody
             []
             (List.map homeTopographiesItemsRendered army.homeTopographies)
         ]
 
 
-homeTopographiesRendered : Army -> Html.Styled.Html msg
+homeTopographiesRendered : Army -> Html.Html msg
 homeTopographiesRendered army =
-    Html.Styled.div []
-        [ Html.Styled.div
+    Html.div []
+        [ Html.div
             []
-            [ Html.Styled.text "Home Topography"
+            [ Html.text "Home Topography"
             ]
-        , Html.Styled.div
+        , Html.div
             []
             [ homeTopographiesListRendered army ]
         ]
 
 
 
-armyListAndDateRange : Army -> Html.Styled.Html msg
+armyListAndDateRange : Army -> Html.Html msg
 armyListAndDateRange army =
-    Html.Styled.div
+    Html.div
         []
-        [ Html.Styled.h1
+        [ Html.h1
             []
-            [ Html.Styled.span
+            [ Html.span
                 []
-                [ Html.Styled.text army.name
+                [ Html.text army.name
                 ]
             ]
         , renderedDateRange army.listStartDate army.listEndDate
         ]
 
 
-renderedDateRange : Int -> Int -> Html.Styled.Html msg
+renderedDateRange : Int -> Int -> Html.Html msg
 renderedDateRange startDate endDate =
-    Html.Styled.text (formattedDateRange startDate endDate)
+    Html.text (formattedDateRange startDate endDate)
 
 
 era : Int -> String
@@ -460,114 +464,6 @@ getArmy _ =
         { url = "https://raw.githubusercontent.com/marcpawl/Triumph_TTS/v2.3/fake_meshwesh/armyLists/5fb1b9d8e1af0600177092b3"
         , expect = Http.expectString DataReceived
         }
-
-
-styledContentHeader : List (Html.Styled.Attribute msg) -> List (Html.Styled.Html msg) -> Html.Styled.Html msg
-styledContentHeader =
-    styled Html.Styled.div
-        [ Css.fontFamilies [ "Helvetica Neue", "Helvetica", "Arial", "sans-serif" ]
-        , Css.lineHeight (Css.num 1.42857143)
-        , Css.color (Css.rgb 0x33 0x33 0x33)
-        , Css.marginTop (px 16)
-        , Css.marginBottom (px 20)
-        , Css.fontSize (em 2)
-        ]
-
-
-
--- TODO
--- -webkit-text-size-adjust: 100%;
--- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-
-styledContentSubHeader : List (Html.Styled.Attribute msg) -> List (Html.Styled.Html msg) -> Html.Styled.Html msg
-styledContentSubHeader =
-    styled Html.Styled.div
-        [ Css.fontFamilies [ "Helvetica Neue", "Helvetica", "Arial", "sans-serif" ]
-        , Css.lineHeight (Css.num 1.42857143)
-        , Css.color (Css.rgb 0x33 0x33 0x33)
-        , Css.boxSizing Css.borderBox
-        , Css.fontSize (em 1.2)
-        , Css.marginTop (px 10)
-        , Css.marginBottom (px 20)
-        , Css.fontWeight Css.bold
-        ]
-
-
-
--- TODO
---  -webkit-text-size-adjust: 100%;
--- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-
-styledContentLink : List (Html.Styled.Attribute msg) -> List (Html.Styled.Html msg) -> Html.Styled.Html msg
-styledContentLink =
-    styled Html.Styled.div
-        [ Css.fontFamilies [ "Helvetica Neue", "Helvetica", "Arial", "sans-serif" ]
-        , Css.lineHeight (Css.num 1.42857143)
-        , Css.fontSize (em 1.5)
-        , Css.boxSizing Css.borderBox
-        , Css.backgroundColor Css.transparent
-        , Css.color (Css.rgb 0x33 0x7A 0xB7)
-        , Css.textDecoration Css.none
-        ]
-
-
-styledThematicCategoryContentArmies : List (Html.Styled.Attribute msg) -> List (Html.Styled.Html msg) -> Html.Styled.Html msg
-styledThematicCategoryContentArmies =
-    styled Html.Styled.div
-        [ Css.fontFamily Css.inherit
-        , Css.fontWeight (Css.int 400)
-        , Css.lineHeight (Css.num 1)
-        , Css.boxSizing Css.borderBox
-        , Css.backgroundColor Css.transparent
-        , Css.color (Css.rgb 0x33 0x7A 0xB7)
-        , Css.textDecoration Css.none
-        ]
-
-
-
--- TODO
--- -webkit-text-size-adjust: 100%;
--- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
--- font-size: 65%;
-
-
-styledThematicCategoryContentArmy : List (Html.Styled.Attribute msg) -> List (Html.Styled.Html msg) -> Html.Styled.Html msg
-styledThematicCategoryContentArmy =
-    styled Html.Styled.div
-        [ Css.fontFamily Css.inherit
-        , Css.fontWeight (Css.int 400)
-        , Css.lineHeight (Css.num 1.5)
-        , Css.boxSizing Css.borderBox
-        , Css.backgroundColor Css.transparent
-        , Css.color (Css.rgb 0x33 0x7A 0xB7)
-        , Css.textDecoration Css.none
-        , Css.fontSize (Css.pct 65)
-        ]
-
-
-styledMain : List (Html.Styled.Attribute msg) -> List (Html.Styled.Html msg) -> Html.Styled.Html msg
-styledMain =
-    styled Html.Styled.div
-        [ Css.fontFamilies [ "Helvetica Neue", "Helvetica", "Arial", "sans-serif" ]
-        , Css.lineHeight (Css.num 1.42857143)
-        , Css.fontSize (Css.px 14)
-        , Css.boxSizing Css.borderBox
-        , Css.color (Css.rgb 0x33 0x33 0x33)
-        , Css.textDecoration Css.none
-        , Css.marginTop (Css.em 3)
-        , Css.borderBottom3 (Css.px 3) Css.solid (Css.rgb 120 120 120)
-        , Css.paddingBottom (Css.em 1)
-        , Css.paddingLeft (Css.em 1)
-        ]
-
-
-
--- TODO
--- -webkit-text-size-adjust: 100%;
--- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
--- MAIN
 
 
 main : Program () Model Msg

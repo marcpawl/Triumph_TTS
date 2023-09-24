@@ -35,6 +35,16 @@ type alias TroopEntry =
   , note: Maybe String
   }
 
+type BattleCardCode = AM | DC | FC  | MI | NC | PD | PT | SC | SW
+
+type alias BattleCardEntry =
+  {
+    -- _id: String
+    min: Maybe Int
+  , max: Maybe Int
+  , battleCardCode: BattleCardCode
+  , note: Maybe String
+  }
               
 type alias Army =
   { 
@@ -50,6 +60,7 @@ type alias Army =
   , maneuverRatings: List ManeuverRating   
   , homeTopographies: List HomeTopographies    
   , troopEntriesForGeneral: List (List TroopEntry)
+  , battleCardEntries: List BattleCardEntry
   }
 
 type alias Theme =
