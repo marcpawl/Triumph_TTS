@@ -1,7 +1,7 @@
 {
     "type": "application",
     "source-directories": [
-        "/elm/src"
+        "/Triumph_TTS/website/1page_elm/src"
     ],
     "elm-version": "0.19.1",
     "dependencies": {

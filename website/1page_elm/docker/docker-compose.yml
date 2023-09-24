@@ -4,5 +4,6 @@ services:
   elm:
     build: .
     volumes:
-      - ..:/elm
+      - ../../..:/Triumph_TTS
+    working_dir: "/Triumph_TTS/website/1page_elm"
 
