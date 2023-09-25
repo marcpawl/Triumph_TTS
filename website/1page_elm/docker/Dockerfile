@@ -45,5 +45,5 @@ RUN echo "elm ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 COPY elmdev.sh /elmdev.sh
 CMD /elmdev.sh
 
-USER elm
+#USER elm
 WORKDIR /mnt/elm
