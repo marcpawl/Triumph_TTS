@@ -1,9 +1,14 @@
 version: "3"
 name: elm
+
 services:
   elm:
-    build: .
+    build: 
+      context: .
     volumes:
       - ../../..:/Triumph_TTS
     working_dir: "/Triumph_TTS/website/1page_elm"
+    ports:
+      - 5016:5016
+    command: /elmdev.sh
 
