@@ -1,5 +1,20 @@
-module MeshWeshTypes exposing (..)
+module MeshweshTypes exposing (..)
 
+type alias DerivedData =
+  {
+    listStartDate: Int
+  , listEndDate: Int
+  , extendedName: String
+  }
+
+type alias Summary =
+  {
+    id: String
+  , name: String
+  , keywords: List String
+  , derivedData: DerivedData
+  } 
+    
 type alias InvasionRating =
   {
     id: String

@@ -1,9 +1,9 @@
 module BattleCards exposing(..)
 
-import MeshWeshTypes exposing (..)
+import MeshweshTypes exposing (..)
 import Html
 
-name: MeshWeshTypes.BattleCardCode -> String
+name: MeshweshTypes.BattleCardCode -> String
 name battleCardCode =
     case battleCardCode of
         AM -> "Ambush"
@@ -16,6 +16,6 @@ name battleCardCode =
         SC -> "Scythed Chariots and Stampedes"
         SW -> "Standard Wagon"
 
-render: MeshWeshTypes.BattleCardCode -> Html.Html msg
+render: MeshweshTypes.BattleCardCode -> Html.Html msg
 render battleCardCode =
     Html.text (name battleCardCode)

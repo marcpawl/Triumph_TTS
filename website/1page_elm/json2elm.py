@@ -214,7 +214,7 @@ def armies():
   with open("src/Armies.elm", "w") as elm:
     elm.write("""module Armies exposing (..)
 --import ArmyTypes exposing(InvasionRating, ManeuverRating, Topography, HomeTopographies, Army, )
-import MeshWeshTypes exposing (..)
+import MeshweshTypes exposing (..)
 """)
     elm.write("\n")
 
@@ -247,7 +247,7 @@ def themes():
   with open("src/Themes.elm", "w") as elm:
     elm.write("""module Themes exposing (..)
 
-import MeshWeshTypes exposing (..)
+import MeshweshTypes exposing (..)
 import Armies exposing (..)
               
               

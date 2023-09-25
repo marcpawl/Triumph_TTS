@@ -11,7 +11,7 @@ import Html.Attributes
 import Http
 import Json.Decode as Decode exposing (Decoder)
 import List
-import MeshWeshTypes exposing (..)
+import MeshweshTypes exposing (..)
 import Platform.Cmd as Cmd
 import Themes
 import BattleCards exposing (render)
@@ -34,7 +34,7 @@ tdMaybe maybeSstring =
         Just string -> td string
 
 
-countTd: MeshWeshTypes.BattleCardEntry -> Html.Html msg
+countTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 countTd battleCard =
     case battleCard.min of
         Nothing -> tdMaybe (battleCard.max |> Maybe.map String.fromInt)
@@ -51,11 +51,11 @@ countTd battleCard =
                     |>
                     td
 
-nameTd: MeshWeshTypes.BattleCardEntry -> Html.Html msg
+nameTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 nameTd battlecard =
     td (BattleCards.name (.battleCardCode battlecard))
 
-noteTd: MeshWeshTypes.BattleCardEntry -> Html.Html msg
+noteTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 noteTd battlecard =
     tdMaybe (.note battlecard)
 

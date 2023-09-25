@@ -1,6 +1,6 @@
 module TroopTypeCode exposing (render, name)
 
-import MeshWeshTypes exposing (..)
+import MeshweshTypes exposing (..)
 
 import Browser
 import Css exposing (bold, em, fontWeight, padding, px)

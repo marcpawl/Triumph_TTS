@@ -13,7 +13,7 @@ import Html.Attributes
 import Http
 import Json.Decode as Decode exposing (Decoder)
 import List
-import MeshWeshTypes exposing (..)
+import MeshweshTypes exposing (..)
 import Platform.Cmd as Cmd
 import Themes
 import Notes
