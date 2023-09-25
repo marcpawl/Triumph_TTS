@@ -1,6 +1,6 @@
 
 ifneq (${IN_DOCKER},true)
-output/iid_elm:
+output/iid_elm: Dockerfile elmdev.sh
 	mkdir -p $(dir $@)
 	docker build --iidfile $@ .
 endif
