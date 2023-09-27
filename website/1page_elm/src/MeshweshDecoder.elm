@@ -197,6 +197,27 @@ decodeBattleCardEntry =
         |> required "battleCardCode" decodeBattleCardCode
         |> required "note" decodeNote
 
+
+decodeDateRangeEntry: Decoder MeshweshTypes.DateRangeEntry
+decodeDateRangeEntry =
+     Decode.succeed MeshweshTypes.DateRangeEntry
+        |> required  "startDate" int
+        |> required  "endDate" int
+
+
+decodeTroopOptionEntry: Decoder MeshweshTypes.TroopOptionEntry
+decodeTroopOptionEntry =
+     Decode.succeed MeshweshTypes.TroopOptionEntry
+        |> required  "min" int
+        |> required  "max" int
+        |> required "dateRanges" (list decodeDateRangeEntry)
+        |> required "troopEntries" (list decodeTroopEntry)
+        |> required "description" string
+        |> required "note" decodeNote
+        |> required "core" string
+
+
+
 decodeArmy : Decoder MeshweshTypes.Army
 decodeArmy =
      Decode.succeed MeshweshTypes.Army
@@ -210,4 +231,4 @@ decodeArmy =
         |> required "homeTopographies" (list decodeHomeTopography)
         |> required "troopEntriesForGeneral" (list (decodeTroopEntriesList))
         |> required "battleCardEntries" (list decodeBattleCardEntry)
-
+        |> required "troopOptions" (list decodeTroopOptionEntry)

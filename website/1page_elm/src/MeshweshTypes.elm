@@ -1,4 +1,5 @@
 module MeshweshTypes exposing (..)
+import Json.Decode exposing (int)
 
 type alias DerivedData =
   {
@@ -69,6 +70,24 @@ type alias TroopEntriesList =
   }
               
 
+type alias DateRangeEntry =
+  {
+    -- id: String
+    startDate: Int
+  , endDate: Int
+  }
+
+type alias TroopOptionEntry =
+  {
+    -- id: String
+    min: Int
+  , max: Int
+  , dateRanges: List DateRangeEntry
+  , troopEntries: List TroopEntry
+  , description: String
+  , note: Maybe String
+  , core: String
+  }
 
 type alias Army =
   { 
@@ -81,6 +100,7 @@ type alias Army =
   , homeTopographies: List HomeTopography
   , troopEntriesForGeneral: List TroopEntriesList
   , battleCardEntries: List BattleCardEntry
+  , troopOptions: List TroopOptionEntry
   }
 
   
