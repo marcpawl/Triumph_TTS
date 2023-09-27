@@ -8,26 +8,39 @@ import Json.Decode
 
 
 summary = """
-{"id":"6153508f03385c0016b82744",
-"name":"North Maritime First Nations",
-"keywords":["word1", "word2"],
-"derivedData":{
-    "listStartDate":1100,
-    "listEndDate":1770,
-    "extendedName":"North Maritime First Nations  1100 to 1770 AD"
-    }
-}
+[
+    {
+        "id":"6153508f03385c0016b82744",
+        "name":"North Maritime First Nations",
+        "keywords":["word1", "word2"],
+        "derivedData":{
+            "listStartDate":1100,
+            "listEndDate":1770,
+            "extendedName":"North Maritime First Nations  1100 to 1770 AD"
+        }
+    },
+    {
+        "id":"5fb1b9d8e1af0600177092b9",
+        "name":"Gilgamesh Era Sumerian",
+        "keywords":[],
+        "derivedData":{
+            "listStartDate":-2799,
+            "listEndDate":-2334,
+            "extendedName":"Gilgamesh Era Sumerian  2799 to 2334 BC"
+        }
+    },
+]
 """
 
 suite : Test
 suite =
     describe "MeshweshDecoder -- JSON Decoding"
         [ 
-            summary_id_and_name
+            testSummary
         ,   test_derived_data
         ]
 
-summary_id_and_name = 
+testSummary = 
     let 
         actual = Json.Decode.decodeString
                         MeshweshDecoder.decodeSummary 

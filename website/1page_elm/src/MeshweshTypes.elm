@@ -31,7 +31,7 @@ type alias ManeuverRating =
 
 type Topography = Hilly | Dry | Arable | Forest | Delta | Steppe | Marsh
               
-type alias HomeTopographies =
+type alias HomeTopography =
   {
     id: String
   , values: List Topography
@@ -60,24 +60,30 @@ type alias BattleCardEntry =
   , battleCardCode: BattleCardCode
   , note: Maybe String
   }
+
+
+type alias TroopEntriesList =
+  { 
+    id : String
+  ,  troopEntries: List TroopEntry
+  }
               
+
+
 type alias Army =
   { 
     id : String
   , keywords: List String
-  , listStartDate: Int
-  , listEndDate: Int
-  , extendedName: String
-  , sortId: Float
-  , sublistId: String
+  , derivedData: DerivedData
   , name: String   
   , invasionRatings: List InvasionRating
   , maneuverRatings: List ManeuverRating   
-  , homeTopographies: List HomeTopographies    
-  , troopEntriesForGeneral: List (List TroopEntry)
+  , homeTopographies: List HomeTopography
+  , troopEntriesForGeneral: List TroopEntriesList
   , battleCardEntries: List BattleCardEntry
   }
 
+  
 type alias Theme =
   { id : String
   , name : String

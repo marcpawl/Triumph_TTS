@@ -13,10 +13,7 @@ endif
 .PHONY: all
 all: elm.js
 
-elm.js: $(wildcard src/*) docker
-ifneq (${IN_DOCKER},true)
-	python3 json2elm.py 
-endif
+elm.js: docker 
 	${DOCKER_RUN} elm make src/Main.elm --output elm.js
 
 .PHONY: docker

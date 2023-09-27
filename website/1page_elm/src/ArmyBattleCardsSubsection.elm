@@ -1,6 +1,5 @@
 module ArmyBattleCardsSubsection exposing (..)
 
-import Armies exposing (..)
 import Browser
 import Css exposing (bold, em, fontWeight, padding, px)
 import Html exposing (Html, button, div, text)
@@ -13,7 +12,6 @@ import Json.Decode as Decode exposing (Decoder)
 import List
 import MeshweshTypes exposing (..)
 import Platform.Cmd as Cmd
-import Themes
 import BattleCards exposing (render)
 import Notes
 import List exposing (length)

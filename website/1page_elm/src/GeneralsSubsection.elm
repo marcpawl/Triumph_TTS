@@ -1,6 +1,5 @@
 module GeneralsSubsection exposing (..)
 
-import Armies exposing (..)
 import Browser
 import Css exposing (bold, em, fontWeight, padding, px)
 import Html exposing (Html, button, div, text)
@@ -13,7 +12,6 @@ import Json.Decode as Decode exposing (Decoder)
 import List
 import MeshweshTypes exposing (..)
 import Platform.Cmd as Cmd
-import Themes
 import TroopTypeCode exposing (render)
 import Notes
 import List exposing (length)
@@ -140,25 +138,21 @@ ifOtherwise index _ =
   else
     "Otherwise"
 
-toPrefixStrings: List (List TroopEntry) -> List String
+toPrefixStrings: List (List MeshweshTypes.TroopEntry) -> List String
 toPrefixStrings listOfLists  =
     if (List.length listOfLists) == 1 then
       [ "" ]
     else
       List.indexedMap ifOtherwise listOfLists
 
-zip3: String -> String -> String -> (String,String,String)
-zip3 a b c = 
-  (a,b,c)
+   
+toTableRowContents: List MeshweshTypes.TroopEntriesList -> List (String,String,String)
+toTableRowContents troopEntriesList =
+  let
+    _ = List.map .troopEntries troopEntriesList
+  in
+    []
 
-toTableRowContents: List (List TroopEntry) -> List (String,String,String)
-toTableRowContents listOfLists =
-    List.map3
-      zip3 
-      (toPrefixStrings  listOfLists)
-      (toTroopTypeCodeNameStrings listOfLists)
-      (toTroopNoteStrings listOfLists)
- 
 toTd: String -> Html.Html msg
 toTd text =
   Html.td
