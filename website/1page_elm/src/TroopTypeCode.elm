@@ -16,6 +16,7 @@ name: TroopTypeCode -> String
 name troopTypeCode =
     case troopTypeCode of
         ARC -> "Archers"
+        ART -> "Artillery"
         BAD -> "Bad Horse"
         BLV -> "Bow Levy"
         BTX -> "Battle Taxi"
@@ -25,7 +26,8 @@ name troopTypeCode =
         EFT -> "Elite Foot"
         ELE -> "Elephants" 
         HBW -> "Horse Bow"
-        HFT -> "Heavy Foot" 
+        HFT -> "Heavy Foot"
+        HRD -> "Horde" 
         JCV -> "Javelin Cavalry" 
         KNT -> "Knights"
         LFT -> "Light Foot"

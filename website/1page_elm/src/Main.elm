@@ -19,7 +19,7 @@ import MeshweshDecoder
 import Json.Decode
 import Debug
 import Dict exposing (Dict)
-
+import ArmyIdTable
 
 -- MODEL
 
@@ -31,20 +31,41 @@ type alias Model =
 type PageStatus
     = Unloaded
     | LoadingSummary
-    | LoadingArmies (Dict String ArmyLoading)
-    | Loaded
+    | LoadingArmies LoadingData
+    | Loaded LoadedData
     | Error String
 
+type alias LoadingData =
+    {
+        -- Army we are waiting for
+        waiting: ArmyIdTable.Table  ArmyLoading
+        -- Armies that have all their data.
+    ,   loaded: ArmyIdTable.Table ArmyLoading
+    }
 
 -- Army that is waiting for a file to load.
 type alias ArmyLoading =
     {
-        id: String
+        id: MeshweshTypes.ArmyId
     ,   armyName: String
-    ,   armyDetails: Maybe MeshweshTypes.Army
-    ,   allyOptions: Bool
-    ,   thematicCategories: Bool
+    ,   armyDetails: Maybe MeshweshTypes.Army -- Nothing indicates waiting for response
+    ,   allyOptions: Maybe (List MeshweshTypes.AllyOptions) -- Nothing indicates waiting for response
+    ,   thematicCategories: Maybe (List MeshweshTypes.ThematicCategory)  -- Nothing indicates waiting for response
   }
+
+
+-- Armies that belong to a theme  
+type alias ThemeLoaded =
+  { id : String
+  , name : String
+  , armies: List Army
+  }
+
+
+type alias LoadedData =
+    {
+    }
+
 
 init : Model
 init =
@@ -59,7 +80,9 @@ type Msg
     = 
       LoadSummary
     | SummaryReceived (Result Http.Error String)
-    | ArmyReceived  String (Result Http.Error MeshweshTypes.Army)
+    | ArmyReceived  MeshweshTypes.ArmyId (Result Http.Error MeshweshTypes.Army)
+    | ThematicCategoriesReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.ThematicCategory))
+    | AllyOptionsReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.AllyOptions))
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -70,6 +93,8 @@ update msg model =
             (Error (httpErrorToString httpError), Cmd.none)
         SummaryReceived (Ok summaryString) -> downloadArmies summaryString 
         ArmyReceived id result -> handleArmyReceivedMsg id result model
+        ThematicCategoriesReceived id result -> handleThematicCategoriesReceivedMsg id result model
+        AllyOptionsReceived id result -> handleAllyOptionsReceivedMsg id result model
 
 httpErrorToString : Http.Error -> String
 httpErrorToString error =
@@ -108,8 +133,8 @@ loadingSummaryView =
         ]
 
 
-loadingArmiesView: Dict String ArmyLoading -> Html.Html msg
-loadingArmiesView waiting =
+loadingArmiesView: LoadingData -> Html.Html msg
+loadingArmiesView loadingData =
     Html.div
         []
         [
@@ -123,19 +148,8 @@ loadingArmiesView waiting =
                 [
                     Html.tbody
                         []
-                        (List.map armyLoadingView (Dict.values waiting))
+                        (List.map armyLoadingView (ArmyIdTable.values loadingData.waiting))
                 ]
-        ]
-
-downloadStateView: Bool -> Html.Html msg
-downloadStateView downloaded =
-    Html.td
-        []
-        [
-            if downloaded then
-                Html.text "Done"
-            else
-                Html.text "..."
         ]
 
 
@@ -156,8 +170,8 @@ armyLoadingView armyLoading =
         []
         [
             downloadMaybeView armyLoading.armyDetails
-        ,   downloadStateView armyLoading.allyOptions                   
-        ,   downloadStateView armyLoading.thematicCategories
+        ,   downloadMaybeView armyLoading.allyOptions                   
+        ,   downloadMaybeView armyLoading.thematicCategories
         ,   Html.td
             []
             [
@@ -165,12 +179,12 @@ armyLoadingView armyLoading =
             ]    
         ]
 
-loadedView: Html.Html msg
-loadedView =
+loadedView: LoadedData -> Html.Html msg
+loadedView _ =
     Html.div
         []
         [
-            Html.text "Loading summary .."
+            Html.text "TODO display LOADED view"
         ]
 
 errorView: String -> Html.Html msg
@@ -190,27 +204,9 @@ view model =
         case model of
             Unloaded -> unloadedView
             LoadingSummary -> loadingSummaryView
-            LoadingArmies waiting -> loadingArmiesView waiting
-            Loaded -> loadedView
+            LoadingArmies loadingData -> loadingArmiesView loadingData
+            Loaded loadedData -> loadedView loadedData
             Error errorMessage -> errorView errorMessage
-        
--- `    (Html.div []
---         [ --   button [ onClick GetArmy ] [ text "Start" ],
---             --   button [ onClick GetArmy ] [ text "-" ]
---             -- , div []
---             Html.text
---             (status model)
---         , thematicCategoriesTableOfContents
---         , thematicCategiesContent
---         , armiesTableOfContents
---         , armiesDetailed
-
---         --   (text (
---         --   "todo"
---         --   -- String.fromInt model
---         --   ) )
---         ]
---     )
 
 
 -- Value of ID in an element, use for in document HREF
@@ -233,7 +229,7 @@ theme_href theme =
 
 army_tag : Army -> String
 army_tag army =
-    anchor_tag "army_" army.id
+    anchor_tag "army_" army.id.id
 
 
 army_href : Army -> Html.Attribute msg
@@ -579,13 +575,13 @@ downloadSummary =
         }
 
 
-toArmyLoading: MeshweshTypes.Summary -> (String, ArmyLoading)
+toArmyLoading: MeshweshTypes.Summary -> (MeshweshTypes.ArmyId, ArmyLoading)
 toArmyLoading summary =
-    (summary.id, ArmyLoading summary.id summary.name Nothing False False)
+    (summary.id, ArmyLoading summary.id summary.name Nothing Nothing Nothing)
 
-loadingArmiesList: List MeshweshTypes.Summary ->  Dict String ArmyLoading
+loadingArmiesList: List MeshweshTypes.Summary ->  ArmyIdTable.Table ArmyLoading
 loadingArmiesList summaries =
-    Dict.fromList (List.map toArmyLoading summaries)
+    ArmyIdTable.fromList (List.map toArmyLoading summaries)
 
 downloadArmies: String -> (Model, Cmd Msg)
 downloadArmies summaryString =
@@ -593,16 +589,34 @@ downloadArmies summaryString =
         summaryListResult = Json.Decode.decodeString MeshweshDecoder.decodeSummaryList summaryString
     in
         case summaryListResult of
-            Err _ -> (Error "Summary list decode error", Cmd.none)
+            Err jsonDecodeError -> 
+                (
+                    Error 
+                        (String.concat
+                            [
+                                "Summary list decode error:"
+                            ,   (Json.Decode.errorToString jsonDecodeError)
+                            ]
+                        )
+                ,   Cmd.none
+                )
             Ok summaryList ->
                 let
                     -- TODO process all the armies
-                    waitingList = loadingArmiesList (List.take 5 summaryList)
+                    waitingList = loadingArmiesList (List.take 700 summaryList)
                 in
                     let 
-                        commands = List.map downloadArmy (Dict.values waitingList)
+                        commands =
+                            List.concat 
+                                [ 
+                                    List.map downloadArmy (ArmyIdTable.values waitingList)
+                                ,   List.map downloadThematicCategories (ArmyIdTable.values waitingList)
+                                ,   List.map downloadAllyOptions (ArmyIdTable.values waitingList)
+                                ]
                     in
-                    (LoadingArmies waitingList, Cmd.batch commands)
+                    (LoadingArmies 
+                        (LoadingData waitingList (ArmyIdTable.empty)), 
+                        Cmd.batch commands)
 
 
 downloadArmy: ArmyLoading -> Cmd Msg
@@ -612,79 +626,167 @@ downloadArmy armyLoading =
     in
         Http.get
             { 
-                url = String.concat ["http://localhost:5016/", armyLoading.id, ".army.json"]
+                url = String.concat ["http://localhost:5016/", armyLoading.id.id, ".army.json"]
                 , expect = Http.expectJson (ArmyReceived armyLoading.id) MeshweshDecoder.decodeArmy
             }
 
+downloadThematicCategories: ArmyLoading -> Cmd Msg
+downloadThematicCategories armyLoading =
+    let 
+        _ = Debug.log "Downloading thematic category " armyLoading.id
+    in
+        Http.get
+            { 
+                url = String.concat ["http://localhost:5016/", armyLoading.id.id, ".thematicCategories.json"]
+                , expect = Http.expectJson (ThematicCategoriesReceived armyLoading.id) MeshweshDecoder.decodeThematicCategories
+            }
+
+downloadAllyOptions: ArmyLoading -> Cmd Msg
+downloadAllyOptions armyLoading =
+    let 
+        _ = Debug.log "Downloading ally options " armyLoading.id
+    in
+        Http.get
+            { 
+                url = String.concat ["http://localhost:5016/", armyLoading.id.id, ".allyOptions.json"]
+                , expect = Http.expectJson (AllyOptionsReceived armyLoading.id) 
+                    (Decode.list MeshweshDecoder.decodeAllyOptions)
+            }
+
+
+
+isJust: Maybe a -> Bool
+isJust a =
+    case a of
+        Nothing -> False
+        Just _ -> True
 
 isFullyLoaded: ArmyLoading -> Bool
 isFullyLoaded armyLoading =
-    case armyLoading.armyDetails of
-        Nothing -> False
-        Just _ ->
-            if (not armyLoading.allyOptions) then
-                False
-            else
-                if (not armyLoading.thematicCategories) then
-                    False
-                else
-                    True
+    List.all (\x->x) [
+        isJust armyLoading.allyOptions, 
+        isJust armyLoading.thematicCategories, 
+        isJust armyLoading.armyDetails]
 
 
-updateWaiting: Dict String ArmyLoading -> ArmyLoading ->  ( Model, Cmd msg )
-updateWaiting waiting newEntry =
+updateWaiting: LoadingData -> ArmyLoading ->  ( Model, Cmd msg )
+updateWaiting loadingData newEntry =
     if (isFullyLoaded newEntry) then
-        (LoadingArmies (Dict.remove newEntry.id waiting), Cmd.none)
+        let 
+            newWaiting = ArmyIdTable.remove newEntry.id loadingData.waiting
+            newLoaded = ArmyIdTable.insert newEntry.id newEntry loadingData.loaded
+        in
+            if ArmyIdTable.isEmpty newWaiting then
+                (Loaded LoadedData, Cmd.none)
+            else
+                (LoadingArmies (LoadingData newWaiting newLoaded), Cmd.none)
     else
-        (LoadingArmies (Dict.update newEntry.id (\_ -> Just newEntry) waiting), Cmd.none)
-    
+        let 
+            newWaiting = ArmyIdTable.update newEntry.id (\_ -> Just newEntry) loadingData.waiting
+        in
+            (LoadingArmies (LoadingData newWaiting loadingData.loaded), Cmd.none)
 
-armyReceived: Dict String ArmyLoading -> MeshweshTypes.Army ->  ( Model, Cmd msg )
-armyReceived waiting newArmy =
+dataReceived: LoadingData -> MeshweshTypes.ArmyId -> dataType -> (ArmyLoading->dataType->ArmyLoading) -> ( Model, Cmd msg )
+dataReceived loadingData armyId data assignment =
     let
-        oldEntryMaybe = Dict.get newArmy.id waiting
+        oldEntryMaybe = ArmyIdTable.get armyId loadingData.waiting
     in
         case oldEntryMaybe of
             Nothing -> 
                 let 
-                    _ = (Debug.log "Ignoring army received that we are not waring for " newArmy.id)
+                    _ = (Debug.log "Ignoring army received that we are not waring for " armyId)
                 in
-                    (LoadingArmies waiting, Cmd.none)
+                    (LoadingArmies loadingData, Cmd.none)
             Just oldEntry ->
                 let 
-                    newEntry = { oldEntry | armyDetails= Just newArmy}
+                    newEntry = assignment oldEntry data
                 in
-                    updateWaiting waiting newEntry
+                    updateWaiting loadingData newEntry
 
-handleArmyReceivedMsg : a -> Result Http.Error Army -> PageStatus -> ( Model, Cmd msg )
-handleArmyReceivedMsg id result model =
+
+
+armyReceived: LoadingData -> MeshweshTypes.ArmyId -> MeshweshTypes.Army ->  ( Model, Cmd msg )
+armyReceived loadingData armyId newArmy =
+    dataReceived 
+        loadingData 
+        armyId 
+        newArmy 
+        (\oldEntry data -> { oldEntry | armyDetails= Just data})
+
+thematicCategoriesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ThematicCategory ->  ( Model, Cmd msg )
+thematicCategoriesReceived loadingData armyId newCategories =
+    dataReceived 
+        loadingData 
+        armyId 
+        newCategories 
+        (\oldEntry data -> { oldEntry | thematicCategories= Just data})
+
+
+allyOptionsReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.AllyOptions ->  ( Model, Cmd msg )
+allyOptionsReceived loadingData armyId newAllyOptions =
+    dataReceived 
+        loadingData 
+        armyId 
+        newAllyOptions 
+        (\oldEntry data -> { oldEntry | allyOptions= Just data})
+
+dataReceivedErrorMessage: String -> String -> MeshweshTypes.ArmyId -> Model -> (Model, Cmd msg)
+dataReceivedErrorMessage state dataTypeName armyId model =
     let
-        _ = Debug.log "Received army" id
+        _ = Debug.log ("Data received while " ++ state) (String.concat [dataTypeName, " ", armyId.id])
+    in
+        (model, Cmd.none)
+
+handleDataReceivedReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error dataTypeReceived -> Model -> (LoadingData -> MeshweshTypes.ArmyId -> dataTypeReceived ->  ( Model, Cmd msg )) -> String -> ( Model, Cmd msg )
+handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
+    let
+        _ = Debug.log "Received army" armyId.id
     in
         case result of
             Ok newArmy -> 
                 case model of
-                    LoadingArmies waiting ->  armyReceived waiting newArmy
+                    LoadingArmies loadingData ->  modelUpdater loadingData armyId newArmy
 
                     Unloaded -> 
-                         Debug.log "Army received while Unloaded"
-                         (model, Cmd.none)
+                        dataReceivedErrorMessage "Unloaded"  dataTypeName  armyId model
 
                     LoadingSummary ->
-                         Debug.log "Army received while LoadingSummary"
-                         (model, Cmd.none)
+                        dataReceivedErrorMessage "LoadingSummary"  dataTypeName  armyId model
 
-                    Loaded ->
-                         Debug.log "Army received while Loaded"
-                         (model, Cmd.none)
+                    Loaded _ ->
+                        dataReceivedErrorMessage "Loaded" dataTypeName armyId model
 
                     Error _ ->
-                         Debug.log "Army received while already in Error"
-                         (model, Cmd.none)
+                        dataReceivedErrorMessage "Error" dataTypeName armyId model
 
             Err httpError -> 
-                (Error (httpErrorToString httpError), Cmd.none)
+                (
+                    Error 
+                    (String.concat 
+                        [
+                            "Army "
+                        ,   armyId.id
+                        ,   ": "
+                        ,  (httpErrorToString httpError)
+                        ])
+                ,   Cmd.none
+                )
 
+
+
+handleArmyReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error Army -> Model -> ( Model, Cmd msg )
+handleArmyReceivedMsg armyId result model =
+    handleDataReceivedReceivedMsg armyId result model armyReceived "Army"
+
+
+handleThematicCategoriesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ThematicCategory) -> Model -> ( Model, Cmd msg )
+handleThematicCategoriesReceivedMsg armyId result model =
+    handleDataReceivedReceivedMsg armyId result model thematicCategoriesReceived "Thematic Category"
+
+
+handleAllyOptionsReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.AllyOptions) -> Model -> ( Model, Cmd msg )
+handleAllyOptionsReceivedMsg armyId result model =
+    handleDataReceivedReceivedMsg armyId result model allyOptionsReceived "Thematic Category"
 
 
 main : Program () Model Msg

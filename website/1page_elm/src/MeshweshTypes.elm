@@ -1,6 +1,12 @@
 module MeshweshTypes exposing (..)
 import Json.Decode exposing (int)
+import Css exposing (All)
 
+type alias ArmyId =
+  {
+    id: String
+  }
+  
 type alias DerivedData =
   {
     listStartDate: Int
@@ -10,7 +16,7 @@ type alias DerivedData =
 
 type alias Summary =
   {
-    id: String
+    id: ArmyId
   , name: String
   , keywords: List String
   , derivedData: DerivedData
@@ -39,8 +45,11 @@ type alias HomeTopography =
   , note: Maybe String
   }
 
-type TroopTypeCode = ARC | BAD | BLV | BTX | CAT | CHT | ECV | EFT | ELE 
-  | HBW | HFT | JCV | KNT | LFT | LSP | PAV | PIK | RBL | RDR | SKM | SPR | WBD
+type TroopTypeCode = 
+    ARC | ART | BAD | BLV | BTX | CAT | CHT 
+  | ECV | EFT | ELE 
+  | HBW | HFT | HRD 
+  | JCV | KNT | LFT | LSP | PAV | PIK | RBL | RDR | SKM | SPR | WBD
   | WRR | WWG
 
 type alias TroopEntry = 
@@ -51,13 +60,20 @@ type alias TroopEntry =
   , note: Maybe String
   }
 
-type BattleCardCode = AM | DC | FC  | MI | NC | PD | PT | SC | SW
+type BattleCardCode = 
+    AC | AM | CC | CF | CT | CH 
+  | DC | DD
+  | ES | ET | FC  
+  | HD | HL 
+  | LC | MD | MI 
+  | NC | PD | PL | PT 
+  | SB | SC | SF | SP | SS | SV | SW
 
 type alias BattleCardEntry =
   {
     -- _id: String
-    min: Maybe Int
-  , max: Maybe Int
+    min: Int
+  , max: Int
   , battleCardCode: BattleCardCode
   , note: Maybe String
   }
@@ -77,6 +93,19 @@ type alias DateRangeEntry =
   , endDate: Int
   }
 
+type alias AllyEntryReference =
+  {
+    name: String
+  , allyArmyList: ArmyId
+  }
+
+type alias AllyOptionEntry =
+  {
+    dateRange: Maybe DateRangeEntry
+  , note: Maybe String
+  , allyEntries: List AllyEntryReference
+  }
+
 type alias TroopOptionEntry =
   {
     -- id: String
@@ -87,11 +116,12 @@ type alias TroopOptionEntry =
   , description: String
   , note: Maybe String
   , core: String
+  , battleCardEntries: List BattleCardEntry
   }
 
 type alias Army =
   { 
-    id : String
+    id : ArmyId
   , keywords: List String
   , derivedData: DerivedData
   , name: String   
@@ -101,6 +131,13 @@ type alias Army =
   , troopEntriesForGeneral: List TroopEntriesList
   , battleCardEntries: List BattleCardEntry
   , troopOptions: List TroopOptionEntry
+  , allyOptions: List AllyOptionEntry
+  }
+
+-- Category that an army belongs to.
+type alias ThematicCategory =
+  { id : String
+  , name : String
   }
 
   
@@ -109,3 +146,25 @@ type alias Theme =
   , name : String
   , armies: List Army
   }
+
+type alias AllyArmyList =
+  {
+    name: String
+  , dateRange: Maybe DateRangeEntry
+  , troopOptions: List TroopOptionEntry
+  }
+
+type alias AllyEntry =
+  {
+    name: String
+  , allyArmyList: AllyArmyList
+  }
+
+type alias AllyOptions =
+  {
+    dateRange: Maybe DateRangeEntry
+  , note: Maybe String
+  , allyEntries: List AllyEntry
+  }
+
+  

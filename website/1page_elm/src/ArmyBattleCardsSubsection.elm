@@ -34,20 +34,27 @@ tdMaybe maybeSstring =
 
 countTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 countTd battleCard =
-    case battleCard.min of
-        Nothing -> tdMaybe (battleCard.max |> Maybe.map String.fromInt)
-        Just minValue ->
-            case battleCard.max of 
-                Nothing -> td (String.fromInt minValue)
-                Just maxValue ->
-                    (String.concat 
-                        [ 
-                            (String.fromInt minValue)
+    if battleCard.min == battleCard.max then
+        if battleCard.min == 1 then
+            Html.td [] []
+        else
+            Html.td 
+                [] 
+                [ Html.text (String.fromInt battleCard.min) ]
+    else
+        Html.td 
+            [] 
+            [ 
+                Html.text 
+                    ( String.concat
+                        [
+                            (String.fromInt battleCard.min)
                         ,   " - "
-                        ,   (String.fromInt maxValue)
-                        ]) 
-                    |>
-                    td
+                        ,    (String.fromInt battleCard.min)
+                        ]
+                    )
+            ]
+
 
 nameTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 nameTd battlecard =

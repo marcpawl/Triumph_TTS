@@ -51,7 +51,7 @@ testSummary =
             Expect.equal 
                 actual
                 (Ok (MeshweshTypes.Summary 
-                        "6153508f03385c0016b82744" 
+                        (MeshweshTypes.ArmyId "6153508f03385c0016b82744")
                         "North Maritime First Nations" 
                         ["word1", "word2"]
                         (MeshweshTypes.DerivedData 1100 1770 "North Maritime First Nations  1100 to 1770 AD")

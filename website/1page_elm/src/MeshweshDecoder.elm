@@ -20,6 +20,14 @@ import Json.Decode exposing (succeed)
 import Json.Decode exposing (fail)
 import String.Extra
 
+decodeArmyIdHelp : String -> Decoder MeshweshTypes.ArmyId
+decodeArmyIdHelp id =
+    Decode.succeed (MeshweshTypes.ArmyId id)
+
+decodeArmyId : Decoder MeshweshTypes.ArmyId
+decodeArmyId =
+    string |> Decode.andThen decodeArmyIdHelp
+
 
 decodeSummaryList: Decoder (List MeshweshTypes.Summary)
 decodeSummaryList =
@@ -28,7 +36,7 @@ decodeSummaryList =
 decodeSummary : Decoder MeshweshTypes.Summary
 decodeSummary =
     map4 MeshweshTypes.Summary
-        (field "id" string)
+        (field "id" decodeArmyId)
         (field "name" string)
         (field "keywords" (list string))
         (field "derivedData" decodeDerivedData)
@@ -108,6 +116,7 @@ decodeTroopTypeCodeHelp : String -> Decoder MeshweshTypes.TroopTypeCode
 decodeTroopTypeCodeHelp troopTypeString =
         case troopTypeString of
             "ARC" -> (Decode.succeed MeshweshTypes.ARC)
+            "ART" -> (Decode.succeed MeshweshTypes.ART)
             "BAD"   -> (Decode.succeed MeshweshTypes.BAD)
             "BLV" ->   (Decode.succeed MeshweshTypes.BLV)
             "BTX"  -> (Decode.succeed MeshweshTypes.BTX)
@@ -118,12 +127,14 @@ decodeTroopTypeCodeHelp troopTypeString =
             "ELE" -> (Decode.succeed MeshweshTypes.ELE)
             "HBW" -> (Decode.succeed MeshweshTypes.HBW)
             "HFT" -> (Decode.succeed MeshweshTypes.HFT)
+            "HRD" -> (Decode.succeed MeshweshTypes.HRD)
             "JCV" -> (Decode.succeed MeshweshTypes.JCV)
             "KNT" -> (Decode.succeed MeshweshTypes.KNT)
             "LFT" -> (Decode.succeed MeshweshTypes.LFT)
             "LSP" -> (Decode.succeed MeshweshTypes.LSP)
             "PAV" -> (Decode.succeed MeshweshTypes.PAV)
-            "RBL" -> (Decode.succeed MeshweshTypes.PIK)
+            "PIK" -> (Decode.succeed MeshweshTypes.PIK)
+            "RBL" -> (Decode.succeed MeshweshTypes.RBL)
             "RDR" -> (Decode.succeed MeshweshTypes.RDR)
             "SKM" -> (Decode.succeed MeshweshTypes.SKM)
             "SPR" -> (Decode.succeed MeshweshTypes.SPR)
@@ -172,16 +183,34 @@ decodeDerivedData2 =
 decodeBattleCardCodeHelp : String -> Decoder MeshweshTypes.BattleCardCode
 decodeBattleCardCodeHelp battleCardCode =
     case battleCardCode of
+        "AC" -> (Decode.succeed MeshweshTypes.AC)
         "AM" -> (Decode.succeed MeshweshTypes.AM)
+        "CC"   -> (Decode.succeed MeshweshTypes.CC)
+        "CF"   -> (Decode.succeed MeshweshTypes.CF)
+        "CH"   -> (Decode.succeed MeshweshTypes.CH)
+        "CT"   -> (Decode.succeed MeshweshTypes.CT)
         "DC"   -> (Decode.succeed MeshweshTypes.DC)
+        "DD"   -> (Decode.succeed MeshweshTypes.DD)
+        "ES"   -> (Decode.succeed MeshweshTypes.ES)
+        "ET"   -> (Decode.succeed MeshweshTypes.ET)
         "FC" ->   (Decode.succeed MeshweshTypes.FC)
+        "HD" ->   (Decode.succeed MeshweshTypes.HD)
+        "HL" ->   (Decode.succeed MeshweshTypes.HL)
+        "LC" ->   (Decode.succeed MeshweshTypes.LC)
+        "MD"  -> (Decode.succeed MeshweshTypes.MD)
         "MI"  -> (Decode.succeed MeshweshTypes.MI)
         "NC" -> (Decode.succeed MeshweshTypes.NC)
         "PD" -> (Decode.succeed MeshweshTypes.PD)
+        "PL" -> (Decode.succeed MeshweshTypes.PL)
         "PT" -> (Decode.succeed MeshweshTypes.PT)
+        "SB" -> (Decode.succeed MeshweshTypes.SB)
         "SC" -> (Decode.succeed MeshweshTypes.SC)
+        "SF" -> (Decode.succeed MeshweshTypes.SF)
+        "SP" -> (Decode.succeed MeshweshTypes.SP)
+        "SS" -> (Decode.succeed MeshweshTypes.SS)
+        "SV" -> (Decode.succeed MeshweshTypes.SV)
         "SW" -> (Decode.succeed MeshweshTypes.SW)
-        _ -> ( fail ("Invalid battle card code" ++ battleCardCode))
+        _ -> ( fail ("Invalid battle card code " ++ battleCardCode))
 
 decodeBattleCardCode : Decoder MeshweshTypes.BattleCardCode
 decodeBattleCardCode =
@@ -192,17 +221,36 @@ decodeBattleCardEntry: Decoder MeshweshTypes.BattleCardEntry
 decodeBattleCardEntry =
      Decode.succeed MeshweshTypes.BattleCardEntry
         -- |> required  "id" string
-        |> required "min" (Decode.maybe int)
-        |> required "max" (Decode.maybe int)
+        |> optional "min" int 1
+        |> optional "max" int 1
         |> required "battleCardCode" decodeBattleCardCode
         |> required "note" decodeNote
 
 
+-- Date Range Entry as it is served by Meshwesh
+type alias DateRangeEntryRaw =
+    {
+        start: Int
+    ,   maybeEnd: Maybe Int
+    }
+
+decodeDateRangeEntryHelp: DateRangeEntryRaw -> Decoder MeshweshTypes.DateRangeEntry
+decodeDateRangeEntryHelp raw =
+    case raw.maybeEnd of
+        Nothing -> Decode.succeed (MeshweshTypes.DateRangeEntry raw.start raw.start)
+        Just end -> Decode.succeed (MeshweshTypes.DateRangeEntry raw.start end)
+        
+
+decodeDateRangeEntryRaw: Decoder DateRangeEntryRaw
+decodeDateRangeEntryRaw =       
+   Decode.succeed DateRangeEntryRaw
+        |> required  "startDate" int
+        |> optional  "endDate" (Decode.maybe int)  Nothing
+
+
 decodeDateRangeEntry: Decoder MeshweshTypes.DateRangeEntry
 decodeDateRangeEntry =
-     Decode.succeed MeshweshTypes.DateRangeEntry
-        |> required  "startDate" int
-        |> required  "endDate" int
+    decodeDateRangeEntryRaw |> Decode.andThen decodeDateRangeEntryHelp
 
 
 decodeTroopOptionEntry: Decoder MeshweshTypes.TroopOptionEntry
@@ -215,13 +263,26 @@ decodeTroopOptionEntry =
         |> required "description" string
         |> required "note" decodeNote
         |> required "core" string
+        |> required "battleCardEntries" (list decodeBattleCardEntry)
 
+decodeAllyEntryReference : Decoder MeshweshTypes.AllyEntryReference
+decodeAllyEntryReference =
+     Decode.succeed MeshweshTypes.AllyEntryReference
+        |> required  "name" string
+        |> required  "allyArmyList" decodeArmyId
+
+decodeAllyOptionEntry: Decoder MeshweshTypes.AllyOptionEntry
+decodeAllyOptionEntry =
+     Decode.succeed MeshweshTypes.AllyOptionEntry
+        |> optional  "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
+        |> required  "note" decodeNote
+        |> required  "allyEntries" (list decodeAllyEntryReference)
 
 
 decodeArmy : Decoder MeshweshTypes.Army
 decodeArmy =
      Decode.succeed MeshweshTypes.Army
-        |> required  "id" string
+        |> required  "id" decodeArmyId
         |> required "keywords" (list string)
         |> (required "derivedData" decodeDerivedData2)
         -- -- |> required "sortId" float
@@ -232,3 +293,38 @@ decodeArmy =
         |> required "troopEntriesForGeneral" (list (decodeTroopEntriesList))
         |> required "battleCardEntries" (list decodeBattleCardEntry)
         |> required "troopOptions" (list decodeTroopOptionEntry)
+        |> required "allyOptions" (list decodeAllyOptionEntry)
+
+
+decodeThematicCategory : Decoder MeshweshTypes.ThematicCategory
+decodeThematicCategory =
+     Decode.succeed MeshweshTypes.ThematicCategory
+        |> required  "id" string
+        |> required  "name" string
+
+decodeThematicCategories : Decoder (List MeshweshTypes.ThematicCategory)
+decodeThematicCategories =
+    Decode.list decodeThematicCategory
+
+decodeAllyArmyList: Decoder MeshweshTypes.AllyArmyList
+decodeAllyArmyList =
+    Decode.succeed MeshweshTypes.AllyArmyList
+        |> required "name" string
+        |> optional "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
+        |> required "troopOptions" (list decodeTroopOptionEntry)
+
+
+decodeAllyEntry: Decoder MeshweshTypes.AllyEntry
+decodeAllyEntry =
+    Decode.succeed MeshweshTypes.AllyEntry
+        |> required "name" string
+        |> required "allyArmyList" decodeAllyArmyList
+
+decodeAllyOptions: Decoder MeshweshTypes.AllyOptions
+decodeAllyOptions =
+    Decode.succeed MeshweshTypes.AllyOptions
+        |> optional  "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
+        |> required  "note" decodeNote
+        |> required "allyEntries" (list decodeAllyEntry)
+
+
