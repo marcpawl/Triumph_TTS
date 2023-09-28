@@ -18,6 +18,7 @@ import Notes
 import MeshweshDecoder
 import Json.Decode
 import Debug
+import Url exposing (Url)
 import Dict exposing (Dict)
 import ArmyIdTable
 
@@ -29,7 +30,7 @@ type alias Model =
 
 
 type PageStatus
-    = Unloaded
+    = Unloaded Url
     | LoadingSummary
     | LoadingArmies LoadingData
     | Loaded LoadedData
@@ -64,13 +65,19 @@ type alias ThemeLoaded =
 
 type alias LoadedData =
     {
+        armies: ArmyIdTable.Table ArmyLoading
     }
 
 
-init : Model
-init =
-    Unloaded
-
+-- href is the URL of the loaded page
+init : String -> Model
+init href =
+    let
+        urlMaybe = Url.fromString(href)
+    in
+        case urlMaybe of
+            Nothing -> Error ("Initial page is not valid: " ++ href)
+            Just url -> Unloaded url
 
 
 -- UPDATE
@@ -202,7 +209,7 @@ errorView errorMessage =
 
 view model =
         case model of
-            Unloaded -> unloadedView
+            Unloaded _ -> unloadedView
             LoadingSummary -> loadingSummaryView
             LoadingArmies loadingData -> loadingArmiesView loadingData
             Loaded loadedData -> loadedView loadedData
@@ -566,11 +573,19 @@ formattedDateRange startDate endDate =
             , formattedDate endDate
             ]
 
+-- Return the URL for a file in the ArmyLists directory
+armyListsUrl: String -> String
+armyListsUrl file =
+    String.concat
+        [
+            "http://localhost:5016/armyLists/"
+        ,   file
+        ]
 
 downloadSummary:   Cmd Msg
 downloadSummary =
     Http.get
-        { url = "http://localhost:5016/summary.json"
+        { url = (armyListsUrl "summary.json")
         , expect = Http.expectString SummaryReceived
         }
 
@@ -626,7 +641,7 @@ downloadArmy armyLoading =
     in
         Http.get
             { 
-                url = String.concat ["http://localhost:5016/", armyLoading.id.id, ".army.json"]
+                url = armyListsUrl (String.concat [armyLoading.id.id, ".army.json"])
                 , expect = Http.expectJson (ArmyReceived armyLoading.id) MeshweshDecoder.decodeArmy
             }
 
@@ -637,7 +652,7 @@ downloadThematicCategories armyLoading =
     in
         Http.get
             { 
-                url = String.concat ["http://localhost:5016/", armyLoading.id.id, ".thematicCategories.json"]
+                url = armyListsUrl( String.concat [armyLoading.id.id, ".thematicCategories.json"])
                 , expect = Http.expectJson (ThematicCategoriesReceived armyLoading.id) MeshweshDecoder.decodeThematicCategories
             }
 
@@ -648,7 +663,7 @@ downloadAllyOptions armyLoading =
     in
         Http.get
             { 
-                url = String.concat ["http://localhost:5016/", armyLoading.id.id, ".allyOptions.json"]
+                url = armyListsUrl (String.concat [armyLoading.id.id, ".allyOptions.json"])
                 , expect = Http.expectJson (AllyOptionsReceived armyLoading.id) 
                     (Decode.list MeshweshDecoder.decodeAllyOptions)
             }
@@ -677,7 +692,7 @@ updateWaiting loadingData newEntry =
             newLoaded = ArmyIdTable.insert newEntry.id newEntry loadingData.loaded
         in
             if ArmyIdTable.isEmpty newWaiting then
-                (Loaded LoadedData, Cmd.none)
+                (Loaded (LoadedData newLoaded), Cmd.none)
             else
                 (LoadingArmies (LoadingData newWaiting newLoaded), Cmd.none)
     else
@@ -747,7 +762,7 @@ handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
                 case model of
                     LoadingArmies loadingData ->  modelUpdater loadingData armyId newArmy
 
-                    Unloaded -> 
+                    Unloaded _ -> 
                         dataReceivedErrorMessage "Unloaded"  dataTypeName  armyId model
 
                     LoadingSummary ->

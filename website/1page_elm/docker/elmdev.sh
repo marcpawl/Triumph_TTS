@@ -1,3 +1,2 @@
 #!/bin/bash -ex
-cd /Triumph_TTS/fake_meshwesh/armyLists
-http-server . -a 0.0.0.0 -p 5016
+http-server /Triumph_TTS/website/1page_elm -a 0.0.0.0 -p 5016 -i --cors 
