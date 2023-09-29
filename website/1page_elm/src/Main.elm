@@ -21,6 +21,7 @@ import Debug
 import Url exposing (Url)
 import Dict exposing (Dict)
 import ArmyIdTable
+import LoadedData exposing (ArmyLoaded, LoadedData)
 
 -- MODEL
 
@@ -54,28 +55,7 @@ type alias ArmyLoading =
     ,   thematicCategories: Maybe (List MeshweshTypes.ThematicCategory)  -- Nothing indicates waiting for response
   }
 
-type alias ArmyLoaded =
-    {
-        id: MeshweshTypes.ArmyId
-    ,   armyName: String
-    ,   armyDetails: MeshweshTypes.Army 
-    ,   allyOptions: (List MeshweshTypes.AllyOptions) 
-    ,   thematicCategories: (List MeshweshTypes.ThematicCategory)
-  }
 
-
--- Armies that belong to a theme  
-type alias ThemeLoaded =
-  { id : String
-  , name : String
-  , armies: List Army
-  }
-
-
-type alias LoadedData =
-    {
-        armies: ArmyIdTable.Table ArmyLoaded
-    }
 
 
 -- href is the URL of the loaded page
