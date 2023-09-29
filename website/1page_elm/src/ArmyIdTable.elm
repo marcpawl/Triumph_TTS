@@ -1,6 +1,7 @@
 -- Wrapper around dict to take ArmyId as the key
 
-module ArmyIdTable exposing ( Table, empty, fromList, get, insert, isEmpty, remove, update, values)
+module ArmyIdTable exposing ( Table, empty, fromList, get, insert, isEmpty, remove,
+  toList, update, values)
 
 
 import Dict exposing (Dict)
@@ -28,6 +29,12 @@ fromList list =
       ) 
       |> Dict.fromList
     )
+
+toList : Table info -> List ( ArmyId, info )
+toList (Table dict) =
+  List.map
+    (\(string,data)->(ArmyId string, data))
+    (Dict.toList dict)
 
 get : ArmyId -> Table info -> Maybe info
 get armyId (Table  dict) =
