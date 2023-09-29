@@ -41,7 +41,7 @@ type alias LoadingData =
         -- Army we are waiting for
         waiting: ArmyIdTable.Table  ArmyLoading
         -- Armies that have all their data.
-    ,   loaded: ArmyIdTable.Table ArmyLoading
+    ,   loaded: ArmyIdTable.Table ArmyLoaded
     }
 
 -- Army that is waiting for a file to load.
@@ -52,6 +52,15 @@ type alias ArmyLoading =
     ,   armyDetails: Maybe MeshweshTypes.Army -- Nothing indicates waiting for response
     ,   allyOptions: Maybe (List MeshweshTypes.AllyOptions) -- Nothing indicates waiting for response
     ,   thematicCategories: Maybe (List MeshweshTypes.ThematicCategory)  -- Nothing indicates waiting for response
+  }
+
+type alias ArmyLoaded =
+    {
+        id: MeshweshTypes.ArmyId
+    ,   armyName: String
+    ,   armyDetails: MeshweshTypes.Army 
+    ,   allyOptions: (List MeshweshTypes.AllyOptions) 
+    ,   thematicCategories: (List MeshweshTypes.ThematicCategory)
   }
 
 
@@ -65,7 +74,7 @@ type alias ThemeLoaded =
 
 type alias LoadedData =
     {
-        armies: ArmyIdTable.Table ArmyLoading
+        armies: ArmyIdTable.Table ArmyLoaded
     }
 
 
@@ -187,11 +196,12 @@ armyLoadingView armyLoading =
         ]
 
 loadedView: LoadedData -> Html.Html msg
-loadedView _ =
+loadedView loadedData =
     Html.div
         []
         [
             Html.text "TODO display LOADED view"
+        ,   partArmyLists loadedData 
         ]
 
 errorView: String -> Html.Html msg
@@ -618,7 +628,7 @@ downloadArmies summaryString =
             Ok summaryList ->
                 let
                     -- TODO process all the armies
-                    waitingList = loadingArmiesList (List.take 700 summaryList)
+                    waitingList = loadingArmiesList (List.take 5 summaryList)
                 in
                     let 
                         commands =
@@ -683,23 +693,65 @@ isFullyLoaded armyLoading =
         isJust armyLoading.thematicCategories, 
         isJust armyLoading.armyDetails]
 
+toArmyLoaded: ArmyLoading -> Maybe ArmyLoaded
+toArmyLoaded armyLoading =
+    case armyLoading.armyDetails of
+        Nothing -> Nothing
+        Just armyDetails ->
+            (case armyLoading.allyOptions of
+                Nothing -> Nothing
+                Just allyOptions ->
+                    (case armyLoading.thematicCategories of
+                        Nothing -> Nothing
+                        Just thematicCategories -> 
+                            Just (ArmyLoaded
+                                    armyLoading.id
+                                    armyLoading.armyName 
+                                    armyDetails
+                                    allyOptions
+                                    thematicCategories)
+                    )
+            )
 
+
+-- Update the loading date for the reception of new data
+-- loadingData: The model before the new data
+-- newEntry: The data that has been received
+-- returns the new model
+updateLoadingData: LoadingData -> ArmyLoading -> LoadingData
+updateLoadingData loadingData newEntry =
+    let 
+        newLoadedEntryMaybe = toArmyLoaded newEntry
+    in
+        case newLoadedEntryMaybe of
+            Nothing ->
+                -- update the existing waiting entry
+                let 
+                    newWaiting = ArmyIdTable.update newEntry.id (\_ -> Just newEntry) loadingData.waiting
+                in
+                    LoadingData newWaiting loadingData.loaded
+            Just newLoadedEntry ->
+                let
+                    newWaiting = ArmyIdTable.remove newEntry.id loadingData.waiting
+                    newLoaded = ArmyIdTable.insert newLoadedEntry.id newLoadedEntry loadingData.loaded
+                in
+                    LoadingData newWaiting newLoaded
+
+
+-- Update the mode while we are waiting for data
+-- loadingData: Model before the new data
+-- newEntry: data received
+-- new model an command to enact
 updateWaiting: LoadingData -> ArmyLoading ->  ( Model, Cmd msg )
 updateWaiting loadingData newEntry =
-    if (isFullyLoaded newEntry) then
-        let 
-            newWaiting = ArmyIdTable.remove newEntry.id loadingData.waiting
-            newLoaded = ArmyIdTable.insert newEntry.id newEntry loadingData.loaded
-        in
-            if ArmyIdTable.isEmpty newWaiting then
-                (Loaded (LoadedData newLoaded), Cmd.none)
-            else
-                (LoadingArmies (LoadingData newWaiting newLoaded), Cmd.none)
-    else
-        let 
-            newWaiting = ArmyIdTable.update newEntry.id (\_ -> Just newEntry) loadingData.waiting
-        in
-            (LoadingArmies (LoadingData newWaiting loadingData.loaded), Cmd.none)
+    let
+        newLoadingData = updateLoadingData loadingData newEntry
+    in
+        if (ArmyIdTable.isEmpty newLoadingData.waiting) then
+            (Loaded (LoadedData newLoadingData.loaded), Cmd.none)
+        else
+            (LoadingArmies newLoadingData, Cmd.none)
+
 
 dataReceived: LoadingData -> MeshweshTypes.ArmyId -> dataType -> (ArmyLoading->dataType->ArmyLoading) -> ( Model, Cmd msg )
 dataReceived loadingData armyId data assignment =
@@ -802,6 +854,90 @@ handleThematicCategoriesReceivedMsg armyId result model =
 handleAllyOptionsReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.AllyOptions) -> Model -> ( Model, Cmd msg )
 handleAllyOptionsReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model allyOptionsReceived "Thematic Category"
+
+-- Part of a book, collection of chapters
+part: String -> List (Html msg) -> Html msg
+part partTitle chapters =
+    Html.div
+        [
+            Html.Attributes.class "part"
+        ]
+        (
+            List.append
+                [
+                    page [Html.text partTitle]
+                ]
+                chapters
+        )
+
+chapter: String-> List (Html msg) -> Html msg
+chapter chapterTitle body =
+    Html.div
+        [
+            Html.Attributes.class "chapter"
+        ]
+        (
+            List.append
+                [
+                    page [Html.text chapterTitle]
+                ]
+                body
+        )
+
+
+-- Page Break
+page: List (Html msg) -> Html msg
+page body =
+    Html.div
+        [
+            Html.Attributes.class "page"
+        ]
+        body
+
+
+
+partArmyLists: LoadedData -> Html msg
+partArmyLists loadedData =
+    let
+        _ = Debug.log "In partArmyLists" loadedData
+    in
+        part
+            "Army Lists"
+            (chaptersForAllArmies loadedData)
+
+
+compare: String -> String -> Order
+compare aa bb =
+    if aa < bb then
+        LT
+    else if aa == bb then
+        EQ
+    else
+        GT
+
+
+-- compareArmyName: MeshweshTypes.Army -> MeshweshTypes.Army -> Order
+compareArmyName a b =
+    compare a.derivedData.extendedName b.derivedData.extendedName
+
+
+-- Create chapters for all the armies.
+-- Each army gets one chapter.
+chaptersForAllArmies: LoadedData -> List (Html msg)
+chaptersForAllArmies loadedData =
+    List.map
+        chapterArmy
+        -- TODO sort by name
+        (ArmyIdTable.values loadedData.armies)
+
+-- 1 chapter for an army
+chapterArmy: ArmyLoaded -> Html msg
+chapterArmy army  =
+    chapter 
+        "TODO ARMY NAME" -- summary.derivedData.extendedName
+        [
+            Html.text "TODO army details"
+        ]
 
 
 main : Program () Model Msg
