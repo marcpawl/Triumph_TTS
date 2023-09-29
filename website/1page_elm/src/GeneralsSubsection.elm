@@ -1,5 +1,6 @@
 module GeneralsSubsection exposing (..)
 
+import Debug
 import Browser
 import Css exposing (bold, em, fontWeight, padding, px)
 import Html exposing (Html, button, div, text)
@@ -12,13 +13,10 @@ import Json.Decode as Decode exposing (Decoder)
 import List
 import MeshweshTypes exposing (..)
 import Platform.Cmd as Cmd
-import TroopTypeCode exposing (render)
+import TroopTypeCode exposing (name)
 import Notes
 import List exposing (length)
-
-toTroopTypeCodeName: TroopEntry -> String
-toTroopTypeCodeName troopEntry =
-  TroopTypeCode.name (troopEntry.troopTypeCode)
+import BookParts exposing (..)
 
 toNoteString: TroopEntry -> String
 toNoteString troopEntry =
@@ -39,11 +37,6 @@ renderTroopEntry troopEntry =
     ,   Notes.render troopEntry.note
     ]
 
--- Render the list of Troop Entries, when there is only one list
--- list of Html.tr
-render1List: List TroopEntry -> List (Html.Html msg)
-render1List troopEntryList =
-    List.map renderTroopEntry troopEntryList
 
 -- Format the string that will list all the troop types 
 -- for a list, when there is more than one type.
@@ -58,52 +51,23 @@ removeNothingFromList : List (Maybe a) -> List a
 removeNothingFromList list =
     List.filterMap identity list
 
--- list of Html.tr
-renderListForMany: String -> List TroopEntry -> List (Html.Html msg)
-renderListForMany seperator list =
-  [
-    Html.tr
-      []
-      [
-        Html.td
-          []
-          [
-            Html.text (stringListForMany seperator toTroopTypeCodeName list)
-          ]
-      ,   Html.td
-          []
-          [
-            Html.text 
-               (String.join 
-                 "; "
-                 (removeNothingFromList 
-                   (List.map .note list)))
-          ]
 
-      ]
-  ]
+toTroopTypeNameString: TroopEntry -> String
+toTroopTypeNameString troopEntry =
+  TroopTypeCode.name (troopEntry.troopTypeCode)
 
--- Get the strings for the troop types.
--- Each entry is for a row in the table.
--- If there is only one list then each troop entry is one string.
--- If there is more than one list the each string represents one 
--- list of troop entries.
-toTroopEntryStrings: String -> (TroopEntry -> String) -> List (List TroopEntry) -> List String
-toTroopEntryStrings seperator fieldExtractor listOfLists =
-    case List.head listOfLists of
-        Nothing -> [] -- ERROR
-        Just head ->
-            case List.tail listOfLists of
-              Nothing -> 
-                -- only 1 list
-                (List.map fieldExtractor head)
-              Just _ ->
-                -- more than 1 list
-                (List.map (stringListForMany seperator fieldExtractor) listOfLists)
+orTogetheredTroopTypeames: TroopEntriesList -> String
+orTogetheredTroopTypeames troopEntryList =
+  ( List.map
+      (\troopEntry->toTroopTypeNameString troopEntry)
+      troopEntryList.troopEntries
+  ) |> (String.join ", or ")
+        
 
-toTroopTypeCodeNameStrings: List (List TroopEntry) -> List String
-toTroopTypeCodeNameStrings listOfLists  =
-  toTroopEntryStrings " or " toTroopTypeCodeName listOfLists
+toTroopTypeNameStrings: List TroopEntriesList -> List String
+toTroopTypeNameStrings listOfLists  =
+    List.map orTogetheredTroopTypeames listOfLists
+
 
 hasValue: (Maybe a) -> Bool
 hasValue a =
@@ -118,32 +82,18 @@ hasValue a =
 -- one string
 -- post-conditions:
 --   length of result is less than or equal to length list.
-toNotesListString: List TroopEntry ->  String
+toNotesListString: TroopEntriesList->  String
 toNotesListString list =
-  (List.map .note list) |> 
+  (List.map .note list.troopEntries) |> 
   (List.filter hasValue) |> 
   (List.map (Maybe.withDefault "")) |>
   (String.join "; ")
 
 -- For each list of entries, find the string that
 -- is the joining of the notes
-toTroopNoteStrings: List (List TroopEntry) -> List String
+toTroopNoteStrings: List TroopEntriesList -> List String
 toTroopNoteStrings listOfLists  =
   List.map toNotesListString listOfLists
-
-ifOtherwise: Int -> List TroopEntry -> String
-ifOtherwise index _ =
-  if index == 0 then
-    "If present"
-  else
-    "Otherwise"
-
-toPrefixStrings: List (List MeshweshTypes.TroopEntry) -> List String
-toPrefixStrings listOfLists  =
-    if (List.length listOfLists) == 1 then
-      [ "" ]
-    else
-      List.indexedMap ifOtherwise listOfLists
 
    
 toTableRowContents: List MeshweshTypes.TroopEntriesList -> List (String,String,String)
@@ -172,21 +122,101 @@ toTableRow (a,b,c) =
       ]
 
 
-subsectionRendered: Army -> Html.Html msg
-subsectionRendered army =
-    Html.div []
-        [ Html.div
-            [
-                Html.Attributes.class "general_troop_type_subsection_header"
-            ]
-            [ Html.text "General's Troop Type"
-            ]
-        , Html.table
-            []
-            [ 
-                Html.tbody
-                    []
-                    (List.map toTableRow (toTableRowContents army.troopEntriesForGeneral))
-            ]
-        ]
+toTable: List (String, String, String) -> Html.Html msg
+toTable rowData =
+  Html.table
+    []
+    [ 
+      Html.tbody
+        []
+        (List.map toTableRow rowData)
+    ]
+  
 
+ifPresentList: List a -> List String
+ifPresentList list =
+  if (List.length list) == 1 then
+    [""]
+  else
+    List.append 
+      ["If Present"] 
+      (List.repeat 
+        ((List.length list) - 1)
+      "Otherwise"
+      )
+
+
+zip3 a b c =
+  (a, b, c)
+
+
+renderManyListTable: List TroopEntriesList -> Html.Html msg
+renderManyListTable listTroopEntriesList =
+  let
+    notes = toTroopNoteStrings listTroopEntriesList
+    troopNames = toTroopTypeNameStrings listTroopEntriesList
+    present = ifPresentList listTroopEntriesList
+    rowData = List.map3  zip3 present troopNames notes
+  in
+    toTable rowData
+
+
+render1ListTable: TroopEntriesList -> Html.Html msg
+render1ListTable troopEntriesList =
+  let
+    notes = List.map (\troopEntry->troopEntry.note) troopEntriesList.troopEntries |>
+            (List.map (Maybe.withDefault ""))
+    troopNames =
+      List.map
+       (\troopEntry->troopEntry.troopTypeCode) 
+       troopEntriesList.troopEntries 
+      |> List.map TroopTypeCode.name
+    present = ifPresentList troopEntriesList.troopEntries
+    rowData = List.map3 zip3 present troopNames notes
+  in
+    toTable rowData
+
+
+error message =
+  Html.div
+    [
+      Html.Attributes.class "error"
+    ]
+    [
+      Html.text message
+    ]
+
+tableRendered: List TroopEntriesList -> Html.Html msg
+tableRendered listTroopEntriesList =
+  let 
+    length = List.length listTroopEntriesList
+  in
+    if length < 1 then
+      error "listTroopEntriesList is too small"
+    else if length == 1 then
+      let
+        headMaybe = List.head listTroopEntriesList
+      in
+        case headMaybe of
+          Nothing ->  error "No head in listTroopEntriesList"
+          Just head -> render1ListTable head
+    else
+      (renderManyListTable listTroopEntriesList)
+
+
+subsectionRendered: Army -> Html msg
+subsectionRendered army =
+  let
+    table = tableRendered army.troopEntriesForGeneral
+  in
+       (Html.div []
+            [
+              ( Html.div
+                [
+                    Html.Attributes.class "subsectionHeader"
+                ]
+                [ Html.text "General's Troop Type" ]
+              )
+          , table
+            ])
+ 

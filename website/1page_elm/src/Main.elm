@@ -22,6 +22,10 @@ import Url exposing (Url)
 import Dict exposing (Dict)
 import ArmyIdTable
 import LoadedData exposing (ArmyLoaded, LoadedData)
+import BookParts exposing (..)
+import ChapterArmy exposing (chapterArmy)
+import DateRange exposing (..)
+
 
 -- MODEL
 
@@ -335,178 +339,7 @@ armiesTableOfContents =
 -- Section containing the "Pages" for each army
 
 
-armiesDetailed : Html.Html msg
-armiesDetailed =
-    Html.div
-        []
-        (List.map (\army -> armyDetail army) (all_armies))
 
-
-armyDetail : Army -> Html.Html msg
-armyDetail army =
-    Html.div
-        [ Html.Attributes.id (army_tag army)
-        ]
-        [ armyListAndDateRange army
-        , ratingsEtcRendered army
-        ]
-
-
-ratingsEtcRendered : Army -> Html.Html msg
-ratingsEtcRendered army =
-    Html.div
-        []
-        [ invasionRatingRendered army
-        , maneuverRatingsRendered army
-        , homeTopographiesRendered army
-        , GeneralsSubsection.subsectionRendered army
-        , ArmyBattleCardsSubsection.subsectionRendered army
-        ]
-
-
-
-invasionRatingValue : InvasionRating -> Int
-invasionRatingValue rating =
-    rating.value
-
-
-invasionRatingNote : InvasionRating -> Maybe String
-invasionRatingNote rating =
-    rating.note
-
-
-invasionRatings : Army -> List InvasionRating
-invasionRatings army =
-    .invasionRatings army
-
-
-maneuverRatingValue : InvasionRating -> Int
-maneuverRatingValue rating =
-    rating.value
-
-
-maneuverRatingNote : InvasionRating -> Maybe String
-maneuverRatingNote rating =
-    rating.note
-
-
-maneuverRatings : Army -> List ManeuverRating
-maneuverRatings army =
-    .maneuverRatings army
-
-
-
--- ratingsRowRendered : (x -> Int) -> ( x  -> Maybe String) -> x -> Html.Html msg
-
-
-ratingsRowRendered : (c -> Int) -> (c -> Maybe String) -> c -> Html.Html msg
-ratingsRowRendered ratingValue ratingNote rating =
-    Html.tr
-        []
-        [ Html.td
-            []
-            [ Html.text (String.fromInt (ratingValue rating))
-            ]
-        , Notes.render (ratingNote rating)
-        ]
-
-
-ratingsRendered : String -> (x -> Int) -> (x -> Maybe String) -> (Army -> List x) -> Army -> Html.Html msg
-ratingsRendered title valueExtractor noteExtractor ratingsExtractor army =
-    let
-        renderer =
-            ratingsRowRendered valueExtractor noteExtractor
-    in
-    Html.div
-        []
-        [ 
-          Html.div
-            []
-            [ Html.text title
-            ]
-        , Html.table
-            []
-            [ Html.tbody []
-                (List.map renderer (ratingsExtractor army))
-            ]
-        ]
-
-
-invasionRatingRendered : Army -> Html.Html msg
-invasionRatingRendered army =
-    ratingsRendered "Invasion Ratings" invasionRatingValue invasionRatingNote invasionRatings army
-
-
-maneuverRatingsRendered : Army -> Html.Html msg
-maneuverRatingsRendered army =
-    ratingsRendered "Maneuver Ratings" maneuverRatingValue maneuverRatingNote maneuverRatings army
-
-
-topographyToString : Topography -> String
-topographyToString topography =
-    case topography of
-        Arable ->
-            "Arable"
-
-        Delta ->
-            "Delta"
-
-        Steppe ->
-            "Steppe"
-
-        Hilly ->
-            "Hilly"
-
-        Dry ->
-            "Dry"
-
-        Forest ->
-            "Forest"
-
-        Marsh ->
-            "Marsh"
-
-
-topographyRendered : Topography -> Html.Html msg
-topographyRendered topography =
-    Html.div []
-        [ Html.text (topographyToString topography)
-        ]
-
-
-homeTopographiesItemsRendered : HomeTopography -> Html.Html msg
-homeTopographiesItemsRendered topographies =
-    Html.tr []
-        [ Html.td [
-            Html.Attributes.class "HomeTopographies_note"
-        ]
-            [ Notes.render topographies.note
-            ]
-        , Html.td [ Html.Attributes.class "HomeTopographies_values"]
-            (List.map topographyRendered topographies.values)
-        ]
-
-
-homeTopographiesListRendered : Army -> Html.Html msg
-homeTopographiesListRendered army =
-    Html.table []
-        [ Html.tbody
-            []
-            (List.map homeTopographiesItemsRendered army.homeTopographies)
-        ]
-
-
-homeTopographiesRendered : Army -> Html.Html msg
-homeTopographiesRendered army =
-    Html.div []
-        [ Html.div
-            []
-            [ Html.text "Home Topography"
-            ]
-        , Html.div
-            []
-            [ homeTopographiesListRendered army ]
-        ]
 
 
 
@@ -525,43 +358,9 @@ armyListAndDateRange army =
         ]
 
 
-renderedDateRange : Int -> Int -> Html.Html msg
-renderedDateRange startDate endDate =
-    Html.text (formattedDateRange startDate endDate)
 
 
-era : Int -> String
-era date =
-    if date < 0 then
-        "B.C"
 
-    else
-        "A.D."
-
-
-formattedDate : Int -> String
-formattedDate date =
-    let
-        date_string =
-            String.fromInt (abs date)
-
-        era_string =
-            era date
-    in
-    String.concat [ date_string, " ", era_string ]
-
-
-formattedDateRange : Int -> Int -> String
-formattedDateRange startDate endDate =
-    if startDate == endDate then
-        formattedDate startDate
-
-    else
-        String.concat
-            [ formattedDate startDate
-            , " to "
-            , formattedDate endDate
-            ]
 
 -- Return the URL for a file in the ArmyLists directory
 armyListsUrl: String -> String
@@ -608,7 +407,7 @@ downloadArmies summaryString =
             Ok summaryList ->
                 let
                     -- TODO process all the armies
-                    waitingList = loadingArmiesList (List.take 5 summaryList)
+                    waitingList = loadingArmiesList (List.take 100 summaryList)
                 in
                     let 
                         commands =
@@ -626,14 +425,11 @@ downloadArmies summaryString =
 
 downloadArmy: ArmyLoading -> Cmd Msg
 downloadArmy armyLoading =
-    let 
-        _ = Debug.log "Downloading army " armyLoading.id
-    in
-        Http.get
-            { 
-                url = armyListsUrl (String.concat [armyLoading.id.id, ".army.json"])
-                , expect = Http.expectJson (ArmyReceived armyLoading.id) MeshweshDecoder.decodeArmy
-            }
+    Http.get
+        { 
+            url = armyListsUrl (String.concat [armyLoading.id.id, ".army.json"])
+            , expect = Http.expectJson (ArmyReceived armyLoading.id) MeshweshDecoder.decodeArmy
+        }
 
 downloadThematicCategories: ArmyLoading -> Cmd Msg
 downloadThematicCategories armyLoading =
@@ -648,15 +444,12 @@ downloadThematicCategories armyLoading =
 
 downloadAllyOptions: ArmyLoading -> Cmd Msg
 downloadAllyOptions armyLoading =
-    let 
-        _ = Debug.log "Downloading ally options " armyLoading.id
-    in
-        Http.get
-            { 
-                url = armyListsUrl (String.concat [armyLoading.id.id, ".allyOptions.json"])
-                , expect = Http.expectJson (AllyOptionsReceived armyLoading.id) 
-                    (Decode.list MeshweshDecoder.decodeAllyOptions)
-            }
+    Http.get
+        { 
+            url = armyListsUrl (String.concat [armyLoading.id.id, ".allyOptions.json"])
+            , expect = Http.expectJson (AllyOptionsReceived armyLoading.id) 
+                (Decode.list MeshweshDecoder.decodeAllyOptions)
+        }
 
 
 
@@ -786,38 +579,35 @@ dataReceivedErrorMessage state dataTypeName armyId model =
 
 handleDataReceivedReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error dataTypeReceived -> Model -> (LoadingData -> MeshweshTypes.ArmyId -> dataTypeReceived ->  ( Model, Cmd msg )) -> String -> ( Model, Cmd msg )
 handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
-    let
-        _ = Debug.log "Received army" armyId.id
-    in
-        case result of
-            Ok newArmy -> 
-                case model of
-                    LoadingArmies loadingData ->  modelUpdater loadingData armyId newArmy
+    case result of
+        Ok newArmy -> 
+            case model of
+                LoadingArmies loadingData ->  modelUpdater loadingData armyId newArmy
 
-                    Unloaded _ -> 
-                        dataReceivedErrorMessage "Unloaded"  dataTypeName  armyId model
+                Unloaded _ -> 
+                    dataReceivedErrorMessage "Unloaded"  dataTypeName  armyId model
 
-                    LoadingSummary ->
-                        dataReceivedErrorMessage "LoadingSummary"  dataTypeName  armyId model
+                LoadingSummary ->
+                    dataReceivedErrorMessage "LoadingSummary"  dataTypeName  armyId model
 
-                    Loaded _ ->
-                        dataReceivedErrorMessage "Loaded" dataTypeName armyId model
+                Loaded _ ->
+                    dataReceivedErrorMessage "Loaded" dataTypeName armyId model
 
-                    Error _ ->
-                        dataReceivedErrorMessage "Error" dataTypeName armyId model
+                Error _ ->
+                    dataReceivedErrorMessage "Error" dataTypeName armyId model
 
-            Err httpError -> 
-                (
-                    Error 
-                    (String.concat 
-                        [
-                            "Army "
-                        ,   armyId.id
-                        ,   ": "
-                        ,  (httpErrorToString httpError)
-                        ])
-                ,   Cmd.none
-                )
+        Err httpError -> 
+            (
+                Error 
+                (String.concat 
+                    [
+                        "Army "
+                    ,   armyId.id
+                    ,   ": "
+                    ,  (httpErrorToString httpError)
+                    ])
+            ,   Cmd.none
+            )
 
 
 
@@ -834,45 +624,6 @@ handleThematicCategoriesReceivedMsg armyId result model =
 handleAllyOptionsReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.AllyOptions) -> Model -> ( Model, Cmd msg )
 handleAllyOptionsReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model allyOptionsReceived "Thematic Category"
-
--- Part of a book, collection of chapters
-part: String -> List (Html msg) -> Html msg
-part partTitle chapters =
-    Html.div
-        [
-            Html.Attributes.class "part"
-        ]
-        (
-            List.append
-                [
-                    page [Html.text partTitle]
-                ]
-                chapters
-        )
-
-chapter: String-> List (Html msg) -> Html msg
-chapter chapterTitle body =
-    Html.div
-        [
-            Html.Attributes.class "chapter"
-        ]
-        (
-            List.append
-                [
-                    page [Html.text chapterTitle]
-                ]
-                body
-        )
-
-
--- Page Break
-page: List (Html msg) -> Html msg
-page body =
-    Html.div
-        [
-            Html.Attributes.class "page"
-        ]
-        body
 
 
 
@@ -909,15 +660,6 @@ chaptersForAllArmies loadedData =
         chapterArmy
         -- TODO sort by name
         (ArmyIdTable.values loadedData.armies)
-
--- 1 chapter for an army
-chapterArmy: ArmyLoaded -> Html msg
-chapterArmy army  =
-    chapter 
-        "TODO ARMY NAME" -- summary.derivedData.extendedName
-        [
-            Html.text "TODO army details"
-        ]
 
 
 main : Program () Model Msg

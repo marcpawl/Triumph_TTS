@@ -14,6 +14,10 @@ import List
 
 name: TroopTypeCode -> String
 name troopTypeCode =
+    asString troopTypeCode
+
+asString: TroopTypeCode -> String
+asString troopTypeCode =
     case troopTypeCode of
         ARC -> "Archers"
         ART -> "Artillery"
@@ -44,4 +48,4 @@ name troopTypeCode =
 
 render: TroopTypeCode -> Html.Html msg
 render troopTypeCode =
-    Html.text (name troopTypeCode)
+    Html.text (asString troopTypeCode)

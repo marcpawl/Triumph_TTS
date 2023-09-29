@@ -4,30 +4,35 @@
       background: #fff;
    }
 
-   h1, h2, h3 {
+   h1,
+   h2,
+   h3 {
       color: #000;
       background: none;
       page-break-after: avoid
    }
 
    img {
-       max-width: 100% !important;
+      max-width: 100% !important;
    }
 
    article {
-       page-break-before: always;
+      page-break-before: always;
    }
 
-   ul, img {
-       page-break-inside: avoid;
+   ul,
+   img {
+      page-break-inside: avoid;
    }
 
 
-   nav, aside {
+   nav,
+   aside {
       display: none;
    }
 
-   body, article {
+   body,
+   article {
       width: 100%;
       margin: 0;
       padding: 0;
@@ -39,25 +44,34 @@
    }
 
    article a[href^=http]:after {
-      content:" <" attr(href) "> ";
+      content: " <" attr(href) "> ";
    }
 
    article a[href^="#"]:after {
       content: "";
    }
 
-$a:after > img {
-   content: "";
-}
+   $a: after > img {
+      content: "";
+   }
 
-a:not(:local-link):after {
-   content:" <" attr(href) "> ";
-}
+   a:not(:local-link):after {
+      content: " <" attr(href) "> ";
+   }
 
 
    @page {
       margin: 2cm;
    }
+
+   .chapter {
+      page-break-before: always;
+   }
+
+   .subsectionHeader {
+      page-break-after: avoid
+   }
+
 }
 
 @media print and (color) {
@@ -69,29 +83,83 @@ a:not(:local-link):after {
 
 
 @media screen {
-/* Applies to all elements with <... class="someclass"> specified. */
-.general_troop_type_subsection_header {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.42857143;
-    color: #333333;
-    box-sizing: border-box;
-    font-size: 1.2em;
-    margin-top: 10px;
-    font-weight: bold;
+   .chapter {
+      margin-top: 20px;
+      margin-top: 20px;
+      border-top: solid black 1px;
+   }
 }
 
-.army_battle_cards_subsection_header {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.42857143;
-    color: #333333;
-    box-sizing: border-box;
-    font-size: 1.2em;
-    margin-top: 10px;
-    font-weight: bold;
+.chapterTitle {
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   font-family: inherit;
+   font-weight: 500;
+   line-height: 1.1;
+   color: inherit;
+   font-size: 36px;
+   box-sizing: border-box;
 }
 
+.chapterSubtitle {
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   font-family: inherit;
+   font-weight: 400;
+   line-height: 1;
+   color: #777777;
+   font-size: 65%;
+   box-sizing: border-box;
+}
+
+.subsectionHeader {
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   line-height: 1.42857143;
+   color: #333333;
+   box-sizing: border-box;
+   font-size: 1.2em;
+   margin-top: 10px;
+   font-weight: bold;
+}
+
+.requiredTroopsTitle {
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   box-sizing: border-box;
+   font-family: inherit;
+   font-weight: 500;
+   line-height: 1.1;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-size: 24px;
+   cursor: pointer;
+   color: #2b4e69;
+}
+
+.requiredTroopsDescription {
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.42857143;
+   color: #333333;
+   box-sizing: border-box;
+   padding: 15px;      
+   display: block;
+   border-color: blue;
+   border-style: dotted;
+}
+
+.error {
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   line-height: 1.42857143;
+   color: #8800;
+   box-sizing: border-box;
+   font-size: 1.2em;
+   margin-top: 10px;
+   font-weight: bold;
 }

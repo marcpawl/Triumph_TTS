@@ -76,13 +76,16 @@ tr battlecard =
 
 table: List BattleCardEntry -> Html.Html msg
 table list =
-    Html.table
-    []
-    [ 
-        Html.tbody
-            []
-            (List.map tr list)
-    ]
+    if (List.length list) == 0 then
+        Html.div [][Html.text "None"]
+    else
+        Html.table
+        []
+        [ 
+            Html.tbody
+                []
+                (List.map tr list)
+        ]
 
 
 subsectionRendered: Army -> Html.Html msg
@@ -91,7 +94,7 @@ subsectionRendered army =
         [ 
             Html.div
                 [
-                    Html.Attributes.class "army_battle_cards_subsection_header"
+                    Html.Attributes.class "subsectionHeader"
                 ]
                 [ Html.text "Army Battle Cards"
                 ]
