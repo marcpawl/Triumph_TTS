@@ -152,6 +152,14 @@
    border-style: dotted;
 }
 
+.battleLineColumn {
+   text-align: center
+}
+
+.numberColumn {
+   text-align: right
+}
+
 .error {
    -webkit-text-size-adjust: 100%;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

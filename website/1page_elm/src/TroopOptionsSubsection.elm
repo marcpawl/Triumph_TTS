@@ -17,6 +17,9 @@ import TroopTypeCode exposing (name)
 import Notes
 import List exposing (length)
 import BookParts exposing (..)
+import DateRange
+import BattleCards
+
 
 -- toNoteString: TroopEntry -> String
 -- toNoteString troopEntry =
@@ -47,9 +50,9 @@ import BookParts exposing (..)
 --      seperator
 --      (List.map fieldExtractor list)
 
--- removeNothingFromList : List (Maybe a) -> List a 
--- removeNothingFromList list =
---     List.filterMap identity list
+removeNothingFromList : List (Maybe a) -> List a 
+removeNothingFromList list =
+    List.filterMap identity list
 
 
 toTroopTypeNameString: TroopEntry -> String
@@ -76,18 +79,15 @@ orTogetheredTroopTypenames list =
 --     Just _ -> True
     
 
--- -- Extract the notes from the troop entries and return the
--- -- strings of the notes.  If there is no note for a troop
--- -- entry then remove it.  Join the remaining notes into
--- -- one string
--- -- post-conditions:
--- --   length of result is less than or equal to length list.
--- toNotesListString: TroopEntriesList->  String
--- toNotesListString list =
---   (List.map .note list.troopEntries) |> 
+-- Extract the notes from the troop entries and return the
+-- strings of the notes.  If there is no note for a troop
+-- entry then remove it. 
+-- toNotesList: List TroopEntry-> List String
+-- toNotesList list =
+--   (List.map .note list) |> 
 --   (List.filter hasValue) |> 
---   (List.map (Maybe.withDefault "")) |>
---   (String.join "; ")
+--   (List.map (Maybe.withDefault "")) 
+
 
 -- -- For each list of entries, find the string that
 -- -- is the joining of the notes
@@ -229,10 +229,93 @@ renderMax troopOptionEntry =
 
 renderBattleLine: TroopOptionEntry -> Html msg
 renderBattleLine troopOptionEntry =
-  if (String.length troopOptionEntry.core) == 0 then
-    Html.text "-"
+  Html.td
+    [
+      Html.Attributes.class "battleLineColumn"
+    ]
+    [ 
+      if (String.length troopOptionEntry.core) == 0 then
+        Html.text "-"
+      else
+        Html.text troopOptionEntry.core
+    ]
+
+
+renderDateRestriction: DateRangeEntry -> Html msg
+renderDateRestriction dateRange =
+  Html.div 
+    []
+    [
+      Html.text 
+        (DateRange.formattedDateRange dateRange.startDate dateRange.endDate)
+    ]
+
+
+renderDateRestrictions: TroopOptionEntry -> List (Html msg)
+renderDateRestrictions troopOptionEntry =
+  List.map renderDateRestriction troopOptionEntry.dateRanges
+
+
+renderNoteRestrictions: TroopOptionEntry -> List (Html msg)
+renderNoteRestrictions troopOptionEntry =
+  case troopOptionEntry.note of
+    Nothing -> []
+    Just note -> 
+      [ Html.div [] [ Html.text note ] ]
+
+
+renderRestrictions: TroopOptionEntry -> List (Html msg)
+renderRestrictions troopOptionEntry =
+  List.concat
+    [
+      ( renderDateRestrictions troopOptionEntry )
+    , ( renderNoteRestrictions troopOptionEntry )
+    ]
+
+
+formatCount: Int -> Int -> List String
+formatCount min max =
+  if max == min then
+    if min == 1 then
+        []
+    else
+      [ String.fromInt(min) ]
   else
-    Html.text troopOptionEntry.core
+      [ String.concat [ (String.fromInt min), " - ", (String.fromInt max) ] ]
+
+
+renderBattleCardNote: BattleCardEntry -> List (String)
+renderBattleCardNote battleCardEntry =
+  case battleCardEntry.note of
+    Nothing -> []
+    Just note -> [ note ]
+      
+
+renderBattleCard: BattleCardEntry -> Html msg
+renderBattleCard battleCardEntry =
+  Html.div
+    []
+    [
+      Html.text
+        (
+          String.join " "
+            (
+              List.concat
+                [
+                  (formatCount battleCardEntry.min battleCardEntry.max)
+                , [ BattleCards.name battleCardEntry.battleCardCode ]
+                , (renderBattleCardNote battleCardEntry)
+                ]
+            )
+        )
+    ]
+
+
+renderBattleCards: TroopOptionEntry -> List (Html msg)
+renderBattleCards troopOptionEntry =
+  List.map
+    renderBattleCard 
+    troopOptionEntry.battleCardEntries
 
 
 renderTroopRow: TroopOptionEntry -> Html msg
@@ -245,30 +328,27 @@ renderTroopRow troopOptionEntry =
         (renderTroopEntries troopOptionEntry.troopEntries)
       )
     , (Html.td
-        []
+        [
+          Html.Attributes.class "numberColumn"
+        ]
         [ 
           renderMin troopOptionEntry
         ] )
     , (Html.td
-        []
+        [
+          Html.Attributes.class "numberColumn"
+        ]
         [ 
           renderMax troopOptionEntry
         ] )
+    , (renderBattleLine troopOptionEntry)
     , (Html.td
         []
-        [ 
-          renderBattleLine troopOptionEntry
-        ] )
+        (renderRestrictions troopOptionEntry))
     , (Html.td
         []
-        [ 
-          Html.text "TODO 235"
-        ] )
-    , (Html.td
-        []
-        [ 
-          Html.text "TODO 240"
-        ])
+        (renderBattleCards troopOptionEntry)
+      )
     ]
 
 

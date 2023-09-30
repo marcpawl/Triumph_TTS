@@ -407,7 +407,7 @@ downloadArmies summaryString =
             Ok summaryList ->
                 let
                     -- TODO process all the armies
-                    waitingList = loadingArmiesList (List.take 100 summaryList)
+                    waitingList = loadingArmiesList (List.take 2700 summaryList)
                 in
                     let 
                         commands =
@@ -433,14 +433,11 @@ downloadArmy armyLoading =
 
 downloadThematicCategories: ArmyLoading -> Cmd Msg
 downloadThematicCategories armyLoading =
-    let 
-        _ = Debug.log "Downloading thematic category " armyLoading.id
-    in
-        Http.get
-            { 
-                url = armyListsUrl( String.concat [armyLoading.id.id, ".thematicCategories.json"])
-                , expect = Http.expectJson (ThematicCategoriesReceived armyLoading.id) MeshweshDecoder.decodeThematicCategories
-            }
+    Http.get
+        { 
+            url = armyListsUrl( String.concat [armyLoading.id.id, ".thematicCategories.json"])
+            , expect = Http.expectJson (ThematicCategoriesReceived armyLoading.id) MeshweshDecoder.decodeThematicCategories
+        }
 
 downloadAllyOptions: ArmyLoading -> Cmd Msg
 downloadAllyOptions armyLoading =
@@ -629,12 +626,9 @@ handleAllyOptionsReceivedMsg armyId result model =
 
 partArmyLists: LoadedData -> Html msg
 partArmyLists loadedData =
-    let
-        _ = Debug.log "In partArmyLists" loadedData
-    in
-        part
-            "Army Lists"
-            (chaptersForAllArmies loadedData)
+    part
+        "Army Lists"
+        (chaptersForAllArmies loadedData)
 
 
 compare: String -> String -> Order
