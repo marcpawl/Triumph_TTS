@@ -306,12 +306,14 @@ decodeThematicCategories : Decoder (List MeshweshTypes.ThematicCategory)
 decodeThematicCategories =
     Decode.list decodeThematicCategory
 
+
 decodeAllyArmyList: Decoder MeshweshTypes.AllyArmyList
 decodeAllyArmyList =
     Decode.succeed MeshweshTypes.AllyArmyList
         |> required "name" string
         |> optional "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
         |> required "troopOptions" (list decodeTroopOptionEntry)
+        |> required "internalContingent" Decode.bool
 
 
 decodeAllyEntry: Decoder MeshweshTypes.AllyEntry
@@ -326,5 +328,3 @@ decodeAllyOptions =
         |> optional  "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
         |> required  "note" decodeNote
         |> required "allyEntries" (list decodeAllyEntry)
-
-

@@ -11,6 +11,7 @@ import DateRange exposing (formattedDateRange)
 import ArmyBattleCardsSubsection
 import GeneralsSubsection
 import TroopOptionsSubsection exposing (subsectionRendered)
+import OptionalContingentsSubsection exposing (subsectionRendered)
 import Notes
 
 topographyToString : Topography -> String
@@ -189,5 +190,6 @@ chapterArmy army  =
         [
             ratingsEtcRendered army.armyDetails
         ,   TroopOptionsSubsection.subsectionRendered army.armyDetails
+        ,   OptionalContingentsSubsection.subsectionRendered army.allyOptions
         ]
 

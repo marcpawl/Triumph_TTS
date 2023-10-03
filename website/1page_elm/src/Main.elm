@@ -407,7 +407,7 @@ downloadArmies summaryString =
             Ok summaryList ->
                 let
                     -- TODO process all the armies
-                    waitingList = loadingArmiesList (List.take 2700 summaryList)
+                    waitingList = loadingArmiesList (List.take 300 summaryList)
                 in
                     let 
                         commands =

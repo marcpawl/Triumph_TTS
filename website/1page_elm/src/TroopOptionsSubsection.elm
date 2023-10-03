@@ -1,4 +1,5 @@
-module TroopOptionsSubsection exposing (subsectionRendered)
+module TroopOptionsSubsection exposing (subsectionRendered, renderTroopsTables)
+--TODO move renderTroopsTables into its own module
 
 -- import Debug
 -- import Browser

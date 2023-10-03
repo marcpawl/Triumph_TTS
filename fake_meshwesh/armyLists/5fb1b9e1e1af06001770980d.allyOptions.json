@@ -1,1 +1,1090 @@
-[{"_id":"615351a603385c0016b86255","dateRange":{"_id":"615351a603385c0016b86256","startDate":-105,"endDate":-25},"note":null,"allyEntries":[{"_id":"615351a603385c0016b86257","name":"(in Gaul 105-25 BC, or in Italy 90-89 BC) Gallic auxiliaries","allyArmyList":{"_id":"6153519303385c0016b83cad","name":"Gallic auxiliaries","listId":111,"sublistId":"z","dateRange":{"_id":"6153519303385c0016b83cae","startDate":-105,"endDate":-25},"troopOptions":[{"_id":"6153519303385c0016b83caf","min":3,"max":6,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cb0","troopTypeCode":"WRR","dismountTypeCode":null,"note":"all"},{"_id":"6153519303385c0016b83cb1","troopTypeCode":"LFT","dismountTypeCode":null,"note":"all"}],"description":"Gallic auxiliaries","note":"","core":"all","battleCardEntries":[]}],"internalContingent":false,"__v":0}}]},{"_id":"615351a603385c0016b86258","dateRange":{"_id":"615351a603385c0016b86259","startDate":-90,"endDate":-90},"note":null,"allyEntries":[{"_id":"615351a603385c0016b8625a","name":"(in Italy 90 BC or in Africa 49-46 BC) Numidian or Moorish allies","allyArmyList":{"_id":"6153519003385c0016b838cb","name":"Numidian or Early Moorish","listId":65,"sublistId":"a","dateRange":{"_id":"6153507503385c0016b81837","startDate":-215,"endDate":25},"troopOptions":[{"_id":"6153519003385c0016b838cd","min":1,"max":3,"dateRanges":[],"troopEntries":[{"_id":"6153519003385c0016b838ce","troopTypeCode":"JCV","dismountTypeCode":null,"note":null}],"description":"Unarmored horsemen","note":"","core":"","battleCardEntries":[]},{"_id":"6153519003385c0016b838cf","min":1,"max":4,"dateRanges":[],"troopEntries":[{"_id":"6153519003385c0016b838d0","troopTypeCode":"LFT","dismountTypeCode":null,"note":null},{"_id":"6153519003385c0016b838d1","troopTypeCode":"RBL","dismountTypeCode":null,"note":null}],"description":"Javelinmen","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519003385c0016b838d2","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519003385c0016b838d3","troopTypeCode":"SKM","dismountTypeCode":null,"note":null}],"description":"Skirmishing bowmen or slingers","note":"","core":"","battleCardEntries":[]},{"_id":"6153519003385c0016b838d4","min":0,"max":1,"dateRanges":[{"_id":"6153519003385c0016b838d5","startDate":-213,"endDate":-118}],"troopEntries":[{"_id":"6153519003385c0016b838d6","troopTypeCode":"LFT","dismountTypeCode":null,"note":null}],"description":"Roman-trained light infantry","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519003385c0016b838d7","min":0,"max":1,"dateRanges":[{"_id":"6153519003385c0016b838d8","startDate":-55,"endDate":25}],"troopEntries":[{"_id":"6153519003385c0016b838d9","troopTypeCode":"HFT","dismountTypeCode":null,"note":null}],"description":"Imitation legionaries","note":"","core":"all","battleCardEntries":[]}],"internalContingent":false,"armyListId":"5fb1b9dce1af060017709591","__v":0}}]},{"_id":"615351a603385c0016b8625b","dateRange":{"_id":"615351a603385c0016b8625c","startDate":-88,"endDate":-75},"note":null,"allyEntries":[{"_id":"615351a603385c0016b8625d","name":"(in Asia) Bithynian allies","allyArmyList":{"_id":"6153519103385c0016b83a16","name":"Bithynian","listId":78,"sublistId":"a","dateRange":{"_id":"6153507703385c0016b818f8","startDate":-435,"endDate":-74},"troopOptions":[],"internalContingent":false,"armyListId":"5fb1b9dde1af060017709652","__v":0}}]},{"_id":"615351a603385c0016b8625e","dateRange":{"_id":"615351a603385c0016b8625f","startDate":-74,"endDate":-31},"note":null,"allyEntries":[{"_id":"615351a603385c0016b86260","name":"(in Asia) Galatian allies","allyArmyList":{"_id":"6153519203385c0016b83aa3","name":"Galatian","listId":86,"sublistId":"c","dateRange":{"_id":"6153507803385c0016b81961","startDate":-227,"endDate":-65},"troopOptions":[{"_id":"6153519203385c0016b83aa5","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519203385c0016b83aa6","troopTypeCode":"JCV","dismountTypeCode":null,"note":null}],"description":"Horsemen","note":"","core":"","battleCardEntries":[]},{"_id":"6153519203385c0016b83aa7","min":2,"max":4,"dateRanges":[],"troopEntries":[{"_id":"6153519203385c0016b83aa8","troopTypeCode":"WRR","dismountTypeCode":null,"note":null}],"description":"Fierce fighters","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519203385c0016b83aa9","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519203385c0016b83aaa","troopTypeCode":"RBL","dismountTypeCode":null,"note":null}],"description":"Javelinmen","note":"","core":"","battleCardEntries":[]}],"internalContingent":false,"armyListId":"5fb1b9dee1af0600177096ba","__v":0}}]},{"_id":"615351a603385c0016b86261","dateRange":{"_id":"615351a603385c0016b86262","startDate":-74,"endDate":-31},"note":null,"allyEntries":[{"_id":"615351a603385c0016b86263","name":"(in Asia) Galatian allies","allyArmyList":{"_id":"6153519203385c0016b83aab","name":"Later Galatian","listId":86,"sublistId":"d","dateRange":{"_id":"6153507803385c0016b81967","startDate":-64,"endDate":-25},"troopOptions":[{"_id":"6153519203385c0016b83aad","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519203385c0016b83aae","troopTypeCode":"JCV","dismountTypeCode":null,"note":null}],"description":"Horsemen","note":"","core":"","battleCardEntries":[]},{"_id":"6153519203385c0016b83aaf","min":2,"max":3,"dateRanges":[],"troopEntries":[{"_id":"6153519203385c0016b83ab0","troopTypeCode":"HFT","dismountTypeCode":null,"note":null}],"description":"Imitation legionaries","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519203385c0016b83ab1","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519203385c0016b83ab2","troopTypeCode":"WRR","dismountTypeCode":null,"note":null}],"description":"Fierce fighters fighting in their traditional style","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519203385c0016b83ab3","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519203385c0016b83ab4","troopTypeCode":"RBL","dismountTypeCode":null,"note":null}],"description":"Javelinmen","note":"","core":"","battleCardEntries":[]}],"internalContingent":false,"armyListId":"5fb1b9dee1af0600177096c1","__v":0}}]},{"_id":"615351a603385c0016b86264","dateRange":{"_id":"615351a603385c0016b86265","startDate":-64,"endDate":-53},"note":null,"allyEntries":[{"_id":"615351a603385c0016b86266","name":"(in Asia) Arab Nomad allies","allyArmyList":{"_id":"6153519303385c0016b83b9c","name":"Later Pre-Islamic Arab Nomad","listId":99,"sublistId":"a","dateRange":{"_id":"6153507803385c0016b81a05","startDate":-312,"endDate":633},"troopOptions":[{"_id":"6153519303385c0016b83b9e","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83b9f","troopTypeCode":"JCV","dismountTypeCode":null,"note":null}],"description":"Horsemen, some with personal armor","note":"","core":"","battleCardEntries":[]},{"_id":"6153519303385c0016b83ba0","min":0,"max":2,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83ba1","troopTypeCode":"BAD","dismountTypeCode":null,"note":null}],"description":"Camel-mounted scouts, or camel-mounted swordsmen","note":"","core":"","battleCardEntries":[]},{"_id":"6153519303385c0016b83ba2","min":1,"max":3,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83ba3","troopTypeCode":"HFT","dismountTypeCode":null,"note":null}],"description":"Swordsmen","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519303385c0016b83ba4","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83ba5","troopTypeCode":"ARC","dismountTypeCode":null,"note":null},{"_id":"6153519303385c0016b83ba6","troopTypeCode":"BLV","dismountTypeCode":null,"note":null}],"description":"Bowmen","note":"","core":"","battleCardEntries":[]},{"_id":"6153519303385c0016b83ba7","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83ba8","troopTypeCode":"SKM","dismountTypeCode":null,"note":null}],"description":"Skirmishing slingers","note":"","core":"","battleCardEntries":[]},{"_id":"6153519303385c0016b83ba9","min":0,"max":2,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83baa","troopTypeCode":"LFT","dismountTypeCode":null,"note":null}],"description":"Mercenary javelinmen","note":"","core":"","battleCardEntries":[]}],"internalContingent":false,"armyListId":"5fb1b9dfe1af06001770975f","__v":0}}]},{"_id":"615351a603385c0016b86267","dateRange":{"_id":"615351a603385c0016b86268","startDate":-52,"endDate":-52},"note":null,"allyEntries":[{"_id":"615351a603385c0016b86269","name":"(in Gaul) Aeduan allies","allyArmyList":{"_id":"6153519003385c0016b838ec","name":"Sedentary Gallic","listId":66,"sublistId":"c","dateRange":{"_id":"6153507503385c0016b8184b","startDate":-99,"endDate":-50},"troopOptions":[{"_id":"6153519003385c0016b838ee","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519003385c0016b838ef","troopTypeCode":"JCV","dismountTypeCode":null,"note":null}],"description":"Noble horsemen","note":"","core":"","battleCardEntries":[]},{"_id":"6153519003385c0016b838f0","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519003385c0016b838f1","troopTypeCode":"BAD","dismountTypeCode":null,"note":null}],"description":"Unshielded horsemen","note":"","core":"","battleCardEntries":[]},{"_id":"6153519003385c0016b838f2","min":3,"max":5,"dateRanges":[],"troopEntries":[{"_id":"6153519003385c0016b838f3","troopTypeCode":"WRR","dismountTypeCode":null,"note":null}],"description":"Fierce fighters","note":"Helvetii or Belgae","core":"all","battleCardEntries":[]},{"_id":"6153519003385c0016b838f4","min":3,"max":5,"dateRanges":[],"troopEntries":[{"_id":"6153519003385c0016b838f5","troopTypeCode":"LFT","dismountTypeCode":null,"note":null}],"description":"Sedentary infantry","note":"all except Helvetii or Belgae","core":"all","battleCardEntries":[]},{"_id":"6153519003385c0016b838f6","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519003385c0016b838f7","troopTypeCode":"RBL","dismountTypeCode":null,"note":null}],"description":"Poorly equipped and trained bowmen, slingers, and unshielded javelinmen","note":"","core":"","battleCardEntries":[]}],"internalContingent":false,"armyListId":"5fb1b9dce1af0600177095a5","__v":0}}]},{"_id":"615351a603385c0016b8626a","dateRange":{"_id":"615351a603385c0016b8626b","startDate":-63,"endDate":-38},"note":null,"allyEntries":[{"_id":"615351a603385c0016b8626c","name":"(in Asia) Judaean allies","allyArmyList":{"_id":"6153519303385c0016b83cb8","name":"Late Judaean","listId":113,"sublistId":"a","dateRange":{"_id":"6153507a03385c0016b81aca","startDate":-63,"endDate":6},"troopOptions":[{"_id":"6153519303385c0016b83cba","min":1,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cbb","troopTypeCode":"RDR","dismountTypeCode":null,"note":"all"},{"_id":"6153519303385c0016b83cbc","troopTypeCode":"HFT","dismountTypeCode":null,"note":"all"}],"description":"Judaean cohorts","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519303385c0016b83cbd","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cbe","troopTypeCode":"BLV","dismountTypeCode":null,"note":null}],"description":"Bowmen","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519303385c0016b83cbf","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cc0","troopTypeCode":"SKM","dismountTypeCode":null,"note":null}],"description":"Skirmishing slingers","note":"","core":"","battleCardEntries":[]},{"_id":"6153519303385c0016b83cc1","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cc2","troopTypeCode":"RBL","dismountTypeCode":null,"note":null}],"description":"Javelinmen","note":"","core":"","battleCardEntries":[]},{"_id":"6153519303385c0016b83cc3","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cc4","troopTypeCode":"HRD","dismountTypeCode":null,"note":null}],"description":"Judaean massed infantry","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519303385c0016b83cc5","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cc6","troopTypeCode":"RBL","dismountTypeCode":null,"note":null}],"description":"Bandits","note":"","core":"","battleCardEntries":[]}],"internalContingent":false,"armyListId":"5fb1b9e1e1af060017709825","__v":0}}]},{"_id":"615351a603385c0016b8626d","dateRange":{"_id":"615351a603385c0016b8626e","startDate":-53,"endDate":-36},"note":null,"allyEntries":[{"_id":"615351a603385c0016b8626f","name":"(in Asia) Armenian allies","allyArmyList":{"_id":"6153519303385c0016b83c7f","name":"Early Armenian and Gordyene","listId":110,"sublistId":"a","dateRange":{"_id":"6153507a03385c0016b81a9b","startDate":-300,"endDate":244},"troopOptions":[{"_id":"6153519303385c0016b83c81","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83c82","troopTypeCode":"CAT","dismountTypeCode":null,"note":null}],"description":"Cataphracts","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519303385c0016b83c83","min":1,"max":2,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83c84","troopTypeCode":"HBW","dismountTypeCode":null,"note":null}],"description":"Horse archers","note":"","core":"","battleCardEntries":[]},{"_id":"6153519303385c0016b83c85","min":1,"max":2,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83c86","troopTypeCode":"BLV","dismountTypeCode":null,"note":null}],"description":"Bowmen","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519303385c0016b83c87","min":1,"max":3,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83c88","troopTypeCode":"LFT","dismountTypeCode":null,"note":null}],"description":"Javelinmen","note":"","core":"","battleCardEntries":[]}],"internalContingent":false,"armyListId":"5fb1b9e0e1af0600177097f6","__v":0}}]},{"_id":"615351a603385c0016b86270","dateRange":{"_id":"615351a603385c0016b86271","startDate":-30,"endDate":-28},"note":null,"allyEntries":[{"_id":"615351a603385c0016b86272","name":"(in Macedonia) Dacian allies","allyArmyList":{"_id":"6153519303385c0016b83cd9","name":"Dacian or Carpi","listId":117,"sublistId":"a","dateRange":{"_id":"6153507a03385c0016b81ae7","startDate":-60,"endDate":380},"troopOptions":[{"_id":"6153519303385c0016b83cdb","min":2,"max":5,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cdc","troopTypeCode":"WBD","dismountTypeCode":null,"note":null}],"description":"Fighters armed with javelins","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519303385c0016b83cdd","min":0,"max":1,"dateRanges":[{"_id":"6153519303385c0016b83cde","startDate":-60,"endDate":106}],"troopEntries":[{"_id":"6153519303385c0016b83cdf","troopTypeCode":"RDR","dismountTypeCode":null,"note":null}],"description":"Dacian and Bastarnae tribesmen armed with falx","note":"","core":"all","battleCardEntries":[]},{"_id":"6153519303385c0016b83ce0","min":1,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83ce1","troopTypeCode":"BLV","dismountTypeCode":null,"note":null}],"description":"Tribal bowmen","note":"","core":"","battleCardEntries":[]}],"internalContingent":false,"armyListId":"5fb1b9e1e1af060017709842","__v":0}}]},{"_id":"615351a603385c0016b86273","dateRange":{"_id":"615351a603385c0016b86274","startDate":-42,"endDate":-42},"note":null,"allyEntries":[{"_id":"615351a603385c0016b86275","name":"(in Gaul or Asia commanded by Cassius or Brutus) Eastern clients","allyArmyList":{"_id":"6153519303385c0016b83ca6","name":"Cassius or Brutus","listId":111,"sublistId":"y","dateRange":{"_id":"6153519303385c0016b83ca7","startDate":-42,"endDate":-42},"troopOptions":[{"_id":"6153519303385c0016b83ca8","min":1,"max":2,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83ca9","troopTypeCode":"HBW","dismountTypeCode":null,"note":null}],"description":"Thracian or client horse archers","note":"","core":"","battleCardEntries":[]},{"_id":"6153519303385c0016b83caa","min":0,"max":1,"dateRanges":[],"troopEntries":[{"_id":"6153519303385c0016b83cab","troopTypeCode":"ARC","dismountTypeCode":null,"note":null},{"_id":"6153519303385c0016b83cac","troopTypeCode":"BLV","dismountTypeCode":null,"note":null}],"description":"Client foot bowmen","note":"","core":"","battleCardEntries":[]}],"internalContingent":true,"__v":0}}]}]
+[
+    {
+        "_id": "615351a603385c0016b86255",
+        "dateRange": {
+            "_id": "615351a603385c0016b86256",
+            "startDate": -105,
+            "endDate": -25
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b86257",
+                "name": "(in Gaul 105-25 BC, or in Italy 90-89 BC) Gallic auxiliaries",
+                "allyArmyList": {
+                    "_id": "6153519303385c0016b83cad",
+                    "name": "Gallic auxiliaries",
+                    "listId": 111,
+                    "sublistId": "z",
+                    "dateRange": {
+                        "_id": "6153519303385c0016b83cae",
+                        "startDate": -105,
+                        "endDate": -25
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519303385c0016b83caf",
+                            "min": 3,
+                            "max": 6,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cb0",
+                                    "troopTypeCode": "WRR",
+                                    "dismountTypeCode": null,
+                                    "note": "all"
+                                },
+                                {
+                                    "_id": "6153519303385c0016b83cb1",
+                                    "troopTypeCode": "LFT",
+                                    "dismountTypeCode": null,
+                                    "note": "all"
+                                }
+                            ],
+                            "description": "Gallic auxiliaries",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b86258",
+        "dateRange": {
+            "_id": "615351a603385c0016b86259",
+            "startDate": -90,
+            "endDate": -90
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b8625a",
+                "name": "(in Italy 90 BC or in Africa 49-46 BC) Numidian or Moorish allies",
+                "allyArmyList": {
+                    "_id": "6153519003385c0016b838cb",
+                    "name": "Numidian or Early Moorish",
+                    "listId": 65,
+                    "sublistId": "a",
+                    "dateRange": {
+                        "_id": "6153507503385c0016b81837",
+                        "startDate": -215,
+                        "endDate": 25
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519003385c0016b838cd",
+                            "min": 1,
+                            "max": 3,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838ce",
+                                    "troopTypeCode": "JCV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Unarmored horsemen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519003385c0016b838cf",
+                            "min": 1,
+                            "max": 4,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838d0",
+                                    "troopTypeCode": "LFT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                },
+                                {
+                                    "_id": "6153519003385c0016b838d1",
+                                    "troopTypeCode": "RBL",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Javelinmen",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519003385c0016b838d2",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838d3",
+                                    "troopTypeCode": "SKM",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Skirmishing bowmen or slingers",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519003385c0016b838d4",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [
+                                {
+                                    "_id": "6153519003385c0016b838d5",
+                                    "startDate": -213,
+                                    "endDate": -118
+                                }
+                            ],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838d6",
+                                    "troopTypeCode": "LFT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Roman-trained light infantry",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519003385c0016b838d7",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [
+                                {
+                                    "_id": "6153519003385c0016b838d8",
+                                    "startDate": -55,
+                                    "endDate": 25
+                                }
+                            ],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838d9",
+                                    "troopTypeCode": "HFT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Imitation legionaries",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9dce1af060017709591",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b8625b",
+        "dateRange": {
+            "_id": "615351a603385c0016b8625c",
+            "startDate": -88,
+            "endDate": -75
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b8625d",
+                "name": "(in Asia) Bithynian allies",
+                "allyArmyList": {
+                    "_id": "6153519103385c0016b83a16",
+                    "name": "Bithynian",
+                    "listId": 78,
+                    "sublistId": "a",
+                    "dateRange": {
+                        "_id": "6153507703385c0016b818f8",
+                        "startDate": -435,
+                        "endDate": -74
+                    },
+                    "troopOptions": [],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9dde1af060017709652",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b8625e",
+        "dateRange": {
+            "_id": "615351a603385c0016b8625f",
+            "startDate": -74,
+            "endDate": -31
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b86260",
+                "name": "(in Asia) Galatian allies",
+                "allyArmyList": {
+                    "_id": "6153519203385c0016b83aa3",
+                    "name": "Galatian",
+                    "listId": 86,
+                    "sublistId": "c",
+                    "dateRange": {
+                        "_id": "6153507803385c0016b81961",
+                        "startDate": -227,
+                        "endDate": -65
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519203385c0016b83aa5",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519203385c0016b83aa6",
+                                    "troopTypeCode": "JCV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Horsemen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519203385c0016b83aa7",
+                            "min": 2,
+                            "max": 4,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519203385c0016b83aa8",
+                                    "troopTypeCode": "WRR",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Fierce fighters",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519203385c0016b83aa9",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519203385c0016b83aaa",
+                                    "troopTypeCode": "RBL",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Javelinmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9dee1af0600177096ba",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b86261",
+        "dateRange": {
+            "_id": "615351a603385c0016b86262",
+            "startDate": -74,
+            "endDate": -31
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b86263",
+                "name": "(in Asia) Galatian allies",
+                "allyArmyList": {
+                    "_id": "6153519203385c0016b83aab",
+                    "name": "Later Galatian",
+                    "listId": 86,
+                    "sublistId": "d",
+                    "dateRange": {
+                        "_id": "6153507803385c0016b81967",
+                        "startDate": -64,
+                        "endDate": -25
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519203385c0016b83aad",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519203385c0016b83aae",
+                                    "troopTypeCode": "JCV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Horsemen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519203385c0016b83aaf",
+                            "min": 2,
+                            "max": 3,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519203385c0016b83ab0",
+                                    "troopTypeCode": "HFT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Imitation legionaries",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519203385c0016b83ab1",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519203385c0016b83ab2",
+                                    "troopTypeCode": "WRR",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Fierce fighters fighting in their traditional style",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519203385c0016b83ab3",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519203385c0016b83ab4",
+                                    "troopTypeCode": "RBL",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Javelinmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9dee1af0600177096c1",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b86264",
+        "dateRange": {
+            "_id": "615351a603385c0016b86265",
+            "startDate": -64,
+            "endDate": -53
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b86266",
+                "name": "(in Asia) Arab Nomad allies",
+                "allyArmyList": {
+                    "_id": "6153519303385c0016b83b9c",
+                    "name": "Later Pre-Islamic Arab Nomad",
+                    "listId": 99,
+                    "sublistId": "a",
+                    "dateRange": {
+                        "_id": "6153507803385c0016b81a05",
+                        "startDate": -312,
+                        "endDate": 633
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519303385c0016b83b9e",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83b9f",
+                                    "troopTypeCode": "JCV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Horsemen, some with personal armor",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83ba0",
+                            "min": 0,
+                            "max": 2,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83ba1",
+                                    "troopTypeCode": "BAD",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Camel-mounted scouts, or camel-mounted swordsmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83ba2",
+                            "min": 1,
+                            "max": 3,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83ba3",
+                                    "troopTypeCode": "HFT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Swordsmen",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83ba4",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83ba5",
+                                    "troopTypeCode": "ARC",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                },
+                                {
+                                    "_id": "6153519303385c0016b83ba6",
+                                    "troopTypeCode": "BLV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Bowmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83ba7",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83ba8",
+                                    "troopTypeCode": "SKM",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Skirmishing slingers",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83ba9",
+                            "min": 0,
+                            "max": 2,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83baa",
+                                    "troopTypeCode": "LFT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Mercenary javelinmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9dfe1af06001770975f",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b86267",
+        "dateRange": {
+            "_id": "615351a603385c0016b86268",
+            "startDate": -52,
+            "endDate": -52
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b86269",
+                "name": "(in Gaul) Aeduan allies",
+                "allyArmyList": {
+                    "_id": "6153519003385c0016b838ec",
+                    "name": "Sedentary Gallic",
+                    "listId": 66,
+                    "sublistId": "c",
+                    "dateRange": {
+                        "_id": "6153507503385c0016b8184b",
+                        "startDate": -99,
+                        "endDate": -50
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519003385c0016b838ee",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838ef",
+                                    "troopTypeCode": "JCV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Noble horsemen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519003385c0016b838f0",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838f1",
+                                    "troopTypeCode": "BAD",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Unshielded horsemen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519003385c0016b838f2",
+                            "min": 3,
+                            "max": 5,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838f3",
+                                    "troopTypeCode": "WRR",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Fierce fighters",
+                            "note": "Helvetii or Belgae",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519003385c0016b838f4",
+                            "min": 3,
+                            "max": 5,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838f5",
+                                    "troopTypeCode": "LFT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Sedentary infantry",
+                            "note": "all except Helvetii or Belgae",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519003385c0016b838f6",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519003385c0016b838f7",
+                                    "troopTypeCode": "RBL",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Poorly equipped and trained bowmen, slingers, and unshielded javelinmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9dce1af0600177095a5",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b8626a",
+        "dateRange": {
+            "_id": "615351a603385c0016b8626b",
+            "startDate": -63,
+            "endDate": -38
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b8626c",
+                "name": "(in Asia) Judaean allies",
+                "allyArmyList": {
+                    "_id": "6153519303385c0016b83cb8",
+                    "name": "Late Judaean",
+                    "listId": 113,
+                    "sublistId": "a",
+                    "dateRange": {
+                        "_id": "6153507a03385c0016b81aca",
+                        "startDate": -63,
+                        "endDate": 6
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519303385c0016b83cba",
+                            "min": 1,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cbb",
+                                    "troopTypeCode": "RDR",
+                                    "dismountTypeCode": null,
+                                    "note": "all"
+                                },
+                                {
+                                    "_id": "6153519303385c0016b83cbc",
+                                    "troopTypeCode": "HFT",
+                                    "dismountTypeCode": null,
+                                    "note": "all"
+                                }
+                            ],
+                            "description": "Judaean cohorts",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83cbd",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cbe",
+                                    "troopTypeCode": "BLV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Bowmen",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83cbf",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cc0",
+                                    "troopTypeCode": "SKM",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Skirmishing slingers",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83cc1",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cc2",
+                                    "troopTypeCode": "RBL",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Javelinmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83cc3",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cc4",
+                                    "troopTypeCode": "HRD",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Judaean massed infantry",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83cc5",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cc6",
+                                    "troopTypeCode": "RBL",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Bandits",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9e1e1af060017709825",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b8626d",
+        "dateRange": {
+            "_id": "615351a603385c0016b8626e",
+            "startDate": -53,
+            "endDate": -36
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b8626f",
+                "name": "(in Asia) Armenian allies",
+                "allyArmyList": {
+                    "_id": "6153519303385c0016b83c7f",
+                    "name": "Early Armenian and Gordyene",
+                    "listId": 110,
+                    "sublistId": "a",
+                    "dateRange": {
+                        "_id": "6153507a03385c0016b81a9b",
+                        "startDate": -300,
+                        "endDate": 244
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519303385c0016b83c81",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83c82",
+                                    "troopTypeCode": "CAT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Cataphracts",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83c83",
+                            "min": 1,
+                            "max": 2,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83c84",
+                                    "troopTypeCode": "HBW",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Horse archers",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83c85",
+                            "min": 1,
+                            "max": 2,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83c86",
+                                    "troopTypeCode": "BLV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Bowmen",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83c87",
+                            "min": 1,
+                            "max": 3,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83c88",
+                                    "troopTypeCode": "LFT",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Javelinmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9e0e1af0600177097f6",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b86270",
+        "dateRange": {
+            "_id": "615351a603385c0016b86271",
+            "startDate": -30,
+            "endDate": -28
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b86272",
+                "name": "(in Macedonia) Dacian allies",
+                "allyArmyList": {
+                    "_id": "6153519303385c0016b83cd9",
+                    "name": "Dacian or Carpi",
+                    "listId": 117,
+                    "sublistId": "a",
+                    "dateRange": {
+                        "_id": "6153507a03385c0016b81ae7",
+                        "startDate": -60,
+                        "endDate": 380
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519303385c0016b83cdb",
+                            "min": 2,
+                            "max": 5,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cdc",
+                                    "troopTypeCode": "WBD",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Fighters armed with javelins",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83cdd",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [
+                                {
+                                    "_id": "6153519303385c0016b83cde",
+                                    "startDate": -60,
+                                    "endDate": 106
+                                }
+                            ],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cdf",
+                                    "troopTypeCode": "RDR",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Dacian and Bastarnae tribesmen armed with falx",
+                            "note": "",
+                            "core": "all",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83ce0",
+                            "min": 1,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83ce1",
+                                    "troopTypeCode": "BLV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Tribal bowmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": false,
+                    "armyListId": "5fb1b9e1e1af060017709842",
+                    "__v": 0
+                }
+            }
+        ]
+    },
+    {
+        "_id": "615351a603385c0016b86273",
+        "dateRange": {
+            "_id": "615351a603385c0016b86274",
+            "startDate": -42,
+            "endDate": -42
+        },
+        "note": null,
+        "allyEntries": [
+            {
+                "_id": "615351a603385c0016b86275",
+                "name": "(in Gaul or Asia commanded by Cassius or Brutus) Eastern clients",
+                "allyArmyList": {
+                    "_id": "6153519303385c0016b83ca6",
+                    "name": "Cassius or Brutus",
+                    "listId": 111,
+                    "sublistId": "y",
+                    "dateRange": {
+                        "_id": "6153519303385c0016b83ca7",
+                        "startDate": -42,
+                        "endDate": -42
+                    },
+                    "troopOptions": [
+                        {
+                            "_id": "6153519303385c0016b83ca8",
+                            "min": 1,
+                            "max": 2,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83ca9",
+                                    "troopTypeCode": "HBW",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Thracian or client horse archers",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        },
+                        {
+                            "_id": "6153519303385c0016b83caa",
+                            "min": 0,
+                            "max": 1,
+                            "dateRanges": [],
+                            "troopEntries": [
+                                {
+                                    "_id": "6153519303385c0016b83cab",
+                                    "troopTypeCode": "ARC",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                },
+                                {
+                                    "_id": "6153519303385c0016b83cac",
+                                    "troopTypeCode": "BLV",
+                                    "dismountTypeCode": null,
+                                    "note": null
+                                }
+                            ],
+                            "description": "Client foot bowmen",
+                            "note": "",
+                            "core": "",
+                            "battleCardEntries": []
+                        }
+                    ],
+                    "internalContingent": true,
+                    "__v": 0
+                }
+            }
+        ]
+    }
+]
