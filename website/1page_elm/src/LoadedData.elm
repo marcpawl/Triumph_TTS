@@ -18,6 +18,7 @@ type alias ArmyLoaded =
     ,   armyDetails: MeshweshTypes.Army 
     ,   allyOptions: (List MeshweshTypes.AllyOptions) 
     ,   thematicCategories: (List MeshweshTypes.ThematicCategory)
+    ,   enemies: List MeshweshTypes.ArmyId
   }
 
 

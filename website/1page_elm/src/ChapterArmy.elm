@@ -12,6 +12,7 @@ import ArmyBattleCardsSubsection
 import GeneralsSubsection
 import TroopOptionsSubsection exposing (subsectionRendered)
 import OptionalContingentsSubsection exposing (subsectionRendered)
+import EnemiesSubsection exposing (subsectionRendered)
 import Notes
 
 topographyToString : Topography -> String
@@ -191,5 +192,6 @@ chapterArmy army  =
             ratingsEtcRendered army.armyDetails
         ,   TroopOptionsSubsection.subsectionRendered army.armyDetails
         ,   OptionalContingentsSubsection.subsectionRendered army.allyOptions
+        ,   EnemiesSubsection.subsectionRendered army.enemies
         ]
 

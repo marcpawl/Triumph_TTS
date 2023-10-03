@@ -10,6 +10,7 @@ import Json.Decode as Decode
         , field
         , int
         , list
+        , map
         , map3
         , map4
         , string
@@ -329,3 +330,12 @@ decodeAllyOptions =
         |> optional  "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
         |> required  "note" decodeNote
         |> required "allyEntries" (list decodeAllyEntry)
+
+
+decodeEnemies: Decoder (List MeshweshTypes.ArmyId)
+decodeEnemies =
+    Decode.list 
+        (map
+            MeshweshTypes.ArmyId
+            (field "id" string) 
+        )

@@ -57,6 +57,7 @@ type alias ArmyLoading =
     ,   armyDetails: Maybe MeshweshTypes.Army -- Nothing indicates waiting for response
     ,   allyOptions: Maybe (List MeshweshTypes.AllyOptions) -- Nothing indicates waiting for response
     ,   thematicCategories: Maybe (List MeshweshTypes.ThematicCategory)  -- Nothing indicates waiting for response
+    ,   enemies: Maybe (List MeshweshTypes.ArmyId)
   }
 
 
@@ -83,6 +84,7 @@ type Msg
     | ArmyReceived  MeshweshTypes.ArmyId (Result Http.Error MeshweshTypes.Army)
     | ThematicCategoriesReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.ThematicCategory))
     | AllyOptionsReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.AllyOptions))
+    | EnemiesReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.ArmyId))
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -95,6 +97,7 @@ update msg model =
         ArmyReceived id result -> handleArmyReceivedMsg id result model
         ThematicCategoriesReceived id result -> handleThematicCategoriesReceivedMsg id result model
         AllyOptionsReceived id result -> handleAllyOptionsReceivedMsg id result model
+        EnemiesReceived id result -> handleEnemiesReceivedMsg id result model
 
 httpErrorToString : Http.Error -> String
 httpErrorToString error =
@@ -170,8 +173,9 @@ armyLoadingView armyLoading =
         []
         [
             downloadMaybeView armyLoading.armyDetails
-        ,   downloadMaybeView armyLoading.allyOptions                   
+        ,   downloadMaybeView armyLoading.allyOptions            
         ,   downloadMaybeView armyLoading.thematicCategories
+        ,   downloadMaybeView armyLoading.enemies
         ,   Html.td
             []
             [
@@ -181,12 +185,8 @@ armyLoadingView armyLoading =
 
 loadedView: LoadedData -> Html.Html msg
 loadedView loadedData =
-    Html.div
-        []
-        [
-            Html.text "TODO display LOADED view"
-        ,   partArmyLists loadedData 
-        ]
+    partArmyLists loadedData 
+
 
 errorView: String -> Html.Html msg
 errorView errorMessage =
@@ -381,7 +381,7 @@ downloadSummary =
 
 toArmyLoading: MeshweshTypes.Summary -> (MeshweshTypes.ArmyId, ArmyLoading)
 toArmyLoading summary =
-    (summary.id, ArmyLoading summary.id summary.name Nothing Nothing Nothing)
+    (summary.id, ArmyLoading summary.id summary.name Nothing Nothing Nothing Nothing)
 
 loadingArmiesList: List MeshweshTypes.Summary ->  ArmyIdTable.Table ArmyLoading
 loadingArmiesList summaries =
@@ -416,6 +416,7 @@ downloadArmies summaryString =
                                     List.map downloadArmy (ArmyIdTable.values waitingList)
                                 ,   List.map downloadThematicCategories (ArmyIdTable.values waitingList)
                                 ,   List.map downloadAllyOptions (ArmyIdTable.values waitingList)
+                                ,   List.map downloadEnemies (ArmyIdTable.values waitingList)
                                 ]
                     in
                     (LoadingArmies 
@@ -448,6 +449,14 @@ downloadAllyOptions armyLoading =
                 (Decode.list MeshweshDecoder.decodeAllyOptions)
         }
 
+downloadEnemies: ArmyLoading -> Cmd Msg
+downloadEnemies armyLoading =
+    Http.get
+        { 
+            url = armyListsUrl (String.concat [armyLoading.id.id, ".enemyArmy.json"])
+            , expect = Http.expectJson (EnemiesReceived armyLoading.id) 
+                MeshweshDecoder.decodeEnemies
+        }
 
 
 isJust: Maybe a -> Bool
@@ -458,10 +467,14 @@ isJust a =
 
 isFullyLoaded: ArmyLoading -> Bool
 isFullyLoaded armyLoading =
-    List.all (\x->x) [
-        isJust armyLoading.allyOptions, 
-        isJust armyLoading.thematicCategories, 
-        isJust armyLoading.armyDetails]
+    List.all 
+        (\x->x) 
+        [
+            isJust armyLoading.allyOptions
+        ,   isJust armyLoading.thematicCategories
+        ,   isJust armyLoading.armyDetails
+        ,   isJust armyLoading.enemies
+        ]
 
 toArmyLoaded: ArmyLoading -> Maybe ArmyLoaded
 toArmyLoaded armyLoading =
@@ -474,12 +487,16 @@ toArmyLoaded armyLoading =
                     (case armyLoading.thematicCategories of
                         Nothing -> Nothing
                         Just thematicCategories -> 
-                            Just (ArmyLoaded
-                                    armyLoading.id
-                                    armyLoading.armyName 
-                                    armyDetails
-                                    allyOptions
-                                    thematicCategories)
+                            case armyLoading.enemies of
+                                Nothing -> Nothing
+                                Just enemies ->
+                                    Just (ArmyLoaded
+                                            armyLoading.id
+                                            armyLoading.armyName 
+                                            armyDetails
+                                            allyOptions
+                                            thematicCategories
+                                            enemies)
                     )
             )
 
@@ -567,6 +584,16 @@ allyOptionsReceived loadingData armyId newAllyOptions =
         newAllyOptions 
         (\oldEntry data -> { oldEntry | allyOptions= Just data})
 
+
+enemiesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ArmyId ->  ( Model, Cmd msg )
+enemiesReceived loadingData armyId newEnemyId =
+    dataReceived 
+        loadingData 
+        armyId 
+        newEnemyId 
+        (\oldEntry data -> { oldEntry | enemies= Just data})
+
+
 dataReceivedErrorMessage: String -> String -> MeshweshTypes.ArmyId -> Model -> (Model, Cmd msg)
 dataReceivedErrorMessage state dataTypeName armyId model =
     let
@@ -622,6 +649,10 @@ handleAllyOptionsReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List M
 handleAllyOptionsReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model allyOptionsReceived "Thematic Category"
 
+
+handleEnemiesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ArmyId) -> Model -> ( Model, Cmd msg )
+handleEnemiesReceivedMsg armyId result model =
+    handleDataReceivedReceivedMsg armyId result model enemiesReceived "Enemies"
 
 
 partArmyLists: LoadedData -> Html msg
