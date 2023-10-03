@@ -18,9 +18,27 @@ renderMaybeDate maybeDate =
         Just date -> [ DateRange.renderedDateRange date.startDate date.endDate ]
 
 
-renderAllyEntry:  AllyEntry -> List (Html msg)
-renderAllyEntry entry =
-    if entry.allyArmyList.internalContingent then
+renderFullListReference:  Bool -> (Maybe String) -> List (Html msg)
+renderFullListReference internal maybeArmyListId =
+    if internal then
+        []
+    else
+        [
+            -- TODO make anchor
+            Html.div
+                []
+                [
+                    Html.text "Full Army List: "
+                ,   case maybeArmyListId of
+                        Nothing -> Html.text "not available"
+                        Just armyId -> Html.text armyId -- TODO
+                ]
+        ]
+
+
+renderAllyEntry:  Bool -> AllyEntry -> List (Html msg)
+renderAllyEntry internal entry  =
+    if  internal == entry.allyArmyList.internalContingent  then
         [
             Html.h4
                 [
@@ -36,27 +54,28 @@ renderAllyEntry entry =
                         ]
                     ,   renderMaybeDate entry.allyArmyList.dateRange
                     ,   [ TroopOptionsSubsection.renderTroopsTables entry.allyArmyList.troopOptions ]
+                    ,   renderFullListReference internal entry.allyArmyList.armyListId
                     ]
                 )
         ]
     else
         []
 
-renderAllyOptions: AllyOptions -> List (Html msg)
-renderAllyOptions options =
+renderAllyOptions: Bool -> AllyOptions -> List (Html msg)
+renderAllyOptions internal options =
     List.concat 
         (List.concat
             [
                 -- TODO render options.note
                 -- TODO render options.date
-                (List.map renderAllyEntry options.allyEntries)
+                (List.map (renderAllyEntry internal) options.allyEntries)
             ]
         )
 
-renderAllyOptionsList: List AllyOptions ->  Html msg
-renderAllyOptionsList list =
+renderAllyOptionsList: Bool -> List AllyOptions ->  Html msg
+renderAllyOptionsList internal list =
     let 
-        rendering = List.concat (List.map renderAllyOptions list)
+        rendering = List.concat (List.map (renderAllyOptions internal) list)
     in 
         if ( List.length rendering) < 1 then
             Html.div
@@ -71,8 +90,8 @@ renderAllyOptionsList list =
 
 
 
-subsectionRendered: List AllyOptions -> Html msg
-subsectionRendered allies =
+optionalContingentsSubsectionRendered: List AllyOptions -> Html msg
+optionalContingentsSubsectionRendered allies =
     Html.div []
         [
             ( Html.div
@@ -88,5 +107,39 @@ subsectionRendered allies =
           [Html.text 
             """These troops are part of the main army but are in an optional contingent. The minimum and maximum only apply if the contingent is selected. In the cases where there is more than one optional contingent, the player may select any or all of the optional contingents."""
           ]
-        , (renderAllyOptionsList allies)
+        , ((renderAllyOptionsList True) allies)
+        ]
+
+allyContingentsSubsectionRendered: List AllyOptions -> Html msg
+allyContingentsSubsectionRendered allies =
+    Html.div []
+        [
+            ( Html.div
+                [
+                    Html.Attributes.class "subsectionHeader"
+                ]
+                [ Html.text "Ally Troop Options" ]
+            )
+        , Html.div 
+          [
+          Html.Attributes.class "requiredTroopsDescription"
+          ] 
+          [Html.text 
+            """These troops are not part of the main army. The minimum and 
+               maximum only apply if the ally option is selected. No more 
+               than one ally option may be selected. Most ally options only 
+               include one allied contingent. Some ally options include 
+               two allied contingents.
+               """
+          ]
+        , ((renderAllyOptionsList False) allies)
+        ]
+
+subsectionRendered: List AllyOptions -> Html msg
+subsectionRendered allies =
+    Html.div
+        []
+        [
+            optionalContingentsSubsectionRendered allies
+        ,   allyContingentsSubsectionRendered allies
         ]

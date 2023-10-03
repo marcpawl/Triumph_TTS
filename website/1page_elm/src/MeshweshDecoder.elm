@@ -314,6 +314,7 @@ decodeAllyArmyList =
         |> optional "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
         |> required "troopOptions" (list decodeTroopOptionEntry)
         |> required "internalContingent" Decode.bool
+        |> optional "armyListId" (Decode.maybe string) Nothing
 
 
 decodeAllyEntry: Decoder MeshweshTypes.AllyEntry

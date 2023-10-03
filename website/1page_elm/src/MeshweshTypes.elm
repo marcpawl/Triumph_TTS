@@ -153,6 +153,7 @@ type alias AllyArmyList =
   , dateRange: Maybe DateRangeEntry
   , troopOptions: List TroopOptionEntry
   , internalContingent: Bool
+  , armyListId: Maybe String
   }
 
 type alias AllyEntry =
