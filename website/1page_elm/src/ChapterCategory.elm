@@ -1,6 +1,6 @@
 -- Render the page for displaying the armies in a category
 
-module ChapterCategory exposing (chaptersForAllCategories)
+module ChapterCategory exposing (partThematicCategories)
 
 import Dict exposing (Dict)
 import Set exposing (Set)
@@ -142,9 +142,48 @@ createCategories loadedData =
 
 -- Create chapters for all the thematic categories.
 -- Each category gets one chapter.
-chaptersForAllCategories: LoadedData -> List (Html msg)
-chaptersForAllCategories loadedData =
+chaptersForAllCategories: List (ThematicCategory, List ArmyDescriptor) -> LoadedData -> List (Html msg)
+chaptersForAllCategories categories loadedData =
     List.map
         chapterCategory
-        (createCategories loadedData)
+        categories
 
+renderCategoryReference: (ThematicCategory, List ArmyDescriptor) -> Html msg
+renderCategoryReference category =
+    let
+        (catId, _) = category
+    in
+        Html.div
+            []
+            [
+                Html.a
+                    [ Html.Attributes.href ("#" ++ catId.name)]
+                    [
+                        Html.text catId.name
+                    ]
+            ]
+
+
+categoriesTableOfContents: List (ThematicCategory, List ArmyDescriptor) -> LoadedData -> Html msg
+categoriesTableOfContents categories loadedData = 
+    Html.div
+        []
+        (
+            List.map
+                renderCategoryReference
+                categories
+        )
+
+partThematicCategories: LoadedData -> Html msg
+partThematicCategories loadedData =
+    let
+        categories = createCategories loadedData
+    in
+        part
+            "Thematic Categories"
+            ( List.concat
+                [
+                    [ categoriesTableOfContents categories loadedData ]
+                ,   (chaptersForAllCategories categories loadedData)
+            ]
+        )

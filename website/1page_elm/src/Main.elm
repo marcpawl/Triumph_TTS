@@ -24,7 +24,7 @@ import ArmyIdTable
 import LoadedData exposing (ArmyLoaded, LoadedData)
 import BookParts exposing (..)
 import ChapterArmy exposing (partArmyLists)
-import ChapterCategory exposing (chaptersForAllCategories)
+import ChapterCategory exposing (partThematicCategories)
 import DateRange exposing (..)
 
 
@@ -707,12 +707,6 @@ handleRelatedArmiesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List
 handleRelatedArmiesReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model relatedArmiesReceived "Related Armies"
 
-
-partThematicCategories: LoadedData -> Html msg
-partThematicCategories loadedData =
-    part
-        "Thematic Categories"
-        (chaptersForAllCategories loadedData)
 
 
 compare: String -> String -> Order
