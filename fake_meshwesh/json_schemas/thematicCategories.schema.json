@@ -2,21 +2,5 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "thematicCategories",
   "description": "Meshwesh thematicCategories",
-  "$id": "https://github.com/marcpawl/Triumph_TTS.git/$thematicCategories",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "properties": {
-      "name": {
-        "type": "string"
-      },
-      "id": {
-        "type": "string"
-      }
-    },
-    "required": [
-      "id",
-      "name"
-    ]
-  }
+  "$id": "https://github.com/marcpawl/Triumph_TTS.git/$thematicCategories"
 }

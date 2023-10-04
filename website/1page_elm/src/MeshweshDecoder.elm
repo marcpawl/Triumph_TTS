@@ -339,3 +339,12 @@ decodeEnemies =
             MeshweshTypes.ArmyId
             (field "id" string) 
         )
+
+
+decodeRelatedArmies: Decoder (List MeshweshTypes.ArmyId)
+decodeRelatedArmies =
+    Decode.list 
+        (map
+            MeshweshTypes.ArmyId
+            (field "id" string) 
+        )

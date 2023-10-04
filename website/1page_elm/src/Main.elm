@@ -58,6 +58,7 @@ type alias ArmyLoading =
     ,   allyOptions: Maybe (List MeshweshTypes.AllyOptions) -- Nothing indicates waiting for response
     ,   thematicCategories: Maybe (List MeshweshTypes.ThematicCategory)  -- Nothing indicates waiting for response
     ,   enemies: Maybe (List MeshweshTypes.ArmyId)
+    ,   relatedArmies: Maybe (List MeshweshTypes.ArmyId)
   }
 
 
@@ -85,6 +86,7 @@ type Msg
     | ThematicCategoriesReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.ThematicCategory))
     | AllyOptionsReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.AllyOptions))
     | EnemiesReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.ArmyId))
+    | RelatedArmiesReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.ArmyId))
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -98,6 +100,7 @@ update msg model =
         ThematicCategoriesReceived id result -> handleThematicCategoriesReceivedMsg id result model
         AllyOptionsReceived id result -> handleAllyOptionsReceivedMsg id result model
         EnemiesReceived id result -> handleEnemiesReceivedMsg id result model
+        RelatedArmiesReceived id result -> handleRelatedArmiesReceivedMsg id result model
 
 httpErrorToString : Http.Error -> String
 httpErrorToString error =
@@ -113,7 +116,7 @@ httpErrorToString error =
         Http.BadStatus 400 ->
             "Verify your information and try again"
         Http.BadStatus _ ->
-            "Unknown error"
+            "Unknown error: Bad status"
         Http.BadBody errorMessage ->
             errorMessage
 
@@ -381,7 +384,7 @@ downloadSummary =
 
 toArmyLoading: MeshweshTypes.Summary -> (MeshweshTypes.ArmyId, ArmyLoading)
 toArmyLoading summary =
-    (summary.id, ArmyLoading summary.id summary.name Nothing Nothing Nothing Nothing)
+    (summary.id, ArmyLoading summary.id summary.name Nothing Nothing Nothing Nothing Nothing)
 
 loadingArmiesList: List MeshweshTypes.Summary ->  ArmyIdTable.Table ArmyLoading
 loadingArmiesList summaries =
@@ -417,6 +420,7 @@ downloadArmies summaryString =
                                 ,   List.map downloadThematicCategories (ArmyIdTable.values waitingList)
                                 ,   List.map downloadAllyOptions (ArmyIdTable.values waitingList)
                                 ,   List.map downloadEnemies (ArmyIdTable.values waitingList)
+                                ,   List.map downloadRelatedArmies (ArmyIdTable.values waitingList)
                                 ]
                     in
                     (LoadingArmies 
@@ -459,6 +463,16 @@ downloadEnemies armyLoading =
         }
 
 
+downloadRelatedArmies: ArmyLoading -> Cmd Msg
+downloadRelatedArmies armyLoading =
+    Http.get
+        { 
+            url = armyListsUrl (String.concat [armyLoading.id.id, ".associatedArmyLists.json"])
+            , expect = Http.expectJson (RelatedArmiesReceived armyLoading.id) 
+                MeshweshDecoder.decodeRelatedArmies
+        }
+
+
 isJust: Maybe a -> Bool
 isJust a =
     case a of
@@ -490,13 +504,17 @@ toArmyLoaded armyLoading =
                             case armyLoading.enemies of
                                 Nothing -> Nothing
                                 Just enemies ->
-                                    Just (ArmyLoaded
-                                            armyLoading.id
-                                            armyLoading.armyName 
-                                            armyDetails
-                                            allyOptions
-                                            thematicCategories
-                                            enemies)
+                                    case armyLoading.relatedArmies of
+                                        Nothing -> Nothing
+                                        Just relatedArmies ->
+                                            Just (ArmyLoaded
+                                                    armyLoading.id
+                                                    armyLoading.armyName 
+                                                    armyDetails
+                                                    allyOptions
+                                                    thematicCategories
+                                                    enemies
+                                                    relatedArmies)
                     )
             )
 
@@ -594,6 +612,15 @@ enemiesReceived loadingData armyId newEnemyId =
         (\oldEntry data -> { oldEntry | enemies= Just data})
 
 
+relatedArmiesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ArmyId ->  ( Model, Cmd msg )
+relatedArmiesReceived loadingData armyId relatedArmyId =
+    dataReceived 
+        loadingData 
+        armyId 
+        relatedArmyId 
+        (\oldEntry data -> { oldEntry | relatedArmies= Just data})
+
+
 dataReceivedErrorMessage: String -> String -> MeshweshTypes.ArmyId -> Model -> (Model, Cmd msg)
 dataReceivedErrorMessage state dataTypeName armyId model =
     let
@@ -653,6 +680,11 @@ handleAllyOptionsReceivedMsg armyId result model =
 handleEnemiesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ArmyId) -> Model -> ( Model, Cmd msg )
 handleEnemiesReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model enemiesReceived "Enemies"
+
+
+handleRelatedArmiesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ArmyId) -> Model -> ( Model, Cmd msg )
+handleRelatedArmiesReceivedMsg armyId result model =
+    handleDataReceivedReceivedMsg armyId result model relatedArmiesReceived "Related Armies"
 
 
 partArmyLists: LoadedData -> Html msg

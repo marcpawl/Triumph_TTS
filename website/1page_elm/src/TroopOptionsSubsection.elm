@@ -371,7 +371,11 @@ renderTroopsTables list =
             Html.td [][Html.text "Troop Types"]
           , Html.td [][Html.text "Min"]
           , Html.td [][Html.text "Max"]
-          , Html.td [][Html.text "Battle Line"]
+          , Html.td []
+              [
+                  Html.text "Battle"
+              ,   Html.text "Line"
+              ]
           , Html.td [][Html.text "Restrictions"]
           , Html.td [][Html.text "Battle Cards"]
           ]
