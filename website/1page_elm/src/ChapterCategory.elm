@@ -151,17 +151,40 @@ chaptersForAllCategories categories loadedData =
 renderCategoryReference: (ThematicCategory, List ArmyDescriptor) -> Html msg
 renderCategoryReference category =
     let
-        (catId, _) = category
+        (catId, armies) = category
+        maybeDate = categoryDateString armies
     in
         Html.div
             []
             [
                 Html.a
                     [ Html.Attributes.href ("#" ++ catId.name)]
-                    [
-                        Html.text catId.name
-                    ]
+                    ( List.concat
+                        [
+                            [ Html.text catId.name]
+                        ,   case maybeDate of
+                            Nothing -> []
+                            Just text -> [ Html.text (" " ++ text)]
+                        ]
+                    )
             ]
+
+byStartDate: (ThematicCategory, List ArmyDescriptor) -> (ThematicCategory, List ArmyDescriptor) -> Order
+byStartDate a b =
+    let
+        (a_cat, a_armies) = a
+        (b_cat, b_armies) = b
+        a_start = minDate(a_armies)
+        b_start = minDate(b_armies)
+        dateOrder = compare 
+            (Maybe.withDefault -99999 a_start)
+            (Maybe.withDefault -99999 b_start)
+
+    in
+        case dateOrder of
+            GT -> GT
+            LT -> LT
+            EQ -> compare a_cat.name b_cat.name
 
 
 categoriesTableOfContents: List (ThematicCategory, List ArmyDescriptor) -> LoadedData -> Html msg
@@ -169,9 +192,9 @@ categoriesTableOfContents categories loadedData =
     Html.div
         []
         (
-            List.map
+                List.sortWith byStartDate categories
+            |>  List.map
                 renderCategoryReference
-                categories
         )
 
 partThematicCategories: LoadedData -> Html msg
