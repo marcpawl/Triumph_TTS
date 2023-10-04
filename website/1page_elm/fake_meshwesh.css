@@ -114,6 +114,7 @@
    line-height: 1.1;
    font-size: 48px;
    box-sizing: border-box;
+   margin-bottom: 24px;
 }
 
 .chapterTitle {
@@ -124,6 +125,7 @@
    line-height: 1.1;
    font-size: 36px;
    box-sizing: border-box;
+   margin-bottom: 15px;
 }
 
 .chapterSubtitle {
@@ -135,6 +137,7 @@
    color: #777777;
    font-size: 24px;
    box-sizing: border-box;
+   margin-bottom: 12px;
 }
 
 .subsectionHeader {
