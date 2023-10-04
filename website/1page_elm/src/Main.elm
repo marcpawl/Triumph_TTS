@@ -82,7 +82,7 @@ init href =
 type Msg
     = 
       LoadSummary
-    | SummaryReceived (Result Http.Error String)
+    | SummaryReceived (Result Http.Error (List MeshweshTypes.Summary))
     | ArmyReceived  MeshweshTypes.ArmyId (Result Http.Error MeshweshTypes.Army)
     | ThematicCategoriesReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.ThematicCategory))
     | AllyOptionsReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.AllyOptions))
@@ -94,9 +94,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         LoadSummary -> (LoadingSummary, downloadSummary)
-        SummaryReceived  (Err httpError) -> 
-            (Error (httpErrorToString httpError), Cmd.none)
-        SummaryReceived (Ok summaryString) -> downloadArmies summaryString 
+        SummaryReceived result -> handleSummaryReceivedMsg result 
         ArmyReceived id result -> handleArmyReceivedMsg id result model
         ThematicCategoriesReceived id result -> handleThematicCategoriesReceivedMsg id result model
         AllyOptionsReceived id result -> handleAllyOptionsReceivedMsg id result model
@@ -399,7 +397,7 @@ downloadSummary:   Cmd Msg
 downloadSummary =
     Http.get
         { url = (armyListsUrl "summary.json")
-        , expect = Http.expectString SummaryReceived
+        , expect = Http.expectJson SummaryReceived MeshweshDecoder.decodeSummaryList
         }
 
 
@@ -411,42 +409,26 @@ loadingArmiesList: List MeshweshTypes.Summary ->  ArmyIdTable.Table ArmyLoading
 loadingArmiesList summaries =
     ArmyIdTable.fromList (List.map toArmyLoading summaries)
 
-downloadArmies: String -> (Model, Cmd Msg)
-downloadArmies summaryString =
-    let 
-        summaryListResult = Json.Decode.decodeString MeshweshDecoder.decodeSummaryList summaryString
+downloadArmies: List MeshweshTypes.Summary -> (Model, Cmd Msg)
+downloadArmies summaryList =
+    let
+        -- TODO process all the armies
+        waitingList = loadingArmiesList (List.take 50 summaryList)
     in
-        case summaryListResult of
-            Err jsonDecodeError -> 
-                (
-                    Error 
-                        (String.concat
-                            [
-                                "Summary list decode error:"
-                            ,   (Json.Decode.errorToString jsonDecodeError)
-                            ]
-                        )
-                ,   Cmd.none
-                )
-            Ok summaryList ->
-                let
-                    -- TODO process all the armies
-                    waitingList = loadingArmiesList (List.take 50 summaryList)
-                in
-                    let 
-                        commands =
-                            List.concat 
-                                [ 
-                                    List.map downloadArmy (ArmyIdTable.values waitingList)
-                                ,   List.map downloadThematicCategories (ArmyIdTable.values waitingList)
-                                ,   List.map downloadAllyOptions (ArmyIdTable.values waitingList)
-                                ,   List.map downloadEnemies (ArmyIdTable.values waitingList)
-                                ,   List.map downloadRelatedArmies (ArmyIdTable.values waitingList)
-                                ]
-                    in
-                    (LoadingArmies 
-                        (LoadingData waitingList (ArmyIdTable.empty)), 
-                        Cmd.batch commands)
+        let 
+            commands =
+                List.concat 
+                    [ 
+                        List.map downloadArmy (ArmyIdTable.values waitingList)
+                    ,   List.map downloadThematicCategories (ArmyIdTable.values waitingList)
+                    ,   List.map downloadAllyOptions (ArmyIdTable.values waitingList)
+                    ,   List.map downloadEnemies (ArmyIdTable.values waitingList)
+                    ,   List.map downloadRelatedArmies (ArmyIdTable.values waitingList)
+                    ]
+        in
+        (LoadingArmies 
+            (LoadingData waitingList (ArmyIdTable.empty)), 
+            Cmd.batch commands)
 
 
 downloadArmy: ArmyLoading -> Cmd Msg
@@ -568,7 +550,7 @@ updateLoadingData loadingData newEntry =
 -- loadingData: Model before the new data
 -- newEntry: data received
 -- new model an command to enact
-updateWaiting: LoadingData -> ArmyLoading ->  ( Model, Cmd msg )
+updateWaiting: LoadingData -> ArmyLoading ->  ( Model, Cmd Msg )
 updateWaiting loadingData newEntry =
     let
         newLoadingData = updateLoadingData loadingData newEntry
@@ -579,7 +561,7 @@ updateWaiting loadingData newEntry =
             (LoadingArmies newLoadingData, Cmd.none)
 
 
-dataReceived: LoadingData -> MeshweshTypes.ArmyId -> dataType -> (ArmyLoading->dataType->ArmyLoading) -> ( Model, Cmd msg )
+dataReceived: LoadingData -> MeshweshTypes.ArmyId -> dataType -> (ArmyLoading->dataType->ArmyLoading) -> ( Model, Cmd Msg )
 dataReceived loadingData armyId data assignment =
     let
         oldEntryMaybe = ArmyIdTable.get armyId loadingData.waiting
@@ -598,7 +580,7 @@ dataReceived loadingData armyId data assignment =
 
 
 
-armyReceived: LoadingData -> MeshweshTypes.ArmyId -> MeshweshTypes.Army ->  ( Model, Cmd msg )
+armyReceived: LoadingData -> MeshweshTypes.ArmyId -> MeshweshTypes.Army ->  ( Model, Cmd Msg )
 armyReceived loadingData armyId newArmy =
     dataReceived 
         loadingData 
@@ -606,7 +588,7 @@ armyReceived loadingData armyId newArmy =
         newArmy 
         (\oldEntry data -> { oldEntry | armyDetails= Just data})
 
-thematicCategoriesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ThematicCategory ->  ( Model, Cmd msg )
+thematicCategoriesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ThematicCategory ->  ( Model, Cmd Msg )
 thematicCategoriesReceived loadingData armyId newCategories =
     dataReceived 
         loadingData 
@@ -615,7 +597,7 @@ thematicCategoriesReceived loadingData armyId newCategories =
         (\oldEntry data -> { oldEntry | thematicCategories= Just data})
 
 
-allyOptionsReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.AllyOptions ->  ( Model, Cmd msg )
+allyOptionsReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.AllyOptions ->  ( Model, Cmd Msg )
 allyOptionsReceived loadingData armyId newAllyOptions =
     dataReceived 
         loadingData 
@@ -624,7 +606,7 @@ allyOptionsReceived loadingData armyId newAllyOptions =
         (\oldEntry data -> { oldEntry | allyOptions= Just data})
 
 
-enemiesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ArmyId ->  ( Model, Cmd msg )
+enemiesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ArmyId ->  ( Model, Cmd Msg )
 enemiesReceived loadingData armyId newEnemyId =
     dataReceived 
         loadingData 
@@ -633,7 +615,7 @@ enemiesReceived loadingData armyId newEnemyId =
         (\oldEntry data -> { oldEntry | enemies= Just data})
 
 
-relatedArmiesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ArmyId ->  ( Model, Cmd msg )
+relatedArmiesReceived: LoadingData -> MeshweshTypes.ArmyId -> List MeshweshTypes.ArmyId ->  ( Model, Cmd Msg )
 relatedArmiesReceived loadingData armyId relatedArmyId =
     dataReceived 
         loadingData 
@@ -642,14 +624,14 @@ relatedArmiesReceived loadingData armyId relatedArmyId =
         (\oldEntry data -> { oldEntry | relatedArmies= Just data})
 
 
-dataReceivedErrorMessage: String -> String -> MeshweshTypes.ArmyId -> Model -> (Model, Cmd msg)
+dataReceivedErrorMessage: String -> String -> MeshweshTypes.ArmyId -> Model -> (Model, Cmd Msg)
 dataReceivedErrorMessage state dataTypeName armyId model =
     let
         _ = Debug.log ("Data received while " ++ state) (String.concat [dataTypeName, " ", armyId.id])
     in
         (model, Cmd.none)
 
-handleDataReceivedReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error dataTypeReceived -> Model -> (LoadingData -> MeshweshTypes.ArmyId -> dataTypeReceived ->  ( Model, Cmd msg )) -> String -> ( Model, Cmd msg )
+handleDataReceivedReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error dataTypeReceived -> Model -> (LoadingData -> MeshweshTypes.ArmyId -> dataTypeReceived ->  ( Model, Cmd Msg )) -> String -> ( Model, Cmd Msg )
 handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
     case result of
         Ok newArmy -> 
@@ -682,28 +664,43 @@ handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
             )
 
 
+handleSummaryReceivedMsg : Result Http.Error (List MeshweshTypes.Summary) -> ( Model, Cmd Msg )
+handleSummaryReceivedMsg result =
+    case result of
+        Ok summaryList ->  (downloadArmies summaryList)
+        Err httpError -> 
+            (
+                Error 
+                (String.concat 
+                    [
+                        "Download of summary falied "
+                    ,  (httpErrorToString httpError)
+                    ])
+            ,   Cmd.none
+            )
+ 
 
-handleArmyReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error Army -> Model -> ( Model, Cmd msg )
+handleArmyReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error Army -> Model -> ( Model, Cmd Msg )
 handleArmyReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model armyReceived "Army"
 
 
-handleThematicCategoriesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ThematicCategory) -> Model -> ( Model, Cmd msg )
+handleThematicCategoriesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ThematicCategory) -> Model -> ( Model, Cmd Msg )
 handleThematicCategoriesReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model thematicCategoriesReceived "Thematic Category"
 
 
-handleAllyOptionsReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.AllyOptions) -> Model -> ( Model, Cmd msg )
+handleAllyOptionsReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.AllyOptions) -> Model -> ( Model, Cmd Msg )
 handleAllyOptionsReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model allyOptionsReceived "Thematic Category"
 
 
-handleEnemiesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ArmyId) -> Model -> ( Model, Cmd msg )
+handleEnemiesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ArmyId) -> Model -> ( Model, Cmd Msg )
 handleEnemiesReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model enemiesReceived "Enemies"
 
 
-handleRelatedArmiesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ArmyId) -> Model -> ( Model, Cmd msg )
+handleRelatedArmiesReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error (List MeshweshTypes.ArmyId) -> Model -> ( Model, Cmd Msg )
 handleRelatedArmiesReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model relatedArmiesReceived "Related Armies"
 
