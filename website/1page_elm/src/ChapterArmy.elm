@@ -14,6 +14,7 @@ import TroopOptionsSubsection exposing (subsectionRendered)
 import OptionalContingentsSubsection exposing (subsectionRendered)
 import EnemiesSubsection exposing (subsectionRendered)
 import RelatedArmiesSubsection exposing (subsectionRendered)
+import ArmyThematicCategoriesSubsection exposing (subsectionRendered)
 import Notes
 
 topographyToString : Topography -> String
@@ -195,5 +196,6 @@ chapterArmy army  =
         ,   OptionalContingentsSubsection.subsectionRendered army.allyOptions
         ,   EnemiesSubsection.subsectionRendered army.enemies
         ,   RelatedArmiesSubsection.subsectionRendered army.enemies
+        ,   ArmyThematicCategoriesSubsection.subsectionRendered army.thematicCategories
         ]
 
