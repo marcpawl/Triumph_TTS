@@ -224,7 +224,9 @@ renderTroopRow troopOptionEntry =
     ]
     [
       (Html.td
-        []
+        [
+          Html.Attributes.class "troopTypesColumn"
+        ]
         [
           renderTroopEntries troopOptionEntry.troopEntries
         , renderTroopDescription troopOptionEntry.description
@@ -246,10 +248,14 @@ renderTroopRow troopOptionEntry =
         ] )
     , (renderBattleLine troopOptionEntry)
     , (Html.td
-        []
+        [
+          Html.Attributes.class "textColumn"
+        ]
         (renderRestrictions troopOptionEntry))
     , (Html.td
-        []
+        [
+          Html.Attributes.class "textColumn"
+        ]
         (renderBattleCards troopOptionEntry)
       )
     ]
@@ -271,7 +277,7 @@ renderTroopsTables list =
           []
           [
             Html.th 
-              [Html.Attributes.class "columnHeader"]
+              [Html.Attributes.class "textColumnHeader"]
               [Html.text "Troop Types"]
           , Html.th 
               [Html.Attributes.class "columnHeader"]
@@ -287,10 +293,10 @@ renderTroopsTables list =
               ,   Html.text "Line"
               ]
           , Html.th 
-              [Html.Attributes.class "columnHeader"]
+              [Html.Attributes.class "textColumnHeader"]
               [Html.text "Restrictions"]
           , Html.th 
-              [Html.Attributes.class "columnHeader"]
+              [Html.Attributes.class "textColumnHeader"]
               [Html.text "Battle Cards"]
           ]
         ]

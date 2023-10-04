@@ -183,6 +183,12 @@
    padding: 8px;
 }
 
+.textColumnHeader {
+   text-align: left;
+   vertical-align: bottom;
+   padding: 8px;
+}
+
 .battleLineColumn {
    text-align: center;
 }
@@ -190,6 +196,21 @@
 
 .numberColumn {
    text-align: right;
+   pading-left: 4px;
+   pading-right: 4px;
+}
+
+.textColumn {
+   text-align: left;
+   pading-left: 4px;
+   pading-right: 4px;
+}
+
+.troopTypesColumn {
+   text-align: left;
+   pading-left: 4px;
+   pading-right: 4px;
+   max-width: 200px;
 }
 
 table {
