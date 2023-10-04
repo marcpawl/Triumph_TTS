@@ -136,7 +136,8 @@ type alias Army =
 
 -- Category that an army belongs to.
 type alias ThematicCategory =
-  { id : String
+  { 
+    id : String
   , name : String
   }
 
@@ -168,5 +169,3 @@ type alias AllyOptions =
   , note: Maybe String
   , allyEntries: List AllyEntry
   }
-
-  

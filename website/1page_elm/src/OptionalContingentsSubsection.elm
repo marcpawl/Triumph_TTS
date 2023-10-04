@@ -7,10 +7,6 @@ import List
 import DateRange
 import TroopOptionsSubsection
 
--- These troops are part of the main army but are in an optional contingent. The minimum and maximum only apply if the contingent is selected. In the cases where there is more than one optional contingent, the player may select any or all of the optional contingents.
-
--- No optional contingents available
-
 renderMaybeDate: Maybe DateRangeEntry -> List (Html msg)
 renderMaybeDate maybeDate =
     case maybeDate of
@@ -36,28 +32,33 @@ renderFullListReference internal maybeArmyListId =
         ]
 
 
+
+renderAllyEntryHeader: AllyEntry -> Html msg
+renderAllyEntryHeader entry =
+    Html.h4
+        [ Html.Attributes.class "allyHeader" ]
+        ( List.concat
+            [
+                [ Html.div
+                    []
+                    [
+                        Html.text entry.name
+                    ]
+                ]
+            ,   renderMaybeDate entry.allyArmyList.dateRange
+            ]
+        )
+
+
 renderAllyEntry:  Bool -> AllyEntry -> List (Html msg)
 renderAllyEntry internal entry  =
     if  internal == entry.allyArmyList.internalContingent  then
-        [
-            Html.h4
-                [
-                    Html.Attributes.class "allyHeader"
-                ]
-                ( List.concat
-                    [
-                        [ Html.div
-                            []
-                            [
-                              Html.text entry.name
-                            ]
-                        ]
-                    ,   renderMaybeDate entry.allyArmyList.dateRange
-                    ,   [ TroopOptionsSubsection.renderTroopsTables entry.allyArmyList.troopOptions ]
-                    ,   renderFullListReference internal entry.allyArmyList.armyListId
-                    ]
-                )
-        ]
+        List.concat 
+            [
+                    [ renderAllyEntryHeader entry ]
+                ,   [ TroopOptionsSubsection.renderTroopsTables entry.allyArmyList.troopOptions ]
+                ,   renderFullListReference internal entry.allyArmyList.armyListId
+            ]
     else
         []
 
@@ -71,6 +72,25 @@ renderAllyOptions internal options =
                 (List.map (renderAllyEntry internal) options.allyEntries)
             ]
         )
+
+
+allyOptionsDescriptionText: Bool -> String
+allyOptionsDescriptionText internal = 
+    if internal then
+        """These troops are part of the main army but are in an optional 
+        contingent. The minimum and maximum only apply if the 
+            contingent is selected. In the cases where there is more than 
+        one optional contingent, the player may select any or all of 
+        the optional contingents.
+        """
+    else
+        """These troops are not part of the main army. The minimum 
+            and maximum only apply if the ally option is selected. 
+            No more than one ally option may be selected. Most ally 
+            options only include one allied contingent. Some ally 
+            options include two allied contingents.
+        """
+
 
 renderAllyOptionsList: Bool -> List AllyOptions ->  Html msg
 renderAllyOptionsList internal list =
@@ -86,8 +106,15 @@ renderAllyOptionsList internal list =
         else
             Html.div
                 []
-                rendering
-
+                (List.concat
+                    [  
+                        [ Html.div 
+                           [ Html.Attributes.class "requiredTroopsDescription" ] 
+                           [ Html.text (allyOptionsDescriptionText internal) ]
+                        ]
+                    ,   rendering
+                    ]
+                )
 
 
 optionalContingentsSubsectionRendered: List AllyOptions -> Html msg
@@ -100,13 +127,6 @@ optionalContingentsSubsectionRendered allies =
                 ]
                 [ Html.text "Optional Contingents" ]
             )
-        , Html.div 
-          [
-          Html.Attributes.class "requiredTroopsDescription"
-          ] 
-          [Html.text 
-            """These troops are part of the main army but are in an optional contingent. The minimum and maximum only apply if the contingent is selected. In the cases where there is more than one optional contingent, the player may select any or all of the optional contingents."""
-          ]
         , ((renderAllyOptionsList True) allies)
         ]
 
@@ -120,18 +140,6 @@ allyContingentsSubsectionRendered allies =
                 ]
                 [ Html.text "Ally Troop Options" ]
             )
-        , Html.div 
-          [
-          Html.Attributes.class "requiredTroopsDescription"
-          ] 
-          [Html.text 
-            """These troops are not part of the main army. The minimum and 
-               maximum only apply if the ally option is selected. No more 
-               than one ally option may be selected. Most ally options only 
-               include one allied contingent. Some ally options include 
-               two allied contingents.
-               """
-          ]
         , ((renderAllyOptionsList False) allies)
         ]
 

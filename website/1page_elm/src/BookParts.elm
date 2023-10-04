@@ -14,7 +14,15 @@ part partTitle chapters =
         (
             List.append
                 [
-                    page [Html.text partTitle]
+                    page 
+                        [
+                            Html.div
+                                [ Html.Attributes.class "partTitle"]
+                                [
+                                    Html.text partTitle
+                                ]
+                        ]
+
                 ]
                 chapters
         )
@@ -27,6 +35,7 @@ chapterTitle title subtitleMaybe =
             Html.div 
                 [
                     Html.Attributes.class "chapterTitle"
+                ,   Html.Attributes.id  title
                 ]
                 [Html.text title]
         Just subtitle ->
@@ -35,6 +44,7 @@ chapterTitle title subtitleMaybe =
                 Html.div 
                     [
                         Html.Attributes.class "chapterTitle"
+                    ,   Html.Attributes.id title
                     ]
                     [Html.text title]
             ,   Html.div 

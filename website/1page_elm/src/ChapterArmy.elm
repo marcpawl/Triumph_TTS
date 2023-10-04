@@ -1,6 +1,6 @@
 -- Render the page for displaying an armies details
 
-module ChapterArmy exposing (chapterArmy)
+module ChapterArmy exposing (partArmyLists)
 
 import LoadedData exposing (..)
 import MeshweshTypes exposing (..)
@@ -16,6 +16,8 @@ import EnemiesSubsection exposing (subsectionRendered)
 import RelatedArmiesSubsection exposing (subsectionRendered)
 import ArmyThematicCategoriesSubsection exposing (subsectionRendered)
 import Notes
+import ArmyIdTable
+
 
 topographyToString : Topography -> String
 topographyToString topography =
@@ -178,7 +180,6 @@ ratingsEtcRendered army =
             ]
 
 
-
 -- 1 chapter for an army
 chapterArmy: ArmyLoaded -> Html msg
 chapterArmy army  =
@@ -199,3 +200,48 @@ chapterArmy army  =
         ,   ArmyThematicCategoriesSubsection.subsectionRendered army.thematicCategories
         ]
 
+
+-- Create chapters for all the armies.
+-- Each army gets one chapter.
+chaptersForAllArmies: LoadedData -> List (Html msg)
+chaptersForAllArmies loadedData =
+    List.map
+        chapterArmy
+        -- TODO sort by name
+        (ArmyIdTable.values loadedData.armies)
+
+
+armyListReference: ArmyLoaded -> Html msg
+armyListReference armyLoaded =
+    Html.div
+        []
+        [
+            Html.a
+                [
+                    Html.Attributes.href ("#" ++ armyLoaded.armyName)
+                ]
+                [
+                    Html.text armyLoaded.armyDetails.derivedData.extendedName
+                ]
+        ]
+
+armyListTableOfContents : LoadedData -> Html msg
+armyListTableOfContents loadedData =
+    Html.div
+        []
+        (
+            List.map
+            armyListReference
+            (ArmyIdTable.values loadedData.armies)
+        )
+
+partArmyLists: LoadedData -> Html msg
+partArmyLists loadedData =
+    part
+        "Army Lists"
+        ( List.concat
+            [
+                [ armyListTableOfContents loadedData ]
+            ,   (chaptersForAllArmies loadedData)
+            ]
+        )

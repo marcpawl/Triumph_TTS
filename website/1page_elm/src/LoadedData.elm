@@ -1,5 +1,6 @@
 module LoadedData exposing (..)
 
+import Dict exposing (Dict)
 import ArmyIdTable
 import MeshweshTypes
 
@@ -21,6 +22,12 @@ type alias ArmyLoaded =
     ,   enemies: List MeshweshTypes.ArmyId
     ,   relatedArmies: List MeshweshTypes.ArmyId
   }
+
+type alias ThematicCategoryLoaded =
+    {
+        name : String
+    ,   armies: List ArmyLoaded
+    }
 
 
 type alias LoadedData =

@@ -23,7 +23,8 @@ import Dict exposing (Dict)
 import ArmyIdTable
 import LoadedData exposing (ArmyLoaded, LoadedData)
 import BookParts exposing (..)
-import ChapterArmy exposing (chapterArmy)
+import ChapterArmy exposing (partArmyLists)
+import ChapterCategory exposing (chaptersForAllCategories)
 import DateRange exposing (..)
 
 
@@ -188,7 +189,12 @@ armyLoadingView armyLoading =
 
 loadedView: LoadedData -> Html.Html msg
 loadedView loadedData =
-    partArmyLists loadedData 
+    Html.div
+        []
+        [
+            partArmyLists loadedData 
+        ,   partThematicCategories loadedData
+        ]
 
 
 errorView: String -> Html.Html msg
@@ -410,7 +416,7 @@ downloadArmies summaryString =
             Ok summaryList ->
                 let
                     -- TODO process all the armies
-                    waitingList = loadingArmiesList (List.take 300 summaryList)
+                    waitingList = loadingArmiesList (List.take 50 summaryList)
                 in
                     let 
                         commands =
@@ -687,11 +693,11 @@ handleRelatedArmiesReceivedMsg armyId result model =
     handleDataReceivedReceivedMsg armyId result model relatedArmiesReceived "Related Armies"
 
 
-partArmyLists: LoadedData -> Html msg
-partArmyLists loadedData =
+partThematicCategories: LoadedData -> Html msg
+partThematicCategories loadedData =
     part
-        "Army Lists"
-        (chaptersForAllArmies loadedData)
+        "Thematic Categories"
+        (chaptersForAllCategories loadedData)
 
 
 compare: String -> String -> Order
@@ -708,15 +714,6 @@ compare aa bb =
 compareArmyName a b =
     compare a.derivedData.extendedName b.derivedData.extendedName
 
-
--- Create chapters for all the armies.
--- Each army gets one chapter.
-chaptersForAllArmies: LoadedData -> List (Html msg)
-chaptersForAllArmies loadedData =
-    List.map
-        chapterArmy
-        -- TODO sort by name
-        (ArmyIdTable.values loadedData.armies)
 
 
 main : Program () Model Msg

@@ -11,7 +11,13 @@ renderCategory category =
     Html.div
         []
         [
-            Html.text category.name
+            Html.a
+                [
+                    Html.Attributes.href ("#" ++ category.name)
+                ]
+                [
+                    Html.text category.name
+                ]
         ]
 
 subsectionRendered: List ThematicCategory -> Html msg

@@ -64,8 +64,14 @@
       margin: 2cm;
    }
 
+   .part {
+      page-break-before: right;
+      break-before: right;
+   }
+
    .chapter {
-      page-break-before: always;
+      page-break-before: left;
+      break-before: left;
    }
 
    .subsectionHeader {
@@ -83,11 +89,27 @@
 
 
 @media screen {
+   .part {
+      margin-top: 20px;
+      margin-top: 20px;
+      border-top: solid black 2px;
+   }
+
    .chapter {
       margin-top: 20px;
       margin-top: 20px;
       border-top: solid black 1px;
    }
+}
+
+.partTitle {
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   font-family: inherit;
+   font-weight: 500;
+   line-height: 1.1;
+   font-size: 48px;
+   box-sizing: border-box;
 }
 
 .chapterTitle {
@@ -96,7 +118,6 @@
    font-family: inherit;
    font-weight: 500;
    line-height: 1.1;
-   color: inherit;
    font-size: 36px;
    box-sizing: border-box;
 }
@@ -152,12 +173,52 @@
    border-style: dotted;
 }
 
-.battleLineColumn {
-   text-align: center
+.columnHeader {
+   text-align: center;
+   vertical-align: bottom;
+   padding: 8px;
 }
 
+.battleLineColumn {
+   text-align: center;
+}
+
+
 .numberColumn {
-   text-align: right
+   text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.troopRow {
+  border-top: solid black 1px;
+  border-bottom: solid rgb(151,151,151) 1px;
+}
+
+.troopNotes {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 1.42857143;
+    box-sizing: border-box;
+}
+
+.troopDescription {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 1.42857143;
+    box-sizing: border-box;
 }
 
 .allyHeader {
@@ -167,10 +228,13 @@
    font-family: inherit;
    font-weight: 500;
    line-height: 1.1;
-   margin-top: 0;
+   margin-top: 16px;
    margin-bottom: 0;
    font-size: 16px;
-   color: inherit;
+   color: black;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   background-color: rgb(200,200,200);
 }
 
 .error {
