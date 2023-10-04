@@ -43,6 +43,7 @@ def extractSchema(type: str):
 
 
 extractSchema("summary")
+extractSchema("battleCards")
 extractSchema("army")
 extractSchema("thematicCategories")
 extractSchema("allyOptions")

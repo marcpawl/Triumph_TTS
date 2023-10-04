@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "battleCards",
+  "description": "Meshwesh battleCards",
+  "$id": "https://github.com/marcpawl/Triumph_TTS.git/$battleCards",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "permanentCode": {
+        "type": "string"
+      },
+      "displayName": {
+        "type": "string"
+      },
+      "importName": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "showInList": {
+        "type": "boolean"
+      },
+      "listName": {
+        "type": "string"
+      },
+      "mdText": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "htmlText": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "category",
+      "displayName",
+      "htmlText",
+      "id",
+      "importName",
+      "listName",
+      "mdText",
+      "permanentCode",
+      "showInList"
+    ]
+  }
+}
