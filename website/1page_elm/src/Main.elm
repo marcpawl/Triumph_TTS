@@ -187,12 +187,27 @@ armyLoadingView armyLoading =
             ]    
         ]
 
-loadedView: LoadedData -> Html.Html msg
-loadedView loadedData =
+armyNameFinder: LoadedData -> MeshweshTypes.ArmyId -> String
+armyNameFinder loadedData armyId =
+    let
+        maybeArmy = ArmyIdTable.get armyId loadedData.armies
+    in
+        case maybeArmy of
+            Nothing ->
+                let 
+                    _ = Debug.log "Army not found" armyId
+                in
+                    "ERROR"
+            Just army ->
+                army.armyName
+
+
+loadedView: (MeshweshTypes.ArmyId -> String) -> LoadedData -> Html.Html msg
+loadedView armyNameFind loadedData =
     Html.div
         []
         [
-            partArmyLists loadedData 
+            partArmyLists armyNameFind loadedData 
         ,   partThematicCategories loadedData
         ]
 
@@ -215,7 +230,7 @@ view model =
             Unloaded _ -> unloadedView
             LoadingSummary -> loadingSummaryView
             LoadingArmies loadingData -> loadingArmiesView loadingData
-            Loaded loadedData -> loadedView loadedData
+            Loaded loadedData -> loadedView (armyNameFinder loadedData) loadedData
             Error errorMessage -> errorView errorMessage
 
 

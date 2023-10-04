@@ -6,14 +6,22 @@ import List
 import MeshweshTypes exposing (ArmyId)
 import LoadedData exposing (ArmyLoaded)
 
-enemyName: ArmyId -> Html msg
-enemyName armyId =
-    Html.div
-        []
-        [ Html.text armyId.id ] -- TODO
+renderEnemyName: (ArmyId -> String) -> ArmyId -> Html msg
+renderEnemyName armyNameFinder armyId =
+    let 
+        name = armyNameFinder armyId
+    in
+        Html.div
+            []
+            [
+                Html.a
+                    [ Html.Attributes.href ("#" ++ name)]
+                    [ Html.text name ] 
+            ]
 
-subsectionRendered: List ArmyId -> Html msg
-subsectionRendered enemies =
+
+subsectionRendered: (ArmyId -> String) -> List ArmyId -> Html msg
+subsectionRendered armyNameFinder enemies =
     Html.div []
         ( List.concat 
             [ 
@@ -21,7 +29,7 @@ subsectionRendered enemies =
                     [ Html.Attributes.class "subsectionHeader" ]
                     [ Html.text "Enemies" ]
                 ]
-            , (List.map enemyName enemies)
+            , (List.map (renderEnemyName armyNameFinder) enemies)
             ]
         )
 

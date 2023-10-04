@@ -59,6 +59,10 @@
       content: " <" attr(href) "> ";
    }
 
+   a {
+       text-decoration: none;
+       color: black;
+   }
 
    @page {
       margin: 2cm;

@@ -14,20 +14,25 @@ renderMaybeDate maybeDate =
         Just date -> [ DateRange.renderedDateRange date.startDate date.endDate ]
 
 
-renderFullListReference:  Bool -> (Maybe String) -> List (Html msg)
-renderFullListReference internal maybeArmyListId =
+renderFullListReference:  (MeshweshTypes.ArmyId -> String ) -> Bool -> (Maybe ArmyId) -> List (Html msg)
+renderFullListReference armyNameFinder internal maybeArmyListId =
     if internal then
         []
     else
         [
-            -- TODO make anchor
             Html.div
                 []
                 [
                     Html.text "Full Army List: "
                 ,   case maybeArmyListId of
                         Nothing -> Html.text "not available"
-                        Just armyId -> Html.text armyId -- TODO
+                        Just armyId -> 
+                            let
+                                name = armyNameFinder armyId
+                            in
+                                Html.a
+                                    [ Html.Attributes.href ("#" ++ name)]
+                                    [ Html.text name ]
                 ]
         ]
 
@@ -50,31 +55,31 @@ renderAllyEntryHeader entry =
         )
 
 
-renderAllyEntry:  Bool -> AllyEntry -> List (Html msg)
-renderAllyEntry internal entry  =
+renderAllyEntry:  (MeshweshTypes.ArmyId -> String ) -> Bool -> AllyEntry -> List (Html msg)
+renderAllyEntry armyNameFinder internal entry  =
     if  internal == entry.allyArmyList.internalContingent  then
         List.concat 
             [
                     [ renderAllyEntryHeader entry ]
                 ,   [ TroopOptionsSubsection.renderTroopsTables entry.allyArmyList.troopOptions ]
-                ,   renderFullListReference internal entry.allyArmyList.armyListId
+                ,   renderFullListReference armyNameFinder internal entry.allyArmyList.armyListId
             ]
     else
         []
 
-renderAllyOptions: Bool -> AllyOptions -> List (Html msg)
-renderAllyOptions internal options =
+renderAllyOptions: (MeshweshTypes.ArmyId -> String ) -> Bool -> AllyOptions -> List (Html msg)
+renderAllyOptions armyNameFinder internal options =
     List.concat 
         (List.concat
             [
                 -- TODO render options.note
                 -- TODO render options.date
-                (List.map (renderAllyEntry internal) options.allyEntries)
+                (List.map (renderAllyEntry armyNameFinder internal) options.allyEntries)
             ]
         )
 
 
-allyOptionsDescriptionText: Bool -> String
+allyOptionsDescriptionText:  Bool -> String
 allyOptionsDescriptionText internal = 
     if internal then
         """These troops are part of the main army but are in an optional 
@@ -92,10 +97,10 @@ allyOptionsDescriptionText internal =
         """
 
 
-renderAllyOptionsList: Bool -> List AllyOptions ->  Html msg
-renderAllyOptionsList internal list =
+renderAllyOptionsList: (MeshweshTypes.ArmyId -> String) -> Bool -> List AllyOptions ->  Html msg
+renderAllyOptionsList armyNameFinder internal list =
     let 
-        rendering = List.concat (List.map (renderAllyOptions internal) list)
+        rendering = List.concat (List.map (renderAllyOptions armyNameFinder internal) list)
     in 
         if ( List.length rendering) < 1 then
             Html.div
@@ -117,8 +122,8 @@ renderAllyOptionsList internal list =
                 )
 
 
-optionalContingentsSubsectionRendered: List AllyOptions -> Html msg
-optionalContingentsSubsectionRendered allies =
+optionalContingentsSubsectionRendered: (MeshweshTypes.ArmyId -> String) -> List AllyOptions -> Html msg
+optionalContingentsSubsectionRendered armyNameFinder allies =
     Html.div []
         [
             ( Html.div
@@ -127,11 +132,11 @@ optionalContingentsSubsectionRendered allies =
                 ]
                 [ Html.text "Optional Contingents" ]
             )
-        , ((renderAllyOptionsList True) allies)
+        , ((renderAllyOptionsList armyNameFinder True) allies)
         ]
 
-allyContingentsSubsectionRendered: List AllyOptions -> Html msg
-allyContingentsSubsectionRendered allies =
+allyContingentsSubsectionRendered: (MeshweshTypes.ArmyId -> String) -> List AllyOptions -> Html msg
+allyContingentsSubsectionRendered armyNameFinder allies =
     Html.div []
         [
             ( Html.div
@@ -140,14 +145,14 @@ allyContingentsSubsectionRendered allies =
                 ]
                 [ Html.text "Ally Troop Options" ]
             )
-        , ((renderAllyOptionsList False) allies)
+        , ((renderAllyOptionsList armyNameFinder False) allies)
         ]
 
-subsectionRendered: List AllyOptions -> Html msg
-subsectionRendered allies =
+subsectionRendered: (MeshweshTypes.ArmyId -> String) -> List AllyOptions -> Html msg
+subsectionRendered armyNameFinder allies =
     Html.div
         []
         [
-            optionalContingentsSubsectionRendered allies
-        ,   allyContingentsSubsectionRendered allies
+            optionalContingentsSubsectionRendered armyNameFinder allies
+        ,   allyContingentsSubsectionRendered armyNameFinder allies
         ]

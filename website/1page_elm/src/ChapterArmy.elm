@@ -181,8 +181,8 @@ ratingsEtcRendered army =
 
 
 -- 1 chapter for an army
-chapterArmy: ArmyLoaded -> Html msg
-chapterArmy army  =
+chapterArmy: (MeshweshTypes.ArmyId -> String) -> ArmyLoaded -> Html msg
+chapterArmy armyNameFind army  =
     chapter 
         army.armyName 
         (Just 
@@ -194,8 +194,8 @@ chapterArmy army  =
         [
             ratingsEtcRendered army.armyDetails
         ,   TroopOptionsSubsection.subsectionRendered army.armyDetails
-        ,   OptionalContingentsSubsection.subsectionRendered army.allyOptions
-        ,   EnemiesSubsection.subsectionRendered army.enemies
+        ,   OptionalContingentsSubsection.subsectionRendered armyNameFind army.allyOptions
+        ,   EnemiesSubsection.subsectionRendered armyNameFind army.enemies
         ,   RelatedArmiesSubsection.subsectionRendered army.enemies
         ,   ArmyThematicCategoriesSubsection.subsectionRendered army.thematicCategories
         ]
@@ -203,10 +203,10 @@ chapterArmy army  =
 
 -- Create chapters for all the armies.
 -- Each army gets one chapter.
-chaptersForAllArmies: LoadedData -> List (Html msg)
-chaptersForAllArmies loadedData =
+chaptersForAllArmies: (MeshweshTypes.ArmyId -> String) -> LoadedData -> List (Html msg)
+chaptersForAllArmies armyNameFind loadedData =
     List.map
-        chapterArmy
+        (chapterArmy armyNameFind)
         -- TODO sort by name
         (ArmyIdTable.values loadedData.armies)
 
@@ -235,13 +235,13 @@ armyListTableOfContents loadedData =
             (ArmyIdTable.values loadedData.armies)
         )
 
-partArmyLists: LoadedData -> Html msg
-partArmyLists loadedData =
+partArmyLists: (MeshweshTypes.ArmyId -> String) -> LoadedData -> Html msg
+partArmyLists armyNameFind loadedData =
     part
         "Army Lists"
         ( List.concat
             [
                 [ armyListTableOfContents loadedData ]
-            ,   (chaptersForAllArmies loadedData)
+            ,   (chaptersForAllArmies armyNameFind loadedData)
             ]
         )
