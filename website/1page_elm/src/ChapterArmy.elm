@@ -196,7 +196,7 @@ chapterArmy armyNameFind army  =
         ,   TroopOptionsSubsection.subsectionRendered army.armyDetails
         ,   OptionalContingentsSubsection.subsectionRendered armyNameFind army.allyOptions
         ,   EnemiesSubsection.subsectionRendered armyNameFind army.enemies
-        ,   RelatedArmiesSubsection.subsectionRendered army.enemies
+        ,   RelatedArmiesSubsection.subsectionRendered armyNameFind army.enemies
         ,   ArmyThematicCategoriesSubsection.subsectionRendered army.thematicCategories
         ]
 

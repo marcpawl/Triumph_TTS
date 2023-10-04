@@ -76,12 +76,10 @@ troopNotes list =
             (\troopEntry->troopEntry.note)
             list
           ) 
-    _ = Debug.log "maybeNotesList" maybeNotesList
     notesString =
         List.filterMap (\x->x) maybeNotesList
      |> (List.intersperse ".  ")
      |> String.concat
-    _ = Debug.log "notesString" notesString
   in
     if String.isEmpty notesString then
       []

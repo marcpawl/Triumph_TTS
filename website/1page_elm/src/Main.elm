@@ -197,7 +197,7 @@ armyNameFinder loadedData armyId =
                 let 
                     _ = Debug.log "Army not found" armyId
                 in
-                    "ERROR"
+                    "ERROR " ++ armyId.id
             Just army ->
                 army.armyName
 
