@@ -265,6 +265,17 @@ table {
    background-color: rgb(200,200,200);
 }
 
+.armyReferences {
+   vertical-align: text-top;
+   width: 180px;
+   background-color: rgb(225, 225, 225);
+   padding-left: 4px;
+}
+
+.armyReferenceLink {
+	padding-top: 4px;
+}
+
 .error {
    -webkit-text-size-adjust: 100%;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

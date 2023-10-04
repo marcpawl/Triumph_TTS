@@ -12,7 +12,7 @@ renderArmyName armyNameFinder armyId =
         name = armyNameFinder armyId
     in
         Html.div
-            []
+            [ Html.Attributes.class "armyReferenceLink" ]
             [
                 Html.a
                     [ Html.Attributes.href ("#" ++ name)]

@@ -192,14 +192,36 @@ chapterArmy armyNameFind army  =
             )
         )
         [
-            ratingsEtcRendered army.armyDetails
-        ,   TroopOptionsSubsection.subsectionRendered army.armyDetails
-        ,   OptionalContingentsSubsection.subsectionRendered armyNameFind army.allyOptions
-        ,   EnemiesSubsection.subsectionRendered armyNameFind army.enemies
-        ,   RelatedArmiesSubsection.subsectionRendered armyNameFind army.enemies
-        ,   ArmyThematicCategoriesSubsection.subsectionRendered army.thematicCategories
-        ]
-
+            Html.table
+                []
+                [
+                    Html.tbody
+                        []
+                        [
+                            Html.tr
+                            []
+                            [
+                                Html.td
+                                    []
+                                    [
+                                        ratingsEtcRendered army.armyDetails
+                                    ]
+                            ,   Html.td
+                                    [
+                                        Html.Attributes.class "armyReferences"
+                                    ]
+                                    [
+                                            EnemiesSubsection.subsectionRendered armyNameFind army.enemies
+                                        ,   RelatedArmiesSubsection.subsectionRendered armyNameFind army.enemies
+                                        ,   ArmyThematicCategoriesSubsection.subsectionRendered army.thematicCategories
+                                    ]
+                            ]
+                        ]
+                ]
+            ,   TroopOptionsSubsection.subsectionRendered army.armyDetails
+            ,   OptionalContingentsSubsection.subsectionRendered armyNameFind army.allyOptions
+       ]
+ 
 
 -- Create chapters for all the armies.
 -- Each army gets one chapter.

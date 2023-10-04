@@ -9,7 +9,7 @@ import LoadedData exposing (ArmyLoaded)
 renderCategory: ThematicCategory -> Html msg
 renderCategory category =
     Html.div
-        []
+        [ Html.Attributes.class "armyReferenceLink" ]
         [
             Html.a
                 [
