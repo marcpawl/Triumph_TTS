@@ -44,7 +44,7 @@ type PageStatus
 
 type alias PreloadData = 
     {
-
+        summaryList: Maybe (List MeshweshTypes.Summary)
     }
 
 type alias LoadingData =
@@ -98,8 +98,8 @@ type Msg
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        LoadSummary -> (LoadingSummary (PreloadData), downloadSummary)
-        SummaryReceived result -> handleSummaryReceivedMsg result 
+        LoadSummary -> (LoadingSummary (PreloadData Nothing), downloadSummary)
+        SummaryReceived result -> handleSummaryReceivedMsg result model
         ArmyReceived id result -> handleArmyReceivedMsg id result model
         ThematicCategoriesReceived id result -> handleThematicCategoriesReceivedMsg id result model
         AllyOptionsReceived id result -> handleAllyOptionsReceivedMsg id result model
@@ -139,7 +139,9 @@ loadingSummaryView preloadData =
     Html.div
         []
         [
-            Html.text "Loading summary .."
+            case preloadData.summaryList of
+                Just _ ->  Html.text "done summary"
+                Nothing ->  Html.text "... summary"
         ]
 
 
@@ -669,21 +671,24 @@ handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
             )
 
 
-handleSummaryReceivedMsg : Result Http.Error (List MeshweshTypes.Summary) -> ( Model, Cmd Msg )
-handleSummaryReceivedMsg result =
+handleSummaryReceivedMsg : Result Http.Error (List MeshweshTypes.Summary) -> Model -> ( Model, Cmd Msg )
+handleSummaryReceivedMsg result model =
     case result of
-        Ok summaryList ->  (downloadArmies summaryList)
+        Ok summaryList ->  
+            ( case model of
+                LoadingSummary preload -> (downloadArmies summaryList)
+                -- TODO log errors
+                Unloaded _ -> (model, Cmd.none)
+                LoadingArmies _ -> (model, Cmd.none)
+                Loaded _  -> (model, Cmd.none)
+                Error  _ -> (model, Cmd.none)
+            )
         Err httpError -> 
             (
-                Error 
-                (String.concat 
-                    [
-                        "Download of summary falied "
-                    ,  (httpErrorToString httpError)
-                    ])
+                Error ("Http summary failed" ++ (httpErrorToString httpError))
             ,   Cmd.none
             )
- 
+
 
 handleArmyReceivedMsg : MeshweshTypes.ArmyId -> Result Http.Error Army -> Model -> ( Model, Cmd Msg )
 handleArmyReceivedMsg armyId result model =
@@ -730,7 +735,7 @@ compareArmyName a b =
 main : Program () Model Msg
 main =
     Browser.element
-        { init = \flags -> ( LoadingSummary (PreloadData), downloadSummary )
+        { init = \flags -> ( LoadingSummary (PreloadData Nothing), downloadSummary )
         , view = view
         , update = update
         , subscriptions = \_ -> Sub.none
