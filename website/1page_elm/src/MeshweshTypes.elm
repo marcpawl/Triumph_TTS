@@ -169,3 +169,9 @@ type alias AllyOptions =
   , note: Maybe String
   , allyEntries: List AllyEntry
   }
+
+type alias BattleCard =
+  {
+    code: BattleCardCode
+  , displayName: String
+  }

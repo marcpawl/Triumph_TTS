@@ -348,3 +348,14 @@ decodeRelatedArmies =
             MeshweshTypes.ArmyId
             (field "id" string) 
         )
+
+decodeBattleCard:  Decoder MeshweshTypes.BattleCard
+decodeBattleCard =
+    Decode.succeed MeshweshTypes.BattleCard
+        |> required  "permanentCode" decodeBattleCardCode
+        |> required  "displayName" string
+
+
+decodeBattleCardList: Decoder (List MeshweshTypes.BattleCard)
+decodeBattleCardList =
+    Decode.list decodeBattleCard

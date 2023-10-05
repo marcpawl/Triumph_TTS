@@ -45,6 +45,7 @@ type PageStatus
 type alias PreloadData = 
     {
         summaryList: Maybe (List MeshweshTypes.Summary)
+    ,   battleCardList: Maybe (List MeshweshTypes.BattleCard)
     }
 
 type alias LoadingData =
@@ -53,6 +54,7 @@ type alias LoadingData =
         waiting: ArmyIdTable.Table  ArmyLoading
         -- Armies that have all their data.
     ,   loaded: ArmyIdTable.Table ArmyLoaded
+    ,   battleCards: List MeshweshTypes.BattleCard
     }
 
 -- Army that is waiting for a file to load.
@@ -88,6 +90,7 @@ type Msg
     = 
       LoadSummary
     | SummaryReceived (Result Http.Error (List MeshweshTypes.Summary))
+    | BattleCardsReceived (Result Http.Error (List MeshweshTypes.BattleCard))
     | ArmyReceived  MeshweshTypes.ArmyId (Result Http.Error MeshweshTypes.Army)
     | ThematicCategoriesReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.ThematicCategory))
     | AllyOptionsReceived MeshweshTypes.ArmyId (Result Http.Error (List MeshweshTypes.AllyOptions))
@@ -98,8 +101,9 @@ type Msg
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        LoadSummary -> (LoadingSummary (PreloadData Nothing), downloadSummary)
+        LoadSummary -> (LoadingSummary (PreloadData Nothing Nothing), downloadPreload)
         SummaryReceived result -> handleSummaryReceivedMsg result model
+        BattleCardsReceived result -> handleBattleCardsReceivedMsg result model
         ArmyReceived id result -> handleArmyReceivedMsg id result model
         ThematicCategoriesReceived id result -> handleThematicCategoriesReceivedMsg id result model
         AllyOptionsReceived id result -> handleAllyOptionsReceivedMsg id result model
@@ -142,6 +146,10 @@ loadingSummaryView preloadData =
             case preloadData.summaryList of
                 Just _ ->  Html.text "done summary"
                 Nothing ->  Html.text "... summary"
+        ,   case preloadData.battleCardList of
+                Just _ ->  Html.text "done battle cards"
+                Nothing ->  Html.text "... battle"
+
         ]
 
 
@@ -407,6 +415,20 @@ downloadSummary =
         , expect = Http.expectJson SummaryReceived MeshweshDecoder.decodeSummaryList
         }
 
+downloadBattleCards:   Cmd Msg
+downloadBattleCards =
+    Http.get
+        { url = (armyListsUrl "battleCards.json")
+        , expect = Http.expectJson BattleCardsReceived MeshweshDecoder.decodeBattleCardList
+        }
+
+downloadPreload: Cmd Msg
+downloadPreload =
+    Cmd.batch
+        [
+            downloadBattleCards
+        ,   downloadSummary
+        ]
 
 toArmyLoading: MeshweshTypes.Summary -> (MeshweshTypes.ArmyId, ArmyLoading)
 toArmyLoading summary =
@@ -416,8 +438,8 @@ loadingArmiesList: List MeshweshTypes.Summary ->  ArmyIdTable.Table ArmyLoading
 loadingArmiesList summaries =
     ArmyIdTable.fromList (List.map toArmyLoading summaries)
 
-downloadArmies: List MeshweshTypes.Summary -> (Model, Cmd Msg)
-downloadArmies summaryList =
+downloadArmies: List MeshweshTypes.Summary -> List MeshweshTypes.BattleCard -> (Model, Cmd Msg)
+downloadArmies summaryList battleCardList =
     let
         -- TODO process all the armies
         waitingList = loadingArmiesList (List.take 50 summaryList)
@@ -434,7 +456,7 @@ downloadArmies summaryList =
                     ]
         in
         (LoadingArmies 
-            (LoadingData waitingList (ArmyIdTable.empty)), 
+            (LoadingData waitingList (ArmyIdTable.empty) battleCardList), 
             Cmd.batch commands)
 
 
@@ -544,13 +566,13 @@ updateLoadingData loadingData newEntry =
                 let 
                     newWaiting = ArmyIdTable.update newEntry.id (\_ -> Just newEntry) loadingData.waiting
                 in
-                    LoadingData newWaiting loadingData.loaded
+                    LoadingData newWaiting loadingData.loaded loadingData.battleCards
             Just newLoadedEntry ->
                 let
                     newWaiting = ArmyIdTable.remove newEntry.id loadingData.waiting
                     newLoaded = ArmyIdTable.insert newLoadedEntry.id newLoadedEntry loadingData.loaded
                 in
-                    LoadingData newWaiting newLoaded
+                    LoadingData newWaiting newLoaded loadingData.battleCards
 
 
 -- Update the mode while we are waiting for data
@@ -671,18 +693,39 @@ handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
             )
 
 
+updateSummaryList: PreloadData -> List MeshweshTypes.Summary -> PreloadData
+updateSummaryList preloadData newSummaryList =
+    {preloadData  | summaryList = Just newSummaryList }
+
+
 handleSummaryReceivedMsg : Result Http.Error (List MeshweshTypes.Summary) -> Model -> ( Model, Cmd Msg )
 handleSummaryReceivedMsg result model =
+    handlePreloadDataReceivedReceivedMsg result model updateSummaryList "Summary List"
+
+updateBattleCardList: PreloadData -> List MeshweshTypes.BattleCard -> PreloadData
+updateBattleCardList preloadData newBattleCardList =
+    {preloadData  | battleCardList = Just newBattleCardList }
+
+handleBattleCardsReceivedMsg : Result Http.Error (List MeshweshTypes.BattleCard) -> Model -> ( Model, Cmd Msg )
+handleBattleCardsReceivedMsg result model =
+    handlePreloadDataReceivedReceivedMsg result model updateBattleCardList "Battle Card List"
+
+handlePreloadDataReceivedReceivedMsg : Result Http.Error dataTypeReceived -> Model -> (PreloadData -> dataTypeReceived ->  PreloadData) -> String -> ( Model, Cmd Msg )
+handlePreloadDataReceivedReceivedMsg result model modelUpdater dataTypeName =
     case result of
         Ok newSummaryList ->  
             ( case model of
-                LoadingSummary preload -> 
+                LoadingSummary preload ->  
                     let
-                        newPreload = { preload | summaryList = Just newSummaryList}
+                        newPreloadData = modelUpdater preload newSummaryList
                     in
-                        case newPreload.summaryList of
-                            Nothing -> (LoadingSummary newPreload, Cmd.none)
-                            Just summaryList -> (downloadArmies summaryList)
+                        case newPreloadData.summaryList of
+                            Nothing -> (LoadingSummary newPreloadData, Cmd.none)
+                            Just summaryList -> 
+                                case newPreloadData.battleCardList of
+                                    Nothing -> (LoadingSummary newPreloadData, Cmd.none)
+                                    Just battleCardList ->  (downloadArmies summaryList battleCardList)
+
                 -- TODO log errors
                 Unloaded _ -> (model, Cmd.none)
                 LoadingArmies _ -> (model, Cmd.none)
@@ -691,7 +734,7 @@ handleSummaryReceivedMsg result model =
             )
         Err httpError -> 
             (
-                Error ("Http summary failed" ++ (httpErrorToString httpError))
+                Error ("Http " ++ dataTypeName ++ " failed" ++ (httpErrorToString httpError))
             ,   Cmd.none
             )
 
@@ -741,7 +784,7 @@ compareArmyName a b =
 main : Program () Model Msg
 main =
     Browser.element
-        { init = \flags -> ( LoadingSummary (PreloadData Nothing), downloadSummary )
+        { init = \flags -> ( LoadingSummary (PreloadData Nothing Nothing), downloadPreload )
         , view = view
         , update = update
         , subscriptions = \_ -> Sub.none
