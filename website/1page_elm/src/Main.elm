@@ -26,7 +26,7 @@ import BookParts exposing (..)
 import ChapterArmy exposing (partArmyLists)
 import ChapterCategory exposing (partThematicCategories)
 import DateRange exposing (..)
-
+import CoverPage exposing (coverPage)
 
 -- MODEL
 
@@ -228,7 +228,8 @@ loadedView armyNameFind loadedData =
     Html.div
         []
         [
-            partArmyLists armyNameFind loadedData 
+            coverPage
+        ,   partArmyLists armyNameFind loadedData 
         ,   partThematicCategories loadedData
         ]
 

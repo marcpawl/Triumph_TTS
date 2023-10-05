@@ -15,20 +15,27 @@ import Platform.Cmd as Cmd
 import Notes
 import List exposing (length)
 
-td: String -> Html.Html msg
-td string =
+td: String-> String -> Html.Html msg
+td class string =
     Html.td
-        []
+        [
+            Html.Attributes.class class
+        ]
         [
             Html.text string
         ]
 
 
-tdMaybe: Maybe String -> Html.Html msg
-tdMaybe maybeSstring =
-    case maybeSstring of
-        Nothing ->    Html.td [] []
-        Just string -> td string
+tdMaybe: String -> Maybe String -> Html.Html msg
+tdMaybe class maybeString =
+    case maybeString of
+        Nothing ->    
+            Html.td 
+                [
+                    Html.Attributes.class class
+                ]
+                []
+        Just string -> td class string
 
 
 countTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
@@ -57,11 +64,11 @@ countTd battleCard =
 
 nameTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 nameTd battlecard =
-    td (battlecard.battleCard.displayName)
+    td ".armyBattleCardsNameColumn" (battlecard.battleCard.displayName)
 
 noteTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 noteTd battlecard =
-    tdMaybe (.note battlecard)
+    tdMaybe ".armyBattleCardsNotesColumn" (.note battlecard)
 
 tr: BattleCardEntry -> Html.Html msg
 tr battlecard =

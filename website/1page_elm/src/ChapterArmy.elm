@@ -202,7 +202,9 @@ chapterArmy armyNameFind army  =
                             []
                             [
                                 Html.td
-                                    []
+                                    [
+                                        Html.Attributes.class "armyRatingsEtc"
+                                    ]
                                     [
                                         ratingsEtcRendered army.armyDetails
                                     ]
@@ -223,14 +225,27 @@ chapterArmy armyNameFind army  =
        ]
  
 
+byArmyName: ArmyLoaded -> ArmyLoaded -> Order
+byArmyName a b =
+    compare
+        (a.armyName)
+        (b.armyName)
+
+
+byArmyStartDate: ArmyLoaded -> ArmyLoaded -> Order
+byArmyStartDate a b =
+    compare
+        (a.armyDetails.derivedData.listStartDate)
+        (b.armyDetails.derivedData.listStartDate)
+
+
 -- Create chapters for all the armies.
 -- Each army gets one chapter.
 chaptersForAllArmies: (MeshweshTypes.ArmyId -> String) -> LoadedData -> List (Html msg)
 chaptersForAllArmies armyNameFind loadedData =
     List.map
         (chapterArmy armyNameFind)
-        -- TODO sort by name
-        (ArmyIdTable.values loadedData.armies)
+        (List.sortWith byArmyName (ArmyIdTable.values loadedData.armies))
 
 
 armyListReference: ArmyLoaded -> Html msg
@@ -247,14 +262,16 @@ armyListReference armyLoaded =
                 ]
         ]
 
-armyListTableOfContents : LoadedData -> Html msg
-armyListTableOfContents loadedData =
+armyListTableOfContents : (ArmyLoaded -> ArmyLoaded -> Order) -> LoadedData -> Html msg
+armyListTableOfContents sortOrder loadedData =
     Html.div
-        []
+        [
+            Html.Attributes.class "armyListTableOfContents"
+        ]
         (
             List.map
             armyListReference
-            (ArmyIdTable.values loadedData.armies)
+            (List.sortWith sortOrder (ArmyIdTable.values loadedData.armies))
         )
 
 partArmyLists: (MeshweshTypes.ArmyId -> String) -> LoadedData -> Html msg
@@ -263,7 +280,16 @@ partArmyLists armyNameFind loadedData =
         "Army Lists"
         ( List.concat
             [
-                [ armyListTableOfContents loadedData ]
+                [ chapter 
+                    "Army Lists by Name"
+                    Nothing
+                    [ armyListTableOfContents byArmyName loadedData ]
+                ]
+            ,   [ chapter 
+                    "Army Lists by Date"
+                    Nothing
+                    [ armyListTableOfContents byArmyStartDate loadedData ]
+                ]
             ,   (chaptersForAllArmies armyNameFind loadedData)
             ]
         )
