@@ -674,9 +674,15 @@ handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
 handleSummaryReceivedMsg : Result Http.Error (List MeshweshTypes.Summary) -> Model -> ( Model, Cmd Msg )
 handleSummaryReceivedMsg result model =
     case result of
-        Ok summaryList ->  
+        Ok newSummaryList ->  
             ( case model of
-                LoadingSummary preload -> (downloadArmies summaryList)
+                LoadingSummary preload -> 
+                    let
+                        newPreload = { preload | summaryList = Just newSummaryList}
+                    in
+                        case newPreload.summaryList of
+                            Nothing -> (LoadingSummary newPreload, Cmd.none)
+                            Just summaryList -> (downloadArmies summaryList)
                 -- TODO log errors
                 Unloaded _ -> (model, Cmd.none)
                 LoadingArmies _ -> (model, Cmd.none)
