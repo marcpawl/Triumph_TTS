@@ -37,10 +37,15 @@ type alias Model =
 
 type PageStatus
     = Unloaded Url
-    | LoadingSummary
+    | LoadingSummary PreloadData
     | LoadingArmies LoadingData
     | Loaded LoadedData
     | Error String
+
+type alias PreloadData = 
+    {
+
+    }
 
 type alias LoadingData =
     {
@@ -93,7 +98,7 @@ type Msg
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        LoadSummary -> (LoadingSummary, downloadSummary)
+        LoadSummary -> (LoadingSummary (PreloadData), downloadSummary)
         SummaryReceived result -> handleSummaryReceivedMsg result 
         ArmyReceived id result -> handleArmyReceivedMsg id result model
         ThematicCategoriesReceived id result -> handleThematicCategoriesReceivedMsg id result model
@@ -129,8 +134,8 @@ unloadedView =
             Html.text "Unloaded .."
         ]
 
-loadingSummaryView: Html.Html msg
-loadingSummaryView =
+loadingSummaryView: PreloadData -> Html.Html msg
+loadingSummaryView preloadData =
     Html.div
         []
         [
@@ -226,7 +231,7 @@ errorView errorMessage =
 view model =
         case model of
             Unloaded _ -> unloadedView
-            LoadingSummary -> loadingSummaryView
+            LoadingSummary preloadData -> loadingSummaryView preloadData
             LoadingArmies loadingData -> loadingArmiesView loadingData
             Loaded loadedData -> loadedView (armyNameFinder loadedData) loadedData
             Error errorMessage -> errorView errorMessage
@@ -641,7 +646,7 @@ handleDataReceivedReceivedMsg armyId result model modelUpdater dataTypeName =
                 Unloaded _ -> 
                     dataReceivedErrorMessage "Unloaded"  dataTypeName  armyId model
 
-                LoadingSummary ->
+                LoadingSummary _ ->
                     dataReceivedErrorMessage "LoadingSummary"  dataTypeName  armyId model
 
                 Loaded _ ->
@@ -725,7 +730,7 @@ compareArmyName a b =
 main : Program () Model Msg
 main =
     Browser.element
-        { init = \flags -> ( LoadingSummary, downloadSummary )
+        { init = \flags -> ( LoadingSummary (PreloadData), downloadSummary )
         , view = view
         , update = update
         , subscriptions = \_ -> Sub.none
