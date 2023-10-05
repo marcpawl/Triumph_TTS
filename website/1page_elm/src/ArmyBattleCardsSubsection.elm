@@ -12,7 +12,6 @@ import Json.Decode as Decode exposing (Decoder)
 import List
 import MeshweshTypes exposing (..)
 import Platform.Cmd as Cmd
-import BattleCards exposing (render)
 import Notes
 import List exposing (length)
 
@@ -58,7 +57,7 @@ countTd battleCard =
 
 nameTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 nameTd battlecard =
-    td (BattleCards.name (.battleCardCode battlecard))
+    td (battlecard.battleCard.displayName)
 
 noteTd: MeshweshTypes.BattleCardEntry -> Html.Html msg
 noteTd battlecard =

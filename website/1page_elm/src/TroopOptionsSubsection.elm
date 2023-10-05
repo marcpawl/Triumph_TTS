@@ -19,7 +19,6 @@ import Notes
 import List exposing (length)
 import BookParts exposing (..)
 import DateRange
-import BattleCards
 
 
 -- toNoteString: TroopEntry -> String
@@ -192,7 +191,7 @@ renderBattleCard battleCardEntry =
               List.concat
                 [
                   (formatCount battleCardEntry.min battleCardEntry.max)
-                , [ BattleCards.name battleCardEntry.battleCardCode ]
+                , [ battleCardEntry.battleCard.displayName ]
                 , (renderBattleCardNote battleCardEntry)
                 ]
             )

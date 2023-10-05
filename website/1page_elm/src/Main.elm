@@ -143,12 +143,20 @@ loadingSummaryView preloadData =
     Html.div
         []
         [
-            case preloadData.summaryList of
-                Just _ ->  Html.text "done summary"
-                Nothing ->  Html.text "... summary"
-        ,   case preloadData.battleCardList of
-                Just _ ->  Html.text "done battle cards"
-                Nothing ->  Html.text "... battle"
+            Html.div
+                []
+                [
+                    case preloadData.summaryList of
+                        Just _ ->  Html.text "done summary"
+                        Nothing ->  Html.text "... summary"
+                ]
+        ,   Html.div
+                []
+                [   
+                    case preloadData.battleCardList of
+                        Just _ ->  Html.text "done battle cards"
+                        Nothing ->  Html.text "... battle"
+                ]
 
         ]
 
@@ -442,15 +450,15 @@ downloadArmies: List MeshweshTypes.Summary -> List MeshweshTypes.BattleCard -> (
 downloadArmies summaryList battleCardList =
     let
         -- TODO process all the armies
-        waitingList = loadingArmiesList (List.take 50 summaryList)
+        waitingList = loadingArmiesList (List.take 1000 summaryList)
     in
         let 
             commands =
                 List.concat 
                     [ 
-                        List.map downloadArmy (ArmyIdTable.values waitingList)
+                        List.map (downloadArmy battleCardList) (ArmyIdTable.values waitingList)
                     ,   List.map downloadThematicCategories (ArmyIdTable.values waitingList)
-                    ,   List.map downloadAllyOptions (ArmyIdTable.values waitingList)
+                    ,   List.map (downloadAllyOptions battleCardList) (ArmyIdTable.values waitingList)
                     ,   List.map downloadEnemies (ArmyIdTable.values waitingList)
                     ,   List.map downloadRelatedArmies (ArmyIdTable.values waitingList)
                     ]
@@ -460,12 +468,15 @@ downloadArmies summaryList battleCardList =
             Cmd.batch commands)
 
 
-downloadArmy: ArmyLoading -> Cmd Msg
-downloadArmy armyLoading =
+downloadArmy: List MeshweshTypes.BattleCard -> ArmyLoading -> Cmd Msg
+downloadArmy battleCards armyLoading =
     Http.get
         { 
             url = armyListsUrl (String.concat [armyLoading.id.id, ".army.json"])
-            , expect = Http.expectJson (ArmyReceived armyLoading.id) MeshweshDecoder.decodeArmy
+            , expect = 
+                Http.expectJson 
+                    (ArmyReceived armyLoading.id) 
+                    (MeshweshDecoder.decodeArmy battleCards)
         }
 
 downloadThematicCategories: ArmyLoading -> Cmd Msg
@@ -476,13 +487,13 @@ downloadThematicCategories armyLoading =
             , expect = Http.expectJson (ThematicCategoriesReceived armyLoading.id) MeshweshDecoder.decodeThematicCategories
         }
 
-downloadAllyOptions: ArmyLoading -> Cmd Msg
-downloadAllyOptions armyLoading =
+downloadAllyOptions: List MeshweshTypes.BattleCard -> ArmyLoading -> Cmd Msg
+downloadAllyOptions battleCards  armyLoading =
     Http.get
         { 
             url = armyListsUrl (String.concat [armyLoading.id.id, ".allyOptions.json"])
             , expect = Http.expectJson (AllyOptionsReceived armyLoading.id) 
-                (Decode.list MeshweshDecoder.decodeAllyOptions)
+                (Decode.list (MeshweshDecoder.decodeAllyOptions battleCards))
         }
 
 downloadEnemies: ArmyLoading -> Cmd Msg
@@ -713,11 +724,11 @@ handleBattleCardsReceivedMsg result model =
 handlePreloadDataReceivedReceivedMsg : Result Http.Error dataTypeReceived -> Model -> (PreloadData -> dataTypeReceived ->  PreloadData) -> String -> ( Model, Cmd Msg )
 handlePreloadDataReceivedReceivedMsg result model modelUpdater dataTypeName =
     case result of
-        Ok newSummaryList ->  
+        Ok newPreloadDataPart ->  
             ( case model of
                 LoadingSummary preload ->  
                     let
-                        newPreloadData = modelUpdater preload newSummaryList
+                        newPreloadData = modelUpdater preload newPreloadDataPart
                     in
                         case newPreloadData.summaryList of
                             Nothing -> (LoadingSummary newPreloadData, Cmd.none)

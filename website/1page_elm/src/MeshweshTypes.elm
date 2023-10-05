@@ -74,7 +74,7 @@ type alias BattleCardEntry =
     -- _id: String
     min: Int
   , max: Int
-  , battleCardCode: BattleCardCode
+  , battleCard: BattleCard
   , note: Maybe String
   }
 
@@ -172,6 +172,6 @@ type alias AllyOptions =
 
 type alias BattleCard =
   {
-    code: BattleCardCode
+    code: String
   , displayName: String
   }

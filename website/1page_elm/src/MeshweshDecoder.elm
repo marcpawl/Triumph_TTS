@@ -213,18 +213,46 @@ decodeBattleCardCodeHelp battleCardCode =
         "SW" -> (Decode.succeed MeshweshTypes.SW)
         _ -> ( fail ("Invalid battle card code " ++ battleCardCode))
 
-decodeBattleCardCode : Decoder MeshweshTypes.BattleCardCode
-decodeBattleCardCode =
-  string 
-    |> Decode.andThen decodeBattleCardCodeHelp
+findBattleCard: List MeshweshTypes.BattleCard -> String -> Maybe MeshweshTypes.BattleCard
+findBattleCard battleCards code =
+    List.filter (\x->x.code == code) battleCards
+    |> List.head
 
-decodeBattleCardEntry: Decoder MeshweshTypes.BattleCardEntry
-decodeBattleCardEntry =
-     Decode.succeed MeshweshTypes.BattleCardEntry
+decodeBattleCardCodeHelp2: List MeshweshTypes.BattleCard  -> Maybe MeshweshTypes.BattleCard -> Decoder MeshweshTypes.BattleCard
+decodeBattleCardCodeHelp2 battleCards maybeBattleCard =
+        (case maybeBattleCard of
+            Nothing -> Decode.fail ("Battle card not found " ++ (Debug.toString battleCards))
+            Just card -> Decode.succeed card
+        )
+
+decodeBattleCardCode : List MeshweshTypes.BattleCard -> Decoder MeshweshTypes.BattleCard
+decodeBattleCardCode battleCards =
+    string 
+    |> Decode.map (findBattleCard battleCards)
+    |> Decode.andThen (decodeBattleCardCodeHelp2 battleCards)
+        -- (\code -> 
+        --     List.filter (\x:Battle->x.code == code) battleCards
+        --     |> List.head 
+        --     |>  (\maybeBattleCard ->
+        --             case maybeBattleCard of
+        --                 Just battleCard -> battleCard
+        --                 Nothing -> 
+        --                     let
+        --                         _ = Debug.todo ("Bad battle card " ++ Debug.toString(code) ++ " " ++ Debug.toString(battleCards))
+        --                     in
+        --                         Decode.fail "BattleCard not found"
+        --                         -- MeshweshTypes.BattleCard MeshweshTypes.AM "ERROR"
+        --         )
+        -- )
+
+    
+decodeBattleCardEntry: (List MeshweshTypes.BattleCard) -> Decoder MeshweshTypes.BattleCardEntry
+decodeBattleCardEntry battleCards =
+    Decode.succeed MeshweshTypes.BattleCardEntry
         -- |> required  "id" string
         |> optional "min" int 1
         |> optional "max" int 1
-        |> required "battleCardCode" decodeBattleCardCode
+        |> required "battleCardCode" (decodeBattleCardCode battleCards)
         |> required "note" decodeNote
 
 
@@ -254,8 +282,8 @@ decodeDateRangeEntry =
     decodeDateRangeEntryRaw |> Decode.andThen decodeDateRangeEntryHelp
 
 
-decodeTroopOptionEntry: Decoder MeshweshTypes.TroopOptionEntry
-decodeTroopOptionEntry =
+decodeTroopOptionEntry: List MeshweshTypes.BattleCard -> Decoder MeshweshTypes.TroopOptionEntry
+decodeTroopOptionEntry battleCards =
      Decode.succeed MeshweshTypes.TroopOptionEntry
         |> required  "min" int
         |> required  "max" int
@@ -264,7 +292,7 @@ decodeTroopOptionEntry =
         |> required "description" string
         |> required "note" decodeNote
         |> required "core" string
-        |> required "battleCardEntries" (list decodeBattleCardEntry)
+        |> required "battleCardEntries" (list (decodeBattleCardEntry battleCards))
 
 decodeAllyEntryReference : Decoder MeshweshTypes.AllyEntryReference
 decodeAllyEntryReference =
@@ -280,8 +308,8 @@ decodeAllyOptionEntry =
         |> required  "allyEntries" (list decodeAllyEntryReference)
 
 
-decodeArmy : Decoder MeshweshTypes.Army
-decodeArmy =
+decodeArmy : List MeshweshTypes.BattleCard -> Decoder MeshweshTypes.Army
+decodeArmy battleCards =
      Decode.succeed MeshweshTypes.Army
         |> required  "id" decodeArmyId
         |> required "keywords" (list string)
@@ -292,8 +320,8 @@ decodeArmy =
         |> required "maneuverRatings" (list decodeManeuverRating)
         |> required "homeTopographies" (list decodeHomeTopography)
         |> required "troopEntriesForGeneral" (list (decodeTroopEntriesList))
-        |> required "battleCardEntries" (list decodeBattleCardEntry)
-        |> required "troopOptions" (list decodeTroopOptionEntry)
+        |> required "battleCardEntries" (list (decodeBattleCardEntry battleCards))
+        |> required "troopOptions" (list (decodeTroopOptionEntry battleCards))
         |> required "allyOptions" (list decodeAllyOptionEntry)
 
 
@@ -308,28 +336,28 @@ decodeThematicCategories =
     Decode.list decodeThematicCategory
 
 
-decodeAllyArmyList: Decoder MeshweshTypes.AllyArmyList
-decodeAllyArmyList =
+decodeAllyArmyList: List MeshweshTypes.BattleCard -> Decoder MeshweshTypes.AllyArmyList
+decodeAllyArmyList battleCards =
     Decode.succeed MeshweshTypes.AllyArmyList
         |> required "name" string
         |> optional "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
-        |> required "troopOptions" (list decodeTroopOptionEntry)
+        |> required "troopOptions" (list (decodeTroopOptionEntry battleCards))
         |> required "internalContingent" Decode.bool
         |> optional "armyListId" (Decode.maybe decodeArmyId) Nothing
 
 
-decodeAllyEntry: Decoder MeshweshTypes.AllyEntry
-decodeAllyEntry =
+decodeAllyEntry: List MeshweshTypes.BattleCard -> Decoder MeshweshTypes.AllyEntry
+decodeAllyEntry battleCards =
     Decode.succeed MeshweshTypes.AllyEntry
         |> required "name" string
-        |> required "allyArmyList" decodeAllyArmyList
+        |> required "allyArmyList" (decodeAllyArmyList battleCards)
 
-decodeAllyOptions: Decoder MeshweshTypes.AllyOptions
-decodeAllyOptions =
+decodeAllyOptions: List MeshweshTypes.BattleCard -> Decoder MeshweshTypes.AllyOptions
+decodeAllyOptions battleCards =
     Decode.succeed MeshweshTypes.AllyOptions
         |> optional  "dateRange" (Decode.maybe decodeDateRangeEntry) Nothing
         |> required  "note" decodeNote
-        |> required "allyEntries" (list decodeAllyEntry)
+        |> required "allyEntries" (list (decodeAllyEntry battleCards))
 
 
 decodeEnemies: Decoder (List MeshweshTypes.ArmyId)
@@ -352,7 +380,7 @@ decodeRelatedArmies =
 decodeBattleCard:  Decoder MeshweshTypes.BattleCard
 decodeBattleCard =
     Decode.succeed MeshweshTypes.BattleCard
-        |> required  "permanentCode" decodeBattleCardCode
+        |> required  "permanentCode" string
         |> required  "displayName" string
 
 
