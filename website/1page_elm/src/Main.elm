@@ -155,7 +155,7 @@ loadingSummaryView preloadData =
                 [   
                     case preloadData.battleCardList of
                         Just _ ->  Html.text "done battle cards"
-                        Nothing ->  Html.text "... battle"
+                        Nothing ->  Html.text "... battle cards"
                 ]
 
         ]
