@@ -229,8 +229,8 @@ loadedView armyNameFind loadedData =
         []
         [
             coverPage
-        ,   partArmyLists armyNameFind loadedData 
         ,   partThematicCategories loadedData
+        ,   partArmyLists armyNameFind loadedData 
         ]
 
 
