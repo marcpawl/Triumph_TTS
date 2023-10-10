@@ -451,7 +451,7 @@ downloadArmies: List MeshweshTypes.Summary -> List MeshweshTypes.BattleCard -> (
 downloadArmies summaryList battleCardList =
     let
         -- TODO process all the armies
-        waitingList = loadingArmiesList (List.take 1000 summaryList)
+        waitingList = loadingArmiesList (List.take 100 summaryList)
     in
         let 
             commands =

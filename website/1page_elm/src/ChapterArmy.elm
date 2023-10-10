@@ -6,7 +6,7 @@ import LoadedData exposing (..)
 import MeshweshTypes exposing (..)
 import Html exposing (..)
 import Html.Attributes
-import BookParts exposing (..)
+import BookParts
 import DateRange exposing (formattedDateRange)
 import ArmyBattleCardsSubsection
 import GeneralsSubsection
@@ -179,11 +179,52 @@ ratingsEtcRendered army =
             , ArmyBattleCardsSubsection.subsectionRendered army
             ]
 
+chapterArmyTitle: String -> Maybe String -> Html msg
+chapterArmyTitle title subtitleMaybe =
+    case subtitleMaybe of
+        Nothing ->  
+            Html.div 
+                [
+                    Html.Attributes.class "armyChapterTitle"
+                ,   Html.Attributes.id  title
+                ]
+                [Html.text title]
+        Just subtitle ->
+             (Html.div []
+            [
+                Html.div 
+                    [
+                        Html.Attributes.class "armyChapterTitle"
+                    ,   Html.Attributes.id title
+                    ]
+                    [Html.text title]
+            ,   Html.div 
+                    [
+                        Html.Attributes.class "armyChapterSubtitle"
+                    ]
+                    [Html.text subtitle]
+            ])
+
+
+chapterArmyHelp: String-> Maybe String -> List (Html msg) -> Html msg
+chapterArmyHelp title subTitle body =
+    (Html.div
+        [
+            Html.Attributes.class "armyChapter"
+        ]
+        (
+            List.append
+                [
+                    (chapterArmyTitle title subTitle)
+                ]
+                body
+        ))
+
 
 -- 1 chapter for an army
 chapterArmy: (MeshweshTypes.ArmyId -> String) -> ArmyLoaded -> Html msg
 chapterArmy armyNameFind army  =
-    chapter 
+    chapterArmyHelp 
         army.armyName 
         (Just 
             (formattedDateRange 
@@ -241,11 +282,14 @@ byArmyStartDate a b =
 
 -- Create chapters for all the armies.
 -- Each army gets one chapter.
-chaptersForAllArmies: (MeshweshTypes.ArmyId -> String) -> LoadedData -> List (Html msg)
+chaptersForAllArmies: (MeshweshTypes.ArmyId -> String) -> LoadedData -> Html msg
 chaptersForAllArmies armyNameFind loadedData =
-    List.map
-        (chapterArmy armyNameFind)
-        (List.sortWith byArmyName (ArmyIdTable.values loadedData.armies))
+    Html.div
+        [ Html.Attributes.class "page" ]
+        (List.map
+            (chapterArmy armyNameFind)
+            (List.sortWith byArmyName (ArmyIdTable.values loadedData.armies))
+        )
 
 
 armyListReference: ArmyLoaded -> Html msg
@@ -276,20 +320,20 @@ armyListTableOfContents sortOrder loadedData =
 
 partArmyLists: (MeshweshTypes.ArmyId -> String) -> LoadedData -> Html msg
 partArmyLists armyNameFind loadedData =
-    part
+    BookParts.part
         "Army Lists"
         ( List.concat
             [
-                [ chapter 
+                [ BookParts.chapter 
                     "Army Lists by Name"
                     Nothing
                     [ armyListTableOfContents byArmyName loadedData ]
                 ]
-            ,   [ chapter 
+            ,   [ BookParts.chapter 
                     "Army Lists by Date"
                     Nothing
                     [ armyListTableOfContents byArmyStartDate loadedData ]
                 ]
-            ,   (chaptersForAllArmies armyNameFind loadedData)
+            ,   [ chaptersForAllArmies armyNameFind loadedData ]
             ]
         )
