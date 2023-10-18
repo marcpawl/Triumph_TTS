@@ -67,7 +67,7 @@ end
 g_build_date = "20220825"
 
 function onload(saved_data)
-    print_info('\n---------------------------------\nTriumph! v 2.3 beta build ' .. g_build_date )
+    print_info('\n---------------------------------\nTriumph! v 2.4 alpha build ' .. g_build_date )
     print_info("The names and logos of third party products and companies are the property of their respective owners and may also be trademarks. \n\n")
     Wait.time(main_loop, g_seconds_main_loop, -1)
     make_scenery_non_interactable()
