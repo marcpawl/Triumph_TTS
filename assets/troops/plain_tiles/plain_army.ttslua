@@ -5,894 +5,6 @@
 
 require("Triumph_TTS/scripts/static_maps")
 
-tile_plain_Bow_Levy_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Bow Levy General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bow_levy_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bow_levy_general.png',
-}
-
-tile_plain_Bow_Levy_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Bow Levy General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bow_levy_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bow_levy_general_mi.png',
-}
-
-tile_plain_Bow_Levy = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Bow Levy Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bow_levy.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bow_levy.png',
-}
-
-tile_plain_Bow_Levy_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Bow Levy Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bow_levy_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bow_levy_mi.png',
-}
-
-tile_plain_Heavy_Foot_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 15,
-  description = 'Heavy Foot General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_heavy_foot_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_heavy_foot_general.png',
-}
-
-tile_plain_Heavy_Foot_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Heavy Foot General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_heavy_foot_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_heavy_foot_general_mi.png',
-}
-
-tile_plain_Heavy_Foot = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 15,
-  description = 'Heavy Foot Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_heavy_foot.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_heavy_foot.png',
-}
-
-tile_plain_Heavy_Foot_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Heavy Foot Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_heavy_foot_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_heavy_foot_mi.png',
-}
-
-tile_plain_Raiders_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Raiders General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_raiders_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_raiders_general.png',
-}
-
-tile_plain_Raiders_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Raiders General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_raiders_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_raiders_general_mi.png',
-}
-
-tile_plain_Raiders = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Raiders Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_raiders.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_raiders.png',
-}
-
-tile_plain_Raiders_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Raiders Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_raiders_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_raiders_mi.png',
-}
-
-tile_plain_Warriors_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 15,
-  description = 'Warriors General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warriors_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warriors_general.png',
-}
-
-tile_plain_Warriors_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Warriors General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warriors_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warriors_general_mi.png',
-}
-
-tile_plain_Warriors = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 15,
-  description = 'Warriors Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warriors.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warriors.png',
-}
-
-tile_plain_Warriors_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Warriors Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warriors_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warriors_mi.png',
-}
-
-tile_plain_Knights_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Knights General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_knights_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_knights_general.png',
-}
-
-tile_plain_Knights = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Knights Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_knights.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_knights.png',
-}
-
-tile_plain_Light_Spear_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Light Spear General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_spear_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_spear_general.png',
-}
-
-tile_plain_Light_Spear_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Light Spear General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_spear_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_spear_general_mi.png',
-}
-
-tile_plain_Light_Spear = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Light Spear Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_spear.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_spear.png',
-}
-
-tile_plain_Light_Spear_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Light Spear Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_spear_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_spear_mi.png',
-}
-
-tile_plain_Cataphracts_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Cataphracts General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_cataphracts_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_cataphracts_general.png',
-}
-
-tile_plain_Cataphracts = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Cataphracts Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_cataphracts.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_cataphracts.png',
-}
-
-tile_plain_Artillery_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Artillery General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_artillery_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_artillery_general.png',
-}
-
-tile_plain_Artillery_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Artillery General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_artillery_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_artillery_general_mi.png',
-}
-
-tile_plain_Artillery = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Artillery Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_artillery.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_artillery.png',
-}
-
-tile_plain_Artillery_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Artillery Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_artillery_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_artillery_mi.png',
-}
-
-tile_plain_Pavisiers_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Pavisiers General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pavisiers_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pavisiers_general.png',
-}
-
-tile_plain_Pavisiers_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Pavisiers General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pavisiers_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pavisiers_general_mi.png',
-}
-
-tile_plain_Pavisiers = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Pavisiers Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pavisiers.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pavisiers.png',
-}
-
-tile_plain_Pavisiers_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Pavisiers Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pavisiers_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pavisiers_mi.png',
-}
-
-tile_plain_Elephants_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Elephants General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elephants_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elephants_general.png',
-}
-
-tile_plain_Elephants = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Elephants Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elephants.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elephants.png',
-}
-
-tile_plain_Horde_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Horde General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horde_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horde_general.png',
-}
-
-tile_plain_Horde_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Horde General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horde_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horde_general_mi.png',
-}
-
-tile_plain_Horde = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Horde Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horde.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horde.png',
-}
-
-tile_plain_Horde_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Horde Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horde_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horde_mi.png',
-}
-
-tile_plain_Horse_Bow_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Horse Bow General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horse_bow_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horse_bow_general.png',
-}
-
-tile_plain_Horse_Bow = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Horse Bow Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horse_bow.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horse_bow.png',
-}
-
-tile_plain_Chariots_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Chariots General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_chariots_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_chariots_general.png',
-}
-
-tile_plain_Chariots = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Chariots Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_chariots.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_chariots.png',
-}
-
-tile_plain_Elite_Cavalry_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Elite Cavalry General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_cavalry_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_cavalry_general.png',
-}
-
-tile_plain_Elite_Cavalry = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Elite Cavalry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_cavalry.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_cavalry.png',
-}
-
-tile_plain_Rabble_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Rabble General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_rabble_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_rabble_general.png',
-}
-
-tile_plain_Rabble_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Rabble General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_rabble_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_rabble_general_mi.png',
-}
-
-tile_plain_Rabble = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Rabble Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_rabble.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_rabble.png',
-}
-
-tile_plain_Rabble_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Rabble Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_rabble_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_rabble_mi.png',
-}
-
-tile_plain_Pikes_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 15,
-  description = 'Pikes General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pikes_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pikes_general.png',
-}
-
-tile_plain_Pikes_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Pikes General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pikes_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pikes_general_mi.png',
-}
-
-tile_plain_Pikes = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 15,
-  description = 'Pikes Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pikes.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pikes.png',
-}
-
-tile_plain_Pikes_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Pikes Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pikes_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pikes_mi.png',
-}
-
-tile_plain_War_Wagons_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'War Wagons General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_war_wagons_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_war_wagons_general.png',
-}
-
-tile_plain_War_Wagons = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'War Wagons Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_war_wagons.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_war_wagons.png',
-}
-
-tile_plain_Elite_Foot_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 15,
-  description = 'Elite Foot General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_foot_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_foot_general.png',
-}
-
-tile_plain_Elite_Foot_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Elite Foot General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_foot_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_foot_general_mi.png',
-}
-
-tile_plain_Elite_Foot = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 15,
-  description = 'Elite Foot Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_foot.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_foot.png',
-}
-
-tile_plain_Elite_Foot_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Elite Foot Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_foot_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_foot_mi.png',
-}
-
-tile_plain_Skirmishers_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Skirmishers General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_skirmishers_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_skirmishers_general.png',
-}
-
-tile_plain_Skirmishers_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Skirmishers General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_skirmishers_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_skirmishers_general_mi.png',
-}
-
-tile_plain_Skirmishers = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Skirmishers Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_skirmishers.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_skirmishers.png',
-}
-
-tile_plain_Skirmishers_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Skirmishers Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_skirmishers_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_skirmishers_mi.png',
-}
-
-tile_plain_Light_Foot_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Light Foot General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_foot_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_foot_general.png',
-}
-
-tile_plain_Light_Foot_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Light Foot General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_foot_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_foot_general_mi.png',
-}
-
-tile_plain_Light_Foot = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Light Foot Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_foot.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_foot.png',
-}
-
-tile_plain_Light_Foot_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Light Foot Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_foot_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_foot_mi.png',
-}
-
-tile_plain_Battle_Taxi_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Battle Taxi General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_battle_taxi_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_battle_taxi_general.png',
-}
-
-tile_plain_Battle_Taxi = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Battle Taxi Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_battle_taxi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_battle_taxi.png',
-}
-
-tile_plain_Javelin_Cavalry_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Javelin Cavalry General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_javelin_cavalry_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_javelin_cavalry_general.png',
-}
-
-tile_plain_Javelin_Cavalry = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 30,
-  description = 'Javelin Cavalry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_javelin_cavalry.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_javelin_cavalry.png',
-}
-
-tile_plain_Warband_Gen = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Warband General Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warband_general.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warband_general.png',
-}
-
-tile_plain_Warband_Gen_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Warband General Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warband_general_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warband_general_mi.png',
-}
-
-tile_plain_Warband = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 20,
-  description = 'Warband Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warband.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warband.png',
-}
-
-tile_plain_Warband_MI = {
-  height_correction = 0,
-  scale = 1,
-  rotation = 0,
-  depth = 40,
-  description = 'Warband Mobile Infrantry Tile',
-  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
-  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
-  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warband_mi.png',
-  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warband_mi.png',
-}
-
 tile_plain_Spears_Gen = {
   height_correction = 0,
   scale = 1,
@@ -902,7 +14,11 @@ tile_plain_Spears_Gen = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_spears_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_spears_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_spears_general.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_spears_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_spears_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_spears_general.png',
 }
 
 tile_plain_Spears_Gen_MI = {
@@ -914,7 +30,11 @@ tile_plain_Spears_Gen_MI = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_spears_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_spears_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_spears_general_mi.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_spears_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_spears_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_spears_general_mi.png',
 }
 
 tile_plain_Spears = {
@@ -926,7 +46,11 @@ tile_plain_Spears = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_spears.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_spears.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_spears.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_spears.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_spears.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_spears.png',
 }
 
 tile_plain_Spears_MI = {
@@ -938,7 +62,11 @@ tile_plain_Spears_MI = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_spears_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_spears_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_spears_mi.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_spears_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_spears_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_spears_mi.png',
 }
 
 tile_plain_Archers_Gen = {
@@ -950,7 +78,11 @@ tile_plain_Archers_Gen = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_archers_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_archers_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_archers_general.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_archers_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_archers_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_archers_general.png',
 }
 
 tile_plain_Archers_Gen_MI = {
@@ -962,7 +94,11 @@ tile_plain_Archers_Gen_MI = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_archers_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_archers_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_archers_general_mi.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_archers_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_archers_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_archers_general_mi.png',
 }
 
 tile_plain_Archers = {
@@ -974,7 +110,11 @@ tile_plain_Archers = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_archers.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_archers.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_archers.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_archers.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_archers.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_archers.png',
 }
 
 tile_plain_Archers_MI = {
@@ -986,7 +126,715 @@ tile_plain_Archers_MI = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_archers_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_archers_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_archers_mi.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_archers_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_archers_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_archers_mi.png',
+}
+
+tile_plain_Light_Foot_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Light Foot General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_foot_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_light_foot_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_light_foot_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_foot_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_light_foot_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_light_foot_general.png',
+}
+
+tile_plain_Light_Foot_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Light Foot General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_foot_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_light_foot_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_light_foot_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_foot_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_light_foot_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_light_foot_general_mi.png',
+}
+
+tile_plain_Light_Foot = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Light Foot Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_foot.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_light_foot.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_light_foot.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_foot.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_light_foot.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_light_foot.png',
+}
+
+tile_plain_Light_Foot_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Light Foot Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_foot_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_light_foot_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_light_foot_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_foot_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_light_foot_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_light_foot_mi.png',
+}
+
+tile_plain_Warriors_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 15,
+  description = 'Warriors General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warriors_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_warriors_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_warriors_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warriors_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_warriors_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_warriors_general.png',
+}
+
+tile_plain_Warriors_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Warriors General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warriors_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_warriors_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_warriors_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warriors_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_warriors_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_warriors_general_mi.png',
+}
+
+tile_plain_Warriors = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 15,
+  description = 'Warriors Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warriors.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_warriors.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_warriors.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warriors.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_warriors.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_warriors.png',
+}
+
+tile_plain_Warriors_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Warriors Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warriors_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_warriors_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_warriors_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warriors_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_warriors_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_warriors_mi.png',
+}
+
+tile_plain_Elite_Cavalry_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Elite Cavalry General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_cavalry_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_elite_cavalry_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_elite_cavalry_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_cavalry_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_elite_cavalry_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_elite_cavalry_general.png',
+}
+
+tile_plain_Elite_Cavalry = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Elite Cavalry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_cavalry.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_elite_cavalry.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_elite_cavalry.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_cavalry.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_elite_cavalry.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_elite_cavalry.png',
+}
+
+tile_plain_Horde_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Horde General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horde_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_horde_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_horde_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horde_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_horde_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_horde_general.png',
+}
+
+tile_plain_Horde_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Horde General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horde_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_horde_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_horde_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horde_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_horde_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_horde_general_mi.png',
+}
+
+tile_plain_Horde = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Horde Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horde.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_horde.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_horde.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horde.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_horde.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_horde.png',
+}
+
+tile_plain_Horde_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Horde Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horde_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_horde_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_horde_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horde_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_horde_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_horde_mi.png',
+}
+
+tile_plain_Heavy_Foot_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 15,
+  description = 'Heavy Foot General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_heavy_foot_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_heavy_foot_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_heavy_foot_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_heavy_foot_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_heavy_foot_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_heavy_foot_general.png',
+}
+
+tile_plain_Heavy_Foot_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Heavy Foot General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_heavy_foot_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_heavy_foot_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_heavy_foot_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_heavy_foot_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_heavy_foot_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_heavy_foot_general_mi.png',
+}
+
+tile_plain_Heavy_Foot = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 15,
+  description = 'Heavy Foot Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_heavy_foot.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_heavy_foot.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_heavy_foot.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_heavy_foot.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_heavy_foot.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_heavy_foot.png',
+}
+
+tile_plain_Heavy_Foot_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Heavy Foot Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_heavy_foot_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_heavy_foot_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_heavy_foot_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_heavy_foot_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_heavy_foot_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_heavy_foot_mi.png',
+}
+
+tile_plain_Artillery_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Artillery General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_artillery_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_artillery_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_artillery_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_artillery_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_artillery_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_artillery_general.png',
+}
+
+tile_plain_Artillery_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Artillery General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_artillery_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_artillery_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_artillery_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_artillery_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_artillery_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_artillery_general_mi.png',
+}
+
+tile_plain_Artillery = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Artillery Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_artillery.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_artillery.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_artillery.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_artillery.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_artillery.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_artillery.png',
+}
+
+tile_plain_Artillery_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Artillery Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_artillery_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_artillery_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_artillery_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_artillery_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_artillery_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_artillery_mi.png',
+}
+
+tile_plain_Chariots_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Chariots General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_chariots_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_chariots_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_chariots_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_chariots_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_chariots_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_chariots_general.png',
+}
+
+tile_plain_Chariots = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Chariots Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_chariots.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_chariots.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_chariots.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_chariots.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_chariots.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_chariots.png',
+}
+
+tile_plain_Light_Spear_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Light Spear General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_spear_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_light_spear_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_light_spear_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_spear_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_light_spear_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_light_spear_general.png',
+}
+
+tile_plain_Light_Spear_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Light Spear General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_spear_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_light_spear_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_light_spear_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_spear_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_light_spear_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_light_spear_general_mi.png',
+}
+
+tile_plain_Light_Spear = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Light Spear Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_spear.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_light_spear.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_light_spear.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_spear.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_light_spear.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_light_spear.png',
+}
+
+tile_plain_Light_Spear_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Light Spear Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_light_spear_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_light_spear_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_light_spear_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_light_spear_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_light_spear_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_light_spear_mi.png',
+}
+
+tile_plain_Knights_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Knights General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_knights_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_knights_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_knights_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_knights_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_knights_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_knights_general.png',
+}
+
+tile_plain_Knights = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Knights Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_knights.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_knights.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_knights.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_knights.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_knights.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_knights.png',
+}
+
+tile_plain_Raiders_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Raiders General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_raiders_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_raiders_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_raiders_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_raiders_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_raiders_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_raiders_general.png',
+}
+
+tile_plain_Raiders_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Raiders General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_raiders_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_raiders_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_raiders_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_raiders_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_raiders_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_raiders_general_mi.png',
+}
+
+tile_plain_Raiders = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Raiders Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_raiders.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_raiders.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_raiders.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_raiders.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_raiders.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_raiders.png',
+}
+
+tile_plain_Raiders_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Raiders Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_raiders_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_raiders_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_raiders_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_raiders_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_raiders_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_raiders_mi.png',
+}
+
+tile_plain_Elephants_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Elephants General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elephants_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_elephants_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_elephants_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elephants_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_elephants_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_elephants_general.png',
+}
+
+tile_plain_Elephants = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Elephants Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elephants.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_elephants.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_elephants.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elephants.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_elephants.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_elephants.png',
+}
+
+tile_plain_Pikes_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 15,
+  description = 'Pikes General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pikes_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_pikes_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_pikes_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pikes_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_pikes_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_pikes_general.png',
+}
+
+tile_plain_Pikes_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Pikes General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pikes_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_pikes_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_pikes_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pikes_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_pikes_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_pikes_general_mi.png',
+}
+
+tile_plain_Pikes = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 15,
+  description = 'Pikes Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pikes.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_pikes.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_pikes.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pikes.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_pikes.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_pikes.png',
+}
+
+tile_plain_Pikes_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Pikes Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pikes_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_pikes_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_pikes_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pikes_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_pikes_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_pikes_mi.png',
+}
+
+tile_plain_Warband_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Warband General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warband_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_warband_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_warband_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warband_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_warband_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_warband_general.png',
+}
+
+tile_plain_Warband_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Warband General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warband_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_warband_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_warband_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warband_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_warband_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_warband_general_mi.png',
+}
+
+tile_plain_Warband = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Warband Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warband.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_warband.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_warband.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warband.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_warband.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_warband.png',
+}
+
+tile_plain_Warband_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Warband Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_warband_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_warband_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_warband_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_warband_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_warband_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_warband_mi.png',
 }
 
 tile_plain_Bad_Horse_Gen = {
@@ -998,7 +846,11 @@ tile_plain_Bad_Horse_Gen = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bad_horse_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_bad_horse_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_bad_horse_general.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bad_horse_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_bad_horse_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_bad_horse_general.png',
 }
 
 tile_plain_Bad_Horse = {
@@ -1010,7 +862,491 @@ tile_plain_Bad_Horse = {
   author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
   mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
   player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bad_horse.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_bad_horse.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_bad_horse.png',
   player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bad_horse.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_bad_horse.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_bad_horse.png',
+}
+
+tile_plain_Horse_Bow_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Horse Bow General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horse_bow_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_horse_bow_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_horse_bow_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horse_bow_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_horse_bow_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_horse_bow_general.png',
+}
+
+tile_plain_Horse_Bow = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Horse Bow Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_horse_bow.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_horse_bow.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_horse_bow.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_horse_bow.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_horse_bow.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_horse_bow.png',
+}
+
+tile_plain_Pavisiers_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Pavisiers General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pavisiers_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_pavisiers_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_pavisiers_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pavisiers_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_pavisiers_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_pavisiers_general.png',
+}
+
+tile_plain_Pavisiers_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Pavisiers General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pavisiers_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_pavisiers_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_pavisiers_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pavisiers_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_pavisiers_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_pavisiers_general_mi.png',
+}
+
+tile_plain_Pavisiers = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Pavisiers Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pavisiers.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_pavisiers.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_pavisiers.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pavisiers.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_pavisiers.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_pavisiers.png',
+}
+
+tile_plain_Pavisiers_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Pavisiers Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_pavisiers_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_pavisiers_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_pavisiers_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_pavisiers_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_pavisiers_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_pavisiers_mi.png',
+}
+
+tile_plain_Battle_Taxi_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Battle Taxi General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_battle_taxi_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_battle_taxi_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_battle_taxi_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_battle_taxi_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_battle_taxi_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_battle_taxi_general.png',
+}
+
+tile_plain_Battle_Taxi = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Battle Taxi Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_battle_taxi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_battle_taxi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_battle_taxi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_battle_taxi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_battle_taxi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_battle_taxi.png',
+}
+
+tile_plain_Skirmishers_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Skirmishers General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_skirmishers_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_skirmishers_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_skirmishers_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_skirmishers_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_skirmishers_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_skirmishers_general.png',
+}
+
+tile_plain_Skirmishers_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Skirmishers General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_skirmishers_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_skirmishers_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_skirmishers_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_skirmishers_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_skirmishers_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_skirmishers_general_mi.png',
+}
+
+tile_plain_Skirmishers = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 20,
+  description = 'Skirmishers Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_20.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_skirmishers.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_skirmishers.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_skirmishers.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_skirmishers.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_skirmishers.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_skirmishers.png',
+}
+
+tile_plain_Skirmishers_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Skirmishers Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_skirmishers_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_skirmishers_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_skirmishers_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_skirmishers_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_skirmishers_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_skirmishers_mi.png',
+}
+
+tile_plain_Javelin_Cavalry_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Javelin Cavalry General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_javelin_cavalry_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_javelin_cavalry_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_javelin_cavalry_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_javelin_cavalry_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_javelin_cavalry_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_javelin_cavalry_general.png',
+}
+
+tile_plain_Javelin_Cavalry = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Javelin Cavalry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_javelin_cavalry.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_javelin_cavalry.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_javelin_cavalry.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_javelin_cavalry.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_javelin_cavalry.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_javelin_cavalry.png',
+}
+
+tile_plain_Elite_Foot_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 15,
+  description = 'Elite Foot General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_foot_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_elite_foot_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_elite_foot_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_foot_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_elite_foot_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_elite_foot_general.png',
+}
+
+tile_plain_Elite_Foot_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Elite Foot General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_foot_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_elite_foot_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_elite_foot_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_foot_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_elite_foot_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_elite_foot_general_mi.png',
+}
+
+tile_plain_Elite_Foot = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 15,
+  description = 'Elite Foot Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_15.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_foot.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_elite_foot.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_elite_foot.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_foot.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_elite_foot.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_elite_foot.png',
+}
+
+tile_plain_Elite_Foot_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Elite Foot Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_elite_foot_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_elite_foot_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_elite_foot_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_elite_foot_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_elite_foot_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_elite_foot_mi.png',
+}
+
+tile_plain_Cataphracts_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Cataphracts General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_cataphracts_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_cataphracts_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_cataphracts_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_cataphracts_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_cataphracts_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_cataphracts_general.png',
+}
+
+tile_plain_Cataphracts = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Cataphracts Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_cataphracts.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_cataphracts.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_cataphracts.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_cataphracts.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_cataphracts.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_cataphracts.png',
+}
+
+tile_plain_Rabble_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Rabble General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_rabble_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_rabble_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_rabble_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_rabble_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_rabble_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_rabble_general.png',
+}
+
+tile_plain_Rabble_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Rabble General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_rabble_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_rabble_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_rabble_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_rabble_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_rabble_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_rabble_general_mi.png',
+}
+
+tile_plain_Rabble = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Rabble Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_rabble.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_rabble.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_rabble.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_rabble.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_rabble.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_rabble.png',
+}
+
+tile_plain_Rabble_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Rabble Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_rabble_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_rabble_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_rabble_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_rabble_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_rabble_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_rabble_mi.png',
+}
+
+tile_plain_Bow_Levy_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Bow Levy General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bow_levy_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_bow_levy_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_bow_levy_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bow_levy_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_bow_levy_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_bow_levy_general.png',
+}
+
+tile_plain_Bow_Levy_Gen_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Bow Levy General Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bow_levy_general_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_bow_levy_general_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_bow_levy_general_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bow_levy_general_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_bow_levy_general_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_bow_levy_general_mi.png',
+}
+
+tile_plain_Bow_Levy = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 30,
+  description = 'Bow Levy Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_30.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bow_levy.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_bow_levy.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_bow_levy.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bow_levy.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_bow_levy.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_bow_levy.png',
+}
+
+tile_plain_Bow_Levy_MI = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'Bow Levy Mobile Infrantry Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_bow_levy_mi.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_bow_levy_mi.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_bow_levy_mi.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_bow_levy_mi.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_bow_levy_mi.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_bow_levy_mi.png',
+}
+
+tile_plain_War_Wagons_Gen = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'War Wagons General Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_war_wagons_general.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_war_wagons_general.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_war_wagons_general.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_war_wagons_general.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_war_wagons_general.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_war_wagons_general.png',
+}
+
+tile_plain_War_Wagons = {
+  height_correction = 0,
+  scale = 1,
+  rotation = 0,
+  depth = 40,
+  description = 'War Wagons Tile',
+  author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.',
+  mesh = { g_assets['dir'] .. 'troops/plain_tiles/tile_40_40.obj', },
+  player_red_tex = g_assets['dir'] .. 'troops/plain_tiles/red_war_wagons.png',
+  player_orange_tex = g_assets['dir'] .. 'troops/plain_tiles/orange_war_wagons.png',
+  player_yellow_tex = g_assets['dir'] .. 'troops/plain_tiles/yellow_war_wagons.png',
+  player_blue_tex = g_assets['dir'] .. 'troops/plain_tiles/blue_war_wagons.png',
+  player_green_tex = g_assets['dir'] .. 'troops/plain_tiles/green_war_wagons.png',
+  player_purple_tex = g_assets['dir'] .. 'troops/plain_tiles/purple_war_wagons.png',
 }
 
 troop_options['plain_base'] = {
@@ -1058,839 +1394,6 @@ g_base_definitions['prepared_defenses']={
   description="",
   prepared_defenses=true,
   troop_type="Prepared Defenses",
-}
-
-g_base_definitions['bow_levy_general']={
-  id="bow_levy_general",
-  name="Bow Levy General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Bow Levy",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['bow_levy_general_mi']={
-  id="bow_levy_general_mi",
-  name="Bow Levy General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Bow Levy",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="bow_levy_general",
-  general=true,
-}
-
-g_base_definitions['bow_levy']={
-  id="bow_levy",
-  name="Bow Levy",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Bow Levy",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['bow_levy_mi']={
-  id="bow_levy_mi",
-  name="Bow Levy",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Bow Levy",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="bow_levy",
-}
-
-g_base_definitions['heavy_foot_general']={
-  id="heavy_foot_general",
-  name="Heavy Foot General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Heavy Foot",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['heavy_foot_general_mi']={
-  id="heavy_foot_general_mi",
-  name="Heavy Foot General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Heavy Foot",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="heavy_foot_general",
-  general=true,
-}
-
-g_base_definitions['heavy_foot']={
-  id="heavy_foot",
-  name="Heavy Foot",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Heavy Foot",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['heavy_foot_mi']={
-  id="heavy_foot_mi",
-  name="Heavy Foot",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Heavy Foot",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="heavy_foot",
-}
-
-g_base_definitions['raiders_general']={
-  id="raiders_general",
-  name="Raiders General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Raiders",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['raiders_general_mi']={
-  id="raiders_general_mi",
-  name="Raiders General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Raiders",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="raiders_general",
-  general=true,
-}
-
-g_base_definitions['raiders']={
-  id="raiders",
-  name="Raiders",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Raiders",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['raiders_mi']={
-  id="raiders_mi",
-  name="Raiders",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Raiders",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="raiders",
-}
-
-g_base_definitions['warriors_general']={
-  id="warriors_general",
-  name="Warriors General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Warriors",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['warriors_general_mi']={
-  id="warriors_general_mi",
-  name="Warriors General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Warriors",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="warriors_general",
-  general=true,
-}
-
-g_base_definitions['warriors']={
-  id="warriors",
-  name="Warriors",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Warriors",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['warriors_mi']={
-  id="warriors_mi",
-  name="Warriors",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Warriors",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="warriors",
-}
-
-g_base_definitions['knights_general']={
-  id="knights_general",
-  name="Knights General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Knights",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['knights']={
-  id="knights",
-  name="Knights",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Knights",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['light_spear_general']={
-  id="light_spear_general",
-  name="Light Spear General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Light Spear",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['light_spear_general_mi']={
-  id="light_spear_general_mi",
-  name="Light Spear General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Light Spear",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="light_spear_general",
-  general=true,
-}
-
-g_base_definitions['light_spear']={
-  id="light_spear",
-  name="Light Spear",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Light Spear",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['light_spear_mi']={
-  id="light_spear_mi",
-  name="Light Spear",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Light Spear",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="light_spear",
-}
-
-g_base_definitions['cataphracts_general']={
-  id="cataphracts_general",
-  name="Cataphracts General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Cataphracts",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['cataphracts']={
-  id="cataphracts",
-  name="Cataphracts",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Cataphracts",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['artillery_general']={
-  id="artillery_general",
-  name="Artillery General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Artillery",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['artillery_general_mi']={
-  id="artillery_general_mi",
-  name="Artillery General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Artillery",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="artillery_general",
-  general=true,
-}
-
-g_base_definitions['artillery']={
-  id="artillery",
-  name="Artillery",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Artillery",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['artillery_mi']={
-  id="artillery_mi",
-  name="Artillery",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Artillery",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="artillery",
-}
-
-g_base_definitions['pavisiers_general']={
-  id="pavisiers_general",
-  name="Pavisiers General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Pavisiers",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['pavisiers_general_mi']={
-  id="pavisiers_general_mi",
-  name="Pavisiers General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Pavisiers",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="pavisiers_general",
-  general=true,
-}
-
-g_base_definitions['pavisiers']={
-  id="pavisiers",
-  name="Pavisiers",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Pavisiers",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['pavisiers_mi']={
-  id="pavisiers_mi",
-  name="Pavisiers",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Pavisiers",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="pavisiers",
-}
-
-g_base_definitions['elephants_general']={
-  id="elephants_general",
-  name="Elephants General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Elephants",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['elephants']={
-  id="elephants",
-  name="Elephants",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Elephants",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['horde_general']={
-  id="horde_general",
-  name="Horde General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Horde",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['horde_general_mi']={
-  id="horde_general_mi",
-  name="Horde General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Horde",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="horde_general",
-  general=true,
-}
-
-g_base_definitions['horde']={
-  id="horde",
-  name="Horde",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Horde",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['horde_mi']={
-  id="horde_mi",
-  name="Horde",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Horde",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="horde",
-}
-
-g_base_definitions['horse_bow_general']={
-  id="horse_bow_general",
-  name="Horse Bow General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Horse Bow",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['horse_bow']={
-  id="horse_bow",
-  name="Horse Bow",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Horse Bow",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['chariots_general']={
-  id="chariots_general",
-  name="Chariots General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Chariots",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['chariots']={
-  id="chariots",
-  name="Chariots",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Chariots",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['elite_cavalry_general']={
-  id="elite_cavalry_general",
-  name="Elite Cavalry General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Elite Cavalry",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['elite_cavalry']={
-  id="elite_cavalry",
-  name="Elite Cavalry",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Elite Cavalry",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['rabble_general']={
-  id="rabble_general",
-  name="Rabble General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Rabble",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['rabble_general_mi']={
-  id="rabble_general_mi",
-  name="Rabble General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Rabble",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="rabble_general",
-  general=true,
-}
-
-g_base_definitions['rabble']={
-  id="rabble",
-  name="Rabble",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Rabble",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['rabble_mi']={
-  id="rabble_mi",
-  name="Rabble",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Rabble",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="rabble",
-}
-
-g_base_definitions['pikes_general']={
-  id="pikes_general",
-  name="Pikes General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Pikes",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['pikes_general_mi']={
-  id="pikes_general_mi",
-  name="Pikes General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Pikes",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="pikes_general",
-  general=true,
-}
-
-g_base_definitions['pikes']={
-  id="pikes",
-  name="Pikes",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Pikes",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['pikes_mi']={
-  id="pikes_mi",
-  name="Pikes",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Pikes",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="pikes",
-}
-
-g_base_definitions['war_wagons_general']={
-  id="war_wagons_general",
-  name="War Wagons General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="War Wagons",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['war_wagons']={
-  id="war_wagons",
-  name="War Wagons",
-  min=0,
-  max=1,
-  description="",
-  troop_type="War Wagons",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['elite_foot_general']={
-  id="elite_foot_general",
-  name="Elite Foot General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Elite Foot",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['elite_foot_general_mi']={
-  id="elite_foot_general_mi",
-  name="Elite Foot General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Elite Foot",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="elite_foot_general",
-  general=true,
-}
-
-g_base_definitions['elite_foot']={
-  id="elite_foot",
-  name="Elite Foot",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Elite Foot",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['elite_foot_mi']={
-  id="elite_foot_mi",
-  name="Elite Foot",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Elite Foot",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="elite_foot",
-}
-
-g_base_definitions['skirmishers_general']={
-  id="skirmishers_general",
-  name="Skirmishers General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Skirmishers",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['skirmishers_general_mi']={
-  id="skirmishers_general_mi",
-  name="Skirmishers General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Skirmishers",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="skirmishers_general",
-  general=true,
-}
-
-g_base_definitions['skirmishers']={
-  id="skirmishers",
-  name="Skirmishers",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Skirmishers",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['skirmishers_mi']={
-  id="skirmishers_mi",
-  name="Skirmishers",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Skirmishers",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="skirmishers",
-}
-
-g_base_definitions['light_foot_general']={
-  id="light_foot_general",
-  name="Light Foot General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Light Foot",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['light_foot_general_mi']={
-  id="light_foot_general_mi",
-  name="Light Foot General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Light Foot",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="light_foot_general",
-  general=true,
-}
-
-g_base_definitions['light_foot']={
-  id="light_foot",
-  name="Light Foot",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Light Foot",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['light_foot_mi']={
-  id="light_foot_mi",
-  name="Light Foot",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Light Foot",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="light_foot",
-}
-
-g_base_definitions['battle_taxi_general']={
-  id="battle_taxi_general",
-  name="Battle Taxi General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Battle Taxi",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['battle_taxi']={
-  id="battle_taxi",
-  name="Battle Taxi",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Battle Taxi",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['javelin_cavalry_general']={
-  id="javelin_cavalry_general",
-  name="Javelin Cavalry General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Javelin Cavalry",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['javelin_cavalry']={
-  id="javelin_cavalry",
-  name="Javelin Cavalry",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Javelin Cavalry",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['warband_general']={
-  id="warband_general",
-  name="Warband General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Warband",
-  troop_option_id="plain_base",
-  general=true,
-}
-
-g_base_definitions['warband_general_mi']={
-  id="warband_general_mi",
-  name="Warband General",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Warband",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="warband_general",
-  general=true,
-}
-
-g_base_definitions['warband']={
-  id="warband",
-  name="Warband",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Warband",
-  troop_option_id="plain_base",
-}
-
-g_base_definitions['warband_mi']={
-  id="warband_mi",
-  name="Warband",
-  min=0,
-  max=1,
-  description="",
-  troop_type="Warband",
-  troop_option_id="plain_base",
-  mobile_infantry=true,
-  dismount_as="warband",
 }
 
 g_base_definitions['spears_general']={
@@ -1985,6 +1488,504 @@ g_base_definitions['archers_mi']={
   dismount_as="archers",
 }
 
+g_base_definitions['light_foot_general']={
+  id="light_foot_general",
+  name="Light Foot General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Light Foot",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['light_foot_general_mi']={
+  id="light_foot_general_mi",
+  name="Light Foot General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Light Foot",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="light_foot_general",
+  general=true,
+}
+
+g_base_definitions['light_foot']={
+  id="light_foot",
+  name="Light Foot",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Light Foot",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['light_foot_mi']={
+  id="light_foot_mi",
+  name="Light Foot",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Light Foot",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="light_foot",
+}
+
+g_base_definitions['warriors_general']={
+  id="warriors_general",
+  name="Warriors General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Warriors",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['warriors_general_mi']={
+  id="warriors_general_mi",
+  name="Warriors General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Warriors",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="warriors_general",
+  general=true,
+}
+
+g_base_definitions['warriors']={
+  id="warriors",
+  name="Warriors",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Warriors",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['warriors_mi']={
+  id="warriors_mi",
+  name="Warriors",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Warriors",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="warriors",
+}
+
+g_base_definitions['elite_cavalry_general']={
+  id="elite_cavalry_general",
+  name="Elite Cavalry General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Elite Cavalry",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['elite_cavalry']={
+  id="elite_cavalry",
+  name="Elite Cavalry",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Elite Cavalry",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['horde_general']={
+  id="horde_general",
+  name="Horde General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Horde",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['horde_general_mi']={
+  id="horde_general_mi",
+  name="Horde General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Horde",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="horde_general",
+  general=true,
+}
+
+g_base_definitions['horde']={
+  id="horde",
+  name="Horde",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Horde",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['horde_mi']={
+  id="horde_mi",
+  name="Horde",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Horde",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="horde",
+}
+
+g_base_definitions['heavy_foot_general']={
+  id="heavy_foot_general",
+  name="Heavy Foot General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Heavy Foot",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['heavy_foot_general_mi']={
+  id="heavy_foot_general_mi",
+  name="Heavy Foot General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Heavy Foot",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="heavy_foot_general",
+  general=true,
+}
+
+g_base_definitions['heavy_foot']={
+  id="heavy_foot",
+  name="Heavy Foot",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Heavy Foot",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['heavy_foot_mi']={
+  id="heavy_foot_mi",
+  name="Heavy Foot",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Heavy Foot",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="heavy_foot",
+}
+
+g_base_definitions['artillery_general']={
+  id="artillery_general",
+  name="Artillery General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Artillery",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['artillery_general_mi']={
+  id="artillery_general_mi",
+  name="Artillery General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Artillery",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="artillery_general",
+  general=true,
+}
+
+g_base_definitions['artillery']={
+  id="artillery",
+  name="Artillery",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Artillery",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['artillery_mi']={
+  id="artillery_mi",
+  name="Artillery",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Artillery",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="artillery",
+}
+
+g_base_definitions['chariots_general']={
+  id="chariots_general",
+  name="Chariots General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Chariots",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['chariots']={
+  id="chariots",
+  name="Chariots",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Chariots",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['light_spear_general']={
+  id="light_spear_general",
+  name="Light Spear General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Light Spear",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['light_spear_general_mi']={
+  id="light_spear_general_mi",
+  name="Light Spear General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Light Spear",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="light_spear_general",
+  general=true,
+}
+
+g_base_definitions['light_spear']={
+  id="light_spear",
+  name="Light Spear",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Light Spear",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['light_spear_mi']={
+  id="light_spear_mi",
+  name="Light Spear",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Light Spear",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="light_spear",
+}
+
+g_base_definitions['knights_general']={
+  id="knights_general",
+  name="Knights General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Knights",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['knights']={
+  id="knights",
+  name="Knights",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Knights",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['raiders_general']={
+  id="raiders_general",
+  name="Raiders General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Raiders",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['raiders_general_mi']={
+  id="raiders_general_mi",
+  name="Raiders General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Raiders",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="raiders_general",
+  general=true,
+}
+
+g_base_definitions['raiders']={
+  id="raiders",
+  name="Raiders",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Raiders",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['raiders_mi']={
+  id="raiders_mi",
+  name="Raiders",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Raiders",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="raiders",
+}
+
+g_base_definitions['elephants_general']={
+  id="elephants_general",
+  name="Elephants General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Elephants",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['elephants']={
+  id="elephants",
+  name="Elephants",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Elephants",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['pikes_general']={
+  id="pikes_general",
+  name="Pikes General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Pikes",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['pikes_general_mi']={
+  id="pikes_general_mi",
+  name="Pikes General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Pikes",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="pikes_general",
+  general=true,
+}
+
+g_base_definitions['pikes']={
+  id="pikes",
+  name="Pikes",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Pikes",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['pikes_mi']={
+  id="pikes_mi",
+  name="Pikes",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Pikes",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="pikes",
+}
+
+g_base_definitions['warband_general']={
+  id="warband_general",
+  name="Warband General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Warband",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['warband_general_mi']={
+  id="warband_general_mi",
+  name="Warband General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Warband",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="warband_general",
+  general=true,
+}
+
+g_base_definitions['warband']={
+  id="warband",
+  name="Warband",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Warband",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['warband_mi']={
+  id="warband_mi",
+  name="Warband",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Warband",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="warband",
+}
+
 g_base_definitions['bad_horse_general']={
   id="bad_horse_general",
   name="Bad Horse General",
@@ -2003,6 +2004,341 @@ g_base_definitions['bad_horse']={
   max=1,
   description="",
   troop_type="Bad Horse",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['horse_bow_general']={
+  id="horse_bow_general",
+  name="Horse Bow General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Horse Bow",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['horse_bow']={
+  id="horse_bow",
+  name="Horse Bow",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Horse Bow",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['pavisiers_general']={
+  id="pavisiers_general",
+  name="Pavisiers General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Pavisiers",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['pavisiers_general_mi']={
+  id="pavisiers_general_mi",
+  name="Pavisiers General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Pavisiers",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="pavisiers_general",
+  general=true,
+}
+
+g_base_definitions['pavisiers']={
+  id="pavisiers",
+  name="Pavisiers",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Pavisiers",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['pavisiers_mi']={
+  id="pavisiers_mi",
+  name="Pavisiers",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Pavisiers",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="pavisiers",
+}
+
+g_base_definitions['battle_taxi_general']={
+  id="battle_taxi_general",
+  name="Battle Taxi General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Battle Taxi",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['battle_taxi']={
+  id="battle_taxi",
+  name="Battle Taxi",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Battle Taxi",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['skirmishers_general']={
+  id="skirmishers_general",
+  name="Skirmishers General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Skirmishers",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['skirmishers_general_mi']={
+  id="skirmishers_general_mi",
+  name="Skirmishers General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Skirmishers",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="skirmishers_general",
+  general=true,
+}
+
+g_base_definitions['skirmishers']={
+  id="skirmishers",
+  name="Skirmishers",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Skirmishers",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['skirmishers_mi']={
+  id="skirmishers_mi",
+  name="Skirmishers",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Skirmishers",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="skirmishers",
+}
+
+g_base_definitions['javelin_cavalry_general']={
+  id="javelin_cavalry_general",
+  name="Javelin Cavalry General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Javelin Cavalry",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['javelin_cavalry']={
+  id="javelin_cavalry",
+  name="Javelin Cavalry",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Javelin Cavalry",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['elite_foot_general']={
+  id="elite_foot_general",
+  name="Elite Foot General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Elite Foot",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['elite_foot_general_mi']={
+  id="elite_foot_general_mi",
+  name="Elite Foot General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Elite Foot",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="elite_foot_general",
+  general=true,
+}
+
+g_base_definitions['elite_foot']={
+  id="elite_foot",
+  name="Elite Foot",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Elite Foot",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['elite_foot_mi']={
+  id="elite_foot_mi",
+  name="Elite Foot",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Elite Foot",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="elite_foot",
+}
+
+g_base_definitions['cataphracts_general']={
+  id="cataphracts_general",
+  name="Cataphracts General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Cataphracts",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['cataphracts']={
+  id="cataphracts",
+  name="Cataphracts",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Cataphracts",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['rabble_general']={
+  id="rabble_general",
+  name="Rabble General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Rabble",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['rabble_general_mi']={
+  id="rabble_general_mi",
+  name="Rabble General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Rabble",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="rabble_general",
+  general=true,
+}
+
+g_base_definitions['rabble']={
+  id="rabble",
+  name="Rabble",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Rabble",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['rabble_mi']={
+  id="rabble_mi",
+  name="Rabble",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Rabble",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="rabble",
+}
+
+g_base_definitions['bow_levy_general']={
+  id="bow_levy_general",
+  name="Bow Levy General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Bow Levy",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['bow_levy_general_mi']={
+  id="bow_levy_general_mi",
+  name="Bow Levy General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Bow Levy",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="bow_levy_general",
+  general=true,
+}
+
+g_base_definitions['bow_levy']={
+  id="bow_levy",
+  name="Bow Levy",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Bow Levy",
+  troop_option_id="plain_base",
+}
+
+g_base_definitions['bow_levy_mi']={
+  id="bow_levy_mi",
+  name="Bow Levy",
+  min=0,
+  max=1,
+  description="",
+  troop_type="Bow Levy",
+  troop_option_id="plain_base",
+  mobile_infantry=true,
+  dismount_as="bow_levy",
+}
+
+g_base_definitions['war_wagons_general']={
+  id="war_wagons_general",
+  name="War Wagons General",
+  min=0,
+  max=1,
+  description="",
+  troop_type="War Wagons",
+  troop_option_id="plain_base",
+  general=true,
+}
+
+g_base_definitions['war_wagons']={
+  id="war_wagons",
+  name="War Wagons",
+  min=0,
+  max=1,
+  description="",
+  troop_type="War Wagons",
   troop_option_id="plain_base",
 }
 
@@ -2045,80 +2381,6 @@ army['plain_army']={
   g_base_definitions['camp_fortified'],
   g_base_definitions['camp_pack_train'],
   g_base_definitions['prepared_defenses'],
-  g_base_definitions['bow_levy_general'],
-  g_base_definitions['bow_levy_general_mi'],
-  g_base_definitions['bow_levy'],
-  g_base_definitions['bow_levy_mi'],
-  g_base_definitions['heavy_foot_general'],
-  g_base_definitions['heavy_foot_general_mi'],
-  g_base_definitions['heavy_foot'],
-  g_base_definitions['heavy_foot_mi'],
-  g_base_definitions['raiders_general'],
-  g_base_definitions['raiders_general_mi'],
-  g_base_definitions['raiders'],
-  g_base_definitions['raiders_mi'],
-  g_base_definitions['warriors_general'],
-  g_base_definitions['warriors_general_mi'],
-  g_base_definitions['warriors'],
-  g_base_definitions['warriors_mi'],
-  g_base_definitions['knights_general'],
-  g_base_definitions['knights'],
-  g_base_definitions['light_spear_general'],
-  g_base_definitions['light_spear_general_mi'],
-  g_base_definitions['light_spear'],
-  g_base_definitions['light_spear_mi'],
-  g_base_definitions['cataphracts_general'],
-  g_base_definitions['cataphracts'],
-  g_base_definitions['artillery_general'],
-  g_base_definitions['artillery_general_mi'],
-  g_base_definitions['artillery'],
-  g_base_definitions['artillery_mi'],
-  g_base_definitions['pavisiers_general'],
-  g_base_definitions['pavisiers_general_mi'],
-  g_base_definitions['pavisiers'],
-  g_base_definitions['pavisiers_mi'],
-  g_base_definitions['elephants_general'],
-  g_base_definitions['elephants'],
-  g_base_definitions['horde_general'],
-  g_base_definitions['horde_general_mi'],
-  g_base_definitions['horde'],
-  g_base_definitions['horde_mi'],
-  g_base_definitions['horse_bow_general'],
-  g_base_definitions['horse_bow'],
-  g_base_definitions['chariots_general'],
-  g_base_definitions['chariots'],
-  g_base_definitions['elite_cavalry_general'],
-  g_base_definitions['elite_cavalry'],
-  g_base_definitions['rabble_general'],
-  g_base_definitions['rabble_general_mi'],
-  g_base_definitions['rabble'],
-  g_base_definitions['rabble_mi'],
-  g_base_definitions['pikes_general'],
-  g_base_definitions['pikes_general_mi'],
-  g_base_definitions['pikes'],
-  g_base_definitions['pikes_mi'],
-  g_base_definitions['war_wagons_general'],
-  g_base_definitions['war_wagons'],
-  g_base_definitions['elite_foot_general'],
-  g_base_definitions['elite_foot_general_mi'],
-  g_base_definitions['elite_foot'],
-  g_base_definitions['elite_foot_mi'],
-  g_base_definitions['skirmishers_general'],
-  g_base_definitions['skirmishers_general_mi'],
-  g_base_definitions['skirmishers'],
-  g_base_definitions['skirmishers_mi'],
-  g_base_definitions['light_foot_general'],
-  g_base_definitions['light_foot_general_mi'],
-  g_base_definitions['light_foot'],
-  g_base_definitions['light_foot_mi'],
-  g_base_definitions['battle_taxi_general'],
-  g_base_definitions['battle_taxi'],
-  g_base_definitions['javelin_cavalry_general'],
-  g_base_definitions['javelin_cavalry'],
-  g_base_definitions['warband_general'],
-  g_base_definitions['warband_general_mi'],
-  g_base_definitions['warband'],
-  g_base_definitions['warband_mi'],
   g_base_definitions['spears_general'],
   g_base_definitions['spears_general_mi'],
   g_base_definitions['spears'],
@@ -2127,8 +2389,82 @@ army['plain_army']={
   g_base_definitions['archers_general_mi'],
   g_base_definitions['archers'],
   g_base_definitions['archers_mi'],
+  g_base_definitions['light_foot_general'],
+  g_base_definitions['light_foot_general_mi'],
+  g_base_definitions['light_foot'],
+  g_base_definitions['light_foot_mi'],
+  g_base_definitions['warriors_general'],
+  g_base_definitions['warriors_general_mi'],
+  g_base_definitions['warriors'],
+  g_base_definitions['warriors_mi'],
+  g_base_definitions['elite_cavalry_general'],
+  g_base_definitions['elite_cavalry'],
+  g_base_definitions['horde_general'],
+  g_base_definitions['horde_general_mi'],
+  g_base_definitions['horde'],
+  g_base_definitions['horde_mi'],
+  g_base_definitions['heavy_foot_general'],
+  g_base_definitions['heavy_foot_general_mi'],
+  g_base_definitions['heavy_foot'],
+  g_base_definitions['heavy_foot_mi'],
+  g_base_definitions['artillery_general'],
+  g_base_definitions['artillery_general_mi'],
+  g_base_definitions['artillery'],
+  g_base_definitions['artillery_mi'],
+  g_base_definitions['chariots_general'],
+  g_base_definitions['chariots'],
+  g_base_definitions['light_spear_general'],
+  g_base_definitions['light_spear_general_mi'],
+  g_base_definitions['light_spear'],
+  g_base_definitions['light_spear_mi'],
+  g_base_definitions['knights_general'],
+  g_base_definitions['knights'],
+  g_base_definitions['raiders_general'],
+  g_base_definitions['raiders_general_mi'],
+  g_base_definitions['raiders'],
+  g_base_definitions['raiders_mi'],
+  g_base_definitions['elephants_general'],
+  g_base_definitions['elephants'],
+  g_base_definitions['pikes_general'],
+  g_base_definitions['pikes_general_mi'],
+  g_base_definitions['pikes'],
+  g_base_definitions['pikes_mi'],
+  g_base_definitions['warband_general'],
+  g_base_definitions['warband_general_mi'],
+  g_base_definitions['warband'],
+  g_base_definitions['warband_mi'],
   g_base_definitions['bad_horse_general'],
   g_base_definitions['bad_horse'],
+  g_base_definitions['horse_bow_general'],
+  g_base_definitions['horse_bow'],
+  g_base_definitions['pavisiers_general'],
+  g_base_definitions['pavisiers_general_mi'],
+  g_base_definitions['pavisiers'],
+  g_base_definitions['pavisiers_mi'],
+  g_base_definitions['battle_taxi_general'],
+  g_base_definitions['battle_taxi'],
+  g_base_definitions['skirmishers_general'],
+  g_base_definitions['skirmishers_general_mi'],
+  g_base_definitions['skirmishers'],
+  g_base_definitions['skirmishers_mi'],
+  g_base_definitions['javelin_cavalry_general'],
+  g_base_definitions['javelin_cavalry'],
+  g_base_definitions['elite_foot_general'],
+  g_base_definitions['elite_foot_general_mi'],
+  g_base_definitions['elite_foot'],
+  g_base_definitions['elite_foot_mi'],
+  g_base_definitions['cataphracts_general'],
+  g_base_definitions['cataphracts'],
+  g_base_definitions['rabble_general'],
+  g_base_definitions['rabble_general_mi'],
+  g_base_definitions['rabble'],
+  g_base_definitions['rabble_mi'],
+  g_base_definitions['bow_levy_general'],
+  g_base_definitions['bow_levy_general_mi'],
+  g_base_definitions['bow_levy'],
+  g_base_definitions['bow_levy_mi'],
+  g_base_definitions['war_wagons_general'],
+  g_base_definitions['war_wagons'],
 }
 
 

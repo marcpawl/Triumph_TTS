@@ -71,8 +71,17 @@ def is_foot(troop_data: dict) -> bool:
 def get_color_code(color):
     if color == "red":
         return "#b52327"
+    if color == "orange":
+        return "#E9900C"
+    if color == "yellow":
+        return "#DDFF00"
     if color == "blue":
         return "#235db5"
+    if color == "green":
+        return "#21C51B"
+    if color == "purple":
+        return "#641EB3"
+
     raise Exception("Unexpected color")
 
 def change_fill(elem, color:str):
@@ -137,7 +146,11 @@ def write_tile(output, base_definition: dict):
     mesh = f"g_assets['dir'] .. 'troops/plain_tiles/tile_40_{base_depth}.obj'"
     code_name = calc_code_name_from_definition(base_definition)
     red_tex = f"g_assets['dir'] .. 'troops/plain_tiles/red_{code_name}.png'"
+    orange_tex = f"g_assets['dir'] .. 'troops/plain_tiles/orange_{code_name}.png'"
+    yellow_tex = f"g_assets['dir'] .. 'troops/plain_tiles/yellow_{code_name}.png'"
     blue_tex = f"g_assets['dir'] .. 'troops/plain_tiles/blue_{code_name}.png'"
+    green_tex = f"g_assets['dir'] .. 'troops/plain_tiles/green_{code_name}.png'"
+    purple_tex = f"g_assets['dir'] .. 'troops/plain_tiles/purple_{code_name}.png'"
 
     output.write(f"""
 {tile_name} = {{
@@ -149,7 +162,11 @@ def write_tile(output, base_definition: dict):
   author = '{author}',
   mesh = {{ {mesh}, }},
   player_red_tex = {red_tex},
+  player_orange_tex = {orange_tex},
+  player_yellow_tex = {yellow_tex},
   player_blue_tex = {blue_tex},
+  player_green_tex = {green_tex},
+  player_purple_tex = {purple_tex},
 }}
 """)
 
@@ -352,7 +369,7 @@ def make_base_definitions(data):
 
 
 def make_svgs(base_tool_tip: dict):
-    for color in ['red', 'blue'] :
+    for color in ['red', 'orange', 'yellow', 'blue', 'green', 'purple'] :
         for general in [ True, False]:
             make_svg(color, general, type, base_tool_tip, mobile_infantry=False)
             if is_foot(base_tool_tip):
