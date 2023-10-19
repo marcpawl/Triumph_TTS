@@ -646,11 +646,35 @@ function get_model_base_tile(base_definition)
   return model_base_name
 end
 
+
+function get_model_texture(model_base, command_color, is_red_player)
+  if command_color ~= nil then
+    local texture_name = string.lower(command_color) .. '_player_base_tex'
+    local model_texture = model_base[texture_name]
+    if model_texture ~= nil then
+      print("Using ", texture_name)
+      return model_texture
+    end
+  end
+  print("No texture for ", texture_name)
+
+  local texture_name
+  if is_red_player then
+    texture_name = 'player_red_tex'
+  else
+    texture_name = 'player_blue_tex'
+  end
+  print("Using player texture ", texture_name)
+  local model_texture = model_base[texture_name]
+  return model_texture
+end
+
+
 -- base: base_definition base_definition
 -- pos: position where the base will be located
 -- y_rotation: in degrees
 -- is_red_player: Will the base belong to the red player
--- common_color: color of the base edge, who ows the base.
+-- command_color: color of the base edge, who ows the base.
 function spawn_base(base_definition, pos, y_rotation, is_red_player, command_color)
     print_debug('Spawning base #' .. g_base_index)
     local overriden_tex = nil
@@ -685,13 +709,7 @@ function spawn_base(base_definition, pos, y_rotation, is_red_player, command_col
       print_error("No variable defined for " .. tostring(model_base_name))
     end
     -- model texture overides other textures
-    local texture_name
-    if is_red_player then
-      texture_name = 'player_red_tex'
-    else
-      texture_name = 'player_blue_tex'
-    end
-    local model_texture = model_base[texture_name]
+    local model_texture = get_model_texture(model_base, command_color, is_red_player)
     if (nil ~= model_texture) then
       overriden_tex = model_texture
     end
