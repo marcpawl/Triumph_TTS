@@ -36,8 +36,9 @@ tile_grass_40x15 = {
              'http://cloud-3.steamusercontent.com/ugc/1011563971410184112/5A03353BBF0DD129287D164A1209311530446DA3/',
              'http://cloud-3.steamusercontent.com/ugc/1011563971410184580/0366219C4F572C128F209E551FC16FA312DF5883/'
     },
-    player_red_tex = 'http://cloud-3.steamusercontent.com/ugc/1023950208130993477/140638216078134711C31175B985DD87613B45BA/',
-    player_blue_tex= 'http://cloud-3.steamusercontent.com/ugc/1023950208130994569/CAF4640F5AB936973B6CAA23705E25A5558525C2/'
+    player_red_tex = g_assets['dir'] .. "troops/tile_grass_Red.png",
+    player_yellow_tex = g_assets['dir'] .. "troops/tile_grass_Yellow.png",
+    player_blue_tex= g_assets['dir'] .. "troops/tile_grass_Blue.png"
 }
 
 tile_grass_40x20 = {
@@ -59,9 +60,10 @@ tile_grass_40x20 = {
         g_assets['dir'] .. "troops/tile_grass_40x20_I.obj",
         g_assets['dir'] .. "troops/tile_grass_40x20_J.obj"
         },
-    player_red_tex = 'g_assets['dir'] .. "troops/tile_grass_Red.obj',
-    player_blue_tex= 'g_assets['dir'] .. "troops/tile_grass_Blue.obj',
-}
+        player_red_tex = g_assets['dir'] .. "troops/tile_grass_Red.png",
+        player_yellow_tex = g_assets['dir'] .. "troops/tile_grass_Yellow.png",
+        player_blue_tex= g_assets['dir'] .. "troops/tile_grass_Blue.png"
+        }
 
 tile_grass_40x30 = {
     height_correction = 0,
@@ -79,8 +81,9 @@ tile_grass_40x30 = {
              'http://cloud-3.steamusercontent.com/ugc/1011563971410161219/DA3888DDA450F45A145CF746AF9C812D8C2A74FD/',
              'http://cloud-3.steamusercontent.com/ugc/1011563971410162142/AFF4C60A6FC8153E6348D6716838862B2DEFCFE3/'
     },
-    player_red_tex = 'g_assets['dir'] .. "troops/tile_grass_Red.obj',
-    player_blue_tex= 'g_assets['dir'] .. "troops/tile_grass_Blue.obj',
+    player_red_tex = g_assets['dir'] .. "troops/tile_grass_Red.png",
+    player_yellow_tex = g_assets['dir'] .. "troops/tile_grass_Yellow.png",
+    player_blue_tex= g_assets['dir'] .. "troops/tile_grass_Blue.png"
 }
 
 tile_grass_40x40 = {
@@ -99,8 +102,9 @@ tile_grass_40x40 = {
              'http://cloud-3.steamusercontent.com/ugc/1011563971410154301/D3069A5D6D1FE133043A4049E77AD5F7EF8F0757/',
              'http://cloud-3.steamusercontent.com/ugc/1011563971410155046/40D6185017B382A90C7098BADA2A4A860F9DEEAD/'
     },
-    player_red_tex = 'g_assets['dir'] .. "troops/tile_grass_Red.obj',
-    player_blue_tex= 'g_assets['dir'] .. "troops/tile_grass_Blue.obj',
+    player_red_tex = g_assets['dir'] .. "troops/tile_grass_Red.png",
+    player_yellow_tex = g_assets['dir'] .. "troops/tile_grass_Yellow.png",
+    player_blue_tex= g_assets['dir'] .. "troops/tile_grass_Blue.png"
 }
 
 tile_grass_40x60 = {
@@ -115,8 +119,9 @@ tile_grass_40x60 = {
              'http://cloud-3.steamusercontent.com/ugc/1011563971410143651/CA6A503302339B9FF9A0C3B0543C62A8D6FD0329/',
              'http://cloud-3.steamusercontent.com/ugc/1011563971410144194/3EAB316D345B39EE70E639F7F34D1B0A2FEC560B/'
     },
-    player_red_tex = 'g_assets['dir'] .. "troops/tile_grass_Red.obj',
-    player_blue_tex= 'g_assets['dir'] .. "troops/tile_grass_Blue.obj',
+    player_red_tex = g_assets['dir'] .. "troops/tile_grass_Red.png",
+    player_yellow_tex = g_assets['dir'] .. "troops/tile_grass_Yellow.png",
+    player_blue_tex= g_assets['dir'] .. "troops/tile_grass_Blue.png"
 }
 
 tile_grass_40x80 = {
@@ -131,8 +136,10 @@ tile_grass_40x80 = {
              g_assets['dir'] .. 'troops/tile_grass_40x80_C.obj',
              g_assets['dir'] .. 'troops/tile_grass_40x80_D.obj',
     },
-    player_red_tex = 'g_assets['dir'] .. "troops/tile_grass_Red.obj',
-    player_blue_tex= 'g_assets['dir'] .. "troops/tile_grass_Blue.obj',
+    player_red_tex = g_assets['dir'] .. "troops/tile_grass_Red.png",
+    player_yellow_tex = g_assets['dir'] .. "troops/tile_grass_Yellow.png",
+    player_blue_tex= g_assets['dir'] .. "troops/tile_grass_Blue.png"
+}
 
 
 tile_grass_80x40 = {
@@ -148,8 +155,9 @@ tile_grass_80x40 = {
              g_assets['dir'] .. 'troops/tile_grass_80x40_C.obj',
              g_assets['dir'] .. 'troops/tile_grass_80x40_D.obj',
     },
-    player_red_tex = 'g_assets['dir'] .. "troops/tile_grass_Red.obj',
-    player_blue_tex= 'g_assets['dir'] .. "troops/tile_grass_Blue.obj',
+    player_red_tex = g_assets['dir'] .. "troops/tile_grass_Red.png",
+    player_yellow_tex = g_assets['dir'] .. "troops/tile_grass_Yellow.png",
+    player_blue_tex= g_assets['dir'] .. "troops/tile_grass_Blue.png"
 }
 
 -------------------------------------------------------------------------------
