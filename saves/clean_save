@@ -380,7 +380,7 @@ def update_date_file() :
     with open("ObjectStates/version_text", "r") as file:
         data = json.load(file)
     data['Text']['Text'] = \
-        f"Triumph! TTSMod\nv2.4 alpha {date_string}\nhttps://github.com/marcpawl/Triumph_TTS/tree/v2.3"
+        f"Triumph! TTSMod\nv2.4 alpha {date_string}\nhttps://github.com/marcpawl/Triumph_TTS/tree/v2.4"
     with open("ObjectStates/version_text", "w") as file:
         file.write(json.dumps(data, indent=4, sort_keys="True"))
 
