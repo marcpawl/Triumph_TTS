@@ -647,12 +647,14 @@ function get_model_base_tile(base_definition)
 end
 
 
+-- @returns: Model texture, is highligting needed. Highlighting is used if
+--   there is no model texture for a command_color.
 function get_model_texture(model_base, command_color, is_red_player, model_base_name)
   if command_color ~= nil then
     local texture_name = "player_" .. string.lower(command_color) .. '_tex'
     local model_texture = model_base[texture_name]
     if model_texture ~= nil then
-      return model_texture
+      return model_texture, false
     end
   end
   print("No texture for ", texture_name, ' ', model_base['description'], ' ', model_base_name)
@@ -664,7 +666,7 @@ function get_model_texture(model_base, command_color, is_red_player, model_base_
     texture_name = 'player_blue_tex'
   end
   local model_texture = model_base[texture_name]
-  return model_texture
+  return model_texture, true
 end
 
 
@@ -707,7 +709,8 @@ function spawn_base(base_definition, pos, y_rotation, is_red_player, command_col
       print_error("No variable defined for " .. tostring(model_base_name))
     end
     -- model texture overides other textures
-    local model_texture = get_model_texture(model_base, command_color, is_red_player, model_base_name)
+    local model_texture, highlighting_needed = get_model_texture(
+      model_base, command_color, is_red_player, model_base_name)
     if (nil ~= model_texture) then
       overriden_tex = model_texture
     end
@@ -729,7 +732,9 @@ function spawn_base(base_definition, pos, y_rotation, is_red_player, command_col
         is_red_player = is_red_player
     }
 
-    base_highlight(base_obj, command_color)
+    if highlighting_needed then
+      base_highlight(base_obj, command_color)
+    end
 
     local base_definition_name = base_definition['id']
     if base_definition_name == nil then
