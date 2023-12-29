@@ -1,6 +1,6 @@
 
 triumph_terrain_nb_pieces = {}
-triumph_terrain_nb_pieces['steepe']={1,1,1,2,2,3,3,4,4,5,5}
+triumph_terrain_nb_pieces['steppe']={1,1,1,2,2,3,3,4,4,5,5}
 triumph_terrain_nb_pieces['dry']=triumph_terrain_nb_pieces['steepe']
 triumph_terrain_nb_pieces['forest']={2,3,3,4,4,5,5,6,6,6,6}
 triumph_terrain_nb_pieces['marsh']=triumph_terrain_nb_pieces['forest']
@@ -9,7 +9,7 @@ triumph_terrain_nb_pieces['hilly']=triumph_terrain_nb_pieces['arable']
 triumph_terrain_nb_pieces['delta']=triumph_terrain_nb_pieces['arable']
 
 grand_triumph_terrain_nb_pieces = {}
-grand_triumph_terrain_nb_pieces['steepe']={1,1,2,3,4,5,6,6,7,7,9}
+grand_triumph_terrain_nb_pieces['steppe']={1,1,2,3,4,5,6,6,7,7,9}
 grand_triumph_terrain_nb_pieces['dry']=grand_triumph_terrain_nb_pieces['steepe']
 grand_triumph_terrain_nb_pieces['forest']={4,5,6,6,7,7,8,9,10,10,10}
 grand_triumph_terrain_nb_pieces['marsh']=grand_triumph_terrain_nb_pieces['forest']
@@ -18,7 +18,7 @@ grand_triumph_terrain_nb_pieces['hilly']=grand_triumph_terrain_nb_pieces['arable
 grand_triumph_terrain_nb_pieces['delta']=grand_triumph_terrain_nb_pieces['arable']
 
 terrain_manditory = {}
-terrain_manditory['steepe']={{type="Gentle hills"}}
+terrain_manditory['steppe']={{type="Gentle hills"}}
 terrain_manditory['dry']={{type="Rough"}}
 terrain_manditory['forest']={{type="Woods"}}
 terrain_manditory['marsh']={{type="Marsh"}}
@@ -26,11 +26,11 @@ terrain_manditory['arable']={{type="Village"}}
 terrain_manditory['hilly']={{type="Steep hills"}}
 terrain_manditory['delta']={{type="Coast"}}
 terrain_optional = {}
-terrain_optional['steepe']={
+terrain_optional['steppe']={
   {type="Stream"},
   {type="Rough"},
   {type="Woods", max=1},
-  {type={"Gentle hills"}}
+  {type="Gentle hills"}
 }
 terrain_optional['dry']={
   {type="Dunes"},
@@ -125,6 +125,7 @@ local terrain_bag_names = {
 --  e.g. "Woods"
 -- bag_name: Name of a bag to check. e.g. "Gentle Hills Ordinary Small"
 function is_terrain_bag_used(used, bag_name)
+  print("128 IN is_terrain_bag_used")
   for terrain,_ in pairs(used) do
     if  str_starts_with(bag_name, terrain) then
       return true
@@ -574,7 +575,7 @@ table.insert(wizard_panels, {name="wizard_panel_invader", exit=wizard_panel_exit
 ------------------- Topography
 -------------------
 
-g_topographies = {'arable', 'forest', 'hilly', 'dry', 'steepe', 'marsh', 'delta'}
+g_topographies = {'arable', 'forest', 'hilly', 'dry', 'steppe', 'marsh', 'delta'}
 
 function wizard_show_panel_topography()
   wizard_show_panel("wizard_panel_topography")
@@ -646,7 +647,7 @@ function wizard_panel_topography_update()
     UI.setAttribute("wizard_topography_forest", "interactable", false)
     UI.setAttribute("wizard_topography_hilly", "interactable", false)
     UI.setAttribute("wizard_topography_dry", "interactable", false)
-    UI.setAttribute("wizard_topography_steepe", "interactable", false)
+    UI.setAttribute("wizard_topography_steppe", "interactable", false)
     UI.setAttribute("wizard_topography_delta", "interactable", false)
     UI.setAttribute("wizard_topography_marsh", "interactable", false)
     UI.setAttribute("wizard_panel_topography_spawn_table", "interactable", false)
