@@ -376,20 +376,6 @@ tile_plain_Charging_Camels_Knights_Gen = {
 }
 
 
-tile_plain_Fortified_Camp = {
-    height_correction = 0,
-    scale = 1,
-    rotation = 0,
-    width = 80,
-    depth = 40,
-    description = '80x40 Fortified Camp Tile',
-    author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro.',
-    mesh = { g_assets['dir'] .. 'troops/icons/camp/camp_80_40/tile_80_40.obj'}, 
-    player_red_tex =  g_assets['dir'] .. 'troops/icons/camp/camp_80_40/fortified_camp_red_80_40.png',
-    player_blue_tex =  g_assets['dir'] .. 'troops/icons/camp/camp_80_40/fortified_camp_blue_80_40.png'
-}
-
-
 tile_plain_Light_Camels_Bad_Horse = {
     height_correction = 0,
     scale = 1,

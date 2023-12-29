@@ -54,15 +54,14 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-282)">
+     id="layer1">
     <rect
        style="display:inline;opacity:0.98999999;fill:#ff0000;fill-opacity:1;stroke-width:0.26458332"
        id="rect1385"
        width="40"
        height="15"
        x="0"
-       y="282"
+       y="0"
        inkscape:label="background" />
     <rect
        style="display:inline;opacity:0.5;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.5;stroke-opacity:0.62256807;stroke-miterlimit:4;stroke-dasharray:none"
@@ -70,7 +69,7 @@
        width="40"
        height="15"
        x="0"
-       y="282"
+       y="0"
        inkscape:label="background_edges" />
   </g>
   <g

@@ -12,16 +12,16 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-282)">
-    <rect style="display:inline;opacity:0.98999999;fill:#E9900C;fill-opacity:1;stroke-width:0.26458332" id="rect1385" width="40" height="15" x="0" y="282" inkscape:label="background"/>
-    <rect style="display:inline;opacity:0.5;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.5;stroke-opacity:0.62256807;stroke-miterlimit:4;stroke-dasharray:none" id="rect1386" width="40" height="15" x="0" y="282" inkscape:label="background_edges"/>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+    <rect style="display:inline;opacity:0.98999999;fill:#E9900C;fill-opacity:1;stroke-width:0.26458332" id="rect1385" width="40" height="15" x="0" y="0" inkscape:label="background"/>
+    <rect style="display:inline;opacity:0.5;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.5;stroke-opacity:0.62256807;stroke-miterlimit:4;stroke-dasharray:none" id="rect1386" width="40" height="15" x="0" y="0" inkscape:label="background_edges"/>
   </g>
   <g inkscape:groupmode="layer" id="layer4" inkscape:label="general" style="display:inline">
     <rect style="opacity:0.98999999;fill:#ffbf00;fill-opacity:1;stroke-width:0.14142573" id="rect1390" width="40" height="3.8999996" x="0" y="11.1" inkscape:label="general outside" rx="0" ry="0"/>
   </g>
   <g inkscape:groupmode="layer" id="layer5" inkscape:label="troop" style="display:inline">
     <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332" x="0.82439238" y="13.857281" id="text1410" inkscape:label="troop type"><tspan sodipodi:role="line" id="tspan1408" x="0.82439238" y="13.857281" style="font-size:2.82222223px;fill:#000000;fill-opacity:1;stroke-width:0.26458332">Elite Foot</tspan></text>
-    <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332" x="38.873878" y="13.857281" id="text1422" inkscape:label="combat factors"><tspan sodipodi:role="line" id="tspan1420" x="39.866066" y="13.481076" style="font-size:2.82222223px;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke-width:0.26458332"><tspan style="font-size:2.11666656px;fill:#000000;fill-opacity:1" id="tspan1424">3MU</tspan> +5/+3</tspan></text>
-    <image sodipodi:absref="../icons/elite_foot.png" y="0.59065497" x="1.6313324" id="image1434" xlink:href="../icons/elite_foot.png" style="image-rendering:optimizeQuality" preserveAspectRatio="xMidYMid" height="9.5093451" width="37" inkscape:label="icon"/>
+    <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332" x="39.866066" y="13.857281" id="text1422" inkscape:label="combat factors"><tspan sodipodi:role="line" id="tspan1420" x="39.866066" y="13.481076" style="font-size:2.82222223px;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke-width:0.26458332"><tspan style="font-size:2.11666656px;fill:#000000;fill-opacity:1" id="tspan1424">3MU</tspan> +5/+3</tspan></text>
+    <image sodipodi:absref="../icons/elite_foot.png" y="0.59065497" x="1.6313324" id="image1434" xlink:href="../icons/elite_foot.png" style="image-rendering:optimizeQuality" preserveAspectRatio="xMidYMid" height="9.5093451" width="40" inkscape:label="icon"/>
   </g>
 </svg>

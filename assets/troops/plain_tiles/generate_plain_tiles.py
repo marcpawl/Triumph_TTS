@@ -61,6 +61,13 @@ plain_army[ 'camp_fortified' ] = base_definitions['camp_fortified']
 plain_army[ 'camp_pack_train' ] = base_definitions['camp_pack_train']
 plain_army[ 'prepared_defenses' ] = base_definitions['prepared_defenses']
 
+
+def is_camp(troop_data: dict) -> bool:
+    if not 'is_camp' in troop_data:
+        return False
+    return troop_data['is_camp']
+
+
 def is_foot(troop_data: dict) -> bool:
     if 'open_order_foot' in troop_data:
         return True
@@ -134,6 +141,7 @@ def write_tile(output, base_definition: dict):
     base_depth = tool_tips['base_depth']
     if 'mobile_infantry' in base_definition and base_definition['mobile_infantry']:
         base_depth = 40
+    base_width = 80 if is_camp(tool_tips) else 40
 
     tile_name = calc_tile_name(base_definition)
     description = base_definition['troop_type']
@@ -143,7 +151,7 @@ def write_tile(output, base_definition: dict):
         description = description + " Mobile Infrantry"
     description = description + " Tile"
     author = 'Plain tile, original work by Arkein (model) and Rod (texture), using troop icon from Lorenzo Moro, modified by Marc.'
-    mesh = f"g_assets['dir'] .. 'troops/plain_tiles/tile_40_{base_depth}.obj'"
+    mesh = f"g_assets['dir'] .. 'troops/plain_tiles/tile_{base_width}_{base_depth}.obj'"
     code_name = calc_code_name_from_definition(base_definition)
     red_tex = f"g_assets['dir'] .. 'troops/plain_tiles/red_{code_name}.png'"
     orange_tex = f"g_assets['dir'] .. 'troops/plain_tiles/orange_{code_name}.png'"
@@ -158,6 +166,7 @@ def write_tile(output, base_definition: dict):
   scale = 1,
   rotation = 0,
   depth = {base_depth},
+  width = {base_width},
   description = '{description}',
   author = '{author}',
   mesh = {{ {mesh}, }},
@@ -203,16 +212,15 @@ def make_svg(color:str, general: bool, troop_name: str, troop_data: dict, mobile
     code_name = calc_code_name(troop_name=troop_name, general=general, mobile_infantry=mobile_infantry)
     
     name_suffix = ""
-    base_depth = troop_data['base_depth']
+    base_depth = troop_data['base_depth'] if 'base_depth' in troop_data else 40
+    base_width = 40 if not is_camp(troop_data) else 80
     y_adjustment = 0
-    movement_rate = troop_data['tactical_move_distance']
+    movement_rate = troop_data['tactical_move_distance'] if 'tactical_move_distance' in troop_data else None
     if mobile_infantry:
         base_depth = 40
         y_adjustment = (troop_data['base_depth'] - base_depth) / 2.0
         movement_rate = 6
         name_suffix = name_suffix + " MI"
-
-
 
     svg_file_name = f"{color}_{code_name}.svg"
     png_file_name = svg_file_name[:-3] + "png"
@@ -229,17 +237,20 @@ def make_svg(color:str, general: bool, troop_name: str, troop_data: dict, mobile
     res = ctxt.xpathEval("/svg:svg")
     svg = res[0]
     svg.setProp("height", f"{base_depth}mm")
-    svg.setProp("viewBox", f"0 0 40 {troop_data['base_depth']}")
+    svg.setProp("width", f"{base_width}mm")
+    svg.setProp("viewBox", f"0 0 {base_width} {base_depth}")
     svg.setProp("sodipodi:docname", svg_file_name)
     
     res = ctxt.xpathEval("//svg:rect[@inkscape:label='background']")
     background = res[0]
     background.setProp("height", str(base_depth))
+    background.setProp("width", str(base_width))
     change_fill(background, color)
 
     res = ctxt.xpathEval("//svg:rect[@inkscape:label='background_edges']")
     background = res[0]
     background.setProp("height", str(base_depth))
+    background.setProp("width", str(base_width))
 
     res = ctxt.xpathEval("//svg:rect[@inkscape:label='general outside']")
     rect = res[0]
@@ -284,11 +295,18 @@ def make_svg(color:str, general: bool, troop_name: str, troop_data: dict, mobile
     #     mounted_cf = mounted_cf + 1
     combat = f" +{foot_cf}/+{mounted_cf}"
     text_combat.setContent(combat)
+    # Adjust position for wide bases
+    x_pos = base_width - (40 - float(text_combat.parent.prop('x')))
+    text_combat.parent.setProp("x", str(x_pos))
+    text_combat.parent.parent.setProp("x", str(x_pos))
 
     # Set the movement rate
     res = ctxt.xpathEval("//svg:text[@inkscape:label='combat factors']/svg:tspan/svg:tspan")
     tspan_movement = res[0]
-    tspan_movement.setContent(f"{movement_rate}MU")
+    if movement_rate is None:
+        tspan_movement.unlinkNode()
+    else:
+        tspan_movement.setContent(f"{movement_rate}MU")
 
     # Replace the icon
     res = ctxt.xpathEval("//svg:image[@inkscape:label='icon']")
@@ -298,6 +316,7 @@ def make_svg(color:str, general: bool, troop_name: str, troop_data: dict, mobile
     image.setProp("preserveAspectRatio", "xMidYMid")
     image_area_height = base_depth - icon_bottom_margin
     image.setProp("height", str(image_area_height));
+    image.setProp("width", str(base_width));
     if mobile_infantry:
         mi_icon_file_name = "../icons/mobileinf.png"
         print(mi_icon_file_name)
@@ -314,14 +333,14 @@ def make_svg(color:str, general: bool, troop_name: str, troop_data: dict, mobile
         mi_image.setProp("height", str(mi_icon_height));
         image.addNextSibling(mi_image)
 
-    # Adjust the y-position for mobile infrantry
-    if mobile_infantry:
-        res = ctxt.xpathEval("/svg:svg/svg:g//*['y']")
-        for node in res:
-            old_y = node.prop('y')
-            if old_y is not None:
-                new_y = str(float(old_y) + y_adjustment)
-                node.setProp('y', new_y)
+    # # Adjust the y-position for mobile infrantry
+    # if mobile_infantry:
+    #     res = ctxt.xpathEval("/svg:svg/svg:g//*['y']")
+    #     for node in res:
+    #         old_y = node.prop('y')
+    #         if old_y is not None:
+    #             new_y = str(float(old_y) + y_adjustment)
+    #             node.setProp('y', new_y)
 
     doc.saveFileEnc(svg_file_name, "UTF-8")
     doc.freeDoc()
@@ -330,7 +349,7 @@ def make_svg(color:str, general: bool, troop_name: str, troop_data: dict, mobile
     # Convert SVG to PNG
     cmd = ['/cygdrive/c/Program Files/Inkscape/inkscape.exe',  
         '--without-gui',
-        '-w', str(22 * 40), '-h', str(22 * base_depth),
+        '-w', str(22 * base_width), '-h', str(22 * base_depth),
         '-f', svg_file_name, 
         '-e', png_file_name]
     subprocess.check_call(cmd)
@@ -360,21 +379,24 @@ def make_svg(color:str, general: bool, troop_name: str, troop_data: dict, mobile
 
 def make_base_definitions(data):
     for type in data:
-        if type not in ["Camp", 'Elephant Screen Counter']:
+        if type not in ["Camp",  'Elephant Screen Counter']:
             troop_data = data[type]
-            for general in [ True, False]:
+            generals = [False] if is_camp(troop_data) else [False, True]
+            for general in generals:
                 make_base_definition(general=general, troop_name=type, troop_data=troop_data,  mobile_infantry=False)
                 if is_foot(troop_data) and type not in ["War Wagons"]:
                     make_base_definition(general=general, troop_name=type, troop_data=data[type], mobile_infantry=True)
 
 
 def make_svgs(base_tool_tip: dict):
+    generals = [False] if is_camp(base_tool_tip) else [False, True]
     for color in ['red', 'orange', 'yellow', 'blue', 'green', 'purple'] :
-        for general in [ True, False]:
+        for general in generals:
             make_svg(color, general, type, base_tool_tip, mobile_infantry=False)
             if is_foot(base_tool_tip):
                 if base_tool_tip['troop_type'] not in ["War Wagons"]:
                     make_svg(color, general, type, base_tool_tip, mobile_infantry=True)
+
 
 def write_base_definition(data_file, key) :
     data_file.write(f"g_base_definitions['{key}']={{\n")
@@ -392,6 +414,7 @@ def write_base_definition(data_file, key) :
             data_file.write(f'  {k}="{value}",\n')
     data_file.write("}\n\n")
     
+
 make_base_definitions(base_tool_tips)
 for type in base_tool_tips:
     if type not in ["Camp", 'Elephant Screen Counter']:
@@ -406,7 +429,8 @@ with open("plain_army.ttslua", "w") as data_file:
 require("Triumph_TTS/scripts/static_maps")
 """)
     # Write out the plain tiles
-    for key in base_definitions:
+    keys = sorted(base_definitions.keys())
+    for key in keys:
         write_tile(data_file, base_definitions[key])
 
     data_file.write("""
