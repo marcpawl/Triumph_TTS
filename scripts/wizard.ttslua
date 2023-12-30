@@ -125,7 +125,6 @@ local terrain_bag_names = {
 --  e.g. "Woods"
 -- bag_name: Name of a bag to check. e.g. "Gentle Hills Ordinary Small"
 function is_terrain_bag_used(used, bag_name)
-  print("128 IN is_terrain_bag_used")
   for terrain,_ in pairs(used) do
     if  str_starts_with(bag_name, terrain) then
       return true
