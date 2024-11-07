@@ -1,4 +1,4 @@
 all:
 	make -C ../unittests/
-	./clean_save
+	./clean_save --force-remote
 	./to_tts
