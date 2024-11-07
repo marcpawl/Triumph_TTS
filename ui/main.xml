@@ -785,7 +785,7 @@
       </Row>
       <Row id="wizard_panel_advantaged_deployment_flank_march">
         <Cell columnSpan="3">
-          <Text>Reserves toops for flank march.</Text>
+          <Text>Reserves troops for flank march.</Text>
         </Cell>
       </Row>
       <Row>
