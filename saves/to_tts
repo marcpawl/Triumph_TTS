@@ -3,15 +3,26 @@
 from pathlib import Path
 import shutil
 
+def copy_source(target: Path)->None:
+   print(target)
+   target = target.resolve()
+   print(target)
+   dest_png = target / "TS_Save_1.png"
+   dest_json = target / "TS_Save_1.json"
+   src_png = "TS_Save_1.png"
+   src_json ="TS_Save_1.json"
+   shutil.copy(src_png, str(dest_png))
+   print(f"{src_png} -> {dest_png}")
+   shutil.copy(src_json, str(dest_json))
+   print(f"{src_json} -> {dest_json}")
+
+# Copy the code to the Tabletop Simulator
 target = Path.home() / "Tabletop Simulator" / "Saves"
-print(target)
-target = target.resolve()
-print(target)
-dest_png = target / "TS_Save_1.png"
-dest_json = target / "TS_Save_1.json"
-src_png = "TS_Save_1.png"
-src_json ="TS_Save_1.json"
-shutil.copy(src_png, str(dest_png))
-print(f"{src_png} -> {dest_png}")
-shutil.copy(src_json, str(dest_json))
-print(f"{src_json} -> {dest_json}")
+copy_source(target)
+
+# Copy the code to VS code plugin
+vscode_target = ( Path.home() / "AppData" / "Local" / 
+         "Temp" / "TabletopSimulator" /
+          "Tabletop Simulator Lua" )
+vscode_target.mkdir(parents=True, exist_ok=True)
+copy_source(vscode_target)
