@@ -371,7 +371,11 @@ def update_assets_ttslua() :
         f.write("}\n")
 
 
-def update_date_file() :
+def update_date_file(change_id) :
+    """
+       Args:
+          change_id Git id of the change.
+    """
     if not update_date:
         return
     today = datetime.datetime.utcnow()
@@ -380,14 +384,15 @@ def update_date_file() :
     with open("ObjectStates/version_text", "r") as file:
         data = json.load(file)
     data['Text']['Text'] = \
-        f"Triumph! TTSMod\nv2.4 alpha {date_string}\nhttps://github.com/marcpawl/Triumph_TTS/tree/v2.4"
+        f"Triumph! TTSMod\nv2.5 alpha {date_string}\nhttps://github.com/marcpawl/Triumph_TTS/tree/{change_id}"
     with open("ObjectStates/version_text", "w") as file:
         file.write(json.dumps(data, indent=4, sort_keys="True"))
 
 
 def clean_file(file_name) :
     discover_assets_remote_url()
-    update_date_file()
+    change_id, branch_name = get_remote_branch()
+    update_date_file(change_id)
 
     update_assets_ttslua()
 
