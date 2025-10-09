@@ -65,10 +65,18 @@ function onSave()
 end
 
 g_build_date = "20220825"
+g_build_branch = "XXXX"
+g_build_change_id = "XXXX"
 
 function onload(saved_data)
-    print_info('\n---------------------------------\nTriumph! v 2.4 alpha build ' .. g_build_date )
+    print_info('---------------------------------')
+    print_info('Triumph! v1.2 ')
+    print_info('Mod version:')
+    print_info('  ' .. g_build_branch)
+    print_info('  ' .. g_build_change_id)
+    print_info('  ' .. g_build_date)
     print_info("The names and logos of third party products and companies are the property of their respective owners and may also be trademarks. \n\n")
+    print_info('---------------------------------')
     Wait.time(main_loop, g_seconds_main_loop, -1)
     make_scenery_non_interactable()
     reset_state()

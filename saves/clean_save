@@ -410,14 +410,9 @@ def clean_file(file_name) :
     data['LuaScript'] = read_source_files()
     data['XmlUI'] = read_xml_ui()
 
-    # Update the build date used in the inital version display
+    # Update the build date used in the initial version display
     if update_date :
-        script = data['LuaScript']
-        today = datetime.datetime.now()
-        date='{:04}{:02}{:02}.{:02}{:02}'.format( today.year, today.month, today.day, today.hour, today.minute )
-        new_date = 'g_build_date = "' + date + '"\\n'
-        new_script = re.sub('g_build_date = "\d+\"\\n', new_date, script)
-        data['LuaScript'] = new_script
+        update_date_in_lua_script(data)
 
     unsplit_object_states(data)
 
@@ -425,6 +420,22 @@ def clean_file(file_name) :
 
     with open(file_name, "w") as f :
         f.write(json.dumps(data, indent=4, sort_keys="True"))
+
+
+def update_date_in_lua_script(data):
+    script = data['LuaScript']
+    today = datetime.datetime.now()
+    date = '{:04}{:02}{:02}.{:02}{:02}'.format(today.year, today.month, today.day, today.hour, today.minute)
+    new_date = 'g_build_date = "' + date + '"\\n'
+    new_script = re.sub('g_build_date = "\d+\"\\n', new_date, script)
+
+    change_id, branch_name = get_remote_branch()
+    new_change_id = f'g_build_change_id = "{change_id}"'
+    new_branch_name = f'g_build_branch = "{branch_name}"'
+    new_script = re.sub('g_build_change_id = "[\w\d]+\"\\n', new_change_id, new_script)
+    new_script = re.sub('g_build_branch = "[\w\d_]+\"\\n', new_branch_name, new_script)
+
+    data['LuaScript'] = new_script
 
 if len(sys.argv) > 1 :
     if sys.argv[1] == "--no-date" :
