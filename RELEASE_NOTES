@@ -4,6 +4,7 @@ version 3.0 Release Notes
 Triumph! v1.2 rules
  - Bow Levy, Horde, and Rabble movement rates changed.
  - War wagons defending ranged combat changed.
+ - Pavise combat factors changed
 
 Fix error where Steppe topography would not be an option
 in the wizard.  For some armies that meant that there was
