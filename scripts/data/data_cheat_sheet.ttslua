@@ -20,7 +20,7 @@ base_tool_tips['Archers']={
 }
 base_tool_tips['Bow Levy']={
   open_order_foot = true,
-  tactical_move_distance = 2,
+  tactical_move_distance = 3,
   target_combat_factor = 3,
   combat_factor_vs_foot = 2,
   combat_factor_vs_mounted = 3,
@@ -50,7 +50,7 @@ base_tool_tips['Light Spear']={
 }
 base_tool_tips['Rabble']={
   open_order_foot = true,
-  tactical_move_distance = 3,
+  tactical_move_distance = 4,
   target_combat_factor = 2,
   combat_factor_vs_foot = 2,
   combat_factor_vs_mounted = 1,
@@ -121,7 +121,7 @@ base_tool_tips['Heavy Foot']={
 }
 base_tool_tips['Horde']={
   close_order_foot = true,
-  tactical_move_distance = 2,
+  tactical_move_distance = 3,
   target_combat_factor = 2,
   combat_factor_vs_foot = 3,
   combat_factor_vs_mounted = 2,

@@ -328,7 +328,7 @@ def make_svg(color:str, general: bool, troop_name: str, troop_data: dict, mobile
     ctxt.xpathFreeContext()
 
     # Convert SVG to PNG
-    cmd = ['/cygdrive/c/Program Files/Inkscape/inkscape.exe',  
+    cmd = ['inkscape.exe',  
         '--without-gui',
         '-w', str(22 * 40), '-h', str(22 * base_depth),
         '-f', svg_file_name, 
