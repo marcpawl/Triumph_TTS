@@ -139,7 +139,7 @@
       <Row preferredHeight="30">
         <Cell columnSpan="2">
           <HorizontalLayout>
-            <Text>Toprography: </Text>
+            <Text>Topography: </Text>
             <Text id="wizard_topgraphy_defender">someone</Text>
           </HorizontalLayout>
         </Cell>
@@ -170,7 +170,7 @@
           </Row>
           <Row>
             <Cell>
-              <Toggle fontSize="16" id="wizard_topography_steepe">Steppe</Toggle>
+              <Toggle fontSize="16" id="wizard_topography_steppe">Steppe</Toggle>
             </Cell>
           </Row>
           <Row>

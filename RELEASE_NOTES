@@ -1,3 +1,9 @@
+version 3.0 Release Notes
+=========================
+
+Fix error where Steppe topography would not be an option
+in the wizard.  For some armies that meant that there was
+no togpography and a table could not be spawned.
 
 Version 2.3 Release Notes
 =========================

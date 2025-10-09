@@ -446,7 +446,7 @@ army['plain_army']={
       'Forest',
       'Hilly',
       'Dry',
-      'Steepe',
+      'steppe',
       'Delta',
       'Marsh',
     },
