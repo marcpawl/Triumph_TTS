@@ -237,18 +237,16 @@ function will_base_contact_other_base(base_obj, relative_direction, max_distance
     return result
 end
 
--- Moves ONE single base by it's depth
+-- Moves ONE single base 1MU.
 -- base_obj: Base to move back
 -- return: true on success, false if there was a collision with another base.
 function do_push_back(base_obj)
     zoc_invalidate_base(base_obj)
-    local base_depth_mm = get_base_depth_from_base_obj(base_obj)
-    local base_depth = from_mm_to_in(base_depth_mm)
 
-    local collision = will_base_contact_other_base(base_obj, 180, base_depth)
+    local collision = will_base_contact_other_base(base_obj, 180, g_movement_unit_in_inches)
     local magnitude
     if collision == nil then
-        magnitude = base_depth
+        magnitude = g_movement_unit_in_inches
     else
         magnitude = collision.distance
         local mu = inches_to_mu_display_string(magnitude)
@@ -697,7 +695,7 @@ function calculate_group(objs, transforms)
     }
 end
 
--- Pushes back a whole column, that may not be exactly aligned
+-- Pushes back a whole column 1 MU, that may not be exactly aligned
 function push_back_column(objs)
     -- We use many comparisons for the column so we precalculate all the
     -- transforms
@@ -712,14 +710,7 @@ function push_back_column(objs)
         return
     end
 
-    local behind_of = column['behind_of']
     local front_element = column['front_element']
-
-    local base_depth = get_size(front_element.getName())['z']
-    local distance = base_depth
-    if distance > g_two_movement_units_in_inches then
-        distance = g_two_movement_units_in_inches
-    end
 
     local angle = from_degrees_to_rad(front_element.getRotation())['y']
     angle = angle + math.pi
@@ -727,25 +718,13 @@ function push_back_column(objs)
         angle = angle - 2 * math.pi
     end
 
-    -- Move the front_element fist, then align the others to its back
     local displacement_vector = rad_to_vector(angle)
-    local destination = vec_add(front_element.getPosition(), vec_mul_escalar(displacement_vector, distance))
-    front_element.setPosition(destination)
 
-    local magnitude = base_depth / 2
-    local next_element = behind_of[front_element]
-    while next_element ~= nil do
-        next_element.setRotation(front_element.getRotation())
-
-        base_depth = get_size(next_element.getName())['z']
-        magnitude = magnitude + base_depth / 2
-        local next_destination = vec_add(destination, vec_mul_escalar(displacement_vector, magnitude))
-        next_element.setPosition(next_destination)
-
-        front_element = next_element
-        next_element = behind_of[next_element]
-
-        magnitude = magnitude + base_depth / 2
+    for _, obj in ipairs(objs) do
+        local destination = vec_add(
+            obj.getPosition(), 
+            vec_mul_escalar(displacement_vector, g_movement_unit_in_inches))
+        obj.setPosition(destination)
     end
 
     history_record_delta_snapshot()
