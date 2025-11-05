@@ -5,6 +5,7 @@ Reads the save file, strips out parts that should not be in a new game,
 and the writes the data to the same file.
 """
 
+import argparse
 import datetime
 import hashlib
 import json
@@ -171,7 +172,7 @@ def discover_assets_remote_url() :
         return
     id, remote = get_remote_branch()
 
-    url = subprocess.check_output(["git", "remote", "get-url", remote]).decode("ascii").strip()
+    url = subprocess.check_output(["git", "remote", "get-url", 'origin']).decode("ascii").strip()
     url = url[:-4]
     github_url = "^(https://([^@]*@)?github.com/).*$"
     github_re = re.compile(github_url)
@@ -437,23 +438,31 @@ def update_date_in_lua_script(data):
 
     data['LuaScript'] = new_script
 
-if len(sys.argv) > 1 :
-    if sys.argv[1] == "--no-date" :
-        update_date = False
-        sys.argv.remove('--no-date')
 
-if len(sys.argv) > 1 :
-    if sys.argv[1] == "--force-remote" :
-        force_remote=True
-        sys.argv.remove('--force-remote')
+parser = argparse.ArgumentParser(
+        description='Normalize the program to have proper URLs.')
+parser.add_argument('--no-date', action='store_true', 
+                    help='Do not update the date',
+                    default=False)
+parser.add_argument('--force-remote', action='store_true', 
+                    help='Use http resources',
+                    default=False)
+parser.add_argument('--force-local', action='store_true', 
+                    help='Use filesystem resources',
+                    default=False)
+parser.add_argument('extra_args', nargs=argparse.REMAINDER)
+args = parser.parse_args()
+update_date = not args.no_date
+if args.force_remote and args.force_local:
+    print('Can only have one of --force-remote or --force-local')
+if args.force_remote:
+    force_remote = True
+else:
+    force_remote = False
 
-if len(sys.argv) > 1 :
-    if sys.argv[1] == "--force-local" :
-        force_local=True
-        sys.argv.remove('--force-local')
 
-if len(sys.argv) == 1:
+if len(args.extra_args) == 0:
   clean_file("TS_Save_1.json")
 else:
-    for file_name in sys.argv[1:] :
+    for file_name in args.extra_args :
         clean_file(file_name)
