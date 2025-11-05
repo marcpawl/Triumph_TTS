@@ -352,12 +352,9 @@ function move_base_forward(base_obj, distance_inches)
     return collision
 end
 
--- Like push back but in the other direction
+-- Move forward 1 MU
 function push_forward(base_obj)
-    local base_depth_mm = get_base_depth_from_base_obj(base_obj)
-    local base_depth = from_mm_to_in(base_depth_mm)
-
-    local collision = move_base_forward(base_obj, base_depth)
+    local collision = move_base_forward(base_obj, g_movement_unit_in_inches)
     if nil == collision then
         print_info(base_obj.getName() .. ' has moved forward its own depth ')
     end
