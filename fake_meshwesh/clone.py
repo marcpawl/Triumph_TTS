@@ -25,7 +25,15 @@ def retrieve_theme(id) :
     cmd = [ "curl", "-o", dest_file, src_url]
     subprocess.check_call(cmd)
 
+def retrieve_summary():
+    dest_file = "armyLists/summary"
+    src_url = "https://meshwesh.wgcwar.com/api/v1/armyLists?summary=true"
+    cmd = [ "curl", "-o", dest_file, src_url]
+    subprocess.check_call(cmd)
 
+
+os.mkdir("armyLists")
+retrieve_summary()
 with open("armyLists/summary", "r") as summary_file:
   summary_text = summary_file.read()
 summary = json.loads(summary_text)
