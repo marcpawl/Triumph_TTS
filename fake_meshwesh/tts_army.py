@@ -219,6 +219,8 @@ def get_dismounting_type(base_definition, battle_card_note) :
       return "Pikes"
     elif dismount == "Spear" :
       return "Spears"
+    elif dismount == "Archer stands equipped with crossbows":
+        return "Archers"
     return dismount
   elif (battle_card_note == "General only; as Pike") :
     if is_general(base_definition) :
@@ -231,6 +233,11 @@ def get_dismounting_type(base_definition, battle_card_note) :
         return "Elite Foot"
       if base_definition['troop_type'] == "JCV" :
         return "Archers"
+      return None
+  elif battle_card_note == "only Knights; as Elite Foot" :
+      print("base_definition=", base_definition)
+      if base_definition['troop_type'] == 'KNT':
+          return "Elite Foot"
       return None
   else:
     print("Unable to decode battle card note ", battle_card_note)
@@ -302,6 +309,7 @@ def write_deployment_dismounting(file, base_definition, battle_card) :
   dismount_type = get_dismounting_type(base_definition, note)
   if dismount_type is not None:
     return write_deployment_dismounting_as(file, base_definition, dismount_type, battle_card)
+     
 
 def write_mid_battle_dismounting_as(file, base_definition, dismount_type, battle_card) :
   """
@@ -1308,6 +1316,7 @@ require("Triumph_TTS/scripts/static_maps")
 
 summary = read_json("armyLists/summary")
 
+os.mkdir("army_data")
 with open("army_data/all_armies.ttslua", "w") as all_armies:
     all_armies.write("""
 -- GENERATED FILE DO NOT EDIT
