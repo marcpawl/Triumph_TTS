@@ -32,7 +32,6 @@ def retrieve_summary():
     subprocess.check_call(cmd)
 
 
-os.mkdir("armyLists")
 retrieve_summary()
 with open("armyLists/summary", "r") as summary_file:
   summary_text = summary_file.read()

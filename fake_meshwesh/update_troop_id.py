@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 
 """
-Create a sed script that will change the troop identifiers when MeshWesh is updated.
+Update the mapping for models to base id's when meshwesh has changed.
 
-1. Rename armyLists to armyLists.old
-2. Get new MeshWesh data:
-2.1 make clone
-2.2 make army_data
-3. Run this script to get changes.sed
-4. Update the scripts data files
-4.1 cd scripts/data
-4.2 for f in *; do; sed -i -f ../../changes.sed $f; done
+BEWARE: git operations called that will remove all uncommitted changes.
 """
 import json
 import os
+import shutil
 import sqlite3
+import subprocess
 
 
 def is_army(file_name):
@@ -47,6 +42,14 @@ def import_files(army_data_dir, data_version):
                             (army_id, troop_option_id, troop_option_description, troop_entry_id, troop_entry_type_code, data_version))
 
 
+
+subprocess.run(['git', 'reset', '--hard'], check=True)
+subprocess.run(['git', 'clean', '-fdx'], check=True)
+subprocess.run(['git', 'clean', '-fdX'], check=True)
+shutil.move("armyLists", "armyLists.old")
+subprocess.run(["make", "clone"], check=True)
+subprocess.run(["make", "army_data"], check=True)
+
 if os.path.exists("troops.db"):
     os.unlink("troops.db")
 con = sqlite3.connect("troops.db")
@@ -59,9 +62,10 @@ con.execute("""create table troops (
     data_version TEXT
     );""")
 
-import_files("c:/Users/marcp/GitHub/Triumph_TTS/fake_meshwesh/armyLists.old", "old")
-import_files("c:/Users/marcp/GitHub/Triumph_TTS/fake_meshwesh/armyLists", "new")
-changes = open("c:/Users/marcp/GitHub/Triumph_TTS/fake_meshwesh/changes.sed", "w")
+import_files(os.path.realpath("armyLists.old"), "old")
+import_files(os.path.realpath("armyLists"), "new")
+sed = os.path.realpath("changes.sed")
+changes = open(sed, "w")
 
 cur = con.cursor()
 cur.execute("""
@@ -79,3 +83,7 @@ while (rec := cur.fetchone()) :
     changes.write(line)
 changes.close()
 
+os.chdir("../scripts/data")
+files = os.listdir(".")
+for file in files:
+    subprocess.run([ 'sed', '-i', '-f', sed, file ], check=True)

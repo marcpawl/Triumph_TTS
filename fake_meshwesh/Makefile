@@ -2,7 +2,6 @@
 .PHONY: army_data
 army_data:
 	rm -rf army_data
-	mkdir army_data
 	python3 tts_army.py
 
 
