@@ -1,0 +1,50 @@
+g_str_68c995eb579163001588c69c_general='68c995eb579163001588c69c_general'
+g_base_definitions[g_str_68c995eb579163001588c69c_general]={
+  id=g_str_68c995eb579163001588c69c_general,
+  name='Light Foot General',
+  min=2,
+  max=1,
+  description='Experienced fighters and their slaves',
+  general=true,
+  troop_type="Light Foot",
+  troop_option_id="68c995eb579163001588c69b",
+}
+g_str_68c995eb579163001588c69c='68c995eb579163001588c69c'
+g_base_definitions[g_str_68c995eb579163001588c69c]={
+  id=g_str_68c995eb579163001588c69c,
+  name='Light Foot',
+  min=2,
+  max=8,
+  description='Experienced fighters and their slaves',
+  troop_type="Light Foot",
+  troop_option_id="68c995eb579163001588c69b",
+}
+g_str_68c995eb579163001588c69e='68c995eb579163001588c69e'
+g_base_definitions[g_str_68c995eb579163001588c69e]={
+  id=g_str_68c995eb579163001588c69e,
+  name='Rabble',
+  min=8,
+  max=21,
+  description='Less experienced levy and their slaves',
+  troop_type="Rabble",
+  troop_option_id="68c995eb579163001588c69d",
+}
+g_str_68c07ed65c431f0015cf1ab6_camp='68c07ed65c431f0015cf1ab6_camp'
+g_base_definitions[g_str_68c07ed65c431f0015cf1ab6_camp]={
+  id=g_str_68c07ed65c431f0015cf1ab6_camp,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Camp',
+  troop_type="Camp",
+}
+g_str_68c07ed65c431f0015cf1ab6_camp_fortified='68c07ed65c431f0015cf1ab6_camp_fortified'
+g_base_definitions[g_str_68c07ed65c431f0015cf1ab6_camp_fortified]={
+  id=g_str_68c07ed65c431f0015cf1ab6_camp_fortified,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Fortified camp',
+  fortified_camp=true,
+  troop_type="Camp",
+}

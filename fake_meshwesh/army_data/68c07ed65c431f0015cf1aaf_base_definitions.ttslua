@@ -1,0 +1,61 @@
+g_str_68c995eb579163001588c692_general='68c995eb579163001588c692_general'
+g_base_definitions[g_str_68c995eb579163001588c692_general]={
+  id=g_str_68c995eb579163001588c692_general,
+  name='Light Foot General',
+  min=2,
+  max=1,
+  description='Experienced fighters and their slaves',
+  general=true,
+  troop_type="Light Foot",
+  troop_option_id="68c995eb579163001588c691",
+}
+g_str_68c995eb579163001588c692='68c995eb579163001588c692'
+g_base_definitions[g_str_68c995eb579163001588c692]={
+  id=g_str_68c995eb579163001588c692,
+  name='Light Foot',
+  min=2,
+  max=8,
+  description='Experienced fighters and their slaves',
+  troop_type="Light Foot",
+  troop_option_id="68c995eb579163001588c691",
+}
+g_str_68c995eb579163001588c694_general='68c995eb579163001588c694_general'
+g_base_definitions[g_str_68c995eb579163001588c694_general]={
+  id=g_str_68c995eb579163001588c694_general,
+  name='Light Spear General',
+  min=2,
+  max=1,
+  description='nobles with cedar lances',
+  general=true,
+  troop_type="Light Spear",
+  troop_option_id="68c995eb579163001588c693",
+}
+g_str_68c995eb579163001588c694='68c995eb579163001588c694'
+g_base_definitions[g_str_68c995eb579163001588c694]={
+  id=g_str_68c995eb579163001588c694,
+  name='Light Spear',
+  min=2,
+  max=4,
+  description='nobles with cedar lances',
+  troop_type="Light Spear",
+  troop_option_id="68c995eb579163001588c693",
+}
+g_str_68c995eb579163001588c696='68c995eb579163001588c696'
+g_base_definitions[g_str_68c995eb579163001588c696]={
+  id=g_str_68c995eb579163001588c696,
+  name='Rabble',
+  min=6,
+  max=21,
+  description='Less experienced levy and their slaves',
+  troop_type="Rabble",
+  troop_option_id="68c995eb579163001588c695",
+}
+g_str_68c07ed65c431f0015cf1aaf_camp='68c07ed65c431f0015cf1aaf_camp'
+g_base_definitions[g_str_68c07ed65c431f0015cf1aaf_camp]={
+  id=g_str_68c07ed65c431f0015cf1aaf_camp,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Camp',
+  troop_type="Camp",
+}

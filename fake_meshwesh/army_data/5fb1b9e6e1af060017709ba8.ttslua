@@ -1,4 +1,4 @@
--- 5fb1b9e6e1af060017709ba8 Almoravid  1039 to 1147 AD
+-- 5fb1b9e6e1af060017709ba8 Almoravid  1039 to 1155 AD
 
 army['5fb1b9e6e1af060017709ba8']={
   data={
@@ -12,28 +12,30 @@ army['5fb1b9e6e1af060017709ba8']={
       'Arable',
       'Dry',
     },
-    name='Almoravid  1039 to 1147 AD',
+    name='Almoravid  1039 to 1155 AD',
     id='5fb1b9e6e1af060017709ba8',
     dateRange={
       startDate=1039,
-      endDate=1147,
+      endDate=1155,
     },
   },
-  g_base_definitions[g_str_615351aa03385c0016b86e77_general],
-  g_base_definitions[g_str_615351aa03385c0016b86e77],
-  g_base_definitions[g_str_615351aa03385c0016b86e79],
-  g_base_definitions[g_str_615351aa03385c0016b86e7c_general],
-  g_base_definitions[g_str_615351aa03385c0016b86e7c],
-  g_base_definitions[g_str_615351aa03385c0016b86e7d],
-  g_base_definitions[g_str_615351aa03385c0016b86e7f],
-  g_base_definitions[g_str_615351aa03385c0016b86e82],
-  g_base_definitions[g_str_615351aa03385c0016b86e85],
-  g_base_definitions[g_str_615351aa03385c0016b86e87],
-  g_base_definitions[g_str_615351aa03385c0016b86e88],
-  g_base_definitions[g_str_615351aa03385c0016b86e8b],
-  g_base_definitions[g_str_615351aa03385c0016b86e8b_charging_camelry],
-  g_base_definitions[g_str_615351ab03385c0016b86e8f],
-  g_base_definitions[g_str_615351ab03385c0016b86e92],
+  g_base_definitions[g_str_68c995df579163001588a43d_general],
+  g_base_definitions[g_str_68c995df579163001588a43d],
+  g_base_definitions[g_str_68c995df579163001588a43f],
+  g_base_definitions[g_str_68c995df579163001588a442_general],
+  g_base_definitions[g_str_68c995df579163001588a442],
+  g_base_definitions[g_str_68c995df579163001588a443],
+  g_base_definitions[g_str_68c995df579163001588a445],
+  g_base_definitions[g_str_68c995df579163001588a448],
+  g_base_definitions[g_str_68c995df579163001588a44b],
+  g_base_definitions[g_str_68c995df579163001588a44b_shower_shooting],
+  g_base_definitions[g_str_68c995df579163001588a44e],
+  g_base_definitions[g_str_68c995df579163001588a44f],
+  g_base_definitions[g_str_68c995df579163001588a452],
+  g_base_definitions[g_str_68c995df579163001588a452_charging_camelry],
+  g_base_definitions[g_str_68c995df579163001588a456],
+  g_base_definitions[g_str_68c995df579163001588a459],
+  g_base_definitions[g_str_68c995df579163001588a459_shower_shooting],
   g_base_definitions[g_str_5fb1b9e6e1af060017709ba8_camp],
 }
 if nil == armies["Meshwesh id"] then
@@ -43,22 +45,22 @@ armies["Meshwesh id"]["5fb1b9e6e1af060017709ba8"] = army["5fb1b9e6e1af060017709b
 if nil == armies["Medieval Western Europe"] then
   armies["Medieval Western Europe"] ={}
 end
-armies["Medieval Western Europe"]["Almoravid  1039 to 1147 AD"] = army["5fb1b9e6e1af060017709ba8"]
+armies["Medieval Western Europe"]["Almoravid  1039 to 1155 AD"] = army["5fb1b9e6e1af060017709ba8"]
 if nil == armies["Sahel Africa"] then
   armies["Sahel Africa"] ={}
 end
-armies["Sahel Africa"]["Almoravid  1039 to 1147 AD"] = army["5fb1b9e6e1af060017709ba8"]
+armies["Sahel Africa"]["Almoravid  1039 to 1155 AD"] = army["5fb1b9e6e1af060017709ba8"]
 if nil == armies["All"] then
   armies["All"] ={}
 end
-armies["All"]["Almoravid  1039 to 1147 AD"] = army["5fb1b9e6e1af060017709ba8"]
+armies["All"]["Almoravid  1039 to 1155 AD"] = army["5fb1b9e6e1af060017709ba8"]
 if nil == army_dates then
   army_dates={}
 end
 army_dates["5fb1b9e6e1af060017709ba8"] = {}
-army_dates["5fb1b9e6e1af060017709ba8"]["1039 AD to 1147 AD"] = {
+army_dates["5fb1b9e6e1af060017709ba8"]["1039 AD to 1155 AD"] = {
   startDate=1039,
-  endDate=1147
+  endDate=1155
 }
 army_dates["5fb1b9e6e1af060017709ba8"]["1039 AD to 1085 AD"] = {
   startDate=1039,
@@ -67,4 +69,8 @@ army_dates["5fb1b9e6e1af060017709ba8"]["1039 AD to 1085 AD"] = {
 army_dates["5fb1b9e6e1af060017709ba8"]["1086 AD to 1147 AD"] = {
   startDate=1086,
   endDate=1147
+}
+army_dates["5fb1b9e6e1af060017709ba8"]["1148 AD to 1155 AD"] = {
+  startDate=1148,
+  endDate=1155
 }

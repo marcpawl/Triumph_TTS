@@ -20,21 +20,22 @@ army['5fb1b9f3e1af06001770a2c7']={
       endDate=1279,
     },
   },
-  g_base_definitions[g_str_615351b503385c0016b88aac_general],
-  g_base_definitions[g_str_615351b503385c0016b88aac],
-  g_base_definitions[g_str_615351b503385c0016b88aaf],
-  g_base_definitions[g_str_615351b503385c0016b88ab1_general],
-  g_base_definitions[g_str_615351b503385c0016b88ab1],
-  g_base_definitions[g_str_615351b503385c0016b88ab4],
-  g_base_definitions[g_str_615351b503385c0016b88ab6],
-  g_base_definitions[g_str_615351b503385c0016b88ab8_general],
-  g_base_definitions[g_str_615351b503385c0016b88ab8],
-  g_base_definitions[g_str_615351b503385c0016b88ab9_general],
-  g_base_definitions[g_str_615351b503385c0016b88ab9],
-  g_base_definitions[g_str_615351b503385c0016b88abb],
-  g_base_definitions[g_str_615351b503385c0016b88abd],
-  g_base_definitions[g_str_615351b503385c0016b88abf],
-  g_base_definitions[g_str_615351b503385c0016b88ac1],
+  g_base_definitions[g_str_68c995e9579163001588c189_general],
+  g_base_definitions[g_str_68c995e9579163001588c189],
+  g_base_definitions[g_str_68c995e9579163001588c18c],
+  g_base_definitions[g_str_68c995e9579163001588c18e_general],
+  g_base_definitions[g_str_68c995e9579163001588c18e],
+  g_base_definitions[g_str_68c995e9579163001588c191],
+  g_base_definitions[g_str_68c995e9579163001588c193],
+  g_base_definitions[g_str_68c995e9579163001588c193_shower_shooting],
+  g_base_definitions[g_str_68c995e9579163001588c196_general],
+  g_base_definitions[g_str_68c995e9579163001588c196],
+  g_base_definitions[g_str_68c995e9579163001588c197_general],
+  g_base_definitions[g_str_68c995e9579163001588c197],
+  g_base_definitions[g_str_68c995e9579163001588c199],
+  g_base_definitions[g_str_68c995e9579163001588c19b],
+  g_base_definitions[g_str_68c995e9579163001588c19d],
+  g_base_definitions[g_str_68c995e9579163001588c19f],
   g_base_definitions[g_str_5fb1b9f3e1af06001770a2c7_camp],
 }
 if nil == armies["Meshwesh id"] then
@@ -59,5 +60,13 @@ end
 army_dates["5fb1b9f3e1af06001770a2c7"] = {}
 army_dates["5fb1b9f3e1af06001770a2c7"]["1127 AD to 1279 AD"] = {
   startDate=1127,
+  endDate=1279
+}
+army_dates["5fb1b9f3e1af06001770a2c7"]["1127 AD to 1249 AD"] = {
+  startDate=1127,
+  endDate=1249
+}
+army_dates["5fb1b9f3e1af06001770a2c7"]["1250 AD to 1279 AD"] = {
+  startDate=1250,
   endDate=1279
 }

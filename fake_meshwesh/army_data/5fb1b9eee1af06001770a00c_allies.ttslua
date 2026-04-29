@@ -19,19 +19,19 @@ army['5fb1b9eee1af06001770a00c_ally_5fb1b9eee1af060017709fdb'] = {
     name='Armenian allies',
     id='5fb1b9eee1af06001770a00c_ally_5fb1b9eee1af060017709fdb',
   },
-  g_base_definitions['6153519903385c0016b8472d'],
-  g_base_definitions['6153519903385c0016b8472f'],
-  g_base_definitions['6153519903385c0016b84730'],
-  g_base_definitions['6153519903385c0016b84732'],
+  g_base_definitions['68c995ce5791630015887caa'],
+  g_base_definitions['68c995ce5791630015887cac'],
+  g_base_definitions['68c995ce5791630015887cad'],
+  g_base_definitions['68c995ce5791630015887caf'],
 }
 army['5fb1b9eee1af06001770a00c_ally_5fb1b9e7e1af060017709c2d'] = {
   data={
     name='(in Greece) Navarrese allies',
     id='5fb1b9eee1af06001770a00c_ally_5fb1b9e7e1af060017709c2d',
   },
-  g_base_definitions['6153519703385c0016b841b7'],
-  g_base_definitions['6153519703385c0016b841b9'],
-  g_base_definitions['6153519703385c0016b841bb'],
-  g_base_definitions['6153519703385c0016b841bd'],
-  g_base_definitions['6153519703385c0016b841bf'],
+  g_base_definitions['68c995cb579163001588771f'],
+  g_base_definitions['68c995cb5791630015887721'],
+  g_base_definitions['68c995cb5791630015887723'],
+  g_base_definitions['68c995cb5791630015887725'],
+  g_base_definitions['68c995cb5791630015887727'],
 }

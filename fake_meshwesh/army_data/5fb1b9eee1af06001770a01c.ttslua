@@ -19,17 +19,18 @@ army['5fb1b9eee1af06001770a01c']={
       endDate=1556,
     },
   },
-  g_base_definitions[g_str_615351b103385c0016b880f5_general],
-  g_base_definitions[g_str_615351b103385c0016b880f5],
-  g_base_definitions[g_str_615351b103385c0016b880f7_general],
-  g_base_definitions[g_str_615351b103385c0016b880f7],
-  g_base_definitions[g_str_615351b103385c0016b880f9],
-  g_base_definitions[g_str_615351b103385c0016b880fb_general],
-  g_base_definitions[g_str_615351b103385c0016b880fb],
-  g_base_definitions[g_str_615351b103385c0016b880fd_general],
-  g_base_definitions[g_str_615351b103385c0016b880fd],
-  g_base_definitions[g_str_615351b103385c0016b880ff],
-  g_base_definitions[g_str_615351b103385c0016b88101],
+  g_base_definitions[g_str_68c995e6579163001588b76d_general],
+  g_base_definitions[g_str_68c995e6579163001588b76d],
+  g_base_definitions[g_str_68c995e6579163001588b76f_general],
+  g_base_definitions[g_str_68c995e6579163001588b76f],
+  g_base_definitions[g_str_68c995e6579163001588b771],
+  g_base_definitions[g_str_68c995e6579163001588b771_shower_shooting],
+  g_base_definitions[g_str_68c995e6579163001588b774_general],
+  g_base_definitions[g_str_68c995e6579163001588b774],
+  g_base_definitions[g_str_68c995e6579163001588b776_general],
+  g_base_definitions[g_str_68c995e6579163001588b776],
+  g_base_definitions[g_str_68c995e6579163001588b778],
+  g_base_definitions[g_str_68c995e6579163001588b77a],
   g_base_definitions[g_str_5fb1b9eee1af06001770a01c_camp],
   g_base_definitions[g_str_5fb1b9eee1af06001770a01c_camp_fortified],
   g_base_definitions[g_str_5fb1b9eee1af06001770a01c_camp_pack_train],
@@ -70,19 +71,19 @@ army_dates["5fb1b9eee1af06001770a01c"]["1259 AD to 1361 AD"] = {
   startDate=1259,
   endDate=1361
 }
-army_dates["5fb1b9eee1af06001770a01c"]["1362 AD to 1475 AD"] = {
+army_dates["5fb1b9eee1af06001770a01c"]["1362 AD to 1455 AD"] = {
   startDate=1362,
+  endDate=1455
+}
+army_dates["5fb1b9eee1af06001770a01c"]["1456 AD to 1475 AD"] = {
+  startDate=1456,
   endDate=1475
 }
 army_dates["5fb1b9eee1af06001770a01c"]["1476 AD to 1520 AD"] = {
   startDate=1476,
   endDate=1520
 }
-army_dates["5fb1b9eee1af06001770a01c"]["1521 AD to 1533 AD"] = {
+army_dates["5fb1b9eee1af06001770a01c"]["1521 AD to 1556 AD"] = {
   startDate=1521,
-  endDate=1533
-}
-army_dates["5fb1b9eee1af06001770a01c"]["1534 AD to 1556 AD"] = {
-  startDate=1534,
   endDate=1556
 }

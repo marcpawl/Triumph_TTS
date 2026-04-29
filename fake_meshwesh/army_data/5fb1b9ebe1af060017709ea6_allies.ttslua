@@ -19,17 +19,17 @@ army['5fb1b9ebe1af060017709ea6_ally_5fb1b9ebe1af060017709e99'] = {
     name='Byzantine allies',
     id='5fb1b9ebe1af060017709ea6_ally_5fb1b9ebe1af060017709e99',
   },
-  g_base_definitions['6153519803385c0016b8453d'],
-  g_base_definitions['6153519803385c0016b8453f'],
-  g_base_definitions['6153519803385c0016b84542'],
-  g_base_definitions['6153519803385c0016b84545'],
+  g_base_definitions['68c995cd5791630015887aba'],
+  g_base_definitions['68c995cd5791630015887abc'],
+  g_base_definitions['68c995cd5791630015887abf'],
+  g_base_definitions['68c995cd5791630015887ac2'],
 }
 army['5fb1b9ebe1af060017709ea6_ally_5fb1b9ede1af060017709f83'] = {
   data={
     name='Alan allies',
     id='5fb1b9ebe1af060017709ea6_ally_5fb1b9ede1af060017709f83',
   },
-  g_base_definitions['6153519903385c0016b846c4'],
-  g_base_definitions['6153519903385c0016b846c6'],
-  g_base_definitions['6153519903385c0016b846c8'],
+  g_base_definitions['68c995ce5791630015887c41'],
+  g_base_definitions['68c995ce5791630015887c43'],
+  g_base_definitions['68c995ce5791630015887c45'],
 }

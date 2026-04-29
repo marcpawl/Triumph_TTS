@@ -35,58 +35,58 @@ army['5fb1b9efe1af06001770a035_ally_5fb1b9efe1af06001770a044'] = {
     name='Kart, Injuid or Muzaffarid allies',
     id='5fb1b9efe1af06001770a035_ally_5fb1b9efe1af06001770a044',
   },
-  g_base_definitions['6153519a03385c0016b8479d'],
-  g_base_definitions['6153519a03385c0016b8479f'],
-  g_base_definitions['6153519a03385c0016b847a1'],
-  g_base_definitions['6153519a03385c0016b847a4'],
-  g_base_definitions['6153519a03385c0016b847a7'],
-  g_base_definitions['6153519a03385c0016b847a8'],
-  g_base_definitions['6153519a03385c0016b847ab'],
+  g_base_definitions['68c995ce5791630015887d1e'],
+  g_base_definitions['68c995ce5791630015887d20'],
+  g_base_definitions['68c995ce5791630015887d22'],
+  g_base_definitions['68c995ce5791630015887d25'],
+  g_base_definitions['68c995ce5791630015887d28'],
+  g_base_definitions['68c995ce5791630015887d29'],
+  g_base_definitions['68c995ce5791630015887d2c'],
 }
 army['5fb1b9efe1af06001770a035_ally_5fb1b9eee1af060017709fdb'] = {
   data={
     name='Armenian allies',
     id='5fb1b9efe1af06001770a035_ally_5fb1b9eee1af060017709fdb',
   },
-  g_base_definitions['6153519903385c0016b8472d'],
-  g_base_definitions['6153519903385c0016b8472f'],
-  g_base_definitions['6153519903385c0016b84730'],
-  g_base_definitions['6153519903385c0016b84732'],
+  g_base_definitions['68c995ce5791630015887caa'],
+  g_base_definitions['68c995ce5791630015887cac'],
+  g_base_definitions['68c995ce5791630015887cad'],
+  g_base_definitions['68c995ce5791630015887caf'],
 }
 army['5fb1b9efe1af06001770a035_ally_5fb1b9eee1af06001770a01c'] = {
   data={
     name='Golden Horde allies',
     id='5fb1b9efe1af06001770a035_ally_5fb1b9eee1af06001770a01c',
   },
-  g_base_definitions['6153519903385c0016b84770'],
-  g_base_definitions['6153519903385c0016b84772'],
-  g_base_definitions['6153519903385c0016b84774'],
+  g_base_definitions['68c995ce5791630015887cf1'],
+  g_base_definitions['68c995ce5791630015887cf3'],
+  g_base_definitions['68c995ce5791630015887cf5'],
 }
 army['5fb1b9efe1af06001770a035_ally_5fb1b9ede1af060017709f72'] = {
   data={
     name='Rum Seljuq allies',
     id='5fb1b9efe1af06001770a035_ally_5fb1b9ede1af060017709f72',
   },
-  g_base_definitions['6153519903385c0016b846b7'],
-  g_base_definitions['6153519903385c0016b846b9'],
+  g_base_definitions['68c995ce5791630015887c34'],
+  g_base_definitions['68c995ce5791630015887c36'],
 }
 army['5fb1b9efe1af06001770a035_ally_5fb1b9ede1af060017709f93'] = {
   data={
     name='Georgian allies',
     id='5fb1b9efe1af06001770a035_ally_5fb1b9ede1af060017709f93',
   },
-  g_base_definitions['6153519903385c0016b846d9'],
-  g_base_definitions['6153519903385c0016b846db'],
-  g_base_definitions['6153519903385c0016b846dd'],
-  g_base_definitions['6153519903385c0016b846df'],
+  g_base_definitions['68c995ce5791630015887c56'],
+  g_base_definitions['68c995ce5791630015887c58'],
+  g_base_definitions['68c995ce5791630015887c5a'],
+  g_base_definitions['68c995ce5791630015887c5c'],
 }
 army['5fb1b9efe1af06001770a035_ally_5fb1b9ede1af060017709fad'] = {
   data={
     name='Syrian allies',
     id='5fb1b9efe1af06001770a035_ally_5fb1b9ede1af060017709fad',
   },
-  g_base_definitions['6153519903385c0016b846f5'],
-  g_base_definitions['6153519903385c0016b846f7'],
-  g_base_definitions['6153519903385c0016b846f9'],
-  g_base_definitions['6153519903385c0016b846fb'],
+  g_base_definitions['68c995ce5791630015887c72'],
+  g_base_definitions['68c995ce5791630015887c74'],
+  g_base_definitions['68c995ce5791630015887c76'],
+  g_base_definitions['68c995ce5791630015887c78'],
 }

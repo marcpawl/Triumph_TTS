@@ -1,33 +1,33 @@
-g_str_615351b603385c0016b88eb9_general='615351b603385c0016b88eb9_general'
-g_base_definitions[g_str_615351b603385c0016b88eb9_general]={
-  id=g_str_615351b603385c0016b88eb9_general,
+g_str_68c995eb579163001588c5c0_general='68c995eb579163001588c5c0_general'
+g_base_definitions[g_str_68c995eb579163001588c5c0_general]={
+  id=g_str_68c995eb579163001588c5c0_general,
   name='Light Foot General',
   min=13,
   max=1,
   description='Tribesmen',
   general=true,
   troop_type="Light Foot",
-  troop_option_id="615351b603385c0016b88eb8",
+  troop_option_id="68c995eb579163001588c5bf",
 }
-g_str_615351b603385c0016b88eb9='615351b603385c0016b88eb9'
-g_base_definitions[g_str_615351b603385c0016b88eb9]={
-  id=g_str_615351b603385c0016b88eb9,
+g_str_68c995eb579163001588c5c0='68c995eb579163001588c5c0'
+g_base_definitions[g_str_68c995eb579163001588c5c0]={
+  id=g_str_68c995eb579163001588c5c0,
   name='Light Foot',
   min=13,
   max=15,
   description='Tribesmen',
   troop_type="Light Foot",
-  troop_option_id="615351b603385c0016b88eb8",
+  troop_option_id="68c995eb579163001588c5bf",
 }
-g_str_615351b603385c0016b88ebb='615351b603385c0016b88ebb'
-g_base_definitions[g_str_615351b603385c0016b88ebb]={
-  id=g_str_615351b603385c0016b88ebb,
+g_str_68c995eb579163001588c5c2='68c995eb579163001588c5c2'
+g_base_definitions[g_str_68c995eb579163001588c5c2]={
+  id=g_str_68c995eb579163001588c5c2,
   name='Skirmishers',
   min=1,
   max=3,
   description='Skirmishing bowmen and slingers',
   troop_type="Skirmishers",
-  troop_option_id="615351b603385c0016b88eba",
+  troop_option_id="68c995eb579163001588c5c1",
 }
 g_str_5fb1b9f6e1af06001770a45e_camp='5fb1b9f6e1af06001770a45e_camp'
 g_base_definitions[g_str_5fb1b9f6e1af06001770a45e_camp]={

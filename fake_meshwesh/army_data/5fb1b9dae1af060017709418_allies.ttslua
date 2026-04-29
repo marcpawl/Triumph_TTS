@@ -19,17 +19,17 @@ army['5fb1b9dae1af060017709418_ally_5fb1b9dae1af060017709412'] = {
     name='Urartian allies',
     id='5fb1b9dae1af060017709418_ally_5fb1b9dae1af060017709412',
   },
-  g_base_definitions['6153518e03385c0016b83666'],
-  g_base_definitions['6153518e03385c0016b83669'],
-  g_base_definitions['6153518e03385c0016b8366b'],
-  g_base_definitions['6153518e03385c0016b8366e'],
-  g_base_definitions['6153518e03385c0016b83670'],
+  g_base_definitions['68c995c55791630015886bf9'],
+  g_base_definitions['68c995c55791630015886bfc'],
+  g_base_definitions['68c995c55791630015886bfe'],
+  g_base_definitions['68c995c55791630015886c01'],
+  g_base_definitions['68c995c55791630015886c03'],
 }
 army['5fb1b9dae1af060017709418_ally_5fb1b9dae1af060017709430'] = {
   data={
     name='Kimmerian allies',
     id='5fb1b9dae1af060017709418_ally_5fb1b9dae1af060017709430',
   },
-  g_base_definitions['6153518e03385c0016b8369a'],
-  g_base_definitions['6153518e03385c0016b8369c'],
+  g_base_definitions['68c995c55791630015886c2d'],
+  g_base_definitions['68c995c55791630015886c2f'],
 }

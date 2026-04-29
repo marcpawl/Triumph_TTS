@@ -18,18 +18,22 @@ army['5fb1b9eae1af060017709d8c']={
       endDate=1517,
     },
     ambush=true,  },
-  g_base_definitions[g_str_615351ad03385c0016b87628_general],
-  g_base_definitions[g_str_615351ad03385c0016b87628],
-  g_base_definitions[g_str_615351ad03385c0016b8762b],
-  g_base_definitions[g_str_615351ad03385c0016b8762e],
-  g_base_definitions[g_str_615351ad03385c0016b87630],
-  g_base_definitions[g_str_615351ad03385c0016b87632],
-  g_base_definitions[g_str_615351ad03385c0016b87634],
-  g_base_definitions[g_str_615351ad03385c0016b87636],
-  g_base_definitions[g_str_615351ad03385c0016b87638],
-  g_base_definitions[g_str_615351ad03385c0016b87639],
-  g_base_definitions[g_str_615351ad03385c0016b8763b],
-  g_base_definitions[g_str_615351ad03385c0016b8763e],
+  g_base_definitions[g_str_68c995e1579163001588ac3f_general],
+  g_base_definitions[g_str_68c995e1579163001588ac3f],
+  g_base_definitions[g_str_68c995e1579163001588ac42],
+  g_base_definitions[g_str_68c995e1579163001588ac45],
+  g_base_definitions[g_str_68c995e1579163001588ac47],
+  g_base_definitions[g_str_68c995e1579163001588ac49],
+  g_base_definitions[g_str_68c995e1579163001588ac4b],
+  g_base_definitions[g_str_68c995e1579163001588ac4b_shower_shooting],
+  g_base_definitions[g_str_68c995e1579163001588ac4e],
+  g_base_definitions[g_str_68c995e1579163001588ac4e_shower_shooting],
+  g_base_definitions[g_str_68c995e1579163001588ac4f],
+  g_base_definitions[g_str_68c995e1579163001588ac4f_shower_shooting],
+  g_base_definitions[g_str_68c995e1579163001588ac52],
+  g_base_definitions[g_str_68c995e1579163001588ac53],
+  g_base_definitions[g_str_68c995e1579163001588ac55],
+  g_base_definitions[g_str_68c995e1579163001588ac58],
   g_base_definitions[g_str_5fb1b9eae1af060017709d8c_camp],
   g_base_definitions[g_str_5fb1b9eae1af060017709d8c_prepared_defenses],
 }
@@ -41,6 +45,10 @@ if nil == armies["Italy and Balkans"] then
   armies["Italy and Balkans"] ={}
 end
 armies["Italy and Balkans"]["Wallachian or Moldavian  1330 to 1517 AD"] = army["5fb1b9eae1af060017709d8c"]
+if nil == armies["Russian Princes"] then
+  armies["Russian Princes"] ={}
+end
+armies["Russian Princes"]["Wallachian or Moldavian  1330 to 1517 AD"] = army["5fb1b9eae1af060017709d8c"]
 if nil == armies["Byzantium in Decay"] then
   armies["Byzantium in Decay"] ={}
 end

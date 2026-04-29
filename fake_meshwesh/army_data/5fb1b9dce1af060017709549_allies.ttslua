@@ -43,79 +43,79 @@ army['5fb1b9dce1af060017709549_ally_5fb1b9dce1af060017709543'] = {
     name='Roman allies',
     id='5fb1b9dce1af060017709549_ally_5fb1b9dce1af060017709543',
   },
-  g_base_definitions['6153519003385c0016b83860'],
-  g_base_definitions['6153519003385c0016b83862'],
-  g_base_definitions['6153519003385c0016b83864'],
-  g_base_definitions['6153519003385c0016b83867'],
-  g_base_definitions['6153519003385c0016b8386a'],
+  g_base_definitions['68c995c65791630015886dc8'],
+  g_base_definitions['68c995c65791630015886dca'],
+  g_base_definitions['68c995c65791630015886dcc'],
+  g_base_definitions['68c995c65791630015886dce'],
+  g_base_definitions['68c995c65791630015886dd0'],
 }
 army['5fb1b9dce1af060017709549_ally_5fb1b9dbe1af06001770952e'] = {
   data={
     name='Campanian allies',
     id='5fb1b9dce1af060017709549_ally_5fb1b9dbe1af06001770952e',
   },
-  g_base_definitions['6153519003385c0016b83838'],
-  g_base_definitions['6153519003385c0016b8383a'],
-  g_base_definitions['6153519003385c0016b8383d'],
-  g_base_definitions['6153519003385c0016b83840'],
+  g_base_definitions['68c995c65791630015886da5'],
+  g_base_definitions['68c995c65791630015886da7'],
+  g_base_definitions['68c995c65791630015886da9'],
+  g_base_definitions['68c995c65791630015886dab'],
 }
 army['5fb1b9dce1af060017709549_ally_5fb1b9dce1af060017709534'] = {
   data={
     name='Campanian allies',
     id='5fb1b9dce1af060017709549_ally_5fb1b9dce1af060017709534',
   },
-  g_base_definitions['6153519003385c0016b83844'],
-  g_base_definitions['6153519003385c0016b83846'],
-  g_base_definitions['6153519003385c0016b83849'],
+  g_base_definitions['68c995c65791630015886daf'],
+  g_base_definitions['68c995c65791630015886db1'],
+  g_base_definitions['68c995c65791630015886db3'],
 }
 army['5fb1b9dce1af060017709549_ally_5fb1b9dce1af06001770953b'] = {
   data={
     name='Apulian allies',
     id='5fb1b9dce1af060017709549_ally_5fb1b9dce1af06001770953b',
   },
-  g_base_definitions['6153519003385c0016b8384d'],
-  g_base_definitions['6153519003385c0016b8384f'],
-  g_base_definitions['6153519003385c0016b83851'],
-  g_base_definitions['6153519003385c0016b83854'],
+  g_base_definitions['68c995c65791630015886db7'],
+  g_base_definitions['68c995c65791630015886db9'],
+  g_base_definitions['68c995c65791630015886dbb'],
+  g_base_definitions['68c995c65791630015886dbd'],
 }
 army['5fb1b9dce1af060017709549_ally_5fb1b9dbe1af0600177094bd'] = {
   data={
     name='Volsci and/or Hernici allies',
     id='5fb1b9dce1af060017709549_ally_5fb1b9dbe1af0600177094bd',
   },
-  g_base_definitions['6153518f03385c0016b83768'],
-  g_base_definitions['6153518f03385c0016b8376a'],
+  g_base_definitions['68c995c55791630015886cfb'],
+  g_base_definitions['68c995c55791630015886cfd'],
 }
 army['5fb1b9dce1af060017709549_ally_5fb1b9dbe1af0600177094d7'] = {
   data={
     name='Etruscan allies',
     id='5fb1b9dce1af060017709549_ally_5fb1b9dbe1af0600177094d7',
   },
-  g_base_definitions['6153518f03385c0016b83790'],
-  g_base_definitions['6153518f03385c0016b83791'],
-  g_base_definitions['6153518f03385c0016b83794'],
-  g_base_definitions['6153518f03385c0016b83797'],
-  g_base_definitions['6153518f03385c0016b8379a'],
+  g_base_definitions['68c995c55791630015886d1d'],
+  g_base_definitions['68c995c55791630015886d1e'],
+  g_base_definitions['68c995c55791630015886d20'],
+  g_base_definitions['68c995c55791630015886d22'],
+  g_base_definitions['68c995c55791630015886d24'],
 }
 army['5fb1b9dce1af060017709549_ally_5fb1b9dbe1af0600177094cb'] = {
   data={
     name='Umbrian allies',
     id='5fb1b9dce1af060017709549_ally_5fb1b9dbe1af0600177094cb',
   },
-  g_base_definitions['6153518f03385c0016b83777'],
-  g_base_definitions['6153518f03385c0016b8377a'],
-  g_base_definitions['6153518f03385c0016b8377d'],
-  g_base_definitions['6153518f03385c0016b8377f'],
+  g_base_definitions['68c995c55791630015886d09'],
+  g_base_definitions['68c995c55791630015886d0b'],
+  g_base_definitions['68c995c55791630015886d0d'],
+  g_base_definitions['68c995c55791630015886d0f'],
 }
 army['5fb1b9dce1af060017709549_ally_5fb1b9dce1af06001770959d'] = {
   data={
     name='Gallic allies',
     id='5fb1b9dce1af060017709549_ally_5fb1b9dce1af06001770959d',
   },
-  g_base_definitions['6153519003385c0016b838e0'],
-  g_base_definitions['6153519003385c0016b838e3'],
-  g_base_definitions['6153519003385c0016b838e5'],
-  g_base_definitions['6153519003385c0016b838e7'],
-  g_base_definitions['6153519003385c0016b838e9'],
-  g_base_definitions['6153519003385c0016b838eb'],
+  g_base_definitions['68c995c65791630015886e46'],
+  g_base_definitions['68c995c65791630015886e49'],
+  g_base_definitions['68c995c65791630015886e4b'],
+  g_base_definitions['68c995c65791630015886e4d'],
+  g_base_definitions['68c995c65791630015886e4f'],
+  g_base_definitions['68c995c65791630015886e51'],
 }

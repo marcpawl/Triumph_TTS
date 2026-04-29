@@ -23,24 +23,24 @@ army['5fb1b9dee1af060017709671_ally_5fb1b9dde1af060017709649'] = {
     name='Odrysian Thracian allies',
     id='5fb1b9dee1af060017709671_ally_5fb1b9dde1af060017709649',
   },
-  g_base_definitions['6153519103385c0016b83a08'],
-  g_base_definitions['6153519103385c0016b83a0a'],
-  g_base_definitions['6153519103385c0016b83a0b'],
-  g_base_definitions['6153519103385c0016b83a0d'],
-  g_base_definitions['6153519103385c0016b83a10'],
-  g_base_definitions['6153519103385c0016b83a12'],
+  g_base_definitions['68c995c65791630015886f6b'],
+  g_base_definitions['68c995c65791630015886f6d'],
+  g_base_definitions['68c995c65791630015886f6e'],
+  g_base_definitions['68c995c65791630015886f70'],
+  g_base_definitions['68c995c65791630015886f73'],
+  g_base_definitions['68c995c65791630015886f75'],
 }
 army['5fb1b9dee1af060017709671_ally_5fb1b9dfe1af0600177096fc'] = {
   data={
     name='Seleucid allies',
     id='5fb1b9dee1af060017709671_ally_5fb1b9dfe1af0600177096fc',
   },
-  g_base_definitions['6153519203385c0016b83b11'],
-  g_base_definitions['6153519203385c0016b83b13'],
-  g_base_definitions['6153519203385c0016b83b15'],
-  g_base_definitions['6153519203385c0016b83b17'],
-  g_base_definitions['6153519203385c0016b83b19'],
-  g_base_definitions['6153519203385c0016b83b1b'],
+  g_base_definitions['68c995c75791630015887074'],
+  g_base_definitions['68c995c75791630015887076'],
+  g_base_definitions['68c995c75791630015887078'],
+  g_base_definitions['68c995c7579163001588707a'],
+  g_base_definitions['68c995c7579163001588707c'],
+  g_base_definitions['68c995c7579163001588707e'],
 }
 army['5fb1b9dee1af060017709671_ally_5fb1b9dee1af060017709659'] = {
   data={

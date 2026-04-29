@@ -1,0 +1,94 @@
+g_str_68c995ec579163001588c6ae_general='68c995ec579163001588c6ae_general'
+g_base_definitions[g_str_68c995ec579163001588c6ae_general]={
+  id=g_str_68c995ec579163001588c6ae_general,
+  name='Raiders General',
+  min=0,
+  max=1,
+  description='Warrior Societies, like the Nez Perce Crazy Dog society',
+  general=true,
+  troop_type="Raiders",
+  troop_option_id="68c995ec579163001588c6ad",
+}
+g_str_68c995ec579163001588c6ae='68c995ec579163001588c6ae'
+g_base_definitions[g_str_68c995ec579163001588c6ae]={
+  id=g_str_68c995ec579163001588c6ae,
+  name='Raiders',
+  min=0,
+  max=2,
+  description='Warrior Societies, like the Nez Perce Crazy Dog society',
+  troop_type="Raiders",
+  troop_option_id="68c995ec579163001588c6ad",
+}
+g_str_68c995ec579163001588c6b0_general='68c995ec579163001588c6b0_general'
+g_base_definitions[g_str_68c995ec579163001588c6b0_general]={
+  id=g_str_68c995ec579163001588c6b0_general,
+  name='Bow Levy General',
+  min=6,
+  max=1,
+  description='Bowmen',
+  general=true,
+  troop_type="Bow Levy",
+  troop_option_id="68c995ec579163001588c6af",
+}
+g_str_68c995ec579163001588c6b0_general_shower_shooting='68c995ec579163001588c6b0_general_shower_shooting'
+g_base_definitions[g_str_68c995ec579163001588c6b0_general_shower_shooting]={
+  id=g_str_68c995ec579163001588c6b0_general_shower_shooting,
+  name='Bow Levy General',
+  min=6,
+  max=1,
+  description='Bowmen\nShower Shooting',
+  general=true,
+  shower_shooting=true,
+  troop_type="Bow Levy",
+  troop_option_id="68c995ec579163001588c6af",
+}
+g_str_68c995ec579163001588c6b0='68c995ec579163001588c6b0'
+g_base_definitions[g_str_68c995ec579163001588c6b0]={
+  id=g_str_68c995ec579163001588c6b0,
+  name='Bow Levy',
+  min=6,
+  max=20,
+  description='Bowmen',
+  troop_type="Bow Levy",
+  troop_option_id="68c995ec579163001588c6af",
+}
+g_str_68c995ec579163001588c6b0_shower_shooting='68c995ec579163001588c6b0_shower_shooting'
+g_base_definitions[g_str_68c995ec579163001588c6b0_shower_shooting]={
+  id=g_str_68c995ec579163001588c6b0_shower_shooting,
+  name='Bow Levy',
+  min=6,
+  max=20,
+  description='Bowmen\nShower Shooting',
+  shower_shooting=true,
+  troop_type="Bow Levy",
+  troop_option_id="68c995ec579163001588c6af",
+}
+g_str_68c995ec579163001588c6b3='68c995ec579163001588c6b3'
+g_base_definitions[g_str_68c995ec579163001588c6b3]={
+  id=g_str_68c995ec579163001588c6b3,
+  name='Rabble',
+  min=4,
+  max=12,
+  description='Mixed weapons',
+  troop_type="Rabble",
+  troop_option_id="68c995ec579163001588c6b2",
+}
+g_str_68c07ed65c431f0015cf1ac4_camp='68c07ed65c431f0015cf1ac4_camp'
+g_base_definitions[g_str_68c07ed65c431f0015cf1ac4_camp]={
+  id=g_str_68c07ed65c431f0015cf1ac4_camp,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Camp',
+  troop_type="Camp",
+}
+g_str_68c07ed65c431f0015cf1ac4_camp_pack_train='68c07ed65c431f0015cf1ac4_camp_pack_train'
+g_base_definitions[g_str_68c07ed65c431f0015cf1ac4_camp_pack_train]={
+  id=g_str_68c07ed65c431f0015cf1ac4_camp_pack_train,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Pack Train',
+  pack_train=true,
+  troop_type="Camp",
+}

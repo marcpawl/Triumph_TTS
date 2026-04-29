@@ -1,0 +1,40 @@
+g_str_68c995ec579163001588c6ba_general='68c995ec579163001588c6ba_general'
+g_base_definitions[g_str_68c995ec579163001588c6ba_general]={
+  id=g_str_68c995ec579163001588c6ba_general,
+  name='Light Foot General',
+  min=4,
+  max=1,
+  description='Experienced fighters',
+  general=true,
+  troop_type="Light Foot",
+  troop_option_id="68c995ec579163001588c6b9",
+}
+g_str_68c995ec579163001588c6ba='68c995ec579163001588c6ba'
+g_base_definitions[g_str_68c995ec579163001588c6ba]={
+  id=g_str_68c995ec579163001588c6ba,
+  name='Light Foot',
+  min=4,
+  max=8,
+  description='Experienced fighters',
+  troop_type="Light Foot",
+  troop_option_id="68c995ec579163001588c6b9",
+}
+g_str_68c995ec579163001588c6bc='68c995ec579163001588c6bc'
+g_base_definitions[g_str_68c995ec579163001588c6bc]={
+  id=g_str_68c995ec579163001588c6bc,
+  name='Rabble',
+  min=12,
+  max=18,
+  description='Mixed weapons',
+  troop_type="Rabble",
+  troop_option_id="68c995ec579163001588c6bb",
+}
+g_str_68c07ed65c431f0015cf1acb_camp='68c07ed65c431f0015cf1acb_camp'
+g_base_definitions[g_str_68c07ed65c431f0015cf1acb_camp]={
+  id=g_str_68c07ed65c431f0015cf1acb_camp,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Camp',
+  troop_type="Camp",
+}

@@ -19,19 +19,19 @@ army['5fb1b9f2e1af06001770a274_ally_5fb1b9f3e1af06001770a2b0'] = {
     name='Northern Han Liao allies',
     id='5fb1b9f2e1af06001770a274_ally_5fb1b9f3e1af06001770a2b0',
   },
-  g_base_definitions['6153519b03385c0016b84aff'],
-  g_base_definitions['6153519b03385c0016b84b01'],
-  g_base_definitions['6153519b03385c0016b84b03'],
+  g_base_definitions['68c995d0579163001588807c'],
+  g_base_definitions['68c995d0579163001588807e'],
+  g_base_definitions['68c995d05791630015888080'],
 }
 army['5fb1b9f2e1af06001770a274_ally_5fb1b9f3e1af06001770a2b7'] = {
   data={
     name='Northern Han Liao allies',
     id='5fb1b9f2e1af06001770a274_ally_5fb1b9f3e1af06001770a2b7',
   },
-  g_base_definitions['6153519b03385c0016b84b07'],
-  g_base_definitions['6153519b03385c0016b84b09'],
-  g_base_definitions['6153519b03385c0016b84b0b'],
-  g_base_definitions['6153519b03385c0016b84b0d'],
-  g_base_definitions['6153519b03385c0016b84b0e'],
-  g_base_definitions['6153519b03385c0016b84b10'],
+  g_base_definitions['68c995d05791630015888084'],
+  g_base_definitions['68c995d05791630015888086'],
+  g_base_definitions['68c995d05791630015888088'],
+  g_base_definitions['68c995d0579163001588808a'],
+  g_base_definitions['68c995d0579163001588808b'],
+  g_base_definitions['68c995d0579163001588808d'],
 }

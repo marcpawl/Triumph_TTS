@@ -4,7 +4,7 @@
 
 require("Triumph_TTS/scripts/static_maps")
 
-troop_options['615351a303385c0016b85abb'] = {
+troop_options['68c995d75791630015889021'] = {
   min=2,
   max=9,
   dateRange={
@@ -12,7 +12,7 @@ troop_options['615351a303385c0016b85abb'] = {
     endDate=-225,
   }
 }
-troop_options['615351a303385c0016b85abe'] = {
+troop_options['68c995d75791630015889024'] = {
   min=1,
   max=3,
   dateRange={
@@ -20,7 +20,7 @@ troop_options['615351a303385c0016b85abe'] = {
     endDate=-225,
   }
 }
-troop_options['615351a303385c0016b85ac0'] = {
+troop_options['68c995d75791630015889026'] = {
   min=0,
   max=2,
   dateRange={
@@ -28,7 +28,7 @@ troop_options['615351a303385c0016b85ac0'] = {
     endDate=-225,
   }
 }
-troop_options['615351a303385c0016b85ac2'] = {
+troop_options['68c995d75791630015889028'] = {
   min=0,
   max=1,
   dateRange={
@@ -36,7 +36,7 @@ troop_options['615351a303385c0016b85ac2'] = {
     endDate=-225,
   }
 }
-troop_options['615351a303385c0016b85ac4'] = {
+troop_options['68c995d7579163001588902a'] = {
   min=0,
   max=2,
   dateRange={
@@ -44,7 +44,7 @@ troop_options['615351a303385c0016b85ac4'] = {
     endDate=-225,
   }
 }
-troop_options['615351a303385c0016b85ac6'] = {
+troop_options['68c995d7579163001588902c'] = {
   min=0,
   max=1,
   dateRange={
@@ -52,7 +52,7 @@ troop_options['615351a303385c0016b85ac6'] = {
     endDate=-225,
   }
 }
-troop_options['615351a303385c0016b85ac8'] = {
+troop_options['68c995d7579163001588902e'] = {
   min=5,
   max=13,
   dateRange={
@@ -60,7 +60,7 @@ troop_options['615351a303385c0016b85ac8'] = {
     endDate=-225,
   }
 }
-troop_options['615351a303385c0016b85acb'] = {
+troop_options['68c995d75791630015889031'] = {
   min=0,
   max=3,
   dateRange={

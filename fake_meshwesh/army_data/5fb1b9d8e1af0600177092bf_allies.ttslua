@@ -15,8 +15,8 @@ army['5fb1b9d8e1af0600177092bf_ally_5fb1b9d8e1af0600177092d8'] = {
     name='(only Southern coalition) Melukhkhan allies',
     id='5fb1b9d8e1af0600177092bf_ally_5fb1b9d8e1af0600177092d8',
   },
-  g_base_definitions['6153518d03385c0016b834bb'],
-  g_base_definitions['6153518d03385c0016b834bc'],
-  g_base_definitions['6153518d03385c0016b834be'],
-  g_base_definitions['6153518d03385c0016b834c0'],
+  g_base_definitions['68c995c35791630015886a4e'],
+  g_base_definitions['68c995c35791630015886a4f'],
+  g_base_definitions['68c995c35791630015886a51'],
+  g_base_definitions['68c995c35791630015886a53'],
 }

@@ -19,19 +19,19 @@ army['5fb1b9e9e1af060017709d6f']={
       endDate=1471,
     },
     no_camp=true,  },
-  g_base_definitions[g_str_615351ad03385c0016b875a6_general],
-  g_base_definitions[g_str_615351ad03385c0016b875a6],
-  g_base_definitions[g_str_615351ad03385c0016b875a8],
-  g_base_definitions[g_str_615351ad03385c0016b875ab],
-  g_base_definitions[g_str_615351ad03385c0016b875ab_mounted],
-  g_base_definitions[g_str_615351ad03385c0016b875ab_dismounted],
-  g_base_definitions[g_str_615351ad03385c0016b875ae_general],
-  g_base_definitions[g_str_615351ad03385c0016b875ae],
-  g_base_definitions[g_str_615351ad03385c0016b875af_general],
-  g_base_definitions[g_str_615351ad03385c0016b875af],
-  g_base_definitions[g_str_615351ad03385c0016b875b1_general],
-  g_base_definitions[g_str_615351ad03385c0016b875b1],
-  g_base_definitions[g_str_615351ad03385c0016b875b3],
+  g_base_definitions[g_str_68c995e1579163001588abb6_general],
+  g_base_definitions[g_str_68c995e1579163001588abb6],
+  g_base_definitions[g_str_68c995e1579163001588abb8],
+  g_base_definitions[g_str_68c995e1579163001588abbb],
+  g_base_definitions[g_str_68c995e1579163001588abbb_mounted],
+  g_base_definitions[g_str_68c995e1579163001588abbb_dismounted],
+  g_base_definitions[g_str_68c995e1579163001588abbe_general],
+  g_base_definitions[g_str_68c995e1579163001588abbe],
+  g_base_definitions[g_str_68c995e1579163001588abbf_general],
+  g_base_definitions[g_str_68c995e1579163001588abbf],
+  g_base_definitions[g_str_68c995e1579163001588abc1_general],
+  g_base_definitions[g_str_68c995e1579163001588abc1],
+  g_base_definitions[g_str_68c995e1579163001588abc3],
   g_base_definitions[g_str_5fb1b9e9e1af060017709d6f_camp],
   g_base_definitions[g_str_5fb1b9e9e1af060017709d6f_prepared_defenses],
 }
@@ -59,7 +59,19 @@ army_dates["5fb1b9e9e1af060017709d6f"]["1421 AD to 1431 AD"] = {
   startDate=1421,
   endDate=1431
 }
-army_dates["5fb1b9e9e1af060017709d6f"]["1432 AD to 1471 AD"] = {
+army_dates["5fb1b9e9e1af060017709d6f"]["1432 AD to 1433 AD"] = {
   startDate=1432,
+  endDate=1433
+}
+army_dates["5fb1b9e9e1af060017709d6f"]["1434 AD to 1436 AD"] = {
+  startDate=1434,
+  endDate=1436
+}
+army_dates["5fb1b9e9e1af060017709d6f"]["1437 AD to 1439 AD"] = {
+  startDate=1437,
+  endDate=1439
+}
+army_dates["5fb1b9e9e1af060017709d6f"]["1440 AD to 1471 AD"] = {
+  startDate=1440,
   endDate=1471
 }

@@ -20,23 +20,23 @@ army['5fb1b9e7e1af060017709be0']={
       endDate=1172,
     },
   },
-  g_base_definitions[g_str_615351ab03385c0016b86f2f_general],
-  g_base_definitions[g_str_615351ab03385c0016b86f2f],
-  g_base_definitions[g_str_615351ab03385c0016b86f32_general],
-  g_base_definitions[g_str_615351ab03385c0016b86f32],
-  g_base_definitions[g_str_615351ab03385c0016b86f33_general],
-  g_base_definitions[g_str_615351ab03385c0016b86f33],
-  g_base_definitions[g_str_615351ab03385c0016b86f36],
-  g_base_definitions[g_str_615351ab03385c0016b86f37],
-  g_base_definitions[g_str_615351ab03385c0016b86f39],
-  g_base_definitions[g_str_615351ab03385c0016b86f39_mounted_mobile_infantry],
-  g_base_definitions[g_str_615351ab03385c0016b86f39_dismounted_mobile_infantry],
-  g_base_definitions[g_str_615351ab03385c0016b86f3a],
-  g_base_definitions[g_str_615351ab03385c0016b86f3a_mounted_mobile_infantry],
-  g_base_definitions[g_str_615351ab03385c0016b86f3a_dismounted_mobile_infantry],
-  g_base_definitions[g_str_615351ab03385c0016b86f3d],
-  g_base_definitions[g_str_615351ab03385c0016b86f3f],
-  g_base_definitions[g_str_615351ab03385c0016b86f42],
+  g_base_definitions[g_str_68c995df579163001588a501_general],
+  g_base_definitions[g_str_68c995df579163001588a501],
+  g_base_definitions[g_str_68c995df579163001588a504_general],
+  g_base_definitions[g_str_68c995df579163001588a504],
+  g_base_definitions[g_str_68c995df579163001588a505_general],
+  g_base_definitions[g_str_68c995df579163001588a505],
+  g_base_definitions[g_str_68c995df579163001588a508],
+  g_base_definitions[g_str_68c995df579163001588a509],
+  g_base_definitions[g_str_68c995df579163001588a50b],
+  g_base_definitions[g_str_68c995df579163001588a50b_mounted_mobile_infantry],
+  g_base_definitions[g_str_68c995df579163001588a50b_dismounted_mobile_infantry],
+  g_base_definitions[g_str_68c995df579163001588a50c],
+  g_base_definitions[g_str_68c995df579163001588a50c_mounted_mobile_infantry],
+  g_base_definitions[g_str_68c995df579163001588a50c_dismounted_mobile_infantry],
+  g_base_definitions[g_str_68c995df579163001588a50f],
+  g_base_definitions[g_str_68c995df579163001588a511],
+  g_base_definitions[g_str_68c995df579163001588a514],
   g_base_definitions[g_str_5fb1b9e7e1af060017709be0_camp],
   g_base_definitions[g_str_5fb1b9e7e1af060017709be0_camp_pack_train],
 }
@@ -84,11 +84,11 @@ army_dates["5fb1b9e7e1af060017709be0"]["1086 AD"] = {
   startDate=1086,
   endDate=1086
 }
-army_dates["5fb1b9e7e1af060017709be0"]["1087 AD to 1147 AD"] = {
+army_dates["5fb1b9e7e1af060017709be0"]["1087 AD to 1155 AD"] = {
   startDate=1087,
-  endDate=1147
+  endDate=1155
 }
-army_dates["5fb1b9e7e1af060017709be0"]["1148 AD to 1172 AD"] = {
-  startDate=1148,
+army_dates["5fb1b9e7e1af060017709be0"]["1156 AD to 1172 AD"] = {
+  startDate=1156,
   endDate=1172
 }

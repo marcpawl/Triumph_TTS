@@ -39,65 +39,65 @@ army['5fb1b9f4e1af06001770a32e_ally_5fb1b9f2e1af06001770a207'] = {
     name='Yu-wen or Tuan Xianbei allies',
     id='5fb1b9f4e1af06001770a32e_ally_5fb1b9f2e1af06001770a207',
   },
-  g_base_definitions['6153519b03385c0016b84a16'],
-  g_base_definitions['6153519b03385c0016b84a17'],
-  g_base_definitions['6153519b03385c0016b84a19'],
+  g_base_definitions['68c995cf5791630015887f93'],
+  g_base_definitions['68c995cf5791630015887f94'],
+  g_base_definitions['68c995cf5791630015887f96'],
 }
 army['5fb1b9f4e1af06001770a32e_ally_5fb1b9f2e1af06001770a207'] = {
   data={
     name='Tuan Xianbei allies',
     id='5fb1b9f4e1af06001770a32e_ally_5fb1b9f2e1af06001770a207',
   },
-  g_base_definitions['6153519b03385c0016b84a16'],
-  g_base_definitions['6153519b03385c0016b84a17'],
-  g_base_definitions['6153519b03385c0016b84a19'],
+  g_base_definitions['68c995cf5791630015887f93'],
+  g_base_definitions['68c995cf5791630015887f94'],
+  g_base_definitions['68c995cf5791630015887f96'],
 }
 army['5fb1b9f4e1af06001770a32e_ally_5fb1b9f2e1af06001770a207'] = {
   data={
     name='Yu-wen Xianbei allies',
     id='5fb1b9f4e1af06001770a32e_ally_5fb1b9f2e1af06001770a207',
   },
-  g_base_definitions['6153519b03385c0016b84a16'],
-  g_base_definitions['6153519b03385c0016b84a17'],
-  g_base_definitions['6153519b03385c0016b84a19'],
+  g_base_definitions['68c995cf5791630015887f93'],
+  g_base_definitions['68c995cf5791630015887f94'],
+  g_base_definitions['68c995cf5791630015887f96'],
 }
 army['5fb1b9f4e1af06001770a32e_ally_5fb1b9f1e1af06001770a1c9'] = {
   data={
     name='Southern Xiongnu allies',
     id='5fb1b9f4e1af06001770a32e_ally_5fb1b9f1e1af06001770a1c9',
   },
-  g_base_definitions['6153519b03385c0016b849c8'],
-  g_base_definitions['6153519b03385c0016b849ca'],
+  g_base_definitions['68c995cf5791630015887f45'],
+  g_base_definitions['68c995cf5791630015887f47'],
 }
 army['5fb1b9f4e1af06001770a32e_ally_5fb1b9f4e1af06001770a336'] = {
   data={
     name='Shilla allies',
     id='5fb1b9f4e1af06001770a32e_ally_5fb1b9f4e1af06001770a336',
   },
-  g_base_definitions['6153519c03385c0016b84bdb'],
-  g_base_definitions['6153519c03385c0016b84bde'],
-  g_base_definitions['6153519c03385c0016b84be1'],
-  g_base_definitions['6153519c03385c0016b84be3'],
-  g_base_definitions['6153519c03385c0016b84be5'],
-  g_base_definitions['6153519c03385c0016b84be7'],
+  g_base_definitions['68c995d05791630015888160'],
+  g_base_definitions['68c995d05791630015888163'],
+  g_base_definitions['68c995d05791630015888166'],
+  g_base_definitions['68c995d05791630015888168'],
+  g_base_definitions['68c995d0579163001588816a'],
+  g_base_definitions['68c995d0579163001588816c'],
 }
 army['5fb1b9f4e1af06001770a32e_ally_5fb1b9f4e1af06001770a325'] = {
   data={
     name='Paekche allies',
     id='5fb1b9f4e1af06001770a32e_ally_5fb1b9f4e1af06001770a325',
   },
-  g_base_definitions['6153519c03385c0016b84bbe'],
-  g_base_definitions['6153519c03385c0016b84bc1'],
-  g_base_definitions['6153519c03385c0016b84bc4'],
-  g_base_definitions['6153519c03385c0016b84bc6'],
-  g_base_definitions['6153519c03385c0016b84bc8'],
-  g_base_definitions['6153519c03385c0016b84bca'],
+  g_base_definitions['68c995d05791630015888143'],
+  g_base_definitions['68c995d05791630015888146'],
+  g_base_definitions['68c995d05791630015888149'],
+  g_base_definitions['68c995d0579163001588814b'],
+  g_base_definitions['68c995d0579163001588814d'],
+  g_base_definitions['68c995d0579163001588814f'],
 }
 army['5fb1b9f4e1af06001770a32e_ally_5fb1b9f4e1af06001770a345'] = {
   data={
     name='Japanese Ritsuryo culture allies',
     id='5fb1b9f4e1af06001770a32e_ally_5fb1b9f4e1af06001770a345',
   },
-  g_base_definitions['6153519c03385c0016b84bf5'],
-  g_base_definitions['6153519c03385c0016b84bf8'],
+  g_base_definitions['68c995d0579163001588817a'],
+  g_base_definitions['68c995d0579163001588817d'],
 }

@@ -15,8 +15,8 @@ army['5fb1b9e4e1af060017709a11_ally_5fb1b9eae1af060017709e17'] = {
     name='Pecheneg ally',
     id='5fb1b9e4e1af060017709a11_ally_5fb1b9eae1af060017709e17',
   },
-  g_base_definitions['6153519803385c0016b84498'],
-  g_base_definitions['6153519803385c0016b8449a'],
-  g_base_definitions['6153519803385c0016b8449b'],
-  g_base_definitions['6153519803385c0016b8449c'],
+  g_base_definitions['68c995cc5791630015887a14'],
+  g_base_definitions['68c995cc5791630015887a16'],
+  g_base_definitions['68c995cc5791630015887a17'],
+  g_base_definitions['68c995cc5791630015887a18'],
 }

@@ -47,82 +47,82 @@ army['5fb1b9ebe1af060017709e8c_ally_5fb1b9ede1af060017709f72'] = {
     name='(only Latin Empire) Seljuq allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9ede1af060017709f72',
   },
-  g_base_definitions['6153519903385c0016b846b7'],
-  g_base_definitions['6153519903385c0016b846b9'],
+  g_base_definitions['68c995ce5791630015887c34'],
+  g_base_definitions['68c995ce5791630015887c36'],
 }
 army['5fb1b9ebe1af060017709e8c_ally_5fb1b9eee1af06001770a014'] = {
   data={
     name='(only Latin Empire) Trapezuntine allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9eee1af06001770a014',
   },
-  g_base_definitions['6153519903385c0016b84760'],
-  g_base_definitions['6153519903385c0016b84763'],
-  g_base_definitions['6153519903385c0016b84765'],
-  g_base_definitions['6153519903385c0016b84766'],
-  g_base_definitions['6153519903385c0016b84768'],
-  g_base_definitions['6153519903385c0016b8476a'],
-  g_base_definitions['6153519903385c0016b8476c'],
+  g_base_definitions['68c995ce5791630015887ce1'],
+  g_base_definitions['68c995ce5791630015887ce4'],
+  g_base_definitions['68c995ce5791630015887ce6'],
+  g_base_definitions['68c995ce5791630015887ce7'],
+  g_base_definitions['68c995ce5791630015887ce9'],
+  g_base_definitions['68c995ce5791630015887ceb'],
+  g_base_definitions['68c995ce5791630015887ced'],
 }
 army['5fb1b9ebe1af060017709e8c_ally_5fb1b9ebe1af060017709e93'] = {
   data={
     name='(only Achaia) Epirot allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9ebe1af060017709e93',
   },
-  g_base_definitions['6153519803385c0016b84533'],
-  g_base_definitions['6153519803385c0016b84535'],
-  g_base_definitions['6153519803385c0016b84537'],
-  g_base_definitions['6153519803385c0016b84539'],
+  g_base_definitions['68c995cd5791630015887ab0'],
+  g_base_definitions['68c995cd5791630015887ab2'],
+  g_base_definitions['68c995cd5791630015887ab4'],
+  g_base_definitions['68c995cd5791630015887ab6'],
 }
 army['5fb1b9ebe1af060017709e8c_ally_5fb1b9eae1af060017709e1e'] = {
   data={
     name='(only Latin Empire) Cuman allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9eae1af060017709e1e',
   },
-  g_base_definitions['6153519803385c0016b844a0'],
+  g_base_definitions['68c995cc5791630015887a1c'],
 }
 army['5fb1b9ebe1af060017709e8c_ally_5fb1b9ebe1af060017709e93'] = {
   data={
     name='(only Achaia) Thessalian allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9ebe1af060017709e93',
   },
-  g_base_definitions['6153519803385c0016b84533'],
-  g_base_definitions['6153519803385c0016b84535'],
-  g_base_definitions['6153519803385c0016b84537'],
-  g_base_definitions['6153519803385c0016b84539'],
+  g_base_definitions['68c995cd5791630015887ab0'],
+  g_base_definitions['68c995cd5791630015887ab2'],
+  g_base_definitions['68c995cd5791630015887ab4'],
+  g_base_definitions['68c995cd5791630015887ab6'],
 }
 army['5fb1b9ebe1af060017709e8c_ally_5fb1b9ede1af060017709f72'] = {
   data={
     name='(only Achaia) Turkish allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9ede1af060017709f72',
   },
-  g_base_definitions['6153519903385c0016b846b7'],
-  g_base_definitions['6153519903385c0016b846b9'],
+  g_base_definitions['68c995ce5791630015887c34'],
+  g_base_definitions['68c995ce5791630015887c36'],
 }
 army['5fb1b9ebe1af060017709e8c_ally_5fb1b9ebe1af060017709ea6'] = {
   data={
     name='(only Achaia) Catalan Company allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9ebe1af060017709ea6',
   },
-  g_base_definitions['6153519803385c0016b84560'],
-  g_base_definitions['6153519803385c0016b84562'],
-  g_base_definitions['6153519803385c0016b84563'],
+  g_base_definitions['68c995cd5791630015887add'],
+  g_base_definitions['68c995cd5791630015887adf'],
+  g_base_definitions['68c995cd5791630015887ae0'],
 }
 army['5fb1b9ebe1af060017709e8c_ally_5fb1b9ebe1af060017709ead'] = {
   data={
     name='(only Achaia) Venetian allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9ebe1af060017709ead',
   },
-  g_base_definitions['6153519803385c0016b8456e'],
-  g_base_definitions['6153519803385c0016b84570'],
+  g_base_definitions['68c995cd5791630015887aeb'],
+  g_base_definitions['68c995cd5791630015887aed'],
 }
 army['5fb1b9ebe1af060017709e8c_ally_5fb1b9e7e1af060017709c2d'] = {
   data={
     name='(only Achaia) Navarrese Company allies',
     id='5fb1b9ebe1af060017709e8c_ally_5fb1b9e7e1af060017709c2d',
   },
-  g_base_definitions['6153519703385c0016b841b7'],
-  g_base_definitions['6153519703385c0016b841b9'],
-  g_base_definitions['6153519703385c0016b841bb'],
-  g_base_definitions['6153519703385c0016b841bd'],
-  g_base_definitions['6153519703385c0016b841bf'],
+  g_base_definitions['68c995cb579163001588771f'],
+  g_base_definitions['68c995cb5791630015887721'],
+  g_base_definitions['68c995cb5791630015887723'],
+  g_base_definitions['68c995cb5791630015887725'],
+  g_base_definitions['68c995cb5791630015887727'],
 }

@@ -18,9 +18,9 @@ army['5fb1b9f6e1af06001770a452']={
       endDate=1785,
     },
   },
-  g_base_definitions[g_str_615351b603385c0016b88ea5_general],
-  g_base_definitions[g_str_615351b603385c0016b88ea5],
-  g_base_definitions[g_str_615351b603385c0016b88ea7],
+  g_base_definitions[g_str_68c995eb579163001588c5ac_general],
+  g_base_definitions[g_str_68c995eb579163001588c5ac],
+  g_base_definitions[g_str_68c995eb579163001588c5ae],
   g_base_definitions[g_str_5fb1b9f6e1af06001770a452_camp],
   g_base_definitions[g_str_5fb1b9f6e1af06001770a452_camp_fortified],
 }

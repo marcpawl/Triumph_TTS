@@ -27,35 +27,35 @@ army['5fb1b9f2e1af06001770a25f_ally_5fb1b9efe1af06001770a068'] = {
     name='Ferghanan, T-u-chueh, Qarluq, or other Central Asian Turkish allies',
     id='5fb1b9f2e1af06001770a25f_ally_5fb1b9efe1af06001770a068',
   },
-  g_base_definitions['6153519a03385c0016b847e0'],
-  g_base_definitions['6153519a03385c0016b847e2'],
+  g_base_definitions['68c995ce5791630015887d61'],
+  g_base_definitions['68c995ce5791630015887d63'],
 }
 army['5fb1b9f2e1af06001770a25f_ally_5fb1b9efe1af06001770a074'] = {
   data={
     name='Khotanese or similar allies',
     id='5fb1b9f2e1af06001770a25f_ally_5fb1b9efe1af06001770a074',
   },
-  g_base_definitions['6153519a03385c0016b847f2'],
-  g_base_definitions['6153519a03385c0016b847f4'],
-  g_base_definitions['6153519a03385c0016b847f6'],
+  g_base_definitions['68c995ce5791630015887d73'],
+  g_base_definitions['68c995ce5791630015887d75'],
+  g_base_definitions['68c995ce5791630015887d77'],
 }
 army['5fb1b9f2e1af06001770a25f_ally_5fb1b9f2e1af06001770a215'] = {
   data={
     name='Tribal Khitan or Xi allies',
     id='5fb1b9f2e1af06001770a25f_ally_5fb1b9f2e1af06001770a215',
   },
-  g_base_definitions['6153519b03385c0016b84a22'],
-  g_base_definitions['6153519b03385c0016b84a24'],
+  g_base_definitions['68c995cf5791630015887f9f'],
+  g_base_definitions['68c995cf5791630015887fa1'],
 }
 army['5fb1b9f2e1af06001770a25f_ally_5fb1b9f4e1af06001770a336'] = {
   data={
     name='Shilla Korean allies',
     id='5fb1b9f2e1af06001770a25f_ally_5fb1b9f4e1af06001770a336',
   },
-  g_base_definitions['6153519c03385c0016b84bdb'],
-  g_base_definitions['6153519c03385c0016b84bde'],
-  g_base_definitions['6153519c03385c0016b84be1'],
-  g_base_definitions['6153519c03385c0016b84be3'],
-  g_base_definitions['6153519c03385c0016b84be5'],
-  g_base_definitions['6153519c03385c0016b84be7'],
+  g_base_definitions['68c995d05791630015888160'],
+  g_base_definitions['68c995d05791630015888163'],
+  g_base_definitions['68c995d05791630015888166'],
+  g_base_definitions['68c995d05791630015888168'],
+  g_base_definitions['68c995d0579163001588816a'],
+  g_base_definitions['68c995d0579163001588816c'],
 }

@@ -19,19 +19,19 @@ army['5fb1b9dde1af060017709606_ally_5fb1b9dce1af06001770953b'] = {
     name='(only Tarentine) Apulian or Lucanian ally',
     id='5fb1b9dde1af060017709606_ally_5fb1b9dce1af06001770953b',
   },
-  g_base_definitions['6153519003385c0016b8384d'],
-  g_base_definitions['6153519003385c0016b8384f'],
-  g_base_definitions['6153519003385c0016b83851'],
-  g_base_definitions['6153519003385c0016b83854'],
+  g_base_definitions['68c995c65791630015886db7'],
+  g_base_definitions['68c995c65791630015886db9'],
+  g_base_definitions['68c995c65791630015886dbb'],
+  g_base_definitions['68c995c65791630015886dbd'],
 }
 army['5fb1b9dde1af060017709606_ally_5fb1b9dde1af0600177095dc'] = {
   data={
     name='(only Tarentine) Spartans',
     id='5fb1b9dde1af060017709606_ally_5fb1b9dde1af0600177095dc',
   },
-  g_base_definitions['6153519103385c0016b83971'],
-  g_base_definitions['6153519103385c0016b83973'],
-  g_base_definitions['6153519103385c0016b83975'],
-  g_base_definitions['6153519103385c0016b83977'],
-  g_base_definitions['6153519103385c0016b83979'],
+  g_base_definitions['68c995c65791630015886ed4'],
+  g_base_definitions['68c995c65791630015886ed6'],
+  g_base_definitions['68c995c65791630015886ed8'],
+  g_base_definitions['68c995c65791630015886eda'],
+  g_base_definitions['68c995c65791630015886edc'],
 }

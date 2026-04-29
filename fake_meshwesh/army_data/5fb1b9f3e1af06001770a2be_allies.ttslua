@@ -19,19 +19,19 @@ army['5fb1b9f3e1af06001770a2be_ally_5fb1b9f2e1af06001770a26d'] = {
     name='Wu-Yueh allies',
     id='5fb1b9f3e1af06001770a2be_ally_5fb1b9f2e1af06001770a26d',
   },
-  g_base_definitions['6153519b03385c0016b84a76'],
-  g_base_definitions['6153519b03385c0016b84a78'],
-  g_base_definitions['6153519b03385c0016b84a7a'],
-  g_base_definitions['6153519b03385c0016b84a7b'],
-  g_base_definitions['6153519b03385c0016b84a7d'],
-  g_base_definitions['6153519b03385c0016b84a7f'],
-  g_base_definitions['6153519b03385c0016b84a80'],
+  g_base_definitions['68c995d05791630015887ff3'],
+  g_base_definitions['68c995d05791630015887ff5'],
+  g_base_definitions['68c995d05791630015887ff7'],
+  g_base_definitions['68c995d05791630015887ff8'],
+  g_base_definitions['68c995d05791630015887ffa'],
+  g_base_definitions['68c995d05791630015887ffc'],
+  g_base_definitions['68c995d05791630015887ffd'],
 }
 army['5fb1b9f3e1af06001770a2be_ally_5fb1b9f2e1af06001770a215'] = {
   data={
     name='Hsi allies',
     id='5fb1b9f3e1af06001770a2be_ally_5fb1b9f2e1af06001770a215',
   },
-  g_base_definitions['6153519b03385c0016b84a22'],
-  g_base_definitions['6153519b03385c0016b84a24'],
+  g_base_definitions['68c995cf5791630015887f9f'],
+  g_base_definitions['68c995cf5791630015887fa1'],
 }

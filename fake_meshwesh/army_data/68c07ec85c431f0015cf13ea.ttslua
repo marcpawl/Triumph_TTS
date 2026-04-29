@@ -1,0 +1,67 @@
+-- 68c07ec85c431f0015cf13ea Renaissance Russian  1456 to 1533 AD
+
+army['68c07ec85c431f0015cf13ea']={
+  data={
+    invasionRatings={
+      1,
+    },
+    maneuverRatings={
+      3,
+    },
+    homeTopographies={
+      'Forest',
+    },
+    name='Renaissance Russian  1456 to 1533 AD',
+    id='68c07ec85c431f0015cf13ea',
+    dateRange={
+      startDate=1456,
+      endDate=1533,
+    },
+  },
+  g_base_definitions[g_str_68c995e2579163001588ae14_general],
+  g_base_definitions[g_str_68c995e2579163001588ae14],
+  g_base_definitions[g_str_68c995e2579163001588ae16],
+  g_base_definitions[g_str_68c995e2579163001588ae18],
+  g_base_definitions[g_str_68c995e2579163001588ae1a],
+  g_base_definitions[g_str_68c995e2579163001588ae1a_shower_shooting],
+  g_base_definitions[g_str_68c995e2579163001588ae1e],
+  g_base_definitions[g_str_68c995e2579163001588ae21],
+  g_base_definitions[g_str_68c07ec85c431f0015cf13ea_camp],
+  g_base_definitions[g_str_68c07ec85c431f0015cf13ea_prepared_defenses],
+}
+if nil == armies["Meshwesh id"] then
+  armies["Meshwesh id"] ={}
+end
+armies["Meshwesh id"]["68c07ec85c431f0015cf13ea"] = army["68c07ec85c431f0015cf13ea"]
+if nil == armies["Russian Princes"] then
+  armies["Russian Princes"] ={}
+end
+armies["Russian Princes"]["Renaissance Russian  1456 to 1533 AD"] = army["68c07ec85c431f0015cf13ea"]
+if nil == armies["Baltic Powers"] then
+  armies["Baltic Powers"] ={}
+end
+armies["Baltic Powers"]["Renaissance Russian  1456 to 1533 AD"] = army["68c07ec85c431f0015cf13ea"]
+if nil == armies["All"] then
+  armies["All"] ={}
+end
+armies["All"]["Renaissance Russian  1456 to 1533 AD"] = army["68c07ec85c431f0015cf13ea"]
+if nil == army_dates then
+  army_dates={}
+end
+army_dates["68c07ec85c431f0015cf13ea"] = {}
+army_dates["68c07ec85c431f0015cf13ea"]["1456 AD to 1533 AD"] = {
+  startDate=1456,
+  endDate=1533
+}
+army_dates["68c07ec85c431f0015cf13ea"]["1456 AD to 1472 AD"] = {
+  startDate=1456,
+  endDate=1472
+}
+army_dates["68c07ec85c431f0015cf13ea"]["1473 AD to 1515 AD"] = {
+  startDate=1473,
+  endDate=1515
+}
+army_dates["68c07ec85c431f0015cf13ea"]["1516 AD to 1533 AD"] = {
+  startDate=1516,
+  endDate=1533
+}

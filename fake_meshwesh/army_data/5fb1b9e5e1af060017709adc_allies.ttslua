@@ -19,18 +19,18 @@ army['5fb1b9e5e1af060017709adc_ally_5fb1b9e5e1af060017709ac3'] = {
     name='Strathclyde British ally',
     id='5fb1b9e5e1af060017709adc_ally_5fb1b9e5e1af060017709ac3',
   },
-  g_base_definitions['6153519503385c0016b83f66'],
-  g_base_definitions['6153519503385c0016b83f68'],
-  g_base_definitions['6153519503385c0016b83f69'],
+  g_base_definitions['68c995ca57916300158874c9'],
+  g_base_definitions['68c995ca57916300158874cb'],
+  g_base_definitions['68c995ca57916300158874cc'],
 }
 army['5fb1b9e5e1af060017709adc_ally_5fb1b9e5e1af060017709ae9'] = {
   data={
     name='Islesmen ally',
     id='5fb1b9e5e1af060017709adc_ally_5fb1b9e5e1af060017709ae9',
   },
-  g_base_definitions['6153519503385c0016b83fa7'],
-  g_base_definitions['6153519503385c0016b83fa9'],
-  g_base_definitions['6153519503385c0016b83fab'],
-  g_base_definitions['6153519503385c0016b83fad'],
-  g_base_definitions['6153519503385c0016b83fb0'],
+  g_base_definitions['68c995ca579163001588750a'],
+  g_base_definitions['68c995ca579163001588750c'],
+  g_base_definitions['68c995ca579163001588750e'],
+  g_base_definitions['68c995ca5791630015887510'],
+  g_base_definitions['68c995ca5791630015887513'],
 }

@@ -39,67 +39,68 @@ army['5fb1b9eae1af060017709d8c_ally_5fb1b9eae1af060017709d8c'] = {
     name='(Wallachian only) Moldavian allies',
     id='5fb1b9eae1af060017709d8c_ally_5fb1b9eae1af060017709d8c',
   },
-  g_base_definitions['6153519803385c0016b843e4'],
-  g_base_definitions['6153519803385c0016b843e6'],
-  g_base_definitions['6153519803385c0016b843e8'],
-  g_base_definitions['6153519803385c0016b843ea'],
-  g_base_definitions['6153519803385c0016b843eb'],
+  g_base_definitions['68c995cc579163001588794e'],
+  g_base_definitions['68c995cc5791630015887950'],
+  g_base_definitions['68c995cc5791630015887952'],
+  g_base_definitions['68c995cc5791630015887953'],
+  g_base_definitions['68c995cc5791630015887955'],
+  g_base_definitions['68c995cc5791630015887956'],
 }
 army['5fb1b9eae1af060017709d8c_ally_5fb1b9e9e1af060017709d76'] = {
   data={
     name='Hungarian allies',
     id='5fb1b9eae1af060017709d8c_ally_5fb1b9e9e1af060017709d76',
   },
-  g_base_definitions['6153519703385c0016b843c4'],
-  g_base_definitions['6153519703385c0016b843c6'],
-  g_base_definitions['6153519703385c0016b843c8'],
-  g_base_definitions['6153519703385c0016b843c9'],
+  g_base_definitions['68c995cc579163001588792e'],
+  g_base_definitions['68c995cc5791630015887930'],
+  g_base_definitions['68c995cc5791630015887932'],
+  g_base_definitions['68c995cc5791630015887933'],
 }
 army['5fb1b9eae1af060017709d8c_ally_5fb1b9e9e1af060017709d84'] = {
   data={
     name='Hungarian allies',
     id='5fb1b9eae1af060017709d8c_ally_5fb1b9e9e1af060017709d84',
   },
-  g_base_definitions['6153519703385c0016b843cf'],
-  g_base_definitions['6153519703385c0016b843d2'],
-  g_base_definitions['6153519703385c0016b843d4'],
-  g_base_definitions['6153519703385c0016b843d6'],
-  g_base_definitions['6153519703385c0016b843d8'],
-  g_base_definitions['6153519703385c0016b843da'],
-  g_base_definitions['6153519703385c0016b843db'],
+  g_base_definitions['68c995cc5791630015887939'],
+  g_base_definitions['68c995cc579163001588793c'],
+  g_base_definitions['68c995cc579163001588793e'],
+  g_base_definitions['68c995cc5791630015887940'],
+  g_base_definitions['68c995cc5791630015887942'],
+  g_base_definitions['68c995cc5791630015887944'],
+  g_base_definitions['68c995cc5791630015887945'],
 }
 army['5fb1b9eae1af060017709d8c_ally_5fb1b9eee1af060017709feb'] = {
   data={
     name='Ottoman allies',
     id='5fb1b9eae1af060017709d8c_ally_5fb1b9eee1af060017709feb',
   },
-  g_base_definitions['6153519903385c0016b84738'],
-  g_base_definitions['6153519903385c0016b8473a'],
-  g_base_definitions['6153519903385c0016b8473b'],
+  g_base_definitions['68c995ce5791630015887cb5'],
+  g_base_definitions['68c995ce5791630015887cb7'],
+  g_base_definitions['68c995ce5791630015887cb8'],
 }
 army['5fb1b9eae1af060017709d8c_ally_5fb1b9eee1af060017709ff3'] = {
   data={
     name='Ottoman allies',
     id='5fb1b9eae1af060017709d8c_ally_5fb1b9eee1af060017709ff3',
   },
-  g_base_definitions['6153519903385c0016b8473f'],
-  g_base_definitions['6153519903385c0016b84741'],
-  g_base_definitions['6153519903385c0016b84743'],
+  g_base_definitions['68c995ce5791630015887cbc'],
+  g_base_definitions['68c995ce5791630015887cbe'],
+  g_base_definitions['68c995ce5791630015887cc0'],
 }
 army['5fb1b9eae1af060017709d8c_ally_5fb1b9eae1af060017709d9b'] = {
   data={
     name='(Moldavian only) Polish allies',
     id='5fb1b9eae1af060017709d8c_ally_5fb1b9eae1af060017709d9b',
   },
-  g_base_definitions['6153519803385c0016b843fb'],
-  g_base_definitions['6153519803385c0016b843fd'],
+  g_base_definitions['68c995cc5791630015887966'],
+  g_base_definitions['68c995cc5791630015887968'],
 }
 army['5fb1b9eae1af060017709d8c_ally_5fb1b9eee1af06001770a01c'] = {
   data={
     name='(Moldavian only) Crim Tartar allies',
     id='5fb1b9eae1af060017709d8c_ally_5fb1b9eee1af06001770a01c',
   },
-  g_base_definitions['6153519903385c0016b84770'],
-  g_base_definitions['6153519903385c0016b84772'],
-  g_base_definitions['6153519903385c0016b84774'],
+  g_base_definitions['68c995ce5791630015887cf1'],
+  g_base_definitions['68c995ce5791630015887cf3'],
+  g_base_definitions['68c995ce5791630015887cf5'],
 }

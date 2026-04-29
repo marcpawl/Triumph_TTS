@@ -29,7 +29,7 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
 -- As of: 20210416
 
     -- Huscarles - EF General
-    g_models[g_str_615351a903385c0016b86b21_general] = {
+    g_models[g_str_68c995de579163001588a0db_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -42,55 +42,55 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
     }
 
     -- Huscarles - EF
-    g_models[g_str_615351a903385c0016b86b21] = {
+    g_models[g_str_68c995de579163001588a0db] = {
       {
         model_data = 'troop_viking_huscarls'
       }
     }
 
     -- Hird - Heavy Foot
-    g_models[g_str_615351a903385c0016b86b24] = {
+    g_models[g_str_68c995de579163001588a0de] = {
       {
         model_data = 'troop_viking_hird_spear'
       }
     }
 
     -- Hird\nDismounted mobile infantry - Heavy Foot
-    g_models[g_str_615351a903385c0016b86b24_dismounted_mobile_infantry] = g_models[g_str_615351a903385c0016b86b24]
+    g_models[g_str_68c995de579163001588a0de_dismounted_mobile_infantry] = g_models[g_str_68c995de579163001588a0de]
 
     -- Hird\nmounted mobile infantry - Heavy Foot
-    g_models[g_str_615351a903385c0016b86b24_mounted_mobile_infantry] = {
+    g_models[g_str_68c995de579163001588a0de_mounted_mobile_infantry] = {
       {
         model_data = 'troop_viking_rider_generic'
       }
     }
 
     -- Freelance marauders - Raiders
-    g_models[g_str_615351a903385c0016b86b27] = {
+    g_models[g_str_68c995de579163001588a0e1] = {
       {
         model_data = 'troop_viking_warrior'
       }
     }
 
     -- Freelance marauders\nDismounted mobile infantry - Raiders
-    g_models[g_str_615351a903385c0016b86b27_dismounted_mobile_infantry] = g_models[g_str_615351a903385c0016b86b27]
+    g_models[g_str_68c995de579163001588a0e1_dismounted_mobile_infantry] = g_models[g_str_68c995de579163001588a0e1]
 
     -- Freelance marauders\nmounted mobile infantry - Raiders
-    g_models[g_str_615351a903385c0016b86b27_mounted_mobile_infantry] = {
+    g_models[g_str_68c995de579163001588a0e1_mounted_mobile_infantry] = {
       {
         model_data = 'troop_viking_rider_generic'
       }
     }
 
     --Hird bowmen - Archers
-    g_models[g_str_615351a903385c0016b86b2a] = {
+    g_models[g_str_68c995de579163001588a0e4] = {
       {
         model_data = 'troop_viking_archers'
       }
     }
 
     --Hird bowmen - Sk
-    g_models[g_str_615351a903385c0016b86b2b] = {
+    g_models[g_str_68c995de579163001588a0e5] = {
       {
         model_data = 'troop_viking_archers',
         loose = true
@@ -98,7 +98,7 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
     }
 
     --Besirkir - Warband
-    g_models[g_str_615351a903385c0016b86b2e] = {
+    g_models[g_str_68c995de579163001588a0e8] = {
       {
         model_data = 'troop_viking_berserker'
       }
@@ -115,16 +115,16 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
 -- As of: 20210416
 
     -- Huscarles - EF General
-    g_models[g_str_615351a903385c0016b86b18_general] = g_models[g_str_615351a903385c0016b86b21_general]
+    g_models[g_str_68c995de579163001588a0d2_general] = g_models[g_str_68c995de579163001588a0db_general]
 
     -- Huscarles - EF
-    g_models[g_str_615351a903385c0016b86b18] = g_models[g_str_615351a903385c0016b86b21]
+    g_models[g_str_68c995de579163001588a0d2] = g_models[g_str_68c995de579163001588a0db]
 
     -- Undisciplined marauders - Raiders
-    g_models[g_str_615351a903385c0016b86b1a] = g_models[g_str_615351a903385c0016b86b27]
+    g_models[g_str_68c995de579163001588a0d4] = g_models[g_str_68c995de579163001588a0e1]
 
     -- Skirmishing bowmen - Sk
-    g_models[g_str_615351a903385c0016b86b1c] = g_models[g_str_615351a903385c0016b86b2b]
+    g_models[g_str_68c995de579163001588a0d6] = g_models[g_str_68c995de579163001588a0e5]
 
     --Viking Raiders Camp
     g_models[g_str_5fb1b9e5e1af060017709aa8_camp] = g_models[g_str_5fb1b9e5e1af060017709aae_camp]
@@ -139,54 +139,54 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
 -- As of: 20210416
 
     -- Huscarles - EF General
-    g_models[g_str_615351a903385c0016b86b3c_general] = g_models[g_str_615351a903385c0016b86b21_general]
+    g_models[g_str_68c995de579163001588a0f6_general] = g_models[g_str_68c995de579163001588a0db_general]
 
     -- Huscarles - EF
-    g_models[g_str_615351a903385c0016b86b3c] = g_models[g_str_615351a903385c0016b86b21]
+    g_models[g_str_68c995de579163001588a0f6] = g_models[g_str_68c995de579163001588a0db]
 
     -- Hird - Heavy Foot
-    g_models[g_str_615351a903385c0016b86b3f] = g_models[g_str_615351a903385c0016b86b24]
+    g_models[g_str_68c995de579163001588a0f9] = g_models[g_str_68c995de579163001588a0de]
 
     -- Hird\nDismounted mobile infantry - Heavy Foot
-    g_models[g_str_615351a903385c0016b86b3f_dismounted_mobile_infantry] = g_models[g_str_615351a903385c0016b86b24_dismounted_mobile_infantry]
+    g_models[g_str_68c995de579163001588a0f9_dismounted_mobile_infantry] = g_models[g_str_68c995de579163001588a0de_dismounted_mobile_infantry]
 
     -- Hird\nmounted mobile infantry - Heavy Foot
-    g_models[g_str_615351a903385c0016b86b3f_mounted_mobile_infantry] = g_models[g_str_615351a903385c0016b86b24_mounted_mobile_infantry]
+    g_models[g_str_68c995de579163001588a0f9_mounted_mobile_infantry] = g_models[g_str_68c995de579163001588a0de_mounted_mobile_infantry]
 
     -- Freelance marauders - Raiders
-    g_models[g_str_615351a903385c0016b86b42] = g_models[g_str_615351a903385c0016b86b27]
+    g_models[g_str_68c995de579163001588a0fc] = g_models[g_str_68c995de579163001588a0e1]
 
     -- Freelance marauders\nDismounted mobile infantry - Raiders
-    g_models[g_str_615351a903385c0016b86b42_dismounted_mobile_infantry] = g_models[g_str_615351a903385c0016b86b27_dismounted_mobile_infantry]
+    g_models[g_str_68c995de579163001588a0fc_dismounted_mobile_infantry] = g_models[g_str_68c995de579163001588a0e1_dismounted_mobile_infantry]
 
     -- Freelance marauders\nmounted mobile infantry - Raiders
-    g_models[g_str_615351a903385c0016b86b42_mounted_mobile_infantry] = g_models[g_str_615351a903385c0016b86b27_mounted_mobile_infantry]
+    g_models[g_str_68c995de579163001588a0fc_mounted_mobile_infantry] = g_models[g_str_68c995de579163001588a0e1_mounted_mobile_infantry]
 
     -- Hird bowmen - Archers
-    g_models[g_str_615351a903385c0016b86b45] = g_models[g_str_615351a903385c0016b86b2a]
+    g_models[g_str_68c995de579163001588a0ff] = g_models[g_str_68c995de579163001588a0e4]
 
     -- Hird bowmen - Sk
-    g_models[g_str_615351a903385c0016b86b46] = g_models[g_str_615351a903385c0016b86b2b]
+    g_models[g_str_68c995de579163001588a100] = g_models[g_str_68c995de579163001588a0e5]
 
     -- Irish mercenaries - Light Foot
-    g_models[g_str_615351a903385c0016b86b49] = {
+    g_models[g_str_68c995de579163001588a103] = {
       {
         model_data = 'troop_viking_hird_javelin'
       }
     }
 
     -- Irish mercenaries\nDismounted mobile infantry - Light Foot
-    g_models[g_str_615351a903385c0016b86b49_dismounted_mobile_infantry] = g_models[g_str_615351a903385c0016b86b42]
+    g_models[g_str_68c995de579163001588a103_dismounted_mobile_infantry] = g_models[g_str_68c995de579163001588a0fc]
 
     -- Irish mercenaries\nmounted mobile infantry - Light Foot
-    g_models[g_str_615351a903385c0016b86b49_mounted_mobile_infantry] = {
+    g_models[g_str_68c995de579163001588a103_mounted_mobile_infantry] = {
       {
         model_data = 'troop_viking_rider_generic'
       }
     }
 
     -- Besirkir - Warband
-    g_models[g_str_615351a903385c0016b86b4c] = g_models[g_str_615351a903385c0016b86b2e]
+    g_models[g_str_68c995de579163001588a106] = g_models[g_str_68c995de579163001588a0e8]
 
     --Dublin or Manx Vikings Camp
     g_models[g_str_5fb1b9e5e1af060017709ab6_camp] = g_models[g_str_5fb1b9e5e1af060017709aae_camp]
@@ -202,33 +202,33 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
 -- As of: 20210417
 
     -- Viking nobles and retainers - EF General
-    g_models[g_str_615351a903385c0016b86a8f_general] = g_models[g_str_615351a903385c0016b86b21_general]
+    g_models[g_str_68c995dd579163001588a043_general] = g_models[g_str_68c995de579163001588a0db_general]
 
     -- Viking nobles and retainers - EF
-    g_models[g_str_615351a903385c0016b86a8f] = g_models[g_str_615351a903385c0016b86b21]
+    g_models[g_str_68c995dd579163001588a043] = g_models[g_str_68c995de579163001588a0db]
 
     -- Irish mercenaries - Light Spear
-    g_models[g_str_615351a903385c0016b86a91] = {
+    g_models[g_str_68c995dd579163001588a045] = {
       {
         model_data = 'troop_viking_hird_spear'
       }
     }
 
     -- Dardiers - Rabble
-    g_models[g_str_615351a903385c0016b86a93] = {
+    g_models[g_str_68c995dd579163001588a047] = {
       {
         model_data = 'troop_viking_hird_javelin'
       }
     }
 
     -- Dardiers - Light Foot
-    g_models[g_str_615351a903385c0016b86a94] = g_models[g_str_615351a903385c0016b86b49]
+    g_models[g_str_68c995dd579163001588a048] = g_models[g_str_68c995de579163001588a103]
 
     -- Javelinmen - Rabble
-    g_models[g_str_615351a903385c0016b86a96] = g_models[g_str_615351a903385c0016b86a93]
+    g_models[g_str_68c995dd579163001588a04a] = g_models[g_str_68c995dd579163001588a047]
 
     -- Massed levy bowmen - Bow Levy
-    g_models[g_str_615351a903385c0016b86a98] = {
+    g_models[g_str_68c995dd579163001588a04c] = {
       {
         model_data = 'troop_viking_archers'
       }
@@ -263,22 +263,22 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
 -- As of: 20210417
 
     -- Viking nobles and retainers - EF General
-    g_models[g_str_615351a903385c0016b86ae1_general] = g_models[g_str_615351a903385c0016b86b21_general]
+    g_models[g_str_68c995de579163001588a098_general] = g_models[g_str_68c995de579163001588a0db_general]
 
     -- Viking nobles and retainers - EF
-    g_models[g_str_615351a903385c0016b86ae1] = g_models[g_str_615351a903385c0016b86b21]
+    g_models[g_str_68c995de579163001588a098] = g_models[g_str_68c995de579163001588a0db]
 
     -- Hird - Heavy Foot
-    g_models[g_str_615351a903385c0016b86ae3] = g_models[g_str_615351a903385c0016b86b24]
+    g_models[g_str_68c995de579163001588a09a] = g_models[g_str_68c995de579163001588a0de]
 
     -- Bowmen - Sk
-    g_models[g_str_615351a903385c0016b86ae5] = g_models[g_str_615351a903385c0016b86b2b]
+    g_models[g_str_68c995de579163001588a09c] = g_models[g_str_68c995de579163001588a0e5]
 
     -- Massed levy bowmen - Bow Levy
-    g_models[g_str_615351a903385c0016b86ae6] = g_models[g_str_615351a903385c0016b86a98]
+    g_models[g_str_68c995de579163001588a09d] = g_models[g_str_68c995dd579163001588a04c]
 
     -- Thralls, levy, and dregs - Horde
-    g_models[g_str_615351a903385c0016b86ae8] = {
+    g_models[g_str_68c995de579163001588a0a0] = {
       {
         loose = true,
         random_models = {
@@ -298,7 +298,7 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
 -- As of: 20230112
 
     -- Hird - Warriors General
-    g_models[g_str_615351aa03385c0016b86ba4_general] = {
+    g_models[g_str_68c995de579163001588a15f_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -311,20 +311,20 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
     }
 
     -- Hird - Warriors 
-    g_models[g_str_615351aa03385c0016b86ba4] = {
+    g_models[g_str_68c995de579163001588a15f] = {
       {
         model_data = 'troop_viking_warrior'
       }
     }
 
     -- Hird - Warriors  General
-    g_models[g_str_615351aa03385c0016b86ba7_general] = g_models[g_str_615351aa03385c0016b86ba4_general]
+    g_models[g_str_68c995de579163001588a15f_general] = g_models[g_str_68c995de579163001588a15f_general]
 
     -- Hird - Warriors
-    g_models[g_str_615351aa03385c0016b86ba7] = g_models[g_str_615351aa03385c0016b86ba4]
+    g_models[g_str_68c995de579163001588a15f] = g_models[g_str_68c995de579163001588a15f]
 
     -- Hird - HF  General
-    g_models[g_str_615351aa03385c0016b86ba8_general] = {
+    g_models[g_str_68c995de579163001588a163_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -337,34 +337,34 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
     }
   
     -- Hird - HF
-    g_models[g_str_615351aa03385c0016b86ba8] = g_models[g_str_615351a903385c0016b86b24]
+    g_models[g_str_68c995de579163001588a163] = g_models[g_str_68c995de579163001588a0de]
     
     -- Saxon thegns - HF General
-    g_models[g_str_615351aa03385c0016b86bab_general] = g_models[g_str_615351aa03385c0016b86ba8_general]
+    g_models[g_str_68c995de579163001588a166_general] = g_models[g_str_68c995de579163001588a163_general]
 
     -- Saxon thegns - HF
-    g_models[g_str_615351aa03385c0016b86bab] = g_models[g_str_615351aa03385c0016b86ba8]
+    g_models[g_str_68c995de579163001588a166] = g_models[g_str_68c995de579163001588a163]
 
     -- Saxon thegns - EF General
-    g_models[g_str_615351aa03385c0016b86bac_general] = g_models[g_str_615351a903385c0016b86b21_general]
+    g_models[g_str_68c995de579163001588a167_general] = g_models[g_str_68c995de579163001588a0db_general]
 
     -- Saxon thegns - EF
-    g_models[g_str_615351aa03385c0016b86bac] =g_models[g_str_615351a903385c0016b86b21]
+    g_models[g_str_68c995de579163001588a167] =g_models[g_str_68c995de579163001588a0db]
 
     -- Select fyrd - HF General
-    g_models[g_str_615351aa03385c0016b86bae_general] = g_models[g_str_615351aa03385c0016b86ba8_general]
+    g_models[g_str_68c995de579163001588a169_general] = g_models[g_str_68c995de579163001588a163_general]
 
     -- Select fyrd - HF
-    g_models[g_str_615351aa03385c0016b86bae] = g_models[g_str_615351aa03385c0016b86ba8]
+    g_models[g_str_68c995de579163001588a169] = g_models[g_str_68c995de579163001588a163]
 
     -- Skirmishing bowmen - Sk
-    g_models[g_str_615351aa03385c0016b86bb0] = g_models[g_str_615351a903385c0016b86b2b]
+    g_models[g_str_68c995de579163001588a16b] = g_models[g_str_68c995de579163001588a0e5]
 
     --Scouts and javelinmen - Rabble
-    g_models[g_str_615351aa03385c0016b86bb2] = g_models[g_str_615351a903385c0016b86a96]
+    g_models[g_str_68c995de579163001588a16d] = g_models[g_str_68c995dd579163001588a04a]
 
     --Great fyrd - Horde
-    g_models[g_str_615351aa03385c0016b86bb4] = g_models[g_str_615351a903385c0016b86ae8]
+    g_models[g_str_68c995de579163001588a16f] = g_models[g_str_68c995de579163001588a0a0]
 
     --Middle Anglo-Saxon Camp
     g_models[g_str_5fb1b9e5e1af060017709acf_camp] = g_models[g_str_5fb1b9dce1af06001770959d_camp]
@@ -375,7 +375,7 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
 -- As of: 20230112
 
     -- Horsemen - Jav Cav General
-    g_models[g_str_615351a903385c0016b869db_general] = {
+    g_models[g_str_68c995dd5791630015889f8a_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -386,26 +386,26 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
     }
 
     -- Horsemen - Jav Cav
-    g_models[g_str_615351a903385c0016b869db] = {
+    g_models[g_str_68c995dd5791630015889f8a] = {
       {
         model_data = 'troop_viking_rider_generic'
       }
     }
 
     -- Javelinmen - Light Foot
-    g_models[g_str_615351a903385c0016b869dd] = g_models[g_str_615351a903385c0016b86b49]
+    g_models[g_str_68c995dd5791630015889f8c] = g_models[g_str_68c995de579163001588a103]
 
     -- Peasants - Horde
-    g_models[g_str_615351a903385c0016b869df] = g_models[g_str_615351a903385c0016b86ae8]
+    g_models[g_str_68c995dd5791630015889f8e] = g_models[g_str_68c995de579163001588a0a0]
 
     -- Unarmoured Horsemen - Jav Cav General
-    g_models[g_str_615351a903385c0016b869e2_general] = g_models[g_str_615351a903385c0016b869db_general]
+    g_models[g_str_68c995dd5791630015889f91_general] = g_models[g_str_68c995dd5791630015889f8a_general]
 
     -- Unarmoured Horsemen - Jav Cav
-    g_models[g_str_615351a903385c0016b869e2] = g_models[g_str_615351a903385c0016b869db]
+    g_models[g_str_68c995dd5791630015889f91] = g_models[g_str_68c995dd5791630015889f8a]
 
     -- Disguised Saxons - Warriors 
-    g_models[g_str_615351a903385c0016b869e5] = g_models[g_str_615351aa03385c0016b86ba4]
+    g_models[g_str_68c995dd5791630015889f94] = g_models[g_str_68c995de579163001588a15f]
 
     --Breaton Camp
     g_models[g_str_5fb1b9e4e1af060017709a4c_camp] = g_models[g_str_5fb1b9dce1af06001770959d_camp]
@@ -435,13 +435,13 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
 
 
     -- Huscarles or huscarles on horses - EF General
-    g_models[g_str_615351aa03385c0016b86bc4_general] = g_models[g_str_615351a903385c0016b86b21_general]
+    g_models[g_str_68c995de579163001588a17f_general] = g_models[g_str_68c995de579163001588a0db_general]
 
     -- Huscarles or huscarles on horses - EF
-    g_models[g_str_615351aa03385c0016b86bc4] = g_models[g_str_615351a903385c0016b86b21]
+    g_models[g_str_68c995de579163001588a17f] = g_models[g_str_68c995de579163001588a0db]
 
     -- Huscarles or huscarles on horses - Bad Horse General
-    g_models[g_str_615351aa03385c0016b86bc5_general] = {
+    g_models[g_str_68c995de579163001588a180_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -453,14 +453,14 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
     }
 
     -- Huscarles or huscarles on horses - Bad Horse
-    g_models[g_str_615351aa03385c0016b86bc5] = {
+    g_models[g_str_68c995de579163001588a180] = {
       {
         model_data = 'troop_viking_rider_generic_unarmoured'
       }
     }
 
     -- Huscarles or huscarles on horses - Knights General
-    g_models[g_str_615351aa03385c0016b86bc8_general] = {
+    g_models[g_str_68c995de579163001588a183_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -472,33 +472,33 @@ army['5fb1b9e5e1af060017709ad5'].data.base="tile_grass"
     }
 
     -- Huscarles or huscarles on horses - Knights
-    g_models[g_str_615351aa03385c0016b86bc8] = {
+    g_models[g_str_68c995de579163001588a183] = {
       {
         model_data = 'troop_viking_rider_generic_cape'
       }
     }
 
     -- Select fyrd - HF
-    g_models[g_str_615351aa03385c0016b86bca] = g_models[g_str_615351a903385c0016b86b24]
+    g_models[g_str_68c995de579163001588a185] = g_models[g_str_68c995de579163001588a0de]
 
     -- Great fyrd - HF
-    g_models[g_str_615351aa03385c0016b86bcd] = {
+    g_models[g_str_68c995de579163001588a188] = {
       {
         model_data = 'troop_viking_warrior'
       }
     }
 
     -- Peasants - Horde
-    g_models[g_str_615351aa03385c0016b86bcf] = g_models[g_str_615351a903385c0016b86ae8]
+    g_models[g_str_68c995de579163001588a18a] = g_models[g_str_68c995de579163001588a0a0]
 
     -- Hird bowmen - Sk
-    g_models[g_str_615351aa03385c0016b86bd1] = g_models[g_str_615351a903385c0016b86b2b]
+    g_models[g_str_68c995de579163001588a18c] = g_models[g_str_68c995de579163001588a0e5]
 
     -- Viking Camp
     g_models[g_str_5fb1b9e4e1af060017709a4c_camp] = g_models[g_str_5fb1b9dce1af06001770959d_camp]
 
     --Scouts and javelinmen - Rabble
-    g_models[g_str_615351aa03385c0016b86bd4] = g_models[g_str_615351a903385c0016b86a96]
+    g_models[g_str_68c995de579163001588a18f] = g_models[g_str_68c995dd579163001588a04a]
     
     -- Breton Camp - Fortified
     g_models[g_str_5fb1b9e5e1af060017709ad5_camp] = g_models[g_str_5fb1b9dce1af06001770959d_camp]

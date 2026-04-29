@@ -1,83 +1,43 @@
-g_str_615351a103385c0016b85603_general='615351a103385c0016b85603_general'
-g_base_definitions[g_str_615351a103385c0016b85603_general]={
-  id=g_str_615351a103385c0016b85603_general,
+g_str_68c995d55791630015888bb1_general='68c995d55791630015888bb1_general'
+g_base_definitions[g_str_68c995d55791630015888bb1_general]={
+  id=g_str_68c995d55791630015888bb1_general,
   name='Heavy Foot General',
   min=6,
   max=1,
   description='Hoplites',
   general=true,
   troop_type="Heavy Foot",
-  troop_option_id="615351a103385c0016b85602",
+  troop_option_id="68c995d55791630015888bb0",
 }
-g_str_615351a103385c0016b85603='615351a103385c0016b85603'
-g_base_definitions[g_str_615351a103385c0016b85603]={
-  id=g_str_615351a103385c0016b85603,
+g_str_68c995d55791630015888bb1='68c995d55791630015888bb1'
+g_base_definitions[g_str_68c995d55791630015888bb1]={
+  id=g_str_68c995d55791630015888bb1,
   name='Heavy Foot',
   min=6,
   max=16,
   description='Hoplites',
   troop_type="Heavy Foot",
-  troop_option_id="615351a103385c0016b85602",
+  troop_option_id="68c995d55791630015888bb0",
 }
-g_str_615351a103385c0016b85606='615351a103385c0016b85606'
-g_base_definitions[g_str_615351a103385c0016b85606]={
-  id=g_str_615351a103385c0016b85606,
+g_str_68c995d55791630015888bb3='68c995d55791630015888bb3'
+g_base_definitions[g_str_68c995d55791630015888bb3]={
+  id=g_str_68c995d55791630015888bb3,
   name='Skirmishers',
   min=0,
   max=1,
   description='Skirmishing bowmen and slingers',
   troop_type="Skirmishers",
-  troop_option_id="615351a103385c0016b85604",
+  troop_option_id="68c995d55791630015888bb2",
 }
-g_str_615351a103385c0016b85609='615351a103385c0016b85609'
-g_base_definitions[g_str_615351a103385c0016b85609]={
-  id=g_str_615351a103385c0016b85609,
+g_str_68c995d55791630015888bb5='68c995d55791630015888bb5'
+g_base_definitions[g_str_68c995d55791630015888bb5]={
+  id=g_str_68c995d55791630015888bb5,
   name='Rabble',
   min=0,
   max=2,
   description='Javelinmen',
   troop_type="Rabble",
-  troop_option_id="615351a103385c0016b85607",
-}
-g_str_615351a103385c0016b8560d='615351a103385c0016b8560d'
-g_base_definitions[g_str_615351a103385c0016b8560d]={
-  id=g_str_615351a103385c0016b8560d,
-  name='Light Foot',
-  min=0,
-  max=1,
-  description='Thracian peltasts',
-  troop_type="Light Foot",
-  troop_option_id="615351a103385c0016b8560a",
-}
-g_str_615351a103385c0016b85611='615351a103385c0016b85611'
-g_base_definitions[g_str_615351a103385c0016b85611]={
-  id=g_str_615351a103385c0016b85611,
-  name='Javelin Cavalry',
-  min=1,
-  max=2,
-  description='Thessalian horsemen',
-  troop_type="Javelin Cavalry",
-  troop_option_id="615351a103385c0016b8560e",
-}
-g_str_615351a103385c0016b85615='615351a103385c0016b85615'
-g_base_definitions[g_str_615351a103385c0016b85615]={
-  id=g_str_615351a103385c0016b85615,
-  name='Skirmishers',
-  min=0,
-  max=1,
-  description='Athenian bowmen',
-  troop_type="Skirmishers",
-  troop_option_id="615351a103385c0016b85612",
-}
-g_str_615351a103385c0016b85616='615351a103385c0016b85616'
-g_base_definitions[g_str_615351a103385c0016b85616]={
-  id=g_str_615351a103385c0016b85616,
-  name='Bow Levy',
-  min=0,
-  max=1,
-  description='Athenian bowmen',
-  troop_type="Bow Levy",
-  troop_option_id="615351a103385c0016b85612",
+  troop_option_id="68c995d55791630015888bb4",
 }
 g_str_5fb1b9dbe1af0600177094fb_camp='5fb1b9dbe1af0600177094fb_camp'
 g_base_definitions[g_str_5fb1b9dbe1af0600177094fb_camp]={
@@ -88,13 +48,13 @@ g_base_definitions[g_str_5fb1b9dbe1af0600177094fb_camp]={
   description='Camp',
   troop_type="Camp",
 }
-g_str_6153518f03385c0016b837eb='6153518f03385c0016b837eb'
-g_base_definitions[g_str_6153518f03385c0016b837eb]={
-  id=g_str_6153518f03385c0016b837eb,
+g_str_68c995c55791630015886d67='68c995c55791630015886d67'
+g_base_definitions[g_str_68c995c55791630015886d67]={
+  id=g_str_68c995c55791630015886d67,
   name='Javelin Cavalry',
   min=1,
   max=2,
   description='Thessalian horsemen',
   troop_type="Javelin Cavalry",
-  troop_option_id="6153518f03385c0016b837ea",
+  troop_option_id="68c995c55791630015886d66",
 }

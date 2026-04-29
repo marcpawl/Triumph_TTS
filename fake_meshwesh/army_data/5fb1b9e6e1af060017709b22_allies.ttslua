@@ -23,25 +23,25 @@ army['5fb1b9e6e1af060017709b22_ally_5fb1b9e6e1af060017709b1c'] = {
     name='North Welsh allies',
     id='5fb1b9e6e1af060017709b22_ally_5fb1b9e6e1af060017709b1c',
   },
-  g_base_definitions['6153519603385c0016b84001'],
-  g_base_definitions['6153519603385c0016b84003'],
-  g_base_definitions['6153519603385c0016b84005'],
+  g_base_definitions['68c995ca5791630015887563'],
+  g_base_definitions['68c995ca5791630015887565'],
+  g_base_definitions['68c995ca5791630015887567'],
 }
 army['5fb1b9e6e1af060017709b22_ally_5fb1b9e7e1af060017709c3a'] = {
   data={
     name='(on the continent, or rebel armies in England) French allies',
     id='5fb1b9e6e1af060017709b22_ally_5fb1b9e7e1af060017709c3a',
   },
-  g_base_definitions['6153519703385c0016b841cb'],
-  g_base_definitions['6153519703385c0016b841cd'],
-  g_base_definitions['6153519703385c0016b841cf'],
+  g_base_definitions['68c995cb5791630015887733'],
+  g_base_definitions['68c995cb5791630015887735'],
+  g_base_definitions['68c995cb5791630015887737'],
 }
 army['5fb1b9e6e1af060017709b22_ally_5fb1b9e5e1af060017709ae2'] = {
   data={
     name='Irish allies',
     id='5fb1b9e6e1af060017709b22_ally_5fb1b9e5e1af060017709ae2',
   },
-  g_base_definitions['6153519503385c0016b83f99'],
-  g_base_definitions['6153519503385c0016b83f9b'],
-  g_base_definitions['6153519503385c0016b83f9d'],
+  g_base_definitions['68c995ca57916300158874fc'],
+  g_base_definitions['68c995ca57916300158874fe'],
+  g_base_definitions['68c995ca5791630015887500'],
 }

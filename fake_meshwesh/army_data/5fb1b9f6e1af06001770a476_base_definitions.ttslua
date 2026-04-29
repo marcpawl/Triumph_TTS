@@ -1,22 +1,22 @@
-g_str_615351b703385c0016b88edf='615351b703385c0016b88edf'
-g_base_definitions[g_str_615351b703385c0016b88edf]={
-  id=g_str_615351b703385c0016b88edf,
+g_str_68c995eb579163001588c5e7='68c995eb579163001588c5e7'
+g_base_definitions[g_str_68c995eb579163001588c5e7]={
+  id=g_str_68c995eb579163001588c5e7,
   name='Light Foot',
   min=6,
   max=10,
   description='Tribesmen',
   troop_type="Light Foot",
-  troop_option_id="615351b703385c0016b88ede",
+  troop_option_id="68c995eb579163001588c5e6",
 }
-g_str_615351b703385c0016b88ee1='615351b703385c0016b88ee1'
-g_base_definitions[g_str_615351b703385c0016b88ee1]={
-  id=g_str_615351b703385c0016b88ee1,
+g_str_68c995eb579163001588c5e9='68c995eb579163001588c5e9'
+g_base_definitions[g_str_68c995eb579163001588c5e9]={
+  id=g_str_68c995eb579163001588c5e9,
   name='Skirmishers',
   min=6,
   max=10,
   description='Skirmishing slingers',
   troop_type="Skirmishers",
-  troop_option_id="615351b703385c0016b88ee0",
+  troop_option_id="68c995eb579163001588c5e8",
 }
 g_str_5fb1b9f6e1af06001770a476_camp='5fb1b9f6e1af06001770a476_camp'
 g_base_definitions[g_str_5fb1b9f6e1af06001770a476_camp]={

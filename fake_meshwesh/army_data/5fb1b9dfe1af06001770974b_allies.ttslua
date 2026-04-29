@@ -15,8 +15,8 @@ army['5fb1b9dfe1af06001770974b_ally_5fb1b9dfe1af06001770971d'] = {
     name='Ptolemaic allies',
     id='5fb1b9dfe1af06001770974b_ally_5fb1b9dfe1af06001770971d',
   },
-  g_base_definitions['6153519303385c0016b83b43'],
-  g_base_definitions['6153519303385c0016b83b45'],
-  g_base_definitions['6153519303385c0016b83b47'],
-  g_base_definitions['6153519303385c0016b83b49'],
+  g_base_definitions['68c995c757916300158870a6'],
+  g_base_definitions['68c995c757916300158870a8'],
+  g_base_definitions['68c995c757916300158870aa'],
+  g_base_definitions['68c995c757916300158870ac'],
 }

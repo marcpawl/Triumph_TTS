@@ -19,12 +19,12 @@ army['5fb1b9e4e1af0600177099eb_ally_5fb1b9e2e1af060017709910'] = {
     name='Old Saxon allies',
     id='5fb1b9e4e1af0600177099eb_ally_5fb1b9e2e1af060017709910',
   },
-  g_base_definitions['6153519403385c0016b83d99'],
+  g_base_definitions['68c995c957916300158872fc'],
 }
 army['5fb1b9e4e1af0600177099eb_ally_5fb1b9e2e1af060017709910'] = {
   data={
     name='(Slav) Bavarian allies',
     id='5fb1b9e4e1af0600177099eb_ally_5fb1b9e2e1af060017709910',
   },
-  g_base_definitions['6153519403385c0016b83d99'],
+  g_base_definitions['68c995c957916300158872fc'],
 }

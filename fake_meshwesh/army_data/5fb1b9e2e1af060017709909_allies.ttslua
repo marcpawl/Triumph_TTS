@@ -27,29 +27,29 @@ army['5fb1b9e2e1af060017709909_ally_5fb1b9e1e1af06001770989f'] = {
     name='Vandal allies',
     id='5fb1b9e2e1af060017709909_ally_5fb1b9e1e1af06001770989f',
   },
-  g_base_definitions['6153519403385c0016b83d41'],
-  g_base_definitions['6153519403385c0016b83d43'],
+  g_base_definitions['68c995c857916300158872a4'],
+  g_base_definitions['68c995c857916300158872a6'],
 }
 army['5fb1b9e2e1af060017709909_ally_5fb1b9e2e1af0600177098c7'] = {
   data={
     name='Ostrogoth allies',
     id='5fb1b9e2e1af060017709909_ally_5fb1b9e2e1af0600177098c7',
   },
-  g_base_definitions['6153519403385c0016b83d65'],
-  g_base_definitions['6153519403385c0016b83d67'],
-  g_base_definitions['6153519403385c0016b83d69'],
+  g_base_definitions['68c995c857916300158872c8'],
+  g_base_definitions['68c995c857916300158872ca'],
+  g_base_definitions['68c995c857916300158872cc'],
 }
 army['5fb1b9e2e1af060017709909_ally_5fb1b9e2e1af06001770991b'] = {
   data={
     name='Rugian allies',
     id='5fb1b9e2e1af060017709909_ally_5fb1b9e2e1af06001770991b',
   },
-  g_base_definitions['6153519403385c0016b83d9d'],
+  g_base_definitions['68c995c95791630015887300'],
 }
 army['5fb1b9e2e1af060017709909_ally_5fb1b9e2e1af060017709910'] = {
   data={
     name='Thuringian allies',
     id='5fb1b9e2e1af060017709909_ally_5fb1b9e2e1af060017709910',
   },
-  g_base_definitions['6153519403385c0016b83d99'],
+  g_base_definitions['68c995c957916300158872fc'],
 }

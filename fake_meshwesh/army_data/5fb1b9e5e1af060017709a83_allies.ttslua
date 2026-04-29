@@ -23,28 +23,28 @@ army['5fb1b9e5e1af060017709a83_ally_5fb1b9eae1af060017709e17'] = {
     name='Pecheneg allies',
     id='5fb1b9e5e1af060017709a83_ally_5fb1b9eae1af060017709e17',
   },
-  g_base_definitions['6153519803385c0016b84498'],
-  g_base_definitions['6153519803385c0016b8449a'],
-  g_base_definitions['6153519803385c0016b8449b'],
-  g_base_definitions['6153519803385c0016b8449c'],
+  g_base_definitions['68c995cc5791630015887a14'],
+  g_base_definitions['68c995cc5791630015887a16'],
+  g_base_definitions['68c995cc5791630015887a17'],
+  g_base_definitions['68c995cc5791630015887a18'],
 }
 army['5fb1b9e5e1af060017709a83_ally_5fb1b9e5e1af060017709a89'] = {
   data={
     name='Magyar allies',
     id='5fb1b9e5e1af060017709a83_ally_5fb1b9e5e1af060017709a89',
   },
-  g_base_definitions['6153519503385c0016b83f1d'],
-  g_base_definitions['6153519503385c0016b83f1e'],
-  g_base_definitions['6153519503385c0016b83f20'],
+  g_base_definitions['68c995ca579163001588747f'],
+  g_base_definitions['68c995ca5791630015887480'],
+  g_base_definitions['68c995ca5791630015887482'],
 }
 army['5fb1b9e5e1af060017709a83_ally_5fb1b9e5e1af060017709a8f'] = {
   data={
     name='Magyar allies',
     id='5fb1b9e5e1af060017709a83_ally_5fb1b9e5e1af060017709a8f',
   },
-  g_base_definitions['6153519503385c0016b83f24'],
-  g_base_definitions['6153519503385c0016b83f25'],
-  g_base_definitions['6153519503385c0016b83f27'],
-  g_base_definitions['6153519503385c0016b83f29'],
-  g_base_definitions['6153519503385c0016b83f2b'],
+  g_base_definitions['68c995ca5791630015887486'],
+  g_base_definitions['68c995ca5791630015887487'],
+  g_base_definitions['68c995ca5791630015887489'],
+  g_base_definitions['68c995ca579163001588748b'],
+  g_base_definitions['68c995ca579163001588748d'],
 }

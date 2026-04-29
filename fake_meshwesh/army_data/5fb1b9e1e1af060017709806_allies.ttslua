@@ -31,49 +31,49 @@ army['5fb1b9e1e1af060017709806_ally_5fb1b9e0e1af0600177097f6'] = {
     name='Gordyene allies',
     id='5fb1b9e1e1af060017709806_ally_5fb1b9e0e1af0600177097f6',
   },
-  g_base_definitions['6153519303385c0016b83c82'],
-  g_base_definitions['6153519303385c0016b83c84'],
-  g_base_definitions['6153519303385c0016b83c86'],
-  g_base_definitions['6153519303385c0016b83c88'],
+  g_base_definitions['68c995c857916300158871e5'],
+  g_base_definitions['68c995c857916300158871e7'],
+  g_base_definitions['68c995c857916300158871e9'],
+  g_base_definitions['68c995c857916300158871eb'],
 }
 army['5fb1b9e1e1af060017709806_ally_5fb1b9e0e1af0600177097c8'] = {
   data={
     name='Media Atropatene allies',
     id='5fb1b9e1e1af060017709806_ally_5fb1b9e0e1af0600177097c8',
   },
-  g_base_definitions['6153519303385c0016b83c36'],
-  g_base_definitions['6153519303385c0016b83c38'],
-  g_base_definitions['6153519303385c0016b83c3a'],
+  g_base_definitions['68c995c85791630015887199'],
+  g_base_definitions['68c995c8579163001588719b'],
+  g_base_definitions['68c995c8579163001588719d'],
 }
 army['5fb1b9e1e1af060017709806_ally_5fb1b9dfe1af06001770975f'] = {
   data={
     name='Nomadic Arab allies',
     id='5fb1b9e1e1af060017709806_ally_5fb1b9dfe1af06001770975f',
   },
-  g_base_definitions['6153519303385c0016b83b9f'],
-  g_base_definitions['6153519303385c0016b83ba1'],
-  g_base_definitions['6153519303385c0016b83ba3'],
-  g_base_definitions['6153519303385c0016b83ba5'],
-  g_base_definitions['6153519303385c0016b83ba6'],
-  g_base_definitions['6153519303385c0016b83ba8'],
-  g_base_definitions['6153519303385c0016b83baa'],
+  g_base_definitions['68c995c75791630015887102'],
+  g_base_definitions['68c995c75791630015887104'],
+  g_base_definitions['68c995c75791630015887106'],
+  g_base_definitions['68c995c75791630015887108'],
+  g_base_definitions['68c995c75791630015887109'],
+  g_base_definitions['68c995c7579163001588710b'],
+  g_base_definitions['68c995c7579163001588710d'],
 }
 army['5fb1b9e1e1af060017709806_ally_5fb1b9e0e1af0600177097f6'] = {
   data={
     name='Gordyene allies',
     id='5fb1b9e1e1af060017709806_ally_5fb1b9e0e1af0600177097f6',
   },
-  g_base_definitions['6153519303385c0016b83c82'],
-  g_base_definitions['6153519303385c0016b83c84'],
-  g_base_definitions['6153519303385c0016b83c86'],
-  g_base_definitions['6153519303385c0016b83c88'],
+  g_base_definitions['68c995c857916300158871e5'],
+  g_base_definitions['68c995c857916300158871e7'],
+  g_base_definitions['68c995c857916300158871e9'],
+  g_base_definitions['68c995c857916300158871eb'],
 }
 army['5fb1b9e1e1af060017709806_ally_5fb1b9e0e1af0600177097c8'] = {
   data={
     name='Media Atropatene allies',
     id='5fb1b9e1e1af060017709806_ally_5fb1b9e0e1af0600177097c8',
   },
-  g_base_definitions['6153519303385c0016b83c36'],
-  g_base_definitions['6153519303385c0016b83c38'],
-  g_base_definitions['6153519303385c0016b83c3a'],
+  g_base_definitions['68c995c85791630015887199'],
+  g_base_definitions['68c995c8579163001588719b'],
+  g_base_definitions['68c995c8579163001588719d'],
 }

@@ -15,7 +15,7 @@ army['5fb1b9e3e1af060017709974_ally_5fb1b9e2e1af0600177098c7'] = {
     name='Sciri allies',
     id='5fb1b9e3e1af060017709974_ally_5fb1b9e2e1af0600177098c7',
   },
-  g_base_definitions['6153519403385c0016b83d65'],
-  g_base_definitions['6153519403385c0016b83d67'],
-  g_base_definitions['6153519403385c0016b83d69'],
+  g_base_definitions['68c995c857916300158872c8'],
+  g_base_definitions['68c995c857916300158872ca'],
+  g_base_definitions['68c995c857916300158872cc'],
 }

@@ -15,7 +15,7 @@ army['5fb1b9f0e1af06001770a107_ally_5fb1b9f0e1af06001770a100'] = {
     name='Malay allies',
     id='5fb1b9f0e1af06001770a107_ally_5fb1b9f0e1af06001770a100',
   },
-  g_base_definitions['6153519a03385c0016b848c5'],
-  g_base_definitions['6153519a03385c0016b848c7'],
-  g_base_definitions['6153519a03385c0016b848c9'],
+  g_base_definitions['68c995cf5791630015887e42'],
+  g_base_definitions['68c995cf5791630015887e44'],
+  g_base_definitions['68c995cf5791630015887e46'],
 }

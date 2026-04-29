@@ -1,33 +1,33 @@
-g_str_615351b703385c0016b88f18_general='615351b703385c0016b88f18_general'
-g_base_definitions[g_str_615351b703385c0016b88f18_general]={
-  id=g_str_615351b703385c0016b88f18_general,
+g_str_68c995eb579163001588c626_general='68c995eb579163001588c626_general'
+g_base_definitions[g_str_68c995eb579163001588c626_general]={
+  id=g_str_68c995eb579163001588c626_general,
   name='Warband General',
   min=14,
   max=1,
   description='Fierce tribesmen',
   general=true,
   troop_type="Warband",
-  troop_option_id="615351b703385c0016b88f17",
+  troop_option_id="68c995eb579163001588c625",
 }
-g_str_615351b703385c0016b88f18='615351b703385c0016b88f18'
-g_base_definitions[g_str_615351b703385c0016b88f18]={
-  id=g_str_615351b703385c0016b88f18,
+g_str_68c995eb579163001588c626='68c995eb579163001588c626'
+g_base_definitions[g_str_68c995eb579163001588c626]={
+  id=g_str_68c995eb579163001588c626,
   name='Warband',
   min=14,
   max=16,
   description='Fierce tribesmen',
   troop_type="Warband",
-  troop_option_id="615351b703385c0016b88f17",
+  troop_option_id="68c995eb579163001588c625",
 }
-g_str_615351b703385c0016b88f1a='615351b703385c0016b88f1a'
-g_base_definitions[g_str_615351b703385c0016b88f1a]={
-  id=g_str_615351b703385c0016b88f1a,
+g_str_68c995eb579163001588c628='68c995eb579163001588c628'
+g_base_definitions[g_str_68c995eb579163001588c628]={
+  id=g_str_68c995eb579163001588c628,
   name='Skirmishers',
   min=0,
   max=2,
   description='Skirmishing blowpipe men',
   troop_type="Skirmishers",
-  troop_option_id="615351b703385c0016b88f19",
+  troop_option_id="68c995eb579163001588c627",
 }
 g_str_5fb1b9f6e1af06001770a496_camp='5fb1b9f6e1af06001770a496_camp'
 g_base_definitions[g_str_5fb1b9f6e1af06001770a496_camp]={

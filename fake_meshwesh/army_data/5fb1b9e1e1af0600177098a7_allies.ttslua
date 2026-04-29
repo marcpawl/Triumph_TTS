@@ -19,13 +19,13 @@ army['5fb1b9e1e1af0600177098a7_ally_5fb1b9e3e1af0600177099cd'] = {
     name='Moorish allies',
     id='5fb1b9e1e1af0600177098a7_ally_5fb1b9e3e1af0600177099cd',
   },
-  g_base_definitions['6153519503385c0016b83e44'],
-  g_base_definitions['6153519503385c0016b83e46'],
+  g_base_definitions['68c995c957916300158873a7'],
+  g_base_definitions['68c995c957916300158873a9'],
 }
 army['5fb1b9e1e1af0600177098a7_ally_5fb1b9e2e1af06001770991b'] = {
   data={
     name='Frankish allies',
     id='5fb1b9e1e1af0600177098a7_ally_5fb1b9e2e1af06001770991b',
   },
-  g_base_definitions['6153519403385c0016b83d9d'],
+  g_base_definitions['68c995c95791630015887300'],
 }

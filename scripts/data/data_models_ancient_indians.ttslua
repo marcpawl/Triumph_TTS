@@ -14,7 +14,7 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
 -- As of: 20230116
 
     -- War elephants - Elephants General
-    g_models[g_str_615351a503385c0016b860e7_general] = {
+    g_models[g_str_68c995d95791630015889664_general] = {
       {
         n_models = 1,
         model_data = 'troop_indian_el_general'
@@ -22,7 +22,7 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- War elephants - Elephants
-    g_models[g_str_615351a503385c0016b860e7] = {
+    g_models[g_str_68c995d95791630015889664] = {
       {
         n_models = 1,
         model_data = 'troop_indian_el'
@@ -30,7 +30,7 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- 4-horse chariots with three crew - Chariots
-    g_models[g_str_615351a503385c0016b860eb] = {
+    g_models[g_str_68c995d95791630015889668] = {
       {
         n_models = 1,
         model_data = 'troop_indian_hch'
@@ -38,21 +38,21 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- Chariots gradually being abandoned in favor of horsemen - Chariots
-    g_models[g_str_615351a503385c0016b860ee] = g_models[g_str_615351a503385c0016b860eb]
+    g_models[g_str_68c995d9579163001588966b] = g_models[g_str_68c995d95791630015889668]
 
 
     -- Chariots gradually being abandoned in favor of horsemen - Bad Horse
-    g_models[g_str_615351a503385c0016b860ef] = {
+    g_models[g_str_68c995d9579163001588966c] = {
       {
         model_data = 'troop_indian_cavalry'
       }
     }
 
     -- Horsemen - Bad Horse
-    g_models[g_str_615351a503385c0016b860f1] = g_models[g_str_615351a503385c0016b860ef]
+    g_models[g_str_68c995d9579163001588966e] = g_models[g_str_68c995d9579163001588966c]
 
     -- Hereditary and mercenary bowmen - Bow Levy
-    g_models[g_str_615351a503385c0016b860f3] = {
+    g_models[g_str_68c995d95791630015889670] = {
       {
         loose = true,
         model_data = 'troop_indian_bow'
@@ -60,20 +60,20 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- Hereditary and mercenary javelinmen - Heavy Foot
-    g_models[g_str_615351a503385c0016b860f5] = {
+    g_models[g_str_68c995d95791630015889673] = {
       {
         model_data = 'troop_indian_auxilia'
       }
     }
 
     -- Hereditary and mercenary javelinmen\nPlaustrella - Heavy Foot
-    g_models[g_str_615351a503385c0016b860f5_plaustrella] = g_models[g_str_615351a503385c0016b860f5]
+    g_models[g_str_68c995d95791630015889673_plaustrella] = g_models[g_str_68c995d95791630015889673]
 
     -- Hereditary and mercenary javelinmen\nElephant Screen - Heavy Foot
-    g_models[g_str_615351a503385c0016b860f5_elephant_screen] = g_models[g_str_615351a503385c0016b860f5]
+    g_models[g_str_68c995d95791630015889673_elephant_screen] = g_models[g_str_68c995d95791630015889673]
   
     -- Poor quality infantry - Horde
-    g_models[g_str_615351a503385c0016b860f9] = {
+    g_models[g_str_68c995d95791630015889677] = {
       {
         loose = true,
         model_data = 'troop_indian_sp'
@@ -81,10 +81,10 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- Poor quality infantry - Horde
-    g_models[g_str_615351a503385c0016b860f9_elephant_screen] = g_models[g_str_615351a503385c0016b860f9]
+    g_models[g_str_68c995d95791630015889677_elephant_screen] = g_models[g_str_68c995d95791630015889677]
 
     -- Wild tribe bowmen - Skirmishers
-    g_models[g_str_615351a503385c0016b860fd] = {
+    g_models[g_str_68c995d9579163001588967b] = {
       {
         loose = true,
         model_data = 'troop_indian_ps'
@@ -92,7 +92,7 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- Wild tribe bowmen - Rabble
-    g_models[g_str_615351a503385c0016b860fe] = {
+    g_models[g_str_68c995d9579163001588967c] = {
       {
         loose = true,
         model_data = 'troop_indian_ps'
@@ -128,13 +128,13 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     g_models[g_str_5fb1b9e0e1af06001770979e_camp_pack_train] = g_models[g_str_5fb1b9e1e1af060017709849_camp_pack_train]
 
     -- Horsemen - Bad Horse
-    g_models[g_str_6153519303385c0016b83c1c] = g_models[g_str_615351a503385c0016b860ef]
+    g_models[g_str_6153519303385c0016b83c1c] = g_models[g_str_68c995d9579163001588966c]
   
     -- Citizen bowmen - Bow Levy
-    g_models[g_str_6153519303385c0016b83c1e] = g_models[g_str_615351a503385c0016b860f3]
+    g_models[g_str_6153519303385c0016b83c1e] = g_models[g_str_68c995d95791630015889670]
 
     -- Javelinmen - Heavy Foot
-    g_models[g_str_6153519303385c0016b83c20] = g_models[g_str_615351a503385c0016b860f5]
+    g_models[g_str_6153519303385c0016b83c20] = g_models[g_str_68c995d95791630015889673]
 
 -- Republican Indian
 -- 500 BC to 321 BC
@@ -142,13 +142,13 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
 -- As of: 20230116
 
     -- War elephants - Elephants General
-    g_models[g_str_615351a503385c0016b8611f_general] = g_models[g_str_615351a503385c0016b860e7_general]
+    g_models[g_str_68c995d957916300158896a2_general] = g_models[g_str_68c995d95791630015889664_general]
 
     -- War elephants - Elephants
-    g_models[g_str_615351a503385c0016b8611f] = g_models[g_str_615351a503385c0016b860e7]
+    g_models[g_str_68c995d957916300158896a2] = g_models[g_str_68c995d95791630015889664]
 
     -- 4-horse chariots with three crew - Chariots General
-    g_models[g_str_615351a503385c0016b86122_general] = {
+    g_models[g_str_68c995d957916300158896a5_general] = {
       {
         n_models = 1,
         model_data = 'troop_indian_hch_general'
@@ -156,7 +156,7 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- 4-horse chariots with three crew\nDeployment dismounted from Chariots General - Raider General
-    g_models[g_str_615351a503385c0016b86122_general_dismounted] = {
+    g_models[g_str_68c995d957916300158896a5_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -169,25 +169,25 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- 4-horse chariots with three crew\nDeployment dismounting as Raider - Chariots General
-    g_models[g_str_615351a503385c0016b86122_general_mounted] = g_models[g_str_615351a503385c0016b86122_general]
+    g_models[g_str_68c995d957916300158896a5_general_mounted] = g_models[g_str_68c995d957916300158896a5_general]
 
     -- 4-horse chariots with three crew - Chariots
-    g_models[g_str_615351a503385c0016b86122] = g_models[g_str_615351a503385c0016b860eb]
+    g_models[g_str_68c995d957916300158896a5] = g_models[g_str_68c995d95791630015889668]
 
     -- 4-horse chariots with three crew\nDeployment dismounted from Chariots General - Raider General
-    g_models[g_str_615351a503385c0016b86122_dismounted] = g_models[g_str_615351a503385c0016b86122_general_dismounted]
+    g_models[g_str_68c995d957916300158896a5_dismounted] = g_models[g_str_68c995d957916300158896a5_general_dismounted]
 
     -- 4-horse chariots with three crew\nDeployment dismounting as Raider - Chariots General
-    g_models[g_str_615351a503385c0016b86122_mounted] = g_models[g_str_615351a503385c0016b860eb]
+    g_models[g_str_68c995d957916300158896a5_mounted] = g_models[g_str_68c995d95791630015889668]
 
     -- Horsemen - Bad Horse
-    g_models[g_str_615351a503385c0016b86125] = g_models[g_str_615351a503385c0016b860ef]
+    g_models[g_str_68c995d957916300158896a8] = g_models[g_str_68c995d9579163001588966c]
 
     -- Citizen bowmen - Bow Levy
-    g_models[g_str_615351a503385c0016b86127] = g_models[g_str_615351a503385c0016b860f3]
+    g_models[g_str_68c995d957916300158896aa] = g_models[g_str_68c995d95791630015889670]
 
     -- Javelinmen - Heavy Foot General
-    g_models[g_str_615351a503385c0016b86129_general] = {
+    g_models[g_str_68c995d957916300158896ad_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -199,7 +199,7 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
       }
     }
     -- Javelinmen\nElephant Screen - Heavy Foot General
-    g_models[g_str_615351a503385c0016b86129_general_elephant_screen] ={
+    g_models[g_str_68c995d957916300158896ad_general_elephant_screen] ={
       {
         n_models = 4,
         fixed_models = {
@@ -212,10 +212,10 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- Javelinmen - Heavy Foot
-    g_models[g_str_615351a503385c0016b86129] = g_models[g_str_615351a503385c0016b860f5]
+    g_models[g_str_68c995d957916300158896ad] = g_models[g_str_68c995d95791630015889673]
 
     -- Javelinmen\nElephant Screen - Heavy Foot
-    g_models[g_str_615351a503385c0016b86129_elephant_screen] = g_models[g_str_615351a503385c0016b860f5]
+    g_models[g_str_68c995d957916300158896ad_elephant_screen] = g_models[g_str_68c995d95791630015889673]
 
     -- Classical Indian Camp
     g_models[g_str_5fb1b9e0e1af0600177097b1_camp] = g_models[g_str_5fb1b9e0e1af06001770979e_camp] 
@@ -227,13 +227,13 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
 -- As of: 20230116
 
     -- War elephants - Elephants General
-    g_models[g_str_615351a503385c0016b86131_general] = g_models[g_str_615351a503385c0016b860e7_general]
+    g_models[g_str_68c995d957916300158896b5_general] = g_models[g_str_68c995d95791630015889664_general]
 
     -- War elephants - Elephants
-    g_models[g_str_615351a503385c0016b86131] = g_models[g_str_615351a503385c0016b860e7]
+    g_models[g_str_68c995d957916300158896b5] = g_models[g_str_68c995d95791630015889664]
 
     -- Light horsemen - Jav Cav General
-    g_models[g_str_615351a503385c0016b86134_general] = {
+    g_models[g_str_68c995d957916300158896b8_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -244,14 +244,14 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- Light horsemen - Jav Cav
-    g_models[g_str_615351a503385c0016b86134] = {
+    g_models[g_str_68c995d957916300158896b8] = {
       {
         model_data = 'troop_indian_light_cavalry'
       }
     }
 
     -- Spearmen with long spears - Light Spear General
-    g_models[g_str_615351a503385c0016b86136_general] = {
+    g_models[g_str_68c995d957916300158896ba_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -263,24 +263,24 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- Spearmen with long spears - Light Spear
-    g_models[g_str_615351a503385c0016b86136] = {
+    g_models[g_str_68c995d957916300158896ba] = {
       {
         model_data = 'troop_indian_pk'
       }
     }
 
     -- Spearmen with short spears - Light Foot
-    g_models[g_str_615351a503385c0016b86138] = {
+    g_models[g_str_68c995d957916300158896bc] = {
       {
         model_data = 'troop_indian_sp'
       }
     }
 
     -- Bowmen - Skirmishers
-    g_models[g_str_615351a503385c0016b8613a] = g_models[g_str_615351a503385c0016b860fd]
+    g_models[g_str_68c995d957916300158896be] = g_models[g_str_68c995d9579163001588967b]
     
     -- Bowmen - Bow Levy
-    g_models[g_str_615351a503385c0016b8613b] = {
+    g_models[g_str_68c995d957916300158896bf] = {
       {
         loose = true,
         n_models = 3,
@@ -292,17 +292,17 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     }
 
     -- Bowmen - Archers
-    g_models[g_str_615351a503385c0016b8613c] = {
+    g_models[g_str_68c995d957916300158896c0] = {
       {
         model_data = 'troop_indian_bow'
       }
     }
 
     -- Javelinmen - Heavy Foot
-    g_models[g_str_615351a503385c0016b8613e] = g_models[g_str_615351a503385c0016b860f5]
+    g_models[g_str_68c995d957916300158896c3] = g_models[g_str_68c995d95791630015889673]
 
     -- Javelinmen - Heavy Foot
-    g_models[g_str_615351a503385c0016b8613e_elephant_screen] = g_models[g_str_615351a503385c0016b860f5]
+    g_models[g_str_68c995d957916300158896c3_elephant_screen] = g_models[g_str_68c995d95791630015889673]
 
     -- Classical Indian Camp
     g_models[g_str_5fb1b9e0e1af0600177097b8_camp] = g_models[g_str_5fb1b9e0e1af06001770979e_camp] 

@@ -19,20 +19,20 @@ army['5fb1b9dee1af0600177096a6']={
       endDate=-148,
     },
   },
-  g_base_definitions[g_str_615351a403385c0016b85d12_general],
-  g_base_definitions[g_str_615351a403385c0016b85d12],
-  g_base_definitions[g_str_615351a403385c0016b85d15_general],
-  g_base_definitions[g_str_615351a403385c0016b85d15],
-  g_base_definitions[g_str_615351a403385c0016b85d18],
-  g_base_definitions[g_str_615351a403385c0016b85d1b],
-  g_base_definitions[g_str_615351a403385c0016b85d1d],
-  g_base_definitions[g_str_615351a403385c0016b85d1f],
-  g_base_definitions[g_str_615351a403385c0016b85d21],
-  g_base_definitions[g_str_615351a403385c0016b85d23],
-  g_base_definitions[g_str_615351a403385c0016b85d25],
-  g_base_definitions[g_str_615351a403385c0016b85d28],
-  g_base_definitions[g_str_615351a403385c0016b85d2b],
-  g_base_definitions[g_str_615351a403385c0016b85d2d],
+  g_base_definitions[g_str_68c995d85791630015889278_general],
+  g_base_definitions[g_str_68c995d85791630015889278],
+  g_base_definitions[g_str_68c995d8579163001588927b_general],
+  g_base_definitions[g_str_68c995d8579163001588927b],
+  g_base_definitions[g_str_68c995d8579163001588927e],
+  g_base_definitions[g_str_68c995d85791630015889281],
+  g_base_definitions[g_str_68c995d85791630015889283],
+  g_base_definitions[g_str_68c995d85791630015889285],
+  g_base_definitions[g_str_68c995d85791630015889287],
+  g_base_definitions[g_str_68c995d85791630015889289],
+  g_base_definitions[g_str_68c995d8579163001588928b],
+  g_base_definitions[g_str_68c995d8579163001588928e],
+  g_base_definitions[g_str_68c995d85791630015889291],
+  g_base_definitions[g_str_68c995d85791630015889293],
   g_base_definitions[g_str_5fb1b9dee1af0600177096a6_camp],
   g_base_definitions[g_str_5fb1b9dee1af0600177096a6_camp_fortified],
   g_base_definitions[g_str_5fb1b9dee1af0600177096a6_camp_pack_train],
@@ -45,6 +45,10 @@ if nil == armies["Hellenistic World"] then
   armies["Hellenistic World"] ={}
 end
 armies["Hellenistic World"]["Later Macedonian  260 to 148 BC"] = army["5fb1b9dee1af0600177096a6"]
+if nil == armies["Alexander and Successors"] then
+  armies["Alexander and Successors"] ={}
+end
+armies["Alexander and Successors"]["Later Macedonian  260 to 148 BC"] = army["5fb1b9dee1af0600177096a6"]
 if nil == armies["All"] then
   armies["All"] ={}
 end

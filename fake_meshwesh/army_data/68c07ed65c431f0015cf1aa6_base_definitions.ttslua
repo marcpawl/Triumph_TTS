@@ -1,0 +1,82 @@
+g_str_68c995eb579163001588c686_general='68c995eb579163001588c686_general'
+g_base_definitions[g_str_68c995eb579163001588c686_general]={
+  id=g_str_68c995eb579163001588c686_general,
+  name='Raiders General',
+  min=0,
+  max=1,
+  description='Experienced raiders and/or nobles in carved wooden helmets and wooden rod armor',
+  general=true,
+  troop_type="Raiders",
+  troop_option_id="68c995eb579163001588c685",
+}
+g_str_68c995eb579163001588c686='68c995eb579163001588c686'
+g_base_definitions[g_str_68c995eb579163001588c686]={
+  id=g_str_68c995eb579163001588c686,
+  name='Raiders',
+  min=0,
+  max=2,
+  description='Experienced raiders and/or nobles in carved wooden helmets and wooden rod armor',
+  troop_type="Raiders",
+  troop_option_id="68c995eb579163001588c685",
+}
+g_str_68c995eb579163001588c687_general='68c995eb579163001588c687_general'
+g_base_definitions[g_str_68c995eb579163001588c687_general]={
+  id=g_str_68c995eb579163001588c687_general,
+  name='Heavy Foot General',
+  min=0,
+  max=1,
+  description='Experienced raiders and/or nobles in carved wooden helmets and wooden rod armor',
+  general=true,
+  troop_type="Heavy Foot",
+  troop_option_id="68c995eb579163001588c685",
+}
+g_str_68c995eb579163001588c687='68c995eb579163001588c687'
+g_base_definitions[g_str_68c995eb579163001588c687]={
+  id=g_str_68c995eb579163001588c687,
+  name='Heavy Foot',
+  min=0,
+  max=2,
+  description='Experienced raiders and/or nobles in carved wooden helmets and wooden rod armor',
+  troop_type="Heavy Foot",
+  troop_option_id="68c995eb579163001588c685",
+}
+g_str_68c995eb579163001588c689_general='68c995eb579163001588c689_general'
+g_base_definitions[g_str_68c995eb579163001588c689_general]={
+  id=g_str_68c995eb579163001588c689_general,
+  name='Light Foot General',
+  min=4,
+  max=1,
+  description='foot armed with stone- and copper-tipped axes and lances, or metal double-ended short swords',
+  general=true,
+  troop_type="Light Foot",
+  troop_option_id="68c995eb579163001588c688",
+}
+g_str_68c995eb579163001588c689='68c995eb579163001588c689'
+g_base_definitions[g_str_68c995eb579163001588c689]={
+  id=g_str_68c995eb579163001588c689,
+  name='Light Foot',
+  min=4,
+  max=12,
+  description='foot armed with stone- and copper-tipped axes and lances, or metal double-ended short swords',
+  troop_type="Light Foot",
+  troop_option_id="68c995eb579163001588c688",
+}
+g_str_68c995eb579163001588c68b='68c995eb579163001588c68b'
+g_base_definitions[g_str_68c995eb579163001588c68b]={
+  id=g_str_68c995eb579163001588c68b,
+  name='Rabble',
+  min=6,
+  max=18,
+  description='foot with bows, javelins, and atlatls',
+  troop_type="Rabble",
+  troop_option_id="68c995eb579163001588c68a",
+}
+g_str_68c07ed65c431f0015cf1aa6_camp='68c07ed65c431f0015cf1aa6_camp'
+g_base_definitions[g_str_68c07ed65c431f0015cf1aa6_camp]={
+  id=g_str_68c07ed65c431f0015cf1aa6_camp,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Camp',
+  troop_type="Camp",
+}

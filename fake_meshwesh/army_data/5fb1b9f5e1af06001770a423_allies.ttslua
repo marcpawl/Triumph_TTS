@@ -15,6 +15,6 @@ army['5fb1b9f5e1af06001770a423_ally_5fb1b9f5e1af06001770a3fe'] = {
     name='(only Toltec-Chichimec) Chichimec allies',
     id='5fb1b9f5e1af06001770a423_ally_5fb1b9f5e1af06001770a3fe',
   },
-  g_base_definitions['6153519d03385c0016b84cd4'],
-  g_base_definitions['6153519d03385c0016b84cd6'],
+  g_base_definitions['68c995d1579163001588825b'],
+  g_base_definitions['68c995d1579163001588825d'],
 }

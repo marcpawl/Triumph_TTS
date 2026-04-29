@@ -11,7 +11,7 @@ army['5fb1b9dce1af0600177095b2'].data.base = "tile_grass"
 -- As of: 20210407
 
     -- JavCav General
-    g_models[g_str_615351a203385c0016b85913_general] = {
+    g_models[g_str_68c995d75791630015888e7d_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -20,10 +20,10 @@ army['5fb1b9dce1af0600177095b2'].data.base = "tile_grass"
         }
       }
     }
-    g_models[g_str_615351a203385c0016b85913_general_mounted] = g_models[g_str_615351a203385c0016b85913_general]
+    g_models[g_str_68c995d75791630015888e7d_general_mounted] = g_models[g_str_68c995d75791630015888e7d_general]
 
     -- Caetrati -  Light Foot General as dismounted javcav
-    g_models[g_str_615351a203385c0016b85913_general_dismounted] = {
+    g_models[g_str_68c995d75791630015888e7d_general_dismounted] = {
       {
         n_models = 3,
         fixed_models = {
@@ -35,32 +35,32 @@ army['5fb1b9dce1af0600177095b2'].data.base = "tile_grass"
     }
 
     -- JavCav
-    g_models[g_str_615351a203385c0016b85913] = {
+    g_models[g_str_68c995d75791630015888e7d] = {
       {
         model_data = 'troop_ancient_spanish_lh'
       }
     }
-    g_models[g_str_615351a203385c0016b85913_mounted] = g_models[g_str_615351a203385c0016b85913]
+    g_models[g_str_68c995d75791630015888e7d_mounted] = g_models[g_str_68c995d75791630015888e7d]
 
     -- Caetrati -  Light Foot as dismounted javcav
-    g_models[g_str_615351a203385c0016b85913_dismounted] = {
+    g_models[g_str_68c995d75791630015888e7d_dismounted] = {
       {
         model_data = 'troop_ancient_spanish_caetrati'
       }
     }
 
     -- Scutarii - Light Foot
-    g_models[g_str_615351a203385c0016b85916] = {
+    g_models[g_str_68c995d75791630015888e80] = {
       {
         model_data = 'troop_ancient_spanish_scutarii'
       }
     }
 
     -- Caetrati - Light Foot
-    g_models[g_str_615351a203385c0016b85918] = g_models[g_str_615351a203385c0016b85913_dismounted]
+    g_models[g_str_68c995d75791630015888e82] = g_models[g_str_68c995d75791630015888e7d_dismounted]
 
     -- Skirmishing Slingers
-    g_models[g_str_615351a203385c0016b8591a] = {
+    g_models[g_str_68c995d75791630015888e84] = {
       {
         model_data = 'troop_ancient_spanish_slingers',
         loose = true
@@ -68,7 +68,7 @@ army['5fb1b9dce1af0600177095b2'].data.base = "tile_grass"
     }
 
     -- Mercenaries Celtiberian Scutarii - Raiders
-    g_models[g_str_615351a203385c0016b8591c] = {
+    g_models[g_str_68c995d75791630015888e86] = {
       {
         model_data = 'troop_ancient_spanish_scutarii'
       }
@@ -91,11 +91,11 @@ army['5fb1b9dce1af0600177095b2'].data.base = "tile_grass"
 -- As of: 20210407
 
     -- JavCav General
-    g_models[g_str_615351a203385c0016b85923_general] = g_models[g_str_615351a203385c0016b85913_general]
-    g_models[g_str_615351a203385c0016b85923_general_mounted] = g_models[g_str_615351a203385c0016b85913_general]
+    g_models[g_str_68c995d75791630015888e8d_general] = g_models[g_str_68c995d75791630015888e7d_general]
+    g_models[g_str_68c995d75791630015888e8d_general_mounted] = g_models[g_str_68c995d75791630015888e7d_general]
 
     -- Scutarii -  Raider General as dismounted javcav
-    g_models[g_str_615351a203385c0016b85923_general_dismounted] = {
+    g_models[g_str_68c995d75791630015888e8d_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -108,20 +108,20 @@ army['5fb1b9dce1af0600177095b2'].data.base = "tile_grass"
     }
 
     -- JavCav
-    g_models[g_str_615351a203385c0016b85923] = g_models[g_str_615351a203385c0016b85913]
-    g_models[g_str_615351a203385c0016b85923_mounted] = g_models[g_str_615351a203385c0016b85913]
+    g_models[g_str_68c995d75791630015888e8d] = g_models[g_str_68c995d75791630015888e7d]
+    g_models[g_str_68c995d75791630015888e8d_mounted] = g_models[g_str_68c995d75791630015888e7d]
 
     -- Scutarii -  Raider as dismounted javcav
-    g_models[g_str_615351a203385c0016b85923_dismounted] = g_models[g_str_615351a203385c0016b85916]
+    g_models[g_str_68c995d75791630015888e8d_dismounted] = g_models[g_str_68c995d75791630015888e80]
 
     -- Scutarii -  Raider
-    g_models[g_str_615351a203385c0016b85926] = g_models[g_str_615351a203385c0016b85916]
+    g_models[g_str_68c995d75791630015888e90] = g_models[g_str_68c995d75791630015888e80]
 
     -- Caetrati - Light Foot
-    g_models[g_str_615351a203385c0016b85928] = g_models[g_str_615351a203385c0016b85913_dismounted]
+    g_models[g_str_68c995d75791630015888e92] = g_models[g_str_68c995d75791630015888e7d_dismounted]
 
     -- Skirmishing Slingers
-    g_models[g_str_615351a203385c0016b8592a] = g_models[g_str_615351a203385c0016b8591a]
+    g_models[g_str_68c995d75791630015888e94] = g_models[g_str_68c995d75791630015888e84]
 
     --Celtiberians Camp
     g_models[g_str_5fb1b9dce1af0600177095b2_camp] = g_models[g_str_5fb1b9dce1af0600177095ab_camp]

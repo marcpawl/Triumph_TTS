@@ -43,76 +43,76 @@ army['5fb1b9f2e1af06001770a26d_ally_5fb1b9f2e1af06001770a215'] = {
     name='(Post-Rebellion Tang) Tribal Khitan or Hsi allies',
     id='5fb1b9f2e1af06001770a26d_ally_5fb1b9f2e1af06001770a215',
   },
-  g_base_definitions['6153519b03385c0016b84a22'],
-  g_base_definitions['6153519b03385c0016b84a24'],
+  g_base_definitions['68c995cf5791630015887f9f'],
+  g_base_definitions['68c995cf5791630015887fa1'],
 }
 army['5fb1b9f2e1af06001770a26d_ally_5fb1b9efe1af06001770a062'] = {
   data={
     name='(Post-Rebellion Tang) Uighur allies',
     id='5fb1b9f2e1af06001770a26d_ally_5fb1b9efe1af06001770a062',
   },
-  g_base_definitions['6153519a03385c0016b847d6'],
-  g_base_definitions['6153519a03385c0016b847d8'],
-  g_base_definitions['6153519a03385c0016b847da'],
-  g_base_definitions['6153519a03385c0016b847dc'],
+  g_base_definitions['68c995ce5791630015887d57'],
+  g_base_definitions['68c995ce5791630015887d59'],
+  g_base_definitions['68c995ce5791630015887d5b'],
+  g_base_definitions['68c995ce5791630015887d5d'],
 }
 army['5fb1b9f2e1af06001770a26d_ally_5fb1b9f0e1af06001770a0dd'] = {
   data={
     name='(Post-Rebellion Tang) Tibetan ally',
     id='5fb1b9f2e1af06001770a26d_ally_5fb1b9f0e1af06001770a0dd',
   },
-  g_base_definitions['6153519a03385c0016b84889'],
-  g_base_definitions['6153519a03385c0016b8488b'],
+  g_base_definitions['68c995ce5791630015887e06'],
+  g_base_definitions['68c995ce5791630015887e08'],
 }
 army['5fb1b9f2e1af06001770a26d_ally_5fb1b9f0e1af06001770a0f7'] = {
   data={
     name='(Post-Rebellion Tang) Nanzhao allies',
     id='5fb1b9f2e1af06001770a26d_ally_5fb1b9f0e1af06001770a0f7',
   },
-  g_base_definitions['6153519a03385c0016b848b4'],
-  g_base_definitions['6153519a03385c0016b848b5'],
-  g_base_definitions['6153519a03385c0016b848b7'],
-  g_base_definitions['6153519a03385c0016b848b9'],
-  g_base_definitions['6153519a03385c0016b848bb'],
-  g_base_definitions['6153519a03385c0016b848bc'],
-  g_base_definitions['6153519a03385c0016b848bf'],
-  g_base_definitions['6153519a03385c0016b848c1'],
+  g_base_definitions['68c995cf5791630015887e31'],
+  g_base_definitions['68c995cf5791630015887e32'],
+  g_base_definitions['68c995cf5791630015887e34'],
+  g_base_definitions['68c995cf5791630015887e36'],
+  g_base_definitions['68c995cf5791630015887e38'],
+  g_base_definitions['68c995cf5791630015887e39'],
+  g_base_definitions['68c995cf5791630015887e3c'],
+  g_base_definitions['68c995cf5791630015887e3e'],
 }
 army['5fb1b9f2e1af06001770a26d_ally_5fb1b9f2e1af06001770a282'] = {
   data={
     name='(Post-Rebellion Tang) Shatuo allies',
     id='5fb1b9f2e1af06001770a26d_ally_5fb1b9f2e1af06001770a282',
   },
-  g_base_definitions['6153519b03385c0016b84aa7'],
-  g_base_definitions['6153519b03385c0016b84aa9'],
-  g_base_definitions['6153519b03385c0016b84aab'],
+  g_base_definitions['68c995d05791630015888024'],
+  g_base_definitions['68c995d05791630015888026'],
+  g_base_definitions['68c995d05791630015888028'],
 }
 army['5fb1b9f2e1af06001770a26d_ally_5fb1b9f3e1af06001770a288'] = {
   data={
     name='(Post-Rebellion Tang) Shatuo allies',
     id='5fb1b9f2e1af06001770a26d_ally_5fb1b9f3e1af06001770a288',
   },
-  g_base_definitions['6153519b03385c0016b84aaf'],
-  g_base_definitions['6153519b03385c0016b84ab1'],
-  g_base_definitions['6153519b03385c0016b84ab3'],
-  g_base_definitions['6153519b03385c0016b84ab5'],
-  g_base_definitions['6153519b03385c0016b84ab6'],
+  g_base_definitions['68c995d0579163001588802c'],
+  g_base_definitions['68c995d0579163001588802e'],
+  g_base_definitions['68c995d05791630015888030'],
+  g_base_definitions['68c995d05791630015888032'],
+  g_base_definitions['68c995d05791630015888033'],
 }
 army['5fb1b9f2e1af06001770a26d_ally_5fb1b9efe1af06001770a062'] = {
   data={
     name='(Post-Rebellion Tang) Uighur allies',
     id='5fb1b9f2e1af06001770a26d_ally_5fb1b9efe1af06001770a062',
   },
-  g_base_definitions['6153519a03385c0016b847d6'],
-  g_base_definitions['6153519a03385c0016b847d8'],
-  g_base_definitions['6153519a03385c0016b847da'],
-  g_base_definitions['6153519a03385c0016b847dc'],
+  g_base_definitions['68c995ce5791630015887d57'],
+  g_base_definitions['68c995ce5791630015887d59'],
+  g_base_definitions['68c995ce5791630015887d5b'],
+  g_base_definitions['68c995ce5791630015887d5d'],
 }
 army['5fb1b9f2e1af06001770a26d_ally_5fb1b9f0e1af06001770a0dd'] = {
   data={
     name='Tibetan allies',
     id='5fb1b9f2e1af06001770a26d_ally_5fb1b9f0e1af06001770a0dd',
   },
-  g_base_definitions['6153519a03385c0016b84889'],
-  g_base_definitions['6153519a03385c0016b8488b'],
+  g_base_definitions['68c995ce5791630015887e06'],
+  g_base_definitions['68c995ce5791630015887e08'],
 }

@@ -23,24 +23,24 @@ army['5fb1b9ede1af060017709f83_ally_5fb1b9eae1af060017709e02'] = {
     name='Khazar allies',
     id='5fb1b9ede1af060017709f83_ally_5fb1b9eae1af060017709e02',
   },
-  g_base_definitions['6153519803385c0016b8446d'],
-  g_base_definitions['6153519803385c0016b84470'],
-  g_base_definitions['6153519803385c0016b84472'],
-  g_base_definitions['6153519803385c0016b84474'],
+  g_base_definitions['68c995cc57916300158879e9'],
+  g_base_definitions['68c995cc57916300158879ec'],
+  g_base_definitions['68c995cc57916300158879ee'],
+  g_base_definitions['68c995cc57916300158879f0'],
 }
 army['5fb1b9ede1af060017709f83_ally_5fb1b9eae1af060017709e09'] = {
   data={
     name='Khazar allies',
     id='5fb1b9ede1af060017709f83_ally_5fb1b9eae1af060017709e09',
   },
-  g_base_definitions['6153519803385c0016b84478'],
-  g_base_definitions['6153519803385c0016b8447a'],
-  g_base_definitions['6153519803385c0016b8447c'],
+  g_base_definitions['68c995cc57916300158879f4'],
+  g_base_definitions['68c995cc57916300158879f6'],
+  g_base_definitions['68c995cc57916300158879f8'],
 }
 army['5fb1b9ede1af060017709f83_ally_5fb1b9eae1af060017709e1e'] = {
   data={
     name='Cuman allies',
     id='5fb1b9ede1af060017709f83_ally_5fb1b9eae1af060017709e1e',
   },
-  g_base_definitions['6153519803385c0016b844a0'],
+  g_base_definitions['68c995cc5791630015887a1c'],
 }

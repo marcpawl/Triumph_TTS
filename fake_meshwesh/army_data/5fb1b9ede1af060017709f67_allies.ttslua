@@ -23,24 +23,24 @@ army['5fb1b9ede1af060017709f67_ally_5fb1b9eee1af060017709fdb'] = {
     name='Armenian allies',
     id='5fb1b9ede1af060017709f67_ally_5fb1b9eee1af060017709fdb',
   },
-  g_base_definitions['6153519903385c0016b8472d'],
-  g_base_definitions['6153519903385c0016b8472f'],
-  g_base_definitions['6153519903385c0016b84730'],
-  g_base_definitions['6153519903385c0016b84732'],
+  g_base_definitions['68c995ce5791630015887caa'],
+  g_base_definitions['68c995ce5791630015887cac'],
+  g_base_definitions['68c995ce5791630015887cad'],
+  g_base_definitions['68c995ce5791630015887caf'],
 }
 army['5fb1b9ede1af060017709f67_ally_5fb1b9ede1af060017709fa5'] = {
   data={
     name='Saracen allies',
     id='5fb1b9ede1af060017709f67_ally_5fb1b9ede1af060017709fa5',
   },
-  g_base_definitions['6153519903385c0016b846ed'],
-  g_base_definitions['6153519903385c0016b846ef'],
-  g_base_definitions['6153519903385c0016b846f1'],
+  g_base_definitions['68c995ce5791630015887c6a'],
+  g_base_definitions['68c995ce5791630015887c6c'],
+  g_base_definitions['68c995ce5791630015887c6e'],
 }
 army['5fb1b9ede1af060017709f67_ally_5fb1b9ede1af060017709f47'] = {
   data={
     name='Bedouin allies',
     id='5fb1b9ede1af060017709f67_ally_5fb1b9ede1af060017709f47',
   },
-  g_base_definitions['6153519903385c0016b84670'],
+  g_base_definitions['68c995cd5791630015887bed'],
 }

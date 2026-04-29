@@ -18,9 +18,9 @@ army['5fb1b9e3e1af060017709964']={
       endDate=578,
     },
   },
-  g_base_definitions[g_str_615351a703385c0016b86733],
-  g_base_definitions[g_str_615351a703385c0016b86735_general],
-  g_base_definitions[g_str_615351a703385c0016b86735],
+  g_base_definitions[g_str_68c995dc5791630015889cd3],
+  g_base_definitions[g_str_68c995dc5791630015889cd5_general],
+  g_base_definitions[g_str_68c995dc5791630015889cd5],
   g_base_definitions[g_str_5fb1b9e3e1af060017709964_camp],
 }
 if nil == armies["Meshwesh id"] then

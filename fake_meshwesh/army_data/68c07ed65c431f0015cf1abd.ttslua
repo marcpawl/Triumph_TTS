@@ -1,0 +1,52 @@
+-- 68c07ed65c431f0015cf1abd Lower Columbia First Nations  1100 to 1770 AD
+
+army['68c07ed65c431f0015cf1abd']={
+  data={
+    invasionRatings={
+      3,
+    },
+    maneuverRatings={
+      2,
+    },
+    homeTopographies={
+      'Hilly',
+    },
+    name='Lower Columbia First Nations  1100 to 1770 AD',
+    id='68c07ed65c431f0015cf1abd',
+    dateRange={
+      startDate=1100,
+      endDate=1770,
+    },
+  },
+  g_base_definitions[g_str_68c995ec579163001588c6a3_general],
+  g_base_definitions[g_str_68c995ec579163001588c6a3],
+  g_base_definitions[g_str_68c995ec579163001588c6a5],
+  g_base_definitions[g_str_68c995ec579163001588c6a5_shower_shooting],
+  g_base_definitions[g_str_68c995ec579163001588c6a8],
+  g_base_definitions[g_str_68c995ec579163001588c6aa],
+  g_base_definitions[g_str_68c07ed65c431f0015cf1abd_camp],
+}
+if nil == armies["Meshwesh id"] then
+  armies["Meshwesh id"] ={}
+end
+armies["Meshwesh id"]["68c07ed65c431f0015cf1abd"] = army["68c07ed65c431f0015cf1abd"]
+if nil == armies["New World"] then
+  armies["New World"] ={}
+end
+armies["New World"]["Lower Columbia First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1abd"]
+if nil == armies["North America"] then
+  armies["North America"] ={}
+end
+armies["North America"]["Lower Columbia First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1abd"]
+if nil == armies["All"] then
+  armies["All"] ={}
+end
+armies["All"]["Lower Columbia First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1abd"]
+if nil == army_dates then
+  army_dates={}
+end
+army_dates["68c07ed65c431f0015cf1abd"] = {}
+army_dates["68c07ed65c431f0015cf1abd"]["1100 AD to 1770 AD"] = {
+  startDate=1100,
+  endDate=1770
+}

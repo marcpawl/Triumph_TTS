@@ -19,17 +19,17 @@ army['5fb1b9f0e1af06001770a142_ally_5fb1b9f0e1af06001770a152'] = {
     name='Zhou Chinese allies',
     id='5fb1b9f0e1af06001770a142_ally_5fb1b9f0e1af06001770a152',
   },
-  g_base_definitions['6153519a03385c0016b84926'],
-  g_base_definitions['6153519a03385c0016b84928'],
-  g_base_definitions['6153519a03385c0016b8492a'],
-  g_base_definitions['6153519a03385c0016b8492c'],
+  g_base_definitions['68c995cf5791630015887ea3'],
+  g_base_definitions['68c995cf5791630015887ea5'],
+  g_base_definitions['68c995cf5791630015887ea7'],
+  g_base_definitions['68c995cf5791630015887ea9'],
 }
 army['5fb1b9f0e1af06001770a142_ally_5fb1b9f0e1af06001770a158'] = {
   data={
     name='Zhou Chinese allies',
     id='5fb1b9f0e1af06001770a142_ally_5fb1b9f0e1af06001770a158',
   },
-  g_base_definitions['6153519a03385c0016b84930'],
-  g_base_definitions['6153519a03385c0016b84932'],
-  g_base_definitions['6153519a03385c0016b84934'],
+  g_base_definitions['68c995cf5791630015887ead'],
+  g_base_definitions['68c995cf5791630015887eaf'],
+  g_base_definitions['68c995cf5791630015887eb1'],
 }

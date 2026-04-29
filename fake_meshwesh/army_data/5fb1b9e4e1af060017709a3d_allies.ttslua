@@ -35,57 +35,57 @@ army['5fb1b9e4e1af060017709a3d_ally_5fb1b9e7e1af060017709bc4'] = {
     name='Aghlabid allies',
     id='5fb1b9e4e1af060017709a3d_ally_5fb1b9e7e1af060017709bc4',
   },
-  g_base_definitions['6153519603385c0016b840ff'],
-  g_base_definitions['6153519603385c0016b84101'],
-  g_base_definitions['6153519603385c0016b84103'],
-  g_base_definitions['6153519603385c0016b84106'],
+  g_base_definitions['68c995cb5791630015887661'],
+  g_base_definitions['68c995cb5791630015887663'],
+  g_base_definitions['68c995cb5791630015887665'],
+  g_base_definitions['68c995cb5791630015887668'],
 }
 army['5fb1b9e4e1af060017709a3d_ally_5fb1b9e7e1af060017709be0'] = {
   data={
     name='Umayyad allies',
     id='5fb1b9e4e1af060017709a3d_ally_5fb1b9e7e1af060017709be0',
   },
-  g_base_definitions['6153519603385c0016b8411d'],
-  g_base_definitions['6153519603385c0016b8411f'],
-  g_base_definitions['6153519603385c0016b84120'],
-  g_base_definitions['6153519603385c0016b84122'],
-  g_base_definitions['6153519603385c0016b84124'],
-  g_base_definitions['6153519603385c0016b84126'],
+  g_base_definitions['68c995cb579163001588767f'],
+  g_base_definitions['68c995cb5791630015887681'],
+  g_base_definitions['68c995cb5791630015887682'],
+  g_base_definitions['68c995cb5791630015887684'],
+  g_base_definitions['68c995cb5791630015887686'],
+  g_base_definitions['68c995cb5791630015887688'],
 }
 army['5fb1b9e4e1af060017709a3d_ally_5fb1b9ebe1af060017709e25'] = {
   data={
     name='Byzantine allies',
     id='5fb1b9e4e1af060017709a3d_ally_5fb1b9ebe1af060017709e25',
   },
-  g_base_definitions['6153519803385c0016b844a4'],
-  g_base_definitions['6153519803385c0016b844a6'],
-  g_base_definitions['6153519803385c0016b844a8'],
-  g_base_definitions['6153519803385c0016b844aa'],
-  g_base_definitions['6153519803385c0016b844ab'],
+  g_base_definitions['68c995cc5791630015887a20'],
+  g_base_definitions['68c995cc5791630015887a22'],
+  g_base_definitions['68c995cc5791630015887a24'],
+  g_base_definitions['68c995cc5791630015887a26'],
+  g_base_definitions['68c995cc5791630015887a27'],
 }
 army['5fb1b9e4e1af060017709a3d_ally_5fb1b9ebe1af060017709e47'] = {
   data={
     name='Byzantine allies',
     id='5fb1b9e4e1af060017709a3d_ally_5fb1b9ebe1af060017709e47',
   },
-  g_base_definitions['6153519803385c0016b844d3'],
-  g_base_definitions['6153519803385c0016b844d5'],
+  g_base_definitions['68c995cc5791630015887a4f'],
+  g_base_definitions['68c995cc5791630015887a51'],
 }
 army['5fb1b9e4e1af060017709a3d_ally_5fb1b9e4e1af060017709a66'] = {
   data={
     name='Imperial allies',
     id='5fb1b9e4e1af060017709a3d_ally_5fb1b9e4e1af060017709a66',
   },
-  g_base_definitions['6153519503385c0016b83ef5'],
-  g_base_definitions['6153519503385c0016b83ef6'],
-  g_base_definitions['6153519503385c0016b83ef8'],
-  g_base_definitions['6153519503385c0016b83efa'],
+  g_base_definitions['68c995ca5791630015887457'],
+  g_base_definitions['68c995ca5791630015887458'],
+  g_base_definitions['68c995ca579163001588745a'],
+  g_base_definitions['68c995ca579163001588745c'],
 }
 army['5fb1b9e4e1af060017709a3d_ally_5fb1b9e4e1af060017709a53'] = {
   data={
     name='Norman allies',
     id='5fb1b9e4e1af060017709a3d_ally_5fb1b9e4e1af060017709a53',
   },
-  g_base_definitions['6153519503385c0016b83ee6'],
-  g_base_definitions['6153519503385c0016b83ee8'],
+  g_base_definitions['68c995c95791630015887448'],
+  g_base_definitions['68c995c9579163001588744a'],
 }

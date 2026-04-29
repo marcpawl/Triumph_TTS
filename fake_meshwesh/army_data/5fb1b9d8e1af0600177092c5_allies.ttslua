@@ -47,85 +47,85 @@ army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af0600177092b9'] = {
     name='Sumerian subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af0600177092b9',
   },
-  g_base_definitions['6153518d03385c0016b83499'],
-  g_base_definitions['6153518d03385c0016b8349b'],
-  g_base_definitions['6153518d03385c0016b8349d'],
-  g_base_definitions['6153518d03385c0016b8349f'],
+  g_base_definitions['68c995c35791630015886a2c'],
+  g_base_definitions['68c995c35791630015886a2e'],
+  g_base_definitions['68c995c35791630015886a30'],
+  g_base_definitions['68c995c35791630015886a32'],
 }
 army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af060017709300'] = {
   data={
     name='Elamite subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af060017709300',
   },
-  g_base_definitions['6153518d03385c0016b83501'],
+  g_base_definitions['68c995c35791630015886a94'],
 }
 army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d9e1af06001770932f'] = {
   data={
     name='Syrian subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d9e1af06001770932f',
   },
-  g_base_definitions['6153518d03385c0016b83538'],
-  g_base_definitions['6153518d03385c0016b8353a'],
-  g_base_definitions['6153518d03385c0016b8353c'],
-  g_base_definitions['6153518d03385c0016b8353e'],
-  g_base_definitions['6153518d03385c0016b83540'],
-  g_base_definitions['6153518d03385c0016b83541'],
+  g_base_definitions['68c995c35791630015886acb'],
+  g_base_definitions['68c995c35791630015886acd'],
+  g_base_definitions['68c995c35791630015886acf'],
+  g_base_definitions['68c995c35791630015886ad1'],
+  g_base_definitions['68c995c35791630015886ad3'],
+  g_base_definitions['68c995c35791630015886ad4'],
 }
 army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af0600177092b9'] = {
   data={
     name='Sumerian subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af0600177092b9',
   },
-  g_base_definitions['6153518d03385c0016b83499'],
-  g_base_definitions['6153518d03385c0016b8349b'],
-  g_base_definitions['6153518d03385c0016b8349d'],
-  g_base_definitions['6153518d03385c0016b8349f'],
+  g_base_definitions['68c995c35791630015886a2c'],
+  g_base_definitions['68c995c35791630015886a2e'],
+  g_base_definitions['68c995c35791630015886a30'],
+  g_base_definitions['68c995c35791630015886a32'],
 }
 army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d9e1af06001770932f'] = {
   data={
     name='Syrian subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d9e1af06001770932f',
   },
-  g_base_definitions['6153518d03385c0016b83538'],
-  g_base_definitions['6153518d03385c0016b8353a'],
-  g_base_definitions['6153518d03385c0016b8353c'],
-  g_base_definitions['6153518d03385c0016b8353e'],
-  g_base_definitions['6153518d03385c0016b83540'],
-  g_base_definitions['6153518d03385c0016b83541'],
+  g_base_definitions['68c995c35791630015886acb'],
+  g_base_definitions['68c995c35791630015886acd'],
+  g_base_definitions['68c995c35791630015886acf'],
+  g_base_definitions['68c995c35791630015886ad1'],
+  g_base_definitions['68c995c35791630015886ad3'],
+  g_base_definitions['68c995c35791630015886ad4'],
 }
 army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af0600177092b9'] = {
   data={
     name='Sumerian subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af0600177092b9',
   },
-  g_base_definitions['6153518d03385c0016b83499'],
-  g_base_definitions['6153518d03385c0016b8349b'],
-  g_base_definitions['6153518d03385c0016b8349d'],
-  g_base_definitions['6153518d03385c0016b8349f'],
+  g_base_definitions['68c995c35791630015886a2c'],
+  g_base_definitions['68c995c35791630015886a2e'],
+  g_base_definitions['68c995c35791630015886a30'],
+  g_base_definitions['68c995c35791630015886a32'],
 }
 army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af060017709300'] = {
   data={
     name='Elamite subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af060017709300',
   },
-  g_base_definitions['6153518d03385c0016b83501'],
+  g_base_definitions['68c995c35791630015886a94'],
 }
 army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af060017709300'] = {
   data={
     name='Elamite subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d8e1af060017709300',
   },
-  g_base_definitions['6153518d03385c0016b83501'],
+  g_base_definitions['68c995c35791630015886a94'],
 }
 army['5fb1b9d8e1af0600177092c5_ally_5fb1b9d9e1af06001770932f'] = {
   data={
     name='Syrian subjects',
     id='5fb1b9d8e1af0600177092c5_ally_5fb1b9d9e1af06001770932f',
   },
-  g_base_definitions['6153518d03385c0016b83538'],
-  g_base_definitions['6153518d03385c0016b8353a'],
-  g_base_definitions['6153518d03385c0016b8353c'],
-  g_base_definitions['6153518d03385c0016b8353e'],
-  g_base_definitions['6153518d03385c0016b83540'],
-  g_base_definitions['6153518d03385c0016b83541'],
+  g_base_definitions['68c995c35791630015886acb'],
+  g_base_definitions['68c995c35791630015886acd'],
+  g_base_definitions['68c995c35791630015886acf'],
+  g_base_definitions['68c995c35791630015886ad1'],
+  g_base_definitions['68c995c35791630015886ad3'],
+  g_base_definitions['68c995c35791630015886ad4'],
 }

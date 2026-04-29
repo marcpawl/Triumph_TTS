@@ -27,32 +27,30 @@ army['5fb1b9dbe1af0600177094e9_ally_5fb1b9dbe1af060017709508'] = {
     name='Athenian allies',
     id='5fb1b9dbe1af0600177094e9_ally_5fb1b9dbe1af060017709508',
   },
-  g_base_definitions['6153518f03385c0016b837e4'],
-  g_base_definitions['6153518f03385c0016b837e7'],
+  g_base_definitions['68c995c55791630015886d61'],
+  g_base_definitions['68c995c55791630015886d63'],
 }
 army['5fb1b9dbe1af0600177094e9_ally_5fb1b9dbe1af0600177094fb'] = {
   data={
     name='Sicyon allies',
     id='5fb1b9dbe1af0600177094e9_ally_5fb1b9dbe1af0600177094fb',
   },
-  g_base_definitions['6153518f03385c0016b837d0'],
-  g_base_definitions['6153518f03385c0016b837d3'],
-  g_base_definitions['6153518f03385c0016b837d7'],
+  g_base_definitions['68c995c55791630015886d53'],
+  g_base_definitions['68c995c55791630015886d55'],
 }
 army['5fb1b9dbe1af0600177094e9_ally_5fb1b9dbe1af060017709508'] = {
   data={
     name='Athenian allies',
     id='5fb1b9dbe1af0600177094e9_ally_5fb1b9dbe1af060017709508',
   },
-  g_base_definitions['6153518f03385c0016b837e4'],
-  g_base_definitions['6153518f03385c0016b837e7'],
+  g_base_definitions['68c995c55791630015886d61'],
+  g_base_definitions['68c995c55791630015886d63'],
 }
 army['5fb1b9dbe1af0600177094e9_ally_5fb1b9dbe1af0600177094fb'] = {
   data={
     name='Sicyon allies',
     id='5fb1b9dbe1af0600177094e9_ally_5fb1b9dbe1af0600177094fb',
   },
-  g_base_definitions['6153518f03385c0016b837d0'],
-  g_base_definitions['6153518f03385c0016b837d3'],
-  g_base_definitions['6153518f03385c0016b837d7'],
+  g_base_definitions['68c995c55791630015886d53'],
+  g_base_definitions['68c995c55791630015886d55'],
 }

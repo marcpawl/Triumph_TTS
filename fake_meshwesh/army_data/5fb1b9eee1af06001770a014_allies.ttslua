@@ -19,18 +19,16 @@ army['5fb1b9eee1af06001770a014_ally_5fb1b9ede1af060017709f93'] = {
     name='Georgian allies',
     id='5fb1b9eee1af06001770a014_ally_5fb1b9ede1af060017709f93',
   },
-  g_base_definitions['6153519903385c0016b846d9'],
-  g_base_definitions['6153519903385c0016b846db'],
-  g_base_definitions['6153519903385c0016b846dd'],
-  g_base_definitions['6153519903385c0016b846df'],
+  g_base_definitions['68c995ce5791630015887c56'],
+  g_base_definitions['68c995ce5791630015887c58'],
+  g_base_definitions['68c995ce5791630015887c5a'],
+  g_base_definitions['68c995ce5791630015887c5c'],
 }
 army['5fb1b9eee1af06001770a014_ally_5fb1b9eee1af060017709ffb'] = {
   data={
     name='Candar or Karaman Turkish allies',
     id='5fb1b9eee1af06001770a014_ally_5fb1b9eee1af060017709ffb',
   },
-  g_base_definitions['6153519903385c0016b84747'],
-  g_base_definitions['6153519903385c0016b84749'],
-  g_base_definitions['6153519903385c0016b8474b'],
-  g_base_definitions['6153519903385c0016b8474d'],
+  g_base_definitions['68c995ce5791630015887cc4'],
+  g_base_definitions['68c995ce5791630015887cc6'],
 }

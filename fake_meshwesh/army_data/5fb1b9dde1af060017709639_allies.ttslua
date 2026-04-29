@@ -19,10 +19,10 @@ army['5fb1b9dde1af060017709639_ally_5fb1b9dde1af060017709630'] = {
     name='Illyrian allies',
     id='5fb1b9dde1af060017709639_ally_5fb1b9dde1af060017709630',
   },
-  g_base_definitions['6153519103385c0016b839ed'],
-  g_base_definitions['6153519103385c0016b839ef'],
-  g_base_definitions['6153519103385c0016b839f1'],
-  g_base_definitions['6153519103385c0016b839f2'],
+  g_base_definitions['68c995c65791630015886f50'],
+  g_base_definitions['68c995c65791630015886f52'],
+  g_base_definitions['68c995c65791630015886f54'],
+  g_base_definitions['68c995c65791630015886f55'],
 }
 army['5fb1b9dde1af060017709639_ally_5fb1b9dee1af060017709659'] = {
   data={

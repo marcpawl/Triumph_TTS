@@ -19,17 +19,17 @@ army['5fb1b9dde1af0600177095c7_ally_5fb1b9dde1af060017709617'] = {
     name='Lykian allies',
     id='5fb1b9dde1af0600177095c7_ally_5fb1b9dde1af060017709617',
   },
-  g_base_definitions['6153519103385c0016b839db'],
-  g_base_definitions['6153519103385c0016b839dd'],
-  g_base_definitions['6153519103385c0016b839df'],
-  g_base_definitions['6153519103385c0016b839e1'],
-  g_base_definitions['6153519103385c0016b839e3'],
+  g_base_definitions['68c995c65791630015886f3e'],
+  g_base_definitions['68c995c65791630015886f40'],
+  g_base_definitions['68c995c65791630015886f42'],
+  g_base_definitions['68c995c65791630015886f44'],
+  g_base_definitions['68c995c65791630015886f46'],
 }
 army['5fb1b9dde1af0600177095c7_ally_5fb1b9dae1af060017709430'] = {
   data={
     name='Saka allies',
     id='5fb1b9dde1af0600177095c7_ally_5fb1b9dae1af060017709430',
   },
-  g_base_definitions['6153518e03385c0016b8369a'],
-  g_base_definitions['6153518e03385c0016b8369c'],
+  g_base_definitions['68c995c55791630015886c2d'],
+  g_base_definitions['68c995c55791630015886c2f'],
 }

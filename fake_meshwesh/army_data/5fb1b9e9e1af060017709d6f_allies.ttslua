@@ -5,4 +5,19 @@
 require("Triumph_TTS/scripts/static_maps")
 
 allies['5fb1b9e9e1af060017709d6f'] = {
+  {
+    id='5fb1b9e9e1af060017709ce7',
+    dateRange={startDate=1434, endDate=1436}
+  },
+}
+army['5fb1b9e9e1af060017709d6f_ally_5fb1b9e9e1af060017709ce7'] = {
+  data={
+    name='Bohemian Catholic Allies',
+    id='5fb1b9e9e1af060017709d6f_ally_5fb1b9e9e1af060017709ce7',
+  },
+  g_base_definitions['68c995cb5791630015887841'],
+  g_base_definitions['68c995cb5791630015887843'],
+  g_base_definitions['68c995cb5791630015887845'],
+  g_base_definitions['68c995cb5791630015887847'],
+  g_base_definitions['68c995cb5791630015887848'],
 }

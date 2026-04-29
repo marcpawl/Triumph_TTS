@@ -15,6 +15,6 @@ army['5fb1b9e3e1af0600177099aa_ally_5fb1b9e2e1af0600177098fa'] = {
     name='Burgundian allies',
     id='5fb1b9e3e1af0600177099aa_ally_5fb1b9e2e1af0600177098fa',
   },
-  g_base_definitions['6153519403385c0016b83d87'],
-  g_base_definitions['6153519403385c0016b83d89'],
+  g_base_definitions['68c995c957916300158872ea'],
+  g_base_definitions['68c995c957916300158872ec'],
 }

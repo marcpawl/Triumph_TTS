@@ -19,11 +19,12 @@ army['5fb1b9e4e1af060017709a3d']={
       endDate=1076,
     },
   },
-  g_base_definitions[g_str_615351a803385c0016b8699c_general],
-  g_base_definitions[g_str_615351a803385c0016b8699c],
-  g_base_definitions[g_str_615351a803385c0016b8699e],
-  g_base_definitions[g_str_615351a803385c0016b869a0],
-  g_base_definitions[g_str_615351a803385c0016b869a2],
+  g_base_definitions[g_str_68c995dd5791630015889f49_general],
+  g_base_definitions[g_str_68c995dd5791630015889f49],
+  g_base_definitions[g_str_68c995dd5791630015889f4b],
+  g_base_definitions[g_str_68c995dd5791630015889f4d],
+  g_base_definitions[g_str_68c995dd5791630015889f4f],
+  g_base_definitions[g_str_68c995dd5791630015889f4f_shower_shooting],
   g_base_definitions[g_str_5fb1b9e4e1af060017709a3d_camp],
 }
 if nil == armies["Meshwesh id"] then
@@ -74,12 +75,12 @@ army_dates["5fb1b9e4e1af060017709a3d"]["934 AD to 949 AD"] = {
   startDate=934,
   endDate=949
 }
-army_dates["5fb1b9e4e1af060017709a3d"]["950 AD to 962 AD"] = {
+army_dates["5fb1b9e4e1af060017709a3d"]["950 AD to 957 AD"] = {
   startDate=950,
-  endDate=962
+  endDate=957
 }
-army_dates["5fb1b9e4e1af060017709a3d"]["963 AD"] = {
-  startDate=963,
+army_dates["5fb1b9e4e1af060017709a3d"]["958 AD to 963 AD"] = {
+  startDate=958,
   endDate=963
 }
 army_dates["5fb1b9e4e1af060017709a3d"]["964 AD to 1028 AD"] = {

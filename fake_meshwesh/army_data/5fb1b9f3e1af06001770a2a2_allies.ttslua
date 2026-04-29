@@ -19,16 +19,16 @@ army['5fb1b9f3e1af06001770a2a2_ally_5fb1b9f0e1af06001770a0dd'] = {
     name='Tibetan ally',
     id='5fb1b9f3e1af06001770a2a2_ally_5fb1b9f0e1af06001770a0dd',
   },
-  g_base_definitions['6153519a03385c0016b84889'],
-  g_base_definitions['6153519a03385c0016b8488b'],
+  g_base_definitions['68c995ce5791630015887e06'],
+  g_base_definitions['68c995ce5791630015887e08'],
 }
 army['5fb1b9f3e1af06001770a2a2_ally_5fb1b9f3e1af06001770a2da'] = {
   data={
     name='Jurchen Jin ally',
     id='5fb1b9f3e1af06001770a2a2_ally_5fb1b9f3e1af06001770a2da',
   },
-  g_base_definitions['6153519c03385c0016b84b34'],
-  g_base_definitions['6153519c03385c0016b84b35'],
-  g_base_definitions['6153519c03385c0016b84b37'],
-  g_base_definitions['6153519c03385c0016b84b39'],
+  g_base_definitions['68c995d057916300158880b9'],
+  g_base_definitions['68c995d057916300158880ba'],
+  g_base_definitions['68c995d057916300158880bc'],
+  g_base_definitions['68c995d057916300158880be'],
 }

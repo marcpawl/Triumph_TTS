@@ -9,26 +9,12 @@ allies['5fb1b9f0e1af06001770a0c4'] = {
     id='5fb1b9f0e1af06001770a0cd',
     dateRange={startDate=642, endDate=660}
   },
-  {
-    id='5fb1b9efe1af06001770a0b4',
-    dateRange={startDate=980, endDate=1279}
-  },
 }
 army['5fb1b9f0e1af06001770a0c4_ally_5fb1b9f0e1af06001770a0cd'] = {
   data={
     name='(Pallavas only) Sinhalese allies',
     id='5fb1b9f0e1af06001770a0c4_ally_5fb1b9f0e1af06001770a0cd',
   },
-  g_base_definitions['6153519a03385c0016b84873'],
-  g_base_definitions['6153519a03385c0016b84875'],
-}
-army['5fb1b9f0e1af06001770a0c4_ally_5fb1b9efe1af06001770a0b4'] = {
-  data={
-    name='(Chola Empire only) Hoysala allies',
-    id='5fb1b9f0e1af06001770a0c4_ally_5fb1b9efe1af06001770a0b4',
-  },
-  g_base_definitions['6153519a03385c0016b84854'],
-  g_base_definitions['6153519a03385c0016b84856'],
-  g_base_definitions['6153519a03385c0016b84858'],
-  g_base_definitions['6153519a03385c0016b8485a'],
+  g_base_definitions['68c995ce5791630015887df5'],
+  g_base_definitions['68c995ce5791630015887df7'],
 }

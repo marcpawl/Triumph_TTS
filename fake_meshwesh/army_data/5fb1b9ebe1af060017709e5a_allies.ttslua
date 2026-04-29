@@ -23,25 +23,25 @@ army['5fb1b9ebe1af060017709e5a_ally_5fb1b9ede1af060017709f72'] = {
     name='Turkish Allies',
     id='5fb1b9ebe1af060017709e5a_ally_5fb1b9ede1af060017709f72',
   },
-  g_base_definitions['6153519903385c0016b846b7'],
-  g_base_definitions['6153519903385c0016b846b9'],
+  g_base_definitions['68c995ce5791630015887c34'],
+  g_base_definitions['68c995ce5791630015887c36'],
 }
 army['5fb1b9ebe1af060017709e5a_ally_5fb1b9eae1af060017709e1e'] = {
   data={
     name='Cuman allies',
     id='5fb1b9ebe1af060017709e5a_ally_5fb1b9eae1af060017709e1e',
   },
-  g_base_definitions['6153519803385c0016b844a0'],
+  g_base_definitions['68c995cc5791630015887a1c'],
 }
 army['5fb1b9ebe1af060017709e5a_ally_5fb1b9ede1af060017709fb6'] = {
   data={
     name='Crusader allies',
     id='5fb1b9ebe1af060017709e5a_ally_5fb1b9ede1af060017709fb6',
   },
-  g_base_definitions['6153519903385c0016b846ff'],
-  g_base_definitions['6153519903385c0016b84701'],
-  g_base_definitions['6153519903385c0016b84704'],
-  g_base_definitions['6153519903385c0016b84707'],
-  g_base_definitions['6153519903385c0016b84708'],
-  g_base_definitions['6153519903385c0016b8470a'],
+  g_base_definitions['68c995ce5791630015887c7c'],
+  g_base_definitions['68c995ce5791630015887c7e'],
+  g_base_definitions['68c995ce5791630015887c81'],
+  g_base_definitions['68c995ce5791630015887c84'],
+  g_base_definitions['68c995ce5791630015887c85'],
+  g_base_definitions['68c995ce5791630015887c87'],
 }

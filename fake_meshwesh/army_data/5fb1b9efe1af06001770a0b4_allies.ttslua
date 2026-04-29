@@ -31,48 +31,48 @@ army['5fb1b9efe1af06001770a0b4_ally_5fb1b9e3e1af06001770995d'] = {
     name='Huna (Hephthalite) ally',
     id='5fb1b9efe1af06001770a0b4_ally_5fb1b9e3e1af06001770995d',
   },
-  g_base_definitions['6153519403385c0016b83dd3'],
-  g_base_definitions['6153519403385c0016b83dd5'],
-  g_base_definitions['6153519403385c0016b83dd7'],
+  g_base_definitions['68c995c95791630015887336'],
+  g_base_definitions['68c995c95791630015887338'],
+  g_base_definitions['68c995c9579163001588733a'],
 }
 army['5fb1b9efe1af06001770a0b4_ally_5fb1b9f0e1af06001770a0dd'] = {
   data={
     name='Tibetan ally',
     id='5fb1b9efe1af06001770a0b4_ally_5fb1b9f0e1af06001770a0dd',
   },
-  g_base_definitions['6153519a03385c0016b84889'],
-  g_base_definitions['6153519a03385c0016b8488b'],
+  g_base_definitions['68c995ce5791630015887e06'],
+  g_base_definitions['68c995ce5791630015887e08'],
 }
 army['5fb1b9efe1af06001770a0b4_ally_5fb1b9efe1af06001770a0ab'] = {
   data={
     name='(Rashtrakutas) Rajput allies',
     id='5fb1b9efe1af06001770a0b4_ally_5fb1b9efe1af06001770a0ab',
   },
-  g_base_definitions['6153519a03385c0016b84846'],
-  g_base_definitions['6153519a03385c0016b84848'],
-  g_base_definitions['6153519a03385c0016b8484a'],
-  g_base_definitions['6153519a03385c0016b8484c'],
-  g_base_definitions['6153519a03385c0016b8484e'],
-  g_base_definitions['6153519a03385c0016b84850'],
+  g_base_definitions['68c995ce5791630015887dc7'],
+  g_base_definitions['68c995ce5791630015887dc9'],
+  g_base_definitions['68c995ce5791630015887dcb'],
+  g_base_definitions['68c995ce5791630015887dcd'],
+  g_base_definitions['68c995ce5791630015887dcf'],
+  g_base_definitions['68c995ce5791630015887dd1'],
 }
 army['5fb1b9efe1af06001770a0b4_ally_5fb1b9efe1af06001770a089'] = {
   data={
     name='(Rashtrakutas 753-975 AD or Hoysalas 1206-1342 AD) Muslim allies',
     id='5fb1b9efe1af06001770a0b4_ally_5fb1b9efe1af06001770a089',
   },
-  g_base_definitions['6153519a03385c0016b84811'],
-  g_base_definitions['6153519a03385c0016b84813'],
-  g_base_definitions['6153519a03385c0016b84815'],
-  g_base_definitions['6153519a03385c0016b84817'],
-  g_base_definitions['6153519a03385c0016b84818'],
-  g_base_definitions['6153519a03385c0016b8481a'],
+  g_base_definitions['68c995ce5791630015887d92'],
+  g_base_definitions['68c995ce5791630015887d94'],
+  g_base_definitions['68c995ce5791630015887d96'],
+  g_base_definitions['68c995ce5791630015887d98'],
+  g_base_definitions['68c995ce5791630015887d99'],
+  g_base_definitions['68c995ce5791630015887d9b'],
 }
 army['5fb1b9efe1af06001770a0b4_ally_5fb1b9f0e1af06001770a0c4'] = {
   data={
     name='(Rashtrakutas 753-975 AD or Palas 810-850 AD) Tamil allies',
     id='5fb1b9efe1af06001770a0b4_ally_5fb1b9f0e1af06001770a0c4',
   },
-  g_base_definitions['6153519a03385c0016b8486b'],
-  g_base_definitions['6153519a03385c0016b8486d'],
-  g_base_definitions['6153519a03385c0016b8486f'],
+  g_base_definitions['68c995ce5791630015887ded'],
+  g_base_definitions['68c995ce5791630015887def'],
+  g_base_definitions['68c995ce5791630015887df1'],
 }

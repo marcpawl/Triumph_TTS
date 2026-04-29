@@ -15,7 +15,7 @@ army['5fb1b9e5e1af060017709ab6_ally_5fb1b9e5e1af060017709ae2'] = {
     name='(Dublin Vikings) Irish Ally',
     id='5fb1b9e5e1af060017709ab6_ally_5fb1b9e5e1af060017709ae2',
   },
-  g_base_definitions['6153519503385c0016b83f99'],
-  g_base_definitions['6153519503385c0016b83f9b'],
-  g_base_definitions['6153519503385c0016b83f9d'],
+  g_base_definitions['68c995ca57916300158874fc'],
+  g_base_definitions['68c995ca57916300158874fe'],
+  g_base_definitions['68c995ca5791630015887500'],
 }

@@ -1,4 +1,4 @@
--- 5fb1b9ebe1af060017709e47 Nikephorian Byzantine  963 to 1042 AD
+-- 5fb1b9ebe1af060017709e47 Nikephorian Byzantine  958 to 1042 AD
 
 army['5fb1b9ebe1af060017709e47']={
   data={
@@ -12,24 +12,24 @@ army['5fb1b9ebe1af060017709e47']={
       'Arable',
       'Hilly',
     },
-    name='Nikephorian Byzantine  963 to 1042 AD',
+    name='Nikephorian Byzantine  958 to 1042 AD',
     id='5fb1b9ebe1af060017709e47',
     dateRange={
-      startDate=963,
+      startDate=958,
       endDate=1042,
     },
   },
-  g_base_definitions[g_str_615351ae03385c0016b878ff_general],
-  g_base_definitions[g_str_615351ae03385c0016b878ff],
-  g_base_definitions[g_str_615351ae03385c0016b87902],
-  g_base_definitions[g_str_615351ae03385c0016b87905],
-  g_base_definitions[g_str_615351ae03385c0016b87908],
-  g_base_definitions[g_str_615351ae03385c0016b87909],
-  g_base_definitions[g_str_615351ae03385c0016b8790b],
-  g_base_definitions[g_str_615351ae03385c0016b8790e],
-  g_base_definitions[g_str_615351ae03385c0016b87911],
-  g_base_definitions[g_str_615351ae03385c0016b87913],
-  g_base_definitions[g_str_615351ae03385c0016b87916],
+  g_base_definitions[g_str_68c995e3579163001588af34_general],
+  g_base_definitions[g_str_68c995e3579163001588af34],
+  g_base_definitions[g_str_68c995e3579163001588af37],
+  g_base_definitions[g_str_68c995e3579163001588af3a],
+  g_base_definitions[g_str_68c995e3579163001588af3d],
+  g_base_definitions[g_str_68c995e3579163001588af3e],
+  g_base_definitions[g_str_68c995e3579163001588af40],
+  g_base_definitions[g_str_68c995e3579163001588af43],
+  g_base_definitions[g_str_68c995e3579163001588af47],
+  g_base_definitions[g_str_68c995e3579163001588af4a],
+  g_base_definitions[g_str_68c995e3579163001588af4d],
   g_base_definitions[g_str_5fb1b9ebe1af060017709e47_camp],
   g_base_definitions[g_str_5fb1b9ebe1af060017709e47_camp_fortified],
   g_base_definitions[g_str_5fb1b9ebe1af060017709e47_camp_pack_train],
@@ -41,21 +41,21 @@ armies["Meshwesh id"]["5fb1b9ebe1af060017709e47"] = army["5fb1b9ebe1af060017709e
 if nil == armies["Glorious Byzantium"] then
   armies["Glorious Byzantium"] ={}
 end
-armies["Glorious Byzantium"]["Nikephorian Byzantine  963 to 1042 AD"] = army["5fb1b9ebe1af060017709e47"]
+armies["Glorious Byzantium"]["Nikephorian Byzantine  958 to 1042 AD"] = army["5fb1b9ebe1af060017709e47"]
 if nil == armies["All"] then
   armies["All"] ={}
 end
-armies["All"]["Nikephorian Byzantine  963 to 1042 AD"] = army["5fb1b9ebe1af060017709e47"]
+armies["All"]["Nikephorian Byzantine  958 to 1042 AD"] = army["5fb1b9ebe1af060017709e47"]
 if nil == army_dates then
   army_dates={}
 end
 army_dates["5fb1b9ebe1af060017709e47"] = {}
-army_dates["5fb1b9ebe1af060017709e47"]["963 AD to 1042 AD"] = {
-  startDate=963,
+army_dates["5fb1b9ebe1af060017709e47"]["958 AD to 1042 AD"] = {
+  startDate=958,
   endDate=1042
 }
-army_dates["5fb1b9ebe1af060017709e47"]["963 AD to 1007 AD"] = {
-  startDate=963,
+army_dates["5fb1b9ebe1af060017709e47"]["958 AD to 1007 AD"] = {
+  startDate=958,
   endDate=1007
 }
 army_dates["5fb1b9ebe1af060017709e47"]["1008 AD"] = {

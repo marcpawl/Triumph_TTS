@@ -15,8 +15,8 @@ army['5fb1b9e3e1af0600177099b8_ally_5fb1b9e3e1af06001770998c'] = {
     name='Visigothic Rebel allies',
     id='5fb1b9e3e1af0600177099b8_ally_5fb1b9e3e1af06001770998c',
   },
-  g_base_definitions['6153519403385c0016b83e02'],
-  g_base_definitions['6153519403385c0016b83e04'],
-  g_base_definitions['6153519403385c0016b83e06'],
-  g_base_definitions['6153519403385c0016b83e08'],
+  g_base_definitions['68c995c95791630015887365'],
+  g_base_definitions['68c995c95791630015887367'],
+  g_base_definitions['68c995c95791630015887369'],
+  g_base_definitions['68c995c9579163001588736b'],
 }

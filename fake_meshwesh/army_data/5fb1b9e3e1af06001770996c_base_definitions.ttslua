@@ -1,23 +1,23 @@
-g_str_615351a703385c0016b86739_general='615351a703385c0016b86739_general'
-g_base_definitions[g_str_615351a703385c0016b86739_general]={
-  id=g_str_615351a703385c0016b86739_general,
+g_str_68c995dc5791630015889cd9_general='68c995dc5791630015889cd9_general'
+g_base_definitions[g_str_68c995dc5791630015889cd9_general]={
+  id=g_str_68c995dc5791630015889cd9_general,
   name='Horse Bow General',
   min=12,
   max=1,
   description='Hun horse archers',
   general=true,
   troop_type="Horse Bow",
-  troop_option_id="615351a703385c0016b86738",
+  troop_option_id="68c995dc5791630015889cd8",
 }
-g_str_615351a703385c0016b86739='615351a703385c0016b86739'
-g_base_definitions[g_str_615351a703385c0016b86739]={
-  id=g_str_615351a703385c0016b86739,
+g_str_68c995dc5791630015889cd9='68c995dc5791630015889cd9'
+g_base_definitions[g_str_68c995dc5791630015889cd9]={
+  id=g_str_68c995dc5791630015889cd9,
   name='Horse Bow',
   min=12,
   max=12,
   description='Hun horse archers',
   troop_type="Horse Bow",
-  troop_option_id="615351a703385c0016b86738",
+  troop_option_id="68c995dc5791630015889cd8",
 }
 g_str_5fb1b9e3e1af06001770996c_camp='5fb1b9e3e1af06001770996c_camp'
 g_base_definitions[g_str_5fb1b9e3e1af06001770996c_camp]={

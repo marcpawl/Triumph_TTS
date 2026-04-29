@@ -15,8 +15,8 @@ army['5fb1b9f6e1af06001770a4aa_ally_5fb1b9f6e1af06001770a4b2'] = {
     name='Igneri',
     id='5fb1b9f6e1af06001770a4aa_ally_5fb1b9f6e1af06001770a4b2',
   },
-  g_base_definitions['6153519d03385c0016b84d42'],
-  g_base_definitions['6153519d03385c0016b84d44'],
-  g_base_definitions['6153519d03385c0016b84d46'],
-  g_base_definitions['6153519d03385c0016b84d48'],
+  g_base_definitions['68c995d257916300158882c9'],
+  g_base_definitions['68c995d257916300158882cb'],
+  g_base_definitions['68c995d257916300158882cd'],
+  g_base_definitions['68c995d257916300158882cf'],
 }

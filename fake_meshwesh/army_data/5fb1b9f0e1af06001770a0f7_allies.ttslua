@@ -27,39 +27,39 @@ army['5fb1b9f0e1af06001770a0f7_ally_5fb1b9f2e1af06001770a25f'] = {
     name='Tang Chinese allies',
     id='5fb1b9f0e1af06001770a0f7_ally_5fb1b9f2e1af06001770a25f',
   },
-  g_base_definitions['6153519b03385c0016b84a60'],
-  g_base_definitions['6153519b03385c0016b84a62'],
-  g_base_definitions['6153519b03385c0016b84a64'],
-  g_base_definitions['6153519b03385c0016b84a65'],
-  g_base_definitions['6153519b03385c0016b84a66'],
-  g_base_definitions['6153519b03385c0016b84a68'],
-  g_base_definitions['6153519b03385c0016b84a69'],
+  g_base_definitions['68c995d05791630015887fdd'],
+  g_base_definitions['68c995d05791630015887fdf'],
+  g_base_definitions['68c995d05791630015887fe1'],
+  g_base_definitions['68c995d05791630015887fe2'],
+  g_base_definitions['68c995d05791630015887fe3'],
+  g_base_definitions['68c995d05791630015887fe5'],
+  g_base_definitions['68c995d05791630015887fe6'],
 }
 army['5fb1b9f0e1af06001770a0f7_ally_5fb1b9f0e1af06001770a0dd'] = {
   data={
     name='Tibetan allies',
     id='5fb1b9f0e1af06001770a0f7_ally_5fb1b9f0e1af06001770a0dd',
   },
-  g_base_definitions['6153519a03385c0016b84889'],
-  g_base_definitions['6153519a03385c0016b8488b'],
+  g_base_definitions['68c995ce5791630015887e06'],
+  g_base_definitions['68c995ce5791630015887e08'],
 }
 army['5fb1b9f0e1af06001770a0f7_ally_5fb1b9f0e1af06001770a0d5'] = {
   data={
     name='Pyu Burmese allies',
     id='5fb1b9f0e1af06001770a0f7_ally_5fb1b9f0e1af06001770a0d5',
   },
-  g_base_definitions['6153519a03385c0016b8487f'],
-  g_base_definitions['6153519a03385c0016b84881'],
-  g_base_definitions['6153519a03385c0016b84883'],
-  g_base_definitions['6153519a03385c0016b84885'],
+  g_base_definitions['68c995ce5791630015887dfc'],
+  g_base_definitions['68c995ce5791630015887dfe'],
+  g_base_definitions['68c995ce5791630015887e00'],
+  g_base_definitions['68c995ce5791630015887e02'],
 }
 army['5fb1b9f0e1af06001770a0f7_ally_5fb1b9f1e1af06001770a1e6'] = {
   data={
     name='Vietnamese Rebel allies',
     id='5fb1b9f0e1af06001770a0f7_ally_5fb1b9f1e1af06001770a1e6',
   },
-  g_base_definitions['6153519b03385c0016b849ea'],
-  g_base_definitions['6153519b03385c0016b849ec'],
-  g_base_definitions['6153519b03385c0016b849ee'],
-  g_base_definitions['6153519b03385c0016b849f0'],
+  g_base_definitions['68c995cf5791630015887f67'],
+  g_base_definitions['68c995cf5791630015887f69'],
+  g_base_definitions['68c995cf5791630015887f6b'],
+  g_base_definitions['68c995cf5791630015887f6d'],
 }

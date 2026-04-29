@@ -21,43 +21,98 @@ allies['5fb1b9eee1af060017709ffb'] = {
     id='5fb1b9eee1af060017709ff3',
     dateRange={startDate=1485, endDate=1491}
   },
+  {
+    id='5fb1b9eee1af06001770a014',
+    dateRange={startDate=1361, endDate=1380}
+  },
+  {
+    id='5fb1b9eee1af06001770a004',
+    dateRange={startDate=1300, endDate=1515}
+  },
+  {
+    id='5fb1b9eee1af060017709ff3',
+    dateRange={startDate=1383, endDate=1383}
+  },
+  {
+    id='5fb1b9eee1af060017709ff3',
+    dateRange={startDate=1485, endDate=1491}
+  },
 }
 army['5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af06001770a014'] = {
   data={
     name='(Candar or Karaman) Trapezuntine allies',
     id='5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af06001770a014',
   },
-  g_base_definitions['6153519903385c0016b84760'],
-  g_base_definitions['6153519903385c0016b84763'],
-  g_base_definitions['6153519903385c0016b84765'],
-  g_base_definitions['6153519903385c0016b84766'],
-  g_base_definitions['6153519903385c0016b84768'],
-  g_base_definitions['6153519903385c0016b8476a'],
-  g_base_definitions['6153519903385c0016b8476c'],
+  g_base_definitions['68c995ce5791630015887ce1'],
+  g_base_definitions['68c995ce5791630015887ce4'],
+  g_base_definitions['68c995ce5791630015887ce6'],
+  g_base_definitions['68c995ce5791630015887ce7'],
+  g_base_definitions['68c995ce5791630015887ce9'],
+  g_base_definitions['68c995ce5791630015887ceb'],
+  g_base_definitions['68c995ce5791630015887ced'],
 }
 army['5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af06001770a004'] = {
   data={
     name='(Dulgadir) Mamluk allies',
     id='5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af06001770a004',
   },
-  g_base_definitions['6153519903385c0016b84751'],
-  g_base_definitions['6153519903385c0016b84753'],
+  g_base_definitions['68c995ce5791630015887cd2'],
+  g_base_definitions['68c995ce5791630015887cd4'],
 }
 army['5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af060017709ff3'] = {
   data={
     name='(Candar) Ottoman allies',
     id='5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af060017709ff3',
   },
-  g_base_definitions['6153519903385c0016b8473f'],
-  g_base_definitions['6153519903385c0016b84741'],
-  g_base_definitions['6153519903385c0016b84743'],
+  g_base_definitions['68c995ce5791630015887cbc'],
+  g_base_definitions['68c995ce5791630015887cbe'],
+  g_base_definitions['68c995ce5791630015887cc0'],
 }
 army['5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af060017709ff3'] = {
   data={
     name='(Dulgadir) Ottoman allies',
     id='5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af060017709ff3',
   },
-  g_base_definitions['6153519903385c0016b8473f'],
-  g_base_definitions['6153519903385c0016b84741'],
-  g_base_definitions['6153519903385c0016b84743'],
+  g_base_definitions['68c995ce5791630015887cbc'],
+  g_base_definitions['68c995ce5791630015887cbe'],
+  g_base_definitions['68c995ce5791630015887cc0'],
+}
+army['5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af06001770a014'] = {
+  data={
+    name='(Candar or Karaman) Trapezuntine allies',
+    id='5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af06001770a014',
+  },
+  g_base_definitions['68c995ce5791630015887ce1'],
+  g_base_definitions['68c995ce5791630015887ce4'],
+  g_base_definitions['68c995ce5791630015887ce6'],
+  g_base_definitions['68c995ce5791630015887ce7'],
+  g_base_definitions['68c995ce5791630015887ce9'],
+  g_base_definitions['68c995ce5791630015887ceb'],
+  g_base_definitions['68c995ce5791630015887ced'],
+}
+army['5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af06001770a004'] = {
+  data={
+    name='(Dulgadir) Mamluk allies',
+    id='5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af06001770a004',
+  },
+  g_base_definitions['68c995ce5791630015887cd2'],
+  g_base_definitions['68c995ce5791630015887cd4'],
+}
+army['5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af060017709ff3'] = {
+  data={
+    name='(Candar) Ottoman allies',
+    id='5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af060017709ff3',
+  },
+  g_base_definitions['68c995ce5791630015887cbc'],
+  g_base_definitions['68c995ce5791630015887cbe'],
+  g_base_definitions['68c995ce5791630015887cc0'],
+}
+army['5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af060017709ff3'] = {
+  data={
+    name='(Dulgadir) Ottoman allies',
+    id='5fb1b9eee1af060017709ffb_ally_5fb1b9eee1af060017709ff3',
+  },
+  g_base_definitions['68c995ce5791630015887cbc'],
+  g_base_definitions['68c995ce5791630015887cbe'],
+  g_base_definitions['68c995ce5791630015887cc0'],
 }

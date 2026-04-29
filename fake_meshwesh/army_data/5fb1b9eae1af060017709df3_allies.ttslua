@@ -11,7 +11,7 @@ allies['5fb1b9eae1af060017709df3'] = {
   },
   {
     id='5fb1b9eae1af060017709dec',
-    dateRange={startDate=1246, endDate=1472}
+    dateRange={startDate=1246, endDate=1455}
   },
   {
     id='5fb1b9eee1af06001770a01c',
@@ -27,34 +27,34 @@ army['5fb1b9eae1af060017709df3_ally_5fb1b9eee1af06001770a01c'] = {
     name='Golden Horde Mongol allies',
     id='5fb1b9eae1af060017709df3_ally_5fb1b9eee1af06001770a01c',
   },
-  g_base_definitions['6153519903385c0016b84770'],
-  g_base_definitions['6153519903385c0016b84772'],
-  g_base_definitions['6153519903385c0016b84774'],
+  g_base_definitions['68c995ce5791630015887cf1'],
+  g_base_definitions['68c995ce5791630015887cf3'],
+  g_base_definitions['68c995ce5791630015887cf5'],
 }
 army['5fb1b9eae1af060017709df3_ally_5fb1b9eae1af060017709dec'] = {
   data={
     name='(only Novgorod) Lithuanian allies',
     id='5fb1b9eae1af060017709df3_ally_5fb1b9eae1af060017709dec',
   },
-  g_base_definitions['6153519803385c0016b84453'],
-  g_base_definitions['6153519803385c0016b84455'],
-  g_base_definitions['6153519803385c0016b84457'],
+  g_base_definitions['68c995cc57916300158879be'],
+  g_base_definitions['68c995cc57916300158879c0'],
+  g_base_definitions['68c995cc57916300158879c2'],
 }
 army['5fb1b9eae1af060017709df3_ally_5fb1b9eee1af06001770a01c'] = {
   data={
     name='Golden Horde Mongol allies',
     id='5fb1b9eae1af060017709df3_ally_5fb1b9eee1af06001770a01c',
   },
-  g_base_definitions['6153519903385c0016b84770'],
-  g_base_definitions['6153519903385c0016b84772'],
-  g_base_definitions['6153519903385c0016b84774'],
+  g_base_definitions['68c995ce5791630015887cf1'],
+  g_base_definitions['68c995ce5791630015887cf3'],
+  g_base_definitions['68c995ce5791630015887cf5'],
 }
 army['5fb1b9eae1af060017709df3_ally_5fb1b9eae1af060017709dec'] = {
   data={
     name='Lithuanian allies',
     id='5fb1b9eae1af060017709df3_ally_5fb1b9eae1af060017709dec',
   },
-  g_base_definitions['6153519803385c0016b84453'],
-  g_base_definitions['6153519803385c0016b84455'],
-  g_base_definitions['6153519803385c0016b84457'],
+  g_base_definitions['68c995cc57916300158879be'],
+  g_base_definitions['68c995cc57916300158879c0'],
+  g_base_definitions['68c995cc57916300158879c2'],
 }

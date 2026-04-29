@@ -23,24 +23,24 @@ army['5fb1b9dfe1af0600177096f4_ally_5fb1b9e2e1af060017709932'] = {
     name='(Rhoxolani) Alan allies',
     id='5fb1b9dfe1af0600177096f4_ally_5fb1b9e2e1af060017709932',
   },
-  g_base_definitions['6153519403385c0016b83dab'],
-  g_base_definitions['6153519403385c0016b83dad'],
+  g_base_definitions['68c995c9579163001588730e'],
+  g_base_definitions['68c995c95791630015887310'],
 }
 army['5fb1b9dfe1af0600177096f4_ally_5fb1b9e2e1af0600177098c7'] = {
   data={
     name='(Iazyges) Taifali allies',
     id='5fb1b9dfe1af0600177096f4_ally_5fb1b9e2e1af0600177098c7',
   },
-  g_base_definitions['6153519403385c0016b83d65'],
-  g_base_definitions['6153519403385c0016b83d67'],
-  g_base_definitions['6153519403385c0016b83d69'],
+  g_base_definitions['68c995c857916300158872c8'],
+  g_base_definitions['68c995c857916300158872ca'],
+  g_base_definitions['68c995c857916300158872cc'],
 }
 army['5fb1b9dfe1af0600177096f4_ally_5fb1b9e1e1af060017709849'] = {
   data={
     name='(Iazyges) Quadi allies',
     id='5fb1b9dfe1af0600177096f4_ally_5fb1b9e1e1af060017709849',
   },
-  g_base_definitions['6153519303385c0016b83ce5'],
-  g_base_definitions['6153519303385c0016b83ce7'],
-  g_base_definitions['6153519303385c0016b83ce9'],
+  g_base_definitions['68c995c85791630015887248'],
+  g_base_definitions['68c995c8579163001588724a'],
+  g_base_definitions['68c995c8579163001588724c'],
 }

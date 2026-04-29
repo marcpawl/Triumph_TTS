@@ -19,18 +19,18 @@ army['5fb1b9eee1af060017709fc9_ally_5fb1b9ede1af060017709fad'] = {
     name='Syrian Ayyubid dynasty allies',
     id='5fb1b9eee1af060017709fc9_ally_5fb1b9ede1af060017709fad',
   },
-  g_base_definitions['6153519903385c0016b846f5'],
-  g_base_definitions['6153519903385c0016b846f7'],
-  g_base_definitions['6153519903385c0016b846f9'],
-  g_base_definitions['6153519903385c0016b846fb'],
+  g_base_definitions['68c995ce5791630015887c72'],
+  g_base_definitions['68c995ce5791630015887c74'],
+  g_base_definitions['68c995ce5791630015887c76'],
+  g_base_definitions['68c995ce5791630015887c78'],
 }
 army['5fb1b9eee1af060017709fc9_ally_5fb1b9ede1af060017709fc1'] = {
   data={
     name='Khwarizmian allies',
     id='5fb1b9eee1af060017709fc9_ally_5fb1b9ede1af060017709fc1',
   },
-  g_base_definitions['6153519903385c0016b8470e'],
-  g_base_definitions['6153519903385c0016b84710'],
-  g_base_definitions['6153519903385c0016b84712'],
-  g_base_definitions['6153519903385c0016b84714'],
+  g_base_definitions['68c995ce5791630015887c8b'],
+  g_base_definitions['68c995ce5791630015887c8d'],
+  g_base_definitions['68c995ce5791630015887c8f'],
+  g_base_definitions['68c995ce5791630015887c91'],
 }

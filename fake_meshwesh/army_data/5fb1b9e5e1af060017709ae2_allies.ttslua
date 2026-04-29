@@ -23,26 +23,26 @@ army['5fb1b9e5e1af060017709ae2_ally_5fb1b9e5e1af060017709aa8'] = {
     name='Viking allies',
     id='5fb1b9e5e1af060017709ae2_ally_5fb1b9e5e1af060017709aa8',
   },
-  g_base_definitions['6153519503385c0016b83f43'],
-  g_base_definitions['6153519503385c0016b83f45'],
+  g_base_definitions['68c995ca57916300158874a6'],
+  g_base_definitions['68c995ca57916300158874a8'],
 }
 army['5fb1b9e5e1af060017709ae2_ally_5fb1b9e5e1af060017709aae'] = {
   data={
     name='Viking allies',
     id='5fb1b9e5e1af060017709ae2_ally_5fb1b9e5e1af060017709aae',
   },
-  g_base_definitions['6153519503385c0016b83f49'],
-  g_base_definitions['6153519503385c0016b83f4b'],
-  g_base_definitions['6153519503385c0016b83f4d'],
+  g_base_definitions['68c995ca57916300158874ac'],
+  g_base_definitions['68c995ca57916300158874ae'],
+  g_base_definitions['68c995ca57916300158874b0'],
 }
 army['5fb1b9e5e1af060017709ae2_ally_5fb1b9e5e1af060017709ae9'] = {
   data={
     name='Islesmen allies',
     id='5fb1b9e5e1af060017709ae2_ally_5fb1b9e5e1af060017709ae9',
   },
-  g_base_definitions['6153519503385c0016b83fa7'],
-  g_base_definitions['6153519503385c0016b83fa9'],
-  g_base_definitions['6153519503385c0016b83fab'],
-  g_base_definitions['6153519503385c0016b83fad'],
-  g_base_definitions['6153519503385c0016b83fb0'],
+  g_base_definitions['68c995ca579163001588750a'],
+  g_base_definitions['68c995ca579163001588750c'],
+  g_base_definitions['68c995ca579163001588750e'],
+  g_base_definitions['68c995ca5791630015887510'],
+  g_base_definitions['68c995ca5791630015887513'],
 }

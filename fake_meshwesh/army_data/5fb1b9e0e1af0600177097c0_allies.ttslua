@@ -55,106 +55,106 @@ army['5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097e8'] = {
     name='Commagene allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097e8',
   },
-  g_base_definitions['6153519303385c0016b83c6e'],
-  g_base_definitions['6153519303385c0016b83c70'],
-  g_base_definitions['6153519303385c0016b83c72'],
-  g_base_definitions['6153519303385c0016b83c74'],
+  g_base_definitions['68c995c857916300158871d1'],
+  g_base_definitions['68c995c857916300158871d3'],
+  g_base_definitions['68c995c857916300158871d5'],
+  g_base_definitions['68c995c857916300158871d7'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097ef'] = {
   data={
     name='Commagene allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097ef',
   },
-  g_base_definitions['6153519303385c0016b83c78'],
-  g_base_definitions['6153519303385c0016b83c7a'],
-  g_base_definitions['6153519303385c0016b83c7c'],
-  g_base_definitions['6153519303385c0016b83c7e'],
+  g_base_definitions['68c995c857916300158871db'],
+  g_base_definitions['68c995c857916300158871dd'],
+  g_base_definitions['68c995c857916300158871df'],
+  g_base_definitions['68c995c857916300158871e1'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9dfe1af060017709709'] = {
   data={
     name='Seleucid allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9dfe1af060017709709',
   },
-  g_base_definitions['6153519303385c0016b83b2f'],
-  g_base_definitions['6153519303385c0016b83b31'],
-  g_base_definitions['6153519303385c0016b83b33'],
-  g_base_definitions['6153519303385c0016b83b35'],
-  g_base_definitions['6153519303385c0016b83b37'],
-  g_base_definitions['6153519303385c0016b83b39'],
-  g_base_definitions['6153519303385c0016b83b3b'],
+  g_base_definitions['68c995c75791630015887092'],
+  g_base_definitions['68c995c75791630015887094'],
+  g_base_definitions['68c995c75791630015887096'],
+  g_base_definitions['68c995c75791630015887098'],
+  g_base_definitions['68c995c7579163001588709a'],
+  g_base_definitions['68c995c7579163001588709c'],
+  g_base_definitions['68c995c7579163001588709e'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097f6'] = {
   data={
     name='Armenian or Gordyene allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097f6',
   },
-  g_base_definitions['6153519303385c0016b83c82'],
-  g_base_definitions['6153519303385c0016b83c84'],
-  g_base_definitions['6153519303385c0016b83c86'],
-  g_base_definitions['6153519303385c0016b83c88'],
+  g_base_definitions['68c995c857916300158871e5'],
+  g_base_definitions['68c995c857916300158871e7'],
+  g_base_definitions['68c995c857916300158871e9'],
+  g_base_definitions['68c995c857916300158871eb'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9e1e1af060017709806'] = {
   data={
     name='Armenian or Gordyene allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9e1e1af060017709806',
   },
-  g_base_definitions['6153519303385c0016b83c97'],
-  g_base_definitions['6153519303385c0016b83c99'],
-  g_base_definitions['6153519303385c0016b83c9b'],
-  g_base_definitions['6153519303385c0016b83c9d'],
+  g_base_definitions['68c995c857916300158871fa'],
+  g_base_definitions['68c995c857916300158871fc'],
+  g_base_definitions['68c995c857916300158871fe'],
+  g_base_definitions['68c995c85791630015887200'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097c8'] = {
   data={
     name='Media-Atropatene allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097c8',
   },
-  g_base_definitions['6153519303385c0016b83c36'],
-  g_base_definitions['6153519303385c0016b83c38'],
-  g_base_definitions['6153519303385c0016b83c3a'],
+  g_base_definitions['68c995c85791630015887199'],
+  g_base_definitions['68c995c8579163001588719b'],
+  g_base_definitions['68c995c8579163001588719d'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097c8'] = {
   data={
     name='Elymaian allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9e0e1af0600177097c8',
   },
-  g_base_definitions['6153519303385c0016b83c36'],
-  g_base_definitions['6153519303385c0016b83c38'],
-  g_base_definitions['6153519303385c0016b83c3a'],
+  g_base_definitions['68c995c85791630015887199'],
+  g_base_definitions['68c995c8579163001588719b'],
+  g_base_definitions['68c995c8579163001588719d'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9dfe1af06001770975f'] = {
   data={
     name='Nomadic Arab allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9dfe1af06001770975f',
   },
-  g_base_definitions['6153519303385c0016b83b9f'],
-  g_base_definitions['6153519303385c0016b83ba1'],
-  g_base_definitions['6153519303385c0016b83ba3'],
-  g_base_definitions['6153519303385c0016b83ba5'],
-  g_base_definitions['6153519303385c0016b83ba6'],
-  g_base_definitions['6153519303385c0016b83ba8'],
-  g_base_definitions['6153519303385c0016b83baa'],
+  g_base_definitions['68c995c75791630015887102'],
+  g_base_definitions['68c995c75791630015887104'],
+  g_base_definitions['68c995c75791630015887106'],
+  g_base_definitions['68c995c75791630015887108'],
+  g_base_definitions['68c995c75791630015887109'],
+  g_base_definitions['68c995c7579163001588710b'],
+  g_base_definitions['68c995c7579163001588710d'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9e1e1af06001770980d'] = {
   data={
     name='Roman republican remnant allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9e1e1af06001770980d',
   },
-  g_base_definitions['6153519303385c0016b83ca1'],
-  g_base_definitions['6153519303385c0016b83ca3'],
-  g_base_definitions['6153519303385c0016b83ca5'],
+  g_base_definitions['68c995c85791630015887204'],
+  g_base_definitions['68c995c85791630015887206'],
+  g_base_definitions['68c995c85791630015887208'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9dfe1af0600177096f4'] = {
   data={
     name='Sarmatian allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9dfe1af0600177096f4',
   },
-  g_base_definitions['6153519203385c0016b83b0d'],
+  g_base_definitions['68c995c75791630015887070'],
 }
 army['5fb1b9e0e1af0600177097c0_ally_5fb1b9dee1af0600177096d6'] = {
   data={
     name='Skythian allies',
     id='5fb1b9e0e1af0600177097c0_ally_5fb1b9dee1af0600177096d6',
   },
-  g_base_definitions['6153519203385c0016b83acf'],
-  g_base_definitions['6153519203385c0016b83ad1'],
+  g_base_definitions['68c995c75791630015887032'],
+  g_base_definitions['68c995c75791630015887034'],
 }

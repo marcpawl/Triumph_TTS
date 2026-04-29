@@ -15,8 +15,8 @@ army['5fb1b9dae1af0600177093d1_ally_5fb1b9d9e1af06001770937f'] = {
     name='Canaanite allies',
     id='5fb1b9dae1af0600177093d1_ally_5fb1b9d9e1af06001770937f',
   },
-  g_base_definitions['6153518e03385c0016b83580'],
-  g_base_definitions['6153518e03385c0016b83582'],
-  g_base_definitions['6153518e03385c0016b83584'],
-  g_base_definitions['6153518e03385c0016b83586'],
+  g_base_definitions['68c995c45791630015886b13'],
+  g_base_definitions['68c995c45791630015886b15'],
+  g_base_definitions['68c995c45791630015886b17'],
+  g_base_definitions['68c995c45791630015886b19'],
 }

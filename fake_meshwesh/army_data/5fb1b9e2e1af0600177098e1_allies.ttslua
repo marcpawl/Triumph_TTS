@@ -23,20 +23,20 @@ army['5fb1b9e2e1af0600177098e1_ally_5fb1b9e2e1af060017709910'] = {
     name='(Vortigern) Saxon allies',
     id='5fb1b9e2e1af0600177098e1_ally_5fb1b9e2e1af060017709910',
   },
-  g_base_definitions['6153519403385c0016b83d99'],
+  g_base_definitions['68c995c957916300158872fc'],
 }
 army['5fb1b9e2e1af0600177098e1_ally_5fb1b9e2e1af060017709932'] = {
   data={
     name='(Armorican) Alan allies',
     id='5fb1b9e2e1af0600177098e1_ally_5fb1b9e2e1af060017709932',
   },
-  g_base_definitions['6153519403385c0016b83dab'],
-  g_base_definitions['6153519403385c0016b83dad'],
+  g_base_definitions['68c995c9579163001588730e'],
+  g_base_definitions['68c995c95791630015887310'],
 }
 army['5fb1b9e2e1af0600177098e1_ally_5fb1b9e2e1af06001770991b'] = {
   data={
     name='(Armorican) Frankish allies',
     id='5fb1b9e2e1af0600177098e1_ally_5fb1b9e2e1af06001770991b',
   },
-  g_base_definitions['6153519403385c0016b83d9d'],
+  g_base_definitions['68c995c95791630015887300'],
 }

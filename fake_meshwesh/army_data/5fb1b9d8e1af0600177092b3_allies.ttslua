@@ -23,27 +23,27 @@ army['5fb1b9d8e1af0600177092b3_ally_5fb1b9d8e1af0600177092ec'] = {
     name='Dry steppe nomad allies',
     id='5fb1b9d8e1af0600177092b3_ally_5fb1b9d8e1af0600177092ec',
   },
-  g_base_definitions['6153518d03385c0016b834e4'],
-  g_base_definitions['6153518d03385c0016b834e6'],
-  g_base_definitions['6153518d03385c0016b834e8'],
-  g_base_definitions['6153518d03385c0016b834ea'],
-  g_base_definitions['6153518d03385c0016b834eb'],
+  g_base_definitions['68c995c35791630015886a77'],
+  g_base_definitions['68c995c35791630015886a79'],
+  g_base_definitions['68c995c35791630015886a7b'],
+  g_base_definitions['68c995c35791630015886a7d'],
+  g_base_definitions['68c995c35791630015886a7e'],
 }
 army['5fb1b9d8e1af0600177092b3_ally_5fb1b9d9e1af060017709327'] = {
   data={
     name='Zagros Highlander allies',
     id='5fb1b9d8e1af0600177092b3_ally_5fb1b9d9e1af060017709327',
   },
-  g_base_definitions['6153518d03385c0016b8352c'],
-  g_base_definitions['6153518d03385c0016b8352d'],
-  g_base_definitions['6153518d03385c0016b8352f'],
-  g_base_definitions['6153518d03385c0016b83532'],
-  g_base_definitions['6153518d03385c0016b83534'],
+  g_base_definitions['68c995c35791630015886abf'],
+  g_base_definitions['68c995c35791630015886ac0'],
+  g_base_definitions['68c995c35791630015886ac2'],
+  g_base_definitions['68c995c35791630015886ac5'],
+  g_base_definitions['68c995c35791630015886ac7'],
 }
 army['5fb1b9d8e1af0600177092b3_ally_5fb1b9d8e1af0600177092fa'] = {
   data={
     name='Elamite allies or vassals',
     id='5fb1b9d8e1af0600177092b3_ally_5fb1b9d8e1af0600177092fa',
   },
-  g_base_definitions['6153518d03385c0016b834fd'],
+  g_base_definitions['68c995c35791630015886a90'],
 }

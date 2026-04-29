@@ -7,7 +7,7 @@ army['5fb1b9dbe1af0600177094f5'].data.has_models = true
 army['5fb1b9dbe1af0600177094f5'].data.base="tile_grass"
 
 -- Jav Cav General
-g_models[g_str_615351a103385c0016b855e9_general] = {
+g_models[g_str_68c995d55791630015888b9c_general] = {
   {
     n_models = 2,
     fixed_models = {
@@ -19,10 +19,10 @@ g_models[g_str_615351a103385c0016b855e9_general] = {
 
 
 -- Jav Cav
-g_models[g_str_615351a103385c0016b855e9] = g_models[g_str_615351a303385c0016b85aef]
+g_models[g_str_68c995d55791630015888b9c] = g_models[g_str_68c995d75791630015889055]
 
 -- Heavy Foot Hoplites General
-g_models[g_str_615351a103385c0016b855eb_general] = {
+g_models[g_str_68c995d55791630015888b9e_general] = {
   {
     n_models = 4,
     fixed_models = {
@@ -35,7 +35,7 @@ g_models[g_str_615351a103385c0016b855eb_general] = {
 }
 
 -- Heavy Foot Hoplites
-g_models[g_str_615351a103385c0016b855eb] = {
+g_models[g_str_68c995d55791630015888b9e] = {
   {
     n_models = 4,
     fixed_models = {
@@ -49,7 +49,7 @@ g_models[g_str_615351a103385c0016b855eb] = {
 
 
 -- Skirmishing bowmen and slingers
-g_models[g_str_615351a103385c0016b855ee] = {
+g_models[g_str_68c995d55791630015888ba0] = {
   {
     n_models = 2,
     random_models = {
@@ -62,7 +62,7 @@ g_models[g_str_615351a103385c0016b855ee] = {
 
 
 -- Rabble Javelinmen
-g_models[g_str_615351a103385c0016b855f1] = {
+g_models[g_str_68c995d55791630015888ba2] = {
   {
     n_models = 3,
     loose = true,
@@ -84,13 +84,13 @@ g_models[g_str_615351a103385c0016b855f1] = {
 
 
 -- 'Sicel tribesmen', "Light Foot",
-g_models[g_str_615351a103385c0016b855f4] = g_models[g_str_615351a303385c0016b85b00]
+g_models[g_str_68c995d55791630015888ba4] = g_models[g_str_68c995d75791630015889066]
 
 -- 'Sicel tribesmen', "Light Foot",
-g_models[g_str_615351a103385c0016b855f8] =  g_models[g_str_615351a303385c0016b85b00]
+g_models[g_str_68c995d55791630015888ba4] =  g_models[g_str_68c995d75791630015889066]
 
 --  'War dogs', "Warband",
-g_models[g_str_615351a103385c0016b855fb] = {
+g_models[g_str_68c995d55791630015888ba9] = {
   {
     n_models = 3,
     loose = true,

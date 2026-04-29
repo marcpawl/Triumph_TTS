@@ -27,36 +27,36 @@ army['5fb1b9f0e1af06001770a115_ally_5fb1b9f0e1af06001770a0d5'] = {
     name='Burmese vassal allies',
     id='5fb1b9f0e1af06001770a115_ally_5fb1b9f0e1af06001770a0d5',
   },
-  g_base_definitions['6153519a03385c0016b8487f'],
-  g_base_definitions['6153519a03385c0016b84881'],
-  g_base_definitions['6153519a03385c0016b84883'],
-  g_base_definitions['6153519a03385c0016b84885'],
+  g_base_definitions['68c995ce5791630015887dfc'],
+  g_base_definitions['68c995ce5791630015887dfe'],
+  g_base_definitions['68c995ce5791630015887e00'],
+  g_base_definitions['68c995ce5791630015887e02'],
 }
 army['5fb1b9f0e1af06001770a115_ally_5fb1b9f0e1af06001770a100'] = {
   data={
     name='Malay vassal allies',
     id='5fb1b9f0e1af06001770a115_ally_5fb1b9f0e1af06001770a100',
   },
-  g_base_definitions['6153519a03385c0016b848c5'],
-  g_base_definitions['6153519a03385c0016b848c7'],
-  g_base_definitions['6153519a03385c0016b848c9'],
+  g_base_definitions['68c995cf5791630015887e42'],
+  g_base_definitions['68c995cf5791630015887e44'],
+  g_base_definitions['68c995cf5791630015887e46'],
 }
 army['5fb1b9f0e1af06001770a115_ally_5fb1b9f0e1af06001770a0d5'] = {
   data={
     name='Burmese vassal allies',
     id='5fb1b9f0e1af06001770a115_ally_5fb1b9f0e1af06001770a0d5',
   },
-  g_base_definitions['6153519a03385c0016b8487f'],
-  g_base_definitions['6153519a03385c0016b84881'],
-  g_base_definitions['6153519a03385c0016b84883'],
-  g_base_definitions['6153519a03385c0016b84885'],
+  g_base_definitions['68c995ce5791630015887dfc'],
+  g_base_definitions['68c995ce5791630015887dfe'],
+  g_base_definitions['68c995ce5791630015887e00'],
+  g_base_definitions['68c995ce5791630015887e02'],
 }
 army['5fb1b9f0e1af06001770a115_ally_5fb1b9f0e1af06001770a100'] = {
   data={
     name='Malay vassal allies',
     id='5fb1b9f0e1af06001770a115_ally_5fb1b9f0e1af06001770a100',
   },
-  g_base_definitions['6153519a03385c0016b848c5'],
-  g_base_definitions['6153519a03385c0016b848c7'],
-  g_base_definitions['6153519a03385c0016b848c9'],
+  g_base_definitions['68c995cf5791630015887e42'],
+  g_base_definitions['68c995cf5791630015887e44'],
+  g_base_definitions['68c995cf5791630015887e46'],
 }

@@ -8,7 +8,7 @@ army['5fb1b9dbe1af060017709502'].data.base="tile_grass"
   -- As of: 20210608
 
     --Spartiates - Elite Foot General
-    g_models[g_str_615351a103385c0016b8561d_general] = {
+    g_models[g_str_68c995d55791630015888bbc_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -21,7 +21,7 @@ army['5fb1b9dbe1af060017709502'].data.base="tile_grass"
     }
 
     --Spartiates - Elite Foot
-    g_models[g_str_615351a103385c0016b8561d] = {
+    g_models[g_str_68c995d55791630015888bbc] = {
       {
         n_models = 4,
         model_data = 'troop_spartan_elite_hoplite'
@@ -29,7 +29,7 @@ army['5fb1b9dbe1af060017709502'].data.base="tile_grass"
     }
 
     --Hoplites - Heavy Foot
-    g_models[g_str_615351a103385c0016b85620] = {
+    g_models[g_str_68c995d55791630015888bbf] = {
       {
         n_models = 4,
         model_data = 'troop_carthaginian_allied_greek_spear'
@@ -37,7 +37,7 @@ army['5fb1b9dbe1af060017709502'].data.base="tile_grass"
     }
 
     --Skirmishing bowmen and slingers - Sk
-    g_models[g_str_615351a103385c0016b85623] = {
+    g_models[g_str_68c995d55791630015888bc1] = {
       {
         n_models = 2,
         model_data = 'troop_successors_skirmishers',
@@ -46,7 +46,7 @@ army['5fb1b9dbe1af060017709502'].data.base="tile_grass"
     }
 
     --Javelinmen - Rabble
-    g_models[g_str_615351a103385c0016b85626] = {
+    g_models[g_str_68c995d55791630015888bc3] = {
       {
         n_models = 3,
         random_models = {
@@ -61,7 +61,7 @@ army['5fb1b9dbe1af060017709502'].data.base="tile_grass"
     }
 
     --Massed helots armed with javelins -- Horde
-    g_models[g_str_615351a103385c0016b8562a] = {
+    g_models[g_str_68c995d55791630015888bc6] = {
       {
         n_models = 7,
         model_data = 'troop_ancient_spanish_caetrati',
@@ -70,7 +70,7 @@ army['5fb1b9dbe1af060017709502'].data.base="tile_grass"
     }
 
     --Massed helots armed with javelins -- Rabble
-    g_models[g_str_615351a103385c0016b8562b] = {
+    g_models[g_str_68c995d55791630015888bc7] = {
       {
         n_models = 3,
         model_data = 'troop_ancient_spanish_caetrati',
@@ -97,19 +97,19 @@ army['5fb1b9dde1af0600177095dc'].data.base="tile_grass"
     -- As of: 20210616
 
       --Spartiates - Elite Foot General
-      g_models[g_str_615351a203385c0016b859d2_general] = g_models[g_str_615351a103385c0016b8561d_general]
+      g_models[g_str_68c995d75791630015888f38_general] = g_models[g_str_68c995d55791630015888bbc_general]
 
       --Spartiates - Elite Foot
-      g_models[g_str_615351a203385c0016b859d2] = g_models[g_str_615351a103385c0016b8561d]
+      g_models[g_str_68c995d75791630015888f38] = g_models[g_str_68c995d55791630015888bbc]
 
       --Hoplites - Heavy Foot
-      g_models[g_str_615351a203385c0016b859d6] = g_models[g_str_615351a103385c0016b85620]
+      g_models[g_str_68c995d75791630015888f3c] = g_models[g_str_68c995d55791630015888bbf]
 
       --Psiloi armed with javelins - Rabble
-      g_models[g_str_615351a203385c0016b859d9] = g_models[g_str_615351a103385c0016b8562b]
+      g_models[g_str_68c995d75791630015888f3f] = g_models[g_str_68c995d55791630015888bc7]
 
       --Spartan horsemen - Bad Horse
-      g_models[g_str_615351a203385c0016b859db] = {
+      g_models[g_str_68c995d75791630015888f41] = {
         {
           n_models = 3,
           model_data = 'troop_successors_cav_red',
@@ -118,7 +118,7 @@ army['5fb1b9dde1af0600177095dc'].data.base="tile_grass"
       }
 
       --Cretan or other skirmishing mercenary bowmen - Sk
-      g_models[g_str_615351a203385c0016b859dd] = {
+      g_models[g_str_68c995d75791630015888f43] = {
         {
           n_models = 2,
           model_data = 'troop_successors_skirmishers_archers',
@@ -127,10 +127,10 @@ army['5fb1b9dde1af0600177095dc'].data.base="tile_grass"
       }
 
       --Skirmishing slingers - Sk
-      g_models[g_str_615351a203385c0016b859df] = g_models[g_str_615351a103385c0016b85623]
+      g_models[g_str_68c995d75791630015888f45] = g_models[g_str_68c995d55791630015888bc1]
 
       --Thracian infantry -- LF
-      g_models[g_str_615351a203385c0016b859e1] = {
+      g_models[g_str_68c995d75791630015888f47] = {
         {
           n_models = 3,
           random_models = {
@@ -142,7 +142,7 @@ army['5fb1b9dde1af0600177095dc'].data.base="tile_grass"
       }
 
       --Mercenary peltasts -- LF
-      g_models[g_str_615351a203385c0016b859e3] = {
+      g_models[g_str_68c995d75791630015888f49] = {
         {
           n_models = 3,
           random_models = {
@@ -157,7 +157,7 @@ army['5fb1b9dde1af0600177095dc'].data.base="tile_grass"
       }
 
       --Akarnanians -- LF
-      g_models[g_str_615351a203385c0016b859e7] = {
+      g_models[g_str_68c995d75791630015888f4d] = {
         {
           n_models = 3,
           random_models = {

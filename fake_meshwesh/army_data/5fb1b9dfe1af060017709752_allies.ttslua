@@ -15,6 +15,6 @@ army['5fb1b9dfe1af060017709752_ally_5fb1b9e0e1af0600177097c0'] = {
     name='Parthian allies',
     id='5fb1b9dfe1af060017709752_ally_5fb1b9e0e1af0600177097c0',
   },
-  g_base_definitions['6153519303385c0016b83c30'],
-  g_base_definitions['6153519303385c0016b83c32'],
+  g_base_definitions['68c995c85791630015887193'],
+  g_base_definitions['68c995c85791630015887195'],
 }

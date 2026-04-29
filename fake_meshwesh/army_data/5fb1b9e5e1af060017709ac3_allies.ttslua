@@ -27,31 +27,31 @@ army['5fb1b9e5e1af060017709ac3_ally_5fb1b9e2e1af060017709932'] = {
     name='(Armorican) Alan allies',
     id='5fb1b9e5e1af060017709ac3_ally_5fb1b9e2e1af060017709932',
   },
-  g_base_definitions['6153519403385c0016b83dab'],
-  g_base_definitions['6153519403385c0016b83dad'],
+  g_base_definitions['68c995c9579163001588730e'],
+  g_base_definitions['68c995c95791630015887310'],
 }
 army['5fb1b9e5e1af060017709ac3_ally_5fb1b9e2e1af06001770991b'] = {
   data={
     name='(Armorican) Frankish allies',
     id='5fb1b9e5e1af060017709ac3_ally_5fb1b9e2e1af06001770991b',
   },
-  g_base_definitions['6153519403385c0016b83d9d'],
+  g_base_definitions['68c995c95791630015887300'],
 }
 army['5fb1b9e5e1af060017709ac3_ally_5fb1b9e1e1af06001770988c'] = {
   data={
     name='(Strathclyde) Dal Riadan allies',
     id='5fb1b9e5e1af060017709ac3_ally_5fb1b9e1e1af06001770988c',
   },
-  g_base_definitions['6153519403385c0016b83d31'],
-  g_base_definitions['6153519403385c0016b83d33'],
-  g_base_definitions['6153519403385c0016b83d35'],
+  g_base_definitions['68c995c85791630015887294'],
+  g_base_definitions['68c995c85791630015887296'],
+  g_base_definitions['68c995c85791630015887298'],
 }
 army['5fb1b9e5e1af060017709ac3_ally_5fb1b9e5e1af060017709aae'] = {
   data={
     name='(Strathclyde) Viking allies',
     id='5fb1b9e5e1af060017709ac3_ally_5fb1b9e5e1af060017709aae',
   },
-  g_base_definitions['6153519503385c0016b83f49'],
-  g_base_definitions['6153519503385c0016b83f4b'],
-  g_base_definitions['6153519503385c0016b83f4d'],
+  g_base_definitions['68c995ca57916300158874ac'],
+  g_base_definitions['68c995ca57916300158874ae'],
+  g_base_definitions['68c995ca57916300158874b0'],
 }

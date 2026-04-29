@@ -1,0 +1,71 @@
+g_str_68c995ec579163001588c6a3_general='68c995ec579163001588c6a3_general'
+g_base_definitions[g_str_68c995ec579163001588c6a3_general]={
+  id=g_str_68c995ec579163001588c6a3_general,
+  name='Light Foot General',
+  min=2,
+  max=1,
+  description='Experienced fighters and their slaves',
+  general=true,
+  troop_type="Light Foot",
+  troop_option_id="68c995ec579163001588c6a2",
+}
+g_str_68c995ec579163001588c6a3='68c995ec579163001588c6a3'
+g_base_definitions[g_str_68c995ec579163001588c6a3]={
+  id=g_str_68c995ec579163001588c6a3,
+  name='Light Foot',
+  min=2,
+  max=8,
+  description='Experienced fighters and their slaves',
+  troop_type="Light Foot",
+  troop_option_id="68c995ec579163001588c6a2",
+}
+g_str_68c995ec579163001588c6a5='68c995ec579163001588c6a5'
+g_base_definitions[g_str_68c995ec579163001588c6a5]={
+  id=g_str_68c995ec579163001588c6a5,
+  name='Bow Levy',
+  min=0,
+  max=8,
+  description='Bowmen',
+  troop_type="Bow Levy",
+  troop_option_id="68c995ec579163001588c6a4",
+}
+g_str_68c995ec579163001588c6a5_shower_shooting='68c995ec579163001588c6a5_shower_shooting'
+g_base_definitions[g_str_68c995ec579163001588c6a5_shower_shooting]={
+  id=g_str_68c995ec579163001588c6a5_shower_shooting,
+  name='Bow Levy',
+  min=0,
+  max=8,
+  description='Bowmen\nShower Shooting',
+  shower_shooting=true,
+  troop_type="Bow Levy",
+  troop_option_id="68c995ec579163001588c6a4",
+}
+g_str_68c995ec579163001588c6a8='68c995ec579163001588c6a8'
+g_base_definitions[g_str_68c995ec579163001588c6a8]={
+  id=g_str_68c995ec579163001588c6a8,
+  name='Skirmishers',
+  min=0,
+  max=2,
+  description='Experienced raiding bowmen',
+  troop_type="Skirmishers",
+  troop_option_id="68c995ec579163001588c6a7",
+}
+g_str_68c995ec579163001588c6aa='68c995ec579163001588c6aa'
+g_base_definitions[g_str_68c995ec579163001588c6aa]={
+  id=g_str_68c995ec579163001588c6aa,
+  name='Rabble',
+  min=9,
+  max=21,
+  description='Mixed weapons',
+  troop_type="Rabble",
+  troop_option_id="68c995ec579163001588c6a9",
+}
+g_str_68c07ed65c431f0015cf1abd_camp='68c07ed65c431f0015cf1abd_camp'
+g_base_definitions[g_str_68c07ed65c431f0015cf1abd_camp]={
+  id=g_str_68c07ed65c431f0015cf1abd_camp,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Camp',
+  troop_type="Camp",
+}

@@ -11,37 +11,37 @@ army['5fb1b9e1e1af060017709857'].data.base = "tile_grass"
 -- As of: 20210407
 
     --Horsemen - JavCav General
-    g_models[g_str_615351a603385c0016b86327_general] = g_models[g_str_615351a203385c0016b858ec_general]
-    g_models[g_str_615351a603385c0016b86327_general_mounted] = g_models[g_str_615351a203385c0016b858ec_general]
+    g_models[g_str_68c995da57916300158898ba_general] = g_models[g_str_68c995d75791630015888e56_general]
+    g_models[g_str_68c995da57916300158898ba_general_mounted] = g_models[g_str_68c995d75791630015888e56_general]
 
     --Horsemen - Warriors General Dismounting
-    g_models[g_str_615351a603385c0016b86327_general_dismounted] = g_models[g_str_615351a203385c0016b858e4_general_dismounted]
+    g_models[g_str_68c995da57916300158898ba_general_dismounted] = g_models[g_str_68c995d75791630015888e4e_general_dismounted]
 
     --Horsemen - JavCav
-    g_models[g_str_615351a603385c0016b86327] = g_models[g_str_615351a203385c0016b858ec]
-    g_models[g_str_615351a603385c0016b86327_mounted] = g_models[g_str_615351a203385c0016b858ec]
+    g_models[g_str_68c995da57916300158898ba] = g_models[g_str_68c995d75791630015888e56]
+    g_models[g_str_68c995da57916300158898ba_mounted] = g_models[g_str_68c995d75791630015888e56]
 
     --Horsemen - Warriors  Dismounting
-    g_models[g_str_615351a603385c0016b86327_dismounted] = {
+    g_models[g_str_68c995da57916300158898ba_dismounted] = {
       {
         model_data = 'troop_gallic_warriors'
       }
     }
     -- Fierce fighters - Warriors General
-    g_models[g_str_615351a603385c0016b8632a_general] = g_models[g_str_615351a203385c0016b858e4_dismounted]
+    g_models[g_str_68c995da57916300158898bd_general] = g_models[g_str_68c995d75791630015888e4e_dismounted]
 
     -- Fierce fighters - Warriors
-    g_models[g_str_615351a603385c0016b8632a] = g_models[g_str_615351a603385c0016b86327_dismounted]
+    g_models[g_str_68c995da57916300158898bd] = g_models[g_str_68c995da57916300158898ba_dismounted]
 
     -- Fighters armed with sword, shield, and wooden club - Raiders
-    g_models[g_str_615351a603385c0016b8632c] = {
+    g_models[g_str_68c995da57916300158898bf] = {
       {
         model_data = 'troop_gallatian_bd'
       }
     }
 
     -- Foot skirmishers armed with many fire-hardened untipped throwing spears - Rabble
-    g_models[g_str_615351a603385c0016b8632e] = {
+    g_models[g_str_68c995da57916300158898c1] = {
     {
       model_data = 'troop_gallic_ps_javelin',
       loose = true
@@ -49,7 +49,7 @@ army['5fb1b9e1e1af060017709857'].data.base = "tile_grass"
   }
 
     -- Skirmishing bowmen
-    g_models[g_str_615351a603385c0016b86330] = {
+    g_models[g_str_68c995da57916300158898c3] = {
     {
       model_data = 'troop_gallic_ps_archer',
       loose = true
@@ -71,30 +71,30 @@ army['5fb1b9e1e1af060017709857'].data.base = "tile_grass"
 -- As of: 20210407
 
     --Horsemen - JavCav General
-    g_models[g_str_615351a603385c0016b86354_general] = g_models[g_str_615351a203385c0016b858ec_general]
-    g_models[g_str_615351a603385c0016b86354_general_mounted] = g_models[g_str_615351a203385c0016b858ec_general]
+    g_models[g_str_68c995da57916300158898e7_general] = g_models[g_str_68c995d75791630015888e56_general]
+    g_models[g_str_68c995da57916300158898e7_general_mounted] = g_models[g_str_68c995d75791630015888e56_general]
 
     --Horsemen - Warriors General Dismounting
-    g_models[g_str_615351a603385c0016b86354_general_dismounted] = g_models[g_str_615351a203385c0016b858e4_general_dismounted]
+    g_models[g_str_68c995da57916300158898e7_general_dismounted] = g_models[g_str_68c995d75791630015888e4e_general_dismounted]
 
     --Horsemen - JavCav
-    g_models[g_str_615351a603385c0016b86354] = g_models[g_str_615351a203385c0016b858ec_general]
-    g_models[g_str_615351a603385c0016b86354_mounted] = g_models[g_str_615351a203385c0016b858ec_general]
+    g_models[g_str_68c995da57916300158898e7] = g_models[g_str_68c995d75791630015888e56_general]
+    g_models[g_str_68c995da57916300158898e7_mounted] = g_models[g_str_68c995d75791630015888e56_general]
 
     --Horsemen - Warriors  Dismounting
-    g_models[g_str_615351a603385c0016b86354_dismounted] = g_models[g_str_615351a603385c0016b86327_dismounted]
+    g_models[g_str_68c995da57916300158898e7_dismounted] = g_models[g_str_68c995da57916300158898ba_dismounted]
 
     -- Fierce fighters - Warriors
-    g_models[g_str_615351a603385c0016b86357] = g_models[g_str_615351a603385c0016b8632a]
+    g_models[g_str_68c995da57916300158898ea] = g_models[g_str_68c995da57916300158898bd]
 
     -- Drilled foot tribesmen - HF
-    g_models[g_str_615351a603385c0016b86359] = g_models[g_str_615351a203385c0016b858e4_dismounted]
+    g_models[g_str_68c995da57916300158898ec] = g_models[g_str_68c995d75791630015888e4e_dismounted]
 
     -- Foot skirmishers armed with many fire-hardened untipped throwing spears - Rabble
-    g_models[g_str_615351a603385c0016b8635b] = g_models[g_str_615351a603385c0016b8632e]
+    g_models[g_str_68c995da57916300158898ee] = g_models[g_str_68c995da57916300158898c1]
 
     -- Skirmishing bowmen
-    g_models[g_str_615351a603385c0016b8635d] = g_models[g_str_615351a603385c0016b86330]
+    g_models[g_str_68c995da57916300158898f0] = g_models[g_str_68c995da57916300158898c3]
 
     -- Early German Camp
     g_models[g_str_5fb1b9e1e1af060017709857_camp] = g_models[g_str_5fb1b9dce1af06001770959d_camp]

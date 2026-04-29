@@ -15,6 +15,6 @@ army['5fb1b9dce1af060017709543_ally_5fb1b9dce1af060017709549'] = {
     name='Samnite allies',
     id='5fb1b9dce1af060017709543_ally_5fb1b9dce1af060017709549',
   },
-  g_base_definitions['6153519003385c0016b8386e'],
-  g_base_definitions['6153519003385c0016b83870'],
+  g_base_definitions['68c995c65791630015886dd4'],
+  g_base_definitions['68c995c65791630015886dd6'],
 }

@@ -19,16 +19,16 @@ army['5fb1b9f3e1af06001770a2e8_ally_5fb1b9f3e1af06001770a294'] = {
     name='Chagadai Mongol allies',
     id='5fb1b9f3e1af06001770a2e8_ally_5fb1b9f3e1af06001770a294',
   },
-  g_base_definitions['6153519b03385c0016b84ad2'],
-  g_base_definitions['6153519b03385c0016b84ad4'],
+  g_base_definitions['68c995d0579163001588804f'],
+  g_base_definitions['68c995d05791630015888051'],
 }
 army['5fb1b9f3e1af06001770a2e8_ally_5fb1b9f3e1af06001770a2c7'] = {
   data={
     name='Song defector allies',
     id='5fb1b9f3e1af06001770a2e8_ally_5fb1b9f3e1af06001770a2c7',
   },
-  g_base_definitions['6153519b03385c0016b84b1a'],
-  g_base_definitions['6153519b03385c0016b84b1c'],
-  g_base_definitions['6153519b03385c0016b84b1e'],
-  g_base_definitions['6153519b03385c0016b84b20'],
+  g_base_definitions['68c995d05791630015888097'],
+  g_base_definitions['68c995d05791630015888099'],
+  g_base_definitions['68c995d0579163001588809b'],
+  g_base_definitions['68c995d0579163001588809d'],
 }

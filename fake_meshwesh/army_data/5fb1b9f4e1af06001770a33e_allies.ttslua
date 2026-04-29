@@ -19,18 +19,18 @@ army['5fb1b9f4e1af06001770a33e_ally_5fb1b9f4e1af06001770a336'] = {
     name='Shilla allies',
     id='5fb1b9f4e1af06001770a33e_ally_5fb1b9f4e1af06001770a336',
   },
-  g_base_definitions['6153519c03385c0016b84bdb'],
-  g_base_definitions['6153519c03385c0016b84bde'],
-  g_base_definitions['6153519c03385c0016b84be1'],
-  g_base_definitions['6153519c03385c0016b84be3'],
-  g_base_definitions['6153519c03385c0016b84be5'],
-  g_base_definitions['6153519c03385c0016b84be7'],
+  g_base_definitions['68c995d05791630015888160'],
+  g_base_definitions['68c995d05791630015888163'],
+  g_base_definitions['68c995d05791630015888166'],
+  g_base_definitions['68c995d05791630015888168'],
+  g_base_definitions['68c995d0579163001588816a'],
+  g_base_definitions['68c995d0579163001588816c'],
 }
 army['5fb1b9f4e1af06001770a33e_ally_5fb1b9f4e1af06001770a345'] = {
   data={
     name='Japanese Ritsuryo culture allies',
     id='5fb1b9f4e1af06001770a33e_ally_5fb1b9f4e1af06001770a345',
   },
-  g_base_definitions['6153519c03385c0016b84bf5'],
-  g_base_definitions['6153519c03385c0016b84bf8'],
+  g_base_definitions['68c995d0579163001588817a'],
+  g_base_definitions['68c995d0579163001588817d'],
 }

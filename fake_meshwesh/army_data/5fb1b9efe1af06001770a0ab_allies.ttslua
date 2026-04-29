@@ -15,8 +15,8 @@ army['5fb1b9efe1af06001770a0ab_ally_5fb1b9efe1af06001770a0b4'] = {
     name='Non-Rajput Hindu Indian ally',
     id='5fb1b9efe1af06001770a0ab_ally_5fb1b9efe1af06001770a0b4',
   },
-  g_base_definitions['6153519a03385c0016b84854'],
-  g_base_definitions['6153519a03385c0016b84856'],
-  g_base_definitions['6153519a03385c0016b84858'],
-  g_base_definitions['6153519a03385c0016b8485a'],
+  g_base_definitions['68c995ce5791630015887dd5'],
+  g_base_definitions['68c995ce5791630015887dd7'],
+  g_base_definitions['68c995ce5791630015887dd9'],
+  g_base_definitions['68c995ce5791630015887ddb'],
 }

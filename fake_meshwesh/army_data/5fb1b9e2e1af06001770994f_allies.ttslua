@@ -43,75 +43,75 @@ army['5fb1b9e2e1af06001770994f_ally_5fb1b9e0e1af0600177097e0'] = {
     name='Kushan vassals',
     id='5fb1b9e2e1af06001770994f_ally_5fb1b9e0e1af0600177097e0',
   },
-  g_base_definitions['6153519303385c0016b83c5a'],
-  g_base_definitions['6153519303385c0016b83c5c'],
-  g_base_definitions['6153519303385c0016b83c5e'],
-  g_base_definitions['6153519303385c0016b83c60'],
+  g_base_definitions['68c995c857916300158871bd'],
+  g_base_definitions['68c995c857916300158871bf'],
+  g_base_definitions['68c995c857916300158871c1'],
+  g_base_definitions['68c995c857916300158871c3'],
 }
 army['5fb1b9e2e1af06001770994f_ally_5fb1b9e3e1af06001770996c'] = {
   data={
     name='Chionite Hun allies',
     id='5fb1b9e2e1af06001770994f_ally_5fb1b9e3e1af06001770996c',
   },
-  g_base_definitions['6153519403385c0016b83de1'],
+  g_base_definitions['68c995c95791630015887344'],
 }
 army['5fb1b9e2e1af06001770994f_ally_5fb1b9e3e1af060017709964'] = {
   data={
     name='Sabir, or Hepthalite (outside India) allies',
     id='5fb1b9e2e1af06001770994f_ally_5fb1b9e3e1af060017709964',
   },
-  g_base_definitions['6153519403385c0016b83ddb'],
-  g_base_definitions['6153519403385c0016b83ddd'],
+  g_base_definitions['68c995c9579163001588733e'],
+  g_base_definitions['68c995c95791630015887340'],
 }
 army['5fb1b9e2e1af06001770994f_ally_5fb1b9e3e1af06001770996c'] = {
   data={
     name='Sabir, or Hepthalite (outside India) allies',
     id='5fb1b9e2e1af06001770994f_ally_5fb1b9e3e1af06001770996c',
   },
-  g_base_definitions['6153519403385c0016b83de1'],
+  g_base_definitions['68c995c95791630015887344'],
 }
 army['5fb1b9e2e1af06001770994f_ally_5fb1b9dfe1af06001770976e'] = {
   data={
     name='Homerite Yemeni allies',
     id='5fb1b9e2e1af06001770994f_ally_5fb1b9dfe1af06001770976e',
   },
-  g_base_definitions['6153519303385c0016b83bbd'],
-  g_base_definitions['6153519303385c0016b83bbf'],
-  g_base_definitions['6153519303385c0016b83bc1'],
-  g_base_definitions['6153519303385c0016b83bc3'],
-  g_base_definitions['6153519303385c0016b83bc4'],
-  g_base_definitions['6153519303385c0016b83bc6'],
-  g_base_definitions['6153519303385c0016b83bc8'],
+  g_base_definitions['68c995c75791630015887120'],
+  g_base_definitions['68c995c75791630015887122'],
+  g_base_definitions['68c995c75791630015887124'],
+  g_base_definitions['68c995c75791630015887126'],
+  g_base_definitions['68c995c75791630015887127'],
+  g_base_definitions['68c995c75791630015887129'],
+  g_base_definitions['68c995c7579163001588712b'],
 }
 army['5fb1b9e2e1af06001770994f_ally_5fb1b9efe1af06001770a068'] = {
   data={
     name='Gok Turk allies',
     id='5fb1b9e2e1af06001770994f_ally_5fb1b9efe1af06001770a068',
   },
-  g_base_definitions['6153519a03385c0016b847e0'],
-  g_base_definitions['6153519a03385c0016b847e2'],
+  g_base_definitions['68c995ce5791630015887d61'],
+  g_base_definitions['68c995ce5791630015887d63'],
 }
 army['5fb1b9e2e1af06001770994f_ally_5fb1b9dfe1af06001770975f'] = {
   data={
     name='Lakhmid or Azd Oman nomad Arab allies',
     id='5fb1b9e2e1af06001770994f_ally_5fb1b9dfe1af06001770975f',
   },
-  g_base_definitions['6153519303385c0016b83b9f'],
-  g_base_definitions['6153519303385c0016b83ba1'],
-  g_base_definitions['6153519303385c0016b83ba3'],
-  g_base_definitions['6153519303385c0016b83ba5'],
-  g_base_definitions['6153519303385c0016b83ba6'],
-  g_base_definitions['6153519303385c0016b83ba8'],
-  g_base_definitions['6153519303385c0016b83baa'],
+  g_base_definitions['68c995c75791630015887102'],
+  g_base_definitions['68c995c75791630015887104'],
+  g_base_definitions['68c995c75791630015887106'],
+  g_base_definitions['68c995c75791630015887108'],
+  g_base_definitions['68c995c75791630015887109'],
+  g_base_definitions['68c995c7579163001588710b'],
+  g_base_definitions['68c995c7579163001588710d'],
 }
 army['5fb1b9e2e1af06001770994f_ally_5fb1b9e0e1af0600177097ff'] = {
   data={
     name='Armenian subject allies',
     id='5fb1b9e2e1af06001770994f_ally_5fb1b9e0e1af0600177097ff',
   },
-  g_base_definitions['6153519303385c0016b83c8c'],
-  g_base_definitions['6153519303385c0016b83c8d'],
-  g_base_definitions['6153519303385c0016b83c8f'],
-  g_base_definitions['6153519303385c0016b83c91'],
-  g_base_definitions['6153519303385c0016b83c93'],
+  g_base_definitions['68c995c857916300158871ef'],
+  g_base_definitions['68c995c857916300158871f0'],
+  g_base_definitions['68c995c857916300158871f2'],
+  g_base_definitions['68c995c857916300158871f4'],
+  g_base_definitions['68c995c857916300158871f6'],
 }

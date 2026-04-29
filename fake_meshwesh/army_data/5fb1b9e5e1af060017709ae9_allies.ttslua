@@ -19,17 +19,17 @@ army['5fb1b9e5e1af060017709ae9_ally_5fb1b9e5e1af060017709aae'] = {
     name='Orkney Vikings',
     id='5fb1b9e5e1af060017709ae9_ally_5fb1b9e5e1af060017709aae',
   },
-  g_base_definitions['6153519503385c0016b83f49'],
-  g_base_definitions['6153519503385c0016b83f4b'],
-  g_base_definitions['6153519503385c0016b83f4d'],
+  g_base_definitions['68c995ca57916300158874ac'],
+  g_base_definitions['68c995ca57916300158874ae'],
+  g_base_definitions['68c995ca57916300158874b0'],
 }
 army['5fb1b9e5e1af060017709ae9_ally_5fb1b9e5e1af060017709ab6'] = {
   data={
     name='Manx Vikings',
     id='5fb1b9e5e1af060017709ae9_ally_5fb1b9e5e1af060017709ab6',
   },
-  g_base_definitions['6153519503385c0016b83f51'],
-  g_base_definitions['6153519503385c0016b83f53'],
-  g_base_definitions['6153519503385c0016b83f55'],
-  g_base_definitions['6153519503385c0016b83f57'],
+  g_base_definitions['68c995ca57916300158874b4'],
+  g_base_definitions['68c995ca57916300158874b6'],
+  g_base_definitions['68c995ca57916300158874b8'],
+  g_base_definitions['68c995ca57916300158874ba'],
 }
