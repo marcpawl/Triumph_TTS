@@ -359,12 +359,20 @@ def replace_ids_in_dir(root: Path, replacements: list[tuple[str, str]]):
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Update meshwesh script.")
-    parser.add_argument("--clone", action="store_true", dest="clone", default=True, help="Clone meshwesh data.")
+    parser.add_argument("--clone", action="store_true", dest="clone", default=None, help="Clone meshwesh data.")
     parser.add_argument("--no-clone", action="store_false", dest="clone", help="Do not reclone Meshwesh data.")
-    parser.add_argument("--db-create", action="store_true", dest="db_create", default=True, help="Create mapping database.")
+    parser.add_argument("--db-create", action="store_true", dest="db_create", default=None, help="Create mapping database.")
     parser.add_argument("--no-db-create", action="store_false", dest="db_create", default=True, help="Use existing mapping database.")
     parser.description = "Generate a sed script to execute against the ttslua scripts to update the mappings for units to models"
     args = parser.parse_args()
+    
+    if args.clone is None:
+        print("ERROR: No clone option specified.")
+        sys.exit(1)
+    if args.db_create is None:
+        print("ERROR: No database option specified.")
+        sys.exit(1)
+
 
     # Initialize the variable with the default value
     if args.clone:
