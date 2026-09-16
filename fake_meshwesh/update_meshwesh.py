@@ -28,28 +28,22 @@ def create_armies_table( conn):
     cursor.execute('CREATE INDEX idx_name ON armies (name)')
     cursor.execute('CREATE INDEX idx_old_army_id ON armies (old_army_id)')
     cursor.execute('CREATE INDEX idx_new_army_id ON armies (new_army_id)')
+    
+    # Create the view for the mapped army id
+    cursor.execute(
+        """
+            CREATE VIEW armies_mapping AS
+            SELECT old_army_id, new_army_id
+            FROM armies
+            WHERE 
+                old_army_id IS NOT NULL AND 
+                new_army_id IS NOT NULL AND
+                old_army_id != new_army_id
+        """);
         
     conn.commit()  # Commit the changes to the database
     cursor.close()  # Close the cursor
-
-
-def create_troops_table( cursor):
-    """
-    """
-    # Create the troops table with indexed columns
-    cursor.execute('''
-        CREATE TABLE troops (
-            description TEXT,
-            old_army_id TEXT,
-            old_troop_id TEXT,
-            new_army_id TEXT,
-            new_troop_id TEXT,
-        )
-    ''')
     
-    # Create indexes for the columns
-    cursor.execute('CREATE INDEX idx_old_army_id ON armies (old_army_id, description)')
-    cursor.execute('CREATE INDEX idx_new_army_id ON armies (new_army_id, description)')
     
 def update_old_army(cursor, name, old_army_id):
     """
@@ -60,7 +54,7 @@ def update_old_army(cursor, name, old_army_id):
         cursor: An sqlite3 cursor object.
         name (str): The army name (primary key).
         old_army_id (str): The old army identifier.
-    """
+    """        
     cursor.execute(
         """
         INSERT INTO armies (name, old_army_id, new_army_id)
@@ -84,12 +78,32 @@ def update_new_army(cursor, name, new_army_id):
     """
     cursor.execute(
         """
-        INSERT INTO armies (name, old_army_id, new_army_id)
-        VALUES (?, NULL, ?)
-        ON CONFLICT(name) DO UPDATE SET new_army_id = excluded.new_army_id
-        """,
-        (name, new_army_id),
-    )   
+        SELECT count(old_army_id) 
+        FROM armies 
+        WHERE name = ?
+        """, 
+        (name,)
+    )
+    count = cursor.fetchone()[0]
+    if count == 0:
+        # Insert a new row with old_army_id as NULL
+        cursor.execute(
+            """
+            INSERT INTO armies (name, new_army_id, old_army_id)
+            VALUES (?, ?, NULL)
+            """,
+            (name, new_army_id),
+        )
+    else:
+        cursor.execute(
+            """
+            UPDATE armies
+            SET new_army_id = ?
+            WHERE name = ?
+            """,
+            (new_army_id, name),
+        )
+        assert cursor.rowcount == 1, f"Expected to update 1 row for name '{name}', but updated {cursor.rowcount} rows."
     
 def load_army_summary(conn, summary_file_path, update_function):
     """
@@ -130,7 +144,6 @@ def load_troops(cursor, army_data_dir: Path, data_version):
         army_id = army_id_record[0]
         file_path = army_data_dir / army_id
         if not file_path.exists():
-            breakpoint()
             raise FileNotFoundError(f"Army data file not found: {file_path}")   
         
         print(f"Loading troops for army_id: {army_id} from {file_path}")
@@ -147,7 +160,21 @@ def load_troops(cursor, army_data_dir: Path, data_version):
                     cursor.execute("INSERT INTO troops (army_id, troop_option_id, troop_option_description, troop_entry_id, troop_entry_type_code, data_version) VALUES (?,?,?,?,?,?)",
                             (army_id, troop_option_id, troop_option_description, troop_entry_id, troop_entry_type_code, data_version))
             
-        
+
+def create_troops_view(cursor, view_name, data_version):
+    cursor.execute(
+            f"""
+            CREATE VIEW {view_name} AS
+                SELECT
+                    army_id,
+                    troop_option_id,
+                    troop_option_description,
+                    troop_entry_id,
+                    troop_entry_type_code
+                FROM troops
+                WHERE data_version = '{data_version}';
+            """)
+                
 def create_troops_table(cursor):        
     cursor.execute(
         """
@@ -160,14 +187,46 @@ def create_troops_table(cursor):
             data_version TEXT
         );
         """)
+
+    create_troops_view(cursor, "old_troops", "old")
+    create_troops_view(cursor, "new_troops", "new")
+
+    cursor.execute(
+            f"""
+            CREATE VIEW old_troops_army_mapped AS
+                SELECT
+                    armies.new_army_id as new_army_id,
+                    troop_option_id,
+                    troop_option_description,
+                    troop_entry_id,
+                    troop_entry_type_code
+                FROM troops, armies
+                WHERE 
+                    data_version = 'old' AND
+                    armies.old_army_id = troops.army_id
+            ;
+            """)
     
-def create_database():
+    cursor.execute(
+        """
+        CREATE VIEW troops_mapping AS
+            SELECT 
+                old_troops.troop_entry_id AS old_troop_entry_id,
+                new_troops.troop_entry_id AS new_troop_entry_id
+            FROM old_troops_army_mapped AS old_troops, new_troops
+            WHERE
+                old_troops.new_army_id = new_troops.army_id AND
+                old_troops.troop_option_description = new_troops.troop_option_description AND
+                old_troops.troop_entry_type_code = new_troops.troop_entry_type_code
+        ;
+        """)
+
+    
+def create_database(db_path: Path):
     """Create a new SQLite database named update_meshwesh.db.
        If it already exists, delete it and create a new one.
        Also, add the database to .gitignore.
-    """
-    db_path = Path('update_meshwesh.db')
-    
+    """    
     # Delete the database if it exists
     if db_path.exists():
         db_path.unlink()
@@ -177,8 +236,8 @@ def create_database():
     conn = sqlite3.connect(db_path)
     
     create_armies_table(conn)
-    load_army_summary(conn, "armyLists/summary", update_old_army)
-    load_army_summary(conn, "armyLists.old/summary", update_new_army)
+    load_army_summary(conn, "armyLists.old/summary", update_old_army)
+    load_army_summary(conn, "armyLists/summary", update_new_army)
 
     cursor = conn.cursor()
     create_troops_table(cursor)
@@ -187,6 +246,7 @@ def create_database():
 
     # Commit changes and close the connection
     conn.commit()
+    cursor.close()
     conn.close()
     
 
@@ -214,6 +274,33 @@ def reclone():
     # Add all files in armyLists to git
     subprocess.run(['git', 'add', 'armyLists/'], check=True)
     
+def output_changes(db_path: Path):
+    """Output the changes between:
+          * old and new troop_entry_id 
+          * old and new army_id
+        to a sed script.
+    """    
+    with open("changes.sed", "w") as changes_file:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            SELECT old_troop_entry_id, new_troop_entry_id
+            FROM troops_mapping
+            ;
+        """)
+        for old_troop_entry_id, new_troop_entry_id in cursor.fetchall():
+            changes_file.write(f"s/{old_troop_entry_id}/{new_troop_entry_id}/g\n")
+            
+        cursor.execute("""
+            SELECT old_army_id, new_army_id
+            FROM armies_mapping
+            """)
+        for old_army_id, new_army_id in cursor.fetchall():
+            changes_file.write(f"s/{old_army_id}/{new_army_id}/g\n")
+        
+    cursor.close()
+    conn.close()    
 
     
 if __name__ == "__main__":
@@ -222,12 +309,16 @@ if __name__ == "__main__":
     parser.add_argument("--no-clone", action="store_false", dest="clone", help="Do not reclone Meshwesh data.")
     parser.add_argument("--db-create", action="store_true", dest="db_create", default=True, help="Create mapping database.")
     parser.add_argument("--no-db-create", action="store_false", dest="db_create", default=True, help="Use existing mapping database.")
-    
+    parser.description = "Generate a sed script to execute against the ttslua scripts to update the mappings for units to models"
     args = parser.parse_args()
 
     # Initialize the variable with the default value
     if args.clone:
         reclone()
     
+    db_path = Path('update_meshwesh.db')    
+    
     if args.db_create:
-        create_database()
+        create_database(db_path)        
+    
+    output_changes(db_path)
