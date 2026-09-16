@@ -7,11 +7,14 @@ from pathlib import Path
 import clone
 import sqlite3
 import argparse
+import pdb
 
-def create_armies_table( cursor):
+
+def create_armies_table( conn):
     """
     """
     # Create the armies table with indexed columns
+    cursor = conn.cursor()
     cursor.execute('''
         CREATE TABLE armies (
             name TEXT,
@@ -19,12 +22,16 @@ def create_armies_table( cursor):
             new_army_id TEXT,
             PRIMARY KEY (name)
         )
-    ''')
-    
+        ''')
+        
     # Create indexes for the columns
     cursor.execute('CREATE INDEX idx_name ON armies (name)')
     cursor.execute('CREATE INDEX idx_old_army_id ON armies (old_army_id)')
     cursor.execute('CREATE INDEX idx_new_army_id ON armies (new_army_id)')
+        
+    conn.commit()  # Commit the changes to the database
+    cursor.close()  # Close the cursor
+
 
 def create_troops_table( cursor):
     """
@@ -73,7 +80,7 @@ def update_new_army(cursor, name, new_army_id):
     Args:
         cursor: An sqlite3 cursor object.
         name (str): The army name (primary key).
-        old_army_id (str): The old army identifier.
+        new_army_id (str): The new army identifier.
     """
     cursor.execute(
         """
@@ -84,23 +91,76 @@ def update_new_army(cursor, name, new_army_id):
         (name, new_army_id),
     )   
     
-def load_army_summary(cursor, summary_file_path, update_function):
+def load_army_summary(conn, summary_file_path, update_function):
     """
     Load army summary data from a JSON file and update the database using the provided function.
 
     Args:
-        cursor: An sqlite3 cursor object.
+        conn: Open connection to the SQLite database.
         summary_file_path (str): Path to the JSON file containing army summary data.
         update_function (function): Function to update the database (either update_old_army or update_new_army).
     """
+    cursor = conn.cursor()
+    
     with open(summary_file_path, "r") as summary_file:
         summary_text = summary_file.read()
         summary = json.loads(summary_text)
         for army_entry in summary:
             name = army_entry['name']
             army_id = army_entry['id']
-            update_function(cursor, name, army_id)  
+            update_function(cursor, name, army_id) 
+            
+    conn.commit()  # Commit the changes to the database
+    cursor.close()  # Close the cursor
+            
+def load_troops(cursor, army_data_dir: Path, data_version):    
+    if data_version == "old":
+        army_id_column = "old_army_id"
+    else:
+        army_id_column = "new_army_id"
+    cursor.execute(f"""
+        SELECT {army_id_column} 
+        FROM armies
+        WHERE {army_id_column} IS NOT NULL
+        ;
+        """)
+    army_id_records = cursor.fetchall()
+    
+    for army_id_record in army_id_records:
+        army_id = army_id_record[0]
+        file_path = army_data_dir / army_id
+        if not file_path.exists():
+            breakpoint()
+            raise FileNotFoundError(f"Army data file not found: {file_path}")   
         
+        print(f"Loading troops for army_id: {army_id} from {file_path}")
+        with open(file_path, "r") as json_file:
+            j = json.load(json_file)
+            troop_options = j["troopOptions"]
+            for troop_option in troop_options:
+                troop_option_id = troop_option["_id"]
+                troop_option_description = troop_option['description']
+                troop_entries = troop_option["troopEntries"]
+                for troop_entry in troop_entries:
+                    troop_entry_id = troop_entry["_id"]
+                    troop_entry_type_code = troop_entry["troopTypeCode"]
+                    cursor.execute("INSERT INTO troops (army_id, troop_option_id, troop_option_description, troop_entry_id, troop_entry_type_code, data_version) VALUES (?,?,?,?,?,?)",
+                            (army_id, troop_option_id, troop_option_description, troop_entry_id, troop_entry_type_code, data_version))
+            
+        
+def create_troops_table(cursor):        
+    cursor.execute(
+        """
+        create table troops (
+            army_id TEXT,
+            troop_option_id TEXT,
+            troop_option_description TEXT,
+            troop_entry_id TEXT,
+            troop_entry_type_code TEXT,
+            data_version TEXT
+        );
+        """)
+    
 def create_database():
     """Create a new SQLite database named update_meshwesh.db.
        If it already exists, delete it and create a new one.
@@ -115,11 +175,15 @@ def create_database():
     
     # Connect to the SQLite database
     conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
     
-    create_armies_table(cursor)
-    load_army_summary(cursor, "armyLists/summary", update_old_army)
-    load_army_summary(cursor, "armyLists.old/summary", update_new_army)
+    create_armies_table(conn)
+    load_army_summary(conn, "armyLists/summary", update_old_army)
+    load_army_summary(conn, "armyLists.old/summary", update_new_army)
+
+    cursor = conn.cursor()
+    create_troops_table(cursor)
+    load_troops(cursor, Path("armyLists.old"), "old")
+    load_troops(cursor, Path("armyLists"), "new")
 
     # Commit changes and close the connection
     conn.commit()
