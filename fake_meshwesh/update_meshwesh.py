@@ -4,6 +4,7 @@ import json
 import shutil
 import subprocess
 from pathlib import Path
+import sys
 import clone
 import sqlite3
 import argparse
@@ -274,34 +275,87 @@ def reclone():
     # Add all files in armyLists to git
     subprocess.run(['git', 'add', 'armyLists/'], check=True)
     
-def output_changes(db_path: Path):
+    
+def get_changes(db_path: Path):
     """Output the changes between:
           * old and new troop_entry_id 
           * old and new army_id
         to a sed script.
-    """    
-    with open("changes.sed", "w") as changes_file:
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
         
-        cursor.execute("""
-            SELECT old_troop_entry_id, new_troop_entry_id
-            FROM troops_mapping
-            ;
-        """)
-        for old_troop_entry_id, new_troop_entry_id in cursor.fetchall():
-            changes_file.write(f"s/{old_troop_entry_id}/{new_troop_entry_id}/g\n")
+    cursor.execute("""
+        SELECT old_troop_entry_id, new_troop_entry_id
+        FROM troops_mapping
+        ;
+    """)
+    changes= cursor.fetchall()
             
-        cursor.execute("""
-            SELECT old_army_id, new_army_id
-            FROM armies_mapping
-            """)
-        for old_army_id, new_army_id in cursor.fetchall():
-            changes_file.write(f"s/{old_army_id}/{new_army_id}/g\n")
+    cursor.execute("""
+        SELECT old_army_id, new_army_id
+        FROM armies_mapping
+        """)
+    changes.extend(cursor.fetchall())
         
     cursor.close()
     conn.close()    
+    
+    return changes
 
+
+def replace_ids_in_file(path, replacements):
+    """
+    Replace all occurrences of each old GUID with its new GUID in `path`.
+
+    `replacements` is a list of (old_id, new_id) tuples.
+    Returns True if the file was changed, False otherwise.
+    """
+    try:
+        text = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError) as e:
+        raise e
+
+    original = text
+    for old_id, new_id in replacements:
+        if old_id in text:
+            text = text.replace(old_id, new_id)
+
+    if text == original:
+        return False
+
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(text, encoding="utf-8")
+    tmp.replace(path)
+    return True
+
+
+def replace_ids_in_dir(root: Path, replacements: list[tuple[str, str]]):
+    """
+    Apply (old_id, new_id) replacements to every file in `directory`.
+
+    Args:
+        root (Path): Directory containing the files.
+        replacements (list[tuple[str, str]]): Pairs of (old_id, new_id).
+    """
+    if not root.is_dir():
+        print(f"Error: {root} is not a directory")
+        return
+
+    files = sorted(p for p in root.iterdir() if p.is_file())
+    if not files:
+        print(f"No files found in {root}")
+        return
+
+    changed = 0
+    for path in files:
+        if replace_ids_in_file(path, replacements):
+            print(f"  ✓ {path}")
+            changed += 1
+        else:
+            print(f"  = {path} (no change)")
+
+    print(f"\nDone: {changed} of {len(files)} files changed")
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Update meshwesh script.")
@@ -320,5 +374,10 @@ if __name__ == "__main__":
     
     if args.db_create:
         create_database(db_path)        
+        
+    changes = get_changes(db_path)
+    breakpoint()
+    ttslua_data = Path("../scripts/data").resolve()
+    replace_ids_in_dir(ttslua_data, changes)
     
-    output_changes(db_path)
+sys.exit(0)
