@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
  
+import json
 import shutil
 import subprocess
 from pathlib import Path
-
 import clone
 import sqlite3
 import argparse
@@ -17,7 +17,7 @@ def create_armies_table( cursor):
             name TEXT,
             old_army_id TEXT,
             new_army_id TEXT,
-            PRIMARY KEY (old_army_id)
+            PRIMARY KEY (name)
         )
     ''')
     
@@ -25,7 +25,82 @@ def create_armies_table( cursor):
     cursor.execute('CREATE INDEX idx_name ON armies (name)')
     cursor.execute('CREATE INDEX idx_old_army_id ON armies (old_army_id)')
     cursor.execute('CREATE INDEX idx_new_army_id ON armies (new_army_id)')
+
+def create_troops_table( cursor):
+    """
+    """
+    # Create the troops table with indexed columns
+    cursor.execute('''
+        CREATE TABLE troops (
+            description TEXT,
+            old_army_id TEXT,
+            old_troop_id TEXT,
+            new_army_id TEXT,
+            new_troop_id TEXT,
+        )
+    ''')
     
+    # Create indexes for the columns
+    cursor.execute('CREATE INDEX idx_old_army_id ON armies (old_army_id, description)')
+    cursor.execute('CREATE INDEX idx_new_army_id ON armies (new_army_id, description)')
+    
+def update_old_army(cursor, name, old_army_id):
+    """
+    Insert a new row into the armies table with the given name and old_army_id.
+    new_army_id is left as NULL.
+    
+    Args:
+        cursor: An sqlite3 cursor object.
+        name (str): The army name (primary key).
+        old_army_id (str): The old army identifier.
+    """
+    cursor.execute(
+        """
+        INSERT INTO armies (name, old_army_id, new_army_id)
+        VALUES (?, ?, NULL)
+        """,
+        (name, old_army_id),
+    )
+    
+    
+def update_new_army(cursor, name, new_army_id):
+    """
+    Upsert a row into the armies table.
+
+    If a row with the given `name` already exists, update its `new_army_id`
+    column. Otherwise, insert a new row with `old_army_id` left as NULL.
+
+    Args:
+        cursor: An sqlite3 cursor object.
+        name (str): The army name (primary key).
+        old_army_id (str): The old army identifier.
+    """
+    cursor.execute(
+        """
+        INSERT INTO armies (name, old_army_id, new_army_id)
+        VALUES (?, NULL, ?)
+        ON CONFLICT(name) DO UPDATE SET new_army_id = excluded.new_army_id
+        """,
+        (name, new_army_id),
+    )   
+    
+def load_army_summary(cursor, summary_file_path, update_function):
+    """
+    Load army summary data from a JSON file and update the database using the provided function.
+
+    Args:
+        cursor: An sqlite3 cursor object.
+        summary_file_path (str): Path to the JSON file containing army summary data.
+        update_function (function): Function to update the database (either update_old_army or update_new_army).
+    """
+    with open(summary_file_path, "r") as summary_file:
+        summary_text = summary_file.read()
+        summary = json.loads(summary_text)
+        for army_entry in summary:
+            name = army_entry['name']
+            army_id = army_entry['id']
+            update_function(cursor, name, army_id)  
+        
 def create_database():
     """Create a new SQLite database named update_meshwesh.db.
        If it already exists, delete it and create a new one.
@@ -43,6 +118,8 @@ def create_database():
     cursor = conn.cursor()
     
     create_armies_table(cursor)
+    load_army_summary(cursor, "armyLists/summary", update_old_army)
+    load_army_summary(cursor, "armyLists.old/summary", update_new_army)
 
     # Commit changes and close the connection
     conn.commit()
