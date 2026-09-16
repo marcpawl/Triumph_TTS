@@ -1,1 +1,18 @@
-[{"name":"Fall of Rome","id":"5fb1b720e1af06001770192d"},{"name":"Dark Ages","id":"5fb1b720e1af06001770192e"},{"name":"Pax Romana","id":"5fb1b720e1af06001770192b"},{"name":"Viking Seas","id":"5fb1b720e1af06001770192f"}]
+[
+    {
+        "name": "Fall of Rome",
+        "id": "5fb1b720e1af06001770192d"
+    },
+    {
+        "name": "Dark Ages",
+        "id": "5fb1b720e1af06001770192e"
+    },
+    {
+        "name": "Pax Romana",
+        "id": "5fb1b720e1af06001770192b"
+    },
+    {
+        "name": "Viking Seas",
+        "id": "5fb1b720e1af06001770192f"
+    }
+]

@@ -1,1 +1,10 @@
-[{"name":"Dark Ages","id":"5fb1b720e1af06001770192e"},{"name":"Viking Seas","id":"5fb1b720e1af06001770192f"}]
+[
+    {
+        "name": "Dark Ages",
+        "id": "5fb1b720e1af06001770192e"
+    },
+    {
+        "name": "Viking Seas",
+        "id": "5fb1b720e1af06001770192f"
+    }
+]

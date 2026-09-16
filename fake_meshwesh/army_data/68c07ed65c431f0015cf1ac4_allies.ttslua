@@ -1,0 +1,8 @@
+
+-- GENERATED FILE DO NOT EDIT
+-- See tts_army.py
+
+require("Triumph_TTS/scripts/static_maps")
+
+allies['68c07ed65c431f0015cf1ac4'] = {
+}

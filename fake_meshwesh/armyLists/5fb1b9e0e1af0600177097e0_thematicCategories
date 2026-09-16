@@ -1,1 +1,14 @@
-[{"name":"Hellenistic World","id":"5fb1b720e1af06001770192a"},{"name":"Mandate of Heaven","id":"5fb1b720e1af060017701940"},{"name":"India and the Khyber Pass","id":"5fb1b720e1af06001770192c"}]
+[
+    {
+        "name": "Hellenistic World",
+        "id": "5fb1b720e1af06001770192a"
+    },
+    {
+        "name": "Mandate of Heaven",
+        "id": "5fb1b720e1af060017701940"
+    },
+    {
+        "name": "India and the Khyber Pass",
+        "id": "5fb1b720e1af06001770192c"
+    }
+]

@@ -1,1 +1,14 @@
-[{"name":"Medieval Western Europe","id":"5fb1b720e1af060017701938"},{"name":"Flower of Chivalry","id":"5fb1b720e1af060017701937"},{"name":"Plate and Handgonne","id":"5fb1b720e1af060017701939"}]
+[
+    {
+        "name": "Medieval Western Europe",
+        "id": "5fb1b720e1af060017701938"
+    },
+    {
+        "name": "Flower of Chivalry",
+        "id": "5fb1b720e1af060017701937"
+    },
+    {
+        "name": "Plate and Handgonne",
+        "id": "5fb1b720e1af060017701939"
+    }
+]

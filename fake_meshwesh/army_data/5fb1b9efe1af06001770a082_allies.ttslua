@@ -27,34 +27,34 @@ army['5fb1b9efe1af06001770a082_ally_5fb1b9efe1af06001770a068'] = {
     name='Ghuzz allies',
     id='5fb1b9efe1af06001770a082_ally_5fb1b9efe1af06001770a068',
   },
-  g_base_definitions['6153519a03385c0016b847e0'],
-  g_base_definitions['6153519a03385c0016b847e2'],
+  g_base_definitions['68c995ce5791630015887d61'],
+  g_base_definitions['68c995ce5791630015887d63'],
 }
 army['5fb1b9efe1af06001770a082_ally_5fb1b9ede1af060017709f72'] = {
   data={
     name='Gharjistan allies',
     id='5fb1b9efe1af06001770a082_ally_5fb1b9ede1af060017709f72',
   },
-  g_base_definitions['6153519903385c0016b846b7'],
-  g_base_definitions['6153519903385c0016b846b9'],
+  g_base_definitions['68c995ce5791630015887c34'],
+  g_base_definitions['68c995ce5791630015887c36'],
 }
 army['5fb1b9efe1af06001770a082_ally_5fb1b9ede1af060017709f72'] = {
   data={
     name='Seistan allies',
     id='5fb1b9efe1af06001770a082_ally_5fb1b9ede1af060017709f72',
   },
-  g_base_definitions['6153519903385c0016b846b7'],
-  g_base_definitions['6153519903385c0016b846b9'],
+  g_base_definitions['68c995ce5791630015887c34'],
+  g_base_definitions['68c995ce5791630015887c36'],
 }
 army['5fb1b9efe1af06001770a082_ally_5fb1b9efe1af06001770a0ab'] = {
   data={
     name='Rajput Indian allies',
     id='5fb1b9efe1af06001770a082_ally_5fb1b9efe1af06001770a0ab',
   },
-  g_base_definitions['6153519a03385c0016b84846'],
-  g_base_definitions['6153519a03385c0016b84848'],
-  g_base_definitions['6153519a03385c0016b8484a'],
-  g_base_definitions['6153519a03385c0016b8484c'],
-  g_base_definitions['6153519a03385c0016b8484e'],
-  g_base_definitions['6153519a03385c0016b84850'],
+  g_base_definitions['68c995ce5791630015887dc7'],
+  g_base_definitions['68c995ce5791630015887dc9'],
+  g_base_definitions['68c995ce5791630015887dcb'],
+  g_base_definitions['68c995ce5791630015887dcd'],
+  g_base_definitions['68c995ce5791630015887dcf'],
+  g_base_definitions['68c995ce5791630015887dd1'],
 }

@@ -15,8 +15,8 @@ army['5fb1b9dce1af06001770956c_ally_5fb1b9dce1af06001770953b'] = {
     name='Bruttian allies',
     id='5fb1b9dce1af06001770956c_ally_5fb1b9dce1af06001770953b',
   },
-  g_base_definitions['6153519003385c0016b8384d'],
-  g_base_definitions['6153519003385c0016b8384f'],
-  g_base_definitions['6153519003385c0016b83851'],
-  g_base_definitions['6153519003385c0016b83854'],
+  g_base_definitions['68c995c65791630015886db7'],
+  g_base_definitions['68c995c65791630015886db9'],
+  g_base_definitions['68c995c65791630015886dbb'],
+  g_base_definitions['68c995c65791630015886dbd'],
 }

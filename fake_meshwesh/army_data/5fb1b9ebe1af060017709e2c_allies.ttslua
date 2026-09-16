@@ -15,8 +15,9 @@ army['5fb1b9ebe1af060017709e2c_ally_5fb1b9e4e1af060017709a36'] = {
     name='Lombard allies',
     id='5fb1b9ebe1af060017709e2c_ally_5fb1b9e4e1af060017709a36',
   },
-  g_base_definitions['6153519503385c0016b83ec4'],
-  g_base_definitions['6153519503385c0016b83ec6'],
-  g_base_definitions['6153519503385c0016b83ec8'],
-  g_base_definitions['6153519503385c0016b83ec9'],
+  g_base_definitions['68c995c95791630015887425'],
+  g_base_definitions['68c995c95791630015887427'],
+  g_base_definitions['68c995c95791630015887429'],
+  g_base_definitions['68c995c9579163001588742a'],
+  g_base_definitions['68c995c9579163001588742b'],
 }

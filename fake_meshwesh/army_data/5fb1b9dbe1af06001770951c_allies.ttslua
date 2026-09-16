@@ -19,15 +19,15 @@ army['5fb1b9dbe1af06001770951c_ally_5fb1b9dae1af060017709424'] = {
     name='Mede rebel allies',
     id='5fb1b9dbe1af06001770951c_ally_5fb1b9dae1af060017709424',
   },
-  g_base_definitions['6153518e03385c0016b83689'],
-  g_base_definitions['6153518e03385c0016b8368b'],
-  g_base_definitions['6153518e03385c0016b8368d'],
+  g_base_definitions['68c995c55791630015886c1c'],
+  g_base_definitions['68c995c55791630015886c1e'],
+  g_base_definitions['68c995c55791630015886c20'],
 }
 army['5fb1b9dbe1af06001770951c_ally_5fb1b9dae1af060017709430'] = {
   data={
     name='Saka allies',
     id='5fb1b9dbe1af06001770951c_ally_5fb1b9dae1af060017709430',
   },
-  g_base_definitions['6153518e03385c0016b8369a'],
-  g_base_definitions['6153518e03385c0016b8369c'],
+  g_base_definitions['68c995c55791630015886c2d'],
+  g_base_definitions['68c995c55791630015886c2f'],
 }

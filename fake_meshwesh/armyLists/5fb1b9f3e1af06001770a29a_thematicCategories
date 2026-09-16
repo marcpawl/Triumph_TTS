@@ -1,1 +1,14 @@
-[{"name":"Middle Kingdom","id":"5fb1b720e1af06001770193f"},{"name":"Russian Princes","id":"5fb1b720e1af060017701944"},{"name":"Silk Road","id":"5fb1b720e1af060017701935"}]
+[
+    {
+        "name": "Middle Kingdom",
+        "id": "5fb1b720e1af06001770193f"
+    },
+    {
+        "name": "Russian Princes",
+        "id": "5fb1b720e1af060017701944"
+    },
+    {
+        "name": "Silk Road",
+        "id": "5fb1b720e1af060017701935"
+    }
+]

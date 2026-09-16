@@ -1,33 +1,33 @@
-g_str_615351a703385c0016b86733='615351a703385c0016b86733'
-g_base_definitions[g_str_615351a703385c0016b86733]={
-  id=g_str_615351a703385c0016b86733,
+g_str_68c995dc5791630015889cd3='68c995dc5791630015889cd3'
+g_base_definitions[g_str_68c995dc5791630015889cd3]={
+  id=g_str_68c995dc5791630015889cd3,
   name='Horse Bow',
   min=4,
   max=10,
   description='Hun horse archers',
   troop_type="Horse Bow",
-  troop_option_id="615351a703385c0016b86732",
+  troop_option_id="68c995dc5791630015889cd2",
 }
-g_str_615351a703385c0016b86735_general='615351a703385c0016b86735_general'
-g_base_definitions[g_str_615351a703385c0016b86735_general]={
-  id=g_str_615351a703385c0016b86735_general,
+g_str_68c995dc5791630015889cd5_general='68c995dc5791630015889cd5_general'
+g_base_definitions[g_str_68c995dc5791630015889cd5_general]={
+  id=g_str_68c995dc5791630015889cd5_general,
   name='Warriors General',
   min=3,
   max=1,
   description='Fierce Hun infantry',
   general=true,
   troop_type="Warriors",
-  troop_option_id="615351a703385c0016b86734",
+  troop_option_id="68c995dc5791630015889cd4",
 }
-g_str_615351a703385c0016b86735='615351a703385c0016b86735'
-g_base_definitions[g_str_615351a703385c0016b86735]={
-  id=g_str_615351a703385c0016b86735,
+g_str_68c995dc5791630015889cd5='68c995dc5791630015889cd5'
+g_base_definitions[g_str_68c995dc5791630015889cd5]={
+  id=g_str_68c995dc5791630015889cd5,
   name='Warriors',
   min=3,
   max=10,
   description='Fierce Hun infantry',
   troop_type="Warriors",
-  troop_option_id="615351a703385c0016b86734",
+  troop_option_id="68c995dc5791630015889cd4",
 }
 g_str_5fb1b9e3e1af060017709964_camp='5fb1b9e3e1af060017709964_camp'
 g_base_definitions[g_str_5fb1b9e3e1af060017709964_camp]={

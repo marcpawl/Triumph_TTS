@@ -14,16 +14,16 @@ army['5fb1b9dce1af060017709581'].data.base = "tile_grass"
 --},
 
     -- Numidian general with spanish bodyguard - JavCav General
-    g_models[g_str_615351a203385c0016b858bb_general] = g_models[g_str_615351a103385c0016b85710_general]
+    g_models[g_str_68c995d75791630015888e25_general] = g_models[g_str_68c995d65791630015888c8b_general]
 
     -- Numidian horsemen - JavCav
-    g_models[g_str_615351a203385c0016b858bb] = g_models[g_str_615351a103385c0016b8572c]
+    g_models[g_str_68c995d75791630015888e25] = g_models[g_str_68c995d65791630015888c9f]
     
     -- Javelinmen - LF
-    g_models[g_str_615351a203385c0016b858bd] = g_models[g_str_615351a103385c0016b85714]
+    g_models[g_str_68c995d75791630015888e27] = g_models[g_str_68c995d65791630015888c8e]
     
     -- Rabble javelinmen unshielded
-    g_models[g_str_615351a203385c0016b858be] = {
+    g_models[g_str_68c995d75791630015888e28] = {
         {
           random_models = {
             'troop_egyptian_skirmishers_javelin_carrier'
@@ -33,10 +33,10 @@ army['5fb1b9dce1af060017709581'].data.base = "tile_grass"
       }
 
     -- Skirmishing bowmen or slingers - Sk
-    g_models[g_str_615351a203385c0016b858c0] = g_models[g_str_615351a103385c0016b85721]
+    g_models[g_str_68c995d75791630015888e2a] = g_models[g_str_68c995d65791630015888c97]
     
     -- African forest elephant - El
-    g_models[g_str_615351a203385c0016b858c2] = {
+    g_models[g_str_68c995d75791630015888e2c] = {
         {
           n_models = 1,
           model_data = 'troop_carthaginian_elephant_2'
@@ -44,10 +44,10 @@ army['5fb1b9dce1af060017709581'].data.base = "tile_grass"
       }
     
     -- Roman-trained light infantry - LF
-    g_models[g_str_615351a203385c0016b858c5] = g_models[g_str_615351a203385c0016b85959]
+    g_models[g_str_68c995d75791630015888e2f] = g_models[g_str_68c995d75791630015888ec3]
     
     -- Imitation legionaries - HF
-    g_models[g_str_615351a203385c0016b858c8] = g_models[g_str_615351a603385c0016b86249]
+    g_models[g_str_68c995d75791630015888e32] = g_models[g_str_68c995da57916300158897d8]
 
 
     g_models[g_str_5fb1b9dce1af060017709591_camp] = g_models[g_str_5fb1b9dce1af060017709543_camp]
@@ -63,19 +63,19 @@ army['5fb1b9dce1af060017709581'].data.base = "tile_grass"
 --},
 
     -- 4-horse battle platforms with javelin crew - Battle Taxi General
-    g_models[g_str_615351a203385c0016b8589f_general] = g_models[g_str_615351a103385c0016b85705_general]
+    g_models[g_str_68c995d75791630015888e09_general] = g_models[g_str_68c995d65791630015888c83_general]
 
     -- 4-horse battle platforms with javelin crew - Battle Taxi
-    g_models[g_str_615351a203385c0016b8589f] = g_models[g_str_615351a103385c0016b85705]
+    g_models[g_str_68c995d75791630015888e09] = g_models[g_str_68c995d65791630015888c83]
     
     -- Libyan heavy infantry with large shields and spears - HF
-    g_models[g_str_615351a203385c0016b858a1] = g_models[g_str_615351a103385c0016b85717]
+    g_models[g_str_68c995d75791630015888e0b] = g_models[g_str_68c995d65791630015888c90]
     
     -- Tribesmen armed with javelins, throwing sticks, and clubs - Rabble
-    g_models[g_str_615351a203385c0016b858a3] = g_models[g_str_615351a203385c0016b858be]
+    g_models[g_str_68c995d75791630015888e0d] = g_models[g_str_68c995d75791630015888e28]
 
     -- Skirmishing bowmen - Rabble
-    g_models[g_str_615351a203385c0016b858a5] = g_models[g_str_615351a203385c0016b858be]
+    g_models[g_str_68c995d75791630015888e0f] = g_models[g_str_68c995d75791630015888e28]
 
     g_models[g_str_5fb1b9dce1af060017709581_camp] = g_models[g_str_5fb1b9dce1af060017709543_camp]
 

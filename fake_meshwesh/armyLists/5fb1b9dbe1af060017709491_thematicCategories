@@ -1,1 +1,10 @@
-[{"name":"Birth of the West","id":"5fb1b720e1af060017701927"},{"name":"Sea Peoples Invasions","id":"5fb1b720e1af060017701924"}]
+[
+    {
+        "name": "Birth of the West",
+        "id": "5fb1b720e1af060017701927"
+    },
+    {
+        "name": "Sea Peoples Invasions",
+        "id": "5fb1b720e1af060017701924"
+    }
+]

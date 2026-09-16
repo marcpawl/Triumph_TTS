@@ -1,1 +1,18 @@
-[{"name":"Chariot Supremacy","id":"5fb1b71fe1af060017701923"},{"name":"Alexander and Successors","id":"5fb1b720e1af060017701925"},{"name":"Assyrian Empire","id":"5fb1b720e1af060017701926"},{"name":"Sea Peoples Invasions","id":"5fb1b720e1af060017701924"}]
+[
+    {
+        "name": "Chariot Supremacy",
+        "id": "5fb1b71fe1af060017701923"
+    },
+    {
+        "name": "Alexander and Successors",
+        "id": "5fb1b720e1af060017701925"
+    },
+    {
+        "name": "Assyrian Empire",
+        "id": "5fb1b720e1af060017701926"
+    },
+    {
+        "name": "Sea Peoples Invasions",
+        "id": "5fb1b720e1af060017701924"
+    }
+]

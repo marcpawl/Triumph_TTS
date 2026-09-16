@@ -27,37 +27,37 @@ army['5fb1b9ede1af060017709f5a_ally_5fb1b9ede1af060017709f54'] = {
     name='Kurdish ally',
     id='5fb1b9ede1af060017709f5a_ally_5fb1b9ede1af060017709f54',
   },
-  g_base_definitions['6153519903385c0016b8467c'],
+  g_base_definitions['68c995cd5791630015887bf9'],
 }
 army['5fb1b9ede1af060017709f5a_ally_5fb1b9ede1af060017709f41'] = {
   data={
     name='Mosul Hamdanid ally',
     id='5fb1b9ede1af060017709f5a_ally_5fb1b9ede1af060017709f41',
   },
-  g_base_definitions['6153519903385c0016b8466c'],
+  g_base_definitions['68c995cd5791630015887be9'],
 }
 army['5fb1b9ede1af060017709f5a_ally_5fb1b9efe1af06001770a056'] = {
   data={
     name='Saffarid vassal ally',
     id='5fb1b9ede1af060017709f5a_ally_5fb1b9efe1af06001770a056',
   },
-  g_base_definitions['6153519a03385c0016b847c0'],
-  g_base_definitions['6153519a03385c0016b847c3'],
-  g_base_definitions['6153519a03385c0016b847c5'],
-  g_base_definitions['6153519a03385c0016b847c7'],
-  g_base_definitions['6153519a03385c0016b847c8'],
-  g_base_definitions['6153519a03385c0016b847ca'],
-  g_base_definitions['6153519a03385c0016b847cb'],
+  g_base_definitions['68c995ce5791630015887d41'],
+  g_base_definitions['68c995ce5791630015887d44'],
+  g_base_definitions['68c995ce5791630015887d46'],
+  g_base_definitions['68c995ce5791630015887d48'],
+  g_base_definitions['68c995ce5791630015887d49'],
+  g_base_definitions['68c995ce5791630015887d4b'],
+  g_base_definitions['68c995ce5791630015887d4c'],
 }
 army['5fb1b9ede1af060017709f5a_ally_5fb1b9ebe1af060017709e41'] = {
   data={
     name='(not Buyids of Baghdad) Bagratid Armenian ally',
     id='5fb1b9ede1af060017709f5a_ally_5fb1b9ebe1af060017709e41',
   },
-  g_base_definitions['6153519803385c0016b844c7'],
-  g_base_definitions['6153519803385c0016b844c9'],
-  g_base_definitions['6153519803385c0016b844ca'],
-  g_base_definitions['6153519803385c0016b844cc'],
-  g_base_definitions['6153519803385c0016b844ce'],
-  g_base_definitions['6153519803385c0016b844cf'],
+  g_base_definitions['68c995cc5791630015887a43'],
+  g_base_definitions['68c995cc5791630015887a45'],
+  g_base_definitions['68c995cc5791630015887a46'],
+  g_base_definitions['68c995cc5791630015887a48'],
+  g_base_definitions['68c995cc5791630015887a4a'],
+  g_base_definitions['68c995cc5791630015887a4b'],
 }

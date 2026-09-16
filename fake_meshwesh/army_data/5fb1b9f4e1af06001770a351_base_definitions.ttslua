@@ -1,33 +1,44 @@
-g_str_615351b603385c0016b88cdc_general='615351b603385c0016b88cdc_general'
-g_base_definitions[g_str_615351b603385c0016b88cdc_general]={
-  id=g_str_615351b603385c0016b88cdc_general,
+g_str_68c995ea579163001588c3c4_general='68c995ea579163001588c3c4_general'
+g_base_definitions[g_str_68c995ea579163001588c3c4_general]={
+  id=g_str_68c995ea579163001588c3c4_general,
   name='Horse Bow General',
   min=9,
   max=1,
   description='Horse archers',
   general=true,
   troop_type="Horse Bow",
-  troop_option_id="615351b603385c0016b88cdb",
+  troop_option_id="68c995ea579163001588c3c3",
 }
-g_str_615351b603385c0016b88cdc='615351b603385c0016b88cdc'
-g_base_definitions[g_str_615351b603385c0016b88cdc]={
-  id=g_str_615351b603385c0016b88cdc,
+g_str_68c995ea579163001588c3c4='68c995ea579163001588c3c4'
+g_base_definitions[g_str_68c995ea579163001588c3c4]={
+  id=g_str_68c995ea579163001588c3c4,
   name='Horse Bow',
   min=9,
   max=12,
   description='Horse archers',
   troop_type="Horse Bow",
-  troop_option_id="615351b603385c0016b88cdb",
+  troop_option_id="68c995ea579163001588c3c3",
 }
-g_str_615351b603385c0016b88cde='615351b603385c0016b88cde'
-g_base_definitions[g_str_615351b603385c0016b88cde]={
-  id=g_str_615351b603385c0016b88cde,
+g_str_68c995ea579163001588c3c6='68c995ea579163001588c3c6'
+g_base_definitions[g_str_68c995ea579163001588c3c6]={
+  id=g_str_68c995ea579163001588c3c6,
   name='Bow Levy',
   min=0,
   max=6,
   description='Bowmen',
   troop_type="Bow Levy",
-  troop_option_id="615351b603385c0016b88cdd",
+  troop_option_id="68c995ea579163001588c3c5",
+}
+g_str_68c995ea579163001588c3c6_shower_shooting='68c995ea579163001588c3c6_shower_shooting'
+g_base_definitions[g_str_68c995ea579163001588c3c6_shower_shooting]={
+  id=g_str_68c995ea579163001588c3c6_shower_shooting,
+  name='Bow Levy',
+  min=0,
+  max=6,
+  description='Bowmen\nShower Shooting',
+  shower_shooting=true,
+  troop_type="Bow Levy",
+  troop_option_id="68c995ea579163001588c3c5",
 }
 g_str_5fb1b9f4e1af06001770a351_camp='5fb1b9f4e1af06001770a351_camp'
 g_base_definitions[g_str_5fb1b9f4e1af06001770a351_camp]={

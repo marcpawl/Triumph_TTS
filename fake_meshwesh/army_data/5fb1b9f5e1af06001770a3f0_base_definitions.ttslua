@@ -1,33 +1,33 @@
-g_str_615351b603385c0016b88e11='615351b603385c0016b88e11'
-g_base_definitions[g_str_615351b603385c0016b88e11]={
-  id=g_str_615351b603385c0016b88e11,
+g_str_68c995eb579163001588c50c='68c995eb579163001588c50c'
+g_base_definitions[g_str_68c995eb579163001588c50c]={
+  id=g_str_68c995eb579163001588c50c,
   name='Skirmishers',
   min=6,
   max=16,
   description='Skirmishing foot armed with atlatls',
   troop_type="Skirmishers",
-  troop_option_id="615351b603385c0016b88e10",
+  troop_option_id="68c995eb579163001588c50b",
 }
-g_str_615351b603385c0016b88e13_general='615351b603385c0016b88e13_general'
-g_base_definitions[g_str_615351b603385c0016b88e13_general]={
-  id=g_str_615351b603385c0016b88e13_general,
+g_str_68c995eb579163001588c50e_general='68c995eb579163001588c50e_general'
+g_base_definitions[g_str_68c995eb579163001588c50e_general]={
+  id=g_str_68c995eb579163001588c50e_general,
   name='Light Foot General',
   min=0,
   max=1,
   description='Formed infantry armed with spear and atlatl',
   general=true,
   troop_type="Light Foot",
-  troop_option_id="615351b603385c0016b88e12",
+  troop_option_id="68c995eb579163001588c50d",
 }
-g_str_615351b603385c0016b88e13='615351b603385c0016b88e13'
-g_base_definitions[g_str_615351b603385c0016b88e13]={
-  id=g_str_615351b603385c0016b88e13,
+g_str_68c995eb579163001588c50e='68c995eb579163001588c50e'
+g_base_definitions[g_str_68c995eb579163001588c50e]={
+  id=g_str_68c995eb579163001588c50e,
   name='Light Foot',
   min=0,
   max=10,
   description='Formed infantry armed with spear and atlatl',
   troop_type="Light Foot",
-  troop_option_id="615351b603385c0016b88e12",
+  troop_option_id="68c995eb579163001588c50d",
 }
 g_str_5fb1b9f5e1af06001770a3f0_camp='5fb1b9f5e1af06001770a3f0_camp'
 g_base_definitions[g_str_5fb1b9f5e1af06001770a3f0_camp]={

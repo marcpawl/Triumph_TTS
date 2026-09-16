@@ -31,42 +31,42 @@ army['5fb1b9e1e1af060017709895_ally_5fb1b9e1e1af06001770988c'] = {
     name='Scots-Irish allies',
     id='5fb1b9e1e1af060017709895_ally_5fb1b9e1e1af06001770988c',
   },
-  g_base_definitions['6153519403385c0016b83d31'],
-  g_base_definitions['6153519403385c0016b83d33'],
-  g_base_definitions['6153519403385c0016b83d35'],
+  g_base_definitions['68c995c85791630015887294'],
+  g_base_definitions['68c995c85791630015887296'],
+  g_base_definitions['68c995c85791630015887298'],
 }
 army['5fb1b9e1e1af060017709895_ally_5fb1b9e2e1af060017709910'] = {
   data={
     name='Saxon allies',
     id='5fb1b9e1e1af060017709895_ally_5fb1b9e2e1af060017709910',
   },
-  g_base_definitions['6153519403385c0016b83d99'],
+  g_base_definitions['68c995c957916300158872fc'],
 }
 army['5fb1b9e1e1af060017709895_ally_5fb1b9e1e1af06001770988c'] = {
   data={
     name='Scots-Irish allies',
     id='5fb1b9e1e1af060017709895_ally_5fb1b9e1e1af06001770988c',
   },
-  g_base_definitions['6153519403385c0016b83d31'],
-  g_base_definitions['6153519403385c0016b83d33'],
-  g_base_definitions['6153519403385c0016b83d35'],
+  g_base_definitions['68c995c85791630015887294'],
+  g_base_definitions['68c995c85791630015887296'],
+  g_base_definitions['68c995c85791630015887298'],
 }
 army['5fb1b9e1e1af060017709895_ally_5fb1b9e2e1af060017709910'] = {
   data={
     name='Saxon allies',
     id='5fb1b9e1e1af060017709895_ally_5fb1b9e2e1af060017709910',
   },
-  g_base_definitions['6153519403385c0016b83d99'],
+  g_base_definitions['68c995c957916300158872fc'],
 }
 army['5fb1b9e1e1af060017709895_ally_5fb1b9e5e1af060017709acf'] = {
   data={
     name='Northumbrian allies',
     id='5fb1b9e1e1af060017709895_ally_5fb1b9e5e1af060017709acf',
   },
-  g_base_definitions['6153519503385c0016b83f75'],
-  g_base_definitions['6153519503385c0016b83f78'],
-  g_base_definitions['6153519503385c0016b83f79'],
-  g_base_definitions['6153519503385c0016b83f7c'],
-  g_base_definitions['6153519503385c0016b83f7d'],
-  g_base_definitions['6153519503385c0016b83f7f'],
+  g_base_definitions['68c995ca57916300158874d8'],
+  g_base_definitions['68c995ca57916300158874db'],
+  g_base_definitions['68c995ca57916300158874dc'],
+  g_base_definitions['68c995ca57916300158874df'],
+  g_base_definitions['68c995ca57916300158874e0'],
+  g_base_definitions['68c995ca57916300158874e2'],
 }

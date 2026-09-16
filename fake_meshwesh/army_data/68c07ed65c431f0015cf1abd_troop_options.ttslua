@@ -1,0 +1,39 @@
+
+-- GENERATED FILE DO NOT EDIT
+-- See tts_army.py
+
+require("Triumph_TTS/scripts/static_maps")
+
+troop_options['68c995ec579163001588c6a2'] = {
+  min=2,
+  max=8,
+  dateRange={
+    startDate=1100,
+    endDate=1770,
+  }
+}
+troop_options['68c995ec579163001588c6a4'] = {
+  min=0,
+  max=8,
+  dateRange={
+    startDate=1100,
+    endDate=1770,
+  }
+}
+troop_options['68c995ec579163001588c6a7'] = {
+  min=0,
+  max=2,
+  dateRange={
+    startDate=1100,
+    endDate=1770,
+  }
+}
+troop_options['68c995ec579163001588c6a9'] = {
+  min=9,
+  max=21,
+  dateRange={
+    startDate=1100,
+    endDate=1770,
+  }
+}
+-- allies

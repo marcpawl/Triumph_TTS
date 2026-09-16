@@ -1,1 +1,18 @@
-[{"name":"Alexander and Successors","id":"5fb1b720e1af060017701925"},{"name":"Rise of Rome","id":"5fb1b720e1af060017701928"},{"name":"Birth of the West","id":"5fb1b720e1af060017701927"},{"name":"Hellenistic World","id":"5fb1b720e1af06001770192a"}]
+[
+    {
+        "name": "Alexander and Successors",
+        "id": "5fb1b720e1af060017701925"
+    },
+    {
+        "name": "Rise of Rome",
+        "id": "5fb1b720e1af060017701928"
+    },
+    {
+        "name": "Birth of the West",
+        "id": "5fb1b720e1af060017701927"
+    },
+    {
+        "name": "Hellenistic World",
+        "id": "5fb1b720e1af06001770192a"
+    }
+]

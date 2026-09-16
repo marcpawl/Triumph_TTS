@@ -380,11 +380,22 @@ def update_date_file() :
 
     today = datetime.datetime.now(datetime.UTC)
     date_string='{:04}{:02}{:02}.{:02}{:02}'.format( today.year, today.month, today.day, today.hour, today.minute )
-    print(date_string)
+    
+    with open("../fake_meshwesh/armyLists/version", "r") as meshwesh_version_file:
+        meshwesh_version = meshwesh_version_file.readline()
+    
     with open("ObjectStates/version_text", "r") as file:
         data = json.load(file)
-    data['Text']['Text'] = \
-        f"Triumph! TTSMod\n{branch_name} alpha {date_string}\nhttps://github.com/marcpawl/Triumph_TTS/tree/{change_id}"
+        data['Text']['Text'] = f"""
+Triumph! version 1.2
+
+Meshwesh version: {meshwesh_version}
+
+TTSMod
+{branch_name} alpha 
+{date_string}
+https://github.com/marcpawl/Triumph_TTS/tree/{change_id}
+"""
     with open("ObjectStates/version_text", "w") as file:
         file.write(json.dumps(data, indent=4, sort_keys="True"))
 

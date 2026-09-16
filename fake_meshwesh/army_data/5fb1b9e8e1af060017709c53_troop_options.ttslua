@@ -4,7 +4,7 @@
 
 require("Triumph_TTS/scripts/static_maps")
 
-troop_options['615351ab03385c0016b870ed'] = {
+troop_options['68c995e0579163001588a6d6'] = {
   min=2,
   max=3,
   dateRange={
@@ -12,7 +12,7 @@ troop_options['615351ab03385c0016b870ed'] = {
     endDate=1480,
   }
 }
-troop_options['615351ab03385c0016b870f0'] = {
+troop_options['68c995e0579163001588a6d9'] = {
   min=2,
   max=3,
   dateRange={
@@ -20,7 +20,7 @@ troop_options['615351ab03385c0016b870f0'] = {
     endDate=1480,
   }
 }
-troop_options['615351ab03385c0016b870f3'] = {
+troop_options['68c995e0579163001588a6dc'] = {
   min=0,
   max=2,
   dateRange={
@@ -28,7 +28,7 @@ troop_options['615351ab03385c0016b870f3'] = {
     endDate=1480,
   }
 }
-troop_options['615351ab03385c0016b870f5'] = {
+troop_options['68c995e0579163001588a6de'] = {
   min=0,
   max=2,
   dateRange={
@@ -36,15 +36,23 @@ troop_options['615351ab03385c0016b870f5'] = {
     endDate=1480,
   }
 }
-troop_options['615351ab03385c0016b870f8'] = {
+troop_options['68c995e0579163001588a6e1'] = {
+  min=0,
+  max=2,
+  dateRange={
+    startDate=1445,
+    endDate=1480,
+  }
+}
+troop_options['68c995e0579163001588a6e4'] = {
   min=4,
-  max=8,
+  max=6,
   dateRange={
     startDate=1445,
     endDate=1480,
   }
 }
-troop_options['615351ab03385c0016b870fb'] = {
+troop_options['68c995e0579163001588a6e8'] = {
   min=0,
   max=1,
   dateRange={
@@ -52,7 +60,7 @@ troop_options['615351ab03385c0016b870fb'] = {
     endDate=1480,
   }
 }
-troop_options['615351ab03385c0016b870fe'] = {
+troop_options['68c995e0579163001588a6eb'] = {
   min=0,
   max=1,
   dateRange={
@@ -60,7 +68,7 @@ troop_options['615351ab03385c0016b870fe'] = {
     endDate=1480,
   }
 }
-troop_options['615351ab03385c0016b87100'] = {
+troop_options['68c995e0579163001588a6ed'] = {
   min=0,
   max=1,
   dateRange={
@@ -68,7 +76,7 @@ troop_options['615351ab03385c0016b87100'] = {
     endDate=1480,
   }
 }
-troop_options['615351ab03385c0016b87102'] = {
+troop_options['68c995e0579163001588a6ef'] = {
   min=0,
   max=2,
   dateRange={

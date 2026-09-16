@@ -23,26 +23,28 @@ army['5fb1b9eee1af06001770a01c_ally_5fb1b9eae1af060017709df3'] = {
     name='Russian subject allies',
     id='5fb1b9eee1af06001770a01c_ally_5fb1b9eae1af060017709df3',
   },
-  g_base_definitions['6153519803385c0016b8445b'],
-  g_base_definitions['6153519803385c0016b8445d'],
-  g_base_definitions['6153519803385c0016b84460'],
+  g_base_definitions['68c995cc57916300158879c6'],
+  g_base_definitions['68c995cc57916300158879c8'],
+  g_base_definitions['68c995cc57916300158879ca'],
+  g_base_definitions['68c995cc57916300158879cc'],
+  g_base_definitions['68c995cc57916300158879cf'],
 }
 army['5fb1b9eee1af06001770a01c_ally_5fb1b9ede1af060017709f93'] = {
   data={
     name='Georgian allies',
     id='5fb1b9eee1af06001770a01c_ally_5fb1b9ede1af060017709f93',
   },
-  g_base_definitions['6153519903385c0016b846d9'],
-  g_base_definitions['6153519903385c0016b846db'],
-  g_base_definitions['6153519903385c0016b846dd'],
-  g_base_definitions['6153519903385c0016b846df'],
+  g_base_definitions['68c995ce5791630015887c56'],
+  g_base_definitions['68c995ce5791630015887c58'],
+  g_base_definitions['68c995ce5791630015887c5a'],
+  g_base_definitions['68c995ce5791630015887c5c'],
 }
 army['5fb1b9eee1af06001770a01c_ally_5fb1b9eee1af060017709ff3'] = {
   data={
     name='Ottoman allies',
     id='5fb1b9eee1af06001770a01c_ally_5fb1b9eee1af060017709ff3',
   },
-  g_base_definitions['6153519903385c0016b8473f'],
-  g_base_definitions['6153519903385c0016b84741'],
-  g_base_definitions['6153519903385c0016b84743'],
+  g_base_definitions['68c995ce5791630015887cbc'],
+  g_base_definitions['68c995ce5791630015887cbe'],
+  g_base_definitions['68c995ce5791630015887cc0'],
 }

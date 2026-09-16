@@ -18,21 +18,23 @@ army['5fb1b9ebe1af060017709ea0']={
       endDate=1460,
     },
   },
-  g_base_definitions[g_str_615351af03385c0016b87ab5_general],
-  g_base_definitions[g_str_615351af03385c0016b87ab5],
-  g_base_definitions[g_str_615351af03385c0016b87ab8],
-  g_base_definitions[g_str_615351af03385c0016b87aba],
-  g_base_definitions[g_str_615351af03385c0016b87abc],
-  g_base_definitions[g_str_615351af03385c0016b87abe],
-  g_base_definitions[g_str_615351af03385c0016b87ac0],
+  g_base_definitions[g_str_68c995e3579163001588b102_general],
+  g_base_definitions[g_str_68c995e3579163001588b102],
+  g_base_definitions[g_str_68c995e3579163001588b105],
+  g_base_definitions[g_str_68c995e3579163001588b107],
+  g_base_definitions[g_str_68c995e3579163001588b109],
+  g_base_definitions[g_str_68c995e3579163001588b109_shower_shooting],
+  g_base_definitions[g_str_68c995e3579163001588b10c],
+  g_base_definitions[g_str_68c995e3579163001588b10c_shower_shooting],
+  g_base_definitions[g_str_68c995e3579163001588b10f],
   g_base_definitions[g_str_5fb1b9ebe1af060017709ea0_camp],
-  g_base_definitions[g_str_6153519803385c0016b84550],
-  g_base_definitions[g_str_6153519803385c0016b84552],
-  g_base_definitions[g_str_6153519803385c0016b84554],
-  g_base_definitions[g_str_6153519803385c0016b84557],
-  g_base_definitions[g_str_6153519803385c0016b84559],
-  g_base_definitions[g_str_6153519803385c0016b8455b],
-  g_base_definitions[g_str_6153519803385c0016b8455c],
+  g_base_definitions[g_str_68c995cd5791630015887acd],
+  g_base_definitions[g_str_68c995cd5791630015887acf],
+  g_base_definitions[g_str_68c995cd5791630015887ad1],
+  g_base_definitions[g_str_68c995cd5791630015887ad4],
+  g_base_definitions[g_str_68c995cd5791630015887ad6],
+  g_base_definitions[g_str_68c995cd5791630015887ad8],
+  g_base_definitions[g_str_68c995cd5791630015887ad9],
 }
 if nil == armies["Meshwesh id"] then
   armies["Meshwesh id"] ={}
@@ -58,24 +60,44 @@ army_dates["5fb1b9ebe1af060017709ea0"]["1262 AD to 1263 AD"] = {
   startDate=1262,
   endDate=1263
 }
-army_dates["5fb1b9ebe1af060017709ea0"]["1264 AD to 1346 AD"] = {
+army_dates["5fb1b9ebe1af060017709ea0"]["1264 AD to 1299 AD"] = {
   startDate=1264,
+  endDate=1299
+}
+army_dates["5fb1b9ebe1af060017709ea0"]["1300 AD to 1346 AD"] = {
+  startDate=1300,
   endDate=1346
 }
-army_dates["5fb1b9ebe1af060017709ea0"]["1347 AD to 1361 AD"] = {
+army_dates["5fb1b9ebe1af060017709ea0"]["1347 AD to 1360 AD"] = {
   startDate=1347,
+  endDate=1360
+}
+army_dates["5fb1b9ebe1af060017709ea0"]["1361 AD"] = {
+  startDate=1361,
   endDate=1361
 }
 army_dates["5fb1b9ebe1af060017709ea0"]["1362 AD to 1369 AD"] = {
   startDate=1362,
   endDate=1369
 }
-army_dates["5fb1b9ebe1af060017709ea0"]["1370 AD to 1381 AD"] = {
+army_dates["5fb1b9ebe1af060017709ea0"]["1370 AD to 1380 AD"] = {
   startDate=1370,
+  endDate=1380
+}
+army_dates["5fb1b9ebe1af060017709ea0"]["1381 AD"] = {
+  startDate=1381,
   endDate=1381
 }
-army_dates["5fb1b9ebe1af060017709ea0"]["1382 AD to 1394 AD"] = {
+army_dates["5fb1b9ebe1af060017709ea0"]["1382 AD"] = {
   startDate=1382,
+  endDate=1382
+}
+army_dates["5fb1b9ebe1af060017709ea0"]["1383 AD"] = {
+  startDate=1383,
+  endDate=1383
+}
+army_dates["5fb1b9ebe1af060017709ea0"]["1384 AD to 1394 AD"] = {
+  startDate=1384,
   endDate=1394
 }
 army_dates["5fb1b9ebe1af060017709ea0"]["1395 AD to 1456 AD"] = {

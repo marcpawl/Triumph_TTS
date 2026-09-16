@@ -15,7 +15,7 @@ army['5fb1b9e1e1af06001770985d_ally_5fb1b9e1e1af060017709849'] = {
     name='Chatti, Usipi, and/or Mattiaci allies',
     id='5fb1b9e1e1af06001770985d_ally_5fb1b9e1e1af060017709849',
   },
-  g_base_definitions['6153519303385c0016b83ce5'],
-  g_base_definitions['6153519303385c0016b83ce7'],
-  g_base_definitions['6153519303385c0016b83ce9'],
+  g_base_definitions['68c995c85791630015887248'],
+  g_base_definitions['68c995c8579163001588724a'],
+  g_base_definitions['68c995c8579163001588724c'],
 }

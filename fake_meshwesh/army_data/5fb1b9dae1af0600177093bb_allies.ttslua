@@ -15,8 +15,8 @@ army['5fb1b9dae1af0600177093bb_ally_5fb1b9d9e1af0600177093ad'] = {
     name='(Trojans) Hittite allies',
     id='5fb1b9dae1af0600177093bb_ally_5fb1b9d9e1af0600177093ad',
   },
-  g_base_definitions['6153518e03385c0016b835c7'],
-  g_base_definitions['6153518e03385c0016b835c9'],
-  g_base_definitions['6153518e03385c0016b835cb'],
-  g_base_definitions['6153518e03385c0016b835cd'],
+  g_base_definitions['68c995c45791630015886b5a'],
+  g_base_definitions['68c995c45791630015886b5c'],
+  g_base_definitions['68c995c45791630015886b5e'],
+  g_base_definitions['68c995c45791630015886b60'],
 }

@@ -1,1 +1,10 @@
-[{"name":"Assyrian Empire","id":"5fb1b720e1af060017701926"},{"name":"Birth of the West","id":"5fb1b720e1af060017701927"}]
+[
+    {
+        "name": "Assyrian Empire",
+        "id": "5fb1b720e1af060017701926"
+    },
+    {
+        "name": "Birth of the West",
+        "id": "5fb1b720e1af060017701927"
+    }
+]

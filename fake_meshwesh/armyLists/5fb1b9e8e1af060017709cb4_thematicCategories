@@ -1,1 +1,10 @@
-[{"name":"Holy Roman Empire","id":"5fb1b720e1af060017701934"},{"name":"Flower of Chivalry","id":"5fb1b720e1af060017701937"}]
+[
+    {
+        "name": "Holy Roman Empire",
+        "id": "5fb1b720e1af060017701934"
+    },
+    {
+        "name": "Flower of Chivalry",
+        "id": "5fb1b720e1af060017701937"
+    }
+]

@@ -1,0 +1,101 @@
+g_str_68c995e2579163001588ae14_general='68c995e2579163001588ae14_general'
+g_base_definitions[g_str_68c995e2579163001588ae14_general]={
+  id=g_str_68c995e2579163001588ae14_general,
+  name='Elite Cavalry General',
+  min=1,
+  max=1,
+  description='Dvor',
+  general=true,
+  troop_type="Elite Cavalry",
+  troop_option_id="68c995e2579163001588ae13",
+}
+g_str_68c995e2579163001588ae14='68c995e2579163001588ae14'
+g_base_definitions[g_str_68c995e2579163001588ae14]={
+  id=g_str_68c995e2579163001588ae14,
+  name='Elite Cavalry',
+  min=1,
+  max=2,
+  description='Dvor',
+  troop_type="Elite Cavalry",
+  troop_option_id="68c995e2579163001588ae13",
+}
+g_str_68c995e2579163001588ae16='68c995e2579163001588ae16'
+g_base_definitions[g_str_68c995e2579163001588ae16]={
+  id=g_str_68c995e2579163001588ae16,
+  name='Horse Bow',
+  min=4,
+  max=8,
+  description='Boyars and their retainers fighting in Mongol style',
+  troop_type="Horse Bow",
+  troop_option_id="68c995e2579163001588ae15",
+}
+g_str_68c995e2579163001588ae18='68c995e2579163001588ae18'
+g_base_definitions[g_str_68c995e2579163001588ae18]={
+  id=g_str_68c995e2579163001588ae18,
+  name='Heavy Foot',
+  min=0,
+  max=2,
+  description='Militia spearmen armed with boar spears and axes',
+  troop_type="Heavy Foot",
+  troop_option_id="68c995e2579163001588ae17",
+}
+g_str_68c995e2579163001588ae1a='68c995e2579163001588ae1a'
+g_base_definitions[g_str_68c995e2579163001588ae1a]={
+  id=g_str_68c995e2579163001588ae1a,
+  name='Bow Levy',
+  min=0,
+  max=2,
+  description='Militia bowmen',
+  troop_type="Bow Levy",
+  troop_option_id="68c995e2579163001588ae19",
+}
+g_str_68c995e2579163001588ae1a_shower_shooting='68c995e2579163001588ae1a_shower_shooting'
+g_base_definitions[g_str_68c995e2579163001588ae1a_shower_shooting]={
+  id=g_str_68c995e2579163001588ae1a_shower_shooting,
+  name='Bow Levy',
+  min=0,
+  max=2,
+  description='Militia bowmen\nShower Shooting',
+  shower_shooting=true,
+  troop_type="Bow Levy",
+  troop_option_id="68c995e2579163001588ae19",
+}
+g_str_68c995e2579163001588ae1e='68c995e2579163001588ae1e'
+g_base_definitions[g_str_68c995e2579163001588ae1e]={
+  id=g_str_68c995e2579163001588ae1e,
+  name='Horse Bow',
+  min=0,
+  max=2,
+  description='Tartar horse archers',
+  troop_type="Horse Bow",
+  troop_option_id="68c995e2579163001588ae1c",
+}
+g_str_68c995e2579163001588ae21='68c995e2579163001588ae21'
+g_base_definitions[g_str_68c995e2579163001588ae21]={
+  id=g_str_68c995e2579163001588ae21,
+  name='Skirmishers',
+  min=0,
+  max=1,
+  description='Cossack skirmishing foot',
+  troop_type="Skirmishers",
+  troop_option_id="68c995e2579163001588ae1f",
+}
+g_str_68c07ec85c431f0015cf13ea_camp='68c07ec85c431f0015cf13ea_camp'
+g_base_definitions[g_str_68c07ec85c431f0015cf13ea_camp]={
+  id=g_str_68c07ec85c431f0015cf13ea_camp,
+  name='Camp',
+  min=0,
+  max=1,
+  description='Camp',
+  troop_type="Camp",
+}
+g_str_68c07ec85c431f0015cf13ea_prepared_defenses='68c07ec85c431f0015cf13ea_prepared_defenses'
+g_base_definitions[g_str_68c07ec85c431f0015cf13ea_prepared_defenses]={
+  id=g_str_68c07ec85c431f0015cf13ea_prepared_defenses,
+  name='Prepared Defenses',
+  min=0,
+  max=2,
+  description='Gulyay gorod -- wagons and fixed wall sections between them',
+  prepared_defenses=true,
+  troop_type="Prepared Defenses",
+}

@@ -1,8 +1,0 @@
-
--- GENERATED FILE DO NOT EDIT
--- See tts_army.py
-
-require("Triumph_TTS/scripts/static_maps")
-
-allies['6153508f03385c0016b82744'] = {
-}

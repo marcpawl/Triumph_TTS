@@ -1,1 +1,18 @@
-[{"name":"Scimitar and Crescent","id":"5fb1b720e1af060017701932"},{"name":"Pax Romana","id":"5fb1b720e1af06001770192b"},{"name":"Fall of Rome","id":"5fb1b720e1af06001770192d"},{"name":"Spread of Islam","id":"5fb1b720e1af060017701930"}]
+[
+    {
+        "name": "Scimitar and Crescent",
+        "id": "5fb1b720e1af060017701932"
+    },
+    {
+        "name": "Pax Romana",
+        "id": "5fb1b720e1af06001770192b"
+    },
+    {
+        "name": "Fall of Rome",
+        "id": "5fb1b720e1af06001770192d"
+    },
+    {
+        "name": "Spread of Islam",
+        "id": "5fb1b720e1af060017701930"
+    }
+]

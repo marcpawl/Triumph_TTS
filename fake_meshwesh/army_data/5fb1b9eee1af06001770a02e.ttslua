@@ -19,21 +19,24 @@ army['5fb1b9eee1af06001770a02e']={
       endDate=1504,
     },
   },
-  g_base_definitions[g_str_615351b103385c0016b8813b_general],
-  g_base_definitions[g_str_615351b103385c0016b8813b_general_shower_shooting],
-  g_base_definitions[g_str_615351b103385c0016b8813b],
-  g_base_definitions[g_str_615351b103385c0016b8813b_shower_shooting],
-  g_base_definitions[g_str_615351b103385c0016b8813e],
-  g_base_definitions[g_str_615351b103385c0016b88140],
-  g_base_definitions[g_str_615351b103385c0016b88143],
-  g_base_definitions[g_str_615351b103385c0016b88144],
-  g_base_definitions[g_str_615351b103385c0016b88147],
-  g_base_definitions[g_str_615351b103385c0016b88148],
-  g_base_definitions[g_str_615351b103385c0016b88149],
-  g_base_definitions[g_str_615351b103385c0016b8814b],
-  g_base_definitions[g_str_615351b103385c0016b8814d_general],
-  g_base_definitions[g_str_615351b103385c0016b8814d],
-  g_base_definitions[g_str_615351b103385c0016b88151],
+  g_base_definitions[g_str_68c995e6579163001588b7b5_general],
+  g_base_definitions[g_str_68c995e6579163001588b7b5_general_shower_shooting],
+  g_base_definitions[g_str_68c995e6579163001588b7b5],
+  g_base_definitions[g_str_68c995e6579163001588b7b5_shower_shooting],
+  g_base_definitions[g_str_68c995e6579163001588b7b8],
+  g_base_definitions[g_str_68c995e6579163001588b7ba],
+  g_base_definitions[g_str_68c995e6579163001588b7bd],
+  g_base_definitions[g_str_68c995e6579163001588b7be],
+  g_base_definitions[g_str_68c995e6579163001588b7c1],
+  g_base_definitions[g_str_68c995e6579163001588b7c1_shower_shooting],
+  g_base_definitions[g_str_68c995e6579163001588b7c2],
+  g_base_definitions[g_str_68c995e6579163001588b7c2_shower_shooting],
+  g_base_definitions[g_str_68c995e6579163001588b7c3],
+  g_base_definitions[g_str_68c995e6579163001588b7c3_shower_shooting],
+  g_base_definitions[g_str_68c995e6579163001588b7c6],
+  g_base_definitions[g_str_68c995e6579163001588b7c8_general],
+  g_base_definitions[g_str_68c995e6579163001588b7c8],
+  g_base_definitions[g_str_68c995e6579163001588b7cc],
   g_base_definitions[g_str_5fb1b9eee1af06001770a02e_camp],
   g_base_definitions[g_str_5fb1b9eee1af06001770a02e_camp_fortified],
   g_base_definitions[g_str_5fb1b9eee1af06001770a02e_camp_pack_train],
@@ -63,8 +66,20 @@ army_dates["5fb1b9eee1af06001770a02e"]["1378 AD to 1504 AD"] = {
   startDate=1378,
   endDate=1504
 }
-army_dates["5fb1b9eee1af06001770a02e"]["1378 AD to 1386 AD"] = {
+army_dates["5fb1b9eee1af06001770a02e"]["1378 AD to 1380 AD"] = {
   startDate=1378,
+  endDate=1380
+}
+army_dates["5fb1b9eee1af06001770a02e"]["1381 AD to 1382 AD"] = {
+  startDate=1381,
+  endDate=1382
+}
+army_dates["5fb1b9eee1af06001770a02e"]["1383 AD"] = {
+  startDate=1383,
+  endDate=1383
+}
+army_dates["5fb1b9eee1af06001770a02e"]["1384 AD to 1386 AD"] = {
+  startDate=1384,
   endDate=1386
 }
 army_dates["5fb1b9eee1af06001770a02e"]["1387 AD to 1456 AD"] = {
@@ -79,8 +94,16 @@ army_dates["5fb1b9eee1af06001770a02e"]["1458 AD to 1461 AD"] = {
   startDate=1458,
   endDate=1461
 }
-army_dates["5fb1b9eee1af06001770a02e"]["1462 AD to 1495 AD"] = {
+army_dates["5fb1b9eee1af06001770a02e"]["1462 AD to 1484 AD"] = {
   startDate=1462,
+  endDate=1484
+}
+army_dates["5fb1b9eee1af06001770a02e"]["1485 AD to 1491 AD"] = {
+  startDate=1485,
+  endDate=1491
+}
+army_dates["5fb1b9eee1af06001770a02e"]["1492 AD to 1495 AD"] = {
+  startDate=1492,
   endDate=1495
 }
 army_dates["5fb1b9eee1af06001770a02e"]["1496 AD to 1497 AD"] = {

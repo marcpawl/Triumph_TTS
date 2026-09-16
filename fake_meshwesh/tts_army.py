@@ -3,9 +3,10 @@
 
 import json
 import os
+from pathlib import Path
+import re
 import sys
 import subprocess
-import re
 
 # set of the identifiers of the base definitions that have already
 # been written
@@ -78,6 +79,17 @@ def set_date_range(destination, dates) :
     dest['startDate'] = max( dates['startDate'], dest['startDate'] )
     dest['endDate'] = min( dates['endDate'], dest['endDate'] )
 
+def is_troop_type_archers(troop_type) -> bool:
+    if troop_type == "ARC":
+        return True
+    if troop_type == "Archer":
+        return True
+    if troop_type == "Archers":
+        return True
+    if troop_type == "Archer stands equipped with crossbows":
+       return True
+    return False
+  
 def troop_type_to_name(troop_type) :
   if troop_type == "Prepared Defenses" :
       return troop_type
@@ -109,7 +121,7 @@ def troop_type_to_name(troop_type) :
     return "Bad Horse"
   if troop_type == "WBD" or troop_type == "Warband":
     return "Warband"
-  if troop_type == "ARC" or troop_type == "Archer" or troop_type == "Archers":
+  if is_troop_type_archers(troop_type):
     return "Archers"
   if troop_type == "RDR" or troop_type == "Raider" or troop_type == "Raiders":
     return "Raiders"
@@ -168,7 +180,7 @@ def get_points_for_troop_type(troop_type) :
     return 3
   if troop_type == "WBD" or troop_type ==  "Warband":
     return 3
-  if troop_type == "ARC" or troop_type ==  "Archers" or troop_type ==  "Archer":
+  if is_troop_type_archers(troop_type):
     return 4
   if troop_type == "RDR" or troop_type == "Raiders" or troop_type == "Raider":
     return 4
@@ -232,6 +244,9 @@ def get_dismounting_type(base_definition, battle_card_note) :
       if base_definition['troop_type'] == "JCV" :
         return "Archers"
       return None
+  elif battle_card_note == "only Knights; as Elite Foot" :
+    if base_definition['troop_type'] == "KNT" :
+      return "Elite Foot"
   else:
     print("Unable to decode battle card note ", battle_card_note)
     print("base_definition=", base_definition)
@@ -649,12 +664,7 @@ def create_base_definition(troop_option, troop_entry) :
   max = troop_option['max']
 
   id = troop_entry['_id']
-  if id == '5fb1ba37e1af06001770e72d' :
-    description = "German or Polish men-at-arms"
-  elif id ==  "5fb1ba37e1af06001770e72e" :
-    description = "Lithuanian horsemen"
-  else :
-    description = troop_option['description']
+  description = troop_option['description']
 
 
   troop_type = troop_entry['troopTypeCode']
@@ -749,52 +759,31 @@ def write_battle_cards(file, army, troop_option, troop_entry, base_definition)  
     code = battle_card['battleCardCode']
     note = battle_card['note']
     if code == "DD" :
-      id = troop_entry['_id']
-      if id == '5fb1ba37e1af06001770e72d' :
-        # "German or Polish men-at-arms"
-        extra = write_deployment_dismounting_as(file, base_definition, "Elite Foot", battle_card)
-        result.extend(extra)
-      elif id ==  "5fb1ba37e1af06001770e72e" :
-        #"Lithuanian horsemen"
-        extra = write_deployment_dismounting_as(file, base_definition, "Archers", battle_card)
-        result.extend(extra)
-      elif battle_card['_id'] == "5fb1ba34e1af06001770e1a0" :
-        extra = write_deployment_dismounting_as(file, base_definition, "Pikes", battle_card)
-        result.extend(extra)
-      else:
-        extra = write_deployment_dismounting(file, base_definition, battle_card)
-        if extra is not None:
-          result.extend(extra)
+      extra = write_deployment_dismounting(file, base_definition, battle_card)
     elif code == "SV" :
-        extra = write_separated_valets(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_separated_valets(file, base_definition, battle_card)
     elif code == "MD" :
-        extra = write_mid_battle_dismounting(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_mid_battle_dismounting(file, base_definition, battle_card)
     elif code == "MI" :
-        extra = write_mobile_infantry(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_mobile_infantry(file, base_definition, battle_card)
     elif code == "AC" :
-        extra = write_armored_camelry(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_armored_camelry(file, base_definition, battle_card)
     elif code == "LC" :
-        extra = write_light_camelry(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_light_camelry(file, base_definition, battle_card)
     elif code == "CC" :
-        extra = write_charging_camelry(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_charging_camelry(file, base_definition, battle_card)
     elif code == "ET" :
-        extra = write_elephant_screen(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_elephant_screen(file, base_definition, battle_card)
     elif code == "PL" :
-        extra = write_plaustrella(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_plaustrella(file, base_definition, battle_card)
     elif code == "SS" :
-        extra = write_shower_shooting(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_shower_shooting(file, base_definition, battle_card)
     else:
-      pass
+      extra = None
 #      print("Unknown battle card ", code)
+
+    if extra is not None :
+      result.extend(extra)
 
   return result
 
@@ -862,6 +851,8 @@ def generate_base_definitions(file, army_json) :
      @return The base definitions for the army.
   """
   definitions = []
+  
+  army_id = army_json['id']
 
   troop_options = army_json['troopOptions']
   for troop_option in  troop_options :
@@ -1019,6 +1010,8 @@ def get_dates_for_army_no_allies(army_json) :
      @param army_json Army to query.
      @return list of dates, unsorted, and possibly duplicated.
   """
+  army_id = army_json['id']
+  
   if "dateRange" not in army_json :
     raise Exception("No army date range in " + army_id)
   army_date_range = army_json['dateRange']
@@ -1306,50 +1299,65 @@ require("Triumph_TTS/scripts/static_maps")
           write_troop_option(file, troop_option)
 
 
-summary = read_json("armyLists/summary")
+def generate_army_data() :
+  summary = read_json("armyLists/summary")
+  
+  # Delete all files in army_data from git
+  subprocess.run(['git', 'restore', '--staged', 'army_data'], check=True)
+  subprocess.run(['git', 'restore', 'army_data'], check=True)
+  subprocess.run(['git', 'clean', '-fdx', 'army_data'], check=True)
+  subprocess.run(['git', 'clean', '-fdX', 'army_data'], check=True)
+  subprocess.run(['git', 'rm', '-r', 'army_data'], check=True)
+  
+  army_data_dir = Path("army_data")
+  army_data_dir.mkdir(parents=True, exist_ok=True)
 
-with open("army_data/all_armies.ttslua", "w") as all_armies:
-    all_armies.write("""
--- GENERATED FILE DO NOT EDIT
--- See tts_army.py
+  with open("army_data/all_armies.ttslua", "w") as all_armies:
+      all_armies.write("""
+  -- GENERATED FILE DO NOT EDIT
+  -- See tts_army.py
 
-require("Triumph_TTS/scripts/static_maps")
+  require("Triumph_TTS/scripts/static_maps")
 
-""")
+  """)
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        write_troop_options(army_id)
+      for army_entry in summary :
+          army_id = army_entry['id']
+          write_troop_options(army_id)
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        print(army_id)
-        try :
-            generate_army(army_id)
-        except:
-            print(army_entry['name'])
-            raise
+      for army_entry in summary :
+          army_id = army_entry['id']
+          print(army_id)
+          try :
+              generate_army(army_id)
+          except:
+              print(army_entry['name'])
+              raise
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        generate_ally_base_definitions(army_id)
+      for army_entry in summary :
+          army_id = army_entry['id']
+          generate_ally_base_definitions(army_id)
 
-    for army_entry in summary :
-        army_id = army_entry['id']
+      for army_entry in summary :
+          army_id = army_entry['id']
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        generate_allies(army_id)
+      for army_entry in summary :
+          army_id = army_entry['id']
+          generate_allies(army_id)
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        all_armies.write('require("Triumph_TTS/fake_meshwesh/army_data/%s_troop_options")\n' % (army_id))
-    for army_entry in summary :
-        army_id = army_entry['id']
-        all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_base_definitions")\n' % (army_id))
-    for army_entry in summary :
-        army_id = army_entry['id']
-        all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s")\n' % (army_id))
-    for army_entry in summary :
-        army_id = army_entry['id']
-        all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_allies")\n' % (army_id))
+      for army_entry in summary :
+          army_id = army_entry['id']
+          all_armies.write('require("Triumph_TTS/fake_meshwesh/army_data/%s_troop_options")\n' % (army_id))
+      for army_entry in summary :
+          army_id = army_entry['id']
+          all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_base_definitions")\n' % (army_id))
+      for army_entry in summary :
+          army_id = army_entry['id']
+          all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s")\n' % (army_id))
+      for army_entry in summary :
+          army_id = army_entry['id']
+          all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_allies")\n' % (army_id))
+          
+      # Add all files in army_data to git
+      subprocess.run(['git', 'add', 'army_data'], check=True)
+

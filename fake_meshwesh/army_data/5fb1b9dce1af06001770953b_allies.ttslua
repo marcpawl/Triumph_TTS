@@ -23,29 +23,29 @@ army['5fb1b9dce1af06001770953b_ally_5fb1b9dce1af06001770953b'] = {
     name='(Lucanian) Bruttian allies',
     id='5fb1b9dce1af06001770953b_ally_5fb1b9dce1af06001770953b',
   },
-  g_base_definitions['6153519003385c0016b8384d'],
-  g_base_definitions['6153519003385c0016b8384f'],
-  g_base_definitions['6153519003385c0016b83851'],
-  g_base_definitions['6153519003385c0016b83854'],
+  g_base_definitions['68c995c65791630015886db7'],
+  g_base_definitions['68c995c65791630015886db9'],
+  g_base_definitions['68c995c65791630015886dbb'],
+  g_base_definitions['68c995c65791630015886dbd'],
 }
 army['5fb1b9dce1af06001770953b_ally_5fb1b9dce1af060017709543'] = {
   data={
     name='(Lucanian) Roman allies',
     id='5fb1b9dce1af06001770953b_ally_5fb1b9dce1af060017709543',
   },
-  g_base_definitions['6153519003385c0016b83860'],
-  g_base_definitions['6153519003385c0016b83862'],
-  g_base_definitions['6153519003385c0016b83864'],
-  g_base_definitions['6153519003385c0016b83867'],
-  g_base_definitions['6153519003385c0016b8386a'],
+  g_base_definitions['68c995c65791630015886dc8'],
+  g_base_definitions['68c995c65791630015886dca'],
+  g_base_definitions['68c995c65791630015886dcc'],
+  g_base_definitions['68c995c65791630015886dce'],
+  g_base_definitions['68c995c65791630015886dd0'],
 }
 army['5fb1b9dce1af06001770953b_ally_5fb1b9dce1af06001770953b'] = {
   data={
     name='(Brutian) Lucanian allies',
     id='5fb1b9dce1af06001770953b_ally_5fb1b9dce1af06001770953b',
   },
-  g_base_definitions['6153519003385c0016b8384d'],
-  g_base_definitions['6153519003385c0016b8384f'],
-  g_base_definitions['6153519003385c0016b83851'],
-  g_base_definitions['6153519003385c0016b83854'],
+  g_base_definitions['68c995c65791630015886db7'],
+  g_base_definitions['68c995c65791630015886db9'],
+  g_base_definitions['68c995c65791630015886dbb'],
+  g_base_definitions['68c995c65791630015886dbd'],
 }

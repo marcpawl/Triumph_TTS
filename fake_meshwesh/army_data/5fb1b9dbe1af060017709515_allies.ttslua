@@ -15,8 +15,8 @@ army['5fb1b9dbe1af060017709515_ally_5fb1b9dce1af060017709581'] = {
     name='Libyan allies',
     id='5fb1b9dbe1af060017709515_ally_5fb1b9dce1af060017709581',
   },
-  g_base_definitions['6153519003385c0016b838c2'],
-  g_base_definitions['6153519003385c0016b838c4'],
-  g_base_definitions['6153519003385c0016b838c6'],
-  g_base_definitions['6153519003385c0016b838c8'],
+  g_base_definitions['68c995c65791630015886e28'],
+  g_base_definitions['68c995c65791630015886e2a'],
+  g_base_definitions['68c995c65791630015886e2c'],
+  g_base_definitions['68c995c65791630015886e2e'],
 }

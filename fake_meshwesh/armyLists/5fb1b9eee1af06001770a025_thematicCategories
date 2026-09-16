@@ -1,1 +1,14 @@
-[{"name":"Scimitar and Crescent","id":"5fb1b720e1af060017701932"},{"name":"Silk Road","id":"5fb1b720e1af060017701935"},{"name":"India and the Khyber Pass","id":"5fb1b720e1af06001770192c"}]
+[
+    {
+        "name": "Scimitar and Crescent",
+        "id": "5fb1b720e1af060017701932"
+    },
+    {
+        "name": "Silk Road",
+        "id": "5fb1b720e1af060017701935"
+    },
+    {
+        "name": "India and the Khyber Pass",
+        "id": "5fb1b720e1af06001770192c"
+    }
+]

@@ -15,8 +15,8 @@ army['5fb1b9dce1af06001770959d_ally_5fb1b9dce1af0600177095ab'] = {
     name='(if Aquitanians) Iberian allies',
     id='5fb1b9dce1af06001770959d_ally_5fb1b9dce1af0600177095ab',
   },
-  g_base_definitions['6153519103385c0016b838fe'],
-  g_base_definitions['6153519103385c0016b83900'],
-  g_base_definitions['6153519103385c0016b83902'],
-  g_base_definitions['6153519103385c0016b83904'],
+  g_base_definitions['68c995c65791630015886e64'],
+  g_base_definitions['68c995c65791630015886e66'],
+  g_base_definitions['68c995c65791630015886e68'],
+  g_base_definitions['68c995c65791630015886e6a'],
 }

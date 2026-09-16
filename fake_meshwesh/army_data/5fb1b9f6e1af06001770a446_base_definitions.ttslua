@@ -1,23 +1,23 @@
-g_str_615351b603385c0016b88e99_general='615351b603385c0016b88e99_general'
-g_base_definitions[g_str_615351b603385c0016b88e99_general]={
-  id=g_str_615351b603385c0016b88e99_general,
+g_str_68c995eb579163001588c5a0_general='68c995eb579163001588c5a0_general'
+g_base_definitions[g_str_68c995eb579163001588c5a0_general]={
+  id=g_str_68c995eb579163001588c5a0_general,
   name='Raiders General',
   min=11,
   max=1,
   description='Tribesmen',
   general=true,
   troop_type="Raiders",
-  troop_option_id="615351b603385c0016b88e98",
+  troop_option_id="68c995eb579163001588c59f",
 }
-g_str_615351b603385c0016b88e99='615351b603385c0016b88e99'
-g_base_definitions[g_str_615351b603385c0016b88e99]={
-  id=g_str_615351b603385c0016b88e99,
+g_str_68c995eb579163001588c5a0='68c995eb579163001588c5a0'
+g_base_definitions[g_str_68c995eb579163001588c5a0]={
+  id=g_str_68c995eb579163001588c5a0,
   name='Raiders',
   min=11,
   max=12,
   description='Tribesmen',
   troop_type="Raiders",
-  troop_option_id="615351b603385c0016b88e98",
+  troop_option_id="68c995eb579163001588c59f",
 }
 g_str_5fb1b9f6e1af06001770a446_camp='5fb1b9f6e1af06001770a446_camp'
 g_base_definitions[g_str_5fb1b9f6e1af06001770a446_camp]={

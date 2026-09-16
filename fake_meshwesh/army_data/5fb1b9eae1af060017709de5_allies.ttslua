@@ -23,26 +23,26 @@ army['5fb1b9eae1af060017709de5_ally_5fb1b9eae1af060017709e1e'] = {
     name='Polovtsi Ally',
     id='5fb1b9eae1af060017709de5_ally_5fb1b9eae1af060017709e1e',
   },
-  g_base_definitions['6153519803385c0016b844a0'],
+  g_base_definitions['68c995cc5791630015887a1c'],
 }
 army['5fb1b9eae1af060017709de5_ally_5fb1b9e9e1af060017709d62'] = {
   data={
     name='Hungarian Ally',
     id='5fb1b9eae1af060017709de5_ally_5fb1b9e9e1af060017709d62',
   },
-  g_base_definitions['6153519703385c0016b8439a'],
-  g_base_definitions['6153519703385c0016b8439c'],
-  g_base_definitions['6153519703385c0016b8439f'],
+  g_base_definitions['68c995cc5791630015887904'],
+  g_base_definitions['68c995cc5791630015887906'],
+  g_base_definitions['68c995cc5791630015887909'],
 }
 army['5fb1b9eae1af060017709de5_ally_5fb1b9eae1af060017709d93'] = {
   data={
     name='Polish Ally',
     id='5fb1b9eae1af060017709de5_ally_5fb1b9eae1af060017709d93',
   },
-  g_base_definitions['6153519803385c0016b843ef'],
-  g_base_definitions['6153519803385c0016b843f1'],
-  g_base_definitions['6153519803385c0016b843f3'],
-  g_base_definitions['6153519803385c0016b843f4'],
-  g_base_definitions['6153519803385c0016b843f5'],
-  g_base_definitions['6153519803385c0016b843f7'],
+  g_base_definitions['68c995cc579163001588795a'],
+  g_base_definitions['68c995cc579163001588795c'],
+  g_base_definitions['68c995cc579163001588795e'],
+  g_base_definitions['68c995cc579163001588795f'],
+  g_base_definitions['68c995cc5791630015887960'],
+  g_base_definitions['68c995cc5791630015887962'],
 }

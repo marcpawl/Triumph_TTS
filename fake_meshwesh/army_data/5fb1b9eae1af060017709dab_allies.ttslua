@@ -19,14 +19,16 @@ army['5fb1b9eae1af060017709dab_ally_5fb1b9eae1af060017709dc2'] = {
     name='Swedish allies',
     id='5fb1b9eae1af060017709dab_ally_5fb1b9eae1af060017709dc2',
   },
-  g_base_definitions['6153519803385c0016b84429'],
+  g_base_definitions['68c995cc5791630015887994'],
 }
 army['5fb1b9eae1af060017709dab_ally_5fb1b9eae1af060017709df3'] = {
   data={
     name='Pskov allies',
     id='5fb1b9eae1af060017709dab_ally_5fb1b9eae1af060017709df3',
   },
-  g_base_definitions['6153519803385c0016b8445b'],
-  g_base_definitions['6153519803385c0016b8445d'],
-  g_base_definitions['6153519803385c0016b84460'],
+  g_base_definitions['68c995cc57916300158879c6'],
+  g_base_definitions['68c995cc57916300158879c8'],
+  g_base_definitions['68c995cc57916300158879ca'],
+  g_base_definitions['68c995cc57916300158879cc'],
+  g_base_definitions['68c995cc57916300158879cf'],
 }

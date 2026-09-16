@@ -1,1 +1,10 @@
-[{"name":"Middle Kingdom","id":"5fb1b720e1af06001770193f"},{"name":"Korea and Japan","id":"5fb1b720e1af060017701943"}]
+[
+    {
+        "name": "Middle Kingdom",
+        "id": "5fb1b720e1af06001770193f"
+    },
+    {
+        "name": "Korea and Japan",
+        "id": "5fb1b720e1af060017701943"
+    }
+]

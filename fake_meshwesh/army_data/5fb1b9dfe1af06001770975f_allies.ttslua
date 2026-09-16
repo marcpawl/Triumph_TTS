@@ -23,25 +23,25 @@ army['5fb1b9dfe1af06001770975f_ally_5fb1b9e4e1af060017709a18'] = {
     name='(Ghassanids) Byzantine allies',
     id='5fb1b9dfe1af06001770975f_ally_5fb1b9e4e1af060017709a18',
   },
-  g_base_definitions['6153519503385c0016b83ea0'],
-  g_base_definitions['6153519503385c0016b83ea2'],
-  g_base_definitions['6153519503385c0016b83ea4'],
+  g_base_definitions['68c995c95791630015887401'],
+  g_base_definitions['68c995c95791630015887403'],
+  g_base_definitions['68c995c95791630015887405'],
 }
 army['5fb1b9dfe1af06001770975f_ally_5fb1b9e2e1af060017709948'] = {
   data={
     name='(Lakhmids) Sassanid allies',
     id='5fb1b9dfe1af06001770975f_ally_5fb1b9e2e1af060017709948',
   },
-  g_base_definitions['6153519403385c0016b83dbd'],
-  g_base_definitions['6153519403385c0016b83dbf'],
-  g_base_definitions['6153519403385c0016b83dc1'],
+  g_base_definitions['68c995c95791630015887320'],
+  g_base_definitions['68c995c95791630015887322'],
+  g_base_definitions['68c995c95791630015887324'],
 }
 army['5fb1b9dfe1af06001770975f_ally_5fb1b9e2e1af06001770994f'] = {
   data={
     name='(Lakhmids) Sassanid allies',
     id='5fb1b9dfe1af06001770975f_ally_5fb1b9e2e1af06001770994f',
   },
-  g_base_definitions['6153519403385c0016b83dc5'],
-  g_base_definitions['6153519403385c0016b83dc7'],
-  g_base_definitions['6153519403385c0016b83dc9'],
+  g_base_definitions['68c995c95791630015887328'],
+  g_base_definitions['68c995c9579163001588732a'],
+  g_base_definitions['68c995c9579163001588732c'],
 }

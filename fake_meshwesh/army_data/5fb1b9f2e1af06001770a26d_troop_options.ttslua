@@ -4,7 +4,7 @@
 
 require("Triumph_TTS/scripts/static_maps")
 
-troop_options['615351b403385c0016b8891e'] = {
+troop_options['68c995e9579163001588bfec'] = {
   min=0,
   max=1,
   dateRange={
@@ -12,7 +12,7 @@ troop_options['615351b403385c0016b8891e'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b88920'] = {
+troop_options['68c995e9579163001588bfee'] = {
   min=0,
   max=1,
   dateRange={
@@ -20,7 +20,7 @@ troop_options['615351b403385c0016b88920'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b88923'] = {
+troop_options['68c995e9579163001588bff1'] = {
   min=1,
   max=3,
   dateRange={
@@ -28,7 +28,7 @@ troop_options['615351b403385c0016b88923'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b88926'] = {
+troop_options['68c995e9579163001588bff4'] = {
   min=1,
   max=3,
   dateRange={
@@ -36,7 +36,7 @@ troop_options['615351b403385c0016b88926'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b88929'] = {
+troop_options['68c995e9579163001588bff8'] = {
   min=2,
   max=4,
   dateRange={
@@ -44,7 +44,7 @@ troop_options['615351b403385c0016b88929'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b8892d'] = {
+troop_options['68c995e9579163001588bffc'] = {
   min=2,
   max=3,
   dateRange={
@@ -52,7 +52,7 @@ troop_options['615351b403385c0016b8892d'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b88930'] = {
+troop_options['68c995e9579163001588bfff'] = {
   min=0,
   max=2,
   dateRange={
@@ -60,7 +60,7 @@ troop_options['615351b403385c0016b88930'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b88933'] = {
+troop_options['68c995e9579163001588c002'] = {
   min=0,
   max=4,
   dateRange={
@@ -68,7 +68,7 @@ troop_options['615351b403385c0016b88933'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b88935'] = {
+troop_options['68c995e9579163001588c005'] = {
   min=0,
   max=3,
   dateRange={
@@ -76,7 +76,7 @@ troop_options['615351b403385c0016b88935'] = {
     endDate=979,
   }
 }
-troop_options['615351b403385c0016b88938'] = {
+troop_options['68c995e9579163001588c008'] = {
   min=0,
   max=1,
   dateRange={

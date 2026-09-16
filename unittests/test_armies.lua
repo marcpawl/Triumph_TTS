@@ -252,7 +252,7 @@ function test_get_base_depth_mobile()
   end
 
   -- Exercise
-   local actual = get_base_depth_from_base_definition(g_base_definitions[g_str_615351a003385c0016b85313_general_mounted_mobile_infantry])
+   local actual = get_base_depth_from_base_definition(g_base_definitions[g_str_68c995d457916300158888cd_general_mounted_mobile_infantry])
    lu.assertEquals(actual, 40)
 
   -- Cleanup
@@ -288,7 +288,7 @@ function test_get_base_depth_elite_foot()
   end
 
   -- Exercise
-  local actual = get_base_depth_from_base_definition(g_base_definitions[g_str_6153519f03385c0016b850c9])
+  local actual = get_base_depth_from_base_definition(g_base_definitions[g_str_68c995d35791630015888673])
   lu.assertEquals(actual, 15)
 
   -- Cleanup
@@ -304,7 +304,7 @@ function test_get_base_depth_elite_foot_general()
   end
 
   -- Exercise
-  local actual = get_base_depth_from_base_definition(g_base_definitions[g_str_6153519f03385c0016b85117_general])
+  local actual = get_base_depth_from_base_definition(g_base_definitions[g_str_68c995d357916300158886c3_general])
   lu.assertEquals(actual, 15)
 
   -- Cleanup

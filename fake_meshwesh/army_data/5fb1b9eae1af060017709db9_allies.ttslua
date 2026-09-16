@@ -10,7 +10,15 @@ allies['5fb1b9eae1af060017709db9'] = {
     dateRange={startDate=1201, endDate=1241}
   },
   {
-    id='5fb1b9e8e1af060017709cac',
+    id='5fb1b9e8e1af060017709ca5',
+    dateRange={startDate=-50000, endDate=50000}
+  },
+  {
+    id='5fb1b9e9e1af060017709ce7',
+    dateRange={startDate=-50000, endDate=50000}
+  },
+  {
+    id='5fb1b9e9e1af060017709cf0',
     dateRange={startDate=-50000, endDate=50000}
   },
   {
@@ -25,104 +33,94 @@ allies['5fb1b9eae1af060017709db9'] = {
     id='5fb1b9e8e1af060017709cd3',
     dateRange={startDate=-50000, endDate=50000}
   },
-  {
-    id='5fb1b9e9e1af060017709ce7',
-    dateRange={startDate=-50000, endDate=50000}
-  },
-  {
-    id='5fb1b9e9e1af060017709cf0',
-    dateRange={startDate=-50000, endDate=50000}
-  },
 }
 army['5fb1b9eae1af060017709db9_ally_5fb1b9eae1af060017709d93'] = {
   data={
     name='Polish allies',
     id='5fb1b9eae1af060017709db9_ally_5fb1b9eae1af060017709d93',
   },
-  g_base_definitions['6153519803385c0016b843ef'],
-  g_base_definitions['6153519803385c0016b843f1'],
-  g_base_definitions['6153519803385c0016b843f3'],
-  g_base_definitions['6153519803385c0016b843f4'],
-  g_base_definitions['6153519803385c0016b843f5'],
-  g_base_definitions['6153519803385c0016b843f7'],
+  g_base_definitions['68c995cc579163001588795a'],
+  g_base_definitions['68c995cc579163001588795c'],
+  g_base_definitions['68c995cc579163001588795e'],
+  g_base_definitions['68c995cc579163001588795f'],
+  g_base_definitions['68c995cc5791630015887960'],
+  g_base_definitions['68c995cc5791630015887962'],
 }
-army['5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cac'] = {
+army['5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709ca5'] = {
   data={
-    name='German allies',
-    id='5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cac',
+    name='German Princes allies',
+    id='5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709ca5',
   },
-  g_base_definitions['6153519703385c0016b84279'],
-  g_base_definitions['6153519703385c0016b8427b'],
-  g_base_definitions['6153519703385c0016b8427d'],
-  g_base_definitions['6153519703385c0016b8427f'],
-  g_base_definitions['6153519703385c0016b84281'],
-  g_base_definitions['6153519703385c0016b84282'],
-  g_base_definitions['6153519703385c0016b84285'],
-  g_base_definitions['6153519703385c0016b84287'],
-}
-army['5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cbb'] = {
-  data={
-    name='German allies',
-    id='5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cbb',
-  },
-  g_base_definitions['6153519703385c0016b8428d'],
-  g_base_definitions['6153519703385c0016b8428f'],
-  g_base_definitions['6153519703385c0016b84291'],
-  g_base_definitions['6153519703385c0016b84293'],
-  g_base_definitions['6153519703385c0016b84295'],
-  g_base_definitions['6153519703385c0016b84297'],
-  g_base_definitions['6153519703385c0016b84298'],
-}
-army['5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cca'] = {
-  data={
-    name='German allies',
-    id='5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cca',
-  },
-  g_base_definitions['6153519703385c0016b842a9'],
-  g_base_definitions['6153519703385c0016b842aa'],
-  g_base_definitions['6153519703385c0016b842ac'],
-  g_base_definitions['6153519703385c0016b842ae'],
-  g_base_definitions['6153519703385c0016b842b0'],
-  g_base_definitions['6153519703385c0016b842b2'],
-  g_base_definitions['6153519703385c0016b842b4'],
-  g_base_definitions['6153519703385c0016b842b5'],
-}
-army['5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cd3'] = {
-  data={
-    name='German allies',
-    id='5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cd3',
-  },
-  g_base_definitions['6153519703385c0016b842b9'],
-  g_base_definitions['6153519703385c0016b842ba'],
-  g_base_definitions['6153519703385c0016b842bc'],
-  g_base_definitions['6153519703385c0016b842bd'],
-  g_base_definitions['6153519703385c0016b842bf'],
-  g_base_definitions['6153519703385c0016b842c1'],
-  g_base_definitions['6153519703385c0016b842c3'],
-  g_base_definitions['6153519703385c0016b842c5'],
-  g_base_definitions['6153519703385c0016b842c7'],
-  g_base_definitions['6153519703385c0016b842c8'],
+  g_base_definitions['68c995cb57916300158877d6'],
+  g_base_definitions['68c995cb57916300158877d8'],
+  g_base_definitions['68c995cb57916300158877da'],
+  g_base_definitions['68c995cb57916300158877dc'],
+  g_base_definitions['68c995cb57916300158877de'],
+  g_base_definitions['68c995cb57916300158877df'],
 }
 army['5fb1b9eae1af060017709db9_ally_5fb1b9e9e1af060017709ce7'] = {
   data={
-    name='German allies',
+    name='German Princes allies',
     id='5fb1b9eae1af060017709db9_ally_5fb1b9e9e1af060017709ce7',
   },
-  g_base_definitions['6153519703385c0016b842d7'],
-  g_base_definitions['6153519703385c0016b842d9'],
-  g_base_definitions['6153519703385c0016b842db'],
-  g_base_definitions['6153519703385c0016b842dd'],
-  g_base_definitions['6153519703385c0016b842de'],
+  g_base_definitions['68c995cb5791630015887841'],
+  g_base_definitions['68c995cb5791630015887843'],
+  g_base_definitions['68c995cb5791630015887845'],
+  g_base_definitions['68c995cb5791630015887847'],
+  g_base_definitions['68c995cb5791630015887848'],
 }
 army['5fb1b9eae1af060017709db9_ally_5fb1b9e9e1af060017709cf0'] = {
   data={
-    name='German allies',
+    name='German Princes allies',
     id='5fb1b9eae1af060017709db9_ally_5fb1b9e9e1af060017709cf0',
   },
-  g_base_definitions['6153519703385c0016b842e2'],
-  g_base_definitions['6153519703385c0016b842e4'],
-  g_base_definitions['6153519703385c0016b842e6'],
-  g_base_definitions['6153519703385c0016b842e8'],
-  g_base_definitions['6153519703385c0016b842e9'],
-  g_base_definitions['6153519703385c0016b842eb'],
+  g_base_definitions['68c995cb579163001588784c'],
+  g_base_definitions['68c995cb579163001588784e'],
+  g_base_definitions['68c995cb5791630015887850'],
+  g_base_definitions['68c995cb5791630015887852'],
+  g_base_definitions['68c995cb5791630015887853'],
+  g_base_definitions['68c995cb5791630015887855'],
+}
+army['5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cbb'] = {
+  data={
+    name='German Citystate allies',
+    id='5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cbb',
+  },
+  g_base_definitions['68c995cb57916300158877f7'],
+  g_base_definitions['68c995cb57916300158877f9'],
+  g_base_definitions['68c995cb57916300158877fb'],
+  g_base_definitions['68c995cb57916300158877fd'],
+  g_base_definitions['68c995cb57916300158877ff'],
+  g_base_definitions['68c995cb5791630015887801'],
+  g_base_definitions['68c995cb5791630015887802'],
+}
+army['5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cca'] = {
+  data={
+    name='German Citystate allies',
+    id='5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cca',
+  },
+  g_base_definitions['68c995cb5791630015887813'],
+  g_base_definitions['68c995cb5791630015887814'],
+  g_base_definitions['68c995cb5791630015887816'],
+  g_base_definitions['68c995cb5791630015887818'],
+  g_base_definitions['68c995cb579163001588781a'],
+  g_base_definitions['68c995cb579163001588781c'],
+  g_base_definitions['68c995cb579163001588781e'],
+  g_base_definitions['68c995cb579163001588781f'],
+}
+army['5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cd3'] = {
+  data={
+    name='German Citystate allies',
+    id='5fb1b9eae1af060017709db9_ally_5fb1b9e8e1af060017709cd3',
+  },
+  g_base_definitions['68c995cb5791630015887823'],
+  g_base_definitions['68c995cb5791630015887824'],
+  g_base_definitions['68c995cb5791630015887826'],
+  g_base_definitions['68c995cb5791630015887827'],
+  g_base_definitions['68c995cb5791630015887829'],
+  g_base_definitions['68c995cb579163001588782b'],
+  g_base_definitions['68c995cb579163001588782d'],
+  g_base_definitions['68c995cb579163001588782f'],
+  g_base_definitions['68c995cb5791630015887831'],
+  g_base_definitions['68c995cb5791630015887832'],
 }

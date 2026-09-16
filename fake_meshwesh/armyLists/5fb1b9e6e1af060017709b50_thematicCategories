@@ -1,1 +1,10 @@
-[{"name":"Embattled Isle","id":"5fb1b720e1af060017701936"},{"name":"Plate and Handgonne","id":"5fb1b720e1af060017701939"}]
+[
+    {
+        "name": "Embattled Isle",
+        "id": "5fb1b720e1af060017701936"
+    },
+    {
+        "name": "Plate and Handgonne",
+        "id": "5fb1b720e1af060017701939"
+    }
+]

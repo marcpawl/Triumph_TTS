@@ -1,0 +1,51 @@
+-- 68c07ed65c431f0015cf1ab6 Coastal Mountain First Nations  1100 to 1770 AD
+
+army['68c07ed65c431f0015cf1ab6']={
+  data={
+    invasionRatings={
+      1,
+    },
+    maneuverRatings={
+      2,
+    },
+    homeTopographies={
+      'Forest',
+      'Hilly',
+    },
+    name='Coastal Mountain First Nations  1100 to 1770 AD',
+    id='68c07ed65c431f0015cf1ab6',
+    dateRange={
+      startDate=1100,
+      endDate=1770,
+    },
+  },
+  g_base_definitions[g_str_68c995eb579163001588c69c_general],
+  g_base_definitions[g_str_68c995eb579163001588c69c],
+  g_base_definitions[g_str_68c995eb579163001588c69e],
+  g_base_definitions[g_str_68c07ed65c431f0015cf1ab6_camp],
+  g_base_definitions[g_str_68c07ed65c431f0015cf1ab6_camp_fortified],
+}
+if nil == armies["Meshwesh id"] then
+  armies["Meshwesh id"] ={}
+end
+armies["Meshwesh id"]["68c07ed65c431f0015cf1ab6"] = army["68c07ed65c431f0015cf1ab6"]
+if nil == armies["New World"] then
+  armies["New World"] ={}
+end
+armies["New World"]["Coastal Mountain First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1ab6"]
+if nil == armies["North America"] then
+  armies["North America"] ={}
+end
+armies["North America"]["Coastal Mountain First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1ab6"]
+if nil == armies["All"] then
+  armies["All"] ={}
+end
+armies["All"]["Coastal Mountain First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1ab6"]
+if nil == army_dates then
+  army_dates={}
+end
+army_dates["68c07ed65c431f0015cf1ab6"] = {}
+army_dates["68c07ed65c431f0015cf1ab6"]["1100 AD to 1770 AD"] = {
+  startDate=1100,
+  endDate=1770
+}

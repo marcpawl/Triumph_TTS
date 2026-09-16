@@ -1,1 +1,10 @@
-[{"name":"Andes and Amazon","id":"5fb1b720e1af060017701947"},{"name":"Caribbean","id":"5fb1b720e1af060017701949"}]
+[
+    {
+        "name": "Andes and Amazon",
+        "id": "5fb1b720e1af060017701947"
+    },
+    {
+        "name": "Caribbean",
+        "id": "5fb1b720e1af060017701949"
+    }
+]

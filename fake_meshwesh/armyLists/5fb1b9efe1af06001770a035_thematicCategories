@@ -1,1 +1,14 @@
-[{"name":"Silk Road","id":"5fb1b720e1af060017701935"},{"name":"Scimitar and Crescent","id":"5fb1b720e1af060017701932"},{"name":"Crusader Kingdoms","id":"5fb1b720e1af06001770193c"}]
+[
+    {
+        "name": "Silk Road",
+        "id": "5fb1b720e1af060017701935"
+    },
+    {
+        "name": "Scimitar and Crescent",
+        "id": "5fb1b720e1af060017701932"
+    },
+    {
+        "name": "Crusader Kingdoms",
+        "id": "5fb1b720e1af06001770193c"
+    }
+]

@@ -3,7 +3,7 @@ JSON = require("lunajson")
 require("Triumph_TTS/scripts/logic_spawn_army")
 
 function test_get_a_model_definition_returns_plain_base()
-    local base_def = g_base_definitions[g_str_615351b703385c0016b88f18]
+    local base_def = g_base_definitions[g_str_68c995eb579163001588c626]
     local model_def = get_a_model_definition(base_def)
     lu.assertEquals(model_def.base, 'tile_plain_Warband' )
     lu.assertEquals(n_models, nil )
@@ -22,7 +22,7 @@ function test_get_a_model_definition_returns_plain_base_if_preferred()
     g_use_plain_bases = true
 
     -- Exercise
-    local base_def = g_base_definitions[g_str_615351ab03385c0016b871f5]
+    local base_def = g_base_definitions[g_str_68c995e0579163001588a7e9]
     local model_def = get_a_model_definition(base_def)
 
     -- Validate
@@ -51,7 +51,7 @@ end
 
 -- Random model iterator will always return a non-nil figure to add to a base.
 function test_random_model_iterator()
-    local model_def = g_models[g_str_615351a203385c0016b8588f]
+    local model_def = g_models[g_str_68c995d75791630015888df9]
     local iter = random_model_iterator(model_def[1]['random_models'])
     for i=1,10 do
         local figure = iter()

@@ -15,7 +15,7 @@ army['5fb1b9dde1af0600177095b9_ally_5fb1b9e1e1af06001770980d'] = {
     name='Perpernas Roman Exiles',
     id='5fb1b9dde1af0600177095b9_ally_5fb1b9e1e1af06001770980d',
   },
-  g_base_definitions['6153519303385c0016b83ca1'],
-  g_base_definitions['6153519303385c0016b83ca3'],
-  g_base_definitions['6153519303385c0016b83ca5'],
+  g_base_definitions['68c995c85791630015887204'],
+  g_base_definitions['68c995c85791630015887206'],
+  g_base_definitions['68c995c85791630015887208'],
 }
