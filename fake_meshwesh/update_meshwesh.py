@@ -376,7 +376,6 @@ if __name__ == "__main__":
         create_database(db_path)        
         
     changes = get_changes(db_path)
-    breakpoint()
     ttslua_data = Path("../scripts/data").resolve()
     replace_ids_in_dir(ttslua_data, changes)
     
