@@ -2,8 +2,7 @@ import json
 import os
 import sys
 import subprocess
-
-#https://meshwesh.wgcwar.com/api/v1/
+import time
 
 
 def retrieve_allyOptions(id) :
@@ -26,9 +25,27 @@ def retrieve_theme(id) :
     subprocess.check_call(cmd)
 
 
+def retrieve_summary() :
+    dest_file = "armyLists/summary"
+    src_url = "https://meshwesh.wgcwar.com/api/v1/armyLists?summary=true"
+    cmd = [ "curl", "-o", dest_file, src_url]
+    subprocess.check_call(cmd)
+
+def retrieve_version():
+    """ Meshwesh has no version for its data, so we will use the current time
+        instead.
+    """
+    with open("armyLists/version", "w") as version_file:
+        version = time.time()
+        version_file.write(str(version))
+        version_file.write("\n")
+        
+    
 def retrieve_all():
     if not os.path.exists("armyLists") :
         os.mkdir("armyLists")
+    retrieve_version()
+    retrieve_summary()
     with open("armyLists/summary", "r") as summary_file:
         summary_text = summary_file.read()
         summary = json.loads(summary_text)
@@ -39,4 +56,5 @@ def retrieve_all():
             retrieve_theme(army_entry['id'])
 
 if __name__ == "__main__":
+    # Clone MeshWesh data to the local file system
     retrieve_all()
