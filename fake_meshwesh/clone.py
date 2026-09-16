@@ -26,11 +26,17 @@ def retrieve_theme(id) :
     subprocess.check_call(cmd)
 
 
-with open("armyLists/summary", "r") as summary_file:
-  summary_text = summary_file.read()
-summary = json.loads(summary_text)
-for army_entry in summary :
-    print(army_entry['id'])
-    retrieve_army(army_entry['id'])
-    retrieve_allyOptions(army_entry['id'])
-    retrieve_theme(army_entry['id'])
+def retrieve_all():
+    if not os.path.exists("armyLists") :
+        os.mkdir("armyLists")
+    with open("armyLists/summary", "r") as summary_file:
+        summary_text = summary_file.read()
+        summary = json.loads(summary_text)
+        for army_entry in summary :
+            print(army_entry['id'])
+            retrieve_army(army_entry['id'])
+            retrieve_allyOptions(army_entry['id'])
+            retrieve_theme(army_entry['id'])
+
+if __name__ == "__main__":
+    retrieve_all()
