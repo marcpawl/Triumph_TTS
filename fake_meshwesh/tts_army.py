@@ -855,6 +855,8 @@ def generate_base_definitions(file, army_json) :
      @return The base definitions for the army.
   """
   definitions = []
+  
+  army_id = army_json['id']
 
   troop_options = army_json['troopOptions']
   for troop_option in  troop_options :
@@ -1012,6 +1014,8 @@ def get_dates_for_army_no_allies(army_json) :
      @param army_json Army to query.
      @return list of dates, unsorted, and possibly duplicated.
   """
+  army_id = army_json['id']
+  
   if "dateRange" not in army_json :
     raise Exception("No army date range in " + army_id)
   army_date_range = army_json['dateRange']
