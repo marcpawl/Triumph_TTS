@@ -1301,6 +1301,12 @@ require("Triumph_TTS/scripts/static_maps")
 def generate_army_data() :
   summary = read_json("armyLists/summary")
 
+  # Delete all files in army_data from git
+  subprocess.run(['git', 'reset', '--hard', '--', 'army_data'], check=True)
+  subprocess.run(['git', 'clean', '-fdx', 'army_data'], check=True)
+  subprocess.run(['git', 'clean', '-fdX', 'army_data'], check=True)
+  subprocess.run(['git', 'rm', '-r', 'army_data'], check=True)
+
   with open("army_data/all_armies.ttslua", "w") as all_armies:
       all_armies.write("""
   -- GENERATED FILE DO NOT EDIT
@@ -1346,3 +1352,6 @@ def generate_army_data() :
       for army_entry in summary :
           army_id = army_entry['id']
           all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_allies")\n' % (army_id))
+
+  # Add all files in army_data to git
+  subprocess.run(['git', 'add', 'army_data'], check=True)
