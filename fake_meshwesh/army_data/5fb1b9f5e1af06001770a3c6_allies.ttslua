@@ -23,21 +23,21 @@ army['5fb1b9f5e1af06001770a3c6_ally_5fb1b9f5e1af06001770a393'] = {
     name='Mexican City-State allies',
     id='5fb1b9f5e1af06001770a3c6_ally_5fb1b9f5e1af06001770a393',
   },
-  g_base_definitions['6153519c03385c0016b84c66'],
+  g_base_definitions['68c995d157916300158881ed'],
 }
 army['5fb1b9f5e1af06001770a3c6_ally_5fb1b9f5e1af06001770a3aa'] = {
   data={
     name='Maya allies',
     id='5fb1b9f5e1af06001770a3c6_ally_5fb1b9f5e1af06001770a3aa',
   },
-  g_base_definitions['6153519c03385c0016b84c74'],
-  g_base_definitions['6153519c03385c0016b84c76'],
-  g_base_definitions['6153519c03385c0016b84c77'],
+  g_base_definitions['68c995d157916300158881fb'],
+  g_base_definitions['68c995d157916300158881fd'],
+  g_base_definitions['68c995d157916300158881fe'],
 }
 army['5fb1b9f5e1af06001770a3c6_ally_5fb1b9f5e1af06001770a39a'] = {
   data={
     name='Oaxaca allies',
     id='5fb1b9f5e1af06001770a3c6_ally_5fb1b9f5e1af06001770a39a',
   },
-  g_base_definitions['6153519c03385c0016b84c6a'],
+  g_base_definitions['68c995d157916300158881f1'],
 }

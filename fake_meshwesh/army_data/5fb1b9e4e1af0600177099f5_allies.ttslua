@@ -19,16 +19,16 @@ army['5fb1b9e4e1af0600177099f5_ally_5fb1b9e3e1af060017709956'] = {
     name='Sassanid ally',
     id='5fb1b9e4e1af0600177099f5_ally_5fb1b9e3e1af060017709956',
   },
-  g_base_definitions['6153519403385c0016b83dcd'],
-  g_base_definitions['6153519403385c0016b83dcf'],
+  g_base_definitions['68c995c95791630015887330'],
+  g_base_definitions['68c995c95791630015887332'],
 }
 army['5fb1b9e4e1af0600177099f5_ally_5fb1b9e4e1af060017709a03'] = {
   data={
     name='Bulgar ally',
     id='5fb1b9e4e1af0600177099f5_ally_5fb1b9e4e1af060017709a03',
   },
-  g_base_definitions['6153519503385c0016b83e84'],
-  g_base_definitions['6153519503385c0016b83e86'],
-  g_base_definitions['6153519503385c0016b83e87'],
-  g_base_definitions['6153519503385c0016b83e89'],
+  g_base_definitions['68c995c957916300158873e5'],
+  g_base_definitions['68c995c957916300158873e7'],
+  g_base_definitions['68c995c957916300158873e8'],
+  g_base_definitions['68c995c957916300158873ea'],
 }

@@ -15,6 +15,6 @@ army['5fb1b9dce1af060017709591_ally_5fb1b9e1e1af060017709831'] = {
     name='Roman allies',
     id='5fb1b9dce1af060017709591_ally_5fb1b9e1e1af060017709831',
   },
-  g_base_definitions['6153519303385c0016b83cd4'],
-  g_base_definitions['6153519303385c0016b83cd6'],
+  g_base_definitions['68c995c85791630015887237'],
+  g_base_definitions['68c995c85791630015887239'],
 }

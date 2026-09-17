@@ -1,1 +1,14 @@
-[{"name":"Fall of Rome","id":"5fb1b720e1af06001770192d"},{"name":"Dark Ages","id":"5fb1b720e1af06001770192e"},{"name":"Spread of Islam","id":"5fb1b720e1af060017701930"}]
+[
+    {
+        "name": "Fall of Rome",
+        "id": "5fb1b720e1af06001770192d"
+    },
+    {
+        "name": "Dark Ages",
+        "id": "5fb1b720e1af06001770192e"
+    },
+    {
+        "name": "Spread of Islam",
+        "id": "5fb1b720e1af060017701930"
+    }
+]

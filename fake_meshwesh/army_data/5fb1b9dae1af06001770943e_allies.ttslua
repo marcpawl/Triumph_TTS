@@ -23,27 +23,27 @@ army['5fb1b9dae1af06001770943e_ally_5fb1b9dae1af06001770942a'] = {
     name='Elamite allies',
     id='5fb1b9dae1af06001770943e_ally_5fb1b9dae1af06001770942a',
   },
-  g_base_definitions['6153518e03385c0016b83691'],
-  g_base_definitions['6153518e03385c0016b83693'],
-  g_base_definitions['6153518e03385c0016b83695'],
+  g_base_definitions['68c995c55791630015886c24'],
+  g_base_definitions['68c995c55791630015886c26'],
+  g_base_definitions['68c995c55791630015886c28'],
 }
 army['5fb1b9dae1af06001770943e_ally_5fb1b9d9e1af0600177093a4'] = {
   data={
     name='Arab allies',
     id='5fb1b9dae1af06001770943e_ally_5fb1b9d9e1af0600177093a4',
   },
-  g_base_definitions['6153518e03385c0016b835ba'],
-  g_base_definitions['6153518e03385c0016b835bc'],
-  g_base_definitions['6153518e03385c0016b835be'],
-  g_base_definitions['6153518e03385c0016b835c0'],
-  g_base_definitions['6153518e03385c0016b835c3'],
+  g_base_definitions['68c995c45791630015886b4d'],
+  g_base_definitions['68c995c45791630015886b4f'],
+  g_base_definitions['68c995c45791630015886b51'],
+  g_base_definitions['68c995c45791630015886b53'],
+  g_base_definitions['68c995c45791630015886b56'],
 }
 army['5fb1b9dae1af06001770943e_ally_5fb1b9dae1af060017709424'] = {
   data={
     name='Mede allies',
     id='5fb1b9dae1af06001770943e_ally_5fb1b9dae1af060017709424',
   },
-  g_base_definitions['6153518e03385c0016b83689'],
-  g_base_definitions['6153518e03385c0016b8368b'],
-  g_base_definitions['6153518e03385c0016b8368d'],
+  g_base_definitions['68c995c55791630015886c1c'],
+  g_base_definitions['68c995c55791630015886c1e'],
+  g_base_definitions['68c995c55791630015886c20'],
 }

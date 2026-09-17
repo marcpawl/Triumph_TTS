@@ -23,21 +23,21 @@ army['5fb1b9f6e1af06001770a47d_ally_5fb1b9f6e1af06001770a476'] = {
     name='Quechua or Aymara allies',
     id='5fb1b9f6e1af06001770a47d_ally_5fb1b9f6e1af06001770a476',
   },
-  g_base_definitions['6153519d03385c0016b84d0c'],
-  g_base_definitions['6153519d03385c0016b84d0e'],
+  g_base_definitions['68c995d15791630015888293'],
+  g_base_definitions['68c995d15791630015888295'],
 }
 army['5fb1b9f6e1af06001770a47d_ally_5fb1b9f6e1af06001770a470'] = {
   data={
     name='Chanca allies',
     id='5fb1b9f6e1af06001770a47d_ally_5fb1b9f6e1af06001770a470',
   },
-  g_base_definitions['6153519d03385c0016b84d06'],
-  g_base_definitions['6153519d03385c0016b84d08'],
+  g_base_definitions['68c995d1579163001588828d'],
+  g_base_definitions['68c995d1579163001588828f'],
 }
 army['5fb1b9f6e1af06001770a47d_ally_5fb1b9f6e1af06001770a46a'] = {
   data={
     name='Peruvian coastal allies',
     id='5fb1b9f6e1af06001770a47d_ally_5fb1b9f6e1af06001770a46a',
   },
-  g_base_definitions['6153519d03385c0016b84d02'],
+  g_base_definitions['68c995d15791630015888289'],
 }

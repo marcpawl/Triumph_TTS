@@ -1,1 +1,10 @@
-[{"name":"New World","id":"5fb1b720e1af060017701946"},{"name":"North America","id":"5fb1b720e1af060017701948"}]
+[
+    {
+        "name": "New World",
+        "id": "5fb1b720e1af060017701946"
+    },
+    {
+        "name": "North America",
+        "id": "5fb1b720e1af060017701948"
+    }
+]

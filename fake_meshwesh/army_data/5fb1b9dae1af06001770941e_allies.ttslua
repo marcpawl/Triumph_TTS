@@ -19,17 +19,17 @@ army['5fb1b9dae1af06001770941e_ally_5fb1b9dae1af060017709430'] = {
     name='Kimmerian or Skythian allies',
     id='5fb1b9dae1af06001770941e_ally_5fb1b9dae1af060017709430',
   },
-  g_base_definitions['6153518e03385c0016b8369a'],
-  g_base_definitions['6153518e03385c0016b8369c'],
+  g_base_definitions['68c995c55791630015886c2d'],
+  g_base_definitions['68c995c55791630015886c2f'],
 }
 army['5fb1b9dae1af06001770941e_ally_5fb1b9dae1af06001770940c'] = {
   data={
     name='Mannaian allies',
     id='5fb1b9dae1af06001770941e_ally_5fb1b9dae1af06001770940c',
   },
-  g_base_definitions['6153518e03385c0016b83659'],
-  g_base_definitions['6153518e03385c0016b8365c'],
-  g_base_definitions['6153518e03385c0016b8365e'],
-  g_base_definitions['6153518e03385c0016b83660'],
-  g_base_definitions['6153518e03385c0016b83661'],
+  g_base_definitions['68c995c55791630015886bec'],
+  g_base_definitions['68c995c55791630015886bef'],
+  g_base_definitions['68c995c55791630015886bf1'],
+  g_base_definitions['68c995c55791630015886bf3'],
+  g_base_definitions['68c995c55791630015886bf4'],
 }

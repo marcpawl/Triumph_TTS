@@ -32,7 +32,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
 --},
 
     -- 4-horse chariot with bow-armed crewmen - General
-    g_models[g_str_615351a103385c0016b85705_general] = {
+    g_models[g_str_68c995d65791630015888c83_general] = {
       {
         n_models = 1,
         model_data = 'troop_carthaginian_chariot_gen'
@@ -40,7 +40,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --4-horse chariot with bow-armed crewmen
-    g_models[g_str_615351a103385c0016b85705] = {
+    g_models[g_str_68c995d65791630015888c83] = {
       {
         n_models = 1,
         model_data = 'troop_carthaginian_chariot'
@@ -48,21 +48,21 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Sacred Band spearmen - Spears
-    g_models[g_str_615351a103385c0016b85708] = {
+    g_models[g_str_68c995d65791630015888c85] = {
       {
         model_data = 'troop_carthaginian_sacred_band'
       }
     }
 
     --Poeni horsemen - Bad Horse
-    g_models[g_str_615351a103385c0016b8570c] = {
+    g_models[g_str_68c995d65791630015888c88] = {
       {
         model_data = 'troop_carthaginian_cavalry'
       }
     }
 
     --Mercenary horsemen - JavCav General
-    g_models[g_str_615351a103385c0016b85710_general] = {
+    g_models[g_str_68c995d65791630015888c8b_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -73,10 +73,10 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Mercenary horsemen - JavCav
-    g_models[g_str_615351a103385c0016b85710] = g_models[g_str_615351a203385c0016b85913]
+    g_models[g_str_68c995d65791630015888c8b] = g_models[g_str_68c995d75791630015888e7d]
 
     --Poeni citizen infantry - HF General
-    g_models[g_str_615351a103385c0016b85713_general] = {
+    g_models[g_str_68c995d65791630015888c8d_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -89,21 +89,21 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Poeni citizen infantry - HF
-    g_models[g_str_615351a103385c0016b85713] = {
+    g_models[g_str_68c995d65791630015888c8d] = {
       {
         model_data = 'troop_carthaginian_psiloi'
       }
     }
 
     --Poeni citizen infantry - LF
-    g_models[g_str_615351a103385c0016b85714] = {
+    g_models[g_str_68c995d65791630015888c8e] = {
       {
         model_data = 'troop_carthaginian_psiloi'
       }
     }
 
     --African foot armed with spears - HF General
-    g_models[g_str_615351a103385c0016b85717_general] = {
+    g_models[g_str_68c995d65791630015888c90_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -116,40 +116,40 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --African foot armed with spears - HF
-    g_models[g_str_615351a103385c0016b85717] = {
+    g_models[g_str_68c995d65791630015888c90] = {
       {
         model_data = 'troop_carthaginian_spearmen_aspis'
       }
     }
 
     --Spanish foot - LF
-    g_models[g_str_615351a103385c0016b8571a] = g_models[g_str_615351a203385c0016b85916]
+    g_models[g_str_68c995d65791630015888c92] = g_models[g_str_68c995d75791630015888e80]
 
     --Spanish foot - Raiders
-    g_models[g_str_615351a103385c0016b8571b] = g_models[g_str_615351a203385c0016b8591c]
+    g_models[g_str_68c995d65791630015888c93] = g_models[g_str_68c995d75791630015888e86]
 
     --Ligurians, Sardinians, Corsicans, or Sicel light infantry - LF
-    g_models[g_str_615351a103385c0016b8571e] = g_models[g_str_615351a203385c0016b85913_dismounted]
+    g_models[g_str_68c995d65791630015888c95] = g_models[g_str_68c995d75791630015888e7d_dismounted]
 
     --Balearic slingers - SK
-    g_models[g_str_615351a103385c0016b85721] = {
+    g_models[g_str_68c995d65791630015888c97] = {
       {
         model_data = 'troop_carthaginian_slingers'
       }
     }
 
     --Libyan or Moorish mercenary javelinmen - Rabble
-    g_models[g_str_615351a103385c0016b85724] = {
+    g_models[g_str_68c995d65791630015888c99] = {
       {
         model_data = 'troop_carthaginian_psiloi_new'
       }
     }
 
     --Gallic mercenary foot - Warriors
-    g_models[g_str_615351a103385c0016b85728] = g_models[g_str_615351a203385c0016b858e4_dismounted]
+    g_models[g_str_68c995d65791630015888c9c] = g_models[g_str_68c995d75791630015888e4e_dismounted]
 
     --Numidian horsemen - JavCav General
-    g_models[g_str_615351a103385c0016b8572c_general] = {
+    g_models[g_str_68c995d65791630015888c9f_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -160,21 +160,21 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Numidian horsemen - JavCav
-    g_models[g_str_615351a103385c0016b8572c] = {
+    g_models[g_str_68c995d65791630015888c9f] = {
       {
         model_data = 'troop_carthaginian_lightcav'
       }
     }
 
     --Greek mercenary hoplites - Spears
-    g_models[g_str_615351a103385c0016b85730] = {
+    g_models[g_str_68c995d65791630015888ca2] = {
       {
         model_data = 'troop_carthaginian_allied_greek_spear'
       }
     }
 
     --Greek mercenary hoplites - Heavy Foot
-    g_models[g_str_615351a103385c0016b85731] = {
+    g_models[g_str_68c995d65791630015888ca3] = {
       {
         n_models = 4,
         random_models = {
@@ -184,7 +184,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
    --Greek mercenary hoplites General - Heavy Foot
-    g_models[g_str_615351a103385c0016b85731_general] = {
+    g_models[g_str_68c995d65791630015888ca3_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -224,7 +224,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
 -- As of: 20210408
 
     --Numidian, Spanish, Poeni or Libyan horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b857fc_general] = {
+    g_models[g_str_68c995d75791630015888d66_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -249,7 +249,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Numidian, Spanish, Poeni or Libyan horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b857fc] = {
+    g_models[g_str_68c995d75791630015888d66] = {
       {
         model_data = 'troop_ancient_spanish_lh'
       },
@@ -262,21 +262,21 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Libyan heavy infantry armed with spears - HF
-    g_models[g_str_615351a203385c0016b857fe] = g_models[g_str_615351a103385c0016b85717]
+    g_models[g_str_68c995d75791630015888d68] = g_models[g_str_68c995d65791630015888c90]
 
 
     --Poeni settlers - HF
-    g_models[g_str_615351a203385c0016b85800] = g_models[g_str_615351a103385c0016b85713]
+    g_models[g_str_68c995d75791630015888d6a] = g_models[g_str_68c995d65791630015888c8d]
 
     --Libyan, Moorish or Numidian javelinmen - LF
-    g_models[g_str_615351a203385c0016b85802] = {
+    g_models[g_str_68c995d75791630015888d6c] = {
       {
         model_data = 'troop_carthaginian_psiloi_new'
       }
     }
 
     --Bolt-shooters - Artillery
-    g_models[g_str_615351a203385c0016b85804] = {
+    g_models[g_str_68c995d75791630015888d6e] = {
       {
         n_models = 1,
         model_data = 'troop_successors_art'
@@ -284,16 +284,16 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Spanish mercenary light infantry - LF
-    g_models[g_str_615351a203385c0016b85806] = g_models[g_str_615351a203385c0016b85913_dismounted]
+    g_models[g_str_68c995d75791630015888d70] = g_models[g_str_68c995d75791630015888e7d_dismounted]
 
     --Mercenary Celtiberian scutarii - Raiders
-    g_models[g_str_615351a203385c0016b85808] = g_models[g_str_615351a203385c0016b8591c]
+    g_models[g_str_68c995d75791630015888d72] = g_models[g_str_68c995d75791630015888e86]
 
     --Balearic Slingers - Sk
-    g_models[g_str_615351a203385c0016b8580a] = g_models[g_str_615351a103385c0016b85721]
+    g_models[g_str_68c995d75791630015888d74] = g_models[g_str_68c995d65791630015888c97]
 
     --African Elephants
-    g_models[g_str_615351a203385c0016b8580c] = {
+    g_models[g_str_68c995d75791630015888d76] = {
       {
         n_models = 1,
         model_data = 'troop_carthaginian_elephant'
@@ -305,18 +305,18 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Greek hoplite mercenaries - HF
-    g_models[g_str_615351a203385c0016b8580f] = g_models[g_str_615351a103385c0016b85730]
+    g_models[g_str_68c995d75791630015888d79] = g_models[g_str_68c995d65791630015888ca2]
 
     --Greek mercenary thureophoroi - Raiders
     --NOT YET - PENDING REAL THUREOPOROI
-    g_models[g_str_615351a203385c0016b85800] = {
+    g_models[g_str_68c995d75791630015888d6a] = {
       {
         model_data = 'troop_successors_psiloi'
       }
     }
 
     --Italian mercenary light infantry - HF
-    g_models[g_str_615351a203385c0016b85816] = g_models[g_str_615351a203385c0016b85959]
+    g_models[g_str_68c995d75791630015888d80] = g_models[g_str_68c995d75791630015888ec3]
 
     -- Carthaginian Camp
     g_models[g_str_5fb1b9dce1af06001770955e_camp] = g_models[g_str_5fb1b9dbe1af060017709528_camp]
@@ -331,47 +331,47 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
 -- As of: 20210408
 
     --Numidian, Spanish, Poeni or Libyan horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b85821_general] = g_models[g_str_615351a203385c0016b857fc_general]
+    g_models[g_str_68c995d75791630015888d8b_general] = g_models[g_str_68c995d75791630015888d66_general]
 
     --Numidian, Spanish, Poeni or Libyan horsemen - JavCav
-    g_models[g_str_615351a203385c0016b85821] = g_models[g_str_615351a203385c0016b857fc]
+    g_models[g_str_68c995d75791630015888d8b] = g_models[g_str_68c995d75791630015888d66]
 
     --Libyan heavy infantry armed with spears - HF
-    g_models[g_str_615351a203385c0016b85823] = g_models[g_str_615351a103385c0016b85717]
+    g_models[g_str_68c995d75791630015888d8d] = g_models[g_str_68c995d65791630015888c90]
 
     --Libyan, Moorish or Numidian javelinmen - LF
-    g_models[g_str_615351a203385c0016b85825] = g_models[g_str_615351a103385c0016b85714]
+    g_models[g_str_68c995d75791630015888d8f] = g_models[g_str_68c995d65791630015888c8e]
 
     --Bolt-shooters - Artillery
-    g_models[g_str_615351a203385c0016b85827] = g_models[g_str_615351a203385c0016b85804]
+    g_models[g_str_68c995d75791630015888d91] = g_models[g_str_68c995d75791630015888d6e]
 
     --Greek hoplite mercenaries - HF
-    g_models[g_str_615351a203385c0016b8582a] = g_models[g_str_615351a103385c0016b85730]
+    g_models[g_str_68c995d75791630015888d94] = g_models[g_str_68c995d65791630015888ca2]
 
     --Greek mercenary thureophoroi - Raiders
     --NOT YET
-    g_models[g_str_615351a203385c0016b8582e] = g_models[g_str_615351a203385c0016b85800]
+    g_models[g_str_68c995d75791630015888d98] = g_models[g_str_68c995d75791630015888d6a]
 
     --Italian mercenary light infantry - LF
-    g_models[g_str_615351a203385c0016b85831] = g_models[g_str_615351a203385c0016b85959]
+    g_models[g_str_68c995d75791630015888d9b] = g_models[g_str_68c995d75791630015888ec3]
 
     --Spanish mercenary light infantry - LF
-    g_models[g_str_615351a203385c0016b85833] = g_models[g_str_615351a203385c0016b85913_dismounted]
+    g_models[g_str_68c995d75791630015888d9d] = g_models[g_str_68c995d75791630015888e7d_dismounted]
 
     --Balearic Slingers - Sk
-    g_models[g_str_615351a203385c0016b85835] = g_models[g_str_615351a103385c0016b85721]
+    g_models[g_str_68c995d75791630015888d9f] = g_models[g_str_68c995d65791630015888c97]
 
     --African Elephants
-    g_models[g_str_615351a203385c0016b85837] = g_models[g_str_615351a203385c0016b8580c]
+    g_models[g_str_68c995d75791630015888da1] = g_models[g_str_68c995d75791630015888d76]
 
     --Mercenary Celtiberian scutarii - Raiders
-    g_models[g_str_615351a203385c0016b85839] = g_models[g_str_615351a203385c0016b8591c]
+    g_models[g_str_68c995d75791630015888da3] = g_models[g_str_68c995d75791630015888e86]
 
     --Gallic noble horsemen - Bad Horse
-    g_models[g_str_615351a203385c0016b8583b] = g_models[g_str_615351a203385c0016b858ee]
+    g_models[g_str_68c995d75791630015888da5] = g_models[g_str_68c995d75791630015888e58]
 
     --Gallic noble horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b8583c_general] = {
+    g_models[g_str_68c995d75791630015888da6_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -382,16 +382,16 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Gallic noble horsemen - JavCav
-    g_models[g_str_615351a203385c0016b8583c] = g_models[g_str_615351a203385c0016b858ee]
+    g_models[g_str_68c995d75791630015888da6] = g_models[g_str_68c995d75791630015888e58]
 
     --Gallic horsemen - Bad Horse
-    g_models[g_str_615351a203385c0016b8583e] = g_models[g_str_615351a203385c0016b858ec]
+    g_models[g_str_68c995d75791630015888da8] = g_models[g_str_68c995d75791630015888e56]
 
     --Gallic tribesmen mercenaries - Warriors
-    g_models[g_str_615351a203385c0016b85840] = g_models[g_str_615351a203385c0016b858e4_dismounted]
+    g_models[g_str_68c995d75791630015888daa] = g_models[g_str_68c995d75791630015888e4e_dismounted]
 
     --Ligurian infantr - Raiders
-    g_models[g_str_615351a203385c0016b85842] = {
+    g_models[g_str_68c995d75791630015888dac] = {
       {
         model_data = 'troop_gallic_warriors'
       }
@@ -410,7 +410,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
 -- As of: 20210408
 
     --Gallic, Poeni, Libyan, or Numidian horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b8584f_general] = {
+    g_models[g_str_68c995d75791630015888db9_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -435,7 +435,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Gallic, Poeni, Libyan, or Numidian horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b8584f] = {
+    g_models[g_str_68c995d75791630015888db9] = {
       {
         model_data = 'troop_gallic_cav_bodyguard'
       },
@@ -448,48 +448,48 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Libyan heavy infantry armed with spears - HF
-    g_models[g_str_615351a203385c0016b85852] = g_models[g_str_615351a103385c0016b85717]
+    g_models[g_str_68c995d75791630015888dbc] = g_models[g_str_68c995d65791630015888c90]
 
     --Veteran Libyan spearmen using captured Roman equipment - EF
-    g_models[g_str_615351a203385c0016b85855] = {
+    g_models[g_str_68c995d75791630015888dbf] = {
       {
         model_data = 'troop_carthaginian_spearmen_imitation'
       }
     }
 
     --Libyan, Moorish or Numidian javelinmen - LF
-    g_models[g_str_615351a203385c0016b85858] = g_models[g_str_615351a103385c0016b85714]
+    g_models[g_str_68c995d75791630015888dc2] = g_models[g_str_68c995d65791630015888c8e]
 
     --Bolt-shooters - Artillery
-    g_models[g_str_615351a203385c0016b8585b] = g_models[g_str_615351a203385c0016b85804]
+    g_models[g_str_68c995d75791630015888dc5] = g_models[g_str_68c995d75791630015888d6e]
 
     --Greek hoplite mercenaries - HF
-    g_models[g_str_615351a203385c0016b8585d] = g_models[g_str_615351a103385c0016b85730]
+    g_models[g_str_68c995d75791630015888dc7] = g_models[g_str_68c995d65791630015888ca2]
 
     --Campanian or other Italian mercenary light infantry - LF
-    g_models[g_str_615351a203385c0016b85860] = g_models[g_str_615351a203385c0016b85959]
+    g_models[g_str_68c995d75791630015888dca] = g_models[g_str_68c995d75791630015888ec3]
 
     --Spanish mercenary infantry - Raiders
-    g_models[g_str_615351a203385c0016b85862] = g_models[g_str_615351a203385c0016b8591c]
+    g_models[g_str_68c995d75791630015888dcc] = g_models[g_str_68c995d75791630015888e86]
 
     --Balearic Slingers - Sk
-    g_models[g_str_615351a203385c0016b85864] = g_models[g_str_615351a103385c0016b85721]
+    g_models[g_str_68c995d75791630015888dce] = g_models[g_str_68c995d65791630015888c97]
 
     --African Elephants
-    g_models[g_str_615351a203385c0016b85866] = g_models[g_str_615351a203385c0016b8580c]
+    g_models[g_str_68c995d75791630015888dd0] = g_models[g_str_68c995d75791630015888d76]
 
     --Gallic tribesmen fighting in native style - Warriors
-    g_models[g_str_615351a203385c0016b85869] = g_models[g_str_615351a603385c0016b86327_dismounted]
+    g_models[g_str_68c995d75791630015888dd3] = g_models[g_str_68c995da57916300158898ba_dismounted]
 
     --Retrained Gallic infantry - Raiders
-    g_models[g_str_615351a203385c0016b8586c] = {
+    g_models[g_str_68c995d75791630015888dd6] = {
       {
         model_data = 'troop_gallic_warriors_2'
       }
     }
 
     --Ligurian light infantry - LF
-    g_models[g_str_615351a203385c0016b8586e] = g_models[g_str_615351a203385c0016b85906]
+    g_models[g_str_68c995d75791630015888dd8] = g_models[g_str_68c995d75791630015888e70]
 
     -- Carthaginian Camp
     g_models[g_str_5fb1b9dce1af06001770956c_camp] = g_models[g_str_5fb1b9dbe1af060017709528_camp]
@@ -507,34 +507,34 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
 -- As of: 20210409
 
     --Numidian, Spanish, Poeni or Libyan horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b85877_general] = g_models[g_str_615351a203385c0016b857fc_general]
+    g_models[g_str_68c995d75791630015888de1_general] = g_models[g_str_68c995d75791630015888d66_general]
 
     --Numidian, Spanish, Poeni or Libyan horsemen - JavCav
-    g_models[g_str_615351a203385c0016b85877] = g_models[g_str_615351a203385c0016b857fc]
+    g_models[g_str_68c995d75791630015888de1] = g_models[g_str_68c995d75791630015888d66]
 
     --Gallic horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b85879_general] = g_models[g_str_615351a203385c0016b8583c_general]
+    g_models[g_str_68c995d75791630015888de3_general] = g_models[g_str_68c995d75791630015888da6_general]
 
     --Gallic horsemen - JavCav
-    g_models[g_str_615351a203385c0016b85879] = g_models[g_str_615351a203385c0016b858ee]
+    g_models[g_str_68c995d75791630015888de3] = g_models[g_str_68c995d75791630015888e58]
 
     --Hannibal's veterans - EF
-    g_models[g_str_615351a203385c0016b8587b] = g_models[g_str_615351a203385c0016b85855]
+    g_models[g_str_68c995d75791630015888de5] = g_models[g_str_68c995d75791630015888dbf]
 
     --Libyan heavy infantry armed with spears - HF
-    g_models[g_str_615351a203385c0016b8587e] = g_models[g_str_615351a103385c0016b85717]
+    g_models[g_str_68c995d75791630015888de8] = g_models[g_str_68c995d65791630015888c90]
 
     --Libyan, Moorish or Numidian javelinmen - LF
-    g_models[g_str_615351a203385c0016b85880] = g_models[g_str_615351a103385c0016b85714]
+    g_models[g_str_68c995d75791630015888dea] = g_models[g_str_68c995d65791630015888c8e]
 
     --Bolt-shooters - Artillery
-    g_models[g_str_615351a203385c0016b85882] = g_models[g_str_615351a203385c0016b85804]
+    g_models[g_str_68c995d75791630015888dec] = g_models[g_str_68c995d75791630015888d6e]
 
     --Celtiberian mercenary infantry - Raiders
-    g_models[g_str_615351a203385c0016b85884] = g_models[g_str_615351a203385c0016b8591c]
+    g_models[g_str_68c995d75791630015888dee] = g_models[g_str_68c995d75791630015888e86]
 
     --Ligurian infantry - Raiders
-    g_models[g_str_615351a203385c0016b85886] = g_models[g_str_615351a203385c0016b85906]
+    g_models[g_str_68c995d75791630015888df0] = g_models[g_str_68c995d75791630015888e70]
 
     -- Carthaginian Camp
     g_models[g_str_5fb1b9dce1af060017709573_camp] = g_models[g_str_5fb1b9dbe1af060017709528_camp]
@@ -552,7 +552,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
 -- As of: 20210409
 
     --Poeni, Libyan, or Numidian horsemen - JavCav General
-    g_models[g_str_615351a203385c0016b8588d_general] = {
+    g_models[g_str_68c995d75791630015888df7_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -570,7 +570,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Poeni, Libyan, or Numidian horsemen - JavCav
-    g_models[g_str_615351a203385c0016b8588d] = {
+    g_models[g_str_68c995d75791630015888df7] = {
       {
         model_data = 'troop_carthaginian_cavalry'
       },
@@ -580,7 +580,7 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     -- 'Libyan heavy infantry armed with spears'
-    g_models[g_str_615351a203385c0016b8588f] = {
+    g_models[g_str_68c995d75791630015888df9] = {
       {
         n_models = 4,
         random_models = {
@@ -591,16 +591,16 @@ army['5fb1b9dce1af06001770957a'].data.base = "tile_grass"
     }
 
     --Libyan, Moorish or Numidian javelinmen - LF
-    g_models[g_str_615351a203385c0016b85891] = g_models[g_str_615351a103385c0016b85714]
+    g_models[g_str_68c995d75791630015888dfb] = g_models[g_str_68c995d65791630015888c8e]
 
     --Bolt-shooters - Artillery
-    g_models[g_str_615351a203385c0016b85893] = g_models[g_str_615351a203385c0016b85804]
+    g_models[g_str_68c995d75791630015888dfd] = g_models[g_str_68c995d75791630015888d6e]
 
     --Greek hoplite mercenaries - HF
-    g_models[g_str_615351a203385c0016b85895] = g_models[g_str_615351a103385c0016b85730]
+    g_models[g_str_68c995d75791630015888dff] = g_models[g_str_68c995d65791630015888ca2]
 
     -- Campanian or other Italian mercenary light foot - LF
-    g_models[g_str_615351a203385c0016b85898] = g_models[g_str_615351a203385c0016b85913_dismounted]
+    g_models[g_str_68c995d75791630015888e02] = g_models[g_str_68c995d75791630015888e7d_dismounted]
 
     -- Carthaginian Camp
     g_models[g_str_5fb1b9dce1af06001770957a_camp] = g_models[g_str_5fb1b9dbe1af060017709528_camp]

@@ -1,1 +1,10 @@
-[{"name":"Byzantium in Decay","id":"5fb1b720e1af06001770193b"},{"name":"Crusader Kingdoms","id":"5fb1b720e1af06001770193c"}]
+[
+    {
+        "name": "Byzantium in Decay",
+        "id": "5fb1b720e1af06001770193b"
+    },
+    {
+        "name": "Crusader Kingdoms",
+        "id": "5fb1b720e1af06001770193c"
+    }
+]

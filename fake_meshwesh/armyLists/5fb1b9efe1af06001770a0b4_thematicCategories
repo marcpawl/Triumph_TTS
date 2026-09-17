@@ -1,1 +1,14 @@
-[{"name":"Monsoon Region","id":"5fb1b720e1af06001770193d"},{"name":"Southeast Asia","id":"5fb1b720e1af06001770193e"},{"name":"India and the Khyber Pass","id":"5fb1b720e1af06001770192c"}]
+[
+    {
+        "name": "Monsoon Region",
+        "id": "5fb1b720e1af06001770193d"
+    },
+    {
+        "name": "Southeast Asia",
+        "id": "5fb1b720e1af06001770193e"
+    },
+    {
+        "name": "India and the Khyber Pass",
+        "id": "5fb1b720e1af06001770192c"
+    }
+]

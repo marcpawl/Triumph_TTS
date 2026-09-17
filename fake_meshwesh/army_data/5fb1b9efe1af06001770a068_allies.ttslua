@@ -47,80 +47,80 @@ army['5fb1b9efe1af06001770a068_ally_5fb1b9f3e1af06001770a2b0'] = {
     name='(Qarakhanids) Khitan allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9f3e1af06001770a2b0',
   },
-  g_base_definitions['6153519b03385c0016b84aff'],
-  g_base_definitions['6153519b03385c0016b84b01'],
-  g_base_definitions['6153519b03385c0016b84b03'],
+  g_base_definitions['68c995d0579163001588807c'],
+  g_base_definitions['68c995d0579163001588807e'],
+  g_base_definitions['68c995d05791630015888080'],
 }
 army['5fb1b9efe1af06001770a068_ally_5fb1b9f3e1af06001770a2b7'] = {
   data={
     name='(Qarakhanids) Khitan allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9f3e1af06001770a2b7',
   },
-  g_base_definitions['6153519b03385c0016b84b07'],
-  g_base_definitions['6153519b03385c0016b84b09'],
-  g_base_definitions['6153519b03385c0016b84b0b'],
-  g_base_definitions['6153519b03385c0016b84b0d'],
-  g_base_definitions['6153519b03385c0016b84b0e'],
-  g_base_definitions['6153519b03385c0016b84b10'],
+  g_base_definitions['68c995d05791630015888084'],
+  g_base_definitions['68c995d05791630015888086'],
+  g_base_definitions['68c995d05791630015888088'],
+  g_base_definitions['68c995d0579163001588808a'],
+  g_base_definitions['68c995d0579163001588808b'],
+  g_base_definitions['68c995d0579163001588808d'],
 }
 army['5fb1b9efe1af06001770a068_ally_5fb1b9efe1af06001770a068'] = {
   data={
     name='Other Turkish allies or subject allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9efe1af06001770a068',
   },
-  g_base_definitions['6153519a03385c0016b847e0'],
-  g_base_definitions['6153519a03385c0016b847e2'],
+  g_base_definitions['68c995ce5791630015887d61'],
+  g_base_definitions['68c995ce5791630015887d63'],
 }
 army['5fb1b9efe1af06001770a068_ally_5fb1b9efe1af06001770a068'] = {
   data={
     name='Other Turkish allies or subject allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9efe1af06001770a068',
   },
-  g_base_definitions['6153519a03385c0016b847e0'],
-  g_base_definitions['6153519a03385c0016b847e2'],
+  g_base_definitions['68c995ce5791630015887d61'],
+  g_base_definitions['68c995ce5791630015887d63'],
 }
 army['5fb1b9efe1af06001770a068_ally_5fb1b9efe1af06001770a068'] = {
   data={
     name='Other Turkish allies or subject allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9efe1af06001770a068',
   },
-  g_base_definitions['6153519a03385c0016b847e0'],
-  g_base_definitions['6153519a03385c0016b847e2'],
+  g_base_definitions['68c995ce5791630015887d61'],
+  g_base_definitions['68c995ce5791630015887d63'],
 }
 army['5fb1b9efe1af06001770a068_ally_5fb1b9e4e1af0600177099fc'] = {
   data={
     name='(Gök Turks in Utigur) Hun allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9e4e1af0600177099fc',
   },
-  g_base_definitions['6153519503385c0016b83e80'],
+  g_base_definitions['68c995c957916300158873e1'],
 }
 army['5fb1b9efe1af06001770a068_ally_5fb1b9efe1af06001770a06e'] = {
   data={
     name='(Gök Turks 565-581 AD, Western Gök 582-630 AD, Eastern Gök 712-713 AD, Türgesh 704-707 AD and 721-738 AD, or Ferghanans739-741 AD) Sogdian allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9efe1af06001770a06e',
   },
-  g_base_definitions['6153519a03385c0016b847e6'],
-  g_base_definitions['6153519a03385c0016b847e8'],
-  g_base_definitions['6153519a03385c0016b847e9'],
-  g_base_definitions['6153519a03385c0016b847eb'],
-  g_base_definitions['6153519a03385c0016b847ed'],
-  g_base_definitions['6153519a03385c0016b847ee'],
+  g_base_definitions['68c995ce5791630015887d67'],
+  g_base_definitions['68c995ce5791630015887d69'],
+  g_base_definitions['68c995ce5791630015887d6a'],
+  g_base_definitions['68c995ce5791630015887d6c'],
+  g_base_definitions['68c995ce5791630015887d6e'],
+  g_base_definitions['68c995ce5791630015887d6f'],
 }
 army['5fb1b9efe1af06001770a068_ally_5fb1b9f0e1af06001770a0dd'] = {
   data={
     name='(Türgesh) Tibetan allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9f0e1af06001770a0dd',
   },
-  g_base_definitions['6153519a03385c0016b84889'],
-  g_base_definitions['6153519a03385c0016b8488b'],
+  g_base_definitions['68c995ce5791630015887e06'],
+  g_base_definitions['68c995ce5791630015887e08'],
 }
 army['5fb1b9efe1af06001770a068_ally_5fb1b9ece1af060017709f04'] = {
   data={
     name='(Türgesh) Umayyad Arab allies',
     id='5fb1b9efe1af06001770a068_ally_5fb1b9ece1af060017709f04',
   },
-  g_base_definitions['6153519903385c0016b84606'],
-  g_base_definitions['6153519903385c0016b84608'],
-  g_base_definitions['6153519903385c0016b8460a'],
-  g_base_definitions['6153519903385c0016b8460b'],
+  g_base_definitions['68c995cd5791630015887b83'],
+  g_base_definitions['68c995cd5791630015887b85'],
+  g_base_definitions['68c995cd5791630015887b87'],
+  g_base_definitions['68c995cd5791630015887b88'],
 }

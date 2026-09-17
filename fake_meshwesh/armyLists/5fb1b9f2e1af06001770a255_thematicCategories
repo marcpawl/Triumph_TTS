@@ -1,1 +1,18 @@
-[{"name":"Middle Kingdom","id":"5fb1b720e1af06001770193f"},{"name":"Southeast Asia","id":"5fb1b720e1af06001770193e"},{"name":"Korea and Japan","id":"5fb1b720e1af060017701943"},{"name":"Dark Ages China","id":"5fb1b720e1af060017701942"}]
+[
+    {
+        "name": "Middle Kingdom",
+        "id": "5fb1b720e1af06001770193f"
+    },
+    {
+        "name": "Southeast Asia",
+        "id": "5fb1b720e1af06001770193e"
+    },
+    {
+        "name": "Korea and Japan",
+        "id": "5fb1b720e1af060017701943"
+    },
+    {
+        "name": "Dark Ages China",
+        "id": "5fb1b720e1af060017701942"
+    }
+]

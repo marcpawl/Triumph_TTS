@@ -25,7 +25,7 @@ army['5fb1b9dbe1af06001770945d_ally_5fb1b9dbe1af0600177094f5'] = {
     name='Ionian Greek allies',
     id='5fb1b9dbe1af06001770945d_ally_5fb1b9dbe1af0600177094f5',
   },
-  g_base_definitions['6153518f03385c0016b837c5'],
-  g_base_definitions['6153518f03385c0016b837c8'],
-  g_base_definitions['6153518f03385c0016b837cc'],
+  g_base_definitions['68c995c55791630015886d4a'],
+  g_base_definitions['68c995c55791630015886d4c'],
+  g_base_definitions['68c995c55791630015886d4f'],
 }

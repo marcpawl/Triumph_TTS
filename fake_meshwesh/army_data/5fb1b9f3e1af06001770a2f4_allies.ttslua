@@ -19,16 +19,16 @@ army['5fb1b9f3e1af06001770a2f4_ally_5fb1b9f0e1af06001770a107'] = {
     name='(only in Java) Javanese allies',
     id='5fb1b9f3e1af06001770a2f4_ally_5fb1b9f0e1af06001770a107',
   },
-  g_base_definitions['6153519a03385c0016b848cd'],
-  g_base_definitions['6153519a03385c0016b848cf'],
+  g_base_definitions['68c995cf5791630015887e4a'],
+  g_base_definitions['68c995cf5791630015887e4c'],
 }
 army['5fb1b9f3e1af06001770a2f4_ally_5fb1b9f4e1af06001770a363'] = {
   data={
     name='(only in Korea) Korean allies',
     id='5fb1b9f3e1af06001770a2f4_ally_5fb1b9f4e1af06001770a363',
   },
-  g_base_definitions['6153519c03385c0016b84c15'],
-  g_base_definitions['6153519c03385c0016b84c16'],
-  g_base_definitions['6153519c03385c0016b84c18'],
-  g_base_definitions['6153519c03385c0016b84c1a'],
+  g_base_definitions['68c995d1579163001588819a'],
+  g_base_definitions['68c995d1579163001588819b'],
+  g_base_definitions['68c995d1579163001588819d'],
+  g_base_definitions['68c995d1579163001588819f'],
 }

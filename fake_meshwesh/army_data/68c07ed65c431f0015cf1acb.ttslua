@@ -1,0 +1,50 @@
+-- 68c07ed65c431f0015cf1acb California Coastal First Nations  1100 to 1770 AD
+
+army['68c07ed65c431f0015cf1acb']={
+  data={
+    invasionRatings={
+      2,
+    },
+    maneuverRatings={
+      1,
+    },
+    homeTopographies={
+      'Hilly',
+      'Arable',
+    },
+    name='California Coastal First Nations  1100 to 1770 AD',
+    id='68c07ed65c431f0015cf1acb',
+    dateRange={
+      startDate=1100,
+      endDate=1770,
+    },
+  },
+  g_base_definitions[g_str_68c995ec579163001588c6ba_general],
+  g_base_definitions[g_str_68c995ec579163001588c6ba],
+  g_base_definitions[g_str_68c995ec579163001588c6bc],
+  g_base_definitions[g_str_68c07ed65c431f0015cf1acb_camp],
+}
+if nil == armies["Meshwesh id"] then
+  armies["Meshwesh id"] ={}
+end
+armies["Meshwesh id"]["68c07ed65c431f0015cf1acb"] = army["68c07ed65c431f0015cf1acb"]
+if nil == armies["New World"] then
+  armies["New World"] ={}
+end
+armies["New World"]["California Coastal First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1acb"]
+if nil == armies["North America"] then
+  armies["North America"] ={}
+end
+armies["North America"]["California Coastal First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1acb"]
+if nil == armies["All"] then
+  armies["All"] ={}
+end
+armies["All"]["California Coastal First Nations  1100 to 1770 AD"] = army["68c07ed65c431f0015cf1acb"]
+if nil == army_dates then
+  army_dates={}
+end
+army_dates["68c07ed65c431f0015cf1acb"] = {}
+army_dates["68c07ed65c431f0015cf1acb"]["1100 AD to 1770 AD"] = {
+  startDate=1100,
+  endDate=1770
+}

@@ -15,7 +15,7 @@ army['5fb1b9eae1af060017709e1e_ally_5fb1b9ede1af060017709f83'] = {
     name='Alan Ally',
     id='5fb1b9eae1af060017709e1e_ally_5fb1b9ede1af060017709f83',
   },
-  g_base_definitions['6153519903385c0016b846c4'],
-  g_base_definitions['6153519903385c0016b846c6'],
-  g_base_definitions['6153519903385c0016b846c8'],
+  g_base_definitions['68c995ce5791630015887c41'],
+  g_base_definitions['68c995ce5791630015887c43'],
+  g_base_definitions['68c995ce5791630015887c45'],
 }

@@ -18,12 +18,12 @@ army['5fb1b9dbe1af0600177094cb']={
       endDate=-290,
     },
   },
-  g_base_definitions[g_str_615351a103385c0016b8554c_general],
-  g_base_definitions[g_str_615351a103385c0016b8554c],
-  g_base_definitions[g_str_615351a103385c0016b8554f],
-  g_base_definitions[g_str_615351a103385c0016b85552],
-  g_base_definitions[g_str_615351a103385c0016b85554],
-  g_base_definitions[g_str_615351a103385c0016b85556],
+  g_base_definitions[g_str_68c995d55791630015888b11_general],
+  g_base_definitions[g_str_68c995d55791630015888b11],
+  g_base_definitions[g_str_68c995d55791630015888b13],
+  g_base_definitions[g_str_68c995d55791630015888b15],
+  g_base_definitions[g_str_68c995d55791630015888b17],
+  g_base_definitions[g_str_68c995d55791630015888b19],
   g_base_definitions[g_str_5fb1b9dbe1af0600177094cb_camp],
 }
 if nil == armies["Meshwesh id"] then

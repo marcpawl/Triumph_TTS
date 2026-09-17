@@ -15,7 +15,7 @@ army['5fb1b9dbe1af0600177094f5_ally_5fb1b9dbe1af0600177094b7'] = {
     name='(Siciliot, not tyrant) Sicel allies',
     id='5fb1b9dbe1af0600177094f5_ally_5fb1b9dbe1af0600177094b7',
   },
-  g_base_definitions['6153518f03385c0016b83760'],
-  g_base_definitions['6153518f03385c0016b83762'],
-  g_base_definitions['6153518f03385c0016b83764'],
+  g_base_definitions['68c995c55791630015886cf3'],
+  g_base_definitions['68c995c55791630015886cf5'],
+  g_base_definitions['68c995c55791630015886cf7'],
 }

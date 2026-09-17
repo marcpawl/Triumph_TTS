@@ -6,17 +6,16 @@ require("Triumph_TTS/scripts/static_maps")
 
 allies['5fb1b9ebe1af060017709e53'] = {
   {
-    id='5fb1b9e4e1af060017709a36',
+    id='5fb1b9e4e1af060017709a3d',
     dateRange={startDate=-50000, endDate=50000}
   },
 }
-army['5fb1b9ebe1af060017709e53_ally_5fb1b9e4e1af060017709a36'] = {
+army['5fb1b9ebe1af060017709e53_ally_5fb1b9e4e1af060017709a3d'] = {
   data={
-    name='(only in Italy) Lombard ally',
-    id='5fb1b9ebe1af060017709e53_ally_5fb1b9e4e1af060017709a36',
+    name='(only in Italy) Carolingian ally',
+    id='5fb1b9ebe1af060017709e53_ally_5fb1b9e4e1af060017709a3d',
   },
-  g_base_definitions['6153519503385c0016b83ec4'],
-  g_base_definitions['6153519503385c0016b83ec6'],
-  g_base_definitions['6153519503385c0016b83ec8'],
-  g_base_definitions['6153519503385c0016b83ec9'],
+  g_base_definitions['68c995c9579163001588742f'],
+  g_base_definitions['68c995c95791630015887431'],
+  g_base_definitions['68c995c95791630015887433'],
 }

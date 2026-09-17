@@ -1,33 +1,33 @@
-g_str_615351a803385c0016b86855_general='615351a803385c0016b86855_general'
-g_base_definitions[g_str_615351a803385c0016b86855_general]={
-  id=g_str_615351a803385c0016b86855_general,
+g_str_68c995dc5791630015889dfa_general='68c995dc5791630015889dfa_general'
+g_base_definitions[g_str_68c995dc5791630015889dfa_general]={
+  id=g_str_68c995dc5791630015889dfa_general,
   name='Knights General',
   min=8,
   max=1,
   description='Charging Vandal horsemen',
   general=true,
   troop_type="Knights",
-  troop_option_id="615351a803385c0016b86854",
+  troop_option_id="68c995dc5791630015889df9",
 }
-g_str_615351a803385c0016b86855='615351a803385c0016b86855'
-g_base_definitions[g_str_615351a803385c0016b86855]={
-  id=g_str_615351a803385c0016b86855,
+g_str_68c995dc5791630015889dfa='68c995dc5791630015889dfa'
+g_base_definitions[g_str_68c995dc5791630015889dfa]={
+  id=g_str_68c995dc5791630015889dfa,
   name='Knights',
   min=8,
   max=12,
   description='Charging Vandal horsemen',
   troop_type="Knights",
-  troop_option_id="615351a803385c0016b86854",
+  troop_option_id="68c995dc5791630015889df9",
 }
-g_str_615351a803385c0016b86858='615351a803385c0016b86858'
-g_base_definitions[g_str_615351a803385c0016b86858]={
-  id=g_str_615351a803385c0016b86858,
+g_str_68c995dc5791630015889dfd='68c995dc5791630015889dfd'
+g_base_definitions[g_str_68c995dc5791630015889dfd]={
+  id=g_str_68c995dc5791630015889dfd,
   name='Horse Bow',
   min=0,
   max=1,
   description='Remnant Alan horse archers',
   troop_type="Horse Bow",
-  troop_option_id="615351a803385c0016b86856",
+  troop_option_id="68c995dc5791630015889dfb",
 }
 g_str_5fb1b9e3e1af0600177099c6_camp='5fb1b9e3e1af0600177099c6_camp'
 g_base_definitions[g_str_5fb1b9e3e1af0600177099c6_camp]={

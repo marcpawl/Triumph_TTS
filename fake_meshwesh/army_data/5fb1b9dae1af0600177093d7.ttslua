@@ -18,18 +18,19 @@ army['5fb1b9dae1af0600177093d7']={
       endDate=-600,
     },
   },
-  g_base_definitions[g_str_6153519f03385c0016b85188_general],
-  g_base_definitions[g_str_6153519f03385c0016b85188],
-  g_base_definitions[g_str_6153519f03385c0016b8518a_general],
-  g_base_definitions[g_str_6153519f03385c0016b8518a],
-  g_base_definitions[g_str_6153519f03385c0016b8518c],
-  g_base_definitions[g_str_6153519f03385c0016b8518e],
-  g_base_definitions[g_str_6153519f03385c0016b85190],
-  g_base_definitions[g_str_6153519f03385c0016b85192],
-  g_base_definitions[g_str_6153519f03385c0016b85194],
-  g_base_definitions[g_str_6153519f03385c0016b85196],
-  g_base_definitions[g_str_6153519f03385c0016b85198],
-  g_base_definitions[g_str_6153519f03385c0016b85199],
+  g_base_definitions[g_str_68c995d35791630015888738_general],
+  g_base_definitions[g_str_68c995d35791630015888738],
+  g_base_definitions[g_str_68c995d3579163001588873a_general],
+  g_base_definitions[g_str_68c995d3579163001588873a],
+  g_base_definitions[g_str_68c995d3579163001588873c],
+  g_base_definitions[g_str_68c995d3579163001588873e],
+  g_base_definitions[g_str_68c995d35791630015888740],
+  g_base_definitions[g_str_68c995d35791630015888742],
+  g_base_definitions[g_str_68c995d35791630015888744],
+  g_base_definitions[g_str_68c995d35791630015888746],
+  g_base_definitions[g_str_68c995d35791630015888746_shower_shooting],
+  g_base_definitions[g_str_68c995d35791630015888749],
+  g_base_definitions[g_str_68c995d3579163001588874a],
   g_base_definitions[g_str_5fb1b9dae1af0600177093d7_camp],
   g_base_definitions[g_str_5fb1b9dae1af0600177093d7_camp_pack_train],
 }
@@ -73,8 +74,12 @@ army_dates["5fb1b9dae1af0600177093d7"]["745 BC to 744 BC"] = {
   startDate=-745,
   endDate=-744
 }
-army_dates["5fb1b9dae1af0600177093d7"]["743 BC to 720 BC"] = {
+army_dates["5fb1b9dae1af0600177093d7"]["743 BC to 728 BC"] = {
   startDate=-743,
+  endDate=-728
+}
+army_dates["5fb1b9dae1af0600177093d7"]["727 BC to 720 BC"] = {
+  startDate=-727,
   endDate=-720
 }
 army_dates["5fb1b9dae1af0600177093d7"]["719 BC to 712 BC"] = {
@@ -97,7 +102,11 @@ army_dates["5fb1b9dae1af0600177093d7"]["700 BC to 665 BC"] = {
   startDate=-700,
   endDate=-665
 }
-army_dates["5fb1b9dae1af0600177093d7"]["664 BC to 600 BC"] = {
+army_dates["5fb1b9dae1af0600177093d7"]["664 BC to 663 BC"] = {
   startDate=-664,
+  endDate=-663
+}
+army_dates["5fb1b9dae1af0600177093d7"]["662 BC to 600 BC"] = {
+  startDate=-662,
   endDate=-600
 }

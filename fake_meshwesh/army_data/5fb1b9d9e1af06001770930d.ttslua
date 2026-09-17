@@ -18,9 +18,10 @@ army['5fb1b9d9e1af06001770930d']={
       endDate=-800,
     },
   },
-  g_base_definitions[g_str_6153519e03385c0016b84efb_general],
-  g_base_definitions[g_str_6153519e03385c0016b84efb],
-  g_base_definitions[g_str_6153519e03385c0016b84efd],
+  g_base_definitions[g_str_68c995d35791630015888492_general],
+  g_base_definitions[g_str_68c995d35791630015888492],
+  g_base_definitions[g_str_68c995d35791630015888494],
+  g_base_definitions[g_str_68c995d35791630015888494_shower_shooting],
   g_base_definitions[g_str_5fb1b9d9e1af06001770930d_camp],
   g_base_definitions[g_str_5fb1b9d9e1af06001770930d_camp_pack_train],
 }

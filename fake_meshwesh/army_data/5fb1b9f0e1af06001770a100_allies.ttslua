@@ -19,14 +19,14 @@ army['5fb1b9f0e1af06001770a100_ally_5fb1b9f0e1af06001770a0cd'] = {
     name='(Tambralinga Malays) Sinhalese allies',
     id='5fb1b9f0e1af06001770a100_ally_5fb1b9f0e1af06001770a0cd',
   },
-  g_base_definitions['6153519a03385c0016b84873'],
-  g_base_definitions['6153519a03385c0016b84875'],
+  g_base_definitions['68c995ce5791630015887df5'],
+  g_base_definitions['68c995ce5791630015887df7'],
 }
 army['5fb1b9f0e1af06001770a100_ally_5fb1b9f0e1af06001770a107'] = {
   data={
     name='(Malacca Malays) Javanese allies',
     id='5fb1b9f0e1af06001770a100_ally_5fb1b9f0e1af06001770a107',
   },
-  g_base_definitions['6153519a03385c0016b848cd'],
-  g_base_definitions['6153519a03385c0016b848cf'],
+  g_base_definitions['68c995cf5791630015887e4a'],
+  g_base_definitions['68c995cf5791630015887e4c'],
 }

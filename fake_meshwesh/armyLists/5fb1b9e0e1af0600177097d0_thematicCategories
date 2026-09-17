@@ -1,1 +1,14 @@
-[{"name":"Hellenistic World","id":"5fb1b720e1af06001770192a"},{"name":"Rise of Rome","id":"5fb1b720e1af060017701928"},{"name":"India and the Khyber Pass","id":"5fb1b720e1af06001770192c"}]
+[
+    {
+        "name": "Hellenistic World",
+        "id": "5fb1b720e1af06001770192a"
+    },
+    {
+        "name": "Rise of Rome",
+        "id": "5fb1b720e1af060017701928"
+    },
+    {
+        "name": "India and the Khyber Pass",
+        "id": "5fb1b720e1af06001770192c"
+    }
+]

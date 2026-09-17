@@ -15,7 +15,7 @@ army['5fb1b9ebe1af060017709ead_ally_5fb1b9ebe1af060017709ea6'] = {
     name='Catalan allies',
     id='5fb1b9ebe1af060017709ead_ally_5fb1b9ebe1af060017709ea6',
   },
-  g_base_definitions['6153519803385c0016b84560'],
-  g_base_definitions['6153519803385c0016b84562'],
-  g_base_definitions['6153519803385c0016b84563'],
+  g_base_definitions['68c995cd5791630015887add'],
+  g_base_definitions['68c995cd5791630015887adf'],
+  g_base_definitions['68c995cd5791630015887ae0'],
 }

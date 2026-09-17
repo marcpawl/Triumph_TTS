@@ -19,17 +19,17 @@ army['5fb1b9dbe1af0600177094bd_ally_5fb1b9dbe1af0600177094c4'] = {
     name='Latin allies',
     id='5fb1b9dbe1af0600177094bd_ally_5fb1b9dbe1af0600177094c4',
   },
-  g_base_definitions['6153518f03385c0016b8376e'],
-  g_base_definitions['6153518f03385c0016b83771'],
-  g_base_definitions['6153518f03385c0016b83773'],
+  g_base_definitions['68c995c55791630015886d01'],
+  g_base_definitions['68c995c55791630015886d03'],
+  g_base_definitions['68c995c55791630015886d05'],
 }
 army['5fb1b9dbe1af0600177094bd_ally_5fb1b9dbe1af0600177094cb'] = {
   data={
     name='Latin allies',
     id='5fb1b9dbe1af0600177094bd_ally_5fb1b9dbe1af0600177094cb',
   },
-  g_base_definitions['6153518f03385c0016b83777'],
-  g_base_definitions['6153518f03385c0016b8377a'],
-  g_base_definitions['6153518f03385c0016b8377d'],
-  g_base_definitions['6153518f03385c0016b8377f'],
+  g_base_definitions['68c995c55791630015886d09'],
+  g_base_definitions['68c995c55791630015886d0b'],
+  g_base_definitions['68c995c55791630015886d0d'],
+  g_base_definitions['68c995c55791630015886d0f'],
 }

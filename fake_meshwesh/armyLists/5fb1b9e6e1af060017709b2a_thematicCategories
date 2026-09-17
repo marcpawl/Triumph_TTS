@@ -1,1 +1,14 @@
-[{"name":"Embattled Isle","id":"5fb1b720e1af060017701936"},{"name":"Medieval Western Europe","id":"5fb1b720e1af060017701938"},{"name":"Flower of Chivalry","id":"5fb1b720e1af060017701937"}]
+[
+    {
+        "name": "Embattled Isle",
+        "id": "5fb1b720e1af060017701936"
+    },
+    {
+        "name": "Medieval Western Europe",
+        "id": "5fb1b720e1af060017701938"
+    },
+    {
+        "name": "Flower of Chivalry",
+        "id": "5fb1b720e1af060017701937"
+    }
+]

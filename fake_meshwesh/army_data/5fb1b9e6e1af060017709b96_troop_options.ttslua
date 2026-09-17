@@ -4,7 +4,7 @@
 
 require("Triumph_TTS/scripts/static_maps")
 
-troop_options['615351aa03385c0016b86e4c'] = {
+troop_options['68c995df579163001588a411'] = {
   min=1,
   max=2,
   dateRange={
@@ -12,7 +12,7 @@ troop_options['615351aa03385c0016b86e4c'] = {
     endDate=1600,
   }
 }
-troop_options['615351aa03385c0016b86e4e'] = {
+troop_options['68c995df579163001588a413'] = {
   min=1,
   max=3,
   dateRange={
@@ -20,7 +20,7 @@ troop_options['615351aa03385c0016b86e4e'] = {
     endDate=1600,
   }
 }
-troop_options['615351aa03385c0016b86e50'] = {
+troop_options['68c995df579163001588a415'] = {
   min=8,
   max=17,
   dateRange={
@@ -28,7 +28,7 @@ troop_options['615351aa03385c0016b86e50'] = {
     endDate=1600,
   }
 }
-troop_options['615351aa03385c0016b86e52'] = {
+troop_options['68c995df579163001588a418'] = {
   min=2,
   max=6,
   dateRange={

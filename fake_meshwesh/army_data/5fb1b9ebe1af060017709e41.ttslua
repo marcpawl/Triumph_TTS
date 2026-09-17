@@ -18,16 +18,16 @@ army['5fb1b9ebe1af060017709e41']={
       endDate=1045,
     },
   },
-  g_base_definitions[g_str_615351ae03385c0016b878e1_general],
-  g_base_definitions[g_str_615351ae03385c0016b878e1],
-  g_base_definitions[g_str_615351ae03385c0016b878e3],
-  g_base_definitions[g_str_615351ae03385c0016b878e4],
-  g_base_definitions[g_str_615351ae03385c0016b878e6],
-  g_base_definitions[g_str_615351ae03385c0016b878e9],
-  g_base_definitions[g_str_615351ae03385c0016b878ea],
-  g_base_definitions[g_str_615351ae03385c0016b878ed],
-  g_base_definitions[g_str_615351ae03385c0016b878ef],
-  g_base_definitions[g_str_615351ae03385c0016b878f2],
+  g_base_definitions[g_str_68c995e3579163001588af16_general],
+  g_base_definitions[g_str_68c995e3579163001588af16],
+  g_base_definitions[g_str_68c995e3579163001588af18],
+  g_base_definitions[g_str_68c995e3579163001588af19],
+  g_base_definitions[g_str_68c995e3579163001588af1b],
+  g_base_definitions[g_str_68c995e3579163001588af1e],
+  g_base_definitions[g_str_68c995e3579163001588af1f],
+  g_base_definitions[g_str_68c995e3579163001588af22],
+  g_base_definitions[g_str_68c995e3579163001588af24],
+  g_base_definitions[g_str_68c995e3579163001588af27],
   g_base_definitions[g_str_5fb1b9ebe1af060017709e41_camp],
   g_base_definitions[g_str_5fb1b9ebe1af060017709e41_camp_fortified],
 }
@@ -51,8 +51,12 @@ army_dates["5fb1b9ebe1af060017709e41"]["885 AD to 1045 AD"] = {
   startDate=885,
   endDate=1045
 }
-army_dates["5fb1b9ebe1af060017709e41"]["885 AD to 962 AD"] = {
+army_dates["5fb1b9ebe1af060017709e41"]["885 AD to 957 AD"] = {
   startDate=885,
+  endDate=957
+}
+army_dates["5fb1b9ebe1af060017709e41"]["958 AD to 962 AD"] = {
+  startDate=958,
   endDate=962
 }
 army_dates["5fb1b9ebe1af060017709e41"]["963 AD"] = {

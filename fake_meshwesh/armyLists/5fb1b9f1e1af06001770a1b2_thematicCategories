@@ -1,1 +1,14 @@
-[{"name":"Mandate of Heaven","id":"5fb1b720e1af060017701940"},{"name":"Dark Ages China","id":"5fb1b720e1af060017701942"},{"name":"Warring States","id":"5fb1b720e1af060017701941"}]
+[
+    {
+        "name": "Mandate of Heaven",
+        "id": "5fb1b720e1af060017701940"
+    },
+    {
+        "name": "Dark Ages China",
+        "id": "5fb1b720e1af060017701942"
+    },
+    {
+        "name": "Warring States",
+        "id": "5fb1b720e1af060017701941"
+    }
+]

@@ -27,38 +27,38 @@ army['5fb1b9e6e1af060017709b1c_ally_5fb1b9e5e1af060017709b08'] = {
     name='Marcher allies',
     id='5fb1b9e6e1af060017709b1c_ally_5fb1b9e5e1af060017709b08',
   },
-  g_base_definitions['6153519603385c0016b83fe0'],
-  g_base_definitions['6153519603385c0016b83fe2'],
-  g_base_definitions['6153519603385c0016b83fe4'],
-  g_base_definitions['6153519603385c0016b83fe7'],
+  g_base_definitions['68c995ca5791630015887542'],
+  g_base_definitions['68c995ca5791630015887544'],
+  g_base_definitions['68c995ca5791630015887546'],
+  g_base_definitions['68c995ca5791630015887549'],
 }
 army['5fb1b9e6e1af060017709b1c_ally_5fb1b9e6e1af060017709b22'] = {
   data={
     name='Marcher allies',
     id='5fb1b9e6e1af060017709b1c_ally_5fb1b9e6e1af060017709b22',
   },
-  g_base_definitions['6153519603385c0016b84012'],
-  g_base_definitions['6153519603385c0016b84014'],
-  g_base_definitions['6153519603385c0016b84016'],
-  g_base_definitions['6153519603385c0016b84017'],
-  g_base_definitions['6153519603385c0016b8401a'],
+  g_base_definitions['68c995ca5791630015887574'],
+  g_base_definitions['68c995ca5791630015887576'],
+  g_base_definitions['68c995ca5791630015887578'],
+  g_base_definitions['68c995ca5791630015887579'],
+  g_base_definitions['68c995ca579163001588757c'],
 }
 army['5fb1b9e6e1af060017709b1c_ally_5fb1b9e6e1af060017709b16'] = {
   data={
     name='South Welsh allies',
     id='5fb1b9e6e1af060017709b1c_ally_5fb1b9e6e1af060017709b16',
   },
-  g_base_definitions['6153519603385c0016b83ff9'],
-  g_base_definitions['6153519603385c0016b83ffb'],
-  g_base_definitions['6153519603385c0016b83ffd'],
+  g_base_definitions['68c995ca579163001588755b'],
+  g_base_definitions['68c995ca579163001588755d'],
+  g_base_definitions['68c995ca579163001588755f'],
 }
 army['5fb1b9e6e1af060017709b1c_ally_5fb1b9e5e1af060017709ab6'] = {
   data={
     name='Manx Viking ally',
     id='5fb1b9e6e1af060017709b1c_ally_5fb1b9e5e1af060017709ab6',
   },
-  g_base_definitions['6153519503385c0016b83f51'],
-  g_base_definitions['6153519503385c0016b83f53'],
-  g_base_definitions['6153519503385c0016b83f55'],
-  g_base_definitions['6153519503385c0016b83f57'],
+  g_base_definitions['68c995ca57916300158874b4'],
+  g_base_definitions['68c995ca57916300158874b6'],
+  g_base_definitions['68c995ca57916300158874b8'],
+  g_base_definitions['68c995ca57916300158874ba'],
 }

@@ -1,0 +1,55 @@
+-- 68c07ed65c431f0015cf1ac4 Central Plateau First Nations  1100 to 1700 AD
+
+army['68c07ed65c431f0015cf1ac4']={
+  data={
+    invasionRatings={
+      2,
+    },
+    maneuverRatings={
+      1,
+    },
+    homeTopographies={
+      'Hilly',
+      'Dry',
+    },
+    name='Central Plateau First Nations  1100 to 1700 AD',
+    id='68c07ed65c431f0015cf1ac4',
+    dateRange={
+      startDate=1100,
+      endDate=1700,
+    },
+  },
+  g_base_definitions[g_str_68c995ec579163001588c6ae_general],
+  g_base_definitions[g_str_68c995ec579163001588c6ae],
+  g_base_definitions[g_str_68c995ec579163001588c6b0_general],
+  g_base_definitions[g_str_68c995ec579163001588c6b0_general_shower_shooting],
+  g_base_definitions[g_str_68c995ec579163001588c6b0],
+  g_base_definitions[g_str_68c995ec579163001588c6b0_shower_shooting],
+  g_base_definitions[g_str_68c995ec579163001588c6b3],
+  g_base_definitions[g_str_68c07ed65c431f0015cf1ac4_camp],
+  g_base_definitions[g_str_68c07ed65c431f0015cf1ac4_camp_pack_train],
+}
+if nil == armies["Meshwesh id"] then
+  armies["Meshwesh id"] ={}
+end
+armies["Meshwesh id"]["68c07ed65c431f0015cf1ac4"] = army["68c07ed65c431f0015cf1ac4"]
+if nil == armies["New World"] then
+  armies["New World"] ={}
+end
+armies["New World"]["Central Plateau First Nations  1100 to 1700 AD"] = army["68c07ed65c431f0015cf1ac4"]
+if nil == armies["North America"] then
+  armies["North America"] ={}
+end
+armies["North America"]["Central Plateau First Nations  1100 to 1700 AD"] = army["68c07ed65c431f0015cf1ac4"]
+if nil == armies["All"] then
+  armies["All"] ={}
+end
+armies["All"]["Central Plateau First Nations  1100 to 1700 AD"] = army["68c07ed65c431f0015cf1ac4"]
+if nil == army_dates then
+  army_dates={}
+end
+army_dates["68c07ed65c431f0015cf1ac4"] = {}
+army_dates["68c07ed65c431f0015cf1ac4"]["1100 AD to 1700 AD"] = {
+  startDate=1100,
+  endDate=1700
+}

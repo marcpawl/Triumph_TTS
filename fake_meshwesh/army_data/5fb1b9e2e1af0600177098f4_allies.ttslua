@@ -31,37 +31,37 @@ army['5fb1b9e2e1af0600177098f4_ally_5fb1b9e3e1af06001770998c'] = {
     name='(in Gaul or Spain) Visigothic allies',
     id='5fb1b9e2e1af0600177098f4_ally_5fb1b9e3e1af06001770998c',
   },
-  g_base_definitions['6153519403385c0016b83e02'],
-  g_base_definitions['6153519403385c0016b83e04'],
-  g_base_definitions['6153519403385c0016b83e06'],
-  g_base_definitions['6153519403385c0016b83e08'],
+  g_base_definitions['68c995c95791630015887365'],
+  g_base_definitions['68c995c95791630015887367'],
+  g_base_definitions['68c995c95791630015887369'],
+  g_base_definitions['68c995c9579163001588736b'],
 }
 army['5fb1b9e2e1af0600177098f4_ally_5fb1b9e2e1af060017709932'] = {
   data={
     name='(in Gaul) Alan allies',
     id='5fb1b9e2e1af0600177098f4_ally_5fb1b9e2e1af060017709932',
   },
-  g_base_definitions['6153519403385c0016b83dab'],
-  g_base_definitions['6153519403385c0016b83dad'],
+  g_base_definitions['68c995c9579163001588730e'],
+  g_base_definitions['68c995c95791630015887310'],
 }
 army['5fb1b9e2e1af0600177098f4_ally_5fb1b9e2e1af0600177098e1'] = {
   data={
     name='(in Gaul) British allies under Riothamus',
     id='5fb1b9e2e1af0600177098f4_ally_5fb1b9e2e1af0600177098e1',
   },
-  g_base_definitions['6153519403385c0016b83d7d'],
+  g_base_definitions['68c995c857916300158872e0'],
 }
 army['5fb1b9e2e1af0600177098f4_ally_5fb1b9e2e1af060017709910'] = {
   data={
     name='(in Gaul) Saxon allies',
     id='5fb1b9e2e1af0600177098f4_ally_5fb1b9e2e1af060017709910',
   },
-  g_base_definitions['6153519403385c0016b83d99'],
+  g_base_definitions['68c995c957916300158872fc'],
 }
 army['5fb1b9e2e1af0600177098f4_ally_5fb1b9e2e1af06001770991b'] = {
   data={
     name='(in Gaul) Frankish allies',
     id='5fb1b9e2e1af0600177098f4_ally_5fb1b9e2e1af06001770991b',
   },
-  g_base_definitions['6153519403385c0016b83d9d'],
+  g_base_definitions['68c995c95791630015887300'],
 }

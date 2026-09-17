@@ -8,7 +8,7 @@ army['5fb1b9e7e1af060017709bee'].data.base = "tile_grass"
 -- As of: 20230109
 
     -- Hidalgos, foreign crusaders, and mercenaries - Kn General
-    g_models[g_str_615351ab03385c0016b86f6f_general] = {
+    g_models[g_str_68c995df579163001588a542_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -20,27 +20,27 @@ army['5fb1b9e7e1af060017709bee'].data.base = "tile_grass"
     }
 
     -- Hidalgos, foreign crusaders, and mercenaries - Kn
-    g_models[g_str_615351ab03385c0016b86f6f] = {
+    g_models[g_str_68c995df579163001588a542] = {
       {
         model_data = 'troop_spanish_knight_lance_pennat'
       }
     }
 
     -- Hidalgos from reconquered areas fighting in Moorish style - Jav Cav
-    g_models[g_str_615351ab03385c0016b86f72] = g_models[g_str_615351a903385c0016b869fc]
+    g_models[g_str_68c995df579163001588a545] = g_models[g_str_68c995dd5791630015889fab]
 
     -- Basque or mercenary Berber horsemen - Jav Cav
-    g_models[g_str_615351ab03385c0016b86f74] = g_models[g_str_615351a903385c0016b869fc]
+    g_models[g_str_68c995df579163001588a547] = g_models[g_str_68c995dd5791630015889fab]
 
     -- Crossbowmen on horses - Bad Horse
-    g_models[g_str_615351ab03385c0016b86f77] = {
+    g_models[g_str_68c995df579163001588a54a] = {
       {
         model_data = 'troop_spanish_crossbow_mounted'
       }
     }    
 
     -- Armored axemen - EF General
-    g_models[g_str_615351ab03385c0016b86f79_general] = {
+    g_models[g_str_68c995df579163001588a54c_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -53,38 +53,38 @@ army['5fb1b9e7e1af060017709bee'].data.base = "tile_grass"
     }
 
     -- Armored axemen - EF
-    g_models[g_str_615351ab03385c0016b86f79] = {
+    g_models[g_str_68c995df579163001588a54c] = {
       {
         model_data = 'troop_spanish_armor_foot_sword'
       }
     }
 
     -- Spearmen - HF
-    g_models[g_str_615351ab03385c0016b86f7b] = {
+    g_models[g_str_68c995df579163001588a54e] = {
       {
         model_data = 'troop_spanish_spear'
       }
     }
 
     -- Javelinmen - Rabble
-    g_models[g_str_615351ab03385c0016b86f7e] = g_models[g_str_615351a903385c0016b86a0c]
+    g_models[g_str_68c995df579163001588a551] = g_models[g_str_68c995dd5791630015889fbc]
 
     -- Skirmishing bowmen and slingers - Skirmishers
-    g_models[g_str_615351ab03385c0016b86f80] = {
+    g_models[g_str_68c995df579163001588a553] = {
       {
         model_data = 'troop_norman_archer'
       }
     }
 
     -- Crossbowmen - Bow Levy
-    g_models[g_str_615351ab03385c0016b86f84] = {
+    g_models[g_str_68c995df579163001588a557] = {
       {
         model_data = 'troop_norman_crossbow'
       }
     }    
 
     -- Bidets or Almughavars - Light Foot
-    g_models[g_str_615351ab03385c0016b86f87] = {
+    g_models[g_str_68c995df579163001588a55b] = {
       {
         model_data = 'troop_norman_levy_shield'
       }

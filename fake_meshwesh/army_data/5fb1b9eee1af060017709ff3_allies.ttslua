@@ -27,40 +27,40 @@ army['5fb1b9eee1af060017709ff3_ally_5fb1b9e9e1af060017709d5b'] = {
     name='Albanian vassal allies',
     id='5fb1b9eee1af060017709ff3_ally_5fb1b9e9e1af060017709d5b',
   },
-  g_base_definitions['6153519703385c0016b84390'],
-  g_base_definitions['6153519703385c0016b84392'],
-  g_base_definitions['6153519703385c0016b84394'],
-  g_base_definitions['6153519703385c0016b84396'],
+  g_base_definitions['68c995cc57916300158878fa'],
+  g_base_definitions['68c995cc57916300158878fc'],
+  g_base_definitions['68c995cc57916300158878fe'],
+  g_base_definitions['68c995cc5791630015887900'],
 }
 army['5fb1b9eee1af060017709ff3_ally_5fb1b9eae1af060017709d8c'] = {
   data={
     name='Wallachian vassal allies',
     id='5fb1b9eee1af060017709ff3_ally_5fb1b9eae1af060017709d8c',
   },
-  g_base_definitions['6153519803385c0016b843e4'],
-  g_base_definitions['6153519803385c0016b843e6'],
-  g_base_definitions['6153519803385c0016b843e8'],
-  g_base_definitions['6153519803385c0016b843ea'],
-  g_base_definitions['6153519803385c0016b843eb'],
+  g_base_definitions['68c995cc579163001588794e'],
+  g_base_definitions['68c995cc5791630015887950'],
+  g_base_definitions['68c995cc5791630015887952'],
+  g_base_definitions['68c995cc5791630015887953'],
+  g_base_definitions['68c995cc5791630015887955'],
+  g_base_definitions['68c995cc5791630015887956'],
 }
 army['5fb1b9eee1af060017709ff3_ally_5fb1b9eee1af060017709ffb'] = {
   data={
     name='Turkoman allies',
     id='5fb1b9eee1af060017709ff3_ally_5fb1b9eee1af060017709ffb',
   },
-  g_base_definitions['6153519903385c0016b84747'],
-  g_base_definitions['6153519903385c0016b84749'],
-  g_base_definitions['6153519903385c0016b8474b'],
-  g_base_definitions['6153519903385c0016b8474d'],
+  g_base_definitions['68c995ce5791630015887cc4'],
+  g_base_definitions['68c995ce5791630015887cc6'],
 }
 army['5fb1b9eee1af060017709ff3_ally_5fb1b9eae1af060017709d8c'] = {
   data={
     name='Moldavian allies',
     id='5fb1b9eee1af060017709ff3_ally_5fb1b9eae1af060017709d8c',
   },
-  g_base_definitions['6153519803385c0016b843e4'],
-  g_base_definitions['6153519803385c0016b843e6'],
-  g_base_definitions['6153519803385c0016b843e8'],
-  g_base_definitions['6153519803385c0016b843ea'],
-  g_base_definitions['6153519803385c0016b843eb'],
+  g_base_definitions['68c995cc579163001588794e'],
+  g_base_definitions['68c995cc5791630015887950'],
+  g_base_definitions['68c995cc5791630015887952'],
+  g_base_definitions['68c995cc5791630015887953'],
+  g_base_definitions['68c995cc5791630015887955'],
+  g_base_definitions['68c995cc5791630015887956'],
 }

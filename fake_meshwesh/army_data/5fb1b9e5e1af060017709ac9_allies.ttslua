@@ -19,17 +19,17 @@ army['5fb1b9e5e1af060017709ac9_ally_5fb1b9e1e1af060017709895'] = {
     name='(Northumbrian) Pictish allies',
     id='5fb1b9e5e1af060017709ac9_ally_5fb1b9e1e1af060017709895',
   },
-  g_base_definitions['6153519403385c0016b83d39'],
-  g_base_definitions['6153519403385c0016b83d3b'],
-  g_base_definitions['6153519403385c0016b83d3d'],
+  g_base_definitions['68c995c8579163001588729c'],
+  g_base_definitions['68c995c8579163001588729e'],
+  g_base_definitions['68c995c857916300158872a0'],
 }
 army['5fb1b9e5e1af060017709ac9_ally_5fb1b9e5e1af060017709abd'] = {
   data={
     name='(Mercian) Gwynedd Welsh allies',
     id='5fb1b9e5e1af060017709ac9_ally_5fb1b9e5e1af060017709abd',
   },
-  g_base_definitions['6153519503385c0016b83f5b'],
-  g_base_definitions['6153519503385c0016b83f5d'],
-  g_base_definitions['6153519503385c0016b83f5f'],
-  g_base_definitions['6153519503385c0016b83f62'],
+  g_base_definitions['68c995ca57916300158874be'],
+  g_base_definitions['68c995ca57916300158874c0'],
+  g_base_definitions['68c995ca57916300158874c2'],
+  g_base_definitions['68c995ca57916300158874c5'],
 }

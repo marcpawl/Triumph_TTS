@@ -15,8 +15,8 @@ army['5fb1b9dfe1af06001770973d_ally_5fb1b9e0e1af0600177097f6'] = {
     name='Armenian allies',
     id='5fb1b9dfe1af06001770973d_ally_5fb1b9e0e1af0600177097f6',
   },
-  g_base_definitions['6153519303385c0016b83c82'],
-  g_base_definitions['6153519303385c0016b83c84'],
-  g_base_definitions['6153519303385c0016b83c86'],
-  g_base_definitions['6153519303385c0016b83c88'],
+  g_base_definitions['68c995c857916300158871e5'],
+  g_base_definitions['68c995c857916300158871e7'],
+  g_base_definitions['68c995c857916300158871e9'],
+  g_base_definitions['68c995c857916300158871eb'],
 }

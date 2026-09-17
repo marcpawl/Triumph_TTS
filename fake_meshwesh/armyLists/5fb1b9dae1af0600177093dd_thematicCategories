@@ -1,1 +1,10 @@
-[{"name":"Chariot Supremacy","id":"5fb1b71fe1af060017701923"},{"name":"Assyrian Empire","id":"5fb1b720e1af060017701926"}]
+[
+    {
+        "name": "Chariot Supremacy",
+        "id": "5fb1b71fe1af060017701923"
+    },
+    {
+        "name": "Assyrian Empire",
+        "id": "5fb1b720e1af060017701926"
+    }
+]

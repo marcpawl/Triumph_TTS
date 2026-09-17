@@ -1,1 +1,14 @@
-[{"name":"Russian Princes","id":"5fb1b720e1af060017701944"},{"name":"Baltic Powers","id":"5fb1b720e1af06001770193a"},{"name":"Glorious Byzantium","id":"5fb1b720e1af060017701931"}]
+[
+    {
+        "name": "Russian Princes",
+        "id": "5fb1b720e1af060017701944"
+    },
+    {
+        "name": "Baltic Powers",
+        "id": "5fb1b720e1af06001770193a"
+    },
+    {
+        "name": "Glorious Byzantium",
+        "id": "5fb1b720e1af060017701931"
+    }
+]

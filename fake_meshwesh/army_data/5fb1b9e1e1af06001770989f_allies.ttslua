@@ -27,29 +27,29 @@ army['5fb1b9e1e1af06001770989f_ally_5fb1b9e2e1af060017709902'] = {
     name='Gepid allies',
     id='5fb1b9e1e1af06001770989f_ally_5fb1b9e2e1af060017709902',
   },
-  g_base_definitions['6153519403385c0016b83d8d'],
+  g_base_definitions['68c995c957916300158872f0'],
 }
 army['5fb1b9e1e1af06001770989f_ally_5fb1b9e2e1af060017709932'] = {
   data={
     name='Alan allies',
     id='5fb1b9e1e1af06001770989f_ally_5fb1b9e2e1af060017709932',
   },
-  g_base_definitions['6153519403385c0016b83dab'],
-  g_base_definitions['6153519403385c0016b83dad'],
+  g_base_definitions['68c995c9579163001588730e'],
+  g_base_definitions['68c995c95791630015887310'],
 }
 army['5fb1b9e1e1af06001770989f_ally_5fb1b9e2e1af0600177098fa'] = {
   data={
     name='Burgundi allies',
     id='5fb1b9e1e1af06001770989f_ally_5fb1b9e2e1af0600177098fa',
   },
-  g_base_definitions['6153519403385c0016b83d87'],
-  g_base_definitions['6153519403385c0016b83d89'],
+  g_base_definitions['68c995c957916300158872ea'],
+  g_base_definitions['68c995c957916300158872ec'],
 }
 army['5fb1b9e1e1af06001770989f_ally_5fb1b9e3e1af0600177099cd'] = {
   data={
     name='Moorish allies',
     id='5fb1b9e1e1af06001770989f_ally_5fb1b9e3e1af0600177099cd',
   },
-  g_base_definitions['6153519503385c0016b83e44'],
-  g_base_definitions['6153519503385c0016b83e46'],
+  g_base_definitions['68c995c957916300158873a7'],
+  g_base_definitions['68c995c957916300158873a9'],
 }

@@ -1,4 +1,4 @@
--- 5fb1b9eae1af060017709df3 Post Mongol Russian  1246 to 1533 AD
+-- 5fb1b9eae1af060017709df3 Post Mongol Russian  1246 to 1455 AD
 
 army['5fb1b9eae1af060017709df3']={
   data={
@@ -11,23 +11,24 @@ army['5fb1b9eae1af060017709df3']={
     homeTopographies={
       'Forest',
     },
-    name='Post Mongol Russian  1246 to 1533 AD',
+    name='Post Mongol Russian  1246 to 1455 AD',
     id='5fb1b9eae1af060017709df3',
     dateRange={
       startDate=1246,
-      endDate=1533,
+      endDate=1455,
     },
   },
-  g_base_definitions[g_str_615351ae03385c0016b877d9_general],
-  g_base_definitions[g_str_615351ae03385c0016b877d9],
-  g_base_definitions[g_str_615351ae03385c0016b877db],
-  g_base_definitions[g_str_615351ae03385c0016b877dd],
-  g_base_definitions[g_str_615351ae03385c0016b877df],
-  g_base_definitions[g_str_615351ae03385c0016b877e1],
-  g_base_definitions[g_str_615351ae03385c0016b877e4],
-  g_base_definitions[g_str_615351ae03385c0016b877e7],
+  g_base_definitions[g_str_68c995e2579163001588adf8_general],
+  g_base_definitions[g_str_68c995e2579163001588adf8_general_shower_shooting],
+  g_base_definitions[g_str_68c995e2579163001588adf8],
+  g_base_definitions[g_str_68c995e2579163001588adf8_shower_shooting],
+  g_base_definitions[g_str_68c995e2579163001588adfb],
+  g_base_definitions[g_str_68c995e2579163001588adfd],
+  g_base_definitions[g_str_68c995e2579163001588adff],
+  g_base_definitions[g_str_68c995e2579163001588adff_shower_shooting],
+  g_base_definitions[g_str_68c995e2579163001588ae03],
+  g_base_definitions[g_str_68c995e2579163001588ae06],
   g_base_definitions[g_str_5fb1b9eae1af060017709df3_camp],
-  g_base_definitions[g_str_5fb1b9eae1af060017709df3_prepared_defenses],
 }
 if nil == armies["Meshwesh id"] then
   armies["Meshwesh id"] ={}
@@ -36,22 +37,22 @@ armies["Meshwesh id"]["5fb1b9eae1af060017709df3"] = army["5fb1b9eae1af060017709d
 if nil == armies["Russian Princes"] then
   armies["Russian Princes"] ={}
 end
-armies["Russian Princes"]["Post Mongol Russian  1246 to 1533 AD"] = army["5fb1b9eae1af060017709df3"]
+armies["Russian Princes"]["Post Mongol Russian  1246 to 1455 AD"] = army["5fb1b9eae1af060017709df3"]
 if nil == armies["Baltic Powers"] then
   armies["Baltic Powers"] ={}
 end
-armies["Baltic Powers"]["Post Mongol Russian  1246 to 1533 AD"] = army["5fb1b9eae1af060017709df3"]
+armies["Baltic Powers"]["Post Mongol Russian  1246 to 1455 AD"] = army["5fb1b9eae1af060017709df3"]
 if nil == armies["All"] then
   armies["All"] ={}
 end
-armies["All"]["Post Mongol Russian  1246 to 1533 AD"] = army["5fb1b9eae1af060017709df3"]
+armies["All"]["Post Mongol Russian  1246 to 1455 AD"] = army["5fb1b9eae1af060017709df3"]
 if nil == army_dates then
   army_dates={}
 end
 army_dates["5fb1b9eae1af060017709df3"] = {}
-army_dates["5fb1b9eae1af060017709df3"]["1246 AD to 1533 AD"] = {
+army_dates["5fb1b9eae1af060017709df3"]["1246 AD to 1455 AD"] = {
   startDate=1246,
-  endDate=1533
+  endDate=1455
 }
 army_dates["5fb1b9eae1af060017709df3"]["1246 AD to 1250 AD"] = {
   startDate=1246,
@@ -61,15 +62,7 @@ army_dates["5fb1b9eae1af060017709df3"]["1251 AD to 1379 AD"] = {
   startDate=1251,
   endDate=1379
 }
-army_dates["5fb1b9eae1af060017709df3"]["1380 AD to 1472 AD"] = {
+army_dates["5fb1b9eae1af060017709df3"]["1380 AD to 1455 AD"] = {
   startDate=1380,
-  endDate=1472
-}
-army_dates["5fb1b9eae1af060017709df3"]["1473 AD to 1515 AD"] = {
-  startDate=1473,
-  endDate=1515
-}
-army_dates["5fb1b9eae1af060017709df3"]["1516 AD to 1533 AD"] = {
-  startDate=1516,
-  endDate=1533
+  endDate=1455
 }

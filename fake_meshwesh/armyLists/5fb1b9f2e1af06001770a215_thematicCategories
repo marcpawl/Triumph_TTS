@@ -1,1 +1,14 @@
-[{"name":"Mandate of Heaven","id":"5fb1b720e1af060017701940"},{"name":"Dark Ages China","id":"5fb1b720e1af060017701942"},{"name":"Middle Kingdom","id":"5fb1b720e1af06001770193f"}]
+[
+    {
+        "name": "Mandate of Heaven",
+        "id": "5fb1b720e1af060017701940"
+    },
+    {
+        "name": "Dark Ages China",
+        "id": "5fb1b720e1af060017701942"
+    },
+    {
+        "name": "Middle Kingdom",
+        "id": "5fb1b720e1af06001770193f"
+    }
+]

@@ -23,28 +23,28 @@ army['5fb1b9dae1af06001770942a_ally_5fb1b9dae1af060017709438'] = {
     name='Babylonian or tribal Aramaean allies',
     id='5fb1b9dae1af06001770942a_ally_5fb1b9dae1af060017709438',
   },
-  g_base_definitions['6153518e03385c0016b836a8'],
-  g_base_definitions['6153518e03385c0016b836aa'],
-  g_base_definitions['6153518e03385c0016b836ac'],
-  g_base_definitions['6153518e03385c0016b836ae'],
+  g_base_definitions['68c995c55791630015886c3b'],
+  g_base_definitions['68c995c55791630015886c3d'],
+  g_base_definitions['68c995c55791630015886c3f'],
+  g_base_definitions['68c995c55791630015886c41'],
 }
 army['5fb1b9dae1af06001770942a_ally_5fb1b9dae1af06001770943e'] = {
   data={
     name='Babylonian or tribal Aramaean allies',
     id='5fb1b9dae1af06001770942a_ally_5fb1b9dae1af06001770943e',
   },
-  g_base_definitions['6153518e03385c0016b836b2'],
-  g_base_definitions['6153518e03385c0016b836b4'],
-  g_base_definitions['6153518e03385c0016b836b6'],
+  g_base_definitions['68c995c55791630015886c45'],
+  g_base_definitions['68c995c55791630015886c47'],
+  g_base_definitions['68c995c55791630015886c49'],
 }
 army['5fb1b9dae1af06001770942a_ally_5fb1b9d9e1af0600177093a4'] = {
   data={
     name='Arab allies',
     id='5fb1b9dae1af06001770942a_ally_5fb1b9d9e1af0600177093a4',
   },
-  g_base_definitions['6153518e03385c0016b835ba'],
-  g_base_definitions['6153518e03385c0016b835bc'],
-  g_base_definitions['6153518e03385c0016b835be'],
-  g_base_definitions['6153518e03385c0016b835c0'],
-  g_base_definitions['6153518e03385c0016b835c3'],
+  g_base_definitions['68c995c45791630015886b4d'],
+  g_base_definitions['68c995c45791630015886b4f'],
+  g_base_definitions['68c995c45791630015886b51'],
+  g_base_definitions['68c995c45791630015886b53'],
+  g_base_definitions['68c995c45791630015886b56'],
 }

@@ -15,6 +15,6 @@ army['5fb1b9eae1af060017709e02_ally_5fb1b9efe1af06001770a068'] = {
     name='Oghuz (Ghuzz, Torki) allies',
     id='5fb1b9eae1af060017709e02_ally_5fb1b9efe1af06001770a068',
   },
-  g_base_definitions['6153519a03385c0016b847e0'],
-  g_base_definitions['6153519a03385c0016b847e2'],
+  g_base_definitions['68c995ce5791630015887d61'],
+  g_base_definitions['68c995ce5791630015887d63'],
 }

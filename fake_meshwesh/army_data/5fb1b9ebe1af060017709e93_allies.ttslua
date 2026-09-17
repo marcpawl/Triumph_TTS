@@ -35,60 +35,60 @@ army['5fb1b9ebe1af060017709e93_ally_5fb1b9ebe1af060017709e6b'] = {
     name='Bulgarian allies',
     id='5fb1b9ebe1af060017709e93_ally_5fb1b9ebe1af060017709e6b',
   },
-  g_base_definitions['6153519803385c0016b844f6'],
-  g_base_definitions['6153519803385c0016b844f8'],
-  g_base_definitions['6153519803385c0016b844fa'],
-  g_base_definitions['6153519803385c0016b844fc'],
+  g_base_definitions['68c995cd5791630015887a72'],
+  g_base_definitions['68c995cd5791630015887a74'],
+  g_base_definitions['68c995cd5791630015887a76'],
+  g_base_definitions['68c995cd5791630015887a78'],
 }
 army['5fb1b9ebe1af060017709e93_ally_5fb1b9ebe1af060017709e93'] = {
   data={
     name='(only Despotate of Epiros) Thessalian allies',
     id='5fb1b9ebe1af060017709e93_ally_5fb1b9ebe1af060017709e93',
   },
-  g_base_definitions['6153519803385c0016b84533'],
-  g_base_definitions['6153519803385c0016b84535'],
-  g_base_definitions['6153519803385c0016b84537'],
-  g_base_definitions['6153519803385c0016b84539'],
+  g_base_definitions['68c995cd5791630015887ab0'],
+  g_base_definitions['68c995cd5791630015887ab2'],
+  g_base_definitions['68c995cd5791630015887ab4'],
+  g_base_definitions['68c995cd5791630015887ab6'],
 }
 army['5fb1b9ebe1af060017709e93_ally_5fb1b9ebe1af060017709e8c'] = {
   data={
     name='(only Despotate of Epiros) Achaian Frank allies',
     id='5fb1b9ebe1af060017709e93_ally_5fb1b9ebe1af060017709e8c',
   },
-  g_base_definitions['6153519803385c0016b84527'],
-  g_base_definitions['6153519803385c0016b84529'],
-  g_base_definitions['6153519803385c0016b8452b'],
-  g_base_definitions['6153519803385c0016b8452d'],
-  g_base_definitions['6153519803385c0016b8452f'],
+  g_base_definitions['68c995cd5791630015887aa4'],
+  g_base_definitions['68c995cd5791630015887aa6'],
+  g_base_definitions['68c995cd5791630015887aa8'],
+  g_base_definitions['68c995cd5791630015887aaa'],
+  g_base_definitions['68c995cd5791630015887aac'],
 }
 army['5fb1b9ebe1af060017709e93_ally_5fb1b9e7e1af060017709c3a'] = {
   data={
     name='(only Despotate of Epiros) Angevin allies',
     id='5fb1b9ebe1af060017709e93_ally_5fb1b9e7e1af060017709c3a',
   },
-  g_base_definitions['6153519703385c0016b841cb'],
-  g_base_definitions['6153519703385c0016b841cd'],
-  g_base_definitions['6153519703385c0016b841cf'],
+  g_base_definitions['68c995cb5791630015887733'],
+  g_base_definitions['68c995cb5791630015887735'],
+  g_base_definitions['68c995cb5791630015887737'],
 }
 army['5fb1b9ebe1af060017709e93_ally_5fb1b9e9e1af060017709d43'] = {
   data={
     name='(only Despotate of Epiros) Angevin allies',
     id='5fb1b9ebe1af060017709e93_ally_5fb1b9e9e1af060017709d43',
   },
-  g_base_definitions['6153519703385c0016b84369'],
-  g_base_definitions['6153519703385c0016b8436b'],
-  g_base_definitions['6153519703385c0016b8436d'],
-  g_base_definitions['6153519703385c0016b8436f'],
-  g_base_definitions['6153519703385c0016b84370'],
-  g_base_definitions['6153519703385c0016b84372'],
+  g_base_definitions['68c995cc57916300158878d3'],
+  g_base_definitions['68c995cc57916300158878d5'],
+  g_base_definitions['68c995cc57916300158878d7'],
+  g_base_definitions['68c995cc57916300158878d9'],
+  g_base_definitions['68c995cc57916300158878da'],
+  g_base_definitions['68c995cc57916300158878dc'],
 }
 army['5fb1b9ebe1af060017709e93_ally_5fb1b9ebe1af060017709e99'] = {
   data={
     name='(only Despotate of Epiros) Byzantine allies',
     id='5fb1b9ebe1af060017709e93_ally_5fb1b9ebe1af060017709e99',
   },
-  g_base_definitions['6153519803385c0016b8453d'],
-  g_base_definitions['6153519803385c0016b8453f'],
-  g_base_definitions['6153519803385c0016b84542'],
-  g_base_definitions['6153519803385c0016b84545'],
+  g_base_definitions['68c995cd5791630015887aba'],
+  g_base_definitions['68c995cd5791630015887abc'],
+  g_base_definitions['68c995cd5791630015887abf'],
+  g_base_definitions['68c995cd5791630015887ac2'],
 }

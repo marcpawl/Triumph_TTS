@@ -1,1 +1,14 @@
-[{"name":"Mandate of Heaven","id":"5fb1b720e1af060017701940"},{"name":"Southeast Asia","id":"5fb1b720e1af06001770193e"},{"name":"Dark Ages China","id":"5fb1b720e1af060017701942"}]
+[
+    {
+        "name": "Mandate of Heaven",
+        "id": "5fb1b720e1af060017701940"
+    },
+    {
+        "name": "Southeast Asia",
+        "id": "5fb1b720e1af06001770193e"
+    },
+    {
+        "name": "Dark Ages China",
+        "id": "5fb1b720e1af060017701942"
+    }
+]

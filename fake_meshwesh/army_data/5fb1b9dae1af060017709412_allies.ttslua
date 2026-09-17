@@ -31,45 +31,45 @@ army['5fb1b9dae1af060017709412_ally_5fb1b9dae1af0600177093e4'] = {
     name='Neo-Hittite and Aramaean subjects and allies',
     id='5fb1b9dae1af060017709412_ally_5fb1b9dae1af0600177093e4',
   },
-  g_base_definitions['6153518e03385c0016b8362d'],
-  g_base_definitions['6153518e03385c0016b8362f'],
-  g_base_definitions['6153518e03385c0016b83631'],
-  g_base_definitions['6153518e03385c0016b83633'],
+  g_base_definitions['68c995c45791630015886bc0'],
+  g_base_definitions['68c995c45791630015886bc2'],
+  g_base_definitions['68c995c45791630015886bc4'],
+  g_base_definitions['68c995c45791630015886bc6'],
 }
 army['5fb1b9dae1af060017709412_ally_5fb1b9dae1af06001770940c'] = {
   data={
     name='Musasirian allies',
     id='5fb1b9dae1af060017709412_ally_5fb1b9dae1af06001770940c',
   },
-  g_base_definitions['6153518e03385c0016b83659'],
-  g_base_definitions['6153518e03385c0016b8365c'],
-  g_base_definitions['6153518e03385c0016b8365e'],
-  g_base_definitions['6153518e03385c0016b83660'],
-  g_base_definitions['6153518e03385c0016b83661'],
+  g_base_definitions['68c995c55791630015886bec'],
+  g_base_definitions['68c995c55791630015886bef'],
+  g_base_definitions['68c995c55791630015886bf1'],
+  g_base_definitions['68c995c55791630015886bf3'],
+  g_base_definitions['68c995c55791630015886bf4'],
 }
 army['5fb1b9dae1af060017709412_ally_5fb1b9dae1af060017709430'] = {
   data={
     name='Kimmerian allies',
     id='5fb1b9dae1af060017709412_ally_5fb1b9dae1af060017709430',
   },
-  g_base_definitions['6153518e03385c0016b8369a'],
-  g_base_definitions['6153518e03385c0016b8369c'],
+  g_base_definitions['68c995c55791630015886c2d'],
+  g_base_definitions['68c995c55791630015886c2f'],
 }
 army['5fb1b9dae1af060017709412_ally_5fb1b9dae1af06001770941e'] = {
   data={
     name='Median allies',
     id='5fb1b9dae1af060017709412_ally_5fb1b9dae1af06001770941e',
   },
-  g_base_definitions['6153518e03385c0016b83681'],
-  g_base_definitions['6153518e03385c0016b83683'],
-  g_base_definitions['6153518e03385c0016b83685'],
+  g_base_definitions['68c995c55791630015886c14'],
+  g_base_definitions['68c995c55791630015886c16'],
+  g_base_definitions['68c995c55791630015886c18'],
 }
 army['5fb1b9dae1af060017709412_ally_5fb1b9dae1af060017709424'] = {
   data={
     name='Median allies',
     id='5fb1b9dae1af060017709412_ally_5fb1b9dae1af060017709424',
   },
-  g_base_definitions['6153518e03385c0016b83689'],
-  g_base_definitions['6153518e03385c0016b8368b'],
-  g_base_definitions['6153518e03385c0016b8368d'],
+  g_base_definitions['68c995c55791630015886c1c'],
+  g_base_definitions['68c995c55791630015886c1e'],
+  g_base_definitions['68c995c55791630015886c20'],
 }

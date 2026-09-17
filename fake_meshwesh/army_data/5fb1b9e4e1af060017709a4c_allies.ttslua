@@ -27,36 +27,36 @@ army['5fb1b9e4e1af060017709a4c_ally_5fb1b9e5e1af060017709acf'] = {
     name='Anglo-Saxon allies',
     id='5fb1b9e4e1af060017709a4c_ally_5fb1b9e5e1af060017709acf',
   },
-  g_base_definitions['6153519503385c0016b83f75'],
-  g_base_definitions['6153519503385c0016b83f78'],
-  g_base_definitions['6153519503385c0016b83f79'],
-  g_base_definitions['6153519503385c0016b83f7c'],
-  g_base_definitions['6153519503385c0016b83f7d'],
-  g_base_definitions['6153519503385c0016b83f7f'],
+  g_base_definitions['68c995ca57916300158874d8'],
+  g_base_definitions['68c995ca57916300158874db'],
+  g_base_definitions['68c995ca57916300158874dc'],
+  g_base_definitions['68c995ca57916300158874df'],
+  g_base_definitions['68c995ca57916300158874e0'],
+  g_base_definitions['68c995ca57916300158874e2'],
 }
 army['5fb1b9e4e1af060017709a4c_ally_5fb1b9e5e1af060017709aa8'] = {
   data={
     name='Norwegian Viking allies',
     id='5fb1b9e4e1af060017709a4c_ally_5fb1b9e5e1af060017709aa8',
   },
-  g_base_definitions['6153519503385c0016b83f43'],
-  g_base_definitions['6153519503385c0016b83f45'],
+  g_base_definitions['68c995ca57916300158874a6'],
+  g_base_definitions['68c995ca57916300158874a8'],
 }
 army['5fb1b9e4e1af060017709a4c_ally_5fb1b9e5e1af060017709aae'] = {
   data={
     name='Norwegian Viking allies',
     id='5fb1b9e4e1af060017709a4c_ally_5fb1b9e5e1af060017709aae',
   },
-  g_base_definitions['6153519503385c0016b83f49'],
-  g_base_definitions['6153519503385c0016b83f4b'],
-  g_base_definitions['6153519503385c0016b83f4d'],
+  g_base_definitions['68c995ca57916300158874ac'],
+  g_base_definitions['68c995ca57916300158874ae'],
+  g_base_definitions['68c995ca57916300158874b0'],
 }
 army['5fb1b9e4e1af060017709a4c_ally_5fb1b9e4e1af060017709a44'] = {
   data={
     name='Frankish allies',
     id='5fb1b9e4e1af060017709a4c_ally_5fb1b9e4e1af060017709a44',
   },
-  g_base_definitions['6153519503385c0016b83ed5'],
-  g_base_definitions['6153519503385c0016b83ed7'],
-  g_base_definitions['6153519503385c0016b83ed9'],
+  g_base_definitions['68c995c95791630015887437'],
+  g_base_definitions['68c995c95791630015887439'],
+  g_base_definitions['68c995c9579163001588743b'],
 }

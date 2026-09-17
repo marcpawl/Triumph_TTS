@@ -1,33 +1,33 @@
-g_str_615351a803385c0016b86907_general='615351a803385c0016b86907_general'
-g_base_definitions[g_str_615351a803385c0016b86907_general]={
-  id=g_str_615351a803385c0016b86907_general,
+g_str_68c995dd5791630015889eac_general='68c995dd5791630015889eac_general'
+g_base_definitions[g_str_68c995dd5791630015889eac_general]={
+  id=g_str_68c995dd5791630015889eac_general,
   name='Horse Bow General',
-  min=11,
+  min=10,
   max=1,
   description='Boyars and Bulgar horse archers',
   general=true,
   troop_type="Horse Bow",
-  troop_option_id="615351a803385c0016b86906",
+  troop_option_id="68c995dd5791630015889eab",
 }
-g_str_615351a803385c0016b86907='615351a803385c0016b86907'
-g_base_definitions[g_str_615351a803385c0016b86907]={
-  id=g_str_615351a803385c0016b86907,
+g_str_68c995dd5791630015889eac='68c995dd5791630015889eac'
+g_base_definitions[g_str_68c995dd5791630015889eac]={
+  id=g_str_68c995dd5791630015889eac,
   name='Horse Bow',
-  min=11,
+  min=10,
   max=12,
   description='Boyars and Bulgar horse archers',
   troop_type="Horse Bow",
-  troop_option_id="615351a803385c0016b86906",
+  troop_option_id="68c995dd5791630015889eab",
 }
-g_str_615351a803385c0016b86909='615351a803385c0016b86909'
-g_base_definitions[g_str_615351a803385c0016b86909]={
-  id=g_str_615351a803385c0016b86909,
+g_str_68c995dd5791630015889eae='68c995dd5791630015889eae'
+g_base_definitions[g_str_68c995dd5791630015889eae]={
+  id=g_str_68c995dd5791630015889eae,
   name='Horde',
   min=0,
   max=2,
   description='Camp defenders',
   troop_type="Horde",
-  troop_option_id="615351a803385c0016b86908",
+  troop_option_id="68c995dd5791630015889ead",
 }
 g_str_5fb1b9e4e1af0600177099fc_camp='5fb1b9e4e1af0600177099fc_camp'
 g_base_definitions[g_str_5fb1b9e4e1af0600177099fc_camp]={

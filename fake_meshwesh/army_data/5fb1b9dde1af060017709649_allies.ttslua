@@ -19,19 +19,19 @@ army['5fb1b9dde1af060017709649_ally_5fb1b9dde1af060017709640'] = {
     name='Hill tribe allies',
     id='5fb1b9dde1af060017709649_ally_5fb1b9dde1af060017709640',
   },
-  g_base_definitions['6153519103385c0016b83a00'],
-  g_base_definitions['6153519103385c0016b83a02'],
-  g_base_definitions['6153519103385c0016b83a04'],
+  g_base_definitions['68c995c65791630015886f63'],
+  g_base_definitions['68c995c65791630015886f65'],
+  g_base_definitions['68c995c65791630015886f67'],
 }
 army['5fb1b9dde1af060017709649_ally_5fb1b9dde1af06001770960e'] = {
   data={
     name='Odrysians Greek Mercenary allies',
     id='5fb1b9dde1af060017709649_ally_5fb1b9dde1af06001770960e',
   },
-  g_base_definitions['6153519103385c0016b839cd'],
-  g_base_definitions['6153519103385c0016b839cf'],
-  g_base_definitions['6153519103385c0016b839d1'],
-  g_base_definitions['6153519103385c0016b839d3'],
-  g_base_definitions['6153519103385c0016b839d5'],
-  g_base_definitions['6153519103385c0016b839d7'],
+  g_base_definitions['68c995c65791630015886f30'],
+  g_base_definitions['68c995c65791630015886f32'],
+  g_base_definitions['68c995c65791630015886f34'],
+  g_base_definitions['68c995c65791630015886f36'],
+  g_base_definitions['68c995c65791630015886f38'],
+  g_base_definitions['68c995c65791630015886f3a'],
 }

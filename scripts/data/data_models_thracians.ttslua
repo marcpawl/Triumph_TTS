@@ -8,7 +8,7 @@ army['5fb1b9dde1af060017709640'].data.base="tile_grass"
 -- As of: 20210408
 
     -- Horsemen JavCav General
-    g_models[g_str_615351a303385c0016b85b8e_general] = {
+    g_models[g_str_68c995d857916300158890f4_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -19,14 +19,14 @@ army['5fb1b9dde1af060017709640'].data.base="tile_grass"
     }
 
     -- Horsemen JavCav
-    g_models[g_str_615351a303385c0016b85b8e] = {
+    g_models[g_str_68c995d857916300158890f4] = {
       {
         model_data = 'troop_thracian_lh'
       }
     }
 
     -- Peltasts LF General
-    g_models[g_str_615351a303385c0016b85b90_general] = {
+    g_models[g_str_68c995d857916300158890f6_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -38,14 +38,14 @@ army['5fb1b9dde1af060017709640'].data.base="tile_grass"
     }
 
     -- Peltasts LF
-    g_models[g_str_615351a303385c0016b85b90] = {
+    g_models[g_str_68c995d857916300158890f6] = {
       {
         model_data = 'troop_thracian_ax1'
       }
     }
 
     -- Peltasts armed with long spear - Light Spear
-    g_models[g_str_615351a303385c0016b85b92] = {
+    g_models[g_str_68c995d857916300158890f8] = {
       {
         model_data = 'troop_thracian_axgen'
       }
@@ -53,7 +53,7 @@ army['5fb1b9dde1af060017709640'].data.base="tile_grass"
 
 
     -- Skirmishing bowmen or slingers - General
-    g_models[g_str_615351a303385c0016b85b94_general] = {
+    g_models[g_str_68c995d857916300158890fa_general] = {
       {
         n_models = 2,
         fixed_models = {
@@ -64,7 +64,7 @@ army['5fb1b9dde1af060017709640'].data.base="tile_grass"
     }
 
     -- Skirmishing bowmen or slingers
-    g_models[g_str_615351a303385c0016b85b94] = {
+    g_models[g_str_68c995d857916300158890fa] = {
       {
         loose = true,
         random_models = {
@@ -75,7 +75,7 @@ army['5fb1b9dde1af060017709640'].data.base="tile_grass"
     }
 
     -- Gymnetes (naked men armed with javelins or stones) - Rabble
-    g_models[g_str_615351a303385c0016b85b96] = {
+    g_models[g_str_68c995d857916300158890fc] = {
       {
         loose = true,
         model_data = 'troop_thracian_ps'

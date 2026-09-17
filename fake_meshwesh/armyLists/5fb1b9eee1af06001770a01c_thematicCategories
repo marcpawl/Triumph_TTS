@@ -1,1 +1,14 @@
-[{"name":"Scimitar and Crescent","id":"5fb1b720e1af060017701932"},{"name":"Byzantium in Decay","id":"5fb1b720e1af06001770193b"},{"name":"Russian Princes","id":"5fb1b720e1af060017701944"}]
+[
+    {
+        "name": "Scimitar and Crescent",
+        "id": "5fb1b720e1af060017701932"
+    },
+    {
+        "name": "Byzantium in Decay",
+        "id": "5fb1b720e1af06001770193b"
+    },
+    {
+        "name": "Russian Princes",
+        "id": "5fb1b720e1af060017701944"
+    }
+]

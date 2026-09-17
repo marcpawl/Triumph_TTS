@@ -15,6 +15,6 @@ army['5fb1b9f3e1af06001770a302_ally_5fb1b9f3e1af06001770a2fc'] = {
     name='Mongol allies',
     id='5fb1b9f3e1af06001770a302_ally_5fb1b9f3e1af06001770a2fc',
   },
-  g_base_definitions['6153519c03385c0016b84b89'],
-  g_base_definitions['6153519c03385c0016b84b8b'],
+  g_base_definitions['68c995d0579163001588810e'],
+  g_base_definitions['68c995d05791630015888110'],
 }

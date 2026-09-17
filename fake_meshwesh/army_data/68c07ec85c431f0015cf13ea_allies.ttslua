@@ -1,0 +1,21 @@
+
+-- GENERATED FILE DO NOT EDIT
+-- See tts_army.py
+
+require("Triumph_TTS/scripts/static_maps")
+
+allies['68c07ec85c431f0015cf13ea'] = {
+  {
+    id='5fb1b9eae1af060017709dec',
+    dateRange={startDate=1456, endDate=1472}
+  },
+}
+army['68c07ec85c431f0015cf13ea_ally_5fb1b9eae1af060017709dec'] = {
+  data={
+    name='(only Novgorod) Lithuanian allies',
+    id='68c07ec85c431f0015cf13ea_ally_5fb1b9eae1af060017709dec',
+  },
+  g_base_definitions['68c995cc57916300158879be'],
+  g_base_definitions['68c995cc57916300158879c0'],
+  g_base_definitions['68c995cc57916300158879c2'],
+}

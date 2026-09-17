@@ -27,28 +27,28 @@ army['5fb1b9e0e1af0600177097f6_ally_5fb1b9dfe1af0600177096f4'] = {
     name='(not Gordyene) Sarmatian allies',
     id='5fb1b9e0e1af0600177097f6_ally_5fb1b9dfe1af0600177096f4',
   },
-  g_base_definitions['6153519203385c0016b83b0d'],
+  g_base_definitions['68c995c75791630015887070'],
 }
 army['5fb1b9e0e1af0600177097f6_ally_5fb1b9e2e1af060017709932'] = {
   data={
     name='(not Gordyene) Alan allies',
     id='5fb1b9e0e1af0600177097f6_ally_5fb1b9e2e1af060017709932',
   },
-  g_base_definitions['6153519403385c0016b83dab'],
-  g_base_definitions['6153519403385c0016b83dad'],
+  g_base_definitions['68c995c9579163001588730e'],
+  g_base_definitions['68c995c95791630015887310'],
 }
 army['5fb1b9e0e1af0600177097f6_ally_5fb1b9dfe1af0600177096f4'] = {
   data={
     name='(not Gordyene) Sarmatian allies',
     id='5fb1b9e0e1af0600177097f6_ally_5fb1b9dfe1af0600177096f4',
   },
-  g_base_definitions['6153519203385c0016b83b0d'],
+  g_base_definitions['68c995c75791630015887070'],
 }
 army['5fb1b9e0e1af0600177097f6_ally_5fb1b9e2e1af060017709932'] = {
   data={
     name='Alan allies',
     id='5fb1b9e0e1af0600177097f6_ally_5fb1b9e2e1af060017709932',
   },
-  g_base_definitions['6153519403385c0016b83dab'],
-  g_base_definitions['6153519403385c0016b83dad'],
+  g_base_definitions['68c995c9579163001588730e'],
+  g_base_definitions['68c995c95791630015887310'],
 }

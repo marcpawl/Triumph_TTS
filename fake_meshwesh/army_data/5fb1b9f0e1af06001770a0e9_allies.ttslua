@@ -19,18 +19,18 @@ army['5fb1b9f0e1af06001770a0e9_ally_5fb1b9f0e1af06001770a0d5'] = {
     name='Burmese allies',
     id='5fb1b9f0e1af06001770a0e9_ally_5fb1b9f0e1af06001770a0d5',
   },
-  g_base_definitions['6153519a03385c0016b8487f'],
-  g_base_definitions['6153519a03385c0016b84881'],
-  g_base_definitions['6153519a03385c0016b84883'],
-  g_base_definitions['6153519a03385c0016b84885'],
+  g_base_definitions['68c995ce5791630015887dfc'],
+  g_base_definitions['68c995ce5791630015887dfe'],
+  g_base_definitions['68c995ce5791630015887e00'],
+  g_base_definitions['68c995ce5791630015887e02'],
 }
 army['5fb1b9f0e1af06001770a0e9_ally_5fb1b9f0e1af06001770a11c'] = {
   data={
     name='Thai allies',
     id='5fb1b9f0e1af06001770a0e9_ally_5fb1b9f0e1af06001770a11c',
   },
-  g_base_definitions['6153519a03385c0016b848ea'],
-  g_base_definitions['6153519a03385c0016b848ec'],
-  g_base_definitions['6153519a03385c0016b848ed'],
-  g_base_definitions['6153519a03385c0016b848ef'],
+  g_base_definitions['68c995cf5791630015887e67'],
+  g_base_definitions['68c995cf5791630015887e69'],
+  g_base_definitions['68c995cf5791630015887e6a'],
+  g_base_definitions['68c995cf5791630015887e6c'],
 }

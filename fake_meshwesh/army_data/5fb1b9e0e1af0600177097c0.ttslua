@@ -20,17 +20,19 @@ army['5fb1b9e0e1af0600177097c0']={
       endDate=225,
     },
   },
-  g_base_definitions[g_str_615351a503385c0016b86145_general],
-  g_base_definitions[g_str_615351a503385c0016b86145_general_armored_camelry],
-  g_base_definitions[g_str_615351a503385c0016b86145],
-  g_base_definitions[g_str_615351a503385c0016b86145_armored_camelry],
-  g_base_definitions[g_str_615351a503385c0016b86148],
-  g_base_definitions[g_str_615351a503385c0016b8614a],
-  g_base_definitions[g_str_615351a503385c0016b8614b],
-  g_base_definitions[g_str_615351a503385c0016b8614d],
+  g_base_definitions[g_str_68c995d957916300158896ca_general],
+  g_base_definitions[g_str_68c995d957916300158896ca_general_armored_camelry],
+  g_base_definitions[g_str_68c995d957916300158896ca],
+  g_base_definitions[g_str_68c995d957916300158896ca_armored_camelry],
+  g_base_definitions[g_str_68c995d957916300158896cd],
+  g_base_definitions[g_str_68c995d957916300158896cf],
+  g_base_definitions[g_str_68c995d957916300158896cf_shower_shooting],
+  g_base_definitions[g_str_68c995d957916300158896d0],
+  g_base_definitions[g_str_68c995d957916300158896d0_shower_shooting],
+  g_base_definitions[g_str_68c995d957916300158896d3],
   g_base_definitions[g_str_5fb1b9e0e1af0600177097c0_camp],
   g_base_definitions[g_str_5fb1b9e0e1af0600177097c0_camp_pack_train],
-  g_base_definitions[g_str_6153519303385c0016b83c4d],
+  g_base_definitions[g_str_68c995c857916300158871b0],
 }
 if nil == armies["Meshwesh id"] then
   armies["Meshwesh id"] ={}
@@ -112,8 +114,16 @@ army_dates["5fb1b9e0e1af0600177097c0"]["65 BC to 63 BC"] = {
   startDate=-65,
   endDate=-63
 }
-army_dates["5fb1b9e0e1af0600177097c0"]["62 BC to 41 BC"] = {
+army_dates["5fb1b9e0e1af0600177097c0"]["62 BC to 43 BC"] = {
   startDate=-62,
+  endDate=-43
+}
+army_dates["5fb1b9e0e1af0600177097c0"]["42 BC"] = {
+  startDate=-42,
+  endDate=-42
+}
+army_dates["5fb1b9e0e1af0600177097c0"]["41 BC"] = {
+  startDate=-41,
   endDate=-41
 }
 army_dates["5fb1b9e0e1af0600177097c0"]["40 BC to 39 BC"] = {

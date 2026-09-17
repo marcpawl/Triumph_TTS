@@ -55,112 +55,114 @@ army['5fb1b9ede1af060017709fb6_ally_5fb1b9e7e1af060017709bee'] = {
     name='(in Portugal) Feudal Portuguese',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9e7e1af060017709bee',
   },
-  g_base_definitions['6153519603385c0016b84134'],
-  g_base_definitions['6153519603385c0016b84137'],
-  g_base_definitions['6153519603385c0016b84139'],
-  g_base_definitions['6153519603385c0016b8413b'],
-  g_base_definitions['6153519603385c0016b8413d'],
-  g_base_definitions['6153519603385c0016b84140'],
+  g_base_definitions['68c995cb5791630015887696'],
+  g_base_definitions['68c995cb5791630015887699'],
+  g_base_definitions['68c995cb579163001588769b'],
+  g_base_definitions['68c995cb579163001588769d'],
+  g_base_definitions['68c995cb579163001588769f'],
+  g_base_definitions['68c995cb57916300158876a2'],
+  g_base_definitions['68c995cb57916300158876a5'],
+  g_base_definitions['68c995cb57916300158876a8'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9e8e1af060017709ca5'] = {
   data={
     name='Imperial German allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9e8e1af060017709ca5',
   },
-  g_base_definitions['6153519703385c0016b8426c'],
-  g_base_definitions['6153519703385c0016b8426e'],
-  g_base_definitions['6153519703385c0016b84270'],
-  g_base_definitions['6153519703385c0016b84272'],
-  g_base_definitions['6153519703385c0016b84274'],
-  g_base_definitions['6153519703385c0016b84275'],
+  g_base_definitions['68c995cb57916300158877d6'],
+  g_base_definitions['68c995cb57916300158877d8'],
+  g_base_definitions['68c995cb57916300158877da'],
+  g_base_definitions['68c995cb57916300158877dc'],
+  g_base_definitions['68c995cb57916300158877de'],
+  g_base_definitions['68c995cb57916300158877df'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9e7e1af060017709c3a'] = {
   data={
     name='Feudal French allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9e7e1af060017709c3a',
   },
-  g_base_definitions['6153519703385c0016b841cb'],
-  g_base_definitions['6153519703385c0016b841cd'],
-  g_base_definitions['6153519703385c0016b841cf'],
+  g_base_definitions['68c995cb5791630015887733'],
+  g_base_definitions['68c995cb5791630015887735'],
+  g_base_definitions['68c995cb5791630015887737'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9ede1af060017709f60'] = {
   data={
     name='Fatimid allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9ede1af060017709f60',
   },
-  g_base_definitions['6153519903385c0016b8468c'],
-  g_base_definitions['6153519903385c0016b8468e'],
-  g_base_definitions['6153519903385c0016b84690'],
-  g_base_definitions['6153519903385c0016b84692'],
-  g_base_definitions['6153519903385c0016b84694'],
-  g_base_definitions['6153519903385c0016b84697'],
-  g_base_definitions['6153519903385c0016b8469a'],
-  g_base_definitions['6153519903385c0016b8469d'],
+  g_base_definitions['68c995cd5791630015887c09'],
+  g_base_definitions['68c995cd5791630015887c0b'],
+  g_base_definitions['68c995cd5791630015887c0d'],
+  g_base_definitions['68c995cd5791630015887c0f'],
+  g_base_definitions['68c995cd5791630015887c11'],
+  g_base_definitions['68c995cd5791630015887c14'],
+  g_base_definitions['68c995cd5791630015887c17'],
+  g_base_definitions['68c995cd5791630015887c1a'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9ebe1af060017709e63'] = {
   data={
     name='Byzantine allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9ebe1af060017709e63',
   },
-  g_base_definitions['6153519803385c0016b844ec'],
-  g_base_definitions['6153519803385c0016b844ee'],
-  g_base_definitions['6153519803385c0016b844f0'],
-  g_base_definitions['6153519803385c0016b844f2'],
+  g_base_definitions['68c995cd5791630015887a68'],
+  g_base_definitions['68c995cd5791630015887a6a'],
+  g_base_definitions['68c995cd5791630015887a6c'],
+  g_base_definitions['68c995cd5791630015887a6e'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9eee1af060017709fdb'] = {
   data={
     name='Cilician Armenian allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9eee1af060017709fdb',
   },
-  g_base_definitions['6153519903385c0016b8472d'],
-  g_base_definitions['6153519903385c0016b8472f'],
-  g_base_definitions['6153519903385c0016b84730'],
-  g_base_definitions['6153519903385c0016b84732'],
+  g_base_definitions['68c995ce5791630015887caa'],
+  g_base_definitions['68c995ce5791630015887cac'],
+  g_base_definitions['68c995ce5791630015887cad'],
+  g_base_definitions['68c995ce5791630015887caf'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9ede1af060017709fa5'] = {
   data={
     name='Saracen allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9ede1af060017709fa5',
   },
-  g_base_definitions['6153519903385c0016b846ed'],
-  g_base_definitions['6153519903385c0016b846ef'],
-  g_base_definitions['6153519903385c0016b846f1'],
+  g_base_definitions['68c995ce5791630015887c6a'],
+  g_base_definitions['68c995ce5791630015887c6c'],
+  g_base_definitions['68c995ce5791630015887c6e'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9e8e1af060017709ca5'] = {
   data={
     name='Imperial German allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9e8e1af060017709ca5',
   },
-  g_base_definitions['6153519703385c0016b8426c'],
-  g_base_definitions['6153519703385c0016b8426e'],
-  g_base_definitions['6153519703385c0016b84270'],
-  g_base_definitions['6153519703385c0016b84272'],
-  g_base_definitions['6153519703385c0016b84274'],
-  g_base_definitions['6153519703385c0016b84275'],
+  g_base_definitions['68c995cb57916300158877d6'],
+  g_base_definitions['68c995cb57916300158877d8'],
+  g_base_definitions['68c995cb57916300158877da'],
+  g_base_definitions['68c995cb57916300158877dc'],
+  g_base_definitions['68c995cb57916300158877de'],
+  g_base_definitions['68c995cb57916300158877df'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9e7e1af060017709c3a'] = {
   data={
     name='Feudal French allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9e7e1af060017709c3a',
   },
-  g_base_definitions['6153519703385c0016b841cb'],
-  g_base_definitions['6153519703385c0016b841cd'],
-  g_base_definitions['6153519703385c0016b841cf'],
+  g_base_definitions['68c995cb5791630015887733'],
+  g_base_definitions['68c995cb5791630015887735'],
+  g_base_definitions['68c995cb5791630015887737'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9ede1af060017709fad'] = {
   data={
     name='Syrian allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9ede1af060017709fad',
   },
-  g_base_definitions['6153519903385c0016b846f5'],
-  g_base_definitions['6153519903385c0016b846f7'],
-  g_base_definitions['6153519903385c0016b846f9'],
-  g_base_definitions['6153519903385c0016b846fb'],
+  g_base_definitions['68c995ce5791630015887c72'],
+  g_base_definitions['68c995ce5791630015887c74'],
+  g_base_definitions['68c995ce5791630015887c76'],
+  g_base_definitions['68c995ce5791630015887c78'],
 }
 army['5fb1b9ede1af060017709fb6_ally_5fb1b9efe1af06001770a035'] = {
   data={
     name='Mongol allies',
     id='5fb1b9ede1af060017709fb6_ally_5fb1b9efe1af06001770a035',
   },
-  g_base_definitions['6153519a03385c0016b84791'],
+  g_base_definitions['68c995ce5791630015887d12'],
 }

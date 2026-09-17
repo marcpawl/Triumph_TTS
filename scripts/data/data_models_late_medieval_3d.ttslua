@@ -53,24 +53,24 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 -- As of: 20210420
 
     -- Crossbowmen on horses
-    g_models[g_str_615351ac03385c0016b87401] = {
+    g_models[g_str_68c995e1579163001588aa03] = {
       {
         model_data = 'troop_horse_rider_swiss'
       }
     }
 
     --Crossbowmen on horses\nMid-battle dismounted from Bad Horse - Skirmishers
-    g_models[g_str_615351ac03385c0016b87401_dismounted] = {
+    g_models[g_str_68c995e1579163001588aa03_dismounted] = {
       {
         model_data = 'troop_crossbowman_swiss'
       }
     }
 
     --Crossbowmen on horses - Bad Horse
-    g_models[g_str_615351ac03385c0016b87401_mounted] = g_models[g_str_615351ac03385c0016b87401]
+    g_models[g_str_68c995e1579163001588aa03_mounted] = g_models[g_str_68c995e1579163001588aa03]
 
     -- Pikemen mixed with some halberdiers - Pikes General
-    g_models[g_str_615351ac03385c0016b87404_general] = {
+    g_models[g_str_68c995e1579163001588aa06_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -83,7 +83,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Pikemen mixed with some halberdiers - Pikes
-    g_models[g_str_615351ac03385c0016b87404] = {
+    g_models[g_str_68c995e1579163001588aa06] = {
         {
         random_models = {
           'troop_pikeman_swiss_straight',
@@ -105,21 +105,21 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     --Separately deployed halberdiers, some with armor - Raiders
-    g_models[g_str_615351ac03385c0016b87406] = {
+    g_models[g_str_68c995e1579163001588aa08] = {
       {
         model_data = 'troop_halberdier_swiss'
       }
     }
 
     --Separately deployed halberdiers, some with armor - EF
-    g_models[g_str_615351ac03385c0016b87407] = {
+    g_models[g_str_68c995e1579163001588aa09] = {
       {
         model_data = 'troop_halberdier_swiss'
       }
     }
 
     -- Skirmishing handgunners - Sk
-    g_models[g_str_615351ac03385c0016b87409] = {
+    g_models[g_str_68c995e1579163001588aa0b] = {
       {
         loose = true,
         model_data = 'troop_handgunner_swiss'
@@ -127,7 +127,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Skirmishing crossbowmen and handgunners - Sk
-    g_models[g_str_615351ac03385c0016b8740b] = {
+    g_models[g_str_68c995e1579163001588aa0d] = {
       {
         loose = true,
         random_models = {
@@ -154,34 +154,34 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     --Crossbowmen on horses - Bad Horse
-    g_models[g_str_615351ac03385c0016b873ed] = g_models[g_str_615351ac03385c0016b87401]
+    g_models[g_str_68c995e1579163001588a9ef] = g_models[g_str_68c995e1579163001588aa03]
 
     --Crossbowmen on horses\nMid-battle dismounted from Bad Horse - Skirmishers
-    g_models[g_str_615351ac03385c0016b873ed_dismounted] = g_models[g_str_615351ac03385c0016b87401_dismounted]
+    g_models[g_str_68c995e1579163001588a9ef_dismounted] = g_models[g_str_68c995e1579163001588aa03_dismounted]
 
     --Crossbowmen on horses - Bad Horse
-    g_models[g_str_615351ac03385c0016b873ed_mounted] = g_models[g_str_615351ac03385c0016b87401]
+    g_models[g_str_68c995e1579163001588a9ef_mounted] = g_models[g_str_68c995e1579163001588aa03]
 
     -- Pikemen mixed with some halberdiers - Pikes General
-    g_models[g_str_615351ac03385c0016b873f0_general] = g_models[g_str_615351ac03385c0016b87404_general]
+    g_models[g_str_68c995e1579163001588a9f2_general] = g_models[g_str_68c995e1579163001588aa06_general]
 
     -- Pikemen mixed with some halberdiers - Pikes
-    g_models[g_str_615351ac03385c0016b873f0] = g_models[g_str_615351ac03385c0016b87404]
+    g_models[g_str_68c995e1579163001588a9f2] = g_models[g_str_68c995e1579163001588aa06]
 
     --Separately deployed halberdiers, some with armor - Raiders
-    g_models[g_str_615351ac03385c0016b873f2] = g_models[g_str_615351ac03385c0016b87406]
+    g_models[g_str_68c995e1579163001588a9f4] = g_models[g_str_68c995e1579163001588aa08]
 
     --Separately deployed halberdiers, some with armor - EF
-    g_models[g_str_615351ac03385c0016b873f3] = g_models[g_str_615351ac03385c0016b87407]
+    g_models[g_str_68c995e1579163001588a9f5] = g_models[g_str_68c995e1579163001588aa09]
 
     -- Skirmishing handgunners - Sk
-    g_models[g_str_615351ac03385c0016b873f5] = g_models[g_str_615351ac03385c0016b87409]
+    g_models[g_str_68c995e1579163001588a9f7] = g_models[g_str_68c995e1579163001588aa0b]
 
     -- Skirmishing crossbowmen - Sk
-    g_models[g_str_615351ac03385c0016b873f7] = g_models[g_str_615351ac03385c0016b873ed_dismounted]
+    g_models[g_str_68c995e1579163001588a9f9] = g_models[g_str_68c995e1579163001588a9ef_dismounted]
 
     -- Captured Burgundian artillery - Arty
-    g_models[g_str_615351ac03385c0016b873fa] = {
+    g_models[g_str_68c995e1579163001588a9fc] = {
       {
         n_models = 3,
         fixed_models = {
@@ -204,7 +204,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Ordonnance gendarmes and their coustilliers - Kn General
-    g_models[g_str_615351ab03385c0016b871f2_general] = {
+    g_models[g_str_68c995e0579163001588a7e6_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -216,7 +216,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance gendarmes and their coustilliers\nDeployment dismounted from Knights General - EF General
-    g_models[g_str_615351ab03385c0016b871f2_general_dismounted] = {
+    g_models[g_str_68c995e0579163001588a7e6_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -229,27 +229,27 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance gendarmes and their coustilliers - Kn General
-    g_models[g_str_615351ab03385c0016b871f2_general_mounted] = g_models[g_str_615351ab03385c0016b871f2_general]
+    g_models[g_str_68c995e0579163001588a7e6_general_mounted] = g_models[g_str_68c995e0579163001588a7e6_general]
 
     -- Ordonnance gendarmes and their coustilliers - Kn
-    g_models[g_str_615351ab03385c0016b871f2] = {
+    g_models[g_str_68c995e0579163001588a7e6] = {
       {
         model_data = 'troop_knight_burgundian_ordonnances'
       }
     }
 
     -- Ordonnance gendarmes and their coustilliers\nDeployment dismounted from Knights General - EF
-    g_models[g_str_615351ab03385c0016b871f2_dismounted] = {
+    g_models[g_str_68c995e0579163001588a7e6_dismounted] = {
       {
         model_data = 'troop_swordman_two_handed_burgundian_ordonnances'
       }
     }
 
     -- Ordonnance gendarmes and their coustilliers - Kn
-    g_models[g_str_615351ab03385c0016b871f2_mounted] = g_models[g_str_615351ab03385c0016b871f2]
+    g_models[g_str_68c995e0579163001588a7e6_mounted] = g_models[g_str_68c995e0579163001588a7e6]
 
     -- Organ guns, bombards, and various other pieces - Arty
-    g_models[g_str_615351ab03385c0016b871f5] = {
+    g_models[g_str_68c995e0579163001588a7e9] = {
       {
         n_models = 3,
         fixed_models = {
@@ -261,7 +261,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance longbowmen and crossbowmen - Archers
-    g_models[g_str_615351ab03385c0016b871f7] = {
+    g_models[g_str_68c995e0579163001588a7eb] = {
       {
         model_data = 'troop_crossbowman_burgundian_ordonnances'
       },
@@ -271,10 +271,10 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance longbowmen and crossbowmen Dismounted- Archers
-    g_models[g_str_615351ab03385c0016b871f7_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b871f2]
+    g_models[g_str_68c995e0579163001588a7eb_dismounted_mobile_infantry] = g_models[g_str_68c995e0579163001588a7e6]
 
     -- Ordonnance longbowmen and crossbowmen Mounted- Archers
-    g_models[g_str_615351ab03385c0016b871f7_mounted_mobile_infantry] = {
+    g_models[g_str_68c995e0579163001588a7eb_mounted_mobile_infantry] = {
       {
         n_models = 4,
         model_data = 'troop_horse_rider_burgundian_ordonnances'
@@ -282,7 +282,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance pikemen - Pikes
-    g_models[g_str_615351ab03385c0016b871fa] = {
+    g_models[g_str_68c995e0579163001588a7ee] = {
       {
         model_data = 'troop_pikeman_burgundian_ordonnances_inclined'
       },
@@ -292,7 +292,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     --mixed formations of pikemen and longbowmen - Pavisiers
-    g_models[g_str_615351ab03385c0016b871fb] = {
+    g_models[g_str_68c995e0579163001588a7ef] = {
       {
         n_models = 8,
         fixed_models = {
@@ -309,7 +309,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance handgunners - Sk
-    g_models[g_str_615351ab03385c0016b871fd] = {
+    g_models[g_str_68c995e0579163001588a7f1] = {
       {
         loose = true,
         model_data = 'troop_handgunner_burgundian_ordonnances'
@@ -317,7 +317,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Italian men-at-arms - Kn General
-    g_models[g_str_615351ab03385c0016b871ff_general] = {
+    g_models[g_str_68c995e0579163001588a7f3_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -329,28 +329,28 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Italian men-at-arms - Kn
-    g_models[g_str_615351ab03385c0016b871ff] = {
+    g_models[g_str_68c995e0579163001588a7f3] = {
       {
         model_data = 'troop_knight_late_medieval'
       }
     }
 
     -- Italian Corssbowmen on horses - Bad Horse
-    g_models[g_str_615351ab03385c0016b87201] = {
+    g_models[g_str_68c995e0579163001588a7f5] = {
       {
         model_data = 'troop_horse_rider_late_medieval'
       }
     }
 
     -- Italian Corssbowmen - Archers
-    g_models[g_str_615351ab03385c0016b87203] = {
+    g_models[g_str_68c995e0579163001588a7f7] = {
       {
         model_data = 'troop_crossbowman_late_medieval'
       }
     }
 
     -- Low Countries pikemen - Pikes
-    g_models[g_str_615351ab03385c0016b87205] = {
+    g_models[g_str_68c995e0579163001588a7f9] = {
       {
         model_data = 'troop_pikeman_late_medieval_inclined'
       },
@@ -393,38 +393,38 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Ordonnance gendarmes and their coustilliers - Kn General
-    g_models[g_str_615351ab03385c0016b8720e_general] = g_models[g_str_615351ab03385c0016b871f2_general]
+    g_models[g_str_68c995e0579163001588a802_general] = g_models[g_str_68c995e0579163001588a7e6_general]
 
     -- Ordonnance gendarmes and their coustilliers\nDeployment dismounted from Knights General - EF General
-    g_models[g_str_615351ab03385c0016b8720e_general_dismounted] = g_models[g_str_615351ab03385c0016b871f2_general_dismounted]
+    g_models[g_str_68c995e0579163001588a802_general_dismounted] = g_models[g_str_68c995e0579163001588a7e6_general_dismounted]
 
     -- Ordonnance gendarmes and their coustilliers - Kn General
-    g_models[g_str_615351ab03385c0016b8720e_general_mounted] = g_models[g_str_615351ab03385c0016b8720e_general]
+    g_models[g_str_68c995e0579163001588a802_general_mounted] = g_models[g_str_68c995e0579163001588a802_general]
 
     -- Ordonnance gendarmes and their coustilliers - Kn
-    g_models[g_str_615351ab03385c0016b8720e] = g_models[g_str_615351ab03385c0016b871f2]
+    g_models[g_str_68c995e0579163001588a802] = g_models[g_str_68c995e0579163001588a7e6]
 
 -- TODO
 --    -- Ordonnance gendarmes and their coustilliers\nDeployment dismounted from Knights General - EF
---    g_models[g_str_615351ab03385c0016b8720e_dismounted] = g_models[g_str_615351ab03385c0016b871f2_dismounted]
+--    g_models[g_str_68c995e0579163001588a802_dismounted] = g_models[g_str_68c995e0579163001588a7e6_dismounted]
 --
 --    -- Ordonnance gendarmes and their coustilliers - Kn
---    g_models[g_str_615351ab03385c0016b8720e_mounted] = g_models[g_str_615351ab03385c0016b8720e]
+--    g_models[g_str_68c995e0579163001588a802_mounted] = g_models[g_str_68c995e0579163001588a802]
 
     -- Organ guns, bombards, and various other pieces - Arty
-    g_models[g_str_615351ab03385c0016b87211] = g_models[g_str_615351ab03385c0016b871f5]
+    g_models[g_str_68c995e0579163001588a805] = g_models[g_str_68c995e0579163001588a7e9]
 
     -- Ordonnance longbowmen and crossbowmen - Archers
-    g_models[g_str_615351ab03385c0016b87213] = g_models[g_str_615351ab03385c0016b871f7]
+    g_models[g_str_68c995e0579163001588a807] = g_models[g_str_68c995e0579163001588a7eb]
 
     -- Ordonnance longbowmen and crossbowmen Dismounted- Archers
-    g_models[g_str_615351ab03385c0016b87213_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b87213]
+    g_models[g_str_68c995e0579163001588a807_dismounted_mobile_infantry] = g_models[g_str_68c995e0579163001588a807]
 
     -- Ordonnance longbowmen and crossbowmen Mounted- Archers
-    g_models[g_str_615351ab03385c0016b87213_mounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b871f7_mounted_mobile_infantry]
+    g_models[g_str_68c995e0579163001588a807_mounted_mobile_infantry] = g_models[g_str_68c995e0579163001588a7eb_mounted_mobile_infantry]
 
     -- Ordonnance pikemen - Pikes
-    g_models[g_str_615351ab03385c0016b87216_general] = {
+    g_models[g_str_68c995e0579163001588a80a_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -437,10 +437,10 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance pikemen - Pikes
-    g_models[g_str_615351ab03385c0016b87216] = g_models[g_str_615351ab03385c0016b871fa]
+    g_models[g_str_68c995e0579163001588a80a] = g_models[g_str_68c995e0579163001588a7ee]
 
     -- Militia or mercenary crossbowmen - Archers
-    g_models[g_str_615351ab03385c0016b87218] = {
+    g_models[g_str_68c995e0579163001588a80c] = {
       {
         random_models = {
           'troop_crossbowman_late_medieval',
@@ -450,7 +450,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Militia or mercenary handgunners - Sk
-    g_models[g_str_615351ab03385c0016b8721a] = {
+    g_models[g_str_68c995e0579163001588a80e] = {
       {
         loose = true,
         random_models = {
@@ -461,7 +461,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- English longbowmen - Archers
-    g_models[g_str_615351ab03385c0016b8721d] = {
+    g_models[g_str_68c995e0579163001588a811] = {
       {
         model_data = 'troop_longbowman_late_medieval'
       }
@@ -481,7 +481,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Men-at-arms - Kn General
-    g_models[g_str_615351ab03385c0016b87020_general] = {
+    g_models[g_str_68c995df579163001588a600_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -493,14 +493,14 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Men-at-arms - Kn
-    g_models[g_str_615351ab03385c0016b87020] = {
+    g_models[g_str_68c995df579163001588a600] = {
       {
         model_data = 'troop_knight_late_medieval'
       }
     }
 
     -- Jinetes - Jav Cav
-    g_models[g_str_615351ab03385c0016b87022] = {
+    g_models[g_str_68c995df579163001588a602] = {
       {
         loose = true,
         model_data = 'troop_horse_rider_late_medieval'
@@ -508,7 +508,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Pikemen - Light Spear
-    g_models[g_str_615351ab03385c0016b87024] = {
+    g_models[g_str_68c995df579163001588a604] = {
       {
         random_models = {
           'troop_pikeman_late_medieval_straight',
@@ -518,7 +518,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Sword-and-buckler men - Raiders
-    g_models[g_str_615351ab03385c0016b87026] = {
+    g_models[g_str_68c995df579163001588a606] = {
       {
         loose = true,
         random_models = {
@@ -528,7 +528,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance handgunners - Sk
-    g_models[g_str_615351ab03385c0016b87028] = {
+    g_models[g_str_68c995df579163001588a608] = {
       {
         loose = true,
         random_models = {
@@ -539,7 +539,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Organ guns, bombards, and various other pieces - Arty
-    g_models[g_str_615351ab03385c0016b8702a] = {
+    g_models[g_str_68c995df579163001588a60a] = {
       {
         n_models = 3,
         fixed_models = {
@@ -569,7 +569,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Men-at-arms - Kn General
-    g_models[g_str_615351ab03385c0016b86fb6_general] = {
+    g_models[g_str_68c995df579163001588a590_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -582,7 +582,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Men-at-arms\nDeployment dismounted from Knights General - EF General
-    g_models[g_str_615351ab03385c0016b86fb6_general_dismounted] = {
+    g_models[g_str_68c995df579163001588a590_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -595,34 +595,34 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Men-at-arms\nDeployment dismounted from Knights General- Kn General
-    g_models[g_str_615351ab03385c0016b86fb6_general_mounted] = g_models[g_str_615351ab03385c0016b86fb6_general]
+    g_models[g_str_68c995df579163001588a590_general_mounted] = g_models[g_str_68c995df579163001588a590_general]
 
 
     -- Men-at-arms - Kn
-    g_models[g_str_615351ab03385c0016b86fb6] = g_models[g_str_615351ab03385c0016b87020]
+    g_models[g_str_68c995df579163001588a590] = g_models[g_str_68c995df579163001588a600]
 
     -- Men-at-arms\nDeployment dismounted from Knights - EF
-    g_models[g_str_615351ab03385c0016b86fb6_dismounted] = {
+    g_models[g_str_68c995df579163001588a590_dismounted] = {
       {
         model_data = 'troop_swordman_late_medieval'
       }
     }
 
     -- Men-at-arms\nDeployment dismounted from Knights- Kn
-    g_models[g_str_615351ab03385c0016b86fb6_mounted] = g_models[g_str_615351ab03385c0016b86fb6]
+    g_models[g_str_68c995df579163001588a590_mounted] = g_models[g_str_68c995df579163001588a590]
 
     -- Ginetes - Jav Cav
-    g_models[g_str_615351ab03385c0016b86fb9] = g_models[g_str_615351ab03385c0016b87022]
+    g_models[g_str_68c995df579163001588a593] = g_models[g_str_68c995df579163001588a602]
 
     -- Spearmen - Heavy Foot
-    g_models[g_str_615351ab03385c0016b86fbb] = {
+    g_models[g_str_68c995df579163001588a595] = {
       {
         model_data = 'troop_spearman_late_medieval'
       }
     }
 
     -- Crossbow and bowmen - Bow Levy
-    g_models[g_str_615351ab03385c0016b86fbd] = {
+    g_models[g_str_68c995df579163001588a597] = {
       {
         loose = true,
         random_models = {
@@ -633,7 +633,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Crossbow and bowmen - Archers
-    g_models[g_str_615351ab03385c0016b86fbe] = {
+    g_models[g_str_68c995df579163001588a598] = {
       {
         model_data = 'troop_crossbowman_late_medieval'
       },
@@ -643,7 +643,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Skirmishing slingers - Sk [not precisely slingers yet]
-    g_models[g_str_615351ab03385c0016b86fc0] = {
+    g_models[g_str_68c995df579163001588a59b] = {
       {
         loose = true,
         model_data = 'troop_handgunner_late_medieval'
@@ -651,17 +651,17 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Grenadine mercenaries - Jav Cav [not even close to grenadine]
-    g_models[g_str_615351ab03385c0016b86fc2] = g_models[g_str_615351ab03385c0016b87022]
+    g_models[g_str_68c995df579163001588a59d] = g_models[g_str_68c995df579163001588a602]
 
     -- Javelinmen - LF
-    g_models[g_str_615351ab03385c0016b86fc4] = {
+    g_models[g_str_68c995df579163001588a59f] = {
       {
         model_data = 'troop_spearman_no_shield_late_medieval'
       }
     }
 
     -- Peasants - Rabble
-    g_models[g_str_615351ab03385c0016b86fc6] = {
+    g_models[g_str_68c995df579163001588a5a1] = {
       {
         model_data = 'troop_horde_late_medieval',
         loose = true
@@ -686,7 +686,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Brother men-at-arms, sergeants, and turcopoles - Kn General
-    g_models[g_str_615351b103385c0016b880b6_general] = {
+    g_models[g_str_68c995e5579163001588b72c_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -699,7 +699,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Brother men-at-arms, sergeants, and turcopoles\nDeployment dismounted from Knights General - EF General
-    g_models[g_str_615351b103385c0016b880b6_general_dismounted] = {
+    g_models[g_str_68c995e5579163001588b72c_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -712,19 +712,19 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Brother men-at-arms, sergeants, and turcopoles\nDeployment dismounted from Knights General- Kn General
-    g_models[g_str_615351b103385c0016b880b6_general_mounted] = g_models[g_str_615351b103385c0016b880b6_general]
+    g_models[g_str_68c995e5579163001588b72c_general_mounted] = g_models[g_str_68c995e5579163001588b72c_general]
 
     -- Men-at-arms - Kn
-    g_models[g_str_615351b103385c0016b880b6] = g_models[g_str_615351ab03385c0016b87020]
+    g_models[g_str_68c995e5579163001588b72c] = g_models[g_str_68c995df579163001588a600]
 
     -- Men-at-arms\nDeployment dismounted from Knights - EF
-    g_models[g_str_615351b103385c0016b880b6_dismounted] = g_models[g_str_615351ab03385c0016b86fb6_dismounted]
+    g_models[g_str_68c995e5579163001588b72c_dismounted] = g_models[g_str_68c995df579163001588a590_dismounted]
 
     -- Men-at-arms\nDeployment dismounted from Knights- Kn
-    g_models[g_str_615351b103385c0016b880b6_mounted] = g_models[g_str_615351ab03385c0016b86fb6]
+    g_models[g_str_68c995e5579163001588b72c_mounted] = g_models[g_str_68c995df579163001588a590]
 
     -- Greek or colonist spearmen - HF General
-    g_models[g_str_615351b103385c0016b880b9_general] = {
+    g_models[g_str_68c995e5579163001588b72f_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -737,14 +737,14 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Greek or colonist spearmen - Heavy Foot
-    g_models[g_str_615351b103385c0016b880b9] = {
+    g_models[g_str_68c995e5579163001588b72f] = {
       {
         model_data = 'troop_spearman_late_medieval'
       }
     }
 
     -- Greek bowmen and crossbowmen - Bow Levy General
-    g_models[g_str_615351b103385c0016b880bb_general] = {
+    g_models[g_str_68c995e5579163001588b731_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -756,7 +756,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Greek bowmen and crossbowmen - Bow Levy
-    g_models[g_str_615351b103385c0016b880bb] = {
+    g_models[g_str_68c995e5579163001588b731] = {
       {
         loose = true,
         random_models = {
@@ -767,7 +767,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Colonist crossbowmen - Archers General
-    g_models[g_str_615351b103385c0016b880bd_general] = {
+    g_models[g_str_68c995e5579163001588b734_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -780,14 +780,14 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Colonist crossbowmen - Archers
-    g_models[g_str_615351b103385c0016b880bd] = {
+    g_models[g_str_68c995e5579163001588b734] = {
       {
         model_data = 'troop_crossbowman_late_medieval'
       }
     }
 
     -- Mercenary crossbowmen - Archers General
-    g_models[g_str_615351b103385c0016b880bf_general] = {
+    g_models[g_str_68c995e5579163001588b736_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -800,14 +800,14 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Mercenary crossbowmen - Archers
-    g_models[g_str_615351b103385c0016b880bf] = {
+    g_models[g_str_68c995e5579163001588b736] = {
       {
         model_data = 'troop_crossbowman_swiss'
       }
     }
 
     -- Skirmishing Handgunners - Sk
-    g_models[g_str_615351b103385c0016b880c2] = {
+    g_models[g_str_68c995e5579163001588b739] = {
       {
         loose = true,
         model_data = 'troop_handgunner_late_medieval'
@@ -815,7 +815,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Mercenary halberdiers - EF General
-    g_models[g_str_615351b103385c0016b880c5_general] = {
+    g_models[g_str_68c995e5579163001588b73c_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -828,14 +828,14 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Mercenary halberdiers - EF
-    g_models[g_str_615351b103385c0016b880c5] = {
+    g_models[g_str_68c995e5579163001588b73c] = {
       {
         model_data = 'troop_halberdier_late_medieval'
       }
     }
 
     -- Bombards and other guns - Arty
-    g_models[g_str_615351b103385c0016b880c8] = g_models[g_str_615351ab03385c0016b8702a]
+    g_models[g_str_68c995e5579163001588b73f] = g_models[g_str_68c995df579163001588a60a]
 
     -- Transitional Renaissance Spanish Camp
     g_models[g_str_5fb1b9eee1af06001770a00c_camp] = {
@@ -852,7 +852,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Men-at-arms - Kn General
-    g_models[g_str_615351aa03385c0016b86d79_general] = {
+    g_models[g_str_68c995df579163001588a336_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -865,7 +865,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Men-at-arms\nDeployment dismounted from Knights General - EF General
-    g_models[g_str_615351aa03385c0016b86d79_general_dismounted] = {
+    g_models[g_str_68c995df579163001588a336_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -878,83 +878,83 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Men-at-arms\nDeployment dismounted from Knights General- Kn General
-    g_models[g_str_615351aa03385c0016b86d79_general_mounted] = g_models[g_str_615351aa03385c0016b86d79_general]
+    g_models[g_str_68c995df579163001588a336_general_mounted] = g_models[g_str_68c995df579163001588a336_general]
 
     -- Men-at-arms - Kn
-    g_models[g_str_615351aa03385c0016b86d79] = g_models[g_str_615351ab03385c0016b87020]
+    g_models[g_str_68c995df579163001588a336] = g_models[g_str_68c995df579163001588a600]
 
     -- Men-at-arms\nDeployment dismounted from Knights - EF
-    g_models[g_str_615351aa03385c0016b86d79_dismounted] = g_models[g_str_615351ab03385c0016b86fb6_dismounted]
+    g_models[g_str_68c995df579163001588a336_dismounted] = g_models[g_str_68c995df579163001588a590_dismounted]
 
     -- Men-at-arms\nDeployment dismounted from Knights- Kn
-    g_models[g_str_615351aa03385c0016b86d79_mounted] = g_models[g_str_615351ab03385c0016b86fb6]
+    g_models[g_str_68c995df579163001588a336_mounted] = g_models[g_str_68c995df579163001588a590]
 
     -- Currours - JavCav
-    g_models[g_str_615351aa03385c0016b86d7c] = g_models[g_str_615351ab03385c0016b87022]
+    g_models[g_str_68c995df579163001588a339] = g_models[g_str_68c995df579163001588a602]
 
     -- Retinue billmen - EF
-    g_models[g_str_615351aa03385c0016b86d7e] = g_models[g_str_615351ab03385c0016b86fb6_dismounted]
+    g_models[g_str_68c995df579163001588a33b] = g_models[g_str_68c995df579163001588a590_dismounted]
 
     -- Retinue billmen\nDismounted mobile infantry - EF
-    g_models[g_str_615351aa03385c0016b86d7e_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b86fb6_dismounted]
+    g_models[g_str_68c995df579163001588a33b_dismounted_mobile_infantry] = g_models[g_str_68c995df579163001588a590_dismounted]
     
     -- Retinue billmen\nMounted mobile infantry - EF
-    g_models[g_str_615351aa03385c0016b86d7e_mounted_mobile_infantry] = {
+    g_models[g_str_68c995df579163001588a33b_mounted_mobile_infantry] = {
       {
         model_data = 'troop_horse_rider_late_medieval'
       }
     }
 
     -- Retinue bowmen  - Archers
-    g_models[g_str_615351aa03385c0016b86d82] = g_models[g_str_615351ab03385c0016b8721d]
+    g_models[g_str_68c995df579163001588a33f] = g_models[g_str_68c995e0579163001588a811]
 
     -- Retinue bowmen\nDismounted mobile infantry  - Archers
-    g_models[g_str_615351aa03385c0016b86d82_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b8721d]
+    g_models[g_str_68c995df579163001588a33f_dismounted_mobile_infantry] = g_models[g_str_68c995e0579163001588a811]
 
     -- Retinue bowmen\nMunted mobile infantry - Archers
-    g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d7e_mounted_mobile_infantry]
+    g_models[g_str_68c995df579163001588a33f_mounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33b_mounted_mobile_infantry]
 
     -- Welsh spearmen - Light Spear
-    g_models[g_str_615351aa03385c0016b86d85] = {
+    g_models[g_str_68c995df579163001588a342] = {
       {
         model_data = 'troop_spearman_no_shield_late_medieval'
       }
     }
 
     -- Welsh bowmen  - Archers
-    g_models[g_str_615351aa03385c0016b86d89] = g_models[g_str_615351ab03385c0016b8721d]
+    g_models[g_str_68c995df579163001588a346] = g_models[g_str_68c995e0579163001588a811]
 
     -- Irish kerns - LF
-    g_models[g_str_615351aa03385c0016b86d8c] = {
+    g_models[g_str_68c995df579163001588a349] = {
       {
         model_data = 'troop_horde_late_medieval'
       }
     }
 
     -- Continental handgunners - Sk
-    g_models[g_str_615351aa03385c0016b86d90] = {
+    g_models[g_str_68c995df579163001588a34d] = {
       {
         model_data = 'troop_bowman_late_medieval'
       }
     }
     -- French crossbowmen - Sk
-    g_models[g_str_615351aa03385c0016b86d94] = {
+    g_models[g_str_68c995df579163001588a351] = {
       {
         model_data = 'troop_crossbowman_burgundian_ordonnances'
       }
     }
 
     -- Breton javelinmen
-    g_models[g_str_615351aa03385c0016b86d97] = g_models[g_str_615351a903385c0016b86a07]
+    g_models[g_str_68c995df579163001588a354] = g_models[g_str_68c995dd5791630015889fb7]
 
     -- Bombards
-    g_models[g_str_615351aa03385c0016b86d99] =  g_models[g_str_615351ab03385c0016b8702a]
+    g_models[g_str_68c995df579163001588a356] =  g_models[g_str_68c995df579163001588a60a]
 
     -- Camp
     g_models[g_str_5fb1b9e6e1af060017709b42_camp] =  g_models[g_str_5fb1b9e7e1af060017709bfd_camp]
 
     -- Shire Billmen - HF
-    g_models[g_str_6153519603385c0016b84057] = g_models[g_str_615351ac03385c0016b87407]
+    g_models[g_str_6153519603385c0016b84057] = g_models[g_str_68c995e1579163001588aa09]
 
     -- Shire bowmen - Archers
     g_models[g_str_6153519603385c0016b84059] = {
@@ -964,10 +964,10 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Northern border staves - Jav Cav
-    g_models[g_str_6153519603385c0016b84052] = g_models[g_str_615351ac03385c0016b873ed]
+    g_models[g_str_6153519603385c0016b84052] = g_models[g_str_68c995e1579163001588a9ef]
 
     -- Northern border infantry
-    g_models[g_str_6153519603385c0016b84054] = g_models[g_str_615351ab03385c0016b87026]
+    g_models[g_str_6153519603385c0016b84054] = g_models[g_str_68c995df579163001588a606]
 
 -- Tudor English
 -- 1489 AD to 1515 AD
@@ -976,7 +976,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Men-at-arms - Kn General
-    g_models[g_str_615351aa03385c0016b86da3_general] = {
+    g_models[g_str_68c995df579163001588a360_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -989,7 +989,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Men-at-arms\nDeployment dismounted from Knights General - EF General
-    g_models[g_str_615351aa03385c0016b86da3_general_dismounted] = {
+    g_models[g_str_68c995df579163001588a360_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1002,43 +1002,43 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Men-at-arms\nDeployment dismounted from Knights General- Kn General
-    g_models[g_str_615351aa03385c0016b86da3_general_mounted] = g_models[g_str_615351aa03385c0016b86d79_general]
+    g_models[g_str_68c995df579163001588a360_general_mounted] = g_models[g_str_68c995df579163001588a336_general]
 
     -- Men-at-arms - Kn
-    g_models[g_str_615351aa03385c0016b86da3] = g_models[g_str_615351aa03385c0016b86d79]
+    g_models[g_str_68c995df579163001588a360] = g_models[g_str_68c995df579163001588a336]
 
     -- Men-at-arms\nDeployment dismounted from Knights - EF
-    g_models[g_str_615351aa03385c0016b86da3_dismounted] = g_models[g_str_615351aa03385c0016b86d79_dismounted]
+    g_models[g_str_68c995df579163001588a360_dismounted] = g_models[g_str_68c995df579163001588a336_dismounted]
 
     -- Men-at-arms\nDeployment dismounted from Knights- Kn
-    g_models[g_str_615351aa03385c0016b86da3_mounted] = g_models[g_str_615351aa03385c0016b86d79]
+    g_models[g_str_68c995df579163001588a360_mounted] = g_models[g_str_68c995df579163001588a336]
 
     -- Retinue billmen - EF
-    g_models[g_str_615351aa03385c0016b86da6] = g_models[g_str_615351b103385c0016b880c5]
+    g_models[g_str_68c995df579163001588a363] = g_models[g_str_68c995e5579163001588b73c]
 
     -- Retinue billmen\nDismounted mobile infantry - EF
-    g_models[g_str_615351aa03385c0016b86da6_dismounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86da6]
+    g_models[g_str_68c995df579163001588a363_dismounted_mobile_infantry] = g_models[g_str_68c995df579163001588a363]
     
     -- Retinue billmen\nMounted mobile infantry - EF
-    g_models[g_str_615351aa03385c0016b86da6_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d7e_mounted_mobile_infantry]
+    g_models[g_str_68c995df579163001588a363_mounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33b_mounted_mobile_infantry]
 
     -- Retinue bowmen  - Archers
-    g_models[g_str_615351aa03385c0016b86daa] = g_models[g_str_615351aa03385c0016b86d82]
+    g_models[g_str_68c995df579163001588a367] = g_models[g_str_68c995df579163001588a33f]
 
     -- Retinue bowmen\nDismounted mobile infantry  - Archers
-    g_models[g_str_615351aa03385c0016b86daa_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82]
+    g_models[g_str_68c995df579163001588a367_mounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33f]
 
     -- Retinue bowmen\nMunted mobile infantry - Archers
-    g_models[g_str_615351aa03385c0016b86daa_dismounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+    g_models[g_str_68c995df579163001588a367_dismounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33f_mounted_mobile_infantry]
 
     -- Shire Billmen - HF
-    g_models[g_str_615351aa03385c0016b86dad] = g_models[g_str_6153519603385c0016b84057]
+    g_models[g_str_68c995df579163001588a36a] = g_models[g_str_6153519603385c0016b84057]
 
     -- Northern border staves - Jav Cav
-    g_models[g_str_615351aa03385c0016b86daf] = g_models[g_str_6153519603385c0016b84052]
+    g_models[g_str_68c995df579163001588a36c] = g_models[g_str_6153519603385c0016b84052]
 
     -- Bombards
-    g_models[g_str_615351aa03385c0016b86db1] =  g_models[g_str_615351aa03385c0016b86d99]
+    g_models[g_str_68c995df579163001588a36e] =  g_models[g_str_68c995df579163001588a356]
 
     -- Camp
     g_models[g_str_5fb1b9e6e1af060017709b49_camp] =  g_models[g_str_5fb1b9e6e1af060017709b42_camp]
@@ -1050,7 +1050,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Ordonnance gendarmes - Kn General
-    g_models[g_str_615351ab03385c0016b870ee_general] = {
+    g_models[g_str_68c995e0579163001588a6d7_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -1063,7 +1063,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Ordonnance gendarmes\nDeployment dismounted from Knights General - EF General
-    g_models[g_str_615351ab03385c0016b870ee_general_dismounted] = {
+    g_models[g_str_68c995e0579163001588a6d7_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1076,67 +1076,67 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance gendarmes\nDeployment dismounting as Elite Foot- Kn General
-    g_models[g_str_615351ab03385c0016b870ee_general_mounted] = g_models[g_str_615351ab03385c0016b870ee_general]
+    g_models[g_str_68c995e0579163001588a6d7_general_mounted] = g_models[g_str_68c995e0579163001588a6d7_general]
 
     -- Men-at-arms - Kn
-    g_models[g_str_615351ab03385c0016b870ee] = g_models[g_str_615351aa03385c0016b86d79]
+    g_models[g_str_68c995e0579163001588a6d7] = g_models[g_str_68c995df579163001588a336]
 
     -- Men-at-arms\nDeployment dismounted from Knights - EF
-    g_models[g_str_615351ab03385c0016b870ee_dismounted] = g_models[g_str_615351aa03385c0016b86d79_dismounted]
+    g_models[g_str_68c995e0579163001588a6d7_dismounted] = g_models[g_str_68c995df579163001588a336_dismounted]
 
     -- Men-at-arms\nDeployment dismounted from Knights- Kn
-    g_models[g_str_615351ab03385c0016b870ee_mounted] = g_models[g_str_615351aa03385c0016b86d79]
+    g_models[g_str_68c995e0579163001588a6d7_mounted] = g_models[g_str_68c995df579163001588a336]
 
     -- Retinue bowmen  - Archers
-    g_models[g_str_615351ab03385c0016b870f1] = g_models[g_str_615351aa03385c0016b86d82]
+    g_models[g_str_68c995e0579163001588a6da] = g_models[g_str_68c995df579163001588a33f]
 
     -- Retinue bowmen\nDismounted mobile infantry  - Archers
-    g_models[g_str_615351ab03385c0016b870f1_dismounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82]
+    g_models[g_str_68c995e0579163001588a6da_dismounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33f]
 
     -- Retinue bowmen\nMunted mobile infantry - Archers
-    g_models[g_str_615351ab03385c0016b870f1_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+    g_models[g_str_68c995e0579163001588a6da_mounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33f_mounted_mobile_infantry]
     
     -- Men-at-arms - Kn General
-    g_models[g_str_615351ab03385c0016b870f4_general] = g_models[g_str_615351ab03385c0016b870ee_general]
+    g_models[g_str_68c995e0579163001588a6dd_general] = g_models[g_str_68c995e0579163001588a6d7_general]
 
     -- Men-at-arms - Kn
-    g_models[g_str_615351ab03385c0016b870f4] = g_models[g_str_615351aa03385c0016b86d79]
+    g_models[g_str_68c995e0579163001588a6dd] = g_models[g_str_68c995df579163001588a336]
     
     -- Arriere-ban, garrison, or militia voulgiers
-    g_models[g_str_615351ab03385c0016b870f6] = g_models[g_str_615351ab03385c0016b87026]
+    g_models[g_str_68c995e0579163001588a6df] = g_models[g_str_68c995df579163001588a606]
 
     -- Arriere-ban, garrison, or militia voulgiers\nDismounted mobile infantry
-    g_models[g_str_615351ab03385c0016b870f6_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b87026]
+    g_models[g_str_68c995e0579163001588a6df_dismounted_mobile_infantry] = g_models[g_str_68c995df579163001588a606]
 
     -- Arriere-ban, garrison, or militia voulgiers\nMounted mobile infantry
-    g_models[g_str_615351ab03385c0016b870f6_mounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b870f1_mounted_mobile_infantry]
+    g_models[g_str_68c995e0579163001588a6df_mounted_mobile_infantry] = g_models[g_str_68c995e0579163001588a6da_mounted_mobile_infantry]
 
     -- 'Francs bowmen with some arriere-ban, garrison, or militia bowmen or crossbowmen  - Bow Levy
-    g_models[g_str_615351ab03385c0016b870f9] =  g_models[g_str_615351ab03385c0016b86fbd]
+    g_models[g_str_615351ab03385c0016b870f9] =  g_models[g_str_68c995df579163001588a597]
 
     -- 'Francs bowmen with some arriere-ban, garrison, or militia bowmen or crossbowmen\nDismounted mobile infantry  - Bow Levy
     g_models[g_str_615351ab03385c0016b870f9_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b870f9]
 
     -- 'Francs bowmen with some arriere-ban, garrison, or militia bowmen or crossbowmen\nMunted mobile infantry - Bow Levy
-    g_models[g_str_615351ab03385c0016b870f9_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+    g_models[g_str_615351ab03385c0016b870f9_mounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33f_mounted_mobile_infantry]
 
     -- Mercenary crossbowmen  - Archers
-    g_models[g_str_615351ab03385c0016b870fc] = g_models[g_str_615351b103385c0016b880bf]
+    g_models[g_str_68c995e0579163001588a6e9] = g_models[g_str_68c995e5579163001588b736]
 
     -- Mercenary crossbowmen\nDismounted mobile infantry  - Archers
-    g_models[g_str_615351ab03385c0016b870fc_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b870fc]
+    g_models[g_str_68c995e0579163001588a6e9_dismounted_mobile_infantry] = g_models[g_str_68c995e0579163001588a6e9]
 
     -- Mercenary crossbowmen\nMunted mobile infantry - Archers
-    g_models[g_str_615351ab03385c0016b870fc_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+    g_models[g_str_68c995e0579163001588a6e9_mounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33f_mounted_mobile_infantry]
     
     -- Gascon bidets or Bretons - LF
-    g_models[g_str_615351ab03385c0016b870ff] = g_models[g_str_615351aa03385c0016b86d85]
+    g_models[g_str_68c995e0579163001588a6ec] = g_models[g_str_68c995df579163001588a342]
 
     -- Handgunners - Sk
-    g_models[g_str_615351ab03385c0016b87101] = g_models[g_str_615351ac03385c0016b87409]
+    g_models[g_str_68c995e0579163001588a6ee] = g_models[g_str_68c995e1579163001588aa0b]
 
     -- Bombards and other big guns
-    g_models[g_str_615351ab03385c0016b87103] =  g_models[g_str_615351aa03385c0016b86d99]
+    g_models[g_str_68c995e0579163001588a6f0] =  g_models[g_str_68c995df579163001588a356]
 
     -- Camp
     g_models[g_str_5fb1b9e8e1af060017709c53_camp] =  g_models[g_str_5fb1b9e6e1af060017709b42_camp]
@@ -1149,7 +1149,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Ordonnance gendarmes - Kn General
-    g_models[g_str_615351ab03385c0016b8710c_general] = {
+    g_models[g_str_68c995e0579163001588a6f9_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -1162,7 +1162,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Ordonnance gendarmes\nDeployment dismounted from Knights General - EF General
-    g_models[g_str_615351ab03385c0016b8710c_general_dismounted] = {
+    g_models[g_str_68c995e0579163001588a6f9_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1175,77 +1175,77 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Ordonnance gendarmes\nDeployment dismounting as Elite Foot- Kn General
-    g_models[g_str_615351ab03385c0016b8710c_general_mounted] = g_models[g_str_615351aa03385c0016b86d79_general]
+    g_models[g_str_68c995e0579163001588a6f9_general_mounted] = g_models[g_str_68c995df579163001588a336_general]
 
     -- Men-at-arms - Kn
-    g_models[g_str_615351ab03385c0016b8710c] = g_models[g_str_615351aa03385c0016b86d79]
+    g_models[g_str_68c995e0579163001588a6f9] = g_models[g_str_68c995df579163001588a336]
 
     -- Men-at-arms\nDeployment dismounted from Knights - EF
-    g_models[g_str_615351ab03385c0016b8710c_dismounted] = g_models[g_str_615351ab03385c0016b870ee_general]
+    g_models[g_str_68c995e0579163001588a6f9_dismounted] = g_models[g_str_68c995e0579163001588a6d7_general]
 
     -- Men-at-arms\nDeployment dismounted from Knights- Kn
-    g_models[g_str_615351ab03385c0016b8710c_mounted] = g_models[g_str_615351aa03385c0016b86d79]
+    g_models[g_str_68c995e0579163001588a6f9_mounted] = g_models[g_str_68c995df579163001588a336]
 
     -- Ordonnance bowmen now fighting while mounted: mostly equipped with longbows, but some crossbows - Elite Cav
-    g_models[g_str_615351ab03385c0016b8710f] = g_models[g_str_615351ac03385c0016b87401]
+    g_models[g_str_68c995e0579163001588a6fc] = g_models[g_str_68c995e1579163001588aa03]
     
     -- Ordonnance bowmen now fighting while mounted: mostly equipped with longbows, but some crossbows\nDeployment dismounted from Elite Cavalry - Archers
-    g_models[g_str_615351ab03385c0016b8710f_dismounted] = g_models[g_str_615351ab03385c0016b870f1]
+    g_models[g_str_68c995e0579163001588a6fc_dismounted] = g_models[g_str_68c995e0579163001588a6da]
 
     -- Ordonnance bowmen now fighting while mounted: mostly equipped with longbows, but some crossbows\nDeployment dismounted from Elite Cavalry - Elite Cav
-    g_models[g_str_615351ab03385c0016b8710f_mounted] = g_models[g_str_615351ab03385c0016b8710f]
+    g_models[g_str_68c995e0579163001588a6fc_mounted] = g_models[g_str_68c995e0579163001588a6fc]
 
     -- Savoyard, Italian, or Arriere-ban men-at-arms - Kn General
-    g_models[g_str_615351ab03385c0016b87112_general] = g_models[g_str_615351ab03385c0016b8710c_general]
+    g_models[g_str_68c995e0579163001588a6ff_general] = g_models[g_str_68c995e0579163001588a6f9_general]
 
     -- Savoyard, Italian, or Arriere-ban men-at-arms - Kn
-    g_models[g_str_615351ab03385c0016b87112] = g_models[g_str_615351ab03385c0016b8710c]
+    g_models[g_str_68c995e0579163001588a6ff] = g_models[g_str_68c995e0579163001588a6f9]
 
     -- Arriere-ban, garrison, or militia voulgiers
-    g_models[g_str_615351ab03385c0016b87114] = g_models[g_str_615351ab03385c0016b87026]
+    g_models[g_str_68c995e0579163001588a701] = g_models[g_str_68c995df579163001588a606]
 
     -- Arriere-ban, garrison, or militia voulgiers\nDismounted mobile infantry
-    g_models[g_str_615351ab03385c0016b87114_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b87026]
+    g_models[g_str_68c995e0579163001588a701_dismounted_mobile_infantry] = g_models[g_str_68c995df579163001588a606]
 
     -- Arriere-ban, garrison, or militia voulgiers\nMounted mobile infantry
-    g_models[g_str_615351ab03385c0016b87114_mounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b870f1_mounted_mobile_infantry]
+    g_models[g_str_68c995e0579163001588a701_mounted_mobile_infantry] = g_models[g_str_68c995e0579163001588a6da_mounted_mobile_infantry]
 
     -- Retrained Francs bowmen  - Pikes
-    g_models[g_str_615351ab03385c0016b87117] =  g_models[g_str_615351ab03385c0016b87205]
+    g_models[g_str_68c995e0579163001588a704] =  g_models[g_str_68c995e0579163001588a7f9]
 
     -- Aventurier crossbowmen  - Archers
-    g_models[g_str_615351ab03385c0016b87119] = {
+    g_models[g_str_68c995e0579163001588a706] = {
         {
           model_data = 'troop_crossbowman_late_medieval'
         }
     }
 
     -- Aventurier crossbowmen  - Sk
-    g_models[g_str_615351ab03385c0016b8711a] = {
+    g_models[g_str_68c995e0579163001588a707] = {
         {
           model_data = 'troop_crossbowman_late_medieval'
         }
     }
 
-    g_models[g_str_615351ab03385c0016b8711c] = g_models[g_str_615351ab03385c0016b86fbd]
+    g_models[g_str_68c995e0579163001588a709] = g_models[g_str_68c995df579163001588a597]
 
     -- Mercenary crossbowmen  - Archers
-    g_models[g_str_615351ab03385c0016b8711e] = g_models[g_str_615351ab03385c0016b870fc]
+    g_models[g_str_68c995e0579163001588a70c] = g_models[g_str_68c995e0579163001588a6e9]
 
     -- Mercenary crossbowmen\nDismounted mobile infantry  - Archers
-    g_models[g_str_615351ab03385c0016b8711e_dismounted_mobile_infantry] = g_models[g_str_615351ab03385c0016b8711e]
+    g_models[g_str_68c995e0579163001588a70c_dismounted_mobile_infantry] = g_models[g_str_68c995e0579163001588a70c]
 
     -- Mercenary crossbowmen\nMunted mobile infantry - Archers
-    g_models[g_str_615351ab03385c0016b8711e_mounted_mobile_infantry] = g_models[g_str_615351aa03385c0016b86d82_mounted_mobile_infantry]
+    g_models[g_str_68c995e0579163001588a70c_mounted_mobile_infantry] = g_models[g_str_68c995df579163001588a33f_mounted_mobile_infantry]
 
     -- Gascon bidets or Bretons - LF
-    g_models[g_str_615351ab03385c0016b87121] = g_models[g_str_615351ab03385c0016b870ff]
+    g_models[g_str_68c995e0579163001588a70f] = g_models[g_str_68c995e0579163001588a6ec]
 
     -- Handgunners - Sk
-    g_models[g_str_615351ab03385c0016b87123] = g_models[g_str_615351ac03385c0016b87409]
+    g_models[g_str_68c995e0579163001588a711] = g_models[g_str_68c995e1579163001588aa0b]
 
     -- Bombards and other big guns
-    g_models[g_str_615351ab03385c0016b87125] =  g_models[g_str_615351aa03385c0016b86d99]
+    g_models[g_str_68c995e0579163001588a713] =  g_models[g_str_68c995df579163001588a356]
 
     -- Camp
     g_models[g_str_5fb1b9e8e1af060017709c5b_camp] =  g_models[g_str_5fb1b9e6e1af060017709b42_camp]
@@ -1257,7 +1257,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphracts General
-    g_models[g_str_615351ac03385c0016b87303_general] = {
+    g_models[g_str_68c995e0579163001588a8ff_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1270,17 +1270,17 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphract
-    g_models[g_str_615351ac03385c0016b87303] = {
+    g_models[g_str_68c995e0579163001588a8ff] = {
       {
         model_data = 'troop_knight_late_medieval'
       }
     }
 
     -- Armored crossbowmen on horses - Bad Horse
-    g_models[g_str_615351ac03385c0016b87305] = g_models[g_str_615351ab03385c0016b87201]
+    g_models[g_str_68c995e0579163001588a901] = g_models[g_str_68c995e0579163001588a7f5]
 
     -- City guard halberdiers or axemen - EF General
-    g_models[g_str_615351ac03385c0016b87307_general] = {
+    g_models[g_str_68c995e0579163001588a903_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1293,17 +1293,17 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
     
     -- City guard halberdiers or axemen - EF
-    g_models[g_str_615351ac03385c0016b87307] = g_models[g_str_615351b103385c0016b880c5]
+    g_models[g_str_68c995e0579163001588a903] = g_models[g_str_68c995e5579163001588b73c]
 
     -- City militia crossbowmen, some with pavises or armor - Bow Levy
-    g_models[g_str_615351ac03385c0016b87309] = {
+    g_models[g_str_68c995e0579163001588a905] = {
       {
         model_data = 'troop_crossbowman_late_medieval'
       }
     }
   
     -- City militia crossbowmen, some with pavises or armor - Archers General
-    g_models[g_str_615351ac03385c0016b8730a_general] = {
+    g_models[g_str_68c995e0579163001588a906_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1316,10 +1316,10 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- City militia crossbowmen, some with pavises or armor - Archers
-    g_models[g_str_615351ac03385c0016b8730a] = g_models[g_str_615351b103385c0016b880bd]
+    g_models[g_str_68c995e0579163001588a906] = g_models[g_str_68c995e5579163001588b734]
 
     -- City militia spearmen or pikemen - HF General
-    g_models[g_str_615351ac03385c0016b8730c_general] = {
+    g_models[g_str_68c995e0579163001588a909_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1332,10 +1332,10 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
     
     -- City militia spearmen or pikemen - HF
-    g_models[g_str_615351ac03385c0016b8730c] = g_models[g_str_615351b103385c0016b880b9]
+    g_models[g_str_68c995e0579163001588a909] = g_models[g_str_68c995e5579163001588b72f]
 
     -- City militia spearmen or pikemen - Pikes General
-    g_models[g_str_615351ac03385c0016b8730d_general] = {
+    g_models[g_str_68c995e0579163001588a90a_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1348,26 +1348,26 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
     
     -- City militia spearmen or pikemen - Pikes
-    g_models[g_str_615351ac03385c0016b8730d] = g_models[g_str_615351ab03385c0016b87205]
+    g_models[g_str_68c995e0579163001588a90a] = g_models[g_str_68c995e0579163001588a7f9]
 
     -- City militia skirmishing bowmen - Skirmishers
-    g_models[g_str_615351ac03385c0016b87310] = g_models[g_str_615351aa03385c0016b86d90]
+    g_models[g_str_68c995e0579163001588a90d] = g_models[g_str_68c995df579163001588a34d]
 
     -- Poorly equipped heerban - Horde
-    g_models[g_str_615351ac03385c0016b87313] = {
+    g_models[g_str_68c995e0579163001588a910] = {
       {
         loose = true,
         model_data = 'troop_horde_late_medieval'
       }
     }
     -- Heerban armed with crossbow or bow - Bow Levy
-    g_models[g_str_615351ac03385c0016b87315] = g_models[g_str_615351ab03385c0016b86fbd]
+    g_models[g_str_68c995e0579163001588a912] = g_models[g_str_68c995df579163001588a597]
 
     -- Heerban handgunners - Skirmishers
-    g_models[g_str_615351ac03385c0016b87317] = g_models[g_str_615351b103385c0016b880c2]
+    g_models[g_str_68c995e0579163001588a915] = g_models[g_str_68c995e5579163001588b739]
 
     -- Mercenary axemen, swordsmen, and halberdiers - HF General
-    g_models[g_str_615351ac03385c0016b87319_general] = {
+    g_models[g_str_68c995e0579163001588a917_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1380,7 +1380,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
     
     -- Mercenary axemen, swordsmen, and halberdiers - HF
-    g_models[g_str_615351ac03385c0016b87319] = {
+    g_models[g_str_68c995e0579163001588a917] = {
       {
         random_models = {
           'troop_swordman_late_medieval',
@@ -1391,13 +1391,13 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Mercenary pikemen - Pikes General
-    g_models[g_str_615351ac03385c0016b8731c_general] = g_models[g_str_615351ac03385c0016b8730d_general]
+    g_models[g_str_68c995e0579163001588a91a_general] = g_models[g_str_68c995e0579163001588a90a_general]
     
     -- Mercenary pikemen - Pikes
-    g_models[g_str_615351ac03385c0016b8731c] = g_models[g_str_615351ab03385c0016b871fa]
+    g_models[g_str_68c995e0579163001588a91a] = g_models[g_str_68c995e0579163001588a7ee]
 
     -- Swiss pikemen - Pikes General
-    g_models[g_str_615351ac03385c0016b8731f_general] = {
+    g_models[g_str_68c995e0579163001588a91d_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1410,10 +1410,10 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Swiss pikemen - Pikes
-    g_models[g_str_615351ac03385c0016b8731f] = g_models[g_str_615351ac03385c0016b87404]
+    g_models[g_str_68c995e0579163001588a91d] = g_models[g_str_68c995e1579163001588aa06]
 
     -- Mercenary bowmen or crossbowmen or handgunners - Archers General
-    g_models[g_str_615351ac03385c0016b87321_general] = {
+    g_models[g_str_68c995e0579163001588a91f_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1426,7 +1426,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Mercenary bowmen or crossbowmen or handgunners - Archers
-    g_models[g_str_615351ac03385c0016b87321] = {
+    g_models[g_str_68c995e0579163001588a91f] = {
       {
         
         model_data = 'troop_crossbowman_burgundian_ordonnances'
@@ -1440,7 +1440,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Mercenary bowmen or crossbowmen or handgunners - Sk
-    g_models[g_str_615351ac03385c0016b87322] = {
+    g_models[g_str_68c995e0579163001588a920] = {
       {
         loose = true,        
         random_models = {
@@ -1452,7 +1452,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Bombards - Artillery
-    g_models[g_str_615351ac03385c0016b87325] = g_models[g_str_615351ab03385c0016b8702a]
+    g_models[g_str_68c995e0579163001588a923] = g_models[g_str_68c995df579163001588a60a]
 
     -- Camp
     g_models[g_str_5fb1b9e8e1af060017709cd3_camp] = {
@@ -1481,10 +1481,10 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphract
-    g_models[g_str_6153519703385c0016b842e2] = g_models[g_str_615351ac03385c0016b87303] 
+    g_models[g_str_6153519703385c0016b842e2] = g_models[g_str_68c995e0579163001588a8ff] 
 
     -- Feudal retainers or heerban - Horde
-    g_models[g_str_6153519703385c0016b842e4] = g_models[g_str_615351ac03385c0016b87313]
+    g_models[g_str_6153519703385c0016b842e4] = g_models[g_str_68c995e0579163001588a910]
 
     -- Mercenary axemen, swordsmen, and halberdiers - HF
     g_models[g_str_6153519703385c0016b842e6] = {
@@ -1494,13 +1494,13 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Mercenary bowmen or crossbowmen or handgunners - Archers
-    g_models[g_str_6153519703385c0016b842e8] = g_models[g_str_615351ab03385c0016b870fc]
+    g_models[g_str_6153519703385c0016b842e8] = g_models[g_str_68c995e0579163001588a6e9]
 
     -- Mercenary bowmen or crossbowmen or handgunners - Sk
-    g_models[g_str_6153519703385c0016b842e9] = g_models[g_str_615351ac03385c0016b87401_dismounted]
+    g_models[g_str_6153519703385c0016b842e9] = g_models[g_str_68c995e1579163001588aa03_dismounted]
 
     -- Mercenary pikemen - Pikes
-    g_models[g_str_6153519703385c0016b842eb] = g_models[g_str_615351ac03385c0016b8731c]
+    g_models[g_str_6153519703385c0016b842eb] = g_models[g_str_68c995e0579163001588a91a]
 
 -- Early Renaissance German Citystates
 -- 1494 AD to 1518 AD
@@ -1509,7 +1509,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
 
 
     -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphracts General
-    g_models[g_str_615351ac03385c0016b87334_general] = {
+    g_models[g_str_68c995e0579163001588a932_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1522,34 +1522,34 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphract
-    g_models[g_str_615351ac03385c0016b87334] = g_models[g_str_615351ac03385c0016b87303]
+    g_models[g_str_68c995e0579163001588a932] = g_models[g_str_68c995e0579163001588a8ff]
 
     -- Armored crossbowmen on horses - Bad Horse
-    g_models[g_str_615351ac03385c0016b87336] = g_models[g_str_615351ab03385c0016b87201]
+    g_models[g_str_68c995e0579163001588a934] = g_models[g_str_68c995e0579163001588a7f5]
 
     -- City guard halberdiers or axemen - EF General
-    g_models[g_str_615351ac03385c0016b87338_general] = g_models[g_str_615351ac03385c0016b87307_general]
+    g_models[g_str_68c995e0579163001588a936_general] = g_models[g_str_68c995e0579163001588a903_general]
     
     -- City guard halberdiers or axemen - EF
-    g_models[g_str_615351ac03385c0016b87338] = g_models[g_str_615351ac03385c0016b87307]
+    g_models[g_str_68c995e0579163001588a936] = g_models[g_str_68c995e0579163001588a903]
 
     -- City militia handgunners - Skirmishers
-    g_models[g_str_615351ac03385c0016b8733a] = g_models[g_str_615351ac03385c0016b87317]
+    g_models[g_str_68c995e0579163001588a938] = g_models[g_str_68c995e0579163001588a915]
   
     -- City militia spearmen or pikemen - HF General
-    g_models[g_str_615351ac03385c0016b8733d_general] = g_models[g_str_615351ac03385c0016b8730c_general]
+    g_models[g_str_68c995e0579163001588a93b_general] = g_models[g_str_68c995e0579163001588a909_general]
     
     -- City militia spearmen or pikemen - HF
-    g_models[g_str_615351ac03385c0016b8733d] = g_models[g_str_615351ac03385c0016b8730c]
+    g_models[g_str_68c995e0579163001588a93b] = g_models[g_str_68c995e0579163001588a909]
 
     -- City militia spearmen or pikemen - Pikes General
-    g_models[g_str_615351ac03385c0016b8733e_general] = g_models[g_str_615351ac03385c0016b8730d_general]
+    g_models[g_str_68c995e0579163001588a93c_general] = g_models[g_str_68c995e0579163001588a90a_general]
     
     -- City militia spearmen or pikemen - Pikes
-    g_models[g_str_615351ac03385c0016b8733e] = g_models[g_str_615351ab03385c0016b87205]
+    g_models[g_str_68c995e0579163001588a93c] = g_models[g_str_68c995e0579163001588a7f9]
 
     -- Heerban armed with glaive, axe, or similar polearms - HF General
-    g_models[g_str_615351ac03385c0016b87341_general] = {
+    g_models[g_str_68c995e0579163001588a93f_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1562,13 +1562,13 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Heerban armed with glaive, axe, or similar polearms - HF
-    g_models[g_str_615351ac03385c0016b87341] = g_models[g_str_615351ab03385c0016b86fbb]
+    g_models[g_str_68c995e0579163001588a93f] = g_models[g_str_68c995df579163001588a595]
     
     -- Heerban handgunners - Skirmishers
-    g_models[g_str_615351ac03385c0016b87343] = g_models[g_str_615351b103385c0016b880c2]
+    g_models[g_str_68c995e0579163001588a941] = g_models[g_str_68c995e5579163001588b739]
 
     -- Landsknecht pikemen; possibly up to 1/3 Swiss pikemen - Pikes General
-    g_models[g_str_615351ac03385c0016b87345_general] = {
+    g_models[g_str_68c995e0579163001588a943_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1581,7 +1581,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Landsknecht pikemen; possibly up to 1/3 Swiss pikemen - Pikes
-    g_models[g_str_615351ac03385c0016b87345] = {
+    g_models[g_str_68c995e0579163001588a943] = {
       {   
         random_models = {
           'troop_pikeman_swiss_straight',
@@ -1601,13 +1601,13 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- Mercenary handgunners - Skirmishers
-    g_models[g_str_615351ac03385c0016b87347] = g_models[g_str_615351ac03385c0016b87409]
+    g_models[g_str_68c995e0579163001588a945] = g_models[g_str_68c995e1579163001588aa0b]
 
     -- Spanish jinetes - Jav Cav
-    g_models[g_str_615351ac03385c0016b87349] = g_models[g_str_615351ab03385c0016b87022]
+    g_models[g_str_68c995e0579163001588a947] = g_models[g_str_68c995df579163001588a602]
 
     -- Bombards - Artillery
-    g_models[g_str_615351ac03385c0016b8734b] = g_models[g_str_615351ab03385c0016b8702a]
+    g_models[g_str_68c995e0579163001588a949] = g_models[g_str_68c995df579163001588a60a]
 
     -- Camp
     g_models[g_str_5fb1b9e8e1af060017709cdd_camp] = {
@@ -1636,19 +1636,19 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     }
 
     -- City militia handgunners - Skirmishers
-    g_models[g_str_6153519703385c0016b842cc] = g_models[g_str_615351ac03385c0016b8733a]
+    g_models[g_str_6153519703385c0016b842cc] = g_models[g_str_68c995e0579163001588a938]
 
     -- City militia spearmen or pikemen - HF
-    g_models[g_str_6153519703385c0016b842ce] = g_models[g_str_615351ac03385c0016b8733d]
+    g_models[g_str_6153519703385c0016b842ce] = g_models[g_str_68c995e0579163001588a93b]
 
     -- City militia spearmen or pikemen - Pikes
-    g_models[g_str_6153519703385c0016b842cf] = g_models[g_str_615351ac03385c0016b8733e]
+    g_models[g_str_6153519703385c0016b842cf] = g_models[g_str_68c995e0579163001588a93c]
 
     -- Landsknecht pikemen; possibly up to 1/3 Swiss pikemen - Pikes
-    g_models[g_str_6153519703385c0016b842d1] = g_models[g_str_615351ac03385c0016b8731f]
+    g_models[g_str_6153519703385c0016b842d1] = g_models[g_str_68c995e0579163001588a91d]
 
     -- Mercenary handgunners - Skirmishers
-    g_models[g_str_6153519703385c0016b842d3] = g_models[g_str_615351ac03385c0016b87347]
+    g_models[g_str_6153519703385c0016b842d3] = g_models[g_str_68c995e0579163001588a945]
 
     -- Deep mounted formations using men at arms with barding in front and less well equipped men-at-arms in rear ranks - Cataphract
     g_models[g_str_6153519703385c0016b842ef] = g_models[g_str_6153519703385c0016b842e2] 
@@ -1660,7 +1660,7 @@ army['5fb1b9e8e1af060017709cd3'].data.base="tile_grass"
     g_models[g_str_6153519703385c0016b842f3] = g_models[g_str_6153519703385c0016b842e6]
 
     -- Mercenary handgunners - Skirmishers
-    g_models[g_str_6153519703385c0016b842f5] = g_models[g_str_615351ac03385c0016b87409]
+    g_models[g_str_6153519703385c0016b842f5] = g_models[g_str_68c995e1579163001588aa0b]
 
     -- Landsknecht pikemen; possibly up to 1/3 Swiss pikemen - Pikes
-    g_models[g_str_6153519703385c0016b842f7] = g_models[g_str_615351ac03385c0016b87345]
+    g_models[g_str_6153519703385c0016b842f7] = g_models[g_str_68c995e0579163001588a943]

@@ -11,7 +11,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
   -- As of: 20210411
 
     --Companions - Kn General
-    g_models[g_str_615351a303385c0016b85aeb_general] = {
+    g_models[g_str_68c995d75791630015889051_general] = {
       {
         n_models = 3,
         loose = true,
@@ -24,7 +24,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Companions - Kn
-    g_models[g_str_615351a303385c0016b85aeb] = {
+    g_models[g_str_68c995d75791630015889051] = {
       loose = true,
       {
         model_data = 'troop_successors_cavalry_bodyguard'
@@ -32,7 +32,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Prodomoi - JavCav
-    g_models[g_str_615351a303385c0016b85aed] = {
+    g_models[g_str_68c995d75791630015889053] = {
       loose = true,
       {
         model_data = 'troop_successors_cav'
@@ -40,7 +40,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Thessalian Horsemen - JavCav
-    g_models[g_str_615351a303385c0016b85aef] = {
+    g_models[g_str_68c995d75791630015889055] = {
       {
         model_data = 'troop_thracian_cv'
       },
@@ -48,7 +48,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Hypaspists - Raiders
-    g_models[g_str_615351a303385c0016b85af1] = {
+    g_models[g_str_68c995d75791630015889057] = {
       loose = true,
       {
         model_data = 'troop_successors_hypaspist_black'
@@ -56,7 +56,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Hypaspists - Pikes General
-    g_models[g_str_615351a303385c0016b85af2_general] = {
+    g_models[g_str_68c995d75791630015889058_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -69,14 +69,14 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Hypaspists - Pikes
-    g_models[g_str_615351a303385c0016b85af2] = {
+    g_models[g_str_68c995d75791630015889058] = {
       {
         model_data = 'troop_successors_pike2_black'
       }
     }
 
     --Phalanx - Pikes General
-    g_models[g_str_615351a303385c0016b85af5_general] = {
+    g_models[g_str_68c995d7579163001588905b_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -89,7 +89,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85af5] = {
+    g_models[g_str_68c995d7579163001588905b] = {
       {
         random_models = {
           'troop_successors_pike1',
@@ -99,21 +99,21 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Macedonian light infantry not yet trained with pike - LF
-    g_models[g_str_615351a303385c0016b85af8] = {
+    g_models[g_str_68c995d7579163001588905e] = {
       {
         model_data = 'troop_successors_ax'
       }
     }
 
     --Cretan or Macedonian skirmishing bowmen - Sk
-    g_models[g_str_615351a303385c0016b85afa] = {
+    g_models[g_str_68c995d75791630015889060] = {
       {
         model_data = 'troop_successors_skirmishers_archers'
       }
     }
 
     --Greek allied hoplites - HF
-    g_models[g_str_615351a303385c0016b85afc] = {
+    g_models[g_str_68c995d75791630015889062] = {
       {
         random_models = {
           'troop_successors_spear2',
@@ -132,7 +132,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Greek mercenary peltasts - LF
-    g_models[g_str_615351a303385c0016b85b00] = {
+    g_models[g_str_68c995d75791630015889066] = {
       loose = true,
       {
         random_models = {
@@ -146,7 +146,7 @@ army['5fb1b9dde1af06001770961d'].data.base = "tile_grass"
     }
 
     --Bolt-shooters - Art
-    g_models[g_str_615351a303385c0016b85b03] = {
+    g_models[g_str_68c995d75791630015889069] = {
       {
         n_models = 1,
         model_data = 'troop_successors_art'
@@ -188,22 +188,22 @@ army['5fb1b9dde1af060017709623'].data.base = "tile_grass"
   -- As of: 20210412
 
     --Companions - Kn General
-    g_models[g_str_615351a303385c0016b85b0d_general] = g_models[g_str_615351a303385c0016b85aeb_general]
+    g_models[g_str_68c995d75791630015889073_general] = g_models[g_str_68c995d75791630015889051_general]
 
     --Companions - Kn
-    g_models[g_str_615351a303385c0016b85b0d] = g_models[g_str_615351a303385c0016b85aeb]
+    g_models[g_str_68c995d75791630015889073] = g_models[g_str_68c995d75791630015889051]
 
     --Prodomoi - JavCav
-    g_models[g_str_615351a303385c0016b85b0f] = g_models[g_str_615351a303385c0016b85aed]
+    g_models[g_str_68c995d75791630015889075] = g_models[g_str_68c995d75791630015889053]
 
     --Thessalian Horsemen - JavCav
-    g_models[g_str_615351a303385c0016b85b12] = {
+    g_models[g_str_68c995d75791630015889078] = {
       {
         model_data = 'troop_thracian_cv'
       }
     }
     --Allied or mercenary Greek horsemen - Bad Horse
-    g_models[g_str_615351a303385c0016b85b14] = {
+    g_models[g_str_68c995d7579163001588907a] = {
       {
         n_models = 3,
         fixed_models = {
@@ -215,29 +215,29 @@ army['5fb1b9dde1af060017709623'].data.base = "tile_grass"
     }
 
     --Thracian or Paionian horsemen - JavCav
-    g_models[g_str_615351a303385c0016b85b16] = {
+    g_models[g_str_68c995d7579163001588907c] = {
       {
         model_data = 'troop_thracian_lh'
       }
     }
 
     --Hypaspists - Raiders
-    g_models[g_str_615351a303385c0016b85b19] = g_models[g_str_615351a303385c0016b85af1]
+    g_models[g_str_68c995d7579163001588907f] = g_models[g_str_68c995d75791630015889057]
 
     --Hypaspists - Pikes
-    g_models[g_str_615351a303385c0016b85b1a] = g_models[g_str_615351a303385c0016b85af2]
+    g_models[g_str_68c995d75791630015889080] = g_models[g_str_68c995d75791630015889058]
 
     --Phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85b1d] = g_models[g_str_615351a303385c0016b85af5]
+    g_models[g_str_68c995d75791630015889083] = g_models[g_str_68c995d7579163001588905b]
 
     --Cretan or Macedonian skirmishing bowmen - Sk
-    g_models[g_str_615351a303385c0016b85b1f] = g_models[g_str_615351a303385c0016b85afa]
+    g_models[g_str_68c995d75791630015889085] = g_models[g_str_68c995d75791630015889060]
 
     --Greek allied hoplites - HF
-    g_models[g_str_615351a303385c0016b85b21] = g_models[g_str_615351a303385c0016b85afc]
+    g_models[g_str_68c995d75791630015889087] = g_models[g_str_68c995d75791630015889062]
 
     --Greek mercenary, Thracian, or Agrianian peltasts and javelinmen - LF
-    g_models[g_str_615351a303385c0016b85b24] = {
+    g_models[g_str_68c995d7579163001588908a] = {
       {
         model_data = 'troop_successors_psiloi'
       },
@@ -250,10 +250,10 @@ army['5fb1b9dde1af060017709623'].data.base = "tile_grass"
     }
 
     --Bolt-shooters - Art
-    g_models[g_str_615351a303385c0016b85b26] = g_models[g_str_615351a303385c0016b85b03]
+    g_models[g_str_68c995d7579163001588908c] = g_models[g_str_68c995d75791630015889069]
 
     --War elephants
-    g_models[g_str_615351a303385c0016b85b29] = {
+    g_models[g_str_68c995d7579163001588908f] = {
         {
           n_models = 1,
           model_data = 'troop_successors_el'
@@ -283,7 +283,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
   -- As of: 20210412
 
     --Xystophoroi - Kn General
-    g_models[g_str_615351a303385c0016b85bd5_general] =  {
+    g_models[g_str_68c995d8579163001588913b_general] =  {
       {
         n_models = 3,
         fixed_models = {
@@ -295,14 +295,14 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Xystophoroi - Kn
-    g_models[g_str_615351a303385c0016b85bd5] =  {
+    g_models[g_str_68c995d8579163001588913b] =  {
       {
         model_data = 'troop_successors_cavalry_bodyguard_blue'
       }
     }
 
     --Greek mercenary horsemen - JavCav General
-    g_models[g_str_615351a303385c0016b85bd7_general] ={
+    g_models[g_str_68c995d8579163001588913d_general] ={
       loose = true,
       {
         n_models = 2,
@@ -314,7 +314,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Greek mercenary horsemen - JavCav
-    g_models[g_str_615351a303385c0016b85bd7] ={
+    g_models[g_str_68c995d8579163001588913d] ={
       loose = true,
       {
         random_models = {
@@ -329,7 +329,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Thessalian Horsemen - JavCav General
-    g_models[g_str_615351a303385c0016b85bda_general] = {
+    g_models[g_str_68c995d85791630015889140_general] = {
       loose = true,
       {
         n_models = 2,
@@ -341,10 +341,10 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Thessalian Horsemen - JavCav
-    g_models[g_str_615351a303385c0016b85bda] = g_models[g_str_615351a303385c0016b85aef]
+    g_models[g_str_68c995d85791630015889140] = g_models[g_str_68c995d75791630015889055]
 
     --Phalanx - Pikes General
-    g_models[g_str_615351a303385c0016b85bdc_general] = {
+    g_models[g_str_68c995d85791630015889142_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -357,7 +357,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85bdc] = {
+    g_models[g_str_68c995d85791630015889142] = {
       {
         random_models = {
           'troop_successors_pike1_blue',
@@ -367,7 +367,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Mercenary peltasts - LF General
-    g_models[g_str_615351a303385c0016b85bde_general] = {
+    g_models[g_str_68c995d85791630015889144_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -379,10 +379,10 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Mercenary peltasts - LF
-    g_models[g_str_615351a303385c0016b85bde] = g_models[g_str_615351a303385c0016b85b00]
+    g_models[g_str_68c995d85791630015889144] = g_models[g_str_68c995d75791630015889066]
 
     --Thracian, Illyrian, or Paionian light infantry - LF General
-    g_models[g_str_615351a303385c0016b85be0_general] = {
+    g_models[g_str_68c995d85791630015889146_general] = {
       loose = true,
       {
         n_models = 3,
@@ -403,7 +403,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Thracian, Illyrian, or Paionian light infantry - LF
-    g_models[g_str_615351a303385c0016b85be0] = {
+    g_models[g_str_68c995d85791630015889146] = {
       {
         random_models = {
           'troop_thracian_ax1',
@@ -414,7 +414,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Epeirote allied light infantry - LF General
-    g_models[g_str_615351a303385c0016b85be3_general] = {
+    g_models[g_str_68c995d85791630015889149_general] = {
       loose = true,
       {
         n_models = 3,
@@ -443,7 +443,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Epeirote allied light infantry - LF
-    g_models[g_str_615351a303385c0016b85be3] = {
+    g_models[g_str_68c995d85791630015889149] = {
       {
         random_models = {
           'troop_successors_ax_red',
@@ -457,13 +457,13 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Greek subject hoplites - HF
-    g_models[g_str_615351a303385c0016b85be6] = g_models[g_str_615351a303385c0016b85afc]
+    g_models[g_str_68c995d8579163001588914c] = g_models[g_str_68c995d75791630015889062]
 
     --Cretan or Macedonian skirmishing bowmen - Sk
-    g_models[g_str_615351a303385c0016b85be9] = g_models[g_str_615351a303385c0016b85afa]
+    g_models[g_str_68c995d8579163001588914f] = g_models[g_str_68c995d75791630015889060]
 
     --War elephants
-    g_models[g_str_615351a303385c0016b85beb_general] = {
+    g_models[g_str_68c995d85791630015889151_general] = {
       {
         n_models = 1,
         model_data = 'troop_successors_el_red'
@@ -471,7 +471,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --War elephants
-    g_models[g_str_615351a303385c0016b85beb] = {
+    g_models[g_str_68c995d85791630015889151] = {
         {
           n_models = 1,
           model_data = 'troop_successors_el_blue'
@@ -479,7 +479,7 @@ army['5fb1b9dee1af060017709659'].data.base = "tile_grass"
     }
 
     --Bolt-shooters - Art
-    g_models[g_str_615351a303385c0016b85bed] = g_models[g_str_615351a303385c0016b85b03]
+    g_models[g_str_68c995d85791630015889153] = g_models[g_str_68c995d75791630015889069]
 
     --Diadachoii Camp
     g_models[g_str_5fb1b9dee1af060017709659_camp] = g_models[g_str_5fb1b9dde1af06001770961d_camp]
@@ -498,19 +498,19 @@ army_dates["5fb1b9dee1af060017709659"]["*Olympias - 317 BC to 316 BC"] ="5fb1b9d
         army_id='5fb1b9dee1af060017709659',
         base="tile_grass"
       },
-      g_base_definitions[g_str_615351a303385c0016b85bd5_general],
-      g_base_definitions[g_str_615351a303385c0016b85bd5],
-      g_base_definitions[g_str_615351a303385c0016b85bd7_general],
-      g_base_definitions[g_str_615351a303385c0016b85bd7],
-      g_base_definitions[g_str_615351a303385c0016b85bde_general],
-      g_base_definitions[g_str_615351a303385c0016b85bde],
-      g_base_definitions[g_str_615351a303385c0016b85be0_general],
-      g_base_definitions[g_str_615351a303385c0016b85be0],
-      g_base_definitions[g_str_615351a303385c0016b85be3_general],
-      g_base_definitions[g_str_615351a303385c0016b85be3],
-      g_base_definitions[g_str_615351a303385c0016b85be9],
-      g_base_definitions[g_str_615351a303385c0016b85beb],
-      g_base_definitions[g_str_615351a303385c0016b85bed],
+      g_base_definitions[g_str_68c995d8579163001588913b_general],
+      g_base_definitions[g_str_68c995d8579163001588913b],
+      g_base_definitions[g_str_68c995d8579163001588913d_general],
+      g_base_definitions[g_str_68c995d8579163001588913d],
+      g_base_definitions[g_str_68c995d85791630015889144_general],
+      g_base_definitions[g_str_68c995d85791630015889144],
+      g_base_definitions[g_str_68c995d85791630015889146_general],
+      g_base_definitions[g_str_68c995d85791630015889146],
+      g_base_definitions[g_str_68c995d85791630015889149_general],
+      g_base_definitions[g_str_68c995d85791630015889149],
+      g_base_definitions[g_str_68c995d8579163001588914f],
+      g_base_definitions[g_str_68c995d85791630015889151],
+      g_base_definitions[g_str_68c995d85791630015889153],
       g_base_definitions[g_str_5fb1b9dee1af060017709659_camp],
       g_base_definitions[g_str_5fb1b9dee1af060017709659_camp_fortified],
     }
@@ -523,22 +523,22 @@ army_dates["5fb1b9dee1af060017709659"]["*Kassandros - 318 BC to 302 BC"] ="5fb1b
         army_id='5fb1b9dee1af060017709659',
         base="tile_grass"
       },
-      g_base_definitions[g_str_615351a303385c0016b85bd5_general],
-      g_base_definitions[g_str_615351a303385c0016b85bd5],
-      g_base_definitions[g_str_615351a303385c0016b85bd7_general],
-      g_base_definitions[g_str_615351a303385c0016b85bd7],
-      g_base_definitions[g_str_615351a303385c0016b85bda_general],
-      g_base_definitions[g_str_615351a303385c0016b85bda],
-      g_base_definitions[g_str_615351a303385c0016b85bdc_general],
-      g_base_definitions[g_str_615351a303385c0016b85bdc],
-      g_base_definitions[g_str_615351a303385c0016b85bde_general],
-      g_base_definitions[g_str_615351a303385c0016b85bde],
-      g_base_definitions[g_str_615351a303385c0016b85be0_general],
-      g_base_definitions[g_str_615351a303385c0016b85be0],
-      g_base_definitions[g_str_615351a303385c0016b85be6],
-      g_base_definitions[g_str_615351a303385c0016b85be9],
-      g_base_definitions[g_str_615351a303385c0016b85beb],
-      g_base_definitions[g_str_615351a303385c0016b85bed],
+      g_base_definitions[g_str_68c995d8579163001588913b_general],
+      g_base_definitions[g_str_68c995d8579163001588913b],
+      g_base_definitions[g_str_68c995d8579163001588913d_general],
+      g_base_definitions[g_str_68c995d8579163001588913d],
+      g_base_definitions[g_str_68c995d85791630015889140_general],
+      g_base_definitions[g_str_68c995d85791630015889140],
+      g_base_definitions[g_str_68c995d85791630015889142_general],
+      g_base_definitions[g_str_68c995d85791630015889142],
+      g_base_definitions[g_str_68c995d85791630015889144_general],
+      g_base_definitions[g_str_68c995d85791630015889144],
+      g_base_definitions[g_str_68c995d85791630015889146_general],
+      g_base_definitions[g_str_68c995d85791630015889146],
+      g_base_definitions[g_str_68c995d8579163001588914c],
+      g_base_definitions[g_str_68c995d8579163001588914f],
+      g_base_definitions[g_str_68c995d85791630015889151],
+      g_base_definitions[g_str_68c995d85791630015889153],
       g_base_definitions[g_str_5fb1b9dee1af060017709659_camp],
       g_base_definitions[g_str_5fb1b9dee1af060017709659_camp_fortified],
     }
@@ -550,21 +550,21 @@ army_dates["5fb1b9dee1af060017709659"]["*Kassandros - 320, 319 BC & 301 BC to 29
         army_id='5fb1b9dee1af060017709659',
         base="tile_grass"
       },
-      g_base_definitions[g_str_615351a303385c0016b85bd5_general],
-      g_base_definitions[g_str_615351a303385c0016b85bd5],
-      g_base_definitions[g_str_615351a303385c0016b85bd7_general],
-      g_base_definitions[g_str_615351a303385c0016b85bd7],
-      g_base_definitions[g_str_615351a303385c0016b85bda_general],
-      g_base_definitions[g_str_615351a303385c0016b85bda],
-      g_base_definitions[g_str_615351a303385c0016b85bdc_general],
-      g_base_definitions[g_str_615351a303385c0016b85bdc],
-      g_base_definitions[g_str_615351a303385c0016b85bde_general],
-      g_base_definitions[g_str_615351a303385c0016b85bde],
-      g_base_definitions[g_str_615351a303385c0016b85be0_general],
-      g_base_definitions[g_str_615351a303385c0016b85be0],
-      g_base_definitions[g_str_615351a303385c0016b85be9],
-      g_base_definitions[g_str_615351a303385c0016b85beb],
-      g_base_definitions[g_str_615351a303385c0016b85bed],
+      g_base_definitions[g_str_68c995d8579163001588913b_general],
+      g_base_definitions[g_str_68c995d8579163001588913b],
+      g_base_definitions[g_str_68c995d8579163001588913d_general],
+      g_base_definitions[g_str_68c995d8579163001588913d],
+      g_base_definitions[g_str_68c995d85791630015889140_general],
+      g_base_definitions[g_str_68c995d85791630015889140],
+      g_base_definitions[g_str_68c995d85791630015889142_general],
+      g_base_definitions[g_str_68c995d85791630015889142],
+      g_base_definitions[g_str_68c995d85791630015889144_general],
+      g_base_definitions[g_str_68c995d85791630015889144],
+      g_base_definitions[g_str_68c995d85791630015889146_general],
+      g_base_definitions[g_str_68c995d85791630015889146],
+      g_base_definitions[g_str_68c995d8579163001588914f],
+      g_base_definitions[g_str_68c995d85791630015889151],
+      g_base_definitions[g_str_68c995d85791630015889153],
       g_base_definitions[g_str_5fb1b9dee1af060017709659_camp],
       g_base_definitions[g_str_5fb1b9dee1af060017709659_camp_fortified],
     }
@@ -577,22 +577,22 @@ army_dates["5fb1b9dee1af060017709659"]["*Polyperchon - 320 BC to 298 BC"] ="5fb1
         army_id='5fb1b9dee1af060017709659',
         base="tile_grass"
       },
-      g_base_definitions[g_str_615351a303385c0016b85bd5_general],
-      g_base_definitions[g_str_615351a303385c0016b85bd5],
-      g_base_definitions[g_str_615351a303385c0016b85bd7_general],
-      g_base_definitions[g_str_615351a303385c0016b85bd7],
-      g_base_definitions[g_str_615351a303385c0016b85bda_general],
-      g_base_definitions[g_str_615351a303385c0016b85bda],
-      g_base_definitions[g_str_615351a303385c0016b85bdc_general],
-      g_base_definitions[g_str_615351a303385c0016b85bdc],
-      g_base_definitions[g_str_615351a303385c0016b85bde_general],
-      g_base_definitions[g_str_615351a303385c0016b85bde],
-      g_base_definitions[g_str_615351a303385c0016b85be0_general],
-      g_base_definitions[g_str_615351a303385c0016b85be0],
-      g_base_definitions[g_str_615351a303385c0016b85be6],
-      g_base_definitions[g_str_615351a303385c0016b85be9],
-      g_base_definitions[g_str_615351a303385c0016b85beb],
-      g_base_definitions[g_str_615351a303385c0016b85bed],
+      g_base_definitions[g_str_68c995d8579163001588913b_general],
+      g_base_definitions[g_str_68c995d8579163001588913b],
+      g_base_definitions[g_str_68c995d8579163001588913d_general],
+      g_base_definitions[g_str_68c995d8579163001588913d],
+      g_base_definitions[g_str_68c995d85791630015889140_general],
+      g_base_definitions[g_str_68c995d85791630015889140],
+      g_base_definitions[g_str_68c995d85791630015889142_general],
+      g_base_definitions[g_str_68c995d85791630015889142],
+      g_base_definitions[g_str_68c995d85791630015889144_general],
+      g_base_definitions[g_str_68c995d85791630015889144],
+      g_base_definitions[g_str_68c995d85791630015889146_general],
+      g_base_definitions[g_str_68c995d85791630015889146],
+      g_base_definitions[g_str_68c995d8579163001588914c],
+      g_base_definitions[g_str_68c995d8579163001588914f],
+      g_base_definitions[g_str_68c995d85791630015889151],
+      g_base_definitions[g_str_68c995d85791630015889153],
       g_base_definitions[g_str_5fb1b9dee1af060017709659_camp],
       g_base_definitions[g_str_5fb1b9dee1af060017709659_camp_fortified],
     }
@@ -608,7 +608,7 @@ army['5fb1b9dee1af060017709671'].data.base = "tile_grass"
   -- As of: 20210412
 
     --Macedonian charging horsemen - Kn General
-    g_models[g_str_615351a303385c0016b85c52_general] =  {
+    g_models[g_str_68c995d857916300158891b8_general] =  {
       loose = true,
       {
         n_models = 3,
@@ -621,7 +621,7 @@ army['5fb1b9dee1af060017709671'].data.base = "tile_grass"
     }
 
     --Macedonian charging horsemen - Kn
-    g_models[g_str_615351a303385c0016b85c52] =  {
+    g_models[g_str_68c995d857916300158891b8] =  {
       loose = true,
       {
         model_data = 'troop_successors_cavalry_bodyguard_yellow'
@@ -629,7 +629,7 @@ army['5fb1b9dee1af060017709671'].data.base = "tile_grass"
     }
 
     --Paionian, Greek, or Thracian horsemen - JavCav
-    g_models[g_str_615351a303385c0016b85c54] ={
+    g_models[g_str_68c995d857916300158891ba] ={
       loose = true,
       {
         model_data = 'troop_thracian_cv'
@@ -650,7 +650,7 @@ army['5fb1b9dee1af060017709671'].data.base = "tile_grass"
     }
 
     --Phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85c56] = {
+    g_models[g_str_68c995d857916300158891bc] = {
       {
         random_models = {
           'troop_successors_pike1_yellow',
@@ -660,16 +660,16 @@ army['5fb1b9dee1af060017709671'].data.base = "tile_grass"
     }
 
     --Macedonian Phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85c59] = g_models[g_str_615351a303385c0016b85af5]
+    g_models[g_str_68c995d857916300158891bf] = g_models[g_str_68c995d7579163001588905b]
 
     --Mercenary Greek foot - LF
-    g_models[g_str_615351a303385c0016b85c5b] = g_models[g_str_615351a303385c0016b85be3]
+    g_models[g_str_68c995d857916300158891c1] = g_models[g_str_68c995d85791630015889149]
 
     --Greek coastal city hoplites - HF
-    g_models[g_str_615351a303385c0016b85c5d] = g_models[g_str_615351a303385c0016b85afc]
+    g_models[g_str_68c995d857916300158891c3] = g_models[g_str_68c995d75791630015889062]
 
     --Mercenary skirmishing bowmen and slingers - Sk
-    g_models[g_str_615351a303385c0016b85c60] = {
+    g_models[g_str_68c995d857916300158891c6] = {
       loose = true,
       {
         random_models = {
@@ -680,13 +680,13 @@ army['5fb1b9dee1af060017709671'].data.base = "tile_grass"
       }
     }
     --Thracian peltasts - LF
-    g_models[g_str_615351a303385c0016b85c62] = g_models[g_str_615351a303385c0016b85be0]
+    g_models[g_str_68c995d857916300158891c8] = g_models[g_str_68c995d85791630015889146]
 
     --Illyrian or Paionian javelinmen - LF
-    g_models[g_str_615351a303385c0016b85c64] = g_models[g_str_615351a303385c0016b85b00]
+    g_models[g_str_68c995d857916300158891ca] = g_models[g_str_68c995d75791630015889066]
 
     --Captured Antigonid war elephants
-    g_models[g_str_615351a303385c0016b85c67] = {
+    g_models[g_str_68c995d857916300158891cd] = {
         {
           n_models = 1,
           model_data = 'troop_successors_el_yellow'
@@ -694,7 +694,7 @@ army['5fb1b9dee1af060017709671'].data.base = "tile_grass"
     }
 
     --Lykian or Pamphylian vassal javelinmen - LF
-    g_models[g_str_615351a303385c0016b85c6a] =  {
+    g_models[g_str_68c995d857916300158891d0] =  {
       {
         model_data = 'troop_ancient_spanish_caetrati'
       }
@@ -718,7 +718,7 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
   -- As of: 20210412
 
     --Xystophoroi - Kn General
-    g_models[g_str_615351a303385c0016b85c10_general] =  {
+    g_models[g_str_68c995d85791630015889176_general] =  {
       {
         n_models = 3,
         fixed_models = {
@@ -730,14 +730,14 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Xystophoroi - Kn
-    g_models[g_str_615351a303385c0016b85c10] =  {
+    g_models[g_str_68c995d85791630015889176] =  {
       {
         model_data = 'troop_successors_cavalry_bodyguard_black'
       }
     }
 
     --Macedonian Phalanx - Pikes General
-    g_models[g_str_615351a303385c0016b85c12_general] = {
+    g_models[g_str_68c995d85791630015889178_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -750,10 +750,10 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Macedonian Phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85c12] = g_models[g_str_615351a303385c0016b85af5]
+    g_models[g_str_68c995d85791630015889178] = g_models[g_str_68c995d7579163001588905b]
 
     --War elephants
-    g_models[g_str_615351a303385c0016b85c14] = {
+    g_models[g_str_68c995d8579163001588917a] = {
       {
         n_models = 1,
         model_data = 'troop_successors_el_black'
@@ -761,7 +761,7 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Persian or Thracian horsemen armed with javelins - JavCav General
-    g_models[g_str_615351a303385c0016b85c17_general] ={
+    g_models[g_str_68c995d8579163001588917d_general] ={
       {
         n_models = 2,
         fixed_models = {
@@ -772,10 +772,10 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Persian or Thracian horsemen armed with javelins - JavCav
-    g_models[g_str_615351a303385c0016b85c17] = g_models[g_str_615351a303385c0016b85bd7]
+    g_models[g_str_68c995d8579163001588917d] = g_models[g_str_68c995d8579163001588913d]
 
     --Pantodapoi phalanx - Pikes General
-    g_models[g_str_615351a303385c0016b85c19_general] = {
+    g_models[g_str_68c995d8579163001588917f_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -788,7 +788,7 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Pantodapoi phalanx - Pikes General with Elephant Screen
-    g_models[g_str_615351a303385c0016b85c19_general_elephant_screen] = {
+    g_models[g_str_68c995d8579163001588917f_general_elephant_screen] = {
       {
         n_models = 4,
         fixed_models = {
@@ -801,7 +801,7 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Pantodapoi phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85c19] = {
+    g_models[g_str_68c995d8579163001588917f] = {
       {
         random_models = {
           'troop_successors_pike1_black',
@@ -811,10 +811,10 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Pantodapoi phalanx - Pikes with Elephant Screen
-    g_models[g_str_615351a303385c0016b85c19_elephant_screen] = g_models[g_str_615351a303385c0016b85c19]
+    g_models[g_str_68c995d8579163001588917f_elephant_screen] = g_models[g_str_68c995d8579163001588917f]
 
     --Mercenary peltasts - LF General
-    g_models[g_str_615351a303385c0016b85bde_general] = {
+    g_models[g_str_68c995d85791630015889144_general] = {
       loose = true,
       {
         n_models = 3,
@@ -827,16 +827,16 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Greek mercenary peltasts - LF
-    g_models[g_str_615351a303385c0016b85c1c] = g_models[g_str_615351a303385c0016b85b00]
+    g_models[g_str_68c995d85791630015889182] = g_models[g_str_68c995d75791630015889066]
 
     --Greek mercenary hoplites - HF
-    g_models[g_str_615351a303385c0016b85c1e] = g_models[g_str_615351a303385c0016b85afc]
+    g_models[g_str_68c995d85791630015889184] = g_models[g_str_68c995d75791630015889062]
 
     --Macedonian or mercenary skirmishing bowmen and slingers - Sk
-    g_models[g_str_615351a303385c0016b85c21] = g_models[g_str_615351a303385c0016b85c60]
+    g_models[g_str_68c995d85791630015889187] = g_models[g_str_68c995d857916300158891c6]
 
     --Akontistai - Rabble
-    g_models[g_str_615351a303385c0016b85c23] = {
+    g_models[g_str_68c995d85791630015889189] = {
       loose = true,
       {
         random_models = {
@@ -850,14 +850,14 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Lykian or Pamphylian foot - Rabble
-    g_models[g_str_615351a303385c0016b85c26] = {
+    g_models[g_str_68c995d8579163001588918c] = {
       {
         loose = true,
         model_data = 'troop_ancient_spanish_caetrati'
       }
     }
     --Greek allies hoplites - HF
-    g_models[g_str_615351a303385c0016b85c29] = {
+    g_models[g_str_68c995d8579163001588918f] = {
       {
         random_models = {
           'troop_successors_hypaspist',
@@ -870,7 +870,7 @@ army['5fb1b9dee1af060017709665'].data.base = "tile_grass"
     }
 
     --Stone throwers and ballistae - Art
-    g_models[g_str_615351a303385c0016b85c2d] = g_models[g_str_615351a303385c0016b85b03]
+    g_models[g_str_68c995d85791630015889193] = g_models[g_str_68c995d75791630015889069]
 
     --Antigonid Camp
     g_models[g_str_5fb1b9dee1af060017709665_camp] = g_models[g_str_5fb1b9dde1af06001770961d_camp]
@@ -889,20 +889,20 @@ army_dates["5fb1b9dee1af060017709665"]["*Demetrios - 315 BC to 285 BC"] ="5fb1b9
       army_id='5fb1b9dee1af060017709665',
       base="tile_grass"
     },
-    g_base_definitions[g_str_615351a303385c0016b85c10_general],
-    g_base_definitions[g_str_615351a303385c0016b85c10],
-    g_base_definitions[g_str_615351a303385c0016b85c12],
-    g_base_definitions[g_str_615351a303385c0016b85c14],
-    g_base_definitions[g_str_615351a303385c0016b85c17_general],
-    g_base_definitions[g_str_615351a303385c0016b85c17],
-    g_base_definitions[g_str_615351a303385c0016b85c19],
-    g_base_definitions[g_str_615351a303385c0016b85c19_elephant_screen],
-    g_base_definitions[g_str_615351a303385c0016b85c1c],
-    g_base_definitions[g_str_615351a303385c0016b85c1e],
-    g_base_definitions[g_str_615351a303385c0016b85c21],
-    g_base_definitions[g_str_615351a303385c0016b85c23],
-    g_base_definitions[g_str_615351a303385c0016b85c29],
-    g_base_definitions[g_str_615351a303385c0016b85c2d],
+    g_base_definitions[g_str_68c995d85791630015889176_general],
+    g_base_definitions[g_str_68c995d85791630015889176],
+    g_base_definitions[g_str_68c995d85791630015889178],
+    g_base_definitions[g_str_68c995d8579163001588917a],
+    g_base_definitions[g_str_68c995d8579163001588917d_general],
+    g_base_definitions[g_str_68c995d8579163001588917d],
+    g_base_definitions[g_str_68c995d8579163001588917f],
+    g_base_definitions[g_str_68c995d8579163001588917f_elephant_screen],
+    g_base_definitions[g_str_68c995d85791630015889182],
+    g_base_definitions[g_str_68c995d85791630015889184],
+    g_base_definitions[g_str_68c995d85791630015889187],
+    g_base_definitions[g_str_68c995d85791630015889189],
+    g_base_definitions[g_str_68c995d8579163001588918f],
+    g_base_definitions[g_str_68c995d85791630015889193],
     g_base_definitions[g_str_5fb1b9dee1af060017709665_camp],
     g_base_definitions[g_str_5fb1b9dee1af060017709665_camp_fortified],
   }
@@ -918,7 +918,7 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
   -- As of: 20210414
 
     --Xystophoroi - Kn General
-    g_models[g_str_615351a403385c0016b85ed3_general] =  {
+    g_models[g_str_68c995d9579163001588943d_general] =  {
       loose = true,
       {
         n_models = 3,
@@ -931,7 +931,7 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
     }
 
     --Xystophoroi\nDeployment dismounted from Knights General - Pikes General
-    g_models[g_str_615351a403385c0016b85ed3_general_dismounted] = {
+    g_models[g_str_68c995d9579163001588943d_general_dismounted] = {
       {
         n_models = 4,
         fixed_models = {
@@ -944,7 +944,7 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
     }
 
     --Xystophoroi\nDeployment dismounting as Pikes - Kn General
-    g_models[g_str_615351a403385c0016b85ed3_general_mounted] =  {
+    g_models[g_str_68c995d9579163001588943d_general_mounted] =  {
       {
         n_models = 3,
         fixed_models = {
@@ -956,28 +956,28 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
     }
 
     --Xystophoroi - Kn
-    g_models[g_str_615351a403385c0016b85ed3] =  {
+    g_models[g_str_68c995d9579163001588943d] =  {
       {
         model_data = 'troop_successors_cavalry_bodyguard_red'
       }
     }
 
     --Xystophoroi\nDeployment dismounted from Knights - Pikes
-    g_models[g_str_615351a403385c0016b85ed3_dismounted] =  {
+    g_models[g_str_68c995d9579163001588943d_dismounted] =  {
       {
         model_data = 'troop_successors_pike1_red'
       }
     }
 
     --Xystophoroi\nDeployment dismounting as Pikes - Kn
-    g_models[g_str_615351a403385c0016b85ed3_mounted] =  {
+    g_models[g_str_68c995d9579163001588943d_mounted] =  {
       {
         model_data = 'troop_successors_cavalry_bodyguard_red'
       }
     }
 
     --Greek mercenaries, Tarentines, or similar horsemen - JavCav General
-    g_models[g_str_615351a403385c0016b85ed6_general] ={
+    g_models[g_str_68c995d95791630015889440_general] ={
       loose = true,
       {
         n_models = 2,
@@ -989,7 +989,7 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
     }
 
     --Greek mercenaries, Tarentines, or similar horsemen - JavCav
-    g_models[g_str_615351a403385c0016b85ed6] = {
+    g_models[g_str_68c995d95791630015889440] = {
       loose = true,
       {
         model_data = 'troop_successors_lh_red'
@@ -997,7 +997,7 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
     }
 
     --Phalanx - Pikes General
-    g_models[g_str_615351a403385c0016b85ed8_general] = {
+    g_models[g_str_68c995d95791630015889442_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -1010,26 +1010,26 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
     }
 
     --Phalanx - Pikes General with Elephant Screen
-    g_models[g_str_615351a403385c0016b85ed8_general_elephant_screen] =  g_models[g_str_615351a403385c0016b85ed8_general]
+    g_models[g_str_68c995d95791630015889442_general_elephant_screen] =  g_models[g_str_68c995d95791630015889442_general]
 
     --Phalanx - Pikes
-    g_models[g_str_615351a403385c0016b85ed8] = {
+    g_models[g_str_68c995d95791630015889442] = {
       {
         model_data = 'troop_successors_pike1_black'
       }
     }
 
     --Phalanx - Pikes with Elephant Screen
-    g_models[g_str_615351a403385c0016b85ed8_elephant_screen] = g_models[g_str_615351a403385c0016b85ed8]
+    g_models[g_str_68c995d95791630015889442_elephant_screen] = g_models[g_str_68c995d95791630015889442]
 
     --Mercenary peltasts - LF General
-    g_models[g_str_615351a403385c0016b85edb_general] = g_models[g_str_615351a303385c0016b85bde_general]
+    g_models[g_str_68c995d95791630015889445_general] = g_models[g_str_68c995d85791630015889144_general]
 
     --Greek mercenary peltasts - LF
-    g_models[g_str_615351a403385c0016b85edb] = g_models[g_str_615351a303385c0016b85b00]
+    g_models[g_str_68c995d95791630015889445] = g_models[g_str_68c995d75791630015889066]
 
     --Thracian light infantry - LF
-    g_models[g_str_615351a403385c0016b85edd_general] = {
+    g_models[g_str_68c995d95791630015889447_general] = {
       {
         n_models = 3,
         fixed_models = {
@@ -1048,10 +1048,10 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
       }
     }
     --Thracian light infantry - LF
-    g_models[g_str_615351a403385c0016b85edd] = g_models[g_str_615351a303385c0016b85be0]
+    g_models[g_str_68c995d95791630015889447] = g_models[g_str_68c995d85791630015889146]
 
     --Indian war elephants
-    g_models[g_str_615351a403385c0016b85ee0] = {
+    g_models[g_str_68c995d9579163001588944a] = {
       {
         n_models = 1,
         model_data = 'troop_carthaginian_elephant'
@@ -1059,13 +1059,13 @@ army['5fb1b9dfe1af06001770970f'].data.base = "tile_grass"
     }
 
     --Cretan skirmishing bowmen - Sk
-    g_models[g_str_615351a403385c0016b85ee3] = g_models[g_str_615351a303385c0016b85afa]
+    g_models[g_str_68c995d9579163001588944d] = g_models[g_str_68c995d75791630015889060]
 
     --Akontistai - Rabble
-    g_models[g_str_615351a403385c0016b85ee5] = g_models[g_str_615351a303385c0016b85c23]
+    g_models[g_str_68c995d9579163001588944f] = g_models[g_str_68c995d85791630015889189]
 
     --Bolt-shooters - Art
-    g_models[g_str_615351a403385c0016b85ee7] = g_models[g_str_615351a303385c0016b85b03]
+    g_models[g_str_68c995d95791630015889451] = g_models[g_str_68c995d75791630015889069]
 
     --Early Ptolemaic Camp
     g_models[g_str_5fb1b9dfe1af06001770970f_camp] = g_models[g_str_5fb1b9dde1af06001770961d_camp]
@@ -1088,7 +1088,7 @@ army['5fb1b9dee1af06001770966b'].data.base = "tile_grass"
   -- As of: 20210414
 
     --Xystophoroi - Kn General
-    g_models[g_str_615351a303385c0016b85c35_general] =  {
+    g_models[g_str_68c995d8579163001588919b_general] =  {
       loose = true,
       {
         n_models = 3,
@@ -1101,7 +1101,7 @@ army['5fb1b9dee1af06001770966b'].data.base = "tile_grass"
     }
 
     --Xystophoroi - Kn
-    g_models[g_str_615351a303385c0016b85c35] =  {
+    g_models[g_str_68c995d8579163001588919b] =  {
       loose = true,
       {
         model_data = 'troop_successors_cavalry_bodyguard_green'
@@ -1109,7 +1109,7 @@ army['5fb1b9dee1af06001770966b'].data.base = "tile_grass"
     }
 
     --Persian or Thracian horsemen armed with javelins - JavCav General
-    g_models[g_str_615351a303385c0016b85c37_general] ={
+    g_models[g_str_68c995d8579163001588919d_general] ={
       loose = true,
       {
         n_models = 2,
@@ -1121,11 +1121,11 @@ army['5fb1b9dee1af06001770966b'].data.base = "tile_grass"
     }
 
     --Persian or Thracian horsemen armed with javelins - JavCav
-    g_models[g_str_615351a303385c0016b85c37] = g_models[g_str_615351a303385c0016b85bd7]
+    g_models[g_str_68c995d8579163001588919d] = g_models[g_str_68c995d8579163001588913d]
 
 
     --Agyraspids and Hypaspists - Pikes
-    g_models[g_str_615351a303385c0016b85c39] = {
+    g_models[g_str_68c995d8579163001588919f] = {
       {
         random_models = {
           'troop_successors_pike1_blue',
@@ -1135,7 +1135,7 @@ army['5fb1b9dee1af06001770966b'].data.base = "tile_grass"
     }
 
     --Pantodapoi phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85c3b] = {
+    g_models[g_str_68c995d857916300158891a1] = {
       {
         random_models = {
           'troop_successors_pike1_green',
@@ -1145,16 +1145,16 @@ army['5fb1b9dee1af06001770966b'].data.base = "tile_grass"
     }
 
     --Pantodapoi phalanx - Pikes with Elephant Screen
-    g_models[g_str_615351a303385c0016b85c3b_elephant_screen] =  g_models[g_str_615351a303385c0016b85c3b]
+    g_models[g_str_68c995d857916300158891a1_elephant_screen] =  g_models[g_str_68c995d857916300158891a1]
 
     --Greek mercenary peltasts - LF
-    g_models[g_str_615351a303385c0016b85c3e] = g_models[g_str_615351a303385c0016b85b00]
+    g_models[g_str_68c995d857916300158891a4] = g_models[g_str_68c995d75791630015889066]
 
     --Greek mercenary hoplites - HF
-    g_models[g_str_615351a303385c0016b85c40] = g_models[g_str_615351a303385c0016b85afc]
+    g_models[g_str_68c995d857916300158891a6] = g_models[g_str_68c995d75791630015889062]
 
     --Macedonian or mercenary skirmishing bowmen and slingers - Sk
-    g_models[g_str_615351a303385c0016b85c43] = g_models[g_str_615351a303385c0016b85c60]
+    g_models[g_str_68c995d857916300158891a9] = g_models[g_str_68c995d857916300158891c6]
 
     --Persian skirmising bowmen and slingers - Sk
     g_models[g_str_615351a303385c0016b85c45] = {
@@ -1164,10 +1164,10 @@ army['5fb1b9dee1af06001770966b'].data.base = "tile_grass"
       }
     }
     --Akontistai - Rabble
-    g_models[g_str_615351a303385c0016b85c47] = g_models[g_str_615351a303385c0016b85c23]
+    g_models[g_str_68c995d857916300158891ad] = g_models[g_str_68c995d85791630015889189]
 
     --Indian War elephants
-    g_models[g_str_615351a303385c0016b85c4a] = {
+    g_models[g_str_68c995d857916300158891b0] = {
       {
         n_models = 1,
         model_data = 'troop_successors_el_green'
@@ -1195,7 +1195,7 @@ army['5fb1b9dee1af06001770965f'].data.base = "tile_grass"
   -- As of: 20210414
 
     --Xystophoroi - Kn General
-    g_models[g_str_615351a303385c0016b85bfb_general] =  {
+    g_models[g_str_68c995d85791630015889161_general] =  {
       {
         n_models = 3,
         fixed_models = {
@@ -1207,10 +1207,10 @@ army['5fb1b9dee1af06001770965f'].data.base = "tile_grass"
     }
 
     --Xystophoroi - Kn
-    g_models[g_str_615351a303385c0016b85bfb] = g_models[g_str_615351a303385c0016b85c35]
+    g_models[g_str_68c995d85791630015889161] = g_models[g_str_68c995d8579163001588919b]
 
     --Persian or Thracian horsemen armed with javelins - JavCav General
-    g_models[g_str_615351a303385c0016b85bfd_general] ={
+    g_models[g_str_68c995d85791630015889163_general] ={
       {
         n_models = 2,
         fixed_models = {
@@ -1221,10 +1221,10 @@ army['5fb1b9dee1af06001770965f'].data.base = "tile_grass"
     }
 
     --Persian or Thracian horsemen armed with javelins - JavCav
-    g_models[g_str_615351a303385c0016b85bfd] = g_models[g_str_615351a303385c0016b85bd7]
+    g_models[g_str_68c995d85791630015889163] = g_models[g_str_68c995d8579163001588913d]
 
     --Pantodapoi phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85bff] = {
+    g_models[g_str_68c995d85791630015889165] = {
       {
         random_models = {
           'troop_successors_pike1_green',
@@ -1234,19 +1234,19 @@ army['5fb1b9dee1af06001770965f'].data.base = "tile_grass"
     }
 
     --Greek mercenary peltasts - LF
-    g_models[g_str_615351a303385c0016b85c01] = g_models[g_str_615351a303385c0016b85b00]
+    g_models[g_str_68c995d85791630015889167] = g_models[g_str_68c995d75791630015889066]
 
     --Greek mercenary hoplites - HF
-    g_models[g_str_615351a303385c0016b85c03] = g_models[g_str_615351a303385c0016b85afc]
+    g_models[g_str_68c995d85791630015889169] = g_models[g_str_68c995d75791630015889062]
 
     --Macedonian or mercenary skirmishing bowmen and slingers - Sk
-    g_models[g_str_615351a303385c0016b85c06] = g_models[g_str_615351a303385c0016b85c60]
+    g_models[g_str_68c995d8579163001588916c] = g_models[g_str_68c995d857916300158891c6]
 
     --Akontistai - Rabble
-    g_models[g_str_615351a303385c0016b85c08] = g_models[g_str_615351a303385c0016b85c23]
+    g_models[g_str_68c995d8579163001588916e] = g_models[g_str_68c995d85791630015889189]
 
     --Psidian peltasts - LF
-    g_models[g_str_615351a303385c0016b85c0a] = g_models[g_str_615351a303385c0016b85c6a]
+    g_models[g_str_68c995d85791630015889170] = g_models[g_str_68c995d857916300158891d0]
 
     --Alketas Camp
     g_models[g_str_5fb1b9dee1af06001770965f_camp] = g_models[g_str_5fb1b9dde1af06001770961d_camp]
@@ -1268,13 +1268,13 @@ army['5fb1b9dee1af060017709677'].data.base="tile_grass"
   -- As of: 20210412
 
     --Epeirot or Macedonian horsemen - Kn General
-    g_models[g_str_615351a303385c0016b85c77_general] = g_models[g_str_615351a303385c0016b85aeb_general]
+    g_models[g_str_68c995d857916300158891dd_general] = g_models[g_str_68c995d75791630015889051_general]
 
     --Epeirot or Macedonian horsemen - Kn
-    g_models[g_str_615351a303385c0016b85c77] = g_models[g_str_615351a303385c0016b85aeb]
+    g_models[g_str_68c995d857916300158891dd] = g_models[g_str_68c995d75791630015889051]
 
     --Thessalian, Oscan, or Greek ally horsemen - JavCav General
-    g_models[g_str_615351a303385c0016b85c7a_general] = {
+    g_models[g_str_68c995d857916300158891e0_general] = {
       loose = true,
       {
         n_models = 2,
@@ -1286,13 +1286,13 @@ army['5fb1b9dee1af060017709677'].data.base="tile_grass"
     }
 
     --Thessalian, Oscan, or Greek ally horsemen - JavCav
-    g_models[g_str_615351a303385c0016b85c7a] = g_models[g_str_615351a303385c0016b85b12]
+    g_models[g_str_68c995d857916300158891e0] = g_models[g_str_68c995d75791630015889078]
 
     --Thessalian, Oscan, or Greek ally horsemen - Bad Horse
-    g_models[g_str_615351a303385c0016b85c7b] = g_models[g_str_615351a303385c0016b85b16]
+    g_models[g_str_68c995d857916300158891e1] = g_models[g_str_68c995d7579163001588907c]
 
     --Horsemen with shields in Tarentine style - JavCav General
-    g_models[g_str_615351a303385c0016b85c7e_general] = {
+    g_models[g_str_68c995d857916300158891e4_general] = {
       loose = true,
       {
         n_models = 2,
@@ -1304,7 +1304,7 @@ army['5fb1b9dee1af060017709677'].data.base="tile_grass"
     }
 
     --Horsemen with shields in Tarentine style - JavCav
-    g_models[g_str_615351a303385c0016b85c7e] = {
+    g_models[g_str_68c995d857916300158891e4] = {
       loose = true,
       {
         model_data = 'troop_successors_lh'
@@ -1312,19 +1312,19 @@ army['5fb1b9dee1af060017709677'].data.base="tile_grass"
     }
 
     --Phalanx - Pikes
-    g_models[g_str_615351a303385c0016b85c80] = g_models[g_str_615351a303385c0016b85af5]
+    g_models[g_str_68c995d857916300158891e6] = g_models[g_str_68c995d7579163001588905b]
 
     --Phalanx - Pikes with Elephant Screen
-    g_models[g_str_615351a303385c0016b85c80_elephant_screen] =  g_models[g_str_615351a303385c0016b85af5]
+    g_models[g_str_68c995d857916300158891e6_elephant_screen] =  g_models[g_str_68c995d7579163001588905b]
 
     --Skirmishing bowmen and slingers - Sk
-    g_models[g_str_615351a303385c0016b85c83] = g_models[g_str_615351a303385c0016b85c60]
+    g_models[g_str_68c995d857916300158891e9] = g_models[g_str_68c995d857916300158891c6]
 
     --Greek, Italiote, or Oscan javelinmen - LF
-    g_models[g_str_615351a303385c0016b85c85] = g_models[g_str_615351a303385c0016b85b00]
+    g_models[g_str_68c995d857916300158891eb] = g_models[g_str_68c995d75791630015889066]
 
     --War elephants
-    g_models[g_str_615351a303385c0016b85c88] = {
+    g_models[g_str_68c995d857916300158891ee] = {
         {
           n_models = 1,
           model_data = 'troop_successors_el'
@@ -1335,7 +1335,7 @@ army['5fb1b9dee1af060017709677'].data.base="tile_grass"
         }
     }
     --Galatian fierce fighters - Warriors
-    g_models[g_str_615351a303385c0016b85c8c] = g_models[g_str_615351a203385c0016b858e4_dismounted]
+    g_models[g_str_68c995d857916300158891f2] = g_models[g_str_68c995d75791630015888e4e_dismounted]
 
     --Phyrric Camp
     g_models[g_str_5fb1b9dee1af060017709677_camp] = g_models[g_str_5fb1b9dde1af06001770961d_camp]

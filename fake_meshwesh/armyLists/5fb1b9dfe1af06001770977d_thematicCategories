@@ -1,1 +1,10 @@
-[{"name":"Hellenistic World","id":"5fb1b720e1af06001770192a"},{"name":"India and the Khyber Pass","id":"5fb1b720e1af06001770192c"}]
+[
+    {
+        "name": "Hellenistic World",
+        "id": "5fb1b720e1af06001770192a"
+    },
+    {
+        "name": "India and the Khyber Pass",
+        "id": "5fb1b720e1af06001770192c"
+    }
+]

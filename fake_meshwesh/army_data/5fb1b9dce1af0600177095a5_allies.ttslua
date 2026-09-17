@@ -19,17 +19,17 @@ army['5fb1b9dce1af0600177095a5_ally_5fb1b9e1e1af060017709849'] = {
     name='(if Arverni and Sequani) Ariovistus- German allies',
     id='5fb1b9dce1af0600177095a5_ally_5fb1b9e1e1af060017709849',
   },
-  g_base_definitions['6153519303385c0016b83ce5'],
-  g_base_definitions['6153519303385c0016b83ce7'],
-  g_base_definitions['6153519303385c0016b83ce9'],
+  g_base_definitions['68c995c85791630015887248'],
+  g_base_definitions['68c995c8579163001588724a'],
+  g_base_definitions['68c995c8579163001588724c'],
 }
 army['5fb1b9dce1af0600177095a5_ally_5fb1b9dce1af0600177095ab'] = {
   data={
     name='(if Aquitanians) Iberian allies',
     id='5fb1b9dce1af0600177095a5_ally_5fb1b9dce1af0600177095ab',
   },
-  g_base_definitions['6153519103385c0016b838fe'],
-  g_base_definitions['6153519103385c0016b83900'],
-  g_base_definitions['6153519103385c0016b83902'],
-  g_base_definitions['6153519103385c0016b83904'],
+  g_base_definitions['68c995c65791630015886e64'],
+  g_base_definitions['68c995c65791630015886e66'],
+  g_base_definitions['68c995c65791630015886e68'],
+  g_base_definitions['68c995c65791630015886e6a'],
 }

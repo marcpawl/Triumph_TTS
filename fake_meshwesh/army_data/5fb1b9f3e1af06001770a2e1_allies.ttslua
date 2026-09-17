@@ -35,54 +35,54 @@ army['5fb1b9f3e1af06001770a2e1_ally_5fb1b9f3e1af06001770a294'] = {
     name='Chagadai Mongol allies',
     id='5fb1b9f3e1af06001770a2e1_ally_5fb1b9f3e1af06001770a294',
   },
-  g_base_definitions['6153519b03385c0016b84ad2'],
-  g_base_definitions['6153519b03385c0016b84ad4'],
+  g_base_definitions['68c995d0579163001588804f'],
+  g_base_definitions['68c995d05791630015888051'],
 }
 army['5fb1b9f3e1af06001770a2e1_ally_5fb1b9efe1af06001770a062'] = {
   data={
     name='(only in Central Asia) Uighur allies',
     id='5fb1b9f3e1af06001770a2e1_ally_5fb1b9efe1af06001770a062',
   },
-  g_base_definitions['6153519a03385c0016b847d6'],
-  g_base_definitions['6153519a03385c0016b847d8'],
-  g_base_definitions['6153519a03385c0016b847da'],
-  g_base_definitions['6153519a03385c0016b847dc'],
+  g_base_definitions['68c995ce5791630015887d57'],
+  g_base_definitions['68c995ce5791630015887d59'],
+  g_base_definitions['68c995ce5791630015887d5b'],
+  g_base_definitions['68c995ce5791630015887d5d'],
 }
 army['5fb1b9f3e1af06001770a2e1_ally_5fb1b9f3e1af06001770a294'] = {
   data={
     name='Chagadai Mongol allies',
     id='5fb1b9f3e1af06001770a2e1_ally_5fb1b9f3e1af06001770a294',
   },
-  g_base_definitions['6153519b03385c0016b84ad2'],
-  g_base_definitions['6153519b03385c0016b84ad4'],
+  g_base_definitions['68c995d0579163001588804f'],
+  g_base_definitions['68c995d05791630015888051'],
 }
 army['5fb1b9f3e1af06001770a2e1_ally_5fb1b9efe1af06001770a062'] = {
   data={
     name='(only in Central Asia) Uighur allies',
     id='5fb1b9f3e1af06001770a2e1_ally_5fb1b9efe1af06001770a062',
   },
-  g_base_definitions['6153519a03385c0016b847d6'],
-  g_base_definitions['6153519a03385c0016b847d8'],
-  g_base_definitions['6153519a03385c0016b847da'],
-  g_base_definitions['6153519a03385c0016b847dc'],
+  g_base_definitions['68c995ce5791630015887d57'],
+  g_base_definitions['68c995ce5791630015887d59'],
+  g_base_definitions['68c995ce5791630015887d5b'],
+  g_base_definitions['68c995ce5791630015887d5d'],
 }
 army['5fb1b9f3e1af06001770a2e1_ally_5fb1b9f4e1af06001770a363'] = {
   data={
     name='(only in Korea) Korean allies',
     id='5fb1b9f3e1af06001770a2e1_ally_5fb1b9f4e1af06001770a363',
   },
-  g_base_definitions['6153519c03385c0016b84c15'],
-  g_base_definitions['6153519c03385c0016b84c16'],
-  g_base_definitions['6153519c03385c0016b84c18'],
-  g_base_definitions['6153519c03385c0016b84c1a'],
+  g_base_definitions['68c995d1579163001588819a'],
+  g_base_definitions['68c995d1579163001588819b'],
+  g_base_definitions['68c995d1579163001588819d'],
+  g_base_definitions['68c995d1579163001588819f'],
 }
 army['5fb1b9f3e1af06001770a2e1_ally_5fb1b9f4e1af06001770a363'] = {
   data={
     name='(only in Korea) Korean allies',
     id='5fb1b9f3e1af06001770a2e1_ally_5fb1b9f4e1af06001770a363',
   },
-  g_base_definitions['6153519c03385c0016b84c15'],
-  g_base_definitions['6153519c03385c0016b84c16'],
-  g_base_definitions['6153519c03385c0016b84c18'],
-  g_base_definitions['6153519c03385c0016b84c1a'],
+  g_base_definitions['68c995d1579163001588819a'],
+  g_base_definitions['68c995d1579163001588819b'],
+  g_base_definitions['68c995d1579163001588819d'],
+  g_base_definitions['68c995d1579163001588819f'],
 }

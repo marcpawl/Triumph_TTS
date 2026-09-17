@@ -18,7 +18,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
 -- As of: 202104014
 
     -- Bodyguards armed with axe and large shield - EF General
-    g_models[g_str_6153519e03385c0016b84f7e_general] = {
+    g_models[g_str_68c995d3579163001588851d_general] = {
       {
         n_models = 4,
         fixed_models = {
@@ -31,14 +31,14 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- Bodyguards armed with axe and large shield - EF
-    g_models[g_str_6153519e03385c0016b84f7e] = {
+    g_models[g_str_68c995d3579163001588851d] = {
       {
         model_data = 'troop_egyptian_general'
       }
     }
 
     -- 2-horse chariots - Ch General
-    g_models[g_str_6153519e03385c0016b84f81_general] = {
+    g_models[g_str_68c995d35791630015888520_general] = {
       {
         n_models = 1,
         fixed_models = {
@@ -48,7 +48,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- 2-horse chariots - Ch
-    g_models[g_str_6153519e03385c0016b84f81] = {
+    g_models[g_str_68c995d35791630015888520] = {
       {
         n_models = 1,
         fixed_models = {
@@ -58,34 +58,34 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- Bodyguards armed with axe and large shield - EF General
-    g_models[g_str_6153519e03385c0016b84f82_general] = g_models[g_str_6153519e03385c0016b84f7e_general]
+    g_models[g_str_68c995d35791630015888521_general] = g_models[g_str_68c995d3579163001588851d_general]
 
     -- Bodyguards armed with axe and large shield - EF
-    g_models[g_str_6153519e03385c0016b84f82] = g_models[g_str_6153519e03385c0016b84f7e]
+    g_models[g_str_68c995d35791630015888521] = g_models[g_str_68c995d3579163001588851d]
 
     -- Bowmen - Bow Levy
-    g_models[g_str_6153519e03385c0016b84f84] = {
+    g_models[g_str_68c995d35791630015888523] = {
       {
         model_data = 'troop_egyptian_bow'
       }
     }
 
     --Menfat - Raiders
-    g_models[g_str_6153519e03385c0016b84f86] = {
+    g_models[g_str_68c995d35791630015888526] = {
       {
         model_data = 'troop_egyptian_bd2'
       }
     }
 
     --Menfat - Heavy Foot
-    g_models[g_str_6153519e03385c0016b84f87] = {
+    g_models[g_str_68c995d35791630015888527] = {
       {
         model_data = 'troop_egyptian_bd1'
       }
     }
 
     --Conscripts - Horde
-    g_models[g_str_6153519e03385c0016b84f89] = {
+    g_models[g_str_68c995d35791630015888529] = {
       {
         model_data = 'troop_egyptian_horde_melee',
         loose = true
@@ -93,7 +93,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Javelinmen paired with quiver-carriers - Sk
-    g_models[g_str_6153519e03385c0016b84f8b] = {
+    g_models[g_str_68c995d3579163001588852b] = {
       {
         n_models = 2,
         fixed_models = {
@@ -105,14 +105,14 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Medjay and other Nubian bowmen - Archers
-    g_models[g_str_6153519e03385c0016b84f8d] = {
+    g_models[g_str_68c995d3579163001588852d] = {
       {
         model_data = 'troop_libyan_bow_alt'
       }
     }
 
     --Medjay and other Nubian bowmen - Sk
-    g_models[g_str_6153519e03385c0016b84f8e] = {
+    g_models[g_str_68c995d3579163001588852e] = {
       {
         model_data = 'troop_libyan_bow_alt',
         loose = true
@@ -120,7 +120,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Libyan javelinmen - Rabble
-    g_models[g_str_6153519e03385c0016b84f90] = {
+    g_models[g_str_68c995d35791630015888530] = {
       {
         model_data = 'troop_libyan_wb',
         loose = true
@@ -128,7 +128,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Bedouin slingers - Sk
-    g_models[g_str_6153519e03385c0016b84f92] = {
+    g_models[g_str_68c995d35791630015888532] = {
       {
         model_data = 'troop_egyptian_skirmishers_slinger',
         loose = true
@@ -152,7 +152,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
 -- As of: 202104015
 
     -- 2-horse chariots - Ch General
-    g_models[g_str_6153519f03385c0016b8500b_general] = {
+    g_models[g_str_68c995d357916300158885ae_general] = {
       {
         n_models = 1,
         fixed_models = {
@@ -162,7 +162,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- 2-horse chariots - Ch
-    g_models[g_str_6153519f03385c0016b8500b] = {
+    g_models[g_str_68c995d357916300158885ae] = {
       {
         n_models = 1,
         fixed_models = {
@@ -172,24 +172,24 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Retainers armed with axe or sickle sword and javelins - Raiders
-    g_models[g_str_6153519f03385c0016b8500d] = g_models[g_str_6153519e03385c0016b84f86]
+    g_models[g_str_68c995d357916300158885b0] = g_models[g_str_68c995d35791630015888526]
 
     -- Retainers armed with bow - Archers
-    g_models[g_str_6153519f03385c0016b8500f] = {
+    g_models[g_str_68c995d357916300158885b2] = {
       {
         model_data = 'troop_egyptian_bow'
       }
     }
 
     --Light troops armed with javelin and shield - LF
-    g_models[g_str_6153519f03385c0016b85011] = {
+    g_models[g_str_68c995d357916300158885b4] = {
       {
         model_data = 'troop_hyksos_bd1'
       }
     }
 
     --Light troops armed with javelin - Rabble
-    g_models[g_str_6153519f03385c0016b85013] = {
+    g_models[g_str_68c995d357916300158885b6] = {
       {
         n_models = 3,
         fixed_models = {
@@ -203,10 +203,10 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
 
 
     --Light troops armed with bow or sling - Sk
-    g_models[g_str_6153519f03385c0016b85015] = g_models[g_str_6153519e03385c0016b84f92]
+    g_models[g_str_68c995d357916300158885b8] = g_models[g_str_68c995d35791630015888532]
 
     --Aamu nomads - Rabble
-    g_models[g_str_6153519f03385c0016b85017] = {
+    g_models[g_str_68c995d357916300158885ba] = {
       {
         model_data = 'troop_egyptian_horde_melee',
         loose = true
@@ -214,7 +214,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Egyptian levies - Horde
-    g_models[g_str_6153519f03385c0016b85019] = g_models[g_str_6153519e03385c0016b84f89]
+    g_models[g_str_68c995d357916300158885bc] = g_models[g_str_68c995d35791630015888529]
 
     --Hyksos Camp
     g_models[g_str_5fb1b9d9e1af060017709366_camp] = g_models[g_str_5fb1b9d9e1af060017709335_camp]
@@ -229,7 +229,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
 -- As of: 202104015
 
     -- 2-wheeled battle platforms with teams of a driver and 2 javelinmen - Battle Taxi General
-    g_models[g_str_6153519f03385c0016b85115_general] = {
+    g_models[g_str_68c995d357916300158886c1_general] = {
       {
         n_models = 1,
         fixed_models = {
@@ -239,7 +239,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- 2-wheeled battle platforms with teams of a driver and 2 javelinmen - Battle Taxi
-    g_models[g_str_6153519f03385c0016b85115] = {
+    g_models[g_str_68c995d357916300158886c1] = {
       {
         n_models = 1,
         fixed_models = {
@@ -249,7 +249,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- Chieftains and their armored retinues - EF General
-    g_models[g_str_6153519f03385c0016b85117_general] = {
+    g_models[g_str_68c995d357916300158886c3_general] = {
       {
         n_models = 4,
         model_data = 'troop_seapeople_bd_general'
@@ -257,14 +257,14 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- Chieftains and their armored retinues - EF
-    g_models[g_str_6153519f03385c0016b85117] = {
+    g_models[g_str_68c995d357916300158886c3] = {
       {
         model_data = 'troop_seapeople_bd'
       }
     }
 
     -- Common tribesmen of most Sea Peoples nations - Raiders General
-    g_models[g_str_6153519f03385c0016b85119_general] = {
+    g_models[g_str_68c995d357916300158886c5_general] = {
       {
         n_models = 4,
         model_data = 'troop_seapeople_bd_general'
@@ -272,14 +272,14 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- Common tribesmen of most Sea Peoples nations - Raiders
-    g_models[g_str_6153519f03385c0016b85119] = {
+    g_models[g_str_68c995d357916300158886c5] = {
       {
         model_data = 'troop_egyptian_bd3'
       }
     }
 
     --Light troops armed with javelin - Rabble
-    g_models[g_str_6153519f03385c0016b8511b] = {
+    g_models[g_str_68c995d357916300158886c7] = {
       {
         model_data = 'troop_seapeople_ax',
         loose = true
@@ -287,7 +287,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Light troops armed with bow or sling - Sk
-    g_models[g_str_6153519f03385c0016b8511d] = {
+    g_models[g_str_68c995d357916300158886c9] = {
       {
         model_data = 'troop_seapeople_ps',
         loose = true
@@ -295,7 +295,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Egyptian levies - Horde
-    g_models[g_str_6153519f03385c0016b8511f] = {
+    g_models[g_str_68c995d357916300158886cb] = {
       {
         model_data = 'troop_seapeople_ax',
         loose = true
@@ -313,10 +313,10 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
 -- As of: 202104015
 
     -- 2-wheeled battle platforms with teams of a driver and 2 javelinmen - Battle Taxi General
-    g_models[g_str_6153519f03385c0016b85171_general] = g_models[g_str_6153519f03385c0016b85115_general]
+    g_models[g_str_68c995d35791630015888720_general] = g_models[g_str_68c995d357916300158886c1_general]
 
     -- 2-wheeled battle platforms with teams of a driver and 2 javelinmen - Battle Taxi
-    g_models[g_str_6153519f03385c0016b85171] = {
+    g_models[g_str_68c995d35791630015888720] = {
       {
         n_models = 1,
         fixed_models = {
@@ -326,22 +326,22 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     -- Elite swordsmen - EF General
-    g_models[g_str_6153519f03385c0016b85173_general] = g_models[g_str_6153519f03385c0016b85117_general]
+    g_models[g_str_68c995d35791630015888722_general] = g_models[g_str_68c995d357916300158886c3_general]
 
     -- Elite swordsmen - EF
-    g_models[g_str_6153519f03385c0016b85173] = g_models[g_str_6153519f03385c0016b85117]
+    g_models[g_str_68c995d35791630015888722] = g_models[g_str_68c995d357916300158886c3]
 
     -- Swordsmen - Raiders
-    g_models[g_str_6153519f03385c0016b85175] = g_models[g_str_6153519f03385c0016b85119]
+    g_models[g_str_68c995d35791630015888724] = g_models[g_str_68c995d357916300158886c5]
 
     --Light infantry armed with javelins, some with shields - Rabble
-    g_models[g_str_6153519f03385c0016b85177] = g_models[g_str_6153519f03385c0016b8511b]
+    g_models[g_str_68c995d35791630015888726] = g_models[g_str_68c995d357916300158886c7]
 
     --Javelinmen largely without shields - Rabble
-    g_models[g_str_6153519f03385c0016b85179] = g_models[g_str_6153519f03385c0016b8511b]
+    g_models[g_str_68c995d35791630015888728] = g_models[g_str_68c995d357916300158886c7]
 
     --Slingers - Sk
-    g_models[g_str_6153519f03385c0016b8517b] = {
+    g_models[g_str_68c995d3579163001588872a] = {
       {
         model_data = 'troop_seapeople_ps',
         loose = true
@@ -349,7 +349,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Bowmen - Bow Levy
-    g_models[g_str_6153519f03385c0016b8517d] = {
+    g_models[g_str_68c995d3579163001588872c] = {
       {
         model_data = 'troop_seapeople_ps',
         loose = true
@@ -357,7 +357,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Skirmishers - Kharu bowmen
-    g_models[g_str_6153519f03385c0016b8517f] = {
+    g_models[g_str_68c995d3579163001588872f] = {
       {
         model_data = 'troop_seapeople_ps',
         loose = true
@@ -365,7 +365,7 @@ army['5fb1b9dae1af0600177093d1'].data.base = "tile_grass"
     }
 
     --Archers - Kharu bowmen
-    g_models[g_str_6153519f03385c0016b85180] = {
+    g_models[g_str_68c995d35791630015888730] = {
       {
         model_data = 'troop_seapeople_ps'
       }

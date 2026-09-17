@@ -23,21 +23,21 @@ army['5fb1b9e0e1af0600177097e0_ally_5fb1b9dee1af0600177096d6'] = {
     name='Skythian allies',
     id='5fb1b9e0e1af0600177097e0_ally_5fb1b9dee1af0600177096d6',
   },
-  g_base_definitions['6153519203385c0016b83acf'],
-  g_base_definitions['6153519203385c0016b83ad1'],
+  g_base_definitions['68c995c75791630015887032'],
+  g_base_definitions['68c995c75791630015887034'],
 }
 army['5fb1b9e0e1af0600177097e0_ally_5fb1b9e0e1af0600177097c0'] = {
   data={
     name='Rebel Hyrkanian allies',
     id='5fb1b9e0e1af0600177097e0_ally_5fb1b9e0e1af0600177097c0',
   },
-  g_base_definitions['6153519303385c0016b83c30'],
-  g_base_definitions['6153519303385c0016b83c32'],
+  g_base_definitions['68c995c85791630015887193'],
+  g_base_definitions['68c995c85791630015887195'],
 }
 army['5fb1b9e0e1af0600177097e0_ally_5fb1b9e3e1af06001770996c'] = {
   data={
     name='Chionite allies',
     id='5fb1b9e0e1af0600177097e0_ally_5fb1b9e3e1af06001770996c',
   },
-  g_base_definitions['6153519403385c0016b83de1'],
+  g_base_definitions['68c995c95791630015887344'],
 }

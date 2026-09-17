@@ -1,1 +1,10 @@
-[{"name":"Glorious Byzantium","id":"5fb1b720e1af060017701931"},{"name":"Spread of Islam","id":"5fb1b720e1af060017701930"}]
+[
+    {
+        "name": "Glorious Byzantium",
+        "id": "5fb1b720e1af060017701931"
+    },
+    {
+        "name": "Spread of Islam",
+        "id": "5fb1b720e1af060017701930"
+    }
+]

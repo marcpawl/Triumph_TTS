@@ -4,7 +4,7 @@ army['5fb1b9dbe1af0600177094fb'].data.has_models = true
 army['5fb1b9dbe1af0600177094fb'].data.base="tile_grass"
 
 -- Heavy Foot General Hoplites
-g_models[g_str_615351a103385c0016b85603_general] = {
+g_models[g_str_68c995d55791630015888bb1_general] = {
   {
     n_models = 4,
     fixed_models = {
@@ -17,7 +17,7 @@ g_models[g_str_615351a103385c0016b85603_general] = {
 }
 
 -- Heavy Foot Hoplites
-g_models[g_str_615351a103385c0016b85603] = {
+g_models[g_str_68c995d55791630015888bb1] = {
   {
     n_models = 4,
     fixed_models = {
@@ -31,7 +31,7 @@ g_models[g_str_615351a103385c0016b85603] = {
 
 
 -- Skirmishing bowmen and slingers
-g_models[g_str_615351a103385c0016b85606] = {
+g_models[g_str_68c995d55791630015888bb3] = {
   {
     n_models = 2,
     random_models = {
@@ -43,7 +43,7 @@ g_models[g_str_615351a103385c0016b85606] = {
 }
 
 -- Rabble Javelinmen
-g_models[g_str_615351a103385c0016b85609] = {
+g_models[g_str_68c995d55791630015888bb5] = {
   {
     n_models = 3,
     random_models = {
@@ -58,20 +58,20 @@ g_models[g_str_615351a103385c0016b85609] = {
 }
 
 -- Light Foot Thracian peltasts
-g_models[g_str_615351a103385c0016b8560d] = g_models[g_str_615351a303385c0016b85be0]
+g_models[g_str_615351a103385c0016b8560d] = g_models[g_str_68c995d85791630015889146]
 
 -- Javelin Cavalry Thessalian horsemen
-g_models[g_str_615351a103385c0016b85611] = g_models[g_str_615351a303385c0016b85aef] 
+g_models[g_str_615351a103385c0016b85611] = g_models[g_str_68c995d75791630015889055] 
 
 -- Skirmishers Athenian bowmen
-g_models[g_str_615351a103385c0016b85615] =  g_models[g_str_615351a303385c0016b85afa] 
+g_models[g_str_615351a103385c0016b85615] =  g_models[g_str_68c995d75791630015889060] 
 
 -- Bow Levy Athenian bowmen
-g_models[g_str_615351a103385c0016b85616] =  g_models[g_str_615351a303385c0016b85afa] 
+g_models[g_str_615351a103385c0016b85616] =  g_models[g_str_68c995d75791630015889060] 
 
 -- Camp
 g_models[g_str_5fb1b9dbe1af0600177094fb_camp] =  g_models[g_str_5fb1b9dce1af06001770959d_camp]
 
 -- Javelin Cavalry Thessalian horsemen
-g_models[g_str_6153518f03385c0016b837eb] = g_models[g_str_615351a303385c0016b85aef] 
+g_models[g_str_6153518f03385c0016b837eb] = g_models[g_str_68c995d75791630015889055] 
  

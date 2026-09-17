@@ -1,1 +1,10 @@
-[{"name":"Pax Romana","id":"5fb1b720e1af06001770192b"},{"name":"Fall of Rome","id":"5fb1b720e1af06001770192d"}]
+[
+    {
+        "name": "Pax Romana",
+        "id": "5fb1b720e1af06001770192b"
+    },
+    {
+        "name": "Fall of Rome",
+        "id": "5fb1b720e1af06001770192d"
+    }
+]

@@ -43,58 +43,58 @@ army['5fb1b9e2e1af0600177098c7_ally_5fb1b9e1e1af060017709842'] = {
     name='(Sciri) Carpodacae allies',
     id='5fb1b9e2e1af0600177098c7_ally_5fb1b9e1e1af060017709842',
   },
-  g_base_definitions['6153519303385c0016b83cdc'],
-  g_base_definitions['6153519303385c0016b83cdf'],
-  g_base_definitions['6153519303385c0016b83ce1'],
+  g_base_definitions['68c995c8579163001588723f'],
+  g_base_definitions['68c995c85791630015887242'],
+  g_base_definitions['68c995c85791630015887244'],
 }
 army['5fb1b9e2e1af0600177098c7_ally_5fb1b9e3e1af060017709974'] = {
   data={
     name='(Sciri) Hunnic allies',
     id='5fb1b9e2e1af0600177098c7_ally_5fb1b9e3e1af060017709974',
   },
-  g_base_definitions['6153519403385c0016b83de5'],
+  g_base_definitions['68c995c95791630015887348'],
 }
 army['5fb1b9e2e1af0600177098c7_ally_5fb1b9e2e1af06001770991b'] = {
   data={
     name='(Sciri ) Rugi allies',
     id='5fb1b9e2e1af0600177098c7_ally_5fb1b9e2e1af06001770991b',
   },
-  g_base_definitions['6153519403385c0016b83d9d'],
+  g_base_definitions['68c995c95791630015887300'],
 }
 army['5fb1b9e2e1af0600177098c7_ally_5fb1b9e2e1af060017709902'] = {
   data={
     name='(Sciri ) Gepid allies',
     id='5fb1b9e2e1af0600177098c7_ally_5fb1b9e2e1af060017709902',
   },
-  g_base_definitions['6153519403385c0016b83d8d'],
+  g_base_definitions['68c995c957916300158872f0'],
 }
 army['5fb1b9e2e1af0600177098c7_ally_5fb1b9e1e1af060017709842'] = {
   data={
     name='(Sciri) Carpodacae allies',
     id='5fb1b9e2e1af0600177098c7_ally_5fb1b9e1e1af060017709842',
   },
-  g_base_definitions['6153519303385c0016b83cdc'],
-  g_base_definitions['6153519303385c0016b83cdf'],
-  g_base_definitions['6153519303385c0016b83ce1'],
+  g_base_definitions['68c995c8579163001588723f'],
+  g_base_definitions['68c995c85791630015887242'],
+  g_base_definitions['68c995c85791630015887244'],
 }
 army['5fb1b9e2e1af0600177098c7_ally_5fb1b9e3e1af060017709974'] = {
   data={
     name='(Sciri) Hunnic allies',
     id='5fb1b9e2e1af0600177098c7_ally_5fb1b9e3e1af060017709974',
   },
-  g_base_definitions['6153519403385c0016b83de5'],
+  g_base_definitions['68c995c95791630015887348'],
 }
 army['5fb1b9e2e1af0600177098c7_ally_5fb1b9e2e1af06001770991b'] = {
   data={
     name='(Sciri ) Rugi allies',
     id='5fb1b9e2e1af0600177098c7_ally_5fb1b9e2e1af06001770991b',
   },
-  g_base_definitions['6153519403385c0016b83d9d'],
+  g_base_definitions['68c995c95791630015887300'],
 }
 army['5fb1b9e2e1af0600177098c7_ally_5fb1b9e2e1af060017709902'] = {
   data={
     name='(Sciri ) Gepid allies',
     id='5fb1b9e2e1af0600177098c7_ally_5fb1b9e2e1af060017709902',
   },
-  g_base_definitions['6153519403385c0016b83d8d'],
+  g_base_definitions['68c995c957916300158872f0'],
 }

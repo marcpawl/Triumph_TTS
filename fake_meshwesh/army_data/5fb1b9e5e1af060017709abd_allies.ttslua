@@ -15,7 +15,7 @@ army['5fb1b9e5e1af060017709abd_ally_5fb1b9e5e1af060017709ac9'] = {
     name='Mercian ally',
     id='5fb1b9e5e1af060017709abd_ally_5fb1b9e5e1af060017709ac9',
   },
-  g_base_definitions['6153519503385c0016b83f6d'],
-  g_base_definitions['6153519503385c0016b83f6e'],
-  g_base_definitions['6153519503385c0016b83f70'],
+  g_base_definitions['68c995ca57916300158874d0'],
+  g_base_definitions['68c995ca57916300158874d1'],
+  g_base_definitions['68c995ca57916300158874d3'],
 }

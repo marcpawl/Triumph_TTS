@@ -15,8 +15,8 @@ army['5fb1b9dae1af0600177093c8_ally_5fb1b9dae1af0600177093e4'] = {
     name='Neo-Hittite and Aramaean allies',
     id='5fb1b9dae1af0600177093c8_ally_5fb1b9dae1af0600177093e4',
   },
-  g_base_definitions['6153518e03385c0016b8362d'],
-  g_base_definitions['6153518e03385c0016b8362f'],
-  g_base_definitions['6153518e03385c0016b83631'],
-  g_base_definitions['6153518e03385c0016b83633'],
+  g_base_definitions['68c995c45791630015886bc0'],
+  g_base_definitions['68c995c45791630015886bc2'],
+  g_base_definitions['68c995c45791630015886bc4'],
+  g_base_definitions['68c995c45791630015886bc6'],
 }

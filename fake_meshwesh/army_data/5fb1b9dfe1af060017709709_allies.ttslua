@@ -27,38 +27,38 @@ army['5fb1b9dfe1af060017709709_ally_5fb1b9dfe1af06001770972a'] = {
     name='Jewish Allies',
     id='5fb1b9dfe1af060017709709_ally_5fb1b9dfe1af06001770972a',
   },
-  g_base_definitions['6153519303385c0016b83b4f'],
-  g_base_definitions['6153519303385c0016b83b50'],
-  g_base_definitions['6153519303385c0016b83b52'],
-  g_base_definitions['6153519303385c0016b83b54'],
-  g_base_definitions['6153519303385c0016b83b56'],
+  g_base_definitions['68c995c757916300158870b2'],
+  g_base_definitions['68c995c757916300158870b3'],
+  g_base_definitions['68c995c757916300158870b5'],
+  g_base_definitions['68c995c757916300158870b7'],
+  g_base_definitions['68c995c757916300158870b9'],
 }
 army['5fb1b9dfe1af060017709709_ally_5fb1b9dfe1af060017709730'] = {
   data={
     name='Jewish Allies',
     id='5fb1b9dfe1af060017709709_ally_5fb1b9dfe1af060017709730',
   },
-  g_base_definitions['6153519303385c0016b83b61'],
-  g_base_definitions['6153519303385c0016b83b63'],
-  g_base_definitions['6153519303385c0016b83b65'],
-  g_base_definitions['6153519303385c0016b83b67'],
-  g_base_definitions['6153519303385c0016b83b69'],
-  g_base_definitions['6153519303385c0016b83b6b'],
+  g_base_definitions['68c995c757916300158870c4'],
+  g_base_definitions['68c995c757916300158870c6'],
+  g_base_definitions['68c995c757916300158870c8'],
+  g_base_definitions['68c995c757916300158870ca'],
+  g_base_definitions['68c995c757916300158870cc'],
+  g_base_definitions['68c995c757916300158870ce'],
 }
 army['5fb1b9dfe1af060017709709_ally_5fb1b9e0e1af0600177097c0'] = {
   data={
     name='Elymaians and other Parthian allies',
     id='5fb1b9dfe1af060017709709_ally_5fb1b9e0e1af0600177097c0',
   },
-  g_base_definitions['6153519303385c0016b83c30'],
-  g_base_definitions['6153519303385c0016b83c32'],
+  g_base_definitions['68c995c85791630015887193'],
+  g_base_definitions['68c995c85791630015887195'],
 }
 army['5fb1b9dfe1af060017709709_ally_5fb1b9e0e1af0600177097c8'] = {
   data={
     name='Elymaians and other Parthian allies',
     id='5fb1b9dfe1af060017709709_ally_5fb1b9e0e1af0600177097c8',
   },
-  g_base_definitions['6153519303385c0016b83c36'],
-  g_base_definitions['6153519303385c0016b83c38'],
-  g_base_definitions['6153519303385c0016b83c3a'],
+  g_base_definitions['68c995c85791630015887199'],
+  g_base_definitions['68c995c8579163001588719b'],
+  g_base_definitions['68c995c8579163001588719d'],
 }
