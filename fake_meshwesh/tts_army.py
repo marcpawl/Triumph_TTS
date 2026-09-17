@@ -3,9 +3,10 @@
 
 import json
 import os
+from pathlib import Path
+import re
 import sys
 import subprocess
-import re
 
 # set of the identifiers of the base definitions that have already
 # been written
@@ -1307,6 +1308,9 @@ def generate_army_data() :
   subprocess.run(['git', 'clean', '-fdx', 'army_data'], check=True)
   subprocess.run(['git', 'clean', '-fdX', 'army_data'], check=True)
   subprocess.run(['git', 'rm', '-r', 'army_data'], check=True)
+  
+  army_data_dir = Path("army_data")
+  army_data_dir.mkdir(parents=True, exist_ok=True)
 
   with open("army_data/all_armies.ttslua", "w") as all_armies:
       all_armies.write("""
