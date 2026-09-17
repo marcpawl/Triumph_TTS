@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
  
+import argparse
+import clone
 import json
+from pathlib import Path
 import shutil
 import subprocess
-from pathlib import Path
 import sys
-import clone
 import sqlite3
-import argparse
-import pdb
+
+import tts_army
 
 
 def create_armies_table( conn):
@@ -386,5 +387,7 @@ if __name__ == "__main__":
     changes = get_changes(db_path)
     ttslua_data = Path("../scripts/data").resolve()
     replace_ids_in_dir(ttslua_data, changes)
+    
+    tts_army.generate_army_data()
     
 sys.exit(0)

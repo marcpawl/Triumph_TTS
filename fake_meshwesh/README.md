@@ -11,3 +11,8 @@ army_data
 =========
 LUA for inclusion into TTS code base.  Army definitions bsed on the contents 
 armyLists. To recrete: make army_data 
+
+Updating
+========
+To get new data from Meshwesh and update armyLists and army_data
+execute update_meshwesh.py

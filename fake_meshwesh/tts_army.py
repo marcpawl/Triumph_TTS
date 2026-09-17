@@ -1298,50 +1298,51 @@ require("Triumph_TTS/scripts/static_maps")
           write_troop_option(file, troop_option)
 
 
-summary = read_json("armyLists/summary")
+def generate_army_data() :
+  summary = read_json("armyLists/summary")
 
-with open("army_data/all_armies.ttslua", "w") as all_armies:
-    all_armies.write("""
--- GENERATED FILE DO NOT EDIT
--- See tts_army.py
+  with open("army_data/all_armies.ttslua", "w") as all_armies:
+      all_armies.write("""
+  -- GENERATED FILE DO NOT EDIT
+  -- See tts_army.py
 
-require("Triumph_TTS/scripts/static_maps")
+  require("Triumph_TTS/scripts/static_maps")
 
-""")
+  """)
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        write_troop_options(army_id)
+      for army_entry in summary :
+          army_id = army_entry['id']
+          write_troop_options(army_id)
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        print(army_id)
-        try :
-            generate_army(army_id)
-        except:
-            print(army_entry['name'])
-            raise
+      for army_entry in summary :
+          army_id = army_entry['id']
+          print(army_id)
+          try :
+              generate_army(army_id)
+          except:
+              print(army_entry['name'])
+              raise
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        generate_ally_base_definitions(army_id)
+      for army_entry in summary :
+          army_id = army_entry['id']
+          generate_ally_base_definitions(army_id)
 
-    for army_entry in summary :
-        army_id = army_entry['id']
+      for army_entry in summary :
+          army_id = army_entry['id']
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        generate_allies(army_id)
+      for army_entry in summary :
+          army_id = army_entry['id']
+          generate_allies(army_id)
 
-    for army_entry in summary :
-        army_id = army_entry['id']
-        all_armies.write('require("Triumph_TTS/fake_meshwesh/army_data/%s_troop_options")\n' % (army_id))
-    for army_entry in summary :
-        army_id = army_entry['id']
-        all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_base_definitions")\n' % (army_id))
-    for army_entry in summary :
-        army_id = army_entry['id']
-        all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s")\n' % (army_id))
-    for army_entry in summary :
-        army_id = army_entry['id']
-        all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_allies")\n' % (army_id))
+      for army_entry in summary :
+          army_id = army_entry['id']
+          all_armies.write('require("Triumph_TTS/fake_meshwesh/army_data/%s_troop_options")\n' % (army_id))
+      for army_entry in summary :
+          army_id = army_entry['id']
+          all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_base_definitions")\n' % (army_id))
+      for army_entry in summary :
+          army_id = army_entry['id']
+          all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s")\n' % (army_id))
+      for army_entry in summary :
+          army_id = army_entry['id']
+          all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_allies")\n' % (army_id))
