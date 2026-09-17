@@ -244,6 +244,9 @@ def get_dismounting_type(base_definition, battle_card_note) :
       if base_definition['troop_type'] == "JCV" :
         return "Archers"
       return None
+  elif battle_card_note == "only Knights; as Elite Foot" :
+    if base_definition['troop_type'] == "KNT" :
+      return "Elite Foot"
   else:
     print("Unable to decode battle card note ", battle_card_note)
     print("base_definition=", base_definition)
