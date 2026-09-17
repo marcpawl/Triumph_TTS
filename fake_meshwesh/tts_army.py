@@ -762,52 +762,31 @@ def write_battle_cards(file, army, troop_option, troop_entry, base_definition)  
     code = battle_card['battleCardCode']
     note = battle_card['note']
     if code == "DD" :
-      id = troop_entry['_id']
-      if id == '5fb1ba37e1af06001770e72d' :
-        # "German or Polish men-at-arms"
-        extra = write_deployment_dismounting_as(file, base_definition, "Elite Foot", battle_card)
-        result.extend(extra)
-      elif id ==  "5fb1ba37e1af06001770e72e" :
-        #"Lithuanian horsemen"
-        extra = write_deployment_dismounting_as(file, base_definition, "Archers", battle_card)
-        result.extend(extra)
-      elif battle_card['_id'] == "5fb1ba34e1af06001770e1a0" :
-        extra = write_deployment_dismounting_as(file, base_definition, "Pikes", battle_card)
-        result.extend(extra)
-      else:
-        extra = write_deployment_dismounting(file, base_definition, battle_card)
-        if extra is not None:
-          result.extend(extra)
+      extra = write_deployment_dismounting(file, base_definition, battle_card)
     elif code == "SV" :
-        extra = write_separated_valets(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_separated_valets(file, base_definition, battle_card)
     elif code == "MD" :
-        extra = write_mid_battle_dismounting(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_mid_battle_dismounting(file, base_definition, battle_card)
     elif code == "MI" :
-        extra = write_mobile_infantry(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_mobile_infantry(file, base_definition, battle_card)
     elif code == "AC" :
-        extra = write_armored_camelry(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_armored_camelry(file, base_definition, battle_card)
     elif code == "LC" :
-        extra = write_light_camelry(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_light_camelry(file, base_definition, battle_card)
     elif code == "CC" :
-        extra = write_charging_camelry(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_charging_camelry(file, base_definition, battle_card)
     elif code == "ET" :
-        extra = write_elephant_screen(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_elephant_screen(file, base_definition, battle_card)
     elif code == "PL" :
-        extra = write_plaustrella(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_plaustrella(file, base_definition, battle_card)
     elif code == "SS" :
-        extra = write_shower_shooting(file, base_definition, battle_card)
-        result.extend(extra)
+      extra = write_shower_shooting(file, base_definition, battle_card)
     else:
-      pass
+      extra = None
 #      print("Unknown battle card ", code)
+
+    if extra is not None :
+      result.extend(extra)
 
   return result
 
