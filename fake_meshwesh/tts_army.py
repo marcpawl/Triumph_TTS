@@ -78,6 +78,17 @@ def set_date_range(destination, dates) :
     dest['startDate'] = max( dates['startDate'], dest['startDate'] )
     dest['endDate'] = min( dates['endDate'], dest['endDate'] )
 
+def is_troop_type_archers(troop_type) -> bool:
+    if troop_type == "ARC":
+        return True
+    if troop_type == "Archer":
+        return True
+    if troop_type == "Archers":
+        return True
+    if troop_type == "Archer stands equipped with crossbows":
+       return True
+    return False
+  
 def troop_type_to_name(troop_type) :
   if troop_type == "Prepared Defenses" :
       return troop_type
@@ -109,7 +120,7 @@ def troop_type_to_name(troop_type) :
     return "Bad Horse"
   if troop_type == "WBD" or troop_type == "Warband":
     return "Warband"
-  if troop_type == "ARC" or troop_type == "Archer" or troop_type == "Archers":
+  if is_troop_type_archers(troop_type):
     return "Archers"
   if troop_type == "RDR" or troop_type == "Raider" or troop_type == "Raiders":
     return "Raiders"
@@ -168,7 +179,7 @@ def get_points_for_troop_type(troop_type) :
     return 3
   if troop_type == "WBD" or troop_type ==  "Warband":
     return 3
-  if troop_type == "ARC" or troop_type ==  "Archers" or troop_type ==  "Archer":
+  if is_troop_type_archers(troop_type):
     return 4
   if troop_type == "RDR" or troop_type == "Raiders" or troop_type == "Raider":
     return 4
@@ -650,8 +661,10 @@ def create_base_definition(troop_option, troop_entry) :
 
   id = troop_entry['_id']
   if id == '5fb1ba37e1af06001770e72d' :
+    breakpoint()
     description = "German or Polish men-at-arms"
   elif id ==  "5fb1ba37e1af06001770e72e" :
+    breakpoint()
     description = "Lithuanian horsemen"
   else :
     description = troop_option['description']
