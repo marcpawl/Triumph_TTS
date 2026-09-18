@@ -57,21 +57,6 @@ g_models[g_str_68c995d55791630015888bb5] = {
   }  
 }
 
--- Light Foot Thracian peltasts
-g_models[g_str_615351a103385c0016b8560d] = g_models[g_str_68c995d85791630015889146]
-
--- Javelin Cavalry Thessalian horsemen
-g_models[g_str_615351a103385c0016b85611] = g_models[g_str_68c995d75791630015889055] 
-
--- Skirmishers Athenian bowmen
-g_models[g_str_615351a103385c0016b85615] =  g_models[g_str_68c995d75791630015889060] 
-
--- Bow Levy Athenian bowmen
-g_models[g_str_615351a103385c0016b85616] =  g_models[g_str_68c995d75791630015889060] 
-
 -- Camp
 g_models[g_str_5fb1b9dbe1af0600177094fb_camp] =  g_models[g_str_5fb1b9dce1af06001770959d_camp]
-
--- Javelin Cavalry Thessalian horsemen
-g_models[g_str_6153518f03385c0016b837eb] = g_models[g_str_68c995d75791630015889055] 
  

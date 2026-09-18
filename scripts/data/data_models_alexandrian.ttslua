@@ -1156,13 +1156,6 @@ army['5fb1b9dee1af06001770966b'].data.base = "tile_grass"
     --Macedonian or mercenary skirmishing bowmen and slingers - Sk
     g_models[g_str_68c995d857916300158891a9] = g_models[g_str_68c995d857916300158891c6]
 
-    --Persian skirmising bowmen and slingers - Sk
-    g_models[g_str_615351a303385c0016b85c45] = {
-      {
-        loose = true,
-        model_data = 'troop_ancient_spanish_slingers'
-      }
-    }
     --Akontistai - Rabble
     g_models[g_str_68c995d857916300158891ad] = g_models[g_str_68c995d85791630015889189]
 

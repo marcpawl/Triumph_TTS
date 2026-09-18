@@ -295,11 +295,8 @@ army['5fb1b9e5e1af060017709b08'].data.base = "tile_grass"
       }
     }
 
-    -- Muntatores - Jav Cav
-    g_models[g_str_6153519603385c0016b83fea] = g_models[g_str_68c995dd5791630015889fd0] 
-
     -- Marcher Welshry - Light Foot
-    g_models[g_str_6153519603385c0016b83fec] = {
+    g_model_norman_light_foot = {
       {
         random_models = {
           'troop_norman_levy',

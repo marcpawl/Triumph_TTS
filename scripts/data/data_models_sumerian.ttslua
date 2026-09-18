@@ -129,13 +129,8 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     -- Sumerian Camp
     g_models[g_str_5fb1b9d8e1af0600177092b9_camp_pack_train] = g_models[g_str_5fb1b9e1e1af060017709849_camp_pack_train]
 
-
-
-    -- Bowmen - Bow Levy
-    g_models[g_str_6153518d03385c0016b83501] = g_models[g_str_68c995d25791630015888335]
-
-    -- Household and militia speamen - Pikes
-    g_models[g_str_6153518d03385c0016b83538] = {
+    -- Household and militia spearmen - Pikes
+    g_summerian_militia_spearman = {
       {
         n_models = 4,
         random_models = {
@@ -144,35 +139,19 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
       }
     }
 
-    -- Household bowmen - Bow Levy
-    g_models[g_str_6153518d03385c0016b8353a] = g_models[g_str_68c995d25791630015888335]
-
     -- Levy or militia bowmen - Bow Levy
-    g_models[g_str_6153518d03385c0016b8353c] = {
+    g__model_sumerian_militia_bowmen = {
       {
         loose = true,
         model_data = 'troop_sumerian_skirmisher_archer'
       }
     }
 
-    -- Unshielded javelinmen - Rabble
-    g_models[g_str_6153518d03385c0016b8353e] = g_models[g_str_68c995d2579163001588833a] 
-
     -- Javelinmen, some with shields - Rabble
-    g_models[g_str_6153518d03385c0016b83540] = {
+    g_model_sumerian_javelinmen_rabble  = {
       {
         loose = true,
         model_data = 'troop_sumerian_light_javelinman'
-      }
-    }
-
-    -- Javelinmen, some with shields - Light Foot
-    g_models[g_str_6153518d03385c0016b83541] = {
-      {
-        random_models = {
-          'troop_sumerian_light_javelinman',
-          'troop_sumerian_light_javelinman_shielded'
-        }
       }
     }
 
@@ -217,48 +196,20 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     -- Sumerian Camp
     g_models[g_str_5fb1b9d8e1af0600177092b3_camp_pack_train] = g_models[g_str_5fb1b9d8e1af0600177092b9_camp_pack_train]
 
-    -- Retainers and effective javelinmen - Light Foot
-    g_models[g_str_6153518d03385c0016b834e4] = g_models[g_str_68c995d25791630015888330]
-
-    -- Unshielded javelinmen - Rabble
-    g_models[g_str_6153518d03385c0016b834e6] = g_models[g_str_6153518d03385c0016b83540]
-
     -- Slingers - Skirmishers
-    g_models[g_str_6153518d03385c0016b834e8] = {
+    g_model_sumerial_slinger_skirmishers = {
       {
         loose = true,
         model_data = 'troop_sumerian_skirmisher_slinger'
       }
     }
 
-    -- Bowmen - Bow Levy
-    g_models[g_str_6153518d03385c0016b834ea] = g_models[g_str_6153518d03385c0016b8353c]
-
     -- Bodyguards - Archers
-    g_models[g_str_6153518d03385c0016b834eb] = {
+    g_model_sumerian_bodyguard_archers = {
       {
         model_data = 'troop_sumerian_archer'
       }
     }
-
-    -- Bodyguards - Raiders
-    g_models[g_str_6153518d03385c0016b8352c] = g_models[g_str_68c995d25791630015888319]
-
-
-    -- Bodyguards - Archers
-    g_models[g_str_6153518d03385c0016b8352d] = g_models[g_str_6153518d03385c0016b834eb]
-
-    -- Unshielded javelinmen - Rabble
-    g_models[g_str_6153518d03385c0016b8352f] = g_models[g_str_68c995d2579163001588833a]
-
-    -- Javelinmen with shields - Light Foot
-    g_models[g_str_6153518d03385c0016b83532] = g_models[g_str_68c995d25791630015888330]
-
-    -- Bowmen - Bow Levy
-    g_models[g_str_6153518d03385c0016b83534] = g_models[g_str_6153518d03385c0016b834ea]
-
-    -- Bowmen - Bow Levy
-    g_models[g_str_6153518d03385c0016b834fd] = g_models[g_str_68c995d25791630015888335]
 
 
 -- Great Revolt Sumerian
@@ -338,12 +289,13 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     -- Household axemen - Raiders
     g_models[g_str_68c995d25791630015888365] = g_models[g_str_68c995d2579163001588832d]
 
-    -- Household speamen - Pikes
-    g_models[g_str_68c995d25791630015888367] = {
+    -- Household spearmen - Pikes
+    g_model_sumerian_household_spearmen_pikes = {
       {
         model_data = 'troop_sumerian_spearman_rectangular_shield_household'
       }
     }
+    g_models[g_str_68c995d25791630015888367] = g_model_sumerian_household_spearmen_pikes
 
     -- Household speamen - Light Spear
     g_models[g_str_68c995d25791630015888368] = {
@@ -353,7 +305,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Household bowmen - Archers
-    g_models[g_str_68c995d2579163001588836a] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d2579163001588836a] = g_model_sumerian_bodyguard_archers
 
     -- Household bowmen - Skirmishers
     g_models[g_str_68c995d2579163001588836b] = {
@@ -376,10 +328,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d25791630015888372] = g_models[g_str_68c995d25791630015888368]
 
     -- Highlander or Elamite bowme - Bow Levy
-    g_models[g_str_68c995d25791630015888375] = g_models[g_str_6153518d03385c0016b8353c]
+    g_models[g_str_68c995d25791630015888375] = g__model_sumerian_militia_bowmen
 
     -- Highlander levy javelinmen - Rabble
-    g_models[g_str_68c995d25791630015888379] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d25791630015888379] = g_model_sumerian_javelinmen_rabble
 
     -- Nomadic and levy bowmen - Skirmishers
     g_models[g_str_68c995d2579163001588837b] = {
@@ -389,10 +341,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Nomadic and levy javelinmen - Rabble
-    g_models[g_str_68c995d2579163001588837d] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d2579163001588837d] = g_model_sumerian_javelinmen_rabble
 
     -- Nomadic and levy slingers - Skirmishers
-    g_models[g_str_68c995d2579163001588837f] = g_models[g_str_6153518d03385c0016b834e8]
+    g_models[g_str_68c995d2579163001588837f] =g_model_sumerial_slinger_skirmishers
 
     -- Sumerian Camp
     g_models[g_str_5fb1b9d8e1af0600177092c5_camp] = g_models[g_str_5fb1b9d8e1af0600177092b9_camp]
@@ -402,19 +354,6 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     
     -- Sumerian Camp
     g_models[g_str_5fb1b9d8e1af0600177092c5_camp_pack_train] = g_models[g_str_5fb1b9e1e1af060017709849_camp_pack_train]
-
-    -- 4-wheeled battle cars - Chariots
-    g_models[g_str_6153518d03385c0016b83499] = g_models[g_str_68c995d2579163001588832b]
-
-    -- Household and militia speamen - Pikes
-    g_models[g_str_6153518d03385c0016b8349b] = g_models[g_str_68c995d25791630015888338]
-
-    -- Nomadic and levy javelinmen - Rabble
-    g_models[g_str_6153518d03385c0016b8349d] = g_models[g_str_6153518d03385c0016b83540]
-
-    -- Nomadic and levy slingers and skirmishing bowmen - Skirmishers
-    g_models[g_str_6153518d03385c0016b8349f] =  g_models[g_str_68c995d2579163001588833c]
-
 
 -- Third Dynasty of Ur
 -- 2112 BC to 2004 BC
@@ -451,7 +390,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Household bowmen - Archers
-    g_models[g_str_68c995d257916300158883f9] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d257916300158883f9] = g_model_sumerian_bodyguard_archers
 
     -- Household retinue - Raiders General
     g_models[g_str_68c995d257916300158883fb_general] = {
@@ -483,7 +422,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Household or militia spearmen with large rectangular shield - Pikes
-    g_models[g_str_68c995d257916300158883fe] = g_models[g_str_68c995d25791630015888367]
+    g_models[g_str_68c995d257916300158883fe] = g_model_sumerian_household_spearmen_pikes
 
     -- Household or militia spearmen with large rectangular shield - Light Spear
     g_models[g_str_68c995d257916300158883ff] = g_models[g_str_68c995d257916300158883ff]
@@ -495,7 +434,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d2579163001588840b] = g_models[g_str_68c995d2579163001588833c]
 
     -- Frontier troops, levy, or nomadic javelinmen - Rabble
-    g_models[g_str_68c995d2579163001588840d] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d2579163001588840d] = g_model_sumerian_javelinmen_rabble
 
     -- Amurru bedouin levies and effective frontier troops - Light Foot
     g_models[g_str_68c995d2579163001588840f] = g_models[g_str_68c995d25791630015888330]  
@@ -525,7 +464,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d257916300158883d8_general] = g_models[g_str_68c995d257916300158883f9_general] 
 
     -- Household bowmen - Archers
-    g_models[g_str_68c995d257916300158883d8] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d257916300158883d8] = g_model_sumerian_bodyguard_archers
 
     -- Household or militia spearmen with large rectangular shield - Pikes
     g_models[g_str_68c995d257916300158883da] = g_models[g_str_68c995d25791630015888338] 
@@ -541,7 +480,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Javelinmen - Rabble
-    g_models[g_str_68c995d257916300158883de] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d257916300158883de] = g_model_sumerian_javelinmen_rabble
 
     -- Household bowmen - Skirmishers
     g_models[g_str_68c995d257916300158883e0] = {
@@ -551,10 +490,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Highlander or Elamite bowmen - Bow Levy
-    g_models[g_str_68c995d257916300158883e2] = g_models[g_str_6153518d03385c0016b8353c]
+    g_models[g_str_68c995d257916300158883e2] = g__model_sumerian_militia_bowmen
 
     -- Frontier troops, levy, or nomadic javelinmen - Rabble
-    g_models[g_str_68c995d257916300158883e5] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d257916300158883e5] = g_model_sumerian_javelinmen_rabble
 
     -- Amurru bedouin levies and effective frontier troops - Light Foot
     g_models[g_str_68c995d257916300158883e8] = g_models[g_str_68c995d25791630015888330]  
@@ -565,17 +504,8 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     -- Sumerian Camp
     g_models[g_str_5fb1b9d8e1af0600177092de_camp_pack_train] = g_models[g_str_5fb1b9e1e1af060017709849_camp_pack_train]
 
-    -- Household bowmen - Archers
-    g_models[g_str_6153518d03385c0016b83505] = g_models[g_str_6153518d03385c0016b834eb]
-
-    -- Household retinue - Raiders
-    g_models[g_str_6153518d03385c0016b83506] = g_models[g_str_68c995d2579163001588832d]
-
-    -- Bowmen - Bow Levy
-    g_models[g_str_6153518d03385c0016b83508] = g_models[g_str_6153518d03385c0016b8353c]
-
     -- Retinue armed with axe or sickle-sword - Raiders
-    g_models[g_str_6153518e03385c0016b83566] = {
+    g_model_summerian_retinue_raiders = {
       {
         loose = true,
         random_models = {
@@ -586,20 +516,14 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Sabum qallatum, some with shield - Light Foot
-    g_models[g_str_6153518e03385c0016b83568] = {
+    g_model_sumerian_sabum_quallatum_light_foot = {
       {
         loose = true,
         model_data = 'troop_sumerian_light_javelinman_shielded_amorite',
       }
     }
 
-    -- Sabum qallatum, some with shield - Rabble
-    g_models[g_str_6153518e03385c0016b83569] = g_models[g_str_6153518d03385c0016b83540]
-
-    -- Sabum qallatum armed with bow or sling - Skirmishers
-    g_models[g_str_6153518e03385c0016b8356b] = g_models[g_str_68c995d2579163001588833c]
-
-
+    
 -- Nomadic Amurru
 -- 3000 BC to 2001 BC
 -- https://meshwesh.wgcwar.com/armyList/5fb1b9d8e1af0600177092ec/explore
@@ -622,10 +546,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d2579163001588841b] = g_models[g_str_68c995d25791630015888330]
 
     -- Unshielded javelinmen - Rabble
-    g_models[g_str_68c995d2579163001588841d] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d2579163001588841d] = g_model_sumerian_javelinmen_rabble
 
     -- Slingers - Skirmishers
-    g_models[g_str_68c995d2579163001588841f] = g_models[g_str_6153518d03385c0016b834e8]
+    g_models[g_str_68c995d2579163001588841f] =g_model_sumerial_slinger_skirmishers
 
     -- Bowmen - Bow Levy
     g_models[g_str_68c995d25791630015888421] = g_models[g_str_68c995d25791630015888375]
@@ -697,16 +621,16 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Retainers and effective javelinmen - Light Foot
-    g_models[g_str_68c995d25791630015888434] = g_models[g_str_6153518e03385c0016b83568]
+    g_models[g_str_68c995d25791630015888434] = g_model_sumerian_sabum_quallatum_light_foot
 
     -- Skirmishing bowmen - Skirmishers
     g_models[g_str_68c995d25791630015888438] = g_models[g_str_68c995d2579163001588837b]
 
     -- Unshielded javelinmen - Rabble
-    g_models[g_str_68c995d2579163001588843b] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d2579163001588843b] = g_model_sumerian_javelinmen_rabble
 
     -- Slingers - Skirmishers
-    g_models[g_str_68c995d2579163001588843d] = g_models[g_str_6153518d03385c0016b834e8]
+    g_models[g_str_68c995d2579163001588843d] =g_model_sumerial_slinger_skirmishers
 
     -- Bowmen - Bow Levy
     g_models[g_str_68c995d2579163001588843f] = g_models[g_str_68c995d25791630015888375]
@@ -730,7 +654,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d2579163001588844d_general] = g_models[g_str_68c995d257916300158883d8_general]
     
     -- Retainers - Archers
-    g_models[g_str_68c995d2579163001588844d] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d2579163001588844d] = g_model_sumerian_bodyguard_archers
 
     -- Bowmen - Bow Levy
     g_models[g_str_68c995d2579163001588844f] = g_models[g_str_68c995d25791630015888375]
@@ -751,7 +675,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d25791630015888457_general] = g_models[g_str_68c995d257916300158883d8_general]
     
     -- Retainers - Archers
-    g_models[g_str_68c995d25791630015888457] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d25791630015888457] = g_model_sumerian_bodyguard_archers
 
     -- Retainers - Light Spear General
     g_models[g_str_68c995d25791630015888458_general] = {
@@ -781,7 +705,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d2579163001588845b] = g_models[g_str_68c995d257916300158883f7]
 
     -- Household speamen - Pikes
-    g_models[g_str_68c995d2579163001588845d] = g_models[g_str_68c995d25791630015888367]
+    g_models[g_str_68c995d2579163001588845d] = g_model_sumerian_household_spearmen_pikes
 
     -- Bowmen - Bow Levy
     g_models[g_str_68c995d25791630015888462] = g_models[g_str_68c995d25791630015888375]
@@ -802,7 +726,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d3579163001588846d_general] = g_models[g_str_68c995d257916300158883d8_general]
     
     -- Retainers - Archers
-    g_models[g_str_68c995d3579163001588846d] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d3579163001588846d] = g_model_sumerian_bodyguard_archers
 
     -- Household retinue - Raiders General
     g_models[g_str_68c995d3579163001588846e_general] = g_models[g_str_68c995d257916300158883fb_general]
@@ -840,10 +764,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d357916300158884c7_general] = g_models[g_str_68c995d257916300158883d8_general]
     
     -- Bodyguards - Archers
-    g_models[g_str_68c995d357916300158884c7] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d357916300158884c7] = g_model_sumerian_bodyguard_archers
 
     -- Unshielded javelinmen - Rabble
-    g_models[g_str_68c995d357916300158884c9] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d357916300158884c9] = g_model_sumerian_javelinmen_rabble
 
     -- Unshielded javelinmen - Warband
     g_models[g_str_68c995d357916300158884ca] = {
@@ -856,10 +780,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d357916300158884cc] = g_models[g_str_68c995d25791630015888375]
 
     -- Slingers - Skirmishers
-    g_models[g_str_68c995d357916300158884cf] = g_models[g_str_6153518d03385c0016b834e8]
+    g_models[g_str_68c995d357916300158884cf] =g_model_sumerial_slinger_skirmishers
 
     -- Sumero-Akkadian militia spearmen - Pikes
-    g_models[g_str_68c995d357916300158884d2] = g_models[g_str_6153518d03385c0016b83538]
+    g_models[g_str_68c995d357916300158884d2] = g_summerian_militia_spearman
 
     -- Sumero-Akkadian militia spearmen - Light Spear
     g_models[g_str_68c995d357916300158884d3] = g_models[g_str_68c995d25791630015888368]
@@ -871,7 +795,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d357916300158884da_general] = g_models[g_str_68c995d257916300158883d8_general]
     
     -- Melukhkhan elite bowmen - Archers
-    g_models[g_str_68c995d357916300158884da] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d357916300158884da] = g_model_sumerian_bodyguard_archers
 
     -- Makkanite close-combat fighters - Raiders General
     g_models[g_str_68c995d357916300158884dd_general] = g_models[g_str_68c995d257916300158883fb_general]
@@ -884,31 +808,6 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
 
     -- Guti Camp
     g_models[g_str_5fb1b9d9e1af060017709321_camp_pack_train] = g_models[g_str_5fb1b9e1e1af060017709849_camp_pack_train]
-
-    -- Household speamen - Pikes
-    g_models[g_str_6153518d03385c0016b834a5] = g_models[g_str_68c995d25791630015888367]
-
-    -- Household speamen - Light Spear
-    g_models[g_str_6153518d03385c0016b834a6] = g_models[g_str_68c995d25791630015888368]
-
-    -- Militia spearmen - Pikes
-    g_models[g_str_6153518d03385c0016b834a9] = g_models[g_str_68c995d2579163001588836e]
-
-    -- Militia spearmen - Pikes
-    g_models[g_str_6153518d03385c0016b834ac] = g_models[g_str_68c995d2579163001588836e]
-
-    -- Militia spearmen - Light Spear
-    g_models[g_str_6153518d03385c0016b834ad] = g_models[g_str_68c995d25791630015888368]
-
-    -- Nomadic and levy bowmen - Skirmishers
-    g_models[g_str_6153518d03385c0016b834af] = g_models[g_str_68c995d2579163001588837b]
-
-    -- Nomadic and levy javelinmen - Rabble
-    g_models[g_str_6153518d03385c0016b834b1] = g_models[g_str_68c995d2579163001588837d]
-
-    -- Nomadic and levy slingers - Skirmishers
-    g_models[g_str_6153518d03385c0016b834b3] = g_models[g_str_68c995d2579163001588837f]
-
 
 -- Guti
 -- 2250 BC to 2112 BC
@@ -925,10 +824,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d357916300158884c7_general] = g_models[g_str_68c995d257916300158883d8_general]
     
     -- Bodyguards - Archers
-    g_models[g_str_68c995d357916300158884c7] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d357916300158884c7] = g_model_sumerian_bodyguard_archers
 
     -- Unshielded javelinmen - Rabble
-    g_models[g_str_68c995d357916300158884c9] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d357916300158884c9] = g_model_sumerian_javelinmen_rabble
 
     -- Unshielded javelinmen - Warband
     g_models[g_str_68c995d357916300158884ca] = {
@@ -941,10 +840,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d357916300158884cc] = g_models[g_str_68c995d25791630015888375]
 
     -- Slingers - Skirmishers
-    g_models[g_str_68c995d357916300158884cf] = g_models[g_str_6153518d03385c0016b834e8]
+    g_models[g_str_68c995d357916300158884cf] =g_model_sumerial_slinger_skirmishers
 
     -- Sumero-Akkadian militia spearmen - Pikes
-    g_models[g_str_68c995d357916300158884d2] = g_models[g_str_6153518d03385c0016b83538]
+    g_models[g_str_68c995d357916300158884d2] = g_summerian_militia_spearman
 
     -- Sumero-Akkadian militia spearmen - Light Spear
     g_models[g_str_68c995d357916300158884d3] = g_models[g_str_68c995d25791630015888368]
@@ -956,7 +855,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d357916300158884da_general] = g_models[g_str_68c995d257916300158883d8_general]
     
     -- Melukhkhan elite bowmen - Archers
-    g_models[g_str_68c995d357916300158884da] = g_models[g_str_6153518d03385c0016b834eb]
+    g_models[g_str_68c995d357916300158884da] = g_model_sumerian_bodyguard_archers
 
     -- Makkanite close-combat fighters - Raiders General
     g_models[g_str_68c995d357916300158884dd_general] = g_models[g_str_68c995d257916300158883fb_general]
@@ -969,30 +868,6 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
 
     -- Guti Camp
     g_models[g_str_5fb1b9d9e1af060017709321_camp_pack_train] = g_models[g_str_5fb1b9e1e1af060017709849_camp_pack_train]
-
-    -- Household speamen - Pikes
-    g_models[g_str_6153518d03385c0016b834a5] = g_models[g_str_68c995d25791630015888367]
-
-    -- Household speamen - Light Spear
-    g_models[g_str_6153518d03385c0016b834a6] = g_models[g_str_68c995d25791630015888368]
-
-    -- Militia spearmen - Pikes
-    g_models[g_str_6153518d03385c0016b834a9] = g_models[g_str_68c995d2579163001588836e]
-
-    -- Militia spearmen - Pikes
-    g_models[g_str_6153518d03385c0016b834ac] = g_models[g_str_68c995d2579163001588836e]
-
-    -- Militia spearmen - Light Spear
-    g_models[g_str_6153518d03385c0016b834ad] = g_models[g_str_68c995d25791630015888368]
-
-    -- Nomadic and levy bowmen - Skirmishers
-    g_models[g_str_6153518d03385c0016b834af] = g_models[g_str_68c995d2579163001588837b]
-
-    -- Nomadic and levy javelinmen - Rabble
-    g_models[g_str_6153518d03385c0016b834b1] = g_models[g_str_68c995d2579163001588837d]
-
-    -- Nomadic and levy slingers - Skirmishers
-    g_models[g_str_6153518d03385c0016b834b3] = g_models[g_str_68c995d2579163001588837f]
 
 -- Early Bronze Age Highlanders
 -- 3000 BC to 950 BC
@@ -1022,7 +897,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d357916300158884f0] = g_models[g_str_68c995d25791630015888422]
 
     -- Unshielded javelinmen - Rabble
-    g_models[g_str_68c995d357916300158884f2] = g_models[g_str_6153518d03385c0016b83540]
+    g_models[g_str_68c995d357916300158884f2] = g_model_sumerian_javelinmen_rabble
 
     -- Javelinmen with shields - Light Foot
     g_models[g_str_68c995d357916300158884f5] = g_models[g_str_68c995d25791630015888330]
@@ -1031,7 +906,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d357916300158884f7] = g_models[g_str_68c995d25791630015888375]
 
     -- Slingers - Skirmishers
-    g_models[g_str_68c995d357916300158884fa] = g_models[g_str_6153518d03385c0016b834e8]
+    g_models[g_str_68c995d357916300158884fa] =g_model_sumerial_slinger_skirmishers
 
     -- Guti Camp
     g_models[g_str_5fb1b9d9e1af060017709327_camp] = g_models[g_str_5fb1b9d8e1af0600177092b9_camp]
@@ -1066,10 +941,10 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d35791630015888506] = g_models[g_str_68c995d25791630015888335]
 
     -- Slingers - Skirmishers
-    g_models[g_str_68c995d35791630015888509] = g_models[g_str_6153518d03385c0016b834e8]
+    g_models[g_str_68c995d35791630015888509] =g_model_sumerial_slinger_skirmishers
 
     -- Levy or militia bowmen - Bow Levy
-    g_models[g_str_68c995d3579163001588850b] = g_models[g_str_6153518d03385c0016b8353c]
+    g_models[g_str_68c995d3579163001588850b] = g__model_sumerian_militia_bowmen
 
     -- Unshielded javelinmen - Rabble
     g_models[g_str_68c995d3579163001588850e] = g_models[g_str_68c995d2579163001588833a]
@@ -1127,7 +1002,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     }
 
     -- Sabum qallatum, some with shield - Light Foot
-    g_models[g_str_68c995d3579163001588859e] = g_models[g_str_6153518e03385c0016b83568]
+    g_models[g_str_68c995d3579163001588859e] = g_model_sumerian_sabum_quallatum_light_foot
 
     -- Unshielded javelinmen - Rabble
     g_models[g_str_68c995d3579163001588859f] = g_models[g_str_68c995d2579163001588833a]
@@ -1139,7 +1014,7 @@ army['5fb1b9d9e1af06001770935f'].data.base="tile_grass"
     g_models[g_str_68c995d3579163001588859f] = g_models[g_str_68c995d25791630015888335]
 
     -- Slingers - Skirmishers
-    g_models[g_str_68c995d357916300158885a1] = g_models[g_str_6153518d03385c0016b834e8]
+    g_models[g_str_68c995d357916300158885a1] =g_model_sumerial_slinger_skirmishers
 
     -- Levies and emergency reserves - Horde
     g_models[g_str_68c995d357916300158885a3] = g_models[g_str_68c995d2579163001588835b]

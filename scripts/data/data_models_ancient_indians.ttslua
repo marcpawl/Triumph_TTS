@@ -14,12 +14,13 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
 -- As of: 20230116
 
     -- War elephants - Elephants General
-    g_models[g_str_68c995d95791630015889664_general] = {
+    g_model_indian_el_general = {
       {
         n_models = 1,
         model_data = 'troop_indian_el_general'
       }
     }
+    g_models[g_str_68c995d95791630015889664_general] = g_model_indian_el_general
 
     -- War elephants - Elephants
     g_models[g_str_68c995d95791630015889664] = {
@@ -127,22 +128,13 @@ army['5fb1b9e0e1af0600177097b8'].data.base="tile_grass"
     -- Classical Indian Camp
     g_models[g_str_5fb1b9e0e1af06001770979e_camp_pack_train] = g_models[g_str_5fb1b9e1e1af060017709849_camp_pack_train]
 
-    -- Horsemen - Bad Horse
-    g_models[g_str_6153519303385c0016b83c1c] = g_models[g_str_68c995d9579163001588966c]
-  
-    -- Citizen bowmen - Bow Levy
-    g_models[g_str_6153519303385c0016b83c1e] = g_models[g_str_68c995d95791630015889670]
-
-    -- Javelinmen - Heavy Foot
-    g_models[g_str_6153519303385c0016b83c20] = g_models[g_str_68c995d95791630015889673]
-
 -- Republican Indian
 -- 500 BC to 321 BC
 -- https://meshwesh.wgcwar.com/armyList/5fb1b9e0e1af0600177097b1/explore
 -- As of: 20230116
 
     -- War elephants - Elephants General
-    g_models[g_str_68c995d957916300158896a2_general] = g_models[g_str_68c995d95791630015889664_general]
+    g_models[g_str_68c995d957916300158896a2_general] = g_model_indian_el_general
 
     -- War elephants - Elephants
     g_models[g_str_68c995d957916300158896a2] = g_models[g_str_68c995d95791630015889664]
