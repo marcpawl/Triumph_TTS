@@ -3,34 +3,34 @@ require("Triumph_TTS/fake_meshwesh/army_data/all_armies")
 require("Triumph_TTS/scripts/logic_dead")
 
 function test_get_army_builder_points_for_base_defintions_uses_points_from_tool_tip()
-  local def = g_base_definitions[g_str_6153519e03385c0016b84d96] -- a rabble
+  local def = g_base_definitions[g_str_68c995d2579163001588831e] -- a rabble
   local actual = get_army_builder_points_for_base_definitions({def})
   lu.assertEquals(actual, 2)
 end
 
 function test_get_victory_points_for_base_defintions_uses_points_from_tool_tip()
-  local def = g_base_definitions[g_str_6153519e03385c0016b84d96] -- a rabble
+  local def = g_base_definitions[g_str_68c995d2579163001588831e] -- a rabble
   local actual = get_victory_points_for_base_definitions({def})
   lu.assertEquals(actual, 2)
 end
 
 function test_get_army_builder_points_for_base_defintion_uses_max_for_dismounting()
-  local def = g_base_definitions[g_str_615351a903385c0016b86a1a_general_mounted]
+  local def = g_base_definitions[g_str_68c995dd5791630015889fca_general_mounted]
   local actual = get_army_builder_points_for_base_definition(def)
   lu.assertEquals(actual, 4)
 end
 
 
 function test_get_army_builder_points_for_base_defintion_adds_1_point_for_any_deployment_dismounting()
-  local def1 = g_base_definitions[g_str_615351a903385c0016b86a1a_general_mounted]
-  local def2 = g_base_definitions[g_str_615351a903385c0016b86a1a_mounted]
+  local def1 = g_base_definitions[g_str_68c995dd5791630015889fca_general_mounted]
+  local def2 = g_base_definitions[g_str_68c995dd5791630015889fca_mounted]
   local actual = get_army_builder_points_for_base_definitions({def1, def2})
   lu.assertEquals(actual, 9)
 end
 
 function test_get_army_builder_points_for_base_defintion_adds_2_points_for_any_mid_battle_dismounting()
-  local def1 = g_base_definitions[g_str_615351aa03385c0016b86c4d_general_mounted]
-  local def2 = g_base_definitions[g_str_615351aa03385c0016b86c4d_general_mounted]
+  local def1 = g_base_definitions[g_str_68c995de579163001588a208_general_mounted]
+  local def2 = g_base_definitions[g_str_68c995de579163001588a208_general_mounted]
   local actual = get_army_builder_points_for_base_definitions({def1, def2})
   lu.assertEquals(actual, 10)
 end
@@ -71,96 +71,96 @@ end
 
 
 function test_get_army_builder_points_for_charging_camelry_1_point_less_than_normal()
-  local def = g_base_definitions[g_str_615351ab03385c0016b86ebd_charging_camelry]
+  local def = g_base_definitions[g_str_68c995df579163001588a487_charging_camelry]
   local actual = get_army_builder_points_for_base_definition(def)
   -- knights normally cost 4 points
   lu.assertEquals(actual, 3)
 end
 
 function test_get_victory_points_for_charging_camelry_3()
-  local def = g_base_definitions[g_str_615351ab03385c0016b86ebd_charging_camelry]
+  local def = g_base_definitions[g_str_68c995df579163001588a487_charging_camelry]
   local actual = get_victory_points_for_base_definition(def)
   -- knights normally cost 4 points
   lu.assertEquals(actual, 3)
 end
 
 function test_get_army_builder_points_for_armored_camelry_1_point_less_than_normal()
-  local def = g_base_definitions[g_str_615351a503385c0016b86000_armored_camelry]
+  local def = g_base_definitions[g_str_68c995d95791630015889572_armored_camelry]
   local actual = get_army_builder_points_for_base_definition(def)
   -- Cataphracts normally cost 4 points
   lu.assertEquals(actual, 3)
 end
 
 function test_get_victory_points_for_armored_camelry_3()
-  local def = g_base_definitions[g_str_615351a503385c0016b86000_armored_camelry]
+  local def = g_base_definitions[g_str_68c995d95791630015889572_armored_camelry]
   local actual = get_victory_points_for_base_definition(def)
   -- Cataphracts normally cost 3 points
   lu.assertEquals(actual, 3)
 end
 
 function test_get_army_builder_points_for_1_mobile_infantry()
-  local def = g_base_definitions[g_str_615351a003385c0016b85313_mounted_mobile_infantry]
+  local def = g_base_definitions[g_str_68c995d457916300158888cd_mounted_mobile_infantry]
   local actual = get_army_builder_points_for_base_definitions({def})
   -- same costs as normal
   lu.assertEquals(actual, 2)
 end
 
 function test_get_army_builder_points_for_3_mobile_infantry()
-  local def = g_base_definitions[g_str_615351a003385c0016b85313_mounted_mobile_infantry]
+  local def = g_base_definitions[g_str_68c995d457916300158888cd_mounted_mobile_infantry]
   local actual = get_army_builder_points_for_base_definitions({def,def,def})
   -- 1 extra for more than 1 mobile infranty
   lu.assertEquals(actual, 7)
 end
 
 function test_get_army_builder_points_for_2_mobile_infantry()
-  local def = g_base_definitions[g_str_615351a003385c0016b85313_mounted_mobile_infantry]
+  local def = g_base_definitions[g_str_68c995d457916300158888cd_mounted_mobile_infantry]
   local actual = get_army_builder_points_for_base_definitions({def,def})
   -- 1 extra for more than 1 mobile infranty
   lu.assertEquals(actual, 5)
 end
 
 function test_get_victory_points_for_mobile_infantry_mounted()
-  local def = g_base_definitions[g_str_615351a003385c0016b85313_mounted_mobile_infantry]
+  local def = g_base_definitions[g_str_68c995d457916300158888cd_mounted_mobile_infantry]
   local actual = get_victory_points_for_base_definitions({def})
   -- Bow levy
   lu.assertEquals(actual, 2)
 end
 
 function test_get_victory_points_for_mobile_infantry_dismounted()
-  local def = g_base_definitions[g_str_615351a003385c0016b85313_dismounted_mobile_infantry]
+  local def = g_base_definitions[g_str_68c995d457916300158888cd_dismounted_mobile_infantry]
   local actual = get_victory_points_for_base_definitions({def})
   -- Bow levy
   lu.assertEquals(actual, 2)
 end
 
 function test_get_army_builder_points_plaustrella_one_point_per_stand()
-  local def= g_base_definitions[g_str_615351ad03385c0016b874bb_plaustrella]
+  local def= g_base_definitions[g_str_68c995e1579163001588aac5_plaustrella]
   local actual = get_army_builder_points_for_base_definitions({def})
   -- heavy foot are normally 3
   lu.assertEquals(actual, 4)
 end
 
 function test_get_victory_points_plaustrella_one_point_per_stand()
-  local def= g_base_definitions[g_str_615351ad03385c0016b874bb_plaustrella]
+  local def= g_base_definitions[g_str_68c995e1579163001588aac5_plaustrella]
   local actual = get_victory_points_for_base_definitions({def})
   -- heavy foot are normally 3
   lu.assertEquals(actual, 4)
 end
 
 function test_base_definition_indicates_shower_shooting()
-  local def= g_base_definitions[g_str_615351b203385c0016b88332_shower_shooting]
+  local def= g_base_definitions[g_str_68c995e6579163001588b9b8_shower_shooting]
   lu.assertTrue(def.shower_shooting)
 end
 
 function test_get_army_builder_points_shower_shooting_one_point_per_stand()
-  local def= g_base_definitions[g_str_615351b203385c0016b88332_shower_shooting]
+  local def= g_base_definitions[g_str_68c995e6579163001588b9b8_shower_shooting]
   local actual = get_army_builder_points_for_base_definitions({def})
   -- Elite cavalry are normally 4
   lu.assertEquals(actual, 5)
 end
 
 function test_get_victory_points_shower_shooting_one_point_per_stand()
-  local def= g_base_definitions[g_str_615351b203385c0016b88332_shower_shooting]
+  local def= g_base_definitions[g_str_68c995e6579163001588b9b8_shower_shooting]
   local actual = get_victory_points_for_base_definitions({def})
   -- Elite cavalry are normally 4
   lu.assertEquals(actual, 5)
@@ -219,14 +219,14 @@ function test_get_victory_points_standard_wagon()
 end
 
 function test_get_army_builder_points_elephant_screen()
-  local def= g_base_definitions[g_str_615351a403385c0016b85efa_elephant_screen]
+  local def= g_base_definitions[g_str_68c995d95791630015889464_elephant_screen]
   local actual = get_army_builder_points_for_base_definitions({def,def,def})
   -- An extra two points for the elephant screen
   lu.assertEquals(actual, 14)
 end
 
 function test_get_victory_points_elephant_screen()
-  local def= g_base_definitions[g_str_615351a403385c0016b85efa_elephant_screen]
+  local def= g_base_definitions[g_str_68c995d95791630015889464_elephant_screen]
   local actual = get_victory_points_for_base_definitions({def})
   -- No points for the elephant screen
   lu.assertEquals(actual, 4)
