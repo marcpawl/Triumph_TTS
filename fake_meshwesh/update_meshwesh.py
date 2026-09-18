@@ -385,8 +385,12 @@ if __name__ == "__main__":
         create_database(db_path)        
         
     changes = get_changes(db_path)
+
     ttslua_data = Path("../scripts/data").resolve()
     replace_ids_in_dir(ttslua_data, changes)
+
+    unittests_path = Path("../unittests").resolve()
+    replace_ids_in_dir(unittests_path, changes)
     
     tts_army.generate_army_data()
     
