@@ -1,3 +1,14 @@
+Version 3.1 Release Notes
+=========================
+
+Update Meshwesh.  Meshwesh had armies and unit changes.  
+Meshwesh data as of 2026-09-17 is now being used.  
+
+This change may have disrupted some of the mappings for models.
+Some armies that previously had models may have lost some or 
+all of their models. New units or units that lost their models will
+have plain counters used.
+
 version 3.0 Release Notes
 =========================
 
@@ -10,9 +21,6 @@ Triumph! v1.2 rules
 Fix error where Steppe topography would not be an option
 in the wizard.  For some armies that meant that there was
 no togpography and a table could not be spawned.
-
-Version 3.1 Release Notes
-=========================
 
 Version 2.3 Release Notes
 =========================
