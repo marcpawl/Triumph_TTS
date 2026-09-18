@@ -377,7 +377,7 @@ def update_date_file() :
         return
     change_id, branch_name = get_remote_branch()
 
-    today = datetime.datetime.utcnow()
+    today = datetime.datetime.now(datetime.UTC)
     date_string='{:04}{:02}{:02}.{:02}{:02}'.format( today.year, today.month, today.day, today.hour, today.minute )
     print(date_string)
     with open("ObjectStates/version_text", "r") as file:
