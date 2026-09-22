@@ -1,9 +1,3 @@
--- In the global file of your game, simply add this line
--- require("Triumph_TTS/main")
--- Then, in Atom package settings, go to the TTS package and define the path
--- to this folder. Since this main file already includes the others no further
--- operation is required for scripts. The XML needs to be copied manually
--- however.
 
 
 require("Triumph_TTS/assets/assets")

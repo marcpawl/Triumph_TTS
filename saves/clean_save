@@ -10,6 +10,7 @@ import datetime
 import hashlib
 import json
 import os
+from pathlib import Path
 import re
 import subprocess
 import sys
@@ -38,9 +39,9 @@ def getMd5(file_path):
   md5code = m.hexdigest()
   return md5code
 
-re_require = re.compile("^\s*require\s*\(['\"](.*)['\"]\)\s*")
-re_backslash = re.compile("\\\\")
-re_multi_slash = re.compile("/+")
+re_require = re.compile(r"""^\s*require\s*(['"](.*)['"])\s*""")
+re_backslash = re.compile(r"""\\""")
+re_multi_slash = re.compile(r"""/+""")
 
 def windows_url_fixup(url) :
     """If the URL is for a file use Windows conventions if applicable."""
@@ -174,7 +175,7 @@ def discover_assets_remote_url() :
 
     url = subprocess.check_output(["git", "remote", "get-url", 'origin']).decode("ascii").strip()
     url = url[:-4]
-    github_url = "^(https://([^@]*@)?github.com/).*$"
+    github_url = r"""^(https://([^@]*@)?github.com/).*$"""
     github_re = re.compile(github_url)
     github_match = github_re.match(url)
     if not github_match :
@@ -207,7 +208,7 @@ def get_remote_branch():
         raise Exception("Id or remote is not found: " + " ".join(cmd))
     return id,remote
 
-re_asset=re.compile('^.*[/\\\\]assets[/\\\\](.*)$')
+re_asset=re.compile(r"""^.*[/\\]assets[/\\](.*)$""")
 
 def asset_url(old_url) :
     """See if there is a file in the asset directory with the same
@@ -377,7 +378,7 @@ def update_date_file() :
         return
     change_id, branch_name = get_remote_branch()
 
-    today = datetime.datetime.utcnow()
+    today = datetime.datetime.now(datetime.UTC)
     date_string='{:04}{:02}{:02}.{:02}{:02}'.format( today.year, today.month, today.day, today.hour, today.minute )
     print(date_string)
     with open("ObjectStates/version_text", "r") as file:
@@ -388,14 +389,19 @@ def update_date_file() :
         file.write(json.dumps(data, indent=4, sort_keys="True"))
 
 
-def clean_file(file_name) :
+def load_json(path: Path) -> dict:
+    with path.open("r", encoding="utf-8") as f:
+        contents = f.read()
+        result = json.loads(contents)
+        return result
+
+def clean_file(file_path: Path) :
     discover_assets_remote_url()
     update_date_file()
 
     update_assets_ttslua()
 
-    with open(file_name, "r") as f :
-        data = json.load(f)
+    data = load_json(file_path)
 
     if 'LuaScriptState' in data :
       lua_script_state = json.loads(data["LuaScriptState"])
@@ -419,7 +425,7 @@ def clean_file(file_name) :
 
     data['CustomUIAssets'] = update_custom_assets()
 
-    with open(file_name, "w") as f :
+    with open(file_path, "w") as f :
         f.write(json.dumps(data, indent=4, sort_keys="True"))
 
 
@@ -437,6 +443,82 @@ def update_date_in_lua_script(data):
     new_script = re.sub('g_build_branch = "[\w\d_]+\"\\n', new_branch_name, new_script)
 
     data['LuaScript'] = new_script
+
+
+REQUIRE_PATTERN = re.compile(r'^\s*require\s*\(\s*["\']([^"\']+)["\']\s*\)\s*$')
+
+
+def resolve(name: str, root_dir: Path) -> Path:
+    """Resolve a require name against the project root directory."""
+    candidates = [
+        root_dir / f"{name}.lua",
+        root_dir / name,
+        root_dir / f"{name}.ttslua",
+    ]
+    for candidate in candidates:
+        if candidate.is_file():
+            return candidate.resolve()
+    raise FileNotFoundError(f"Could not resolve require '{name}' from root {root_dir}")
+
+
+def process_file(
+    filepath: Path,
+    root_dir: Path,
+    visited: set[Path] | None = None,
+) -> str:
+    """
+    Recursively expand require() statements in `filepath`, resolving all
+    require paths against `root_dir`. Returns the bundled Lua source.
+    `visited` tracks already-included files to prevent duplicate inclusion
+    and circular requires.
+    """
+    if visited is None:
+        visited = set()
+
+    real = filepath.resolve()
+    if real in visited:
+        return ""
+    visited.add(real)
+
+    try:
+        rel = real.relative_to(root_dir)
+    except ValueError:
+        rel = real
+
+    lines: list[str] = [f'-- === BEGIN {rel} ===', 'do']
+
+    for line in real.read_text(encoding="utf-8").splitlines():
+        m = REQUIRE_PATTERN.match(line)
+        if m:
+            target = resolve(m.group(1), root_dir)
+            lines.append(process_file(target, root_dir, visited))
+        else:
+            lines.append('    ' + line)
+
+    lines.append('end')
+    lines.append(f'-- === END {rel} ===')
+    return "\n".join(lines)
+
+
+def bundle(entry_file: Path, root_dir: Path, visited: set[Path] | None = None) -> str:
+    """Bundle an entry file and all its transitive requires into one string."""
+    return process_file(entry_file.resolve(), root_dir.resolve(), visited)
+
+
+def inline_requires() -> None:
+    """Inline the requires in the Lua scripts"""
+
+    entry: Path = Path("../main.ttslua")
+    root = Path("../..")
+    lua_text = bundle(entry, root)
+    
+    ts_save_path = Path("TS_Save_1.json")
+    ts_save = load_json(ts_save_path)
+    ts_save['LuaScript'] = lua_text
+    
+    with ts_save_path.open(mode="w", encoding="utf-8") as ts_save_file:
+        json.dump(ts_save, ts_save_file, indent=4)
+
 
 
 parser = argparse.ArgumentParser(
@@ -461,8 +543,11 @@ else:
     force_remote = False
 
 
-if len(args.extra_args) == 0:
-  clean_file("TS_Save_1.json")
-else:
-    for file_name in args.extra_args :
-        clean_file(file_name)
+files_to_clean = ["TS_Save_1.json"]
+files_to_clean.extend(args.extra_args)
+for file_name in files_to_clean:
+    file_path = Path(file_name)
+    if not file_path.is_file():
+        raise FileNotFoundError(file_path)
+    clean_file(file_path)
+inline_requires()
