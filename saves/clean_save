@@ -10,6 +10,7 @@ import datetime
 import hashlib
 import json
 import os
+from pathlib import Path
 import re
 import subprocess
 import sys
@@ -388,14 +389,19 @@ def update_date_file() :
         file.write(json.dumps(data, indent=4, sort_keys="True"))
 
 
-def clean_file(file_name) :
+def load_json(path: Path) -> dict:
+    with path.open("r", encoding="utf-8") as f:
+        contents = f.read()
+        result = json.loads(contents)
+        return result
+
+def clean_file(file_path: Path) :
     discover_assets_remote_url()
     update_date_file()
 
     update_assets_ttslua()
 
-    with open(file_name, "r") as f :
-        data = json.load(f)
+    data = load_json(file_path)
 
     if 'LuaScriptState' in data :
       lua_script_state = json.loads(data["LuaScriptState"])
@@ -419,7 +425,7 @@ def clean_file(file_name) :
 
     data['CustomUIAssets'] = update_custom_assets()
 
-    with open(file_name, "w") as f :
+    with open(file_path, "w") as f :
         f.write(json.dumps(data, indent=4, sort_keys="True"))
 
 
@@ -461,8 +467,10 @@ else:
     force_remote = False
 
 
-if len(args.extra_args) == 0:
-  clean_file("TS_Save_1.json")
-else:
-    for file_name in args.extra_args :
-        clean_file(file_name)
+files_to_clean = ["TS_Save_1.json"]
+files_to_clean.extend(args.extra_args)
+for file_name in files_to_clean:
+    file_path = Path(file_name)
+    if not file_path.is_file():
+        raise FileNotFoundException(file_path)
+    clean_file(file_path)
