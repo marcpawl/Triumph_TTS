@@ -445,6 +445,82 @@ def update_date_in_lua_script(data):
     data['LuaScript'] = new_script
 
 
+REQUIRE_PATTERN = re.compile(r'^\s*require\s*\(\s*["\']([^"\']+)["\']\s*\)\s*$')
+
+
+def resolve(name: str, root_dir: Path) -> Path:
+    """Resolve a require name against the project root directory."""
+    candidates = [
+        root_dir / f"{name}.lua",
+        root_dir / name,
+        root_dir / f"{name}.ttslua",
+    ]
+    for candidate in candidates:
+        if candidate.is_file():
+            return candidate.resolve()
+    raise FileNotFoundError(f"Could not resolve require '{name}' from root {root_dir}")
+
+
+def process_file(
+    filepath: Path,
+    root_dir: Path,
+    visited: set[Path] | None = None,
+) -> str:
+    """
+    Recursively expand require() statements in `filepath`, resolving all
+    require paths against `root_dir`. Returns the bundled Lua source.
+    `visited` tracks already-included files to prevent duplicate inclusion
+    and circular requires.
+    """
+    if visited is None:
+        visited = set()
+
+    real = filepath.resolve()
+    if real in visited:
+        return ""
+    visited.add(real)
+
+    try:
+        rel = real.relative_to(root_dir)
+    except ValueError:
+        rel = real
+
+    lines: list[str] = [f'-- === BEGIN {rel} ===', 'do']
+
+    for line in real.read_text(encoding="utf-8").splitlines():
+        m = REQUIRE_PATTERN.match(line)
+        if m:
+            target = resolve(m.group(1), root_dir)
+            lines.append(process_file(target, root_dir, visited))
+        else:
+            lines.append('    ' + line)
+
+    lines.append('end')
+    lines.append(f'-- === END {rel} ===')
+    return "\n".join(lines)
+
+
+def bundle(entry_file: Path, root_dir: Path, visited: set[Path] | None = None) -> str:
+    """Bundle an entry file and all its transitive requires into one string."""
+    return process_file(entry_file.resolve(), root_dir.resolve(), visited)
+
+
+def inline_requires() -> None:
+    """Inline the requires in the Lua scripts"""
+
+    entry: Path = Path("../main.ttslua")
+    root = Path("../..")
+    lua_text = bundle(entry, root)
+    
+    ts_save_path = Path("TS_Save_1.json")
+    ts_save = load_json(ts_save_path)
+    ts_save['LuaScript'] = lua_text
+    
+    with ts_save_path.open(mode="w", encoding="utf-8") as ts_save_file:
+        json.dump(ts_save, ts_save_file, indent=4)
+
+
+
 parser = argparse.ArgumentParser(
         description='Normalize the program to have proper URLs.')
 parser.add_argument('--no-date', action='store_true', 
@@ -472,5 +548,6 @@ files_to_clean.extend(args.extra_args)
 for file_name in files_to_clean:
     file_path = Path(file_name)
     if not file_path.is_file():
-        raise FileNotFoundException(file_path)
+        raise FileNotFoundError(file_path)
     clean_file(file_path)
+inline_requires()
