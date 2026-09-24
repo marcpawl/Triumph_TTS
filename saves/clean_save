@@ -450,8 +450,8 @@ def update_date_in_lua_script(data):
     change_id, branch_name = get_remote_branch()
     new_change_id = f'g_build_change_id = "{change_id}"'
     new_branch_name = f'g_build_branch = "{branch_name}"'
-    new_script = re.sub('g_build_change_id = "[\w\d]+\"\\n', new_change_id, new_script)
-    new_script = re.sub('g_build_branch = "[\w\d_]+\"\\n', new_branch_name, new_script)
+    new_script = re.sub(r"""g_build_change_id = "[\w\d]+"\n""", new_change_id, new_script)
+    new_script = re.sub(r"""g_build_branch = "[\w\d_]+"\n""", new_branch_name, new_script)
 
     data['LuaScript'] = new_script
 
