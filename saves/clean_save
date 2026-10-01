@@ -445,7 +445,7 @@ def update_date_in_lua_script(data):
     today = datetime.datetime.now()
     date = '{:04}{:02}{:02}.{:02}{:02}'.format(today.year, today.month, today.day, today.hour, today.minute)
     new_date = 'g_build_date = "' + date + '"\\n'
-    new_script = re.sub('g_build_date = "\d+\"\\n', new_date, script)
+    new_script = re.sub(r"""g_build_date = "\d+"\n""", new_date, script)
 
     change_id, branch_name = get_remote_branch()
     new_change_id = f'g_build_change_id = "{change_id}"'
