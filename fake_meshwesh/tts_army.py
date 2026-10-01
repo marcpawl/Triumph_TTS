@@ -1312,6 +1312,30 @@ def generate_army_data() :
   army_data_dir = Path("army_data")
   army_data_dir.mkdir(parents=True, exist_ok=True)
 
+  for army_entry in summary :
+      army_id = army_entry['id']
+      write_troop_options(army_id)
+
+  for army_entry in summary :
+      army_id = army_entry['id']
+      print(army_id)
+      try :
+          generate_army(army_id)
+      except:
+          print(army_entry['name'])
+          raise
+
+  for army_entry in summary :
+      army_id = army_entry['id']
+      generate_ally_base_definitions(army_id)
+
+  for army_entry in summary :
+      army_id = army_entry['id']
+
+  for army_entry in summary :
+      army_id = army_entry['id']
+      generate_allies(army_id)
+
   with open("army_data/all_armies.ttslua", "w") as all_armies:
       all_armies.write("""
   -- GENERATED FILE DO NOT EDIT
@@ -1320,30 +1344,6 @@ def generate_army_data() :
   require("Triumph_TTS/scripts/static_maps")
 
   """)
-
-      for army_entry in summary :
-          army_id = army_entry['id']
-          write_troop_options(army_id)
-
-      for army_entry in summary :
-          army_id = army_entry['id']
-          print(army_id)
-          try :
-              generate_army(army_id)
-          except:
-              print(army_entry['name'])
-              raise
-
-      for army_entry in summary :
-          army_id = army_entry['id']
-          generate_ally_base_definitions(army_id)
-
-      for army_entry in summary :
-          army_id = army_entry['id']
-
-      for army_entry in summary :
-          army_id = army_entry['id']
-          generate_allies(army_id)
 
       for army_entry in summary :
           army_id = army_entry['id']
@@ -1358,6 +1358,6 @@ def generate_army_data() :
           army_id = army_entry['id']
           all_armies.write( 'require("Triumph_TTS/fake_meshwesh/army_data/%s_allies")\n' % (army_id))
           
-      # Add all files in army_data to git
-      subprocess.run(['git', 'add', 'army_data'], check=True)
+  # Add all files in army_data to git
+  subprocess.run(['git', 'add', 'army_data'], check=True)
 
